@@ -117,10 +117,7 @@ const Home = () => {
               About ReviewNima
             </h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-base sm:text-lg">
-              Welcome to my personal anime review website! Here I share my thoughts and insights 
-              on the anime I've watched. Each review comes from my personal experience and 
-              perspective. Feel free to browse through my reviews and leave comments if you're 
-              logged in with your Google account.
+              ReviewNima adalah website untuk kumpulan review dari konten reviewanime di channel Morviss.
             </p>
           </div>
         </div>
