@@ -30,56 +30,56 @@ const Home = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-purple-600"></div>
+      <div className="flex items-center justify-center min-h-screen bg-white dark:bg-black">
+        <div className="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-t-4 border-gray-900 dark:border-white"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen bg-white dark:bg-black transition-all duration-300">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 text-white py-20">
+      <div className="bg-black dark:bg-white text-white dark:text-black py-12 sm:py-20 border-b border-gray-800 dark:border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <Sparkles size={32} className="text-yellow-400" />
-            <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-400">
-              Review Form Morviss
+          <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-4">
+            <Sparkles size={24} sm:size={32} className="text-gray-400 dark:text-gray-600 animate-spin-slow" />
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-black dark:to-gray-800 animate-fade-in">
+              ReviewNima
             </h1>
-            <Sparkles size={32} className="text-yellow-400" />
+            <Sparkles size={24} sm:size={32} className="text-gray-400 dark:text-gray-600 animate-spin-slow" />
           </div>
-          <p className="text-xl md:text-2xl text-purple-200 mb-8">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-400 dark:text-gray-600 mb-6 sm:mb-8">
             Discover Amazing Anime Reviews & Insights
           </p>
-          <div className="flex items-center justify-center space-x-2 text-purple-300">
-            <TrendingUp size={20} />
-            <span>Personal reviews from a true anime enthusiast</span>
+          <div className="flex items-center justify-center space-x-2 text-gray-500 dark:text-gray-500">
+            <TrendingUp size={16} sm:size={20} />
+            <span className="text-sm sm:text-base">Personal reviews from a true anime enthusiast</span>
           </div>
         </div>
       </div>
 
       {/* Popular Anime Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
-          <TrendingUp className="mr-3 text-purple-600" size={32} />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8 flex items-center">
+          <TrendingUp className="mr-3 text-gray-600 dark:text-gray-400" size={24} sm:size={32} />
           Popular Anime This Season
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
           {popularAnime.map((anime) => (
-            <div key={anime.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <div key={anime.id} className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200 dark:border-gray-800">
               {anime.coverImage?.medium && (
                 <img
                   src={anime.coverImage.medium}
                   alt={anime.title.english || anime.title.romaji}
-                  className="w-full h-40 object-cover"
+                  className="w-full h-32 sm:h-40 object-cover"
                 />
               )}
-              <div className="p-3">
-                <h3 className="font-semibold text-sm text-gray-900 dark:text-white line-clamp-2">
+              <div className="p-2 sm:p-3">
+                <h3 className="font-semibold text-xs sm:text-sm text-gray-900 dark:text-white line-clamp-2">
                   {anime.title.english || anime.title.romaji}
                 </h3>
                 <div className="flex items-center mt-2 text-xs text-gray-500 dark:text-gray-400">
-                  <span className="bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 px-2 py-1 rounded">
+                  <span className="bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">
                     ★ {anime.averageScore ? (anime.averageScore / 10).toFixed(1) : 'N/A'}
                   </span>
                 </div>
@@ -90,19 +90,19 @@ const Home = () => {
       </div>
 
       {/* Latest Reviews Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8">
           Latest Reviews
         </h2>
         {reviews.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {reviews.slice(0, 6).map((review) => (
               <ReviewCard key={review.id} review={review} />
             ))}
           </div>
         ) : (
-          <div className="text-center py-16 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
-            <p className="text-gray-500 dark:text-gray-400 text-lg">
+          <div className="text-center py-12 sm:py-16 bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-800">
+            <p className="text-gray-500 dark:text-gray-400 text-base sm:text-lg">
               No reviews yet. Check back soon!
             </p>
           </div>
@@ -110,13 +110,13 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="bg-white dark:bg-gray-800 py-16">
+      <div className="bg-gray-50 dark:bg-gray-900 py-12 sm:py-16 border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              About Review Form Morviss
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              About ReviewNima
             </h2>
-            <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-lg">
+            <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-base sm:text-lg">
               Welcome to my personal anime review website! Here I share my thoughts and insights 
               on the anime I've watched. Each review comes from my personal experience and 
               perspective. Feel free to browse through my reviews and leave comments if you're 

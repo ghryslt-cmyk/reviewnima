@@ -31,26 +31,26 @@ const Login = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
-        <Loader2 className="animate-spin text-purple-600" size={48} />
+      <div className="flex items-center justify-center min-h-screen bg-white dark:bg-black">
+        <Loader2 className="animate-spin text-gray-900 dark:text-white" size={40} sm:size={48} />
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 flex items-center justify-center px-4">
-      <div className="max-w-md w-full bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-            Welcome to Review Form Morviss
+    <div className="min-h-screen bg-black dark:bg-white flex items-center justify-center px-4 transition-all duration-300">
+      <div className="max-w-md w-full bg-white dark:bg-black rounded-2xl shadow-2xl p-6 sm:p-8 border border-gray-200 dark:border-gray-800">
+        <div className="text-center mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            Welcome to ReviewNima
           </h1>
-          <p className="text-gray-600 dark:text-gray-300">
+          <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
             Sign in to access features and leave comments
           </p>
         </div>
 
         {error && (
-          <div className="mb-4 p-4 bg-red-100 dark:bg-red-900/20 border border-red-400 dark:border-red-800 text-red-700 dark:text-red-400 rounded-lg">
+          <div className="mb-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 rounded-lg">
             {error}
           </div>
         )}
@@ -58,16 +58,16 @@ const Login = () => {
         <button
           onClick={handleGoogleLogin}
           disabled={isLoggingIn}
-          className="w-full flex items-center justify-center space-x-3 bg-white dark:bg-gray-700 border-2 border-gray-300 dark:border-gray-600 hover:border-purple-500 dark:hover:border-purple-500 text-gray-900 dark:text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full flex items-center justify-center space-x-3 bg-white dark:bg-black border-2 border-gray-300 dark:border-gray-700 hover:border-gray-500 dark:hover:border-gray-500 text-gray-900 dark:text-white font-medium py-2 sm:py-3 px-4 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105"
         >
           {isLoggingIn ? (
             <>
-              <Loader2 className="animate-spin" size={20} />
+              <Loader2 className="animate-spin" size={18} sm:size={20} />
               <span>Signing in...</span>
             </>
           ) : (
             <>
-              <svg className="w-6 h-6" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 24 24">
                 <path
                   fill="#4285F4"
                   d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -90,7 +90,7 @@ const Login = () => {
           )}
         </button>
 
-        <div className="mt-6 text-center text-sm text-gray-500 dark:text-gray-400">
+        <div className="mt-6 text-center text-xs sm:text-sm text-gray-500 dark:text-gray-400">
           <p>By signing in, you agree to our terms and conditions</p>
         </div>
       </div>

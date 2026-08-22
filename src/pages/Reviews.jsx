@@ -59,49 +59,49 @@ const Reviews = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-purple-600"></div>
+      <div className="flex items-center justify-center min-h-screen bg-white dark:bg-black">
+        <div className="animate-spin rounded-full h-12 w-12 sm:h-16 sm:w-16 border-t-4 border-gray-900 dark:border-white"></div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-16">
+    <div className="min-h-screen bg-white dark:bg-black py-8 sm:py-16 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 flex items-center justify-center">
-            <BookOpen className="mr-3 text-purple-600" size={40} />
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4 flex items-center justify-center">
+            <BookOpen className="mr-3 text-gray-600 dark:text-gray-400" size={32} sm:size={40} />
             All Reviews
           </h1>
-          <p className="text-gray-600 dark:text-gray-300 text-lg">
+          <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg">
             Browse through all anime reviews, sorted alphabetically
           </p>
         </div>
 
         {/* Search Bar */}
-        <div className="mb-8">
+        <div className="mb-6 sm:mb-8">
           <div className="relative max-w-md mx-auto">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} sm:size={20} />
             <input
               type="text"
               placeholder="Search anime..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+              className="w-full pl-10 pr-4 py-2 sm:py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all duration-300"
             />
           </div>
         </div>
 
         {/* Alphabet Filter */}
-        <div className="mb-8 flex flex-wrap justify-center gap-2">
+        <div className="mb-6 sm:mb-8 flex flex-wrap justify-center gap-1 sm:gap-2">
           {letters.map(letter => (
             <button
               key={letter}
               onClick={() => setSelectedLetter(letter)}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+              className={`px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-medium transition-all duration-300 text-xs sm:text-sm ${
                 selectedLetter === letter
-                  ? 'bg-purple-600 text-white'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-purple-100 dark:hover:bg-gray-700'
+                  ? 'bg-black dark:bg-white text-white dark:text-black hover:scale-105'
+                  : 'bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800'
               }`}
             >
               {letter}
@@ -111,22 +111,22 @@ const Reviews = () => {
 
         {/* Reviews Grid */}
         {filteredReviews.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {filteredReviews.map(review => (
               <ReviewCard key={review.id} review={review} />
             ))}
           </div>
         ) : (
-          <div className="text-center py-16 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
-            <BookOpen size={64} className="mx-auto text-gray-400 mb-4" />
-            <p className="text-gray-500 dark:text-gray-400 text-lg">
+          <div className="text-center py-12 sm:py-16 bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-800">
+            <BookOpen size={48} sm:size={64} className="mx-auto text-gray-400 mb-4" />
+            <p className="text-gray-500 dark:text-gray-400 text-base sm:text-lg">
               No reviews found matching your criteria
             </p>
           </div>
         )}
 
         {/* Results Count */}
-        <div className="mt-8 text-center text-gray-600 dark:text-gray-400">
+        <div className="mt-6 sm:mt-8 text-center text-gray-600 dark:text-gray-400 text-sm sm:text-base">
           Showing {filteredReviews.length} {filteredReviews.length === 1 ? 'review' : 'reviews'}
         </div>
       </div>
