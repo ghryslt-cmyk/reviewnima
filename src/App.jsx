@@ -7,6 +7,7 @@ import ReviewDetail from './pages/ReviewDetail';
 import Login from './pages/Login';
 import Admin from './pages/Admin';
 import Profile from './pages/Profile';
+import TopFavorites from './pages/TopFavorites';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/top-favorites" element={<TopFavorites />} />
           </Routes>
         </div>
       </Router>

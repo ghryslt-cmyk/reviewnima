@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Home, BookOpen, User, LogOut, Shield, Menu, X } from 'lucide-react';
+import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart } from 'lucide-react';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -24,6 +24,10 @@ const Navbar = () => {
               <Link to="/reviews" className="flex items-center space-x-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 rounded-lg transition-all duration-300">
                 <BookOpen size={20} />
                 <span>Reviews</span>
+              </Link>
+              <Link to="/top-favorites" className="flex items-center space-x-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 rounded-lg transition-all duration-300">
+                <Heart size={20} />
+                <span>Favorit</span>
               </Link>
               {isAdminUser && (
                 <Link to="/admin" className="flex items-center space-x-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 rounded-lg transition-all duration-300">
@@ -92,6 +96,14 @@ const Navbar = () => {
             >
               <BookOpen size={20} />
               <span>Reviews</span>
+            </Link>
+            <Link 
+              to="/top-favorites" 
+              className="flex items-center space-x-2 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-3 py-2 rounded-lg transition-all duration-300"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Heart size={20} />
+              <span>Favorit</span>
             </Link>
             {isAdminUser && (
               <Link 

@@ -155,4 +155,29 @@ export const deleteReview = async (reviewId) => {
   }
 };
 
+export const toggleFavorite = async (reviewId, isFavorite) => {
+  try {
+    const docRef = doc(db, 'reviews', reviewId);
+    await updateDoc(docRef, { isFavorite, updatedAt: serverTimestamp() });
+  } catch (error) {
+    console.error('Error toggling favorite:', error);
+    throw error;
+  }
+};
+
+export const getFavoriteReviews = async () => {
+  try {
+    const q = query(collection(db, 'reviews'), where('isFavorite', '==', true));
+    const querySnapshot = await getDocs(q);
+    const reviews = [];
+    querySnapshot.forEach((doc) => {
+      reviews.push({ id: doc.id, ...doc.data() });
+    });
+    return reviews;
+  } catch (error) {
+    console.error('Error getting favorite reviews:', error);
+    throw error;
+  }
+};
+
 export { auth, db };

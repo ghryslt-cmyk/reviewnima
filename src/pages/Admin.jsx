@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { addReview, getReviews, deleteReview } from '../lib/firebase';
+import { addReview, getReviews, deleteReview, toggleFavorite } from '../lib/firebase';
 import { searchAnime, getAnimeById } from '../lib/anilist';
-import { Shield, Search, Plus, Star, X, Loader2, Save } from 'lucide-react';
+import { Shield, Search, Plus, Star, X, Loader2, Save, Heart } from 'lucide-react';
 
 const Admin = () => {
   const { user, checkAdmin, isAuthenticated } = useAuth();
@@ -118,15 +118,30 @@ const Admin = () => {
   };
 
   const handleDeleteReview = async (reviewId) => {
-    if (!confirm('Are you sure you want to delete this review?')) return;
+    if (!window.confirm('Are you sure you want to delete this review?')) return;
     
     try {
       await deleteReview(reviewId);
-      const reviews = await getReviews();
-      setExistingReviews(reviews);
+      setExistingReviews(existingReviews.filter(r => r.id !== reviewId));
+      setSuccess('Review deleted successfully!');
+      setTimeout(() => setSuccess(''), 3000);
     } catch (error) {
       console.error('Error deleting review:', error);
       setError('Failed to delete review. Please try again.');
+    }
+  };
+
+  const handleToggleFavorite = async (reviewId, currentFavorite) => {
+    try {
+      await toggleFavorite(reviewId, !currentFavorite);
+      setExistingReviews(existingReviews.map(r => 
+        r.id === reviewId ? { ...r, isFavorite: !currentFavorite } : r
+      ));
+      setSuccess(!currentFavorite ? 'Added to favorites!' : 'Removed from favorites!');
+      setTimeout(() => setSuccess(''), 3000);
+    } catch (error) {
+      console.error('Error toggling favorite:', error);
+      setError('Failed to update favorite status. Please try again.');
     }
   };
 
@@ -356,12 +371,25 @@ const Admin = () => {
                       </div>
                     </div>
                   </div>
-                  <button
-                    onClick={() => handleDeleteReview(review.id)}
-                    className="text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 px-4 py-2 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors border border-transparent hover:border-red-200 dark:hover:border-red-800"
-                  >
-                    Delete
-                  </button>
+                  <div className="flex items-center space-x-2">
+                    <button
+                      onClick={() => handleToggleFavorite(review.id, review.isFavorite)}
+                      className={`p-2 rounded-lg transition-colors ${
+                        review.isFavorite
+                          ? 'text-red-500 dark:text-red-400 bg-red-50 dark:bg-red-900/20'
+                          : 'text-gray-400 dark:text-gray-600 hover:text-red-500 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20'
+                      }`}
+                      title={review.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                    >
+                      <Heart size={20} fill={review.isFavorite ? 'currentColor' : 'none'} />
+                    </button>
+                    <button
+                      onClick={() => handleDeleteReview(review.id)}
+                      className="text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 px-4 py-2 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors border border-transparent hover:border-red-200 dark:hover:border-red-800"
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
               ))}
             </div>
