@@ -167,18 +167,24 @@ const Home = () => {
             <div className="space-y-4 xs:space-y-6">
               <h3 className="text-lg xs:text-xl sm:text-xl md:text-2xl font-semibold text-gray-900 dark:text-white mb-3 xs:mb-4">Contact & Policies</h3>
               <div className="space-y-2 xs:space-y-3">
-                <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  <span className="font-medium text-gray-900 dark:text-white text-sm xs:text-base">Contact Us</span>
-                  <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Get in touch with us for any questions</p>
-                </div>
-                <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  <span className="font-medium text-gray-900 dark:text-white text-sm xs:text-base">Privacy Policy</span>
-                  <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Learn about how we protect your data</p>
-                </div>
-                <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  <span className="font-medium text-gray-900 dark:text-white text-sm xs:text-base">Terms of Service</span>
-                  <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Read our terms and conditions</p>
-                </div>
+                <Link to="/contact" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
+                  <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                    <span className="font-medium text-sm xs:text-base">Contact Us</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Get in touch with us for any questions</p>
+                  </div>
+                </Link>
+                <Link to="/privacy" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
+                  <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                    <span className="font-medium text-sm xs:text-base">Privacy Policy</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Learn about how we protect your data</p>
+                  </div>
+                </Link>
+                <Link to="/terms" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
+                  <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                    <span className="font-medium text-sm xs:text-base">Terms of Service</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Read our terms and conditions</p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

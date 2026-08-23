@@ -8,6 +8,9 @@ import Login from './pages/Login';
 import Admin from './pages/Admin';
 import Profile from './pages/Profile';
 import TopFavorites from './pages/TopFavorites';
+import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
             <Route path="/admin" element={<Admin />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/top-favorites" element={<TopFavorites />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
           </Routes>
         </div>
       </Router>
