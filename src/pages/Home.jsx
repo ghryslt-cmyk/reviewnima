@@ -121,8 +121,6 @@ const Home = () => {
               on the anime I've watched. Each review comes from my personal experience and 
               perspective. Feel free to browse through my reviews and leave comments if you're 
               logged in with your Google account.
-            <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-base sm:text-lg">
-              ReviewNima adalah website untuk kumpulan review dari konten reviewanime di channel Morviss.
             </p>
           </div>
         </div>
