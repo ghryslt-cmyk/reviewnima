@@ -1,23 +1,22 @@
 import { useState, useEffect } from 'react';
 import { getReviews } from '../lib/firebase';
-import { getPopularAnime } from '../lib/anilist';
 import ReviewCard from '../components/ReviewCard';
-import { TrendingUp, Sparkles } from 'lucide-react';
+import { TrendingUp, Sparkles, Star } from 'lucide-react';
 
 const Home = () => {
   const [reviews, setReviews] = useState([]);
-  const [popularAnime, setPopularAnime] = useState([]);
+  const [topRatedReviews, setTopRatedReviews] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [reviewsData, animeData] = await Promise.all([
-          getReviews(),
-          getPopularAnime(1, 6)
-        ]);
+        const reviewsData = await getReviews();
         setReviews(reviewsData);
-        setPopularAnime(animeData);
+        
+        // Sort reviews by rating (highest first) and get top 6
+        const sortedByRating = [...reviewsData].sort((a, b) => (b.rating || 0) - (a.rating || 0));
+        setTopRatedReviews(sortedByRating.slice(0, 6));
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
@@ -58,35 +57,25 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Popular Anime Section */}
+      {/* Top Rated Reviews Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
         <h2 className="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-6 sm:mb-8 flex items-center">
-          <TrendingUp className="mr-3 text-black dark:text-white" size={24} sm:size={32} />
-          Top Rated Anime of All Time
+          <Star className="mr-3 text-black dark:text-white" size={24} sm:size={32} />
+          Top Rated Reviews
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
-          {popularAnime.map((anime) => (
-            <div key={anime.id} className="bg-white dark:bg-black rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-gray-200 dark:border-gray-800">
-              {anime.coverImage?.extraLarge && (
-                <img
-                  src={anime.coverImage.extraLarge}
-                  alt={anime.title.english || anime.title.romaji}
-                  className="w-full h-32 sm:h-40 object-cover"
-                />
-              )}
-              <div className="p-2 sm:p-3">
-                <h3 className="font-semibold text-xs sm:text-sm text-black dark:text-white line-clamp-2">
-                  {anime.title.english || anime.title.romaji}
-                </h3>
-                <div className="flex items-center mt-2 text-xs text-gray-600 dark:text-gray-400">
-                  <span className="bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded font-bold">
-                    ★ {anime.averageScore ? (anime.averageScore / 10).toFixed(1) : 'N/A'}
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        {topRatedReviews.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {topRatedReviews.map((review) => (
+              <ReviewCard key={review.id} review={review} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-12 sm:py-16 bg-white dark:bg-black rounded-xl shadow-lg border-2 border-black dark:border-white">
+            <p className="text-black dark:text-white text-base sm:text-lg">
+              No reviews yet. Check back soon!
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Latest Reviews Section */}
