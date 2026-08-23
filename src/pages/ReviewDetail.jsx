@@ -68,8 +68,8 @@ const ReviewDetail = () => {
     return (
       <div className="min-h-screen bg-white dark:bg-black flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Review Not Found</h1>
-          <p className="text-gray-600 dark:text-gray-300">The review you're looking for doesn't exist.</p>
+          <h1 className="text-2xl font-bold text-black dark:text-white mb-4">Review Not Found</h1>
+          <p className="text-gray-700 dark:text-gray-300">The review you're looking for doesn't exist.</p>
         </div>
       </div>
     );
@@ -82,10 +82,10 @@ const ReviewDetail = () => {
   const rating = review.rating || 0;
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black transition-all duration-300">
+    <div className="min-h-screen bg-white dark:bg-black">
       {/* Banner */}
       {bannerImage && (
-        <div className="h-48 sm:h-64 md:h-96 relative overflow-hidden">
+        <div className="h-64 md:h-96 relative overflow-hidden">
           <img
             src={bannerImage}
             alt={animeTitle}
@@ -95,34 +95,34 @@ const ReviewDetail = () => {
         </div>
       )}
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 mb-8 sm:mb-12">
+        <div className="flex flex-col md:flex-row gap-8 mb-12">
           {coverImage && (
-            <div className="flex-shrink-0 mx-auto md:mx-0">
+            <div className="flex-shrink-0">
               <img
                 src={coverImage}
                 alt={animeTitle}
-                className="w-48 h-72 sm:w-56 sm:h-80 md:w-64 md:h-96 object-cover rounded-xl shadow-2xl"
+                className="w-64 h-96 object-cover rounded-xl shadow-2xl"
               />
             </div>
           )}
           
           <div className="flex-grow">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
               {animeTitle}
             </h1>
             
-            <div className="flex flex-wrap gap-2 sm:gap-4 mb-4 sm:mb-6">
-              <div className="flex items-center space-x-2 bg-gray-200 dark:bg-gray-800 px-3 sm:px-4 py-1 sm:py-2 rounded-full">
-                <Star size={16} sm:size={20} className="text-gray-900 dark:text-white" fill="currentColor" />
-                <span className="font-bold text-gray-900 dark:text-white text-sm sm:text-lg">{rating}/10</span>
+            <div className="flex flex-wrap gap-4 mb-6">
+              <div className="flex items-center space-x-2 bg-black dark:bg-white px-4 py-2 rounded-full border-2 border-black dark:border-white">
+                <Star size={20} className="text-white dark:text-black" fill="currentColor" />
+                <span className="font-bold text-white dark:text-black text-lg">{rating}/10</span>
               </div>
               
               {animeData.genres && animeData.genres.length > 0 && (
-                <div className="flex flex-wrap gap-1 sm:gap-2">
+                <div className="flex flex-wrap gap-2">
                   {animeData.genres.slice(0, 4).map((genre, index) => (
-                    <span key={index} className="bg-gray-100 dark:bg-gray-900 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-800">
+                    <span key={index} className="bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded-full text-sm text-black dark:text-white border border-gray-300 dark:border-gray-700">
                       {genre}
                     </span>
                   ))}
@@ -130,52 +130,52 @@ const ReviewDetail = () => {
               )}
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 mb-4 sm:mb-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               {animeData.episodes && (
-                <div className="bg-gray-50 dark:bg-gray-900 p-2 sm:p-4 rounded-lg shadow border border-gray-200 dark:border-gray-800">
-                  <div className="flex items-center space-x-1 sm:space-x-2 text-gray-600 dark:text-gray-400 mb-1">
-                    <Clock size={12} sm:size={16} />
-                    <span className="text-xs sm:text-sm">Episodes</span>
+                <div className="bg-white dark:bg-black p-4 rounded-lg shadow-lg border-2 border-gray-200 dark:border-gray-800">
+                  <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 mb-1">
+                    <Clock size={16} />
+                    <span className="text-sm">Episodes</span>
                   </div>
-                  <p className="text-base sm:text-xl font-bold text-gray-900 dark:text-white">{animeData.episodes}</p>
+                  <p className="text-xl font-bold text-black dark:text-white">{animeData.episodes}</p>
                 </div>
               )}
               
               {animeData.seasonYear && (
-                <div className="bg-gray-50 dark:bg-gray-900 p-2 sm:p-4 rounded-lg shadow border border-gray-200 dark:border-gray-800">
-                  <div className="flex items-center space-x-1 sm:space-x-2 text-gray-600 dark:text-gray-400 mb-1">
-                    <Calendar size={12} sm:size={16} />
-                    <span className="text-xs sm:text-sm">Year</span>
+                <div className="bg-white dark:bg-black p-4 rounded-lg shadow-lg border-2 border-gray-200 dark:border-gray-800">
+                  <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 mb-1">
+                    <Calendar size={16} />
+                    <span className="text-sm">Year</span>
                   </div>
-                  <p className="text-base sm:text-xl font-bold text-gray-900 dark:text-white">{animeData.seasonYear}</p>
+                  <p className="text-xl font-bold text-black dark:text-white">{animeData.seasonYear}</p>
                 </div>
               )}
 
               {animeData.studios?.nodes?.length > 0 && (
-                <div className="bg-gray-50 dark:bg-gray-900 p-2 sm:p-4 rounded-lg shadow border border-gray-200 dark:border-gray-800">
-                  <div className="flex items-center space-x-1 sm:space-x-2 text-gray-600 dark:text-gray-400 mb-1">
-                    <User size={12} sm:size={16} />
-                    <span className="text-xs sm:text-sm">Studio</span>
+                <div className="bg-white dark:bg-black p-4 rounded-lg shadow-lg border-2 border-gray-200 dark:border-gray-800">
+                  <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 mb-1">
+                    <User size={16} />
+                    <span className="text-sm">Studio</span>
                   </div>
-                  <p className="text-base sm:text-xl font-bold text-gray-900 dark:text-white">{animeData.studios.nodes[0].name}</p>
+                  <p className="text-xl font-bold text-black dark:text-white">{animeData.studios.nodes[0].name}</p>
                 </div>
               )}
 
               {animeData.status && (
-                <div className="bg-gray-50 dark:bg-gray-900 p-2 sm:p-4 rounded-lg shadow border border-gray-200 dark:border-gray-800">
-                  <div className="flex items-center space-x-1 sm:space-x-2 text-gray-600 dark:text-gray-400 mb-1">
-                    <ExternalLink size={12} sm:size={16} />
-                    <span className="text-xs sm:text-sm">Status</span>
+                <div className="bg-white dark:bg-black p-4 rounded-lg shadow-lg border-2 border-gray-200 dark:border-gray-800">
+                  <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 mb-1">
+                    <ExternalLink size={16} />
+                    <span className="text-sm">Status</span>
                   </div>
-                  <p className="text-base sm:text-xl font-bold text-gray-900 dark:text-white">{animeData.status}</p>
+                  <p className="text-xl font-bold text-black dark:text-white">{animeData.status}</p>
                 </div>
               )}
             </div>
 
             {animeData.description && (
-              <div className="bg-gray-50 dark:bg-gray-900 p-4 sm:p-6 rounded-xl shadow-lg mb-4 sm:mb-6 border border-gray-200 dark:border-gray-800">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3">Synopsis</h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
+              <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-lg mb-6 border-2 border-gray-200 dark:border-gray-800">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-3">Synopsis</h3>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   {animeData.description.replace(/<[^>]*>/g, '')}
                 </p>
               </div>
@@ -184,20 +184,20 @@ const ReviewDetail = () => {
         </div>
 
         {/* Review Section */}
-        <div className="bg-gray-50 dark:bg-gray-900 p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg mb-8 sm:mb-12 border border-gray-200 dark:border-gray-800">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 flex items-center">
-            <Star className="mr-2 sm:mr-3 text-gray-600 dark:text-gray-400" size={24} sm:size={32} />
+        <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg mb-12 border-2 border-gray-200 dark:border-gray-800">
+          <h2 className="text-3xl font-bold text-black dark:text-white mb-6 flex items-center">
+            <Star className="mr-3 text-black dark:text-white" size={32} />
             My Review
           </h2>
           
-          <div className="prose prose-sm sm:prose-lg dark:prose-invert max-w-none">
-            <div className="text-gray-700 dark:text-gray-300 whitespace-pre-line leading-relaxed text-sm sm:text-base">
+          <div className="prose prose-lg dark:prose-invert max-w-none">
+            <div className="text-gray-800 dark:text-gray-200 whitespace-pre-line leading-relaxed">
               {review.reviewText || 'No review text available.'}
             </div>
           </div>
 
-          <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-gray-200 dark:border-gray-700">
-            <div className="flex items-center space-x-2 sm:space-x-4 text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+          <div className="mt-6 pt-6 border-t-2 border-gray-300 dark:border-gray-700">
+            <div className="flex items-center space-x-4 text-sm text-gray-700 dark:text-gray-300">
               <span>Reviewed by Morviss</span>
               <span>•</span>
               <span>{new Date(review.createdAt?.toDate?.() || review.createdAt).toLocaleDateString()}</span>
@@ -206,21 +206,21 @@ const ReviewDetail = () => {
         </div>
 
         {/* Comments Section */}
-        <div className="bg-gray-50 dark:bg-gray-900 p-4 sm:p-6 lg:p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-800">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 flex items-center">
-            <MessageSquare className="mr-2 sm:mr-3 text-gray-600 dark:text-gray-400" size={24} sm:size={32} />
+        <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg border-2 border-gray-200 dark:border-gray-800">
+          <h2 className="text-3xl font-bold text-black dark:text-white mb-6 flex items-center">
+            <MessageSquare className="mr-3 text-black dark:text-white" size={32} />
             Comments ({comments.length})
           </h2>
 
           {/* Comment Form */}
           {isAuthenticated ? (
-            <form onSubmit={handleSubmitComment} className="mb-6 sm:mb-8">
-              <div className="flex space-x-2 sm:space-x-4">
+            <form onSubmit={handleSubmitComment} className="mb-8">
+              <div className="flex space-x-4">
                 {user?.photoURL && (
                   <img
                     src={user.photoURL}
                     alt={user.displayName}
-                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full"
+                    className="w-10 h-10 rounded-full border-2 border-black dark:border-white"
                   />
                 )}
                 <div className="flex-grow">
@@ -228,16 +228,16 @@ const ReviewDetail = () => {
                     value={commentText}
                     onChange={(e) => setCommentText(e.target.value)}
                     placeholder="Write a comment..."
-                    className="w-full p-3 sm:p-4 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-gray-900 dark:text-white focus:ring-2 focus:ring-gray-500 focus:border-transparent resize-none text-sm sm:text-base"
+                    className="w-full p-4 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent resize-none"
                     rows="3"
                   />
                   <div className="mt-2 flex justify-end">
                     <button
                       type="submit"
                       disabled={submittingComment || !commentText.trim()}
-                      className="flex items-center space-x-2 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 disabled:bg-gray-400 px-4 sm:px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105 text-sm sm:text-base"
+                      className="flex items-center space-x-2 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 disabled:bg-gray-400 px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105"
                     >
-                      <Send size={14} sm:size={18} />
+                      <Send size={18} />
                       <span>{submittingComment ? 'Sending...' : 'Send Comment'}</span>
                     </button>
                   </div>
@@ -245,42 +245,42 @@ const ReviewDetail = () => {
               </div>
             </form>
           ) : (
-            <div className="mb-6 sm:mb-8 p-3 sm:p-4 bg-gray-100 dark:bg-gray-800 rounded-lg text-center">
-              <p className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+            <div className="mb-8 p-4 bg-white dark:bg-black rounded-lg text-center border-2 border-black dark:border-white">
+              <p className="text-black dark:text-white">
                 Please <a href="/login" className="underline font-bold">login</a> to leave a comment
               </p>
             </div>
           )}
 
           {/* Comments List */}
-          <div className="space-y-4 sm:space-y-6">
+          <div className="space-y-6">
             {comments.length > 0 ? (
               comments.map(comment => (
-                <div key={comment.id} className="flex space-x-2 sm:space-x-4 p-3 sm:p-4 bg-white dark:bg-black rounded-lg border border-gray-200 dark:border-gray-800">
+                <div key={comment.id} className="flex space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                   {comment.authorPhotoURL ? (
                     <img
                       src={comment.authorPhotoURL}
                       alt={comment.author}
-                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full"
+                      className="w-10 h-10 rounded-full"
                     />
                   ) : (
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gray-600 dark:bg-gray-400 flex items-center justify-center text-white dark:text-black font-bold text-sm">
+                    <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
                       {comment.author?.charAt(0) || 'U'}
                     </div>
                   )}
                   <div className="flex-grow">
-                    <div className="flex items-center space-x-2 mb-1 sm:mb-2">
-                      <span className="font-bold text-gray-900 dark:text-white text-sm sm:text-base">{comment.author}</span>
-                      <span className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <span className="font-bold text-gray-900 dark:text-white">{comment.author}</span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">
                         {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}
                       </span>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">{comment.text}</p>
+                    <p className="text-gray-700 dark:text-gray-300">{comment.text}</p>
                   </div>
                 </div>
               ))
             ) : (
-              <div className="text-center py-6 sm:py-8 text-gray-500 dark:text-gray-400 text-sm sm:text-base">
+              <div className="text-center py-8 text-gray-500 dark:text-gray-400">
                 No comments yet. Be the first to comment!
               </div>
             )}

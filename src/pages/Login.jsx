@@ -38,19 +38,19 @@ const Login = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black dark:bg-white flex items-center justify-center px-4 transition-all duration-300">
-      <div className="max-w-md w-full bg-white dark:bg-black rounded-2xl shadow-2xl p-6 sm:p-8 border border-gray-200 dark:border-gray-800">
+    <div className="min-h-screen bg-white dark:bg-black flex items-center justify-center px-4 transition-all duration-300">
+      <div className="max-w-md w-full bg-black dark:bg-white rounded-2xl shadow-2xl p-6 sm:p-8 border-2 border-black dark:border-white">
         <div className="text-center mb-6 sm:mb-8">
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-2">
+          <h1 className="text-2xl sm:text-3xl font-bold text-white dark:text-black mb-2">
             Welcome to ReviewNima
           </h1>
-          <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
+          <p className="text-gray-300 dark:text-gray-700 text-sm sm:text-base">
             Sign in to access features and leave comments
           </p>
         </div>
 
         {error && (
-          <div className="mb-4 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 rounded-lg">
+          <div className="mb-4 p-4 bg-red-900 dark:bg-red-100 border border-red-700 dark:border-red-300 text-red-100 dark:text-red-900 rounded-lg">
             {error}
           </div>
         )}
@@ -58,7 +58,7 @@ const Login = () => {
         <button
           onClick={handleGoogleLogin}
           disabled={isLoggingIn}
-          className="w-full flex items-center justify-center space-x-3 bg-white dark:bg-black border-2 border-gray-300 dark:border-gray-700 hover:border-gray-500 dark:hover:border-gray-500 text-gray-900 dark:text-white font-medium py-2 sm:py-3 px-4 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105"
+          className="w-full flex items-center justify-center space-x-3 bg-white dark:bg-black border-2 border-gray-300 dark:border-gray-700 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105"
         >
           {isLoggingIn ? (
             <>
@@ -90,7 +90,7 @@ const Login = () => {
           )}
         </button>
 
-        <div className="mt-6 text-center text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+        <div className="mt-6 text-center text-xs sm:text-sm text-gray-400 dark:text-gray-600">
           <p>By signing in, you agree to our terms and conditions</p>
         </div>
       </div>

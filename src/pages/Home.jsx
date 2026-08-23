@@ -39,19 +39,19 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-black transition-all duration-300">
       {/* Hero Section */}
-      <div className="bg-black dark:bg-white text-white dark:text-black py-12 sm:py-20 border-b border-gray-800 dark:border-gray-200">
+      <div className="bg-black dark:bg-white text-white dark:text-black py-12 sm:py-20 border-b-4 border-black dark:border-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-4">
-            <Sparkles size={24} sm:size={32} className="text-gray-400 dark:text-gray-600 animate-spin-slow" />
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-black dark:to-gray-800 animate-fade-in">
+            <Sparkles size={24} sm:size={32} className="text-white dark:text-black animate-spin-slow" />
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white dark:text-black animate-fade-in">
               ReviewNima
             </h1>
-            <Sparkles size={24} sm:size={32} className="text-gray-400 dark:text-gray-600 animate-spin-slow" />
+            <Sparkles size={24} sm:size={32} className="text-white dark:text-black animate-spin-slow" />
           </div>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-400 dark:text-gray-600 mb-6 sm:mb-8">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 dark:text-gray-700 mb-6 sm:mb-8">
             Discover Amazing Anime Reviews & Insights
           </p>
-          <div className="flex items-center justify-center space-x-2 text-gray-500 dark:text-gray-500">
+          <div className="flex items-center justify-center space-x-2 text-gray-400 dark:text-gray-600">
             <TrendingUp size={16} sm:size={20} />
             <span className="text-sm sm:text-base">Personal reviews from a true anime enthusiast</span>
           </div>
@@ -60,26 +60,26 @@ const Home = () => {
 
       {/* Popular Anime Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8 flex items-center">
-          <TrendingUp className="mr-3 text-gray-600 dark:text-gray-400" size={24} sm:size={32} />
-          Popular Anime This Season
+        <h2 className="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-6 sm:mb-8 flex items-center">
+          <TrendingUp className="mr-3 text-black dark:text-white" size={24} sm:size={32} />
+          Top Rated Anime of All Time
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
           {popularAnime.map((anime) => (
-            <div key={anime.id} className="bg-gray-50 dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-200 dark:border-gray-800">
-              {anime.coverImage?.medium && (
+            <div key={anime.id} className="bg-white dark:bg-black rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-gray-200 dark:border-gray-800">
+              {anime.coverImage?.extraLarge && (
                 <img
-                  src={anime.coverImage.medium}
+                  src={anime.coverImage.extraLarge}
                   alt={anime.title.english || anime.title.romaji}
                   className="w-full h-32 sm:h-40 object-cover"
                 />
               )}
               <div className="p-2 sm:p-3">
-                <h3 className="font-semibold text-xs sm:text-sm text-gray-900 dark:text-white line-clamp-2">
+                <h3 className="font-semibold text-xs sm:text-sm text-black dark:text-white line-clamp-2">
                   {anime.title.english || anime.title.romaji}
                 </h3>
-                <div className="flex items-center mt-2 text-xs text-gray-500 dark:text-gray-400">
-                  <span className="bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded">
+                <div className="flex items-center mt-2 text-xs text-gray-600 dark:text-gray-400">
+                  <span className="bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded font-bold">
                     ★ {anime.averageScore ? (anime.averageScore / 10).toFixed(1) : 'N/A'}
                   </span>
                 </div>
@@ -91,7 +91,7 @@ const Home = () => {
 
       {/* Latest Reviews Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-6 sm:mb-8">
           Latest Reviews
         </h2>
         {reviews.length > 0 ? (
@@ -101,8 +101,8 @@ const Home = () => {
             ))}
           </div>
         ) : (
-          <div className="text-center py-12 sm:py-16 bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-800">
-            <p className="text-gray-500 dark:text-gray-400 text-base sm:text-lg">
+          <div className="text-center py-12 sm:py-16 bg-white dark:bg-black rounded-xl shadow-lg border-2 border-black dark:border-white">
+            <p className="text-black dark:text-white text-base sm:text-lg">
               No reviews yet. Check back soon!
             </p>
           </div>
@@ -110,13 +110,13 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="bg-gray-50 dark:bg-gray-900 py-12 sm:py-16 border-t border-gray-200 dark:border-gray-800">
+      <div className="bg-white dark:bg-black py-12 sm:py-16 border-t-2 border-black dark:border-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-4">
               About ReviewNima
             </h2>
-            <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-base sm:text-lg">
+            <p className="text-gray-700 dark:text-gray-300 max-w-3xl mx-auto text-base sm:text-lg">
               Welcome to my personal anime review website! Here I share my thoughts and insights 
               on the anime I've watched. Each review comes from my personal experience and 
               perspective. Feel free to browse through my reviews and leave comments if you're 
