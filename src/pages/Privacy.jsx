@@ -91,7 +91,7 @@ const Privacy = () => {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Contact Us</h2>
             <p className="text-gray-600 dark:text-gray-400">
-              If you have questions about this Privacy Policy, please contact us at privacy@reviewnima.com
+              If you have questions about this Privacy Policy, please contact us at morvissenter@gmail.com
             </p>
           </div>
         </div>
