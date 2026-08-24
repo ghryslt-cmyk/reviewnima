@@ -65,27 +65,27 @@ const News = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
       {/* Header */}
-      <div className="bg-gradient-to-r from-purple-600 to-blue-600 py-12 xs:py-16 sm:py-20">
+      <div className="bg-gray-900 dark:bg-white py-12 xs:py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <Newspaper className="text-white" size={32} xs:size={36} sm:size={40} />
-                <h1 className="text-3xl xs:text-4xl sm:text-5xl font-bold text-white">
+                <Newspaper className="text-white dark:text-gray-900" size={32} xs:size={36} sm:size={40} />
+                <h1 className="text-3xl xs:text-4xl sm:text-5xl font-bold text-white dark:text-gray-900">
                   Anime News
                 </h1>
               </div>
-              <p className="text-white/90 text-base xs:text-lg sm:text-xl">
-                Latest anime news and updates from MyAnimeList
+              <p className="text-white/90 dark:text-gray-700 text-base xs:text-lg sm:text-xl">
+                Latest anime news and updates
               </p>
             </div>
             <button
               onClick={handleRefresh}
               disabled={refreshing}
-              className="p-3 bg-white/20 hover:bg-white/30 rounded-full transition-all duration-300 backdrop-blur-sm"
+              className="p-3 bg-white/20 dark:bg-gray-900/20 hover:bg-white/30 dark:hover:bg-gray-900/30 rounded-full transition-all duration-300 backdrop-blur-sm"
             >
               <RefreshCw 
-                className={`text-white ${refreshing ? 'animate-spin' : ''}`} 
+                className={`text-white dark:text-gray-900 ${refreshing ? 'animate-spin' : ''}`} 
                 size={24} 
               />
             </button>
@@ -105,7 +105,7 @@ const News = () => {
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all duration-300"
               >
                 {categories.map(category => (
                   <option key={category} value={category}>{category}</option>
@@ -120,7 +120,7 @@ const News = () => {
               <select
                 value={selectedSource}
                 onChange={(e) => setSelectedSource(e.target.value)}
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300"
+                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all duration-300"
               >
                 {sources.map(source => (
                   <option key={source} value={source}>{source}</option>
@@ -142,7 +142,7 @@ const News = () => {
                 className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200 dark:border-gray-700"
               >
                 {/* Thumbnail - Instagram style */}
-                <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-purple-100 to-blue-100 dark:from-gray-700 dark:to-gray-600">
+                <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600">
                   <img
                     src={item.thumbnail}
                     alt={item.title}
@@ -156,7 +156,7 @@ const News = () => {
                   
                   {/* Category badge */}
                   <div className="absolute top-3 left-3">
-                    <span className="px-3 py-1.5 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm text-purple-600 dark:text-purple-400 text-xs font-bold rounded-full shadow-lg">
+                    <span className="px-3 py-1.5 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm text-gray-900 dark:text-white text-xs font-bold rounded-full shadow-lg">
                       {item.category}
                     </span>
                   </div>
@@ -171,7 +171,7 @@ const News = () => {
 
                 {/* Content */}
                 <div className="p-4 xs:p-5">
-                  <h3 className="text-sm xs:text-base font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300 leading-tight">
+                  <h3 className="text-sm xs:text-base font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
                     {item.title}
                   </h3>
                   <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2 leading-relaxed">
@@ -185,7 +185,7 @@ const News = () => {
                         day: 'numeric'
                       })}
                     </div>
-                    <div className="flex items-center text-purple-600 dark:text-purple-400 font-medium group-hover:translate-x-1 transition-transform duration-300">
+                    <div className="flex items-center text-gray-900 dark:text-white font-medium group-hover:translate-x-1 transition-transform duration-300">
                       View
                       <ExternalLink size={12} className="ml-1" />
                     </div>

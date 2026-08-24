@@ -99,17 +99,17 @@ const Home = () => {
                           e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
                         }}
                       />
-                      <div className="absolute inset-0 bg-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="absolute inset-0 bg-gray-900/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div className="max-w-xs xs:max-w-sm sm:max-w-md">
-                      <p className="text-white text-xs xs:text-sm sm:text-base font-semibold line-clamp-1 group-hover:text-purple-300 transition-colors drop-shadow-sm">
+                      <p className="text-white text-xs xs:text-sm sm:text-base font-semibold line-clamp-1 group-hover:text-gray-300 transition-colors drop-shadow-sm">
                         {item.title}
                       </p>
                       <div className="flex items-center space-x-2 mt-1">
                         <span className="text-gray-300 text-xs line-clamp-1">
                           {item.sourceIcon} {item.source}
                         </span>
-                        <span className="text-purple-400 text-xs font-medium">
+                        <span className="text-gray-400 text-xs font-medium">
                           {item.category}
                         </span>
                       </div>

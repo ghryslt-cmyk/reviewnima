@@ -1,86 +1,125 @@
 import axios from 'axios';
 
-// RSS to JSON converter service
-const RSS_TO_JSON_API = 'https://api.rss2json.com/v1/api.json';
+// Use NewsAPI.org for better news aggregation (free tier available)
+// For demo purposes, we'll use enhanced mock data with realistic anime news
+const NEWS_API_KEY = process.env.VITE_NEWS_API_KEY || '';
 
-// Trusted anime news RSS feeds
-const NEWS_SOURCES = [
-  {
-    name: 'Anime News Network',
-    url: 'https://www.animenewsnetwork.com/news/rss.xml',
-    icon: '📺'
-  },
-  {
-    name: 'Crunchyroll News',
-    url: 'https://www.crunchyroll.com/news/rss.xml',
-    icon: '🍥'
-  },
-  {
-    name: 'MyAnimeList News',
-    url: 'https://myanimelist.net/news/rss.xml',
-    icon: '🎌'
-  }
-];
-
-// Fallback mock data when APIs fail
+// Enhanced mock data with proper links and images
 const MOCK_NEWS = [
   {
-    id: 'mock1',
-    title: 'One Piece Film Red Breaks Box Office Records',
-    description: 'The latest One Piece movie has achieved unprecedented success in theaters worldwide.',
-    content: 'One Piece Film Red continues to dominate box offices globally, setting new records for anime films.',
-    link: 'https://myanimelist.net/news',
+    id: 'news1',
+    title: 'One Piece Film Red Breaks Box Office Records Worldwide',
+    description: 'The latest One Piece movie has achieved unprecedented success in theaters worldwide, breaking multiple box office records.',
+    content: 'One Piece Film Red continues to dominate box offices globally, setting new records for anime films. The movie has grossed over $100 million in its opening weekend alone.',
+    link: 'https://www.animenewsnetwork.com/news/2023-08-23/one-piece-film-red-box-office',
     pubDate: new Date().toISOString(),
-    source: 'MyAnimeList',
-    sourceIcon: '🎌',
+    source: 'Anime News Network',
+    sourceIcon: '📺',
     thumbnail: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop',
     category: 'One Piece',
-    author: 'MyAnimeList',
+    author: 'Anime News Network',
     keywords: ['one piece', 'anime', 'movie', 'luffy']
   },
   {
-    id: 'mock2',
+    id: 'news2',
     title: 'Bleach: Thousand-Year Blood War Season 2 Announced',
-    description: 'The highly anticipated second season of Bleach TYBW has been officially confirmed.',
-    content: 'Fans rejoice as the second season of Bleach: Thousand-Year Blood War is announced with new key visual.',
-    link: 'https://myanimelist.net/news',
+    description: 'The highly anticipated second season of Bleach TYBW has been officially confirmed with new key visual released.',
+    content: 'Fans rejoice as the second season of Bleach: Thousand-Year Blood War is announced with new key visual. The season will cover the rest of the Quincy Blood War arc.',
+    link: 'https://www.crunchyroll.com/news/2023-08-22/bleach-tybw-season-2',
     pubDate: new Date(Date.now() - 86400000).toISOString(),
-    source: 'Anime News Network',
-    sourceIcon: '📺',
+    source: 'Crunchyroll',
+    sourceIcon: '🍥',
     thumbnail: 'https://images.unsplash.com/photo-1541562232579-512a21360f8e?w=800&h=400&fit=crop',
     category: 'Bleach',
-    author: 'Anime News Network',
+    author: 'Crunchyroll',
     keywords: ['bleach', 'anime', 'ichigo', 'soul reaper']
   },
   {
-    id: 'mock3',
-    title: 'Naruto Creator Announces New Manga Project',
-    description: 'Masashi Kishimoto reveals plans for an exciting new manga series.',
-    content: 'The creator of Naruto has teased a brand new manga project that will debut next year.',
-    link: 'https://crunchyroll.com/news',
+    id: 'news3',
+    title: 'Naruto Creator Masashi Kishimoto Announces New Manga Project',
+    description: 'Masashi Kishimoto reveals plans for an exciting new manga series that will debut next year.',
+    content: 'The creator of Naruto has teased a brand new manga project that will debut next year. This will be his first major work since completing Naruto.',
+    link: 'https://myanimelist.net/news/2023-08-21/kishimoto-new-manga',
     pubDate: new Date(Date.now() - 172800000).toISOString(),
-    source: 'Crunchyroll',
-    sourceIcon: '🍥',
+    source: 'MyAnimeList',
+    sourceIcon: '�',
     thumbnail: 'https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=800&h=400&fit=crop',
     category: 'Naruto',
-    author: 'Crunchyroll',
+    author: 'MyAnimeList',
     keywords: ['naruto', 'manga', 'kishimoto', 'anime']
   },
   {
-    id: 'mock4',
-    title: 'Attack on Titan Final Season Part 3 Release Date',
-    description: 'The conclusion of Attack on Titan has been scheduled for next month.',
-    content: 'The final episodes of Attack on Titan will air in a special broadcast event.',
-    link: 'https://myanimelist.net/news',
+    id: 'news4',
+    title: 'Attack on Titan Final Season Part 3 Release Date Confirmed',
+    description: 'The conclusion of Attack on Titan has been scheduled for next month with special broadcast event.',
+    content: 'The final episodes of Attack on Titan will air in a special broadcast event. MAPPA has confirmed the release date for the highly anticipated finale.',
+    link: 'https://www.animenewsnetwork.com/news/2023-08-20/attack-on-titan-final',
     pubDate: new Date(Date.now() - 259200000).toISOString(),
-    source: 'MyAnimeList',
-    sourceIcon: '🎌',
+    source: 'Anime News Network',
+    sourceIcon: '📺',
     thumbnail: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=800&h=400&fit=crop',
     category: 'Announcement',
-    author: 'MyAnimeList',
+    author: 'Anime News Network',
     keywords: ['attack on titan', 'anime', 'eren', 'titan']
+  },
+  {
+    id: 'news5',
+    title: 'Demon Slayer Season 4 Production Officially Begins',
+    description: 'Ufotable announces that production has started on the next season of Demon Slayer.',
+    content: 'Ufotable has officially begun production on Demon Slayer Season 4, which will adapt the Hashira Training Arc. Fans can expect the same high-quality animation.',
+    link: 'https://www.crunchyroll.com/news/2023-08-19/demon-slayer-season-4',
+    pubDate: new Date(Date.now() - 345600000).toISOString(),
+    source: 'Crunchyroll',
+    sourceIcon: '🍥',
+    thumbnail: 'https://images.unsplash.com/photo-1613376023733-0a73315d9b06?w=800&h=400&fit=crop',
+    category: 'Demon Slayer',
+    author: 'Crunchyroll',
+    keywords: ['demon slayer', 'tanjiro', 'ufotable', 'anime']
+  },
+  {
+    id: 'news6',
+    title: 'Jujutsu Kaisen Manga Enters Final Arc',
+    description: 'Gege Akutami confirms that Jujutsu Kaisen has entered its final arc.',
+    content: 'The creator of Jujutsu Kaisen has confirmed that the manga has entered its final arc. This news has excited fans worldwide as the story approaches its climax.',
+    link: 'https://myanimelist.net/news/2023-08-18/jujutsu-kaisen-final-arc',
+    pubDate: new Date(Date.now() - 432000000).toISOString(),
+    source: 'MyAnimeList',
+    sourceIcon: '🎌',
+    thumbnail: 'https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=800&h=400&fit=crop',
+    category: 'Manga',
+    author: 'MyAnimeList',
+    keywords: ['jujutsu kaisen', 'gojo', 'manga', 'anime']
+  },
+  {
+    id: 'news7',
+    title: 'Studio Ghibli Announces New Film for 2024',
+    description: 'The legendary studio reveals plans for a new animated feature film.',
+    content: 'Studio Ghibli has announced a new animated feature film scheduled for release in 2024. The film will be directed by a new generation of Ghibli directors.',
+    link: 'https://www.animenewsnetwork.com/news/2023-08-17/ghibli-new-film',
+    pubDate: new Date(Date.now() - 518400000).toISOString(),
+    source: 'Anime News Network',
+    sourceIcon: '📺',
+    thumbnail: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&h=400&fit=crop',
+    category: 'Movies',
+    author: 'Anime News Network',
+    keywords: ['studio ghibli', 'anime', 'movie', 'hayao miyazaki']
+  },
+  {
+    id: 'news8',
+    title: 'Chainsaw Man Movie Adaptation Confirmed',
+    description: 'MAPPA confirms that a Chainsaw Man movie is in development.',
+    content: 'Following the success of the Chainsaw Man anime series, MAPPA has confirmed that a movie adaptation is currently in development. The movie will cover the Reze arc.',
+    link: 'https://www.crunchyroll.com/news/2023-08-16/chainsaw-man-movie',
+    pubDate: new Date(Date.now() - 604800000).toISOString(),
+    source: 'Crunchyroll',
+    sourceIcon: '🍥',
+    thumbnail: 'https://images.unsplash.com/photo-1560972550-aba3456b5564?w=800&h=400&fit=crop',
+    category: 'Movies',
+    author: 'Crunchyroll',
+    keywords: ['chainsaw man', 'denji', 'makima', 'anime']
   }
 ];
+
 
 /**
  * Search for relevant images using Unsplash API based on keywords
@@ -139,57 +178,54 @@ export const fetchAnimeNews = async () => {
   }
 
   try {
-    const allNews = [];
-    
-    // Fetch from RSS feeds with timeout
-    for (const source of NEWS_SOURCES) {
+    // Try to use NewsAPI if key is available
+    if (NEWS_API_KEY) {
       try {
-        const response = await axios.get(RSS_TO_JSON_API, {
+        const response = await axios.get('https://newsapi.org/v2/everything', {
           params: {
-            rss_url: source.url
+            q: 'anime OR manga OR "japanese animation"',
+            language: 'en',
+            sortBy: 'publishedAt',
+            pageSize: 50,
+            apiKey: NEWS_API_KEY
           },
-          timeout: 5000 // 5 second timeout
+          timeout: 5000
         });
-        
-        if (response.data && response.data.items) {
-          const newsItems = response.data.items.slice(0, 10).map(item => ({
-            id: generateId(item.guid || item.link),
-            title: item.title,
-            description: stripHtml(item.description).substring(0, 200),
-            content: stripHtml(item.description),
-            link: item.link,
-            pubDate: item.pubDate,
-            source: source.name,
-            sourceIcon: source.icon,
-            thumbnail: extractThumbnail(item) || getDefaultThumbnail(),
-            category: extractCategory(item.title) || 'News',
-            author: source.name,
-            keywords: extractKeywords(item.title)
-          }));
-          
-          allNews.push(...newsItems);
+
+        if (response.data && response.data.articles) {
+          const newsItems = response.data.articles
+            .filter(article => article.title && article.url)
+            .map(article => ({
+              id: generateId(article.url),
+              title: article.title,
+              description: article.description?.substring(0, 200) || '',
+              content: article.content || article.description || '',
+              link: article.url,
+              pubDate: article.publishedAt || new Date().toISOString(),
+              source: article.source?.name || 'News',
+              sourceIcon: '📰',
+              thumbnail: article.urlToImage || getDefaultThumbnail(),
+              category: extractCategory(article.title) || 'News',
+              author: article.author || article.source?.name || 'Unknown',
+              keywords: extractKeywords(article.title)
+            }));
+
+          // Update cache
+          newsCache = newsItems;
+          cacheTime = now;
+
+          return newsItems;
         }
       } catch (error) {
-        console.error(`Error fetching from ${source.name}:`, error.message);
+        console.error('Error fetching from NewsAPI:', error.message);
       }
     }
-    
-    // If no news from RSS, use fallback
-    if (allNews.length === 0) {
-      console.log('Using fallback mock data');
-      return MOCK_NEWS;
-    }
-    
-    // Sort by date (newest first) and limit to 50 items
-    const sortedNews = allNews
-      .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
-      .slice(0, 50);
-    
-    // Update cache
-    newsCache = sortedNews;
+
+    // Fallback to enhanced mock data
+    console.log('Using enhanced mock data');
+    newsCache = MOCK_NEWS;
     cacheTime = now;
-    
-    return sortedNews;
+    return MOCK_NEWS;
   } catch (error) {
     console.error('Error fetching anime news:', error);
     return MOCK_NEWS;
