@@ -252,3 +252,62 @@ export const getNewsById = async (id) => {
   const allNews = await fetchAnimeNews();
   return allNews.find(item => item.id === id) || null;
 };
+
+/**
+ * Fetch seasonal anime banners from AniList API
+ * @returns {Promise<Array>} Array of banner image URLs from current season anime
+ */
+export const fetchSeasonalBanners = async () => {
+  const query = `
+    query {
+      Page(page: 1, perPage: 20) {
+        media(type: ANIME, sort: POPULARITY_DESC, status: RELEASING) {
+          bannerImage
+          coverImage {
+            extraLarge
+            large
+          }
+          season
+          seasonYear
+        }
+      }
+    }
+  `;
+
+  try {
+    const response = await axios.post(ANILIST_API_URL, { query });
+    const media = response.data.data.Page.media;
+    
+    // Extract banner images, fallback to cover images if banner is not available
+    const banners = media
+      .map(anime => anime.bannerImage || anime.coverImage.extraLarge || anime.coverImage.large)
+      .filter(Boolean);
+    
+    return banners;
+  } catch (error) {
+    console.error('Error fetching seasonal banners:', error);
+    return [];
+  }
+};
+
+// Cache for seasonal banners (1 hour)
+let bannerCache = null;
+let bannerCacheTime = 0;
+const BANNER_CACHE_DURATION = 60 * 60 * 1000; // 1 hour
+
+/**
+ * Fetch seasonal anime banners with caching
+ * @returns {Promise<Array>} Array of banner image URLs
+ */
+export const getSeasonalBanners = async () => {
+  const now = Date.now();
+  if (bannerCache && (now - bannerCacheTime) < BANNER_CACHE_DURATION) {
+    return bannerCache;
+  }
+
+  const banners = await fetchSeasonalBanners();
+  bannerCache = banners;
+  bannerCacheTime = now;
+  
+  return banners;
+};

@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { fetchAnimeNews } from '../lib/animeNews';
+import { fetchAnimeNews, getSeasonalBanners } from '../lib/animeNews';
 import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw, TrendingUp } from 'lucide-react';
 
 const News = () => {
   const [news, setNews] = useState([]);
   const [filteredNews, setFilteredNews] = useState([]);
+  const [seasonalBanners, setSeasonalBanners] = useState([]);
+  const [currentBannerIndex, setCurrentBannerIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedSource, setSelectedSource] = useState('All');
@@ -14,6 +16,17 @@ const News = () => {
   useEffect(() => {
     loadNews();
   }, []);
+
+  // Auto-rotate banners every 5 seconds
+  useEffect(() => {
+    if (seasonalBanners.length === 0) return;
+    
+    const interval = setInterval(() => {
+      setCurrentBannerIndex((prev) => (prev + 1) % seasonalBanners.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [seasonalBanners]);
 
   useEffect(() => {
     filterNews();
@@ -24,6 +37,10 @@ const News = () => {
       setLoading(true);
       const newsData = await fetchAnimeNews();
       setNews(newsData);
+
+      // Fetch seasonal banners
+      const banners = await getSeasonalBanners();
+      setSeasonalBanners(banners);
     } catch (error) {
       console.error('Error loading news:', error);
     } finally {
@@ -68,9 +85,25 @@ const News = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
-      {/* Header */}
-      <div className="bg-gray-900 dark:bg-white py-12 xs:py-16 sm:py-20">
-        <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
+      {/* Header with Banner Background */}
+      <div className="relative bg-gray-900 dark:bg-white py-12 xs:py-16 sm:py-20 overflow-hidden">
+        {/* Seasonal Banner Background */}
+        {seasonalBanners.length > 0 && (
+          <div className="absolute inset-0 z-0">
+            <img
+              src={seasonalBanners[currentBannerIndex]}
+              alt="Seasonal Anime Banner"
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                e.target.style.display = 'none';
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/95 via-gray-900/80 to-gray-900/60 dark:from-white/95 dark:via-white/80 dark:to-white/60"></div>
+          </div>
+        )}
+        
+        {/* Header Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div>
               <div className="flex items-center space-x-3 mb-4">

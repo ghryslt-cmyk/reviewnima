@@ -1,4 +1,4 @@
-import { Shield, Lock, Eye, Database } from 'lucide-react';
+import { Shield, Lock, Eye, Database, CreditCard } from 'lucide-react';
 
 const Privacy = () => {
   return (
@@ -85,6 +85,23 @@ const Privacy = () => {
                 <li>Request deletion of your account and data</li>
                 <li>Opt-out of certain data collection</li>
               </ul>
+            </div>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+            <div className="flex items-center space-x-3 mb-4">
+              <CreditCard className="text-purple-500" size={24} />
+              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Asset Credits</h2>
+            </div>
+            <div className="text-gray-600 dark:text-gray-400 space-y-3">
+              <p>We respect and credit all third-party assets used on this website:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Homepage Video:</strong> The background video on the homepage is sourced from YouTube user <a href="https://www.youtube.com/@monomogu" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 underline">monomogu</a>. Used with appreciation for their creative content.</li>
+                <li><strong>Anime Banners:</strong> Seasonal anime banners displayed on the homepage are sourced from AniList API. All anime images and banners remain the property of their respective copyright holders and are used for informational purposes.</li>
+                <li><strong>Anime Information:</strong> Anime data including titles, descriptions, and metadata are sourced from AniList API. All anime content remains the property of their respective creators and studios.</li>
+                <li><strong>Icons:</strong> UI icons are provided by Lucide React under the MIT License.</li>
+              </ul>
+              <p className="text-sm italic">If you are the owner of any asset used on this website and have concerns about its use, please contact us immediately.</p>
             </div>
           </div>
 
