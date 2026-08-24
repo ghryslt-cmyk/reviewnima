@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
       {/* Hero Section */}
-      <div className="relative min-h-[400px] xs:min-h-[450px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-start justify-center pt-12 xs:pt-16 sm:pt-20 md:pt-24 overflow-hidden xl:mx-64">
+      <div className="relative min-h-[350px] xs:min-h-[400px] sm:min-h-[450px] md:min-h-[500px] lg:min-h-[600px] flex items-start justify-center pt-12 xs:pt-16 sm:pt-20 md:pt-24 overflow-hidden xl:mx-64">
         {/* Video Background */}
         <div className="absolute inset-0 z-0">
           <video
@@ -79,7 +79,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* News Carousel - Moving Right to Left */}
+        {/* News Carousel - Moving Right to Left (Desktop) */}
         {news.length > 0 && (
           <div className="hidden xl:block absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/90 via-black/70 to-transparent border-t border-white/20">
             <div className="py-4 overflow-hidden">
@@ -120,49 +120,49 @@ const Home = () => {
             </div>
           </div>
         )}
-      </div>
 
-      {/* News Carousel - Mobile Only */}
-      {news.length > 0 && (
-        <div className="xl:hidden relative bg-black/80 border-t border-white/20">
-          <div className="py-4 overflow-hidden">
-            <div className="flex animate-marquee whitespace-nowrap">
-              {[...news, ...news].map((item, index) => (
-                <Link
-                  key={`${item.id}-${index}`}
-                  to={`/news/${item.id}`}
-                  className="flex items-center space-x-3 mx-4 group flex-shrink-0 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-xl p-2 transition-all duration-300 hover:scale-105 border border-white/20 hover:border-white/40"
-                >
-                  <div className="relative w-14 h-14 xs:w-16 xs:h-16 sm:w-20 sm:h-20 flex-shrink-0">
-                    <img
-                      src={item.thumbnail}
-                      alt={item.title}
-                      className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500"
-                      onError={(e) => {
-                        e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-gray-900/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                  <div className="max-w-xs xs:max-w-sm sm:max-w-md">
-                    <p className="text-white text-xs xs:text-sm sm:text-base font-semibold line-clamp-1 group-hover:text-gray-300 transition-colors drop-shadow-sm">
-                      {item.title}
-                    </p>
-                    <div className="flex items-center space-x-2 mt-1">
-                      <span className="text-gray-300 text-xs line-clamp-1">
-                        {item.sourceIcon} {item.source}
-                      </span>
-                      <span className="text-gray-400 text-xs font-medium">
-                        {item.category}
-                      </span>
+        {/* News Carousel - Mobile Only (on top of video) */}
+        {news.length > 0 && (
+          <div className="xl:hidden absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/90 via-black/70 to-transparent border-t border-white/20">
+            <div className="py-4 overflow-hidden">
+              <div className="flex animate-marquee whitespace-nowrap">
+                {[...news, ...news].map((item, index) => (
+                  <Link
+                    key={`${item.id}-${index}`}
+                    to={`/news/${item.id}`}
+                    className="flex items-center space-x-3 mx-4 group flex-shrink-0 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-xl p-2 transition-all duration-300 hover:scale-105 border border-white/20 hover:border-white/40"
+                  >
+                    <div className="relative w-14 h-14 xs:w-16 xs:h-16 sm:w-20 sm:h-20 flex-shrink-0">
+                      <img
+                        src={item.thumbnail}
+                        alt={item.title}
+                        className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500"
+                        onError={(e) => {
+                          e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-gray-900/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                  </div>
-                </Link>
-              ))}
+                    <div className="max-w-xs xs:max-w-sm sm:max-w-md">
+                      <p className="text-white text-xs xs:text-sm sm:text-base font-semibold line-clamp-1 group-hover:text-gray-300 transition-colors drop-shadow-sm">
+                        {item.title}
+                      </p>
+                      <div className="flex items-center space-x-2 mt-1">
+                        <span className="text-gray-300 text-xs line-clamp-1">
+                          {item.sourceIcon} {item.source}
+                        </span>
+                        <span className="text-gray-400 text-xs font-medium">
+                          {item.category}
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
       {/* Top Rated Reviews Section */}
       <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-8 xs:py-10 sm:py-12 md:py-20 xl:mx-64">
