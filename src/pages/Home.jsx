@@ -21,9 +21,9 @@ const Home = () => {
         const sortedByRating = [...reviewsData].sort((a, b) => (b.rating || 0) - (a.rating || 0));
         setTopRatedReviews(sortedByRating.slice(0, 6));
 
-        // Fetch trending content
+        // Fetch news
         const newsData = await fetchAnimeNews();
-        setNews(newsData.slice(0, 8)); // Get top 8 trending posts
+        setNews(newsData.slice(0, 8)); // Get latest 8 news items
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
