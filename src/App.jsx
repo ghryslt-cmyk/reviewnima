@@ -18,7 +18,7 @@ import SeasonalSidebars from './components/SeasonalSidebars';
 function AppContent() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <div className="relative z-10 shadow-[8px_0_32px_rgba(0,0,0,0.8),-8px_0_32px_rgba(0,0,0,0.8)] dark:shadow-[8px_0_32px_rgba(0,0,0,0.9),-8px_0_32px_rgba(0,0,0,0.9)]">
+      <div className="relative z-10">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
