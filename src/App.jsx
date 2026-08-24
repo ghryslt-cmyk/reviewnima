@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -15,30 +15,41 @@ import News from './pages/News';
 import NewsDetail from './pages/NewsDetail';
 import SeasonalSidebars from './components/SeasonalSidebars';
 
+function AppContent() {
+  const location = useLocation();
+  const isReviewsPage = location.pathname === '/reviews';
+  const isTopFavoritesPage = location.pathname === '/top-favorites';
+  const disableAnimation = isReviewsPage || isTopFavoritesPage;
+
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
+      <SeasonalSidebars disableAnimation={disableAnimation} />
+      <div className="relative z-10">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/review/:id" element={<ReviewDetail />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/news/:id" element={<NewsDetail />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/top-favorites" element={<TopFavorites />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+        </Routes>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
-          <SeasonalSidebars />
-          <div className="relative z-10">
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/reviews" element={<Reviews />} />
-              <Route path="/review/:id" element={<ReviewDetail />} />
-              <Route path="/news" element={<News />} />
-              <Route path="/news/:id" element={<NewsDetail />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/admin" element={<Admin />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/top-favorites" element={<TopFavorites />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/privacy" element={<Privacy />} />
-              <Route path="/terms" element={<Terms />} />
-            </Routes>
-          </div>
-        </div>
+        <AppContent />
       </Router>
     </AuthProvider>
   );

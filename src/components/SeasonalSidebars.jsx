@@ -1,44 +1,31 @@
 import { useState, useEffect } from 'react';
 import { getSeasonalBanners } from '../lib/animeNews';
 
-const SeasonalSidebars = () => {
+const SeasonalSidebars = ({ disableAnimation = false }) => {
   const [seasonalBanners, setSeasonalBanners] = useState([]);
-  const [currentLeftIndex, setCurrentLeftIndex] = useState(0);
-  const [currentRightIndex, setCurrentRightIndex] = useState(0);
+  const [currentSeason, setCurrentSeason] = useState('');
 
   useEffect(() => {
     const loadBanners = async () => {
       try {
         const banners = await getSeasonalBanners();
         setSeasonalBanners(banners);
+        
+        // Determine current season
+        const month = new Date().getMonth();
+        let season = '';
+        if (month >= 2 && month <= 4) season = 'Spring';
+        else if (month >= 5 && month <= 7) season = 'Summer';
+        else if (month >= 8 && month <= 10) season = 'Fall';
+        else season = 'Winter';
+        
+        setCurrentSeason(season);
       } catch (error) {
         console.error('Error loading seasonal banners:', error);
       }
     };
     loadBanners();
   }, []);
-
-  // Auto-rotate left sidebar every 8 seconds
-  useEffect(() => {
-    if (seasonalBanners.length === 0) return;
-    
-    const interval = setInterval(() => {
-      setCurrentLeftIndex((prev) => (prev + 1) % seasonalBanners.length);
-    }, 8000);
-
-    return () => clearInterval(interval);
-  }, [seasonalBanners]);
-
-  // Auto-rotate right sidebar every 8 seconds (offset from left)
-  useEffect(() => {
-    if (seasonalBanners.length === 0) return;
-    
-    const interval = setInterval(() => {
-      setCurrentRightIndex((prev) => (prev + 1) % seasonalBanners.length);
-    }, 8000);
-
-    return () => clearInterval(interval);
-  }, [seasonalBanners]);
 
   if (seasonalBanners.length === 0) {
     return null;
@@ -48,49 +35,81 @@ const SeasonalSidebars = () => {
     <>
       {/* Left Sidebar - Desktop Only */}
       <div className="hidden xl:block fixed left-0 top-0 bottom-0 w-64 z-0">
-        <div className="relative h-full bg-gray-900 dark:bg-black">
-          {seasonalBanners.length > 0 && (
-            <>
-              <div className="absolute inset-0">
+        <div className="relative h-full bg-gray-300 dark:bg-gray-800" style={{
+          backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px)',
+          backgroundSize: '20px 20px'
+        }}>
+          {/* Floating Anime Cards - Vertical Stack */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-8 py-12 overflow-hidden">
+            {seasonalBanners.slice(0, 5).map((banner, index) => (
+              <div
+                key={index}
+                className={`relative w-48 h-72 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 ${!disableAnimation ? 'animate-float' : ''}`}
+                style={{
+                  animationDuration: !disableAnimation ? `${3 + index * 0.5}s` : undefined,
+                  animationDelay: !disableAnimation ? `${index * 0.2}s` : undefined
+                }}
+              >
                 <img
-                  src={seasonalBanners[currentLeftIndex]}
-                  alt="Seasonal Anime Left"
-                  className="w-full h-full object-cover opacity-40"
+                  src={banner}
+                  alt={`Seasonal Anime ${index + 1}`}
+                  className="w-full h-full object-cover rounded-lg"
                   onError={(e) => {
                     e.target.style.display = 'none';
                   }}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg"></div>
+                <div className="absolute bottom-2 left-2 right-2">
+                  <span className="text-white text-xs font-semibold bg-black/50 px-2 py-1 rounded">
+                    {currentSeason} {index + 1}
+                  </span>
+                </div>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-gray-900/90"></div>
-            </>
-          )}
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Right Sidebar - Desktop Only */}
       <div className="hidden xl:block fixed right-0 top-0 bottom-0 w-64 z-0">
-        <div className="relative h-full bg-gray-900 dark:bg-black">
-          {seasonalBanners.length > 0 && (
-            <>
-              <div className="absolute inset-0">
+        <div className="relative h-full bg-gray-300 dark:bg-gray-800" style={{
+          backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px)',
+          backgroundSize: '20px 20px'
+        }}>
+          {/* Floating Anime Cards - Vertical Stack (Reversed) */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-8 py-12 overflow-hidden">
+            {seasonalBanners.slice(5, 10).reverse().map((banner, index) => (
+              <div
+                key={index}
+                className={`relative w-48 h-72 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 ${!disableAnimation ? 'animate-float' : ''}`}
+                style={{
+                  animationDuration: !disableAnimation ? `${3 + index * 0.5}s` : undefined,
+                  animationDelay: !disableAnimation ? `${index * 0.2}s` : undefined
+                }}
+              >
                 <img
-                  src={seasonalBanners[currentRightIndex]}
-                  alt="Seasonal Anime Right"
-                  className="w-full h-full object-cover opacity-40"
+                  src={banner}
+                  alt={`Seasonal Anime ${index + 1}`}
+                  className="w-full h-full object-cover rounded-lg"
                   onError={(e) => {
                     e.target.style.display = 'none';
                   }}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg"></div>
+                <div className="absolute bottom-2 left-2 right-2">
+                  <span className="text-white text-xs font-semibold bg-black/50 px-2 py-1 rounded">
+                    {currentSeason} {index + 6}
+                  </span>
+                </div>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-l from-gray-900/90 via-gray-900/70 to-gray-900/90"></div>
-            </>
-          )}
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Center Content Indicator Line - Desktop Only */}
       <div className="hidden xl:block fixed left-64 right-64 top-0 bottom-0 z-0 pointer-events-none">
-        <div className="h-full border-l border-r border-gray-300 dark:border-gray-700 opacity-30"></div>
+        <div className="h-full border-l border-r border-gray-400 dark:border-gray-600 opacity-50"></div>
       </div>
     </>
   );
