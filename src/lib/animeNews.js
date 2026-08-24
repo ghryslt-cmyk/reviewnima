@@ -188,10 +188,10 @@ function extractKeywords(title) {
   ).slice(0, 3);
 }
 
-// Cache for news data (5 minutes)
+// Cache for news data (10 minutes for better performance)
 let newsCache = null;
 let cacheTime = 0;
-const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+const CACHE_DURATION = 10 * 60 * 1000; // 10 minutes
 
 /**
  * Fetch anime news from RSS feeds with caching and fallback
@@ -207,20 +207,20 @@ export const fetchAnimeNews = async () => {
   try {
     const allNews = [];
     
-    // Fetch trending anime
+    // Fetch trending anime (increase to 15)
     const trendingAnime = await fetchTrendingAnime();
     const trendingNews = trendingAnime.map(anime => convertAnimeToNews(anime, 'Trending'));
-    allNews.push(...trendingNews.slice(0, 5));
+    allNews.push(...trendingNews.slice(0, 15));
     
-    // Fetch currently airing anime
+    // Fetch currently airing anime (increase to 15)
     const airingAnime = await fetchAiringAnime();
     const airingNews = airingAnime.map(anime => convertAnimeToNews(anime, 'Now Airing'));
-    allNews.push(...airingNews.slice(0, 5));
+    allNews.push(...airingNews.slice(0, 15));
     
-    // Sort by date (newest first) and limit to 10 items
+    // Sort by date (newest first) and limit to 30 items
     const sortedNews = allNews
       .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
-      .slice(0, 10);
+      .slice(0, 30);
     
     // Update cache
     newsCache = sortedNews;

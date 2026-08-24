@@ -3,7 +3,8 @@ import { Star, Calendar } from 'lucide-react';
 
 const ReviewCard = ({ review }) => {
   const animeTitle = review.animeData?.title?.english || review.animeData?.title?.romaji || 'Unknown';
-  const coverImage = review.animeData?.coverImage?.large || review.animeData?.coverImage?.medium;
+  // Use highest quality image available: extraLarge > large > medium
+  const coverImage = review.animeData?.coverImage?.extraLarge || review.animeData?.coverImage?.large || review.animeData?.coverImage?.medium;
   const rating = review.rating || 0;
 
   return (
