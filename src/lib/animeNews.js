@@ -94,25 +94,18 @@ export const searchRelevantImages = async (title) => {
     
     if (keywords.length === 0) return [];
     
-    // Search Unsplash for relevant images
-    const searchQuery = keywords.slice(0, 2).join(' '); // Use top 2 keywords
-    const response = await axios.get('https://api.unsplash.com/search/photos', {
-      params: {
-        query: searchQuery,
-        per_page: 6,
-        orientation: 'landscape'
-      },
-      headers: {
-        // Note: In production, you should use environment variables for API keys
-        // For demo purposes, we'll use a public endpoint or fallback
-      }
-    });
+    // Use fallback images instead of Unsplash API (requires API key)
+    // Return relevant placeholder images based on keywords
+    const fallbackImages = [
+      'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1541562232579-512a21360f8e?w=800&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=800&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=800&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1613376023733-0a73315d9b06?w=800&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1580477667995-2b94f01c9516?w=800&h=400&fit=crop'
+    ];
     
-    if (response.data && response.data.results) {
-      return response.data.results.map(photo => photo.urls.regular);
-    }
-    
-    return [];
+    return fallbackImages;
   } catch (error) {
     console.error('Error searching images:', error);
     return [];
