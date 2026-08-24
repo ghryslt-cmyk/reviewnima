@@ -134,30 +134,36 @@ const News = () => {
       {/* News Grid */}
       <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 pb-12">
         {filteredNews.length > 0 ? (
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 xs:gap-8">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-6">
             {filteredNews.map((item) => (
               <Link
                 key={item.id}
                 to={`/news/${item.id}`}
-                className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-200 dark:border-gray-700"
+                className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200 dark:border-gray-700"
               >
-                {/* Thumbnail */}
-                <div className="relative h-48 xs:h-56 overflow-hidden">
+                {/* Thumbnail - Instagram style */}
+                <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-purple-100 to-blue-100 dark:from-gray-700 dark:to-gray-600">
                   <img
                     src={item.thumbnail}
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     onError={(e) => {
                       e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
                     }}
                   />
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  {/* Category badge */}
                   <div className="absolute top-3 left-3">
-                    <span className="px-3 py-1 bg-purple-600 text-white text-xs font-medium rounded-full backdrop-blur-sm">
+                    <span className="px-3 py-1.5 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm text-purple-600 dark:text-purple-400 text-xs font-bold rounded-full shadow-lg">
                       {item.category}
                     </span>
                   </div>
+                  
+                  {/* Source badge */}
                   <div className="absolute top-3 right-3">
-                    <span className="px-3 py-1 bg-black/50 text-white text-xs font-medium rounded-full backdrop-blur-sm flex items-center">
+                    <span className="px-3 py-1.5 bg-black/50 backdrop-blur-sm text-white text-xs font-medium rounded-full flex items-center shadow-lg">
                       {item.sourceIcon} {item.source}
                     </span>
                   </div>
@@ -165,24 +171,23 @@ const News = () => {
 
                 {/* Content */}
                 <div className="p-4 xs:p-5">
-                  <h3 className="text-base xs:text-lg font-semibold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
+                  <h3 className="text-sm xs:text-base font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300 leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
+                  <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2 leading-relaxed">
                     {item.description}
                   </p>
                   <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
                     <div className="flex items-center">
-                      <Calendar size={14} className="mr-1" />
+                      <Calendar size={12} className="mr-1" />
                       {new Date(item.pubDate).toLocaleDateString('en-US', {
                         month: 'short',
-                        day: 'numeric',
-                        year: 'numeric'
+                        day: 'numeric'
                       })}
                     </div>
-                    <div className="flex items-center text-purple-600 dark:text-purple-400 group-hover:translate-x-1 transition-transform duration-300">
-                      Read More
-                      <ExternalLink size={14} className="ml-1" />
+                    <div className="flex items-center text-purple-600 dark:text-purple-400 font-medium group-hover:translate-x-1 transition-transform duration-300">
+                      View
+                      <ExternalLink size={12} className="ml-1" />
                     </div>
                   </div>
                 </div>

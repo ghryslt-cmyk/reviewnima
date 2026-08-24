@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { fetchAnimeNews } from '../lib/animeNews';
-import { ArrowLeft, Calendar, ExternalLink, Share2, Newspaper } from 'lucide-react';
+import { fetchAnimeNews, searchRelevantImages } from '../lib/animeNews';
+import { ArrowLeft, Calendar, ExternalLink, Share2, Newspaper, MessageCircle, Send, User as UserIcon } from 'lucide-react';
 
 const NewsDetail = () => {
   const { id } = useParams();
   const [newsItem, setNewsItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [relatedNews, setRelatedNews] = useState([]);
+  const [relevantImages, setRelevantImages] = useState([]);
+  const [comments, setComments] = useState([]);
+  const [newComment, setNewComment] = useState('');
+  const [loadingImages, setLoadingImages] = useState(false);
 
   useEffect(() => {
     loadNewsDetail();
@@ -27,6 +31,12 @@ const NewsDetail = () => {
           .filter(news => news.category === item.category && news.id !== id)
           .slice(0, 4);
         setRelatedNews(related);
+        
+        // Search for relevant images
+        loadRelevantImages(item.title);
+        
+        // Load comments from localStorage (demo purposes)
+        loadComments(id);
       }
     } catch (error) {
       console.error('Error loading news detail:', error);
@@ -35,22 +45,40 @@ const NewsDetail = () => {
     }
   };
 
-  const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: newsItem.title,
-          text: newsItem.description,
-          url: newsItem.link
-        });
-      } catch (error) {
-        console.error('Error sharing:', error);
-      }
-    } else {
-      // Fallback: copy to clipboard
-      navigator.clipboard.writeText(newsItem.link);
-      alert('Link copied to clipboard!');
+  const loadRelevantImages = async (title) => {
+    setLoadingImages(true);
+    try {
+      const images = await searchRelevantImages(title);
+      setRelevantImages(images);
+    } catch (error) {
+      console.error('Error loading relevant images:', error);
+    } finally {
+      setLoadingImages(false);
     }
+  };
+
+  const loadComments = (newsId) => {
+    const storedComments = localStorage.getItem(`news_comments_${newsId}`);
+    if (storedComments) {
+      setComments(JSON.parse(storedComments));
+    }
+  };
+
+  const handleAddComment = () => {
+    if (!newComment.trim()) return;
+    
+    const comment = {
+      id: Date.now(),
+      text: newComment,
+      author: 'Anonymous User',
+      timestamp: new Date().toISOString(),
+      avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${Date.now()}`
+    };
+    
+    const updatedComments = [...comments, comment];
+    setComments(updatedComments);
+    localStorage.setItem(`news_comments_${id}`, JSON.stringify(updatedComments));
+    setNewComment('');
   };
 
   if (loading) {
@@ -95,9 +123,9 @@ const NewsDetail = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Article */}
           <div className="lg:col-span-2">
-            <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700">
+            <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700">
               {/* Hero Image */}
-              <div className="relative h-64 xs:h-80 sm:h-96 overflow-hidden">
+              <div className="relative aspect-[16/9] xs:aspect-[2/1] sm:aspect-[21/9] overflow-hidden bg-gradient-to-br from-purple-100 to-blue-100 dark:from-gray-700 dark:to-gray-600">
                 <img
                   src={newsItem.thumbnail}
                   alt={newsItem.title}
@@ -106,30 +134,31 @@ const NewsDetail = () => {
                     e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
                   }}
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                  <span className="inline-block px-3 py-1 bg-purple-600 text-white text-sm font-medium rounded-full mb-3">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 xs:p-8">
+                  <span className="inline-block px-4 py-2 bg-purple-600 text-white text-sm font-bold rounded-full mb-3 shadow-lg backdrop-blur-sm">
                     {newsItem.category}
                   </span>
                 </div>
               </div>
 
               {/* Article Content */}
-              <div className="p-6 xs:p-8">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-2">
-                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium rounded-full flex items-center">
+              <div className="p-6 xs:p-8 sm:p-10">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center space-x-3">
+                    <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 text-sm font-bold rounded-full flex items-center">
                       {newsItem.sourceIcon} {newsItem.source}
                     </span>
                   </div>
                   <button
                     onClick={handleShare}
-                    className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors duration-300"
+                    className="p-2 hover:bg-purple-100 dark:hover:bg-purple-900/30 rounded-full transition-colors duration-300"
                   >
-                    <Share2 size={20} className="text-gray-600 dark:text-gray-400" />
+                    <Share2 size={20} className="text-purple-600 dark:text-purple-400" />
                   </button>
                 </div>
 
-                <h1 className="text-2xl xs:text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                <h1 className="text-2xl xs:text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
                   {newsItem.title}
                 </h1>
 
@@ -153,14 +182,116 @@ const NewsDetail = () => {
                   />
                 </div>
 
+                {/* Image Collage Section */}
+                {relevantImages.length > 0 && (
+                  <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                      <Newspaper className="mr-2 text-purple-600 dark:text-purple-400" size={20} />
+                      Related Images
+                    </h3>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                      {relevantImages.map((image, index) => (
+                        <div
+                          key={index}
+                          className={`relative overflow-hidden rounded-lg ${
+                            index === 0 ? 'col-span-2 sm:col-span-3 row-span-2' : ''
+                          }`}
+                        >
+                          <img
+                            src={image}
+                            alt={`Related image ${index + 1}`}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Comments Section */}
+                <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                    <MessageCircle className="mr-2 text-purple-600 dark:text-purple-400" size={20} />
+                    Comments ({comments.length})
+                  </h3>
+                  
+                  {/* Add Comment Form */}
+                  <div className="mb-6">
+                    <div className="flex gap-3">
+                      <div className="flex-shrink-0">
+                        <UserIcon className="w-10 h-10 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full p-2" />
+                      </div>
+                      <div className="flex-1">
+                        <textarea
+                          value={newComment}
+                          onChange={(e) => setNewComment(e.target.value)}
+                          placeholder="Add a comment..."
+                          className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none transition-all duration-300"
+                          rows="3"
+                        />
+                        <div className="flex justify-end mt-2">
+                          <button
+                            onClick={handleAddComment}
+                            disabled={!newComment.trim()}
+                            className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                          >
+                            <Send size={16} className="mr-2" />
+                            Post Comment
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Comments List */}
+                  {comments.length > 0 ? (
+                    <div className="space-y-4">
+                      {comments.map((comment) => (
+                        <div key={comment.id} className="flex gap-3 bg-gray-50 dark:bg-gray-700/30 rounded-xl p-4">
+                          <img
+                            src={comment.avatar}
+                            alt={comment.author}
+                            className="w-10 h-10 rounded-full flex-shrink-0"
+                          />
+                          <div className="flex-1">
+                            <div className="flex items-center gap-2 mb-1">
+                              <span className="font-semibold text-gray-900 dark:text-white text-sm">
+                                {comment.author}
+                              </span>
+                              <span className="text-xs text-gray-500 dark:text-gray-400">
+                                {new Date(comment.timestamp).toLocaleDateString('en-US', {
+                                  month: 'short',
+                                  day: 'numeric',
+                                  hour: '2-digit',
+                                  minute: '2-digit'
+                                })}
+                              </span>
+                            </div>
+                            <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                              {comment.text}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-gray-500 dark:text-gray-400 text-sm text-center py-4">
+                      No comments yet. Be the first to comment!
+                    </p>
+                  )}
+                </div>
+
                 <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
                   <a
                     href={newsItem.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-lg transition-all duration-300 hover:scale-105"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
                   >
-                    Read Full Article on MyAnimeList
+                    Read Full Article
                     <ExternalLink size={18} className="ml-2" />
                   </a>
                 </div>
@@ -170,8 +301,9 @@ const NewsDetail = () => {
 
           {/* Sidebar - Related News */}
           <div className="lg:col-span-1">
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700 sticky top-4">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 border border-gray-200 dark:border-gray-700 sticky top-4">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                <Newspaper className="mr-2 text-purple-600 dark:text-purple-400" size={20} />
                 Related News
               </h3>
               
@@ -183,21 +315,28 @@ const NewsDetail = () => {
                       to={`/news/${related.id}`}
                       className="block group"
                     >
-                      <div className="flex gap-3">
-                        <img
-                          src={related.thumbnail}
-                          alt={related.title}
-                          className="w-20 h-20 object-cover rounded-lg flex-shrink-0 group-hover:scale-105 transition-transform duration-300"
-                          onError={(e) => {
-                            e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
-                          }}
-                        />
+                      <div className="flex gap-3 bg-gray-50 dark:bg-gray-700/50 rounded-xl p-3 hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors duration-300">
+                        <div className="relative w-20 h-20 flex-shrink-0">
+                          <img
+                            src={related.thumbnail}
+                            alt={related.title}
+                            className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                            onError={(e) => {
+                              e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
+                            }}
+                          />
+                          <div className="absolute inset-0 bg-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
                         <div className="flex-1">
-                          <h4 className="text-sm font-medium text-gray-900 dark:text-white line-clamp-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
+                          <h4 className="text-sm font-bold text-gray-900 dark:text-white line-clamp-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300 leading-tight">
                             {related.title}
                           </h4>
-                          <div className="flex items-center mt-2 text-xs text-gray-500 dark:text-gray-400">
-                            <Calendar size={12} className="mr-1" />
+                          <div className="flex items-center gap-2 mt-2 text-xs text-gray-500 dark:text-gray-400">
+                            <span className="text-purple-600 dark:text-purple-400 font-medium">
+                              {related.category}
+                            </span>
+                            <span>•</span>
+                            <Calendar size={12} className="mr-1 inline" />
                             {new Date(related.pubDate).toLocaleDateString('en-US', {
                               month: 'short',
                               day: 'numeric'
