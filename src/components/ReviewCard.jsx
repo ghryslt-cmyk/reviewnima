@@ -23,11 +23,11 @@ const ReviewCard = ({ review }) => {
             <span className="font-bold">{rating}/10</span>
           </div>
         </div>
-        <div className="p-3 sm:p-4">
+        <div className="p-3 sm:p-4 flex flex-col h-32 sm:h-36 md:h-40">
           <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 dark:text-white mb-2 line-clamp-2">
             {animeTitle}
           </h3>
-          <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-xs md:text-sm line-clamp-3 mb-3">
+          <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-xs md:text-sm line-clamp-1 mb-3 flex-grow">
             {review.reviewText || 'No review text available'}
           </p>
           <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">

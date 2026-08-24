@@ -13,27 +13,31 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import News from './pages/News';
 import NewsDetail from './pages/NewsDetail';
+import SeasonalSidebars from './components/SeasonalSidebars';
 
 function App() {
   return (
     <AuthProvider>
       <Router>
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/reviews" element={<Reviews />} />
-            <Route path="/review/:id" element={<ReviewDetail />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/news/:id" element={<NewsDetail />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/admin" element={<Admin />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/top-favorites" element={<TopFavorites />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/terms" element={<Terms />} />
-          </Routes>
+          <SeasonalSidebars />
+          <div className="relative z-10">
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/reviews" element={<Reviews />} />
+              <Route path="/review/:id" element={<ReviewDetail />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/news/:id" element={<NewsDetail />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/admin" element={<Admin />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/top-favorites" element={<TopFavorites />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/terms" element={<Terms />} />
+            </Routes>
+          </div>
         </div>
       </Router>
     </AuthProvider>

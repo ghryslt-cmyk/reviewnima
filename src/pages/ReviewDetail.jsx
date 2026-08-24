@@ -82,7 +82,7 @@ const ReviewDetail = () => {
   const rating = review.rating || 0;
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black">
+    <div className="min-h-screen bg-white dark:bg-black xl:mx-64">
       {/* Banner */}
       {bannerImage && (
         <div className="h-64 md:h-96 relative overflow-hidden">

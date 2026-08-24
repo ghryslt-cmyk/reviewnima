@@ -84,7 +84,7 @@ const News = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300 xl:mx-64">
       {/* Header with Banner Background */}
       <div className="relative bg-gray-900 dark:bg-white py-12 xs:py-16 sm:py-20 overflow-hidden">
         {/* Seasonal Banner Background */}
@@ -170,9 +170,9 @@ const News = () => {
 
       {/* News Grid - Two Column Layout */}
       <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 pb-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 xs:gap-6">
-          {/* Left Column - Now Airing (Large Cards) */}
-          <div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 xs:gap-6">
+          {/* Left Column - Now Airing (Large Cards) - Takes 2 columns */}
+          <div className="lg:col-span-2">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                 <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
@@ -241,8 +241,8 @@ const News = () => {
             </div>
           </div>
 
-          {/* Right Column - Trending (Small Cards) */}
-          <div>
+          {/* Right Column - Trending (Small Cards) - Takes 1 column */}
+          <div className="lg:col-span-1">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                 <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />

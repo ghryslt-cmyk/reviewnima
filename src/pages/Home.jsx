@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
       {/* Hero Section */}
-      <div className="relative min-h-[400px] xs:min-h-[450px] sm:min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
+      <div className="relative min-h-[400px] xs:min-h-[450px] sm:min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden xl:mx-64">
         {/* Video Background */}
         <div className="absolute inset-0 z-0">
           <video
@@ -123,7 +123,7 @@ const Home = () => {
       </div>
 
       {/* Top Rated Reviews Section */}
-      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-8 xs:py-10 sm:py-12 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-8 xs:py-10 sm:py-12 md:py-20 xl:mx-64">
         <div className="mb-6 xs:mb-8 sm:mb-10 md:mb-12">
           <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
             <Star className="mr-2 xs:mr-3 text-yellow-500 fill-yellow-500" size={24} xs:size={28} sm:size={32} md:size={36} />
@@ -147,7 +147,7 @@ const Home = () => {
       </div>
 
       {/* Latest Reviews Section */}
-      <div className="bg-gray-100 dark:bg-gray-800 py-8 xs:py-10 sm:py-12 md:py-20">
+      <div className="bg-gray-100 dark:bg-gray-800 py-8 xs:py-10 sm:py-12 md:py-20 xl:mx-64">
         <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
           <div className="mb-6 xs:mb-8 sm:mb-10 md:mb-12">
             <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
@@ -173,7 +173,7 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="bg-white dark:bg-gray-800 py-8 xs:py-10 sm:py-12 md:py-20 border-t border-gray-200 dark:border-gray-700">
+      <div className="bg-white dark:bg-gray-800 py-8 xs:py-10 sm:py-12 md:py-20 border-t border-gray-200 dark:border-gray-700 xl:mx-64">
         <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-8 xs:mb-10 sm:mb-12">
             <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -196,16 +196,19 @@ const Home = () => {
                 <Link to="/" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
                   <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
                     <span className="font-medium text-sm xs:text-base">Home</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Main page with top rated and latest reviews</p>
                   </div>
                 </Link>
                 <Link to="/reviews" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
                   <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
                     <span className="font-medium text-sm xs:text-base">Reviews</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Browse all anime reviews alphabetically</p>
                   </div>
                 </Link>
                 <Link to="/top-favorites" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
                   <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
                     <span className="font-medium text-sm xs:text-base">Top Favorites</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">My personal top 10 favorite anime</p>
                   </div>
                 </Link>
               </div>
