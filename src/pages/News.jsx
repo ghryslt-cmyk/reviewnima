@@ -45,6 +45,10 @@ const News = () => {
     setFilteredNews(filtered);
   };
 
+  // Separate news by category
+  const airingNews = news.filter(item => item.category === 'Now Airing');
+  const trendingNews = news.filter(item => item.category === 'Trending');
+
   const handleRefresh = async () => {
     setRefreshing(true);
     await loadNews();
@@ -131,77 +135,134 @@ const News = () => {
         </div>
       </div>
 
-      {/* News Grid */}
+      {/* News Grid - Two Column Layout */}
       <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 pb-12">
-        {filteredNews.length > 0 ? (
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-6">
-            {filteredNews.map((item) => (
-              <Link
-                key={item.id}
-                to={`/news/${item.id}`}
-                className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200 dark:border-gray-700"
-              >
-                {/* Thumbnail - Instagram style */}
-                <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600">
-                  <img
-                    src={item.thumbnail}
-                    alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    onError={(e) => {
-                      e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
-                    }}
-                  />
-                  {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
-                  {/* Category badge */}
-                  <div className="absolute top-3 left-3">
-                    <span className="px-3 py-1.5 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm text-gray-900 dark:text-white text-xs font-bold rounded-full shadow-lg">
-                      {item.category}
-                    </span>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Left Column - Now Airing (Large Cards) */}
+          <div className="lg:col-span-2">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
+                Now Airing
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xs:gap-6">
+              {airingNews.map((item) => (
+                <Link
+                  key={item.id}
+                  to={`/news/${item.id}`}
+                  className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200 dark:border-gray-700"
+                >
+                  {/* Thumbnail - Large */}
+                  <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600">
+                    <img
+                      src={item.thumbnail}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      onError={(e) => {
+                        e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
+                      }}
+                    />
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    {/* Category badge */}
+                    <div className="absolute top-3 left-3">
+                      <span className="px-3 py-1.5 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm text-gray-900 dark:text-white text-xs font-bold rounded-full shadow-lg">
+                        {item.category}
+                      </span>
+                    </div>
+                    
+                    {/* Source badge */}
+                    <div className="absolute top-3 right-3">
+                      <span className="px-3 py-1.5 bg-black/50 backdrop-blur-sm text-white text-xs font-medium rounded-full flex items-center shadow-lg">
+                        {item.sourceIcon} {item.source}
+                      </span>
+                    </div>
                   </div>
-                  
-                  {/* Source badge */}
-                  <div className="absolute top-3 right-3">
-                    <span className="px-3 py-1.5 bg-black/50 backdrop-blur-sm text-white text-xs font-medium rounded-full flex items-center shadow-lg">
-                      {item.sourceIcon} {item.source}
-                    </span>
-                  </div>
-                </div>
 
-                {/* Content */}
-                <div className="p-4 xs:p-5">
-                  <h3 className="text-sm xs:text-base font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2 leading-relaxed">
-                    {item.description}
-                  </p>
-                  <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-                    <div className="flex items-center">
-                      <Calendar size={12} className="mr-1" />
-                      {new Date(item.pubDate).toLocaleDateString('en-US', {
-                        month: 'short',
-                        day: 'numeric'
-                      })}
-                    </div>
-                    <div className="flex items-center text-gray-900 dark:text-white font-medium group-hover:translate-x-1 transition-transform duration-300">
-                      View
-                      <ExternalLink size={12} className="ml-1" />
+                  {/* Content */}
+                  <div className="p-4 xs:p-5">
+                    <h3 className="text-sm xs:text-base md:text-lg font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs xs:text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3 line-clamp-2 leading-relaxed">
+                      {item.description}
+                    </p>
+                    <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+                      <div className="flex items-center">
+                        <Calendar size={12} className="mr-1" />
+                        {new Date(item.pubDate).toLocaleDateString('en-US', {
+                          month: 'short',
+                          day: 'numeric'
+                        })}
+                      </div>
+                      <div className="flex items-center text-gray-900 dark:text-white font-medium group-hover:translate-x-1 transition-transform duration-300">
+                        View
+                        <ExternalLink size={12} className="ml-1" />
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </div>
           </div>
-        ) : (
-          <div className="text-center py-16 xs:py-20 bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
-            <Newspaper size={48} className="mx-auto text-gray-400 mb-4" />
-            <p className="text-gray-600 dark:text-gray-400 text-base xs:text-lg">
-              No news found. Try adjusting your filters.
-            </p>
+
+          {/* Right Column - Trending (Small Cards) */}
+          <div className="lg:col-span-1">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
+                Trending
+              </h2>
+            </div>
+            <div className="space-y-4">
+              {trendingNews.map((item, index) => (
+                <Link
+                  key={item.id}
+                  to={`/news/${item.id}`}
+                  className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border border-gray-200 dark:border-gray-700"
+                >
+                  <div className="flex gap-3 p-3">
+                    {/* Thumbnail - Small */}
+                    <div className="relative w-20 h-20 flex-shrink-0">
+                      <img
+                        src={item.thumbnail}
+                        alt={item.title}
+                        className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500"
+                        onError={(e) => {
+                          e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-gray-900/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      {/* Rank badge */}
+                      <div className="absolute top-1 left-1 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs font-bold px-2 py-1 rounded-full">
+                        #{index + 1}
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-xs sm:text-sm font-bold text-gray-900 dark:text-white mb-1 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-xs text-gray-600 dark:text-gray-400 mb-2 line-clamp-1 leading-relaxed">
+                        {item.description}
+                      </p>
+                      <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                        <Calendar size={10} className="mr-1" />
+                        {new Date(item.pubDate).toLocaleDateString('en-US', {
+                          month: 'short',
+                          day: 'numeric'
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );
