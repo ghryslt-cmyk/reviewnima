@@ -66,7 +66,7 @@ const Reviews = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black py-8 sm:py-16 transition-all duration-300 xl:mx-64">
+    <div className="min-h-screen bg-white dark:bg-black py-8 sm:py-16 xl:mx-64">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-4 flex items-center justify-center">
@@ -87,7 +87,7 @@ const Reviews = () => {
               placeholder="Search anime..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 sm:py-3 rounded-lg border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all duration-300"
+              className="w-full pl-10 pr-4 py-2 sm:py-3 rounded-lg border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent"
             />
           </div>
         </div>
@@ -98,7 +98,7 @@ const Reviews = () => {
             <button
               key={letter}
               onClick={() => setSelectedLetter(letter)}
-              className={`px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-medium transition-all duration-300 text-xs sm:text-sm border-2 ${
+              className={`px-2 sm:px-4 py-1 sm:py-2 rounded-lg font-medium text-xs sm:text-sm border-2 ${
                 selectedLetter === letter
                   ? 'bg-black dark:bg-white text-white dark:text-black border-black dark:border-white hover:scale-105'
                   : 'bg-white dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800'
