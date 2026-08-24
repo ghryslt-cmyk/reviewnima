@@ -71,7 +71,7 @@ const SeasonalSidebars = () => {
     <>
       {/* Left Sidebar - Desktop Only */}
       <div className="hidden xl:block fixed left-0 top-0 bottom-0 w-64 z-40">
-        <div className="relative h-full bg-gradient-to-b from-purple-900 via-indigo-900 to-blue-900 dark:from-gray-900 dark:via-purple-900 dark:to-indigo-900">
+        <div className="relative h-full bg-gray-400 dark:bg-gray-700">
           {/* TV Static Canvas */}
           <canvas
             ref={canvasRefLeft}
@@ -91,12 +91,11 @@ const SeasonalSidebars = () => {
               return (
                 <div
                   key={index}
-                  className="relative rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-float"
+                  className="relative rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink"
                   style={{
                     width: `${cardWidth}px`,
                     height: `${cardHeight}px`,
-                    animationDuration: `${2.5 + index * 0.3}s`,
-                    animationDelay: `${index * 0.15}s`
+                    animationDelay: `${index * 0.3}s`
                   }}
                 >
                   <img
@@ -116,7 +115,7 @@ const SeasonalSidebars = () => {
 
       {/* Right Sidebar - Desktop Only */}
       <div className="hidden xl:block fixed right-0 top-0 bottom-0 w-64 z-40">
-        <div className="relative h-full bg-gradient-to-b from-pink-900 via-rose-900 to-orange-900 dark:from-gray-900 dark:via-pink-900 dark:to-rose-900">
+        <div className="relative h-full bg-gray-400 dark:bg-gray-700">
           {/* TV Static Canvas */}
           <canvas
             ref={canvasRefRight}
@@ -136,12 +135,11 @@ const SeasonalSidebars = () => {
               return (
                 <div
                   key={index}
-                  className="relative rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-float"
+                  className="relative rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink"
                   style={{
                     width: `${cardWidth}px`,
                     height: `${cardHeight}px`,
-                    animationDuration: `${2.5 + index * 0.3}s`,
-                    animationDelay: `${index * 0.15}s`
+                    animationDelay: `${index * 0.3}s`
                   }}
                 >
                   <img
