@@ -5,25 +5,12 @@
     <title>ReviewNima</title>
     <script>
       // Redirect all 404 errors to index.html for client-side routing
-      var segmentCount = 0;
-      var l = window.location;
-      l.replace(
-        l.protocol +
-          '//' +
-          l.hostname +
-          (l.port ? ':' + l.port : '') +
-          l.pathname
-            .split('/')
-            .slice(0, 1 + segmentCount)
-            .join('/') +
-          '/?p=' +
-          l.pathname.slice(1)
-      );
+      window.location.href = '/index.html';
     </script>
   </head>
   <body>
     <noscript>
-      <meta http-equiv="refresh" content="0;url=/" />
+      <meta http-equiv="refresh" content="0;url=/index.html" />
     </noscript>
     <h1>Redirecting...</h1>
   </body>
