@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
       {/* Hero Section */}
-      <div className="relative min-h-[300px] xs:min-h-[350px] sm:min-h-[400px] md:min-h-[450px] flex items-start justify-center pt-12 xs:pt-16 sm:pt-20 md:pt-24 overflow-hidden xl:mx-64">
+      <div className="relative min-h-[400px] xs:min-h-[450px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-start justify-center pt-12 xs:pt-16 sm:pt-20 md:pt-24 overflow-hidden xl:mx-64">
         {/* Video Background */}
         <div className="absolute inset-0 z-0">
           <video
@@ -81,7 +81,7 @@ const Home = () => {
 
         {/* News Carousel - Moving Right to Left */}
         {news.length > 0 && (
-          <div className="absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/90 via-black/70 to-transparent border-t border-white/20">
+          <div className="hidden xl:block absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/90 via-black/70 to-transparent border-t border-white/20">
             <div className="py-4 overflow-hidden">
               <div className="flex animate-marquee whitespace-nowrap">
                 {[...news, ...news].map((item, index) => (
@@ -122,7 +122,7 @@ const Home = () => {
         )}
       </div>
 
-      {/* News Carousel - Mobile Fallback (hidden on desktop) */}
+      {/* News Carousel - Mobile Only */}
       {news.length > 0 && (
         <div className="xl:hidden relative bg-black/80 border-t border-white/20">
           <div className="py-4 overflow-hidden">
