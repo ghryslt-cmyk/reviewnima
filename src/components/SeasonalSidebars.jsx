@@ -71,7 +71,7 @@ const SeasonalSidebars = () => {
     <>
       {/* Left Sidebar - Desktop Only */}
       <div className="hidden xl:block fixed left-0 top-0 bottom-0 w-64 z-40">
-        <div className="relative h-full bg-gray-400 dark:bg-gray-700">
+        <div className="relative h-full bg-gray-400 dark:bg-gray-700 shadow-2xl shadow-black/50 dark:shadow-black/70">
           {/* TV Static Canvas */}
           <canvas
             ref={canvasRefLeft}
@@ -82,40 +82,31 @@ const SeasonalSidebars = () => {
           
           {/* Floating Anime Cards - Vertical Stack */}
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 py-8 overflow-y-auto">
-            {displayBanners.slice(0, cardsPerSide).map((banner, index) => {
-              // Varying sizes: top to bottom (small to large)
-              const sizeMultiplier = 0.7 + (index / cardsPerSide) * 0.6; // 0.7 to 1.3
-              const cardWidth = 160 * sizeMultiplier;
-              const cardHeight = 224 * sizeMultiplier;
-              
-              return (
-                <div
-                  key={index}
-                  className="relative rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink"
-                  style={{
-                    width: `${cardWidth}px`,
-                    height: `${cardHeight}px`,
-                    animationDelay: `${index * 0.3}s`
+            {displayBanners.slice(0, cardsPerSide).map((banner, index) => (
+              <div
+                key={index}
+                className="relative w-40 h-56 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink"
+                style={{
+                  animationDelay: `${index * 0.3}s`
+                }}
+              >
+                <img
+                  src={banner}
+                  alt={`Seasonal Anime ${index + 1}`}
+                  className="w-full h-full object-cover rounded-lg"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
                   }}
-                >
-                  <img
-                    src={banner}
-                    alt={`Seasonal Anime ${index + 1}`}
-                    className="w-full h-full object-cover rounded-lg"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                    }}
-                  />
-                </div>
-              );
-            })}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
       {/* Right Sidebar - Desktop Only */}
       <div className="hidden xl:block fixed right-0 top-0 bottom-0 w-64 z-40">
-        <div className="relative h-full bg-gray-400 dark:bg-gray-700">
+        <div className="relative h-full bg-gray-400 dark:bg-gray-700 shadow-2xl shadow-black/50 dark:shadow-black/70">
           {/* TV Static Canvas */}
           <canvas
             ref={canvasRefRight}
@@ -126,33 +117,24 @@ const SeasonalSidebars = () => {
           
           {/* Floating Anime Cards - Vertical Stack (Reversed) */}
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 py-8 overflow-y-auto">
-            {displayBanners.slice(cardsPerSide, cardsPerSide * 2).reverse().map((banner, index) => {
-              // Varying sizes: bottom to top (small to large)
-              const sizeMultiplier = 0.7 + (index / cardsPerSide) * 0.6; // 0.7 to 1.3
-              const cardWidth = 160 * sizeMultiplier;
-              const cardHeight = 224 * sizeMultiplier;
-              
-              return (
-                <div
-                  key={index}
-                  className="relative rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink"
-                  style={{
-                    width: `${cardWidth}px`,
-                    height: `${cardHeight}px`,
-                    animationDelay: `${index * 0.3}s`
+            {displayBanners.slice(cardsPerSide, cardsPerSide * 2).reverse().map((banner, index) => (
+              <div
+                key={index}
+                className="relative w-40 h-56 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink"
+                style={{
+                  animationDelay: `${index * 0.3}s`
+                }}
+              >
+                <img
+                  src={banner}
+                  alt={`Seasonal Anime ${index + 1}`}
+                  className="w-full h-full object-cover rounded-lg"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
                   }}
-                >
-                  <img
-                    src={banner}
-                    alt={`Seasonal Anime ${index + 1}`}
-                    className="w-full h-full object-cover rounded-lg"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                    }}
-                  />
-                </div>
-              );
-            })}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

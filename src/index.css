@@ -105,5 +105,5 @@ body {
 }
 
 .animate-grow-shrink {
-  animation: grow-shrink 2s ease-in-out infinite;
+  animation: grow-shrink 4s ease-in-out infinite;
 }
