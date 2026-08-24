@@ -254,14 +254,43 @@ export const getNewsById = async (id) => {
 };
 
 /**
- * Fetch seasonal anime banners from AniList API
+ * Get current season based on current date
+ * @returns {Object} Object with season and year
+ */
+const getCurrentSeason = () => {
+  const now = new Date();
+  const month = now.getMonth() + 1; // 1-12
+  const year = now.getFullYear();
+  
+  let season;
+  if (month >= 3 && month <= 5) {
+    season = 'SPRING';
+  } else if (month >= 6 && month <= 8) {
+    season = 'SUMMER';
+  } else if (month >= 9 && month <= 11) {
+    season = 'FALL';
+  } else {
+    season = 'WINTER';
+    // If it's January or February, it's the previous year's winter
+    if (month <= 2) {
+      return { season, year: year - 1 };
+    }
+  }
+  
+  return { season, year };
+};
+
+/**
+ * Fetch seasonal anime banners from AniList API for current season
  * @returns {Promise<Array>} Array of banner image URLs from current season anime
  */
 export const fetchSeasonalBanners = async () => {
+  const { season, year } = getCurrentSeason();
+  
   const query = `
-    query {
+    query ($season: MediaSeason, $year: Int) {
       Page(page: 1, perPage: 20) {
-        media(type: ANIME, sort: POPULARITY_DESC, status: RELEASING) {
+        media(type: ANIME, sort: POPULARITY_DESC, season: $season, seasonYear: $year) {
           bannerImage
           coverImage {
             extraLarge
@@ -275,7 +304,10 @@ export const fetchSeasonalBanners = async () => {
   `;
 
   try {
-    const response = await axios.post(ANILIST_API_URL, { query });
+    const response = await axios.post(ANILIST_API_URL, {
+      query,
+      variables: { season, year }
+    });
     const media = response.data.data.Page.media;
     
     // Extract banner images, fallback to cover images if banner is not available
@@ -283,6 +315,7 @@ export const fetchSeasonalBanners = async () => {
       .map(anime => anime.bannerImage || anime.coverImage.extraLarge || anime.coverImage.large)
       .filter(Boolean);
     
+    console.log(`Fetched ${banners.length} banners for ${season} ${year}`);
     return banners;
   } catch (error) {
     console.error('Error fetching seasonal banners:', error);

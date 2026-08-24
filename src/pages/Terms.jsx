@@ -92,7 +92,7 @@ const Terms = () => {
               <p>We respect and credit all third-party assets used on this website:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Homepage Video:</strong> The background video on the homepage is sourced from YouTube user <a href="https://www.youtube.com/@monomogu" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 underline">monomogu</a>. Used with appreciation for their creative content.</li>
-                <li><strong>Anime Banners:</strong> Seasonal anime banners displayed on the homepage are sourced from AniList API. All anime images and banners remain the property of their respective copyright holders and are used for informational purposes.</li>
+                <li><strong>Seasonal Anime Banners:</strong> Seasonal anime banners displayed on the News page are automatically fetched from AniList API based on the current season (Spring, Summer, Fall, Winter). All anime images and banners remain the property of their respective copyright holders and are used for informational purposes.</li>
                 <li><strong>Anime Information:</strong> Anime data including titles, descriptions, and metadata are sourced from AniList API. All anime content remains the property of their respective creators and studios.</li>
                 <li><strong>Icons:</strong> UI icons are provided by Lucide React under the MIT License.</li>
               </ul>
