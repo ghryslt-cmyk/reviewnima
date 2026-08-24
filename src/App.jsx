@@ -16,14 +16,9 @@ import NewsDetail from './pages/NewsDetail';
 import SeasonalSidebars from './components/SeasonalSidebars';
 
 function AppContent() {
-  const location = useLocation();
-  const isReviewsPage = location.pathname === '/reviews';
-  const isTopFavoritesPage = location.pathname === '/top-favorites';
-  const disableAnimation = isReviewsPage || isTopFavoritesPage;
-
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
-      <SeasonalSidebars disableAnimation={disableAnimation} />
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <SeasonalSidebars />
       <div className="relative z-10">
         <Navbar />
         <Routes>
