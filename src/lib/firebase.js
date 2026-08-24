@@ -180,4 +180,40 @@ export const getFavoriteReviews = async () => {
   }
 };
 
+// Visitor tracking functions
+export const getVisitorCount = async () => {
+  try {
+    const docRef = doc(db, 'stats', 'visitors');
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+      return docSnap.data().count || 0;
+    }
+    return 0;
+  } catch (error) {
+    console.error('Error getting visitor count:', error);
+    return 0;
+  }
+};
+
+export const incrementVisitorCount = async () => {
+  try {
+    const docRef = doc(db, 'stats', 'visitors');
+    const docSnap = await getDoc(docRef);
+    
+    if (docSnap.exists()) {
+      await updateDoc(docRef, {
+        count: (docSnap.data().count || 0) + 1,
+        lastUpdated: serverTimestamp()
+      });
+    } else {
+      await addDoc(collection(db, 'stats'), {
+        count: 1,
+        lastUpdated: serverTimestamp()
+      });
+    }
+  } catch (error) {
+    console.error('Error incrementing visitor count:', error);
+  }
+};
+
 export { auth, db };

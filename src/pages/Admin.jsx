@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { addReview, getReviews, deleteReview, toggleFavorite } from '../lib/firebase';
+import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount } from '../lib/firebase';
 import { searchAnime, getAnimeById } from '../lib/anilist';
-import { Shield, Search, Plus, Star, X, Loader2, Save, Heart } from 'lucide-react';
+import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users } from 'lucide-react';
 
 const Admin = () => {
   const { user, checkAdmin, isAuthenticated } = useAuth();
@@ -23,6 +23,9 @@ const Admin = () => {
   
   // Existing reviews
   const [existingReviews, setExistingReviews] = useState([]);
+  
+  // Visitor count
+  const [visitorCount, setVisitorCount] = useState(0);
 
   useEffect(() => {
     const checkAdminAccess = async () => {
@@ -45,6 +48,14 @@ const Admin = () => {
         setExistingReviews(reviews);
       } catch (error) {
         console.error('Error loading reviews:', error);
+      }
+      
+      // Load visitor count
+      try {
+        const count = await getVisitorCount();
+        setVisitorCount(count);
+      } catch (error) {
+        console.error('Error loading visitor count:', error);
       }
       
       setLoading(false);
@@ -168,6 +179,26 @@ const Admin = () => {
           <p className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
             Add and manage anime reviews
           </p>
+        </div>
+
+        {/* Visitor Count Card */}
+        <div className="bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-900 dark:to-blue-900 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-purple-400 dark:border-purple-700">
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 flex items-center">
+                <Users className="mr-2" size={24} sm:size={28} />
+                Total Visitors
+              </h2>
+              <p className="text-purple-100 dark:text-purple-200 text-sm sm:text-base">
+                Live visitor count
+              </p>
+            </div>
+            <div className="text-right">
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
+                {visitorCount.toLocaleString()}
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Add Review Form */}

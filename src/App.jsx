@@ -14,8 +14,19 @@ import Terms from './pages/Terms';
 import News from './pages/News';
 import NewsDetail from './pages/NewsDetail';
 import SeasonalSidebars from './components/SeasonalSidebars';
+import { incrementVisitorCount } from './lib/firebase';
+import { useEffect } from 'react';
 
 function AppContent() {
+  useEffect(() => {
+    // Track visitor using localStorage to avoid duplicate counts
+    const hasVisited = localStorage.getItem('hasVisited');
+    if (!hasVisited) {
+      incrementVisitorCount();
+      localStorage.setItem('hasVisited', 'true');
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <div className="relative z-10">
