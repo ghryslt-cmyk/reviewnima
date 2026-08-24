@@ -1,67 +1,65 @@
 import axios from 'axios';
 
-// RSS to JSON converter service
-const RSS_TO_JSON_API = 'https://api.rss2json.com/v1/api.json';
-
-// Trusted anime news RSS feeds
-const NEWS_SOURCES = [
-  {
-    name: 'Anime News Network',
-    url: 'https://www.animenewsnetwork.com/news/rss.xml',
-    icon: '📺'
-  },
-  {
-    name: 'Crunchyroll News',
-    url: 'https://www.crunchyroll.com/news/rss.xml',
-    icon: '🍥'
-  },
-  {
-    name: 'MyAnimeList News',
-    url: 'https://myanimelist.net/news/rss.xml',
-    icon: '🎌'
-  }
+// Reddit subreddits for trending anime content
+const ANIME_SUBREDDITS = [
+  { name: 'r/anime', icon: '🎌' },
+  { name: 'r/OnePiece', icon: '��‍☠️' },
+  { name: 'r/Bleach', icon: '⚔️' },
+  { name: 'r/Naruto', icon: '🍥' },
+  { name: 'r/AnimeNews', icon: '📺' },
+  { name: 'r/animecirclejerk', icon: '😂' },
+  { name: 'r/animefigures', icon: '�' }
 ];
 
 /**
- * Fetch anime news from RSS feeds
+ * Fetch trending anime news from Reddit
  * @returns {Promise<Array>} Array of news items
  */
 export const fetchAnimeNews = async () => {
   try {
     const allNews = [];
     
-    for (const source of NEWS_SOURCES) {
+    // Fetch hot posts from each subreddit (trending content)
+    for (const subreddit of ANIME_SUBREDDITS) {
       try {
-        const response = await axios.get(RSS_TO_JSON_API, {
+        const response = await axios.get(`https://www.reddit.com/${subreddit.name}/hot.json`, {
           params: {
-            rss_url: source.url
+            limit: 10
           }
         });
         
-        if (response.data && response.data.items) {
-          const newsItems = response.data.items.map(item => ({
-            id: generateId(item.guid || item.link),
-            title: item.title,
-            description: stripHtml(item.description),
-            content: item.content || item.description,
-            link: item.link,
-            pubDate: item.pubDate,
-            source: source.name,
-            sourceIcon: source.icon,
-            thumbnail: extractThumbnail(item) || getDefaultThumbnail(),
-            category: extractCategory(item.title) || 'General'
-          }));
+        if (response.data && response.data.data && response.data.data.children) {
+          const posts = response.data.data.children
+            .filter(child => child.kind === 't3')
+            .map(child => {
+              const data = child.data;
+              return {
+                id: data.id,
+                title: data.title,
+                description: data.selftext || data.url_overridden_by_dest || '',
+                content: data.selftext || '',
+                link: `https://www.reddit.com${data.permalink}`,
+                pubDate: new Date(data.created_utc * 1000).toISOString(),
+                source: subreddit.name,
+                sourceIcon: subreddit.icon,
+                thumbnail: getRedditImage(data),
+                category: extractCategory(data.title, subreddit.name) || 'Trending',
+                upvotes: data.ups,
+                comments: data.num_comments,
+                author: data.author
+              };
+            });
           
-          allNews.push(...newsItems);
+          allNews.push(...posts);
         }
       } catch (error) {
-        console.error(`Error fetching from ${source.name}:`, error);
+        console.error(`Error fetching from ${subreddit.name}:`, error);
       }
     }
     
-    // Sort by date (newest first) and limit to 50 items
+    // Sort by upvotes (most popular first) and limit to 50 items
     const sortedNews = allNews
-      .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+      .sort((a, b) => b.upvotes - a.upvotes)
       .slice(0, 50);
     
     return sortedNews;
@@ -72,45 +70,53 @@ export const fetchAnimeNews = async () => {
 };
 
 /**
- * Fetch news from a specific source
- * @param {string} sourceName - Name of the news source
- * @returns {Promise<Array>} Array of news items from the source
+ * Fetch news from a specific subreddit
+ * @param {string} subredditName - Name of the subreddit (e.g., 'anime')
+ * @returns {Promise<Array>} Array of news items from the subreddit
  */
 export const fetchNewsBySource = async (sourceName) => {
-  const source = NEWS_SOURCES.find(s => s.name === sourceName);
-  if (!source) return [];
+  const subreddit = ANIME_SUBREDDITS.find(s => s.name === sourceName);
+  if (!subreddit) return [];
   
   try {
-    const response = await axios.get(RSS_TO_JSON_API, {
+    const response = await axios.get(`https://www.reddit.com/${subreddit.name}/hot.json`, {
       params: {
-        rss_url: source.url
+        limit: 25
       }
     });
     
-    if (response.data && response.data.items) {
-      return response.data.items.map(item => ({
-        id: generateId(item.guid || item.link),
-        title: item.title,
-        description: stripHtml(item.description),
-        content: item.content || item.description,
-        link: item.link,
-        pubDate: item.pubDate,
-        source: source.name,
-        sourceIcon: source.icon,
-        thumbnail: extractThumbnail(item) || getDefaultThumbnail(),
-        category: extractCategory(item.title) || 'General'
-      }));
+    if (response.data && response.data.data && response.data.data.children) {
+      return response.data.data.children
+        .filter(child => child.kind === 't3')
+        .map(child => {
+          const data = child.data;
+          return {
+            id: data.id,
+            title: data.title,
+            description: data.selftext || data.url_overridden_by_dest || '',
+            content: data.selftext || '',
+            link: `https://www.reddit.com${data.permalink}`,
+            pubDate: new Date(data.created_utc * 1000).toISOString(),
+            source: subreddit.name,
+            sourceIcon: subreddit.icon,
+            thumbnail: getRedditImage(data),
+            category: extractCategory(data.title, subreddit.name) || 'Trending',
+            upvotes: data.ups,
+            comments: data.num_comments,
+            author: data.author
+          };
+        });
     }
     
     return [];
   } catch (error) {
-    console.error(`Error fetching from ${sourceName}:`, error);
+    console.error(`Error fetching from ${subreddit.name}:`, error);
     return [];
   }
 };
 
 /**
- * Get a single news item by ID (simulated - in real app would fetch from API)
+ * Get a single news item by ID
  * @param {string} id - News item ID
  * @returns {Promise<Object>} News item
  */
@@ -120,42 +126,47 @@ export const getNewsById = async (id) => {
 };
 
 // Helper functions
-function generateId(str) {
-  return btoa(str).replace(/[/+=]/g, '').substring(0, 12);
-}
-
-function stripHtml(html) {
-  const tmp = document.createElement('DIV');
-  tmp.innerHTML = html;
-  return tmp.textContent || tmp.innerText || '';
-}
-
-function extractThumbnail(item) {
-  // Try to extract image from description or content
-  const imgRegex = /<img[^>]+src="([^">]+)"/;
-  const match = item.description?.match(imgRegex) || item.content?.match(imgRegex);
-  return match ? match[1] : null;
-}
-
-function getDefaultThumbnail() {
-  return 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
-}
-
-function extractCategory(title) {
-  const categories = {
-    'anime': /anime/i,
-    'manga': /manga/i,
-    'movie': /movie|film/i,
-    'game': /game/i,
-    'release': /release|announce/i,
-    'review': /review/i
-  };
+function getRedditImage(data) {
+  // Try to get the image from the post
+  if (data.url && (data.url.endsWith('.jpg') || data.url.endsWith('.png') || data.url.endsWith('.jpeg') || data.url.endsWith('.gif') || data.url.includes('imgur.com'))) {
+    return data.url;
+  }
   
-  for (const [category, regex] of Object.entries(categories)) {
-    if (regex.test(title)) {
-      return category.charAt(0).toUpperCase() + category.slice(1);
+  // Try to get preview image
+  if (data.preview && data.preview.images && data.preview.images.length > 0) {
+    const source = data.preview.images[0].source;
+    if (source && source.url) {
+      return source.url.replace(/&amp;/g, '&');
     }
   }
   
-  return 'General';
+  // Default thumbnail
+  return 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
+}
+
+function extractCategory(title, subreddit) {
+  const categories = {
+    'Discussion': /discussion|thoughts|opinion|what do you think/i,
+    'Episode': /episode|ep\.|s\d+e\d+|season \d+/i,
+    'Manga': /manga|chapter|ch\.|spoilers/i,
+    'Movie': /movie|film|theater/i,
+    'News': /news|announcement|official|trailer|pv/i,
+    'Fan Art': /fanart|fan art|art|drawing|sketch/i,
+    'Meme': /meme|shitpost|funny|lol/i,
+    'Question': /question|help|looking for|recommend/i
+  };
+  
+  // Check subreddit-specific categories
+  if (subreddit === 'r/OnePiece') return 'One Piece';
+  if (subreddit === 'r/Bleach') return 'Bleach';
+  if (subreddit === 'r/Naruto') return 'Naruto';
+  
+  // Check title patterns
+  for (const [category, regex] of Object.entries(categories)) {
+    if (regex.test(title)) {
+      return category;
+    }
+  }
+  
+  return 'Trending';
 }

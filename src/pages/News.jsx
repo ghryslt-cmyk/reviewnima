@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchAnimeNews } from '../lib/animeNews';
-import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw } from 'lucide-react';
+import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw, ArrowUp, MessageCircle, TrendingUp } from 'lucide-react';
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -54,6 +54,12 @@ const News = () => {
   const categories = ['All', ...new Set(news.map(item => item.category))];
   const sources = ['All', ...new Set(news.map(item => item.source))];
 
+  const formatNumber = (num) => {
+    if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+    if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+    return num.toString();
+  };
+
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -65,18 +71,18 @@ const News = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
       {/* Header */}
-      <div className="bg-gradient-to-r from-purple-600 to-blue-600 py-12 xs:py-16 sm:py-20">
+      <div className="bg-gradient-to-r from-orange-500 to-red-600 py-12 xs:py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <Newspaper className="text-white" size={32} xs:size={36} sm:size={40} />
+                <TrendingUp className="text-white" size={32} xs:size={36} sm:size={40} />
                 <h1 className="text-3xl xs:text-4xl sm:text-5xl font-bold text-white">
-                  Anime News
+                  Trending Anime
                 </h1>
               </div>
               <p className="text-white/90 text-base xs:text-lg sm:text-xl">
-                Stay updated with the latest anime news and updates
+                What's hot in the anime community this week
               </p>
             </div>
             <button
@@ -152,7 +158,7 @@ const News = () => {
                     }}
                   />
                   <div className="absolute top-3 left-3">
-                    <span className="px-3 py-1 bg-purple-600 text-white text-xs font-medium rounded-full backdrop-blur-sm">
+                    <span className="px-3 py-1 bg-orange-600 text-white text-xs font-medium rounded-full backdrop-blur-sm">
                       {item.category}
                     </span>
                   </div>
@@ -165,23 +171,37 @@ const News = () => {
 
                 {/* Content */}
                 <div className="p-4 xs:p-5">
-                  <h3 className="text-base xs:text-lg font-semibold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
+                  <h3 className="text-base xs:text-lg font-semibold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors duration-300">
                     {item.title}
                   </h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
                     {item.description}
                   </p>
-                  <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-                    <div className="flex items-center">
-                      <Calendar size={14} className="mr-1" />
-                      {new Date(item.pubDate).toLocaleDateString('en-US', {
-                        month: 'short',
-                        day: 'numeric',
-                        year: 'numeric'
-                      })}
+                  <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-2">
+                    <div className="flex items-center space-x-3">
+                      <div className="flex items-center">
+                        <Calendar size={14} className="mr-1" />
+                        {new Date(item.pubDate).toLocaleDateString('en-US', {
+                          month: 'short',
+                          day: 'numeric'
+                        })}
+                      </div>
+                      <div className="flex items-center text-orange-600 dark:text-orange-400">
+                        <ArrowUp size={14} className="mr-1" />
+                        {formatNumber(item.upvotes)}
+                      </div>
+                      <div className="flex items-center">
+                        <MessageCircle size={14} className="mr-1" />
+                        {formatNumber(item.comments)}
+                      </div>
                     </div>
-                    <div className="flex items-center text-purple-600 dark:text-purple-400 group-hover:translate-x-1 transition-transform duration-300">
-                      Read More
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-gray-400 dark:text-gray-500">
+                      by u/{item.author}
+                    </span>
+                    <div className="flex items-center text-orange-600 dark:text-orange-400 group-hover:translate-x-1 transition-transform duration-300">
+                      View Discussion
                       <ExternalLink size={14} className="ml-1" />
                     </div>
                   </div>

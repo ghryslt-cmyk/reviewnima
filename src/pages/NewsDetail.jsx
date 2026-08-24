@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { fetchAnimeNews } from '../lib/animeNews';
-import { ArrowLeft, Calendar, ExternalLink, Share2, Newspaper } from 'lucide-react';
+import { ArrowLeft, Calendar, ExternalLink, Share2, Newspaper, ArrowUp, MessageCircle, User } from 'lucide-react';
 
 const NewsDetail = () => {
   const { id } = useParams();
@@ -25,7 +25,7 @@ const NewsDetail = () => {
         // Get related news (same category, excluding current item)
         const related = allNews
           .filter(news => news.category === item.category && news.id !== id)
-          .slice(0, 4);
+          .slice(0, 6); // Changed from 4 to 6
         setRelatedNews(related);
       }
     } catch (error) {
@@ -35,12 +35,18 @@ const NewsDetail = () => {
     }
   };
 
+  const formatNumber = (num) => {
+    if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+    if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+    return num.toString();
+  };
+
   const handleShare = async () => {
     if (navigator.share) {
       try {
         await navigator.share({
           title: newsItem.title,
-          text: newsItem.description,
+          text: newsItem.description + ' ' + newsItem.link,
           url: window.location.href
         });
       } catch (error) {
@@ -82,10 +88,10 @@ const NewsDetail = () => {
         <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-4">
           <Link
             to="/news"
-            className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-300"
+            className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-300"
           >
             <ArrowLeft size={20} className="mr-2" />
-            Back to News
+            Back to Trending
           </Link>
         </div>
       </div>
@@ -107,7 +113,7 @@ const NewsDetail = () => {
                   }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                  <span className="inline-block px-3 py-1 bg-purple-600 text-white text-sm font-medium rounded-full mb-3">
+                  <span className="inline-block px-3 py-1 bg-orange-600 text-white text-sm font-medium rounded-full mb-3">
                     {newsItem.category}
                   </span>
                 </div>
@@ -133,14 +139,27 @@ const NewsDetail = () => {
                   {newsItem.title}
                 </h1>
 
-                <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-6">
-                  <Calendar size={16} className="mr-2" />
-                  {new Date(newsItem.pubDate).toLocaleDateString('en-US', {
-                    weekday: 'long',
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric'
-                  })}
+                <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-6">
+                  <div className="flex items-center">
+                    <User size={16} className="mr-2" />
+                    <span>u/{newsItem.author}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <Calendar size={16} className="mr-2" />
+                    {new Date(newsItem.pubDate).toLocaleDateString('en-US', {
+                      month: 'short',
+                      day: 'numeric',
+                      year: 'numeric'
+                    })}
+                  </div>
+                  <div className="flex items-center text-orange-600 dark:text-orange-400">
+                    <ArrowUp size={16} className="mr-1" />
+                    <span>{formatNumber(newsItem.upvotes)} upvotes</span>
+                  </div>
+                  <div className="flex items-center">
+                    <MessageCircle size={16} className="mr-1" />
+                    <span>{formatNumber(newsItem.comments)} comments</span>
+                  </div>
                 </div>
 
                 <div className="prose prose-lg dark:prose-invert max-w-none">
@@ -193,15 +212,18 @@ const NewsDetail = () => {
                           }}
                         />
                         <div className="flex-1">
-                          <h4 className="text-sm font-medium text-gray-900 dark:text-white line-clamp-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
+                          <h4 className="text-sm font-medium text-gray-900 dark:text-white line-clamp-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors duration-300">
                             {related.title}
                           </h4>
-                          <div className="flex items-center mt-2 text-xs text-gray-500 dark:text-gray-400">
-                            <Calendar size={12} className="mr-1" />
-                            {new Date(related.pubDate).toLocaleDateString('en-US', {
-                              month: 'short',
-                              day: 'numeric'
-                            })}
+                          <div className="flex items-center gap-2 mt-2 text-xs text-gray-500 dark:text-gray-400">
+                            <div className="flex items-center text-orange-600 dark:text-orange-400">
+                              <ArrowUp size={12} className="mr-1" />
+                              {formatNumber(related.upvotes)}
+                            </div>
+                            <div className="flex items-center">
+                              <MessageCircle size={12} className="mr-1" />
+                              {formatNumber(related.comments)}
+                            </div>
                           </div>
                         </div>
                       </div>
