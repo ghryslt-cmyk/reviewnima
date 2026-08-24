@@ -11,6 +11,8 @@ import TopFavorites from './pages/TopFavorites';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import News from './pages/News';
+import NewsDetail from './pages/NewsDetail';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/review/:id" element={<ReviewDetail />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/news/:id" element={<NewsDetail />} />
             <Route path="/login" element={<Login />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/profile" element={<Profile />} />

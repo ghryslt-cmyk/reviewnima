@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getReviews } from '../lib/firebase';
 import ReviewCard from '../components/ReviewCard';
-import { TrendingUp, Sparkles, Star } from 'lucide-react';
+import { fetchAnimeNews } from '../lib/animeNews';
+import { TrendingUp, Sparkles, Star, Newspaper } from 'lucide-react';
 
 const Home = () => {
   const [reviews, setReviews] = useState([]);
   const [topRatedReviews, setTopRatedReviews] = useState([]);
+  const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -18,6 +20,10 @@ const Home = () => {
         // Sort reviews by rating (highest first) and get top 6
         const sortedByRating = [...reviewsData].sort((a, b) => (b.rating || 0) - (a.rating || 0));
         setTopRatedReviews(sortedByRating.slice(0, 6));
+
+        // Fetch news
+        const newsData = await fetchAnimeNews();
+        setNews(newsData.slice(0, 8)); // Get latest 8 news items
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
@@ -72,6 +78,40 @@ const Home = () => {
             <span className="text-xs xs:text-sm sm:text-base font-medium">Personal reviews from a true anime enthusiast</span>
           </div>
         </div>
+
+        {/* News Carousel - Moving Right to Left */}
+        {news.length > 0 && (
+          <div className="absolute bottom-0 left-0 right-0 z-20 bg-black/40 backdrop-blur-sm border-t border-white/10">
+            <div className="py-3 overflow-hidden">
+              <div className="flex animate-marquee whitespace-nowrap">
+                {[...news, ...news].map((item, index) => (
+                  <Link
+                    key={`${item.id}-${index}`}
+                    to={`/news/${item.id}`}
+                    className="flex items-center space-x-3 mx-4 group flex-shrink-0"
+                  >
+                    <img
+                      src={item.thumbnail}
+                      alt={item.title}
+                      className="w-12 h-12 xs:w-14 xs:h-14 sm:w-16 sm:h-16 object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
+                      onError={(e) => {
+                        e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
+                      }}
+                    />
+                    <div className="max-w-xs xs:max-w-sm sm:max-w-md">
+                      <p className="text-white text-xs xs:text-sm sm:text-base font-medium line-clamp-1 group-hover:text-purple-300 transition-colors">
+                        {item.title}
+                      </p>
+                      <p className="text-gray-300 text-xs line-clamp-1">
+                        {item.source}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Top Rated Reviews Section */}

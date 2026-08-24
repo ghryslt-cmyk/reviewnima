@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart } from 'lucide-react';
+import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper } from 'lucide-react';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -20,6 +20,10 @@ const Navbar = () => {
               <Link to="/" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
                 <Home size={20} />
                 <span>Beranda</span>
+              </Link>
+              <Link to="/news" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
+                <Newspaper size={20} />
+                <span>Berita</span>
               </Link>
               <Link to="/reviews" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
                 <BookOpen size={20} />
@@ -88,6 +92,14 @@ const Navbar = () => {
             >
               <Home size={20} />
               <span>Beranda</span>
+            </Link>
+            <Link 
+              to="/news" 
+              className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Newspaper size={20} />
+              <span>Berita</span>
             </Link>
             <Link 
               to="/reviews" 
