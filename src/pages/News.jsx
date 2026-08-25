@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchAnimeNews, getSeasonalBanners } from '../lib/animeNews';
 import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw, TrendingUp } from 'lucide-react';
@@ -15,6 +15,7 @@ const News = () => {
   const [animeByDay, setAnimeByDay] = useState({
     0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: []
   });
+  const scrollRef = useRef(null);
 
   useEffect(() => {
     loadNews();
@@ -34,6 +35,47 @@ const News = () => {
   useEffect(() => {
     filterNews();
   }, [news, selectedCategory, selectedSource]);
+
+  // Continuous circular scroll animation
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer || animeByDay[currentDay]?.length === 0) return;
+
+    let scrollPosition = 0;
+    const speed = 0.5; // pixels per frame
+    let animationId;
+
+    const animate = () => {
+      if (!scrollContainer) return;
+
+      scrollPosition -= speed;
+      
+      // Get the first item width
+      const firstItem = scrollContainer.children[0];
+      if (!firstItem) return;
+      
+      const itemWidth = firstItem.offsetWidth + 12; // width + gap
+      const totalWidth = scrollContainer.scrollWidth;
+      const visibleWidth = scrollContainer.offsetWidth;
+      
+      // When first item is completely off-screen, move it to the end
+      if (Math.abs(scrollPosition) >= itemWidth) {
+        scrollContainer.appendChild(scrollContainer.children[0]);
+        scrollPosition += itemWidth;
+      }
+      
+      scrollContainer.style.transform = `translateX(${scrollPosition}px)`;
+      animationId = requestAnimationFrame(animate);
+    };
+
+    animationId = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+      }
+    };
+  }, [animeByDay, currentDay]);
 
   const loadNews = async () => {
     try {
@@ -169,11 +211,14 @@ const News = () => {
           {/* Horizontal Scroll Container */}
           <div className="relative overflow-hidden">
             {animeByDay[currentDay]?.length > 0 ? (
-              <div className="flex gap-3 pb-2 animate-scroll-right">
-                {/* Duplicate items for seamless scrolling */}
-                {[...animeByDay[currentDay], ...animeByDay[currentDay]].map((item, index) => (
+              <div 
+                ref={scrollRef}
+                className="flex gap-3 pb-2 will-change-transform"
+                style={{ transform: 'translateX(0)' }}
+              >
+                {animeByDay[currentDay].map((item) => (
                   <Link
-                    key={`${item.id}-${index}`}
+                    key={item.id}
                     to={`/news/${item.id}`}
                     className="flex-shrink-0 w-32 sm:w-40 group"
                   >
