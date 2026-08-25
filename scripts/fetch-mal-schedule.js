@@ -5,106 +5,86 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 const MAL_API_URL = 'https://api.myanimelist.net/v2';
 
-/**
- * Get current day of week in lowercase for MAL API
- * @returns {string} Day name (monday, tuesday, etc.)
- */
-const getCurrentDayOfWeek = () => {
-  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-  return days[new Date().getDay()];
+const getCurrentSeason = () => {
+  const now = new Date();
+  const month = now.getMonth() + 1;
+  const year = now.getFullYear();
+  
+  let season;
+  if (month >= 3 && month <= 5) season = 'spring';
+  else if (month >= 6 && month <= 8) season = 'summer';
+  else if (month >= 9 && month <= 11) season = 'fall';
+  else season = 'winter';
+  
+  if (season === 'winter' && month <= 2) return { season, year: year - 1 };
+  return { season, year };
 };
 
-/**
- * Get next day of week in lowercase for MAL API
- * @returns {string} Next day name (monday, tuesday, etc.)
- */
-const getNextDayOfWeek = () => {
-  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-  const currentDay = new Date().getDay();
-  const nextDay = (currentDay + 1) % 7;
-  return days[nextDay];
-};
-
-/**
- * Fetch anime schedule from MAL API for a specific day
- * @param {string} day - Day name (monday, tuesday, etc.)
- * @param {string} clientId - MAL API Client ID
- * @returns {Promise<Array>} Array of anime from MAL
- */
-const fetchMALSchedule = async (day, clientId) => {
+const fetchMALSeasonalAnime = async (season, year, clientId) => {
   try {
-    const response = await axios.get(`${MAL_API_URL}/anime/schedule?filter=${day}&limit=25`, {
-      headers: {
-        'X-MAL-CLIENT-ID': clientId
-      }
+    const fields = 'id,title,main_picture,broadcast';
+    const response = await axios.get(`${MAL_API_URL}/anime/season/${year}/${season}`, {
+      params: { limit: 50, fields },
+      headers: { 'X-MAL-CLIENT-ID': clientId }
     });
     return response.data.data || [];
   } catch (error) {
-    console.error(`Error fetching MAL schedule for ${day}:`, error.message);
+    console.error(`Error fetching MAL seasonal anime:`, error.message);
     return [];
   }
 };
 
-/**
- * Save anime schedule data to JSON file
- * @param {Object} scheduleData - Object with anime grouped by day
- * @param {string} targetDay - The target day for which data was fetched
- */
-const saveScheduleData = (scheduleData, targetDay) => {
-  const dataDir = path.join(__dirname, '..', 'public', 'data', 'daily');
-  const fileName = `anime_schedule.json`;
-  const filePath = path.join(dataDir, fileName);
+const groupAnimeByAiringDay = (animeData) => {
+  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+  const scheduleData = Object.fromEntries(days.map(day => [day, []]));
   
-  const dataToSave = {
+  for (const item of animeData) {
+    const anime = item.node || item;
+    if (anime.broadcast?.day_of_the_week) {
+      const dayOfWeek = anime.broadcast.day_of_the_week.toLowerCase();
+      if (scheduleData[dayOfWeek]) {
+        scheduleData[dayOfWeek].push(anime);
+      }
+    }
+  }
+  
+  return scheduleData;
+};
+
+const saveScheduleData = (scheduleData) => {
+  const filePath = path.join(__dirname, '..', 'public', 'data', 'daily', 'anime_schedule.json');
+  const totalAnime = Object.values(scheduleData).reduce((sum, arr) => sum + arr.length, 0);
+  
+  fs.writeFileSync(filePath, JSON.stringify({
     fetchedAt: new Date().toISOString(),
-    targetDay: targetDay,
     schedule: scheduleData
-  };
+  }, null, 2));
   
-  fs.writeFileSync(filePath, JSON.stringify(dataToSave, null, 2));
   console.log(`Saved schedule data to ${filePath}`);
-  
-  // Log total anime count
-  let totalAnime = 0;
-  Object.keys(scheduleData).forEach(day => {
-    totalAnime += scheduleData[day].length;
-  });
   console.log(`Total anime: ${totalAnime}`);
 };
 
-/**
- * Main function
- */
 const main = async () => {
   const clientId = process.env.MAL_CLIENT_ID;
-  
   if (!clientId) {
     console.error('MAL_CLIENT_ID environment variable is required!');
-    console.error('Please set it in GitHub Secrets or .env file');
     process.exit(1);
   }
   
-  // Get next day (fetching at 23:00 for the next day's schedule)
-  const targetDay = getNextDayOfWeek();
-  console.log(`Fetching anime schedule for ${targetDay} from MAL API...`);
+  const { season, year } = getCurrentSeason();
+  console.log(`Fetching ${season} ${year} anime from MAL API...`);
   
-  const animeData = await fetchMALSchedule(targetDay, clientId);
-  
-  if (animeData.length > 0) {
-    // Group by day (for now, just the target day)
-    const scheduleData = {
-      [targetDay]: animeData
-    };
-    
-    saveScheduleData(scheduleData, targetDay);
-    console.log(`Successfully fetched and saved ${animeData.length} anime for ${targetDay}!`);
-  } else {
+  const animeData = await fetchMALSeasonalAnime(season, year, clientId);
+  if (animeData.length === 0) {
     console.error('No anime data fetched!');
     process.exit(1);
   }
+  
+  const scheduleData = groupAnimeByAiringDay(animeData);
+  saveScheduleData(scheduleData);
+  console.log(`Successfully fetched and saved schedule for ${animeData.length} anime!`);
 };
 
 main().catch(error => {
