@@ -97,7 +97,14 @@ const fetchAiringAnime = async () => {
 
   try {
     const response = await axios.post(ANILIST_API_URL, { query });
-    return response.data.data.Page.media;
+    const media = response.data.data.Page.media;
+    
+    // Sort by next airing episode time (soonest airing first)
+    return media.sort((a, b) => {
+      const timeA = a.nextAiringEpisode?.airingAt || Infinity;
+      const timeB = b.nextAiringEpisode?.airingAt || Infinity;
+      return timeA - timeB;
+    });
   } catch (error) {
     console.error('Error fetching airing anime:', error);
     return [];
@@ -110,13 +117,16 @@ const convertAnimeToNews = (anime, category) => {
   const studio = anime.studios?.nodes?.[0]?.name || 'Unknown Studio';
   const genres = anime.genres?.slice(0, 2) || ['Anime'];
   
+  // Use current date for pubDate to show as today's news
+  const pubDate = new Date().toISOString();
+  
   return {
     id: `anime-${anime.id}`,
     title: `${title} - ${category}`,
     description: anime.description?.substring(0, 200) || `Popular ${genres.join(', ')} anime from ${studio}.`,
     content: anime.description || `No description available for ${title}.`,
     link: `https://anilist.co/anime/${anime.id}`,
-    pubDate: anime.startDate ? new Date(anime.startDate.year, anime.startDate.month - 1, anime.startDate.day).toISOString() : new Date().toISOString(),
+    pubDate: pubDate,
     source: 'AniList',
     sourceIcon: '🎬',
     thumbnail: anime.bannerImage || anime.coverImage.extraLarge || anime.coverImage.large || anime.coverImage.medium,
@@ -217,10 +227,8 @@ export const fetchAnimeNews = async () => {
     const airingNews = airingAnime.map(anime => convertAnimeToNews(anime, 'Now Airing'));
     allNews.push(...airingNews.slice(0, 15));
     
-    // Sort by date (newest first) and limit to 30 items
-    const sortedNews = allNews
-      .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
-      .slice(0, 30);
+    // Limit to 30 items (trending first, then airing)
+    const sortedNews = allNews.slice(0, 30);
     
     // Update cache
     newsCache = sortedNews;
