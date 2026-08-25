@@ -276,9 +276,12 @@ export const fetchAnimeNews = async () => {
     // Fetch anime schedule from MAL API (pre-fetched data)
     const animeByDay = await fetchMALSchedule();
     
-    // Convert MAL anime to news format
-    Object.keys(animeByDay).forEach(dayName => {
-      animeByDay[dayName].forEach(anime => {
+    // Get current day of week
+    const currentDay = getCurrentDayOfWeek();
+    
+    // Convert MAL anime to news format (only for current day)
+    if (animeByDay[currentDay]) {
+      animeByDay[currentDay].forEach(anime => {
         const title = anime.title || 'Unknown';
         const studios = anime.studios?.map(s => s.name).join(', ') || 'Unknown Studio';
         const genres = anime.genres?.slice(0, 2) || ['Anime'];
@@ -286,8 +289,8 @@ export const fetchAnimeNews = async () => {
         
         const newsItem = {
           id: `mal-${anime.id}`,
-          title: `${title} - ${dayName}`,
-          description: anime.synopsis?.substring(0, 200) || `Airing on ${dayName}`,
+          title: `${title} - ${currentDay}`,
+          description: anime.synopsis?.substring(0, 200) || `Airing on ${currentDay}`,
           content: anime.synopsis || `No description available for ${title}.`,
           link: `https://myanimelist.net/anime/${anime.id}`,
           pubDate: new Date().toISOString(),
@@ -299,14 +302,14 @@ export const fetchAnimeNews = async () => {
           keywords: genres,
           animeData: {
             ...anime,
-            airingDay: dayName,
-            dayName: dayName
+            airingDay: currentDay,
+            dayName: currentDay
           }
         };
         
         allNews.push(newsItem);
       });
-    });
+    }
     
     // Limit to 30 items (trending first, then airing)
     const sortedNews = allNews.slice(0, 30);
