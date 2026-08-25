@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchAnimeNews, getSeasonalBanners } from '../lib/animeNews';
-import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw, TrendingUp, Globe } from 'lucide-react';
+import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw, TrendingUp, Globe, X, Clock, ArrowRight } from 'lucide-react';
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -16,6 +16,8 @@ const News = () => {
     0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: []
   });
   const [trendingNews, setTrendingNews] = useState([]);
+  const [selectedNewsItem, setSelectedNewsItem] = useState(null);
+  const [showNewsDetail, setShowNewsDetail] = useState(false);
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -162,6 +164,16 @@ const News = () => {
     setRefreshing(true);
     await loadNews();
     setRefreshing(false);
+  };
+
+  const handleNewsClick = (item) => {
+    setSelectedNewsItem(item);
+    setShowNewsDetail(true);
+  };
+
+  const closeNewsDetail = () => {
+    setShowNewsDetail(false);
+    setSelectedNewsItem(null);
   };
 
   const categories = ['All', ...new Set(news.map(item => item.category))];
@@ -326,17 +338,15 @@ const News = () => {
             <div className="space-y-4">
               {trendingNews.length > 0 ? (
                 trendingNews.map((item, index) => (
-                  <a
+                  <div
                     key={item.guid || index}
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border border-gray-200 dark:border-gray-700 block"
+                    onClick={() => handleNewsClick(item)}
+                    className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border border-gray-200 dark:border-gray-700 cursor-pointer"
                   >
                     <div className="flex gap-4 p-4">
                       {/* Thumbnail */}
-                      {item.thumbnail && (
-                        <div className="relative w-24 h-24 flex-shrink-0">
+                      {item.thumbnail ? (
+                        <div className="relative w-32 h-24 flex-shrink-0">
                           <img
                             src={item.thumbnail}
                             alt={item.title}
@@ -345,6 +355,10 @@ const News = () => {
                               e.target.style.display = 'none';
                             }}
                           />
+                        </div>
+                      ) : (
+                        <div className="relative w-32 h-24 flex-shrink-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded-lg flex items-center justify-center">
+                          <Globe className="text-gray-400 dark:text-gray-600" size={24} />
                         </div>
                       )}
 
@@ -358,9 +372,10 @@ const News = () => {
                             </span>
                           </div>
                           {item.pubDate && (
-                            <span className="text-xs text-gray-500 dark:text-gray-400">
-                              {new Date(item.pubDate).toLocaleDateString()}
-                            </span>
+                            <div className="flex items-center gap-1 text-xs text-gray-500 dark:text-gray-400">
+                              <Clock size={12} />
+                              <span>{new Date(item.pubDate).toLocaleDateString()}</span>
+                            </div>
                           )}
                         </div>
                         <h3 className="text-sm sm:text-base font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
@@ -368,12 +383,16 @@ const News = () => {
                         </h3>
                         {item.description && (
                           <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed">
-                            {item.description.replace(/<[^>]*>/g, '')}
+                            {item.description}
                           </p>
                         )}
+                        <div className="flex items-center gap-1 mt-2 text-xs text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">
+                          <span>Read more</span>
+                          <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+                        </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 ))
               ) : (
                 <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700 min-h-[300px] flex items-center justify-center">
@@ -440,6 +459,96 @@ const News = () => {
           </div>
         </div>
       </div>
+
+      {/* News Detail Modal */}
+      {showNewsDetail && selectedNewsItem && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-hidden">
+            {/* Header */}
+            <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+              <div className="flex items-center gap-2">
+                <Globe className="text-gray-600 dark:text-gray-400" size={20} />
+                <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
+                  {selectedNewsItem.source}
+                </span>
+              </div>
+              <button
+                onClick={closeNewsDetail}
+                className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors"
+              >
+                <X className="text-gray-600 dark:text-gray-400" size={20} />
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="p-6 overflow-y-auto max-h-[calc(90vh-120px)]">
+              {/* Thumbnail */}
+              {selectedNewsItem.thumbnail && (
+                <div className="mb-4 rounded-lg overflow-hidden">
+                  <img
+                    src={selectedNewsItem.thumbnail}
+                    alt={selectedNewsItem.title}
+                    className="w-full h-48 object-cover"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                    }}
+                  />
+                </div>
+              )}
+
+              {/* Title */}
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
+                {selectedNewsItem.title}
+              </h2>
+
+              {/* Meta */}
+              <div className="flex items-center gap-4 mb-4 text-sm text-gray-600 dark:text-gray-400">
+                {selectedNewsItem.pubDate && (
+                  <div className="flex items-center gap-1">
+                    <Clock size={14} />
+                    <span>{new Date(selectedNewsItem.pubDate).toLocaleDateString()}</span>
+                  </div>
+                )}
+                <span className="text-gray-400">•</span>
+                <span>{selectedNewsItem.category}</span>
+              </div>
+
+              {/* Description */}
+              <div className="prose dark:prose-invert max-w-none">
+                {selectedNewsItem.fullDescription ? (
+                  <div 
+                    className="text-gray-700 dark:text-gray-300 leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: selectedNewsItem.fullDescription }}
+                  />
+                ) : (
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {selectedNewsItem.description}
+                  </p>
+                )}
+              </div>
+            </div>
+
+            {/* Footer */}
+            <div className="flex items-center justify-between p-4 border-t border-gray-200 dark:border-gray-700">
+              <button
+                onClick={closeNewsDetail}
+                className="px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+              >
+                Close
+              </button>
+              <a
+                href={selectedNewsItem.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+              >
+                <span>Read Full Article</span>
+                <ExternalLink size={16} />
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

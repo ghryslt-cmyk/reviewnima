@@ -41,16 +41,40 @@ const fetchFromSource = async (sourceName, rssUrl) => {
 
     // Handle rss2json API response
     if (response.data.status === 'ok') {
-      const items = response.data.items.map(item => ({
-        title: item.title,
-        description: item.description || '',
-        link: item.link,
-        pubDate: item.pubDate,
-        source: sourceName,
-        category: 'Trending on Internet',
-        thumbnail: item.thumbnail || null,
-        guid: item.guid || item.link
-      }));
+      const items = response.data.items.map(item => {
+        // Extract thumbnail from various sources
+        let thumbnail = item.thumbnail || null;
+        
+        // Try to extract from description if no thumbnail
+        if (!thumbnail && item.description) {
+          const imgMatch = item.description.match(/<img[^>]+src=["']([^"']+)["']/);
+          if (imgMatch && imgMatch[1]) {
+            thumbnail = imgMatch[1];
+          }
+        }
+        
+        // Try to extract from enclosure
+        if (!thumbnail && item.enclosure && item.enclosure.url) {
+          thumbnail = item.enclosure.url;
+        }
+        
+        // Clean description (remove HTML tags for preview)
+        let cleanDescription = item.description || '';
+        cleanDescription = cleanDescription.replace(/<[^>]*>/g, '').trim();
+        cleanDescription = cleanDescription.substring(0, 300) + (cleanDescription.length > 300 ? '...' : '');
+        
+        return {
+          title: item.title,
+          description: cleanDescription,
+          fullDescription: item.description || '', // Keep full description for detail view
+          link: item.link,
+          pubDate: item.pubDate,
+          source: sourceName,
+          category: 'Trending on Internet',
+          thumbnail: thumbnail,
+          guid: item.guid || item.link
+        };
+      });
       
       console.log(`✓ Fetched ${items.length} items from ${sourceName}`);
       return items;
