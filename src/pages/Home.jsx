@@ -43,7 +43,7 @@ const Home = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300 lg:px-48 xl:px-64">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
       {/* Hero Section */}
       <div className="relative min-h-[350px] xs:min-h-[400px] sm:min-h-[450px] md:min-h-[500px] lg:min-h-[600px] flex items-center justify-center overflow-hidden">
         {/* Video Background */}

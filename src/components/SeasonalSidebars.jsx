@@ -180,7 +180,7 @@ const SeasonalSidebars = () => {
       </div>
 
       {/* Center Content Indicator Line - Desktop Only */}
-      <div className="hidden lg:block fixed left-48 lg:left-64 right-48 lg:right-64 top-0 bottom-0 z-30 pointer-events-none">
+      <div className="hidden xl:block fixed left-48 right-48 top-0 bottom-0 z-30 pointer-events-none">
         <div className="h-full border-l border-r border-purple-500/30 dark:border-pink-500/30 opacity-40"></div>
       </div>
     </>
