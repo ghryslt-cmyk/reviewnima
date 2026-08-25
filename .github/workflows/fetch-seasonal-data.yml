@@ -1,0 +1,36 @@
+name: Fetch Seasonal Anime Data
+
+on:
+  schedule:
+    # Run on the first day of each season change month
+    # January 1 (Winter), April 1 (Spring), July 1 (Summer), October 1 (Fall)
+    - cron: '0 0 1 1,4,7,10 *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  fetch-seasonal-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Fetch seasonal anime data
+        run: node scripts/fetch-seasonal-anime.js
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/data/seasonal/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update seasonal anime data [automated]"
+          git push

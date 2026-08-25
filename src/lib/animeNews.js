@@ -4,6 +4,20 @@ const ANILIST_API_URL = 'https://graphql.anilist.co';
 const JIKAN_API_URL = 'https://api.jikan.moe/v4';
 const SHIKIMORI_API_URL = 'https://shikimori.io/api';
 
+// Helper function to fetch JSON data from public directory
+const fetchLocalData = async (path) => {
+  try {
+    const response = await fetch(path);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${path}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching local data:', error);
+    return null;
+  }
+};
+
 /**
  * Get current day of week in lowercase for MAL API
  * @returns {string} Day name (monday, tuesday, etc.)
@@ -14,18 +28,83 @@ const getCurrentDayOfWeek = () => {
 };
 
 /**
- * Fetch anime schedule from MAL (Jikan API) for current day
- * @returns {Promise<Array>} Array of anime from MAL
+ * Get current season based on current date
+ * @returns {Object} Object with season and year
+ */
+const getCurrentSeason = () => {
+  const now = new Date();
+  const month = now.getMonth() + 1; // 1-12
+  const year = now.getFullYear();
+  
+  let season;
+  if (month >= 3 && month <= 5) {
+    season = 'SPRING';
+  } else if (month >= 6 && month <= 8) {
+    season = 'SUMMER';
+  } else if (month >= 9 && month <= 11) {
+    season = 'FALL';
+  } else {
+    season = 'WINTER';
+    // If it's January or February, it's the previous year's winter
+    if (month <= 2) {
+      return { season, year: year - 1 };
+    }
+  }
+  
+  return { season, year };
+};
+
+/**
+ * Fetch seasonal anime data from local JSON file
+ * @returns {Promise<Object|null>} Seasonal anime data or null
+ */
+const fetchLocalSeasonalData = async () => {
+  const { season, year } = getCurrentSeason();
+  const fileName = `${season.toLowerCase()}_${year}.json`;
+  const data = await fetchLocalData(`/data/seasonal/${fileName}`);
+  return data;
+};
+
+/**
+ * Fetch trending anime data from local JSON file
+ * @returns {Promise<Object|null>} Trending anime data or null
+ */
+const fetchLocalTrendingData = async () => {
+  const data = await fetchLocalData('/data/daily/trending_anime.json');
+  return data;
+};
+
+/**
+ * Fetch MAL schedule data from local JSON file
+ * @returns {Promise<Object|null>} MAL schedule data or null
+ */
+const fetchLocalScheduleData = async () => {
+  const data = await fetchLocalData('/data/daily/anime_schedule.json');
+  return data;
+};
+
+/**
+ * Fetch anime schedule from local JSON file or fallback to MAL API
+ * @returns {Promise<Object>} Object with anime grouped by day
  */
 const fetchMALSchedule = async () => {
+  // Try to fetch from local data first
+  const localData = await fetchLocalScheduleData();
+  if (localData && localData.schedule) {
+    console.log(`Using local schedule data`);
+    return localData.schedule;
+  }
+  
+  // Fallback to API if local data is not available
+  console.log('Local schedule data not available, falling back to API');
   const day = getCurrentDayOfWeek();
   
   try {
     const response = await axios.get(`${JIKAN_API_URL}/schedules/${day}?limit=15`);
-    return response.data.data;
+    return { [day]: response.data.data };
   } catch (error) {
     console.error('Error fetching MAL schedule:', error);
-    return [];
+    return {};
   }
 };
 
@@ -79,8 +158,17 @@ const searchAniListByTitle = async (title) => {
 };
 
 
-// Fetch trending anime from AniList to use as "news"
+// Fetch trending anime from local JSON file or fallback to API
 const fetchTrendingAnime = async () => {
+  // Try to fetch from local data first
+  const localData = await fetchLocalTrendingData();
+  if (localData && localData.anime && localData.anime.length > 0) {
+    console.log(`Using local trending data: ${localData.anime.length} anime`);
+    return localData.anime;
+  }
+  
+  // Fallback to API if local data is not available
+  console.log('Local trending data not available, falling back to API');
   const query = `
     query {
       Page(page: 1, perPage: 10) {
@@ -433,37 +521,19 @@ export const getNewsById = async (id) => {
 };
 
 /**
- * Get current season based on current date
- * @returns {Object} Object with season and year
- */
-const getCurrentSeason = () => {
-  const now = new Date();
-  const month = now.getMonth() + 1; // 1-12
-  const year = now.getFullYear();
-  
-  let season;
-  if (month >= 3 && month <= 5) {
-    season = 'SPRING';
-  } else if (month >= 6 && month <= 8) {
-    season = 'SUMMER';
-  } else if (month >= 9 && month <= 11) {
-    season = 'FALL';
-  } else {
-    season = 'WINTER';
-    // If it's January or February, it's the previous year's winter
-    if (month <= 2) {
-      return { season, year: year - 1 };
-    }
-  }
-  
-  return { season, year };
-};
-
-/**
- * Fetch seasonal anime banners from AniList API for current season
+ * Fetch seasonal anime banners from local JSON file or fallback to API
  * @returns {Promise<Array>} Array of banner image URLs from current season anime
  */
 export const fetchSeasonalBanners = async () => {
+  // Try to fetch from local data first
+  const localData = await fetchLocalSeasonalData();
+  if (localData && localData.banners && localData.banners.length > 0) {
+    console.log(`Using local seasonal data: ${localData.banners.length} banners`);
+    return localData.banners;
+  }
+  
+  // Fallback to API if local data is not available
+  console.log('Local data not available, falling back to API');
   const { season, year } = getCurrentSeason();
   
   const query = `
