@@ -131,11 +131,11 @@ const fetchTrendingAnime = async () => {
   }
 };
 
-// Fetch currently airing anime from AniList
+// Fetch currently airing anime from AniList and group by day
 const fetchAiringAnime = async () => {
   const query = `
     query {
-      Page(page: 1, perPage: 15) {
+      Page(page: 1, perPage: 50) {
         media(type: ANIME, sort: POPULARITY_DESC, status: RELEASING) {
           id
           title {
@@ -174,16 +174,48 @@ const fetchAiringAnime = async () => {
     const response = await axios.post(ANILIST_API_URL, { query });
     const media = response.data.data.Page.media;
     
-    // Sort by next airing episode time (soonest airing first)
-    // Anime without nextAiringEpisode go to the end
-    return media.sort((a, b) => {
-      const timeA = a.nextAiringEpisode?.airingAt || Infinity;
-      const timeB = b.nextAiringEpisode?.airingAt || Infinity;
-      return timeA - timeB;
+    // Group anime by day of week based on airingAt timestamp
+    const animeByDay = {
+      0: [], // Sunday
+      1: [], // Monday
+      2: [], // Tuesday
+      3: [], // Wednesday
+      4: [], // Thursday
+      5: [], // Friday
+      6: []  // Saturday
+    };
+    
+    media.forEach(anime => {
+      if (anime.nextAiringEpisode?.airingAt) {
+        // Convert Unix timestamp (seconds) to milliseconds and create Date object
+        const airingDate = new Date(anime.nextAiringEpisode.airingAt * 1000);
+        const dayOfWeek = airingDate.getDay(); // 0-6 (Sunday-Saturday)
+        
+        if (animeByDay[dayOfWeek]) {
+          animeByDay[dayOfWeek].push({
+            ...anime,
+            airingDate: airingDate,
+            airingDay: dayOfWeek
+          });
+        }
+      }
     });
+    
+    // Sort each day's anime by airing time
+    Object.keys(animeByDay).forEach(day => {
+      animeByDay[day].sort((a, b) => {
+        const timeA = a.nextAiringEpisode?.airingAt || Infinity;
+        const timeB = b.nextAiringEpisode?.airingAt || Infinity;
+        return timeA - timeB;
+      });
+    });
+    
+    return animeByDay;
   } catch (error) {
     console.error('Error fetching airing anime:', error);
-    return [];
+    return {
+      0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: []
+    };
   }
 };
 
