@@ -172,9 +172,6 @@ const fetchTrendingAnime = async () => {
 const fetchShikimoriCalendar = async () => {
   try {
     const response = await axios.get(`${SHIKIMORI_API_URL}/calendar`, {
-      headers: {
-        'User-Agent': 'ReviewNima-WebApp/1.0 (https://github.com/ghryslt-cmyk/reviewnima)'
-      },
       timeout: 10000 // 10 second timeout
     });
     
@@ -418,7 +415,7 @@ export const fetchAnimeNews = async () => {
           pubDate: new Date().toISOString(),
           source: 'Shikimori',
           sourceIcon: '📺',
-          thumbnail: anime.image?.original || anime.image?.preview || anime.image?.x96,
+          thumbnail: anime.image?.preview || anime.image?.x96 || anime.image?.original,
           category: 'Now Airing',
           author: studio,
           keywords: genres,

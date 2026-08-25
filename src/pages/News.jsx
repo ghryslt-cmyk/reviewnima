@@ -243,64 +243,69 @@ const News = () => {
       {/* News Grid - Two Column Layout */}
       <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 xs:gap-6">
-          {/* Left Column - Trending on Internet Placeholder - Takes 1 column */}
-          <div className="lg:col-span-1">
+          {/* Left Column - Trending on Internet Placeholder - Takes 2 columns */}
+          <div className="lg:col-span-2">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                 <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
                 Trending on Internet
               </h2>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700 min-h-[400px] flex items-center justify-center">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700 min-h-[500px] flex items-center justify-center">
               <div className="text-center">
-                <TrendingUp className="mx-auto text-gray-400 dark:text-gray-600 mb-4" size={48} />
-                <p className="text-gray-500 dark:text-gray-400 text-lg">
+                <TrendingUp className="mx-auto text-gray-400 dark:text-gray-600 mb-6" size={64} />
+                <p className="text-gray-500 dark:text-gray-400 text-xl font-semibold">
                   Coming Soon
                 </p>
-                <p className="text-gray-400 dark:text-gray-500 text-sm mt-2">
+                <p className="text-gray-400 dark:text-gray-500 text-base mt-3">
                   Trending content will appear here
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Right Column - Trending Anime (Small Cards) - Takes 2 columns */}
-          <div className="lg:col-span-2">
+          {/* Right Column - Trending Anime (Small Cards) - Takes 1 column */}
+          <div className="lg:col-span-1">
             <div className="mb-6">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
-                <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={20} />
                 Trending Anime
               </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="space-y-3">
               {trendingNews.map((item, index) => (
                 <Link
                   key={item.id}
                   to={`/news/${item.id}`}
                   className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border border-gray-200 dark:border-gray-700"
                 >
-                  <div className="relative aspect-[3/4] overflow-hidden">
-                    <img
-                      src={item.thumbnail}
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      onError={(e) => {
-                        e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    {/* Rank badge */}
-                    <div className="absolute top-2 left-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs font-bold px-2 py-1 rounded-full">
-                      #{index + 1}
+                  <div className="flex gap-3 p-3">
+                    {/* Thumbnail - Small */}
+                    <div className="relative w-16 h-20 flex-shrink-0">
+                      <img
+                        src={item.thumbnail}
+                        alt={item.title}
+                        className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500"
+                        onError={(e) => {
+                          e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-gray-900/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      {/* Rank badge */}
+                      <div className="absolute top-1 left-1 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs font-bold px-1.5 py-0.5 rounded-full">
+                        #{index + 1}
+                      </div>
                     </div>
-                  </div>
-                  <div className="p-3">
-                    <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-1 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed">
-                      {item.description}
-                    </p>
+
+                    {/* Content */}
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-xs sm:text-sm font-bold text-gray-900 dark:text-white mb-1 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
                 </Link>
               ))}
