@@ -29,7 +29,7 @@ function AppContent() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <div className="relative z-10">
+      <div className="relative z-10 lg:z-0">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

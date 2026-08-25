@@ -70,7 +70,7 @@ const SeasonalSidebars = () => {
   return (
     <>
       {/* Left Sidebar - Desktop Only */}
-      <div className="hidden lg:block fixed left-0 top-0 bottom-0 w-48 lg:w-64 z-40">
+      <div className="hidden lg:block fixed left-0 top-0 bottom-0 w-40 lg:w-48 xl:w-56 z-40">
         <div 
           className="relative h-full bg-cover bg-center"
           style={{ backgroundImage: "url('/Desain tanpa judul (5).png')" }}
@@ -180,7 +180,7 @@ const SeasonalSidebars = () => {
       </div>
 
       {/* Center Content Indicator Line - Desktop Only */}
-      <div className="hidden xl:block fixed left-48 right-48 top-0 bottom-0 z-30 pointer-events-none">
+      <div className="hidden lg:block fixed left-40 lg:left-48 xl:left-56 right-40 lg:right-48 xl:right-56 top-0 bottom-0 z-30 pointer-events-none">
         <div className="h-full border-l border-r border-purple-500/30 dark:border-pink-500/30 opacity-40"></div>
       </div>
     </>
