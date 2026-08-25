@@ -79,39 +79,32 @@ const searchAniListByTitle = async (title) => {
 };
 
 /**
- * Get AniList assets for Shikimori anime data (optional enhancement)
+ * Get AniList assets for Shikimori anime data (primary source)
  * @param {Object} shikimoriAnime - Shikimori anime data
- * @returns {Promise<Object>} Combined data with AniList assets if available
+ * @returns {Promise<Object|null>} Combined data with AniList assets or null if not found
  */
 const getAniListAssetsForShikimori = async (shikimoriAnime) => {
   const title = shikimoriAnime.name || shikimoriAnime.english || shikimoriAnime.russian;
   
-  // Use Shikimori assets as primary
-  const shikimoriThumbnail = shikimoriAnime.image?.original || shikimoriAnime.image?.preview || shikimoriAnime.image?.x96;
-  
-  // Only try AniList if Shikimori image is not available
-  if (!shikimoriThumbnail) {
-    try {
-      const anilistData = await searchAniListByTitle(title);
-      
-      if (anilistData) {
-        return {
-          ...shikimoriAnime,
-          thumbnail: anilistData.bannerImage || anilistData.coverImage.extraLarge || anilistData.coverImage.large,
-          description: anilistData.description || shikimoriAnime.description,
-          genres: anilistData.genres || shikimoriAnime.genres
-        };
-      }
-    } catch (error) {
-      console.error('Error getting AniList assets:', error);
+  try {
+    const anilistData = await searchAniListByTitle(title);
+    
+    if (anilistData) {
+      return {
+        ...shikimoriAnime,
+        thumbnail: anilistData.bannerImage || anilistData.coverImage.extraLarge || anilistData.coverImage.large,
+        description: anilistData.description || shikimoriAnime.description,
+        genres: anilistData.genres || shikimoriAnime.genres,
+        studios: anilistData.studios || shikimoriAnime.studios,
+        hasAniList: true
+      };
     }
+  } catch (error) {
+    console.error('Error getting AniList assets:', error);
   }
   
-  // Return with Shikimori assets
-  return {
-    ...shikimoriAnime,
-    thumbnail: shikimoriThumbnail
-  };
+  // Return null if AniList not found (will be filtered out)
+  return null;
 };
 
 // Fetch trending anime from AniList to use as "news"
@@ -399,39 +392,52 @@ export const fetchAnimeNews = async () => {
     // Fetch anime schedule from Shikimori calendar
     const animeByDay = await fetchShikimoriCalendar();
     
-    // Convert Shikimori anime to news format with Shikimori assets (AniList as fallback)
-    Object.keys(animeByDay).forEach(dayName => {
-      animeByDay[dayName].forEach(anime => {
-        const title = anime.name || anime.russian || anime.english || 'Unknown';
-        const studio = anime.studios?.[0]?.name || 'Unknown Studio';
-        const genres = anime.genres?.slice(0, 2) || ['Anime'];
+    // Convert Shikimori anime to news format with AniList assets (filter out those without AniList)
+    for (const dayName of Object.keys(animeByDay)) {
+      const filteredAnime = [];
+      
+      for (const anime of animeByDay[dayName]) {
+        // Get AniList assets - filter out if not found
+        const animeWithAssets = await getAniListAssetsForShikimori(anime);
         
-        const newsItem = {
-          id: `shikimori-${anime.id}`,
-          title: `${title} - ${dayName}`,
-          description: anime.description?.substring(0, 200) || `Episode ${anime.nextEpisode} airing on ${dayName}`,
-          content: anime.description || `No description available for ${title}.`,
-          link: `https://shikimori.one${anime.url}`,
-          pubDate: new Date().toISOString(),
-          source: 'Shikimori',
-          sourceIcon: '📺',
-          thumbnail: anime.image?.preview || anime.image?.x96 || anime.image?.original,
-          category: 'Now Airing',
-          author: studio,
-          keywords: genres,
-          animeData: {
-            ...anime,
-            airingDay: anime.airingDay,
-            airingDate: anime.airingDate,
-            nextEpisode: anime.nextEpisode,
-            nextEpisodeAt: anime.nextEpisodeAt,
-            dayName: dayName
-          }
-        };
-        
-        allNews.push(newsItem);
-      });
-    });
+        if (animeWithAssets) {
+          const title = animeWithAssets.name || animeWithAssets.russian || animeWithAssets.english || 'Unknown';
+          const studio = animeWithAssets.studios?.nodes?.[0]?.name || animeWithAssets.studios?.[0]?.name || 'Unknown Studio';
+          const genres = animeWithAssets.genres?.slice(0, 2) || ['Anime'];
+          
+          const newsItem = {
+            id: `shikimori-${anime.id}`,
+            title: `${title} - ${dayName}`,
+            description: animeWithAssets.description?.substring(0, 200) || `Episode ${animeWithAssets.nextEpisode} airing on ${dayName}`,
+            content: animeWithAssets.description || `No description available for ${title}.`,
+            link: `https://shikimori.one${anime.url}`,
+            pubDate: new Date().toISOString(),
+            source: 'Shikimori',
+            sourceIcon: '📺',
+            thumbnail: animeWithAssets.thumbnail,
+            category: 'Now Airing',
+            author: studio,
+            keywords: genres,
+            animeData: {
+              ...animeWithAssets,
+              airingDay: animeWithAssets.airingDay,
+              airingDate: animeWithAssets.airingDate,
+              nextEpisode: animeWithAssets.nextEpisode,
+              nextEpisodeAt: animeWithAssets.nextEpisodeAt,
+              dayName: dayName
+            }
+          };
+          
+          filteredAnime.push(newsItem);
+        }
+      }
+      
+      // Update animeByDay with filtered results
+      animeByDay[dayName] = filteredAnime;
+      
+      // Add to allNews
+      allNews.push(...filteredAnime);
+    }
     
     // Limit to 30 items (trending first, then airing)
     const sortedNews = allNews.slice(0, 30);
