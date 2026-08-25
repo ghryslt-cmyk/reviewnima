@@ -42,23 +42,19 @@ const News = () => {
     if (!scrollContainer || animeByDay[currentDay]?.length === 0) return;
 
     let scrollPosition = 0;
-    const speed = 0.5; // pixels per frame
-    let animationId;
+    const speed = 0.5;
+    let animationId = null;
 
     const animate = () => {
       if (!scrollContainer) return;
 
       scrollPosition -= speed;
       
-      // Get the first item width
       const firstItem = scrollContainer.children[0];
       if (!firstItem) return;
       
-      const itemWidth = firstItem.offsetWidth + 12; // width + gap
-      const totalWidth = scrollContainer.scrollWidth;
-      const visibleWidth = scrollContainer.offsetWidth;
+      const itemWidth = firstItem.offsetWidth + 12;
       
-      // When first item is completely off-screen, move it to the end
       if (Math.abs(scrollPosition) >= itemWidth) {
         scrollContainer.appendChild(scrollContainer.children[0]);
         scrollPosition += itemWidth;
@@ -71,7 +67,7 @@ const News = () => {
     animationId = requestAnimationFrame(animate);
 
     return () => {
-      if (animationId) {
+      if (animationId !== null) {
         cancelAnimationFrame(animationId);
       }
     };
