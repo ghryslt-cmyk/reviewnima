@@ -119,6 +119,7 @@ body {
 
 .animate-scroll-right {
   animation: scroll-right 40s linear infinite;
+  will-change: transform;
 }
 
 .scrollbar-hide {
