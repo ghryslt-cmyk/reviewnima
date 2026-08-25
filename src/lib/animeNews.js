@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const ANILIST_API_URL = 'https://graphql.anilist.co';
 const JIKAN_API_URL = 'https://api.jikan.moe/v4';
+const SHIKIMORI_API_URL = 'https://shikimori.io/api';
 
 /**
  * Get current day of week in lowercase for MAL API
@@ -131,8 +132,52 @@ const fetchTrendingAnime = async () => {
   }
 };
 
-// Fetch currently airing anime from AniList with airingDay property
-const fetchAiringAnime = async () => {
+// Fetch anime schedule from Shikimori calendar API with fallback to AniList
+const fetchShikimoriCalendar = async () => {
+  try {
+    const response = await axios.get(`${SHIKIMORI_API_URL}/calendar`, {
+      headers: {
+        'User-Agent': 'ReviewNima-WebApp/1.0 (https://github.com/ghryslt-cmyk/reviewnima)'
+      },
+      timeout: 10000 // 10 second timeout
+    });
+    
+    // Group anime by day based on next_episode_at timestamp
+    const animeByDay = {};
+    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    
+    response.data.forEach(item => {
+      if (item.next_episode_at) {
+        const airingDate = new Date(item.next_episode_at);
+        const dayOfWeek = airingDate.getDay(); // 0-6 (Sunday-Saturday)
+        const dayName = dayNames[dayOfWeek];
+        
+        if (!animeByDay[dayName]) {
+          animeByDay[dayName] = [];
+        }
+        
+        animeByDay[dayName].push({
+          ...item.anime,
+          nextEpisode: item.next_episode,
+          nextEpisodeAt: item.next_episode_at,
+          duration: item.duration,
+          airingDay: dayOfWeek,
+          airingDate: airingDate
+        });
+      }
+    });
+    
+    console.log('Successfully fetched Shikimori calendar data');
+    return animeByDay;
+  } catch (error) {
+    console.error('Error fetching Shikimori calendar, falling back to AniList:', error.message);
+    // Fallback to AniList airing anime
+    return await fetchAiringAnimeFromAniList();
+  }
+};
+
+// Fallback: Fetch currently airing anime from AniList with airingDay property
+const fetchAiringAnimeFromAniList = async () => {
   const query = `
     query {
       Page(page: 1, perPage: 50) {
@@ -174,31 +219,35 @@ const fetchAiringAnime = async () => {
     const response = await axios.post(ANILIST_API_URL, { query });
     const media = response.data.data.Page.media;
     
-    // Add airingDay property to each anime based on airingAt timestamp
-    const animeWithDay = media.map(anime => {
+    // Group anime by day based on airingAt timestamp
+    const animeByDay = {};
+    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    
+    media.forEach(anime => {
       if (anime.nextAiringEpisode?.airingAt) {
-        // Convert Unix timestamp (seconds) to milliseconds and create Date object
         const airingDate = new Date(anime.nextAiringEpisode.airingAt * 1000);
-        const dayOfWeek = airingDate.getDay(); // 0-6 (Sunday-Saturday)
+        const dayOfWeek = airingDate.getDay();
+        const dayName = dayNames[dayOfWeek];
         
-        return {
+        if (!animeByDay[dayName]) {
+          animeByDay[dayName] = [];
+        }
+        
+        animeByDay[dayName].push({
           ...anime,
-          airingDate: airingDate,
-          airingDay: dayOfWeek
-        };
+          nextEpisode: anime.nextAiringEpisode.episode,
+          nextEpisodeAt: new Date(anime.nextAiringEpisode.airingAt * 1000).toISOString(),
+          airingDay: dayOfWeek,
+          airingDate: airingDate
+        });
       }
-      return anime;
     });
     
-    // Sort by next airing episode time (soonest airing first)
-    return animeWithDay.sort((a, b) => {
-      const timeA = a.nextAiringEpisode?.airingAt || Infinity;
-      const timeB = b.nextAiringEpisode?.airingAt || Infinity;
-      return timeA - timeB;
-    });
+    console.log('Successfully fetched AniList fallback data');
+    return animeByDay;
   } catch (error) {
-    console.error('Error fetching airing anime:', error);
-    return [];
+    console.error('Error fetching AniList fallback:', error);
+    return {};
   }
 };
 
@@ -313,10 +362,42 @@ export const fetchAnimeNews = async () => {
     const trendingNews = trendingAnime.map(anime => convertAnimeToNews(anime, 'Trending'));
     allNews.push(...trendingNews.slice(0, 15));
     
-    // Fetch currently airing anime (increase to 15)
-    const airingAnime = await fetchAiringAnime();
-    const airingNews = airingAnime.map(anime => convertAnimeToNews(anime, 'Now Airing'));
-    allNews.push(...airingNews.slice(0, 15));
+    // Fetch anime schedule from Shikimori calendar
+    const animeByDay = await fetchShikimoriCalendar();
+    
+    // Convert Shikimori anime to news format and add airing info
+    Object.keys(animeByDay).forEach(dayName => {
+      animeByDay[dayName].forEach(anime => {
+        const title = anime.name || anime.russian || anime.english || 'Unknown';
+        const studio = anime.studios?.[0]?.name || 'Unknown Studio';
+        const genres = anime.genres?.slice(0, 2) || ['Anime'];
+        
+        const newsItem = {
+          id: `shikimori-${anime.id}`,
+          title: `${title} - ${dayName}`,
+          description: anime.description?.substring(0, 200) || `Episode ${anime.nextEpisode} airing on ${dayName}`,
+          content: anime.description || `No description available for ${title}.`,
+          link: `https://shikimori.one${anime.url}`,
+          pubDate: new Date().toISOString(),
+          source: 'Shikimori',
+          sourceIcon: '📺',
+          thumbnail: anime.image?.original || anime.image?.preview || anime.image?.x96,
+          category: 'Now Airing',
+          author: studio,
+          keywords: genres,
+          animeData: {
+            ...anime,
+            airingDay: anime.airingDay,
+            airingDate: anime.airingDate,
+            nextEpisode: anime.nextEpisode,
+            nextEpisodeAt: anime.nextEpisodeAt,
+            dayName: dayName
+          }
+        };
+        
+        allNews.push(newsItem);
+      });
+    });
     
     // Limit to 30 items (trending first, then airing)
     const sortedNews = allNews.slice(0, 30);
