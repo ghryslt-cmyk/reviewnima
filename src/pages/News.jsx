@@ -107,7 +107,7 @@ const News = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300 xl:mx-64">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300 lg:px-48 xl:px-64">
       {/* Header with Banner Background */}
       <div className="relative bg-gray-900 dark:bg-white py-12 xs:py-16 sm:py-20 overflow-hidden">
         {/* Seasonal Banner Background */}

@@ -172,7 +172,7 @@ const Admin = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black py-8 sm:py-16 transition-all duration-300 xl:mx-64">
+    <div className="min-h-screen bg-white dark:bg-black py-8 sm:py-16 transition-all duration-300 lg:px-48 xl:px-64">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-2 flex items-center">

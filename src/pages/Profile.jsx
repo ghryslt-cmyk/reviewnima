@@ -47,7 +47,7 @@ const Profile = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black py-8 sm:py-16 transition-all duration-300 xl:mx-64">
+    <div className="min-h-screen bg-white dark:bg-black py-8 sm:py-16 transition-all duration-300 lg:px-48 xl:px-64">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Profile Header */}
         <div className="bg-white dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-black dark:border-white">
