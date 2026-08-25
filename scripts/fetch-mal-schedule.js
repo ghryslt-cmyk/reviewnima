@@ -50,6 +50,15 @@ const groupAnimeByAiringDay = (animeData) => {
     }
   }
   
+  // Sort anime by start time within each day
+  for (const day of days) {
+    scheduleData[day].sort((a, b) => {
+      const timeA = a.broadcast?.start_time || '99:99';
+      const timeB = b.broadcast?.start_time || '99:99';
+      return timeA.localeCompare(timeB);
+    });
+  }
+  
   return scheduleData;
 };
 

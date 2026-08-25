@@ -1,17 +1,17 @@
 {
-  "fetchedAt": "2026-08-25T08:57:37.418Z",
+  "fetchedAt": "2026-08-25T09:44:03.440Z",
   "schedule": {
     "sunday": [
       {
-        "id": 21,
-        "title": "One Piece",
+        "id": 63042,
+        "title": "Meitantei Precure!",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1706/154944.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1706/154944l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
-          "start_time": "23:15"
+          "start_time": "08:30"
         }
       },
       {
@@ -27,18 +27,6 @@
         }
       },
       {
-        "id": 6149,
-        "title": "Chibi Maruko-chan (1995)",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1678/153148.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1678/153148l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "sunday",
-          "start_time": "18:00"
-        }
-      },
-      {
         "id": 63100,
         "title": "Tetsunabe no Jan!",
         "main_picture": {
@@ -51,27 +39,15 @@
         }
       },
       {
-        "id": 63042,
-        "title": "Meitantei Precure!",
+        "id": 6149,
+        "title": "Chibi Maruko-chan (1995)",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1706/154944.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1706/154944l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1678/153148.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1678/153148l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
-          "start_time": "08:30"
-        }
-      },
-      {
-        "id": 61240,
-        "title": "Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1958/158341.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1958/158341l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "sunday",
-          "start_time": "23:45"
+          "start_time": "18:00"
         }
       },
       {
@@ -96,6 +72,30 @@
         "broadcast": {
           "day_of_the_week": "sunday",
           "start_time": "23:00"
+        }
+      },
+      {
+        "id": 21,
+        "title": "One Piece",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "sunday",
+          "start_time": "23:15"
+        }
+      },
+      {
+        "id": 61240,
+        "title": "Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1958/158341.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1958/158341l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "sunday",
+          "start_time": "23:45"
         }
       }
     ],
@@ -142,8 +142,8 @@
         "id": 62542,
         "title": "Grand Blue Season 3",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1615/158194.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1615/158194l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1615/158194.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1615/158194l.webp"
         },
         "broadcast": {
           "day_of_the_week": "tuesday",
@@ -164,18 +164,6 @@
       }
     ],
     "wednesday": [
-      {
-        "id": 61316,
-        "title": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1540/155824.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1540/155824l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "wednesday",
-          "start_time": "22:00"
-        }
-      },
       {
         "id": 62476,
         "title": "Tefuda ga Oome no Victoria",
@@ -211,21 +199,21 @@
           "day_of_the_week": "wednesday",
           "start_time": "21:30"
         }
+      },
+      {
+        "id": 61316,
+        "title": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1540/155824.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1540/155824l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "wednesday",
+          "start_time": "22:00"
+        }
       }
     ],
     "thursday": [
-      {
-        "id": 63347,
-        "title": "World Is Dancing",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1165/158709.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1165/158709l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "thursday",
-          "start_time": "22:00"
-        }
-      },
       {
         "id": 63780,
         "title": "Hanazakari no Kimitachi e 2nd Season",
@@ -251,6 +239,18 @@
         }
       },
       {
+        "id": 63347,
+        "title": "World Is Dancing",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1165/158709.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1165/158709l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "thursday",
+          "start_time": "22:00"
+        }
+      },
+      {
         "id": 62430,
         "title": "BanG Dream! Yume∞Mita",
         "main_picture": {
@@ -265,27 +265,15 @@
     ],
     "friday": [
       {
-        "id": 8687,
-        "title": "Doraemon (2005)",
+        "id": 1960,
+        "title": "Sore Ike! Anpanman",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/6/23935.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/6/23935l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1902/111797.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1902/111797l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "friday",
-          "start_time": "19:00"
-        }
-      },
-      {
-        "id": 53876,
-        "title": "Pokemon (2023)",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1703/137216.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1703/137216l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "friday",
-          "start_time": "18:55"
+          "start_time": "16:20"
         }
       },
       {
@@ -301,27 +289,27 @@
         }
       },
       {
-        "id": 1960,
-        "title": "Sore Ike! Anpanman",
+        "id": 53876,
+        "title": "Pokemon (2023)",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1902/111797.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1902/111797l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1703/137216.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1703/137216l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "friday",
-          "start_time": "16:20"
+          "start_time": "18:55"
         }
       },
       {
-        "id": 61280,
-        "title": "Kore Kaite Shine",
+        "id": 8687,
+        "title": "Doraemon (2005)",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1649/154997.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1649/154997l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/6/23935.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/6/23935l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "friday",
-          "start_time": "23:30"
+          "start_time": "19:00"
         }
       },
       {
@@ -335,33 +323,21 @@
           "day_of_the_week": "friday",
           "start_time": "23:00"
         }
+      },
+      {
+        "id": 61280,
+        "title": "Kore Kaite Shine",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1649/154997.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1649/154997l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "friday",
+          "start_time": "23:30"
+        }
       }
     ],
     "saturday": [
-      {
-        "id": 61483,
-        "title": "Tenmaku no Jaadugar",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1098/158891.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1098/158891l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "saturday",
-          "start_time": "23:30"
-        }
-      },
-      {
-        "id": 60636,
-        "title": "Bleach: Sennen Kessen-hen - Kashin-tan",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1275/158595.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1275/158595l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "saturday",
-          "start_time": "23:00"
-        }
-      },
       {
         "id": 63817,
         "title": "Hell Mode: Yarikomizuki no Gamer wa Hai Settei no Isekai de Musou suru 2nd Season",
@@ -372,30 +348,6 @@
         "broadcast": {
           "day_of_the_week": "saturday",
           "start_time": "01:00"
-        }
-      },
-      {
-        "id": 61048,
-        "title": "Neko to Ryuu",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1878/157796.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1878/157796l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "saturday",
-          "start_time": "21:00"
-        }
-      },
-      {
-        "id": 60153,
-        "title": "Rilakkuma",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1705/158571.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1705/158571l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "saturday",
-          "start_time": "09:25"
         }
       },
       {
@@ -411,27 +363,15 @@
         }
       },
       {
-        "id": 57466,
-        "title": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen - Ryoushu no Youjo",
+        "id": 60153,
+        "title": "Rilakkuma",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1371/155054.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1371/155054l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1705/158571.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1705/158571l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
-          "start_time": "17:30"
-        }
-      },
-      {
-        "id": 60310,
-        "title": "Mairimashita! Iruma-kun 4th Season",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1434/154048.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1434/154048l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "saturday",
-          "start_time": "18:25"
+          "start_time": "09:25"
         }
       },
       {
@@ -447,6 +387,18 @@
         }
       },
       {
+        "id": 57466,
+        "title": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen - Ryoushu no Youjo",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1371/155054.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1371/155054l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "saturday",
+          "start_time": "17:30"
+        }
+      },
+      {
         "id": 235,
         "title": "Meitantei Conan",
         "main_picture": {
@@ -456,6 +408,54 @@
         "broadcast": {
           "day_of_the_week": "saturday",
           "start_time": "18:00"
+        }
+      },
+      {
+        "id": 60310,
+        "title": "Mairimashita! Iruma-kun 4th Season",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1434/154048.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1434/154048l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "saturday",
+          "start_time": "18:25"
+        }
+      },
+      {
+        "id": 61048,
+        "title": "Neko to Ryuu",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1878/157796.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1878/157796l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "saturday",
+          "start_time": "21:00"
+        }
+      },
+      {
+        "id": 60636,
+        "title": "Bleach: Sennen Kessen-hen - Kashin-tan",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1275/158595.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1275/158595l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "saturday",
+          "start_time": "23:00"
+        }
+      },
+      {
+        "id": 61483,
+        "title": "Tenmaku no Jaadugar",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1098/158891.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1098/158891l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "saturday",
+          "start_time": "23:30"
         }
       },
       {
