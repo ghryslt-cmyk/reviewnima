@@ -71,7 +71,10 @@ const SeasonalSidebars = () => {
     <>
       {/* Left Sidebar - Desktop Only */}
       <div className="hidden xl:block fixed left-0 top-0 bottom-0 w-64 z-40">
-        <div className="relative h-full bg-gray-400 dark:bg-gray-700">
+        <div 
+          className="relative h-full bg-cover bg-center"
+          style={{ backgroundImage: "url('/Desain tanpa judul (5).png')" }}
+        >
           {/* Inner shadow for separation effect */}
           <div className="absolute inset-0 shadow-[inset_-12px_0_48px_rgba(0,0,0,0.9)] dark:shadow-[inset_-12px_0_48px_rgba(0,0,0,0.95)] pointer-events-none"></div>
           {/* TV Static Canvas */}
@@ -108,7 +111,10 @@ const SeasonalSidebars = () => {
 
       {/* Right Sidebar - Desktop Only */}
       <div className="hidden xl:block fixed right-0 top-0 bottom-0 w-64 z-40">
-        <div className="relative h-full bg-gray-400 dark:bg-gray-700">
+        <div 
+          className="relative h-full bg-cover bg-center"
+          style={{ backgroundImage: "url('/Desain tanpa judul (5).png')" }}
+        >
           {/* Inner shadow for separation effect */}
           <div className="absolute inset-0 shadow-[inset_12px_0_48px_rgba(0,0,0,0.9)] dark:shadow-[inset_12px_0_48px_rgba(0,0,0,0.95)] pointer-events-none"></div>
           {/* TV Static Canvas */}

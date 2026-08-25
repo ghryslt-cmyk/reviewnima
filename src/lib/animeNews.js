@@ -1,6 +1,81 @@
 import axios from 'axios';
 
 const ANILIST_API_URL = 'https://graphql.anilist.co';
+const JIKAN_API_URL = 'https://api.jikan.moe/v4';
+
+/**
+ * Get current day of week in lowercase for MAL API
+ * @returns {string} Day name (monday, tuesday, etc.)
+ */
+const getCurrentDayOfWeek = () => {
+  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+  return days[new Date().getDay()];
+};
+
+/**
+ * Fetch anime schedule from MAL (Jikan API) for current day
+ * @returns {Promise<Array>} Array of anime from MAL
+ */
+const fetchMALSchedule = async () => {
+  const day = getCurrentDayOfWeek();
+  
+  try {
+    const response = await axios.get(`${JIKAN_API_URL}/schedules/${day}?limit=15`);
+    return response.data.data;
+  } catch (error) {
+    console.error('Error fetching MAL schedule:', error);
+    return [];
+  }
+};
+
+/**
+ * Search AniList for anime by title to get assets
+ * @param {string} title - Anime title to search
+ * @returns {Promise<Object|null>} AniList anime data or null
+ */
+const searchAniListByTitle = async (title) => {
+  const query = `
+    query ($search: String) {
+      Page(page: 1, perPage: 1) {
+        media(search: $search, type: ANIME) {
+          id
+          title {
+            romaji
+            english
+            native
+          }
+          coverImage {
+            large
+            medium
+            extraLarge
+          }
+          bannerImage
+          description
+          genres
+          averageScore
+          episodes
+          status
+          studios {
+            nodes {
+              name
+            }
+          }
+        }
+      }
+    }
+  `;
+
+  try {
+    const response = await axios.post(ANILIST_API_URL, {
+      query,
+      variables: { search: title }
+    });
+    return response.data.data.Page.media[0] || null;
+  } catch (error) {
+    console.error('Error searching AniList:', error);
+    return null;
+  }
+};
 
 // Fetch trending anime from AniList to use as "news"
 const fetchTrendingAnime = async () => {
@@ -56,56 +131,62 @@ const fetchTrendingAnime = async () => {
   }
 };
 
-// Fetch currently airing anime from AniList
+// Fetch currently airing anime from MAL schedule and enrich with AniList assets
 const fetchAiringAnime = async () => {
-  const query = `
-    query {
-      Page(page: 1, perPage: 15) {
-        media(type: ANIME, sort: POPULARITY_DESC, status: RELEASING) {
-          id
-          title {
-            romaji
-            english
-            native
-          }
-          coverImage {
-            large
-            medium
-            extraLarge
-          }
-          bannerImage
-          description
-          genres
-          averageScore
-          episodes
-          status
-          season
-          seasonYear
-          studios {
-            nodes {
-              name
-            }
-          }
-          nextAiringEpisode {
-            airingAt
-            episode
-          }
-        }
-      }
-    }
-  `;
-
   try {
-    const response = await axios.post(ANILIST_API_URL, { query });
-    const media = response.data.data.Page.media;
+    // Fetch schedule from MAL for current day
+    const malAnime = await fetchMALSchedule();
     
-    // Sort by next airing episode time (soonest airing first)
-    // Anime without nextAiringEpisode go to the end
-    return media.sort((a, b) => {
-      const timeA = a.nextAiringEpisode?.airingAt || Infinity;
-      const timeB = b.nextAiringEpisode?.airingAt || Infinity;
-      return timeA - timeB;
-    });
+    // Enrich each MAL anime with AniList assets
+    const enrichedAnime = await Promise.all(
+      malAnime.map(async (malItem) => {
+        const anilistData = await searchAniListByTitle(malItem.title);
+        
+        // Use AniList data if found, otherwise use MAL data
+        if (anilistData) {
+          return {
+            ...anilistData,
+            malTitle: malItem.title,
+            malUrl: malItem.url,
+            malScore: malItem.score,
+            malEpisodes: malItem.episodes,
+            airingDay: getCurrentDayOfWeek()
+
+          };
+        } else {
+          // Fallback to MAL data structure
+          return {
+            id: malItem.mal_id,
+            title: {
+              romaji: malItem.title,
+              english: malItem.title_english || malItem.title,
+              native: malItem.title_japanese || malItem.title
+            },
+            coverImage: {
+              large: malItem.images?.jpg?.large_image_url || malItem.images?.jpg?.image_url,
+              medium: malItem.images?.jpg?.image_url,
+              extraLarge: malItem.images?.jpg?.large_image_url
+            },
+            bannerImage: null,
+            description: malItem.synopsis || 'No description available.',
+            genres: malItem.genres?.map(g => g.name) || [],
+            averageScore: malItem.score ? malItem.score * 10 : null,
+            episodes: malItem.episodes,
+            status: malItem.status,
+            studios: {
+              nodes: malItem.studios?.map(s => ({ name: s.name })) || []
+            },
+            malTitle: malItem.title,
+            malUrl: malItem.url,
+            malScore: malItem.score,
+            malEpisodes: malItem.episodes,
+            airingDay: getCurrentDayOfWeek()
+          };
+        }
+      })
+    );
+    
+    return enrichedAnime;
   } catch (error) {
     console.error('Error fetching airing anime:', error);
     return [];
