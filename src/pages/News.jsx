@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchAnimeNews, getSeasonalBanners } from '../lib/animeNews';
-import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw, TrendingUp } from 'lucide-react';
+import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw, TrendingUp, Globe } from 'lucide-react';
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -15,6 +15,7 @@ const News = () => {
   const [animeByDay, setAnimeByDay] = useState({
     0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: []
   });
+  const [trendingNews, setTrendingNews] = useState([]);
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -117,6 +118,17 @@ const News = () => {
       });
       
       setAnimeByDay(groupedByDay);
+
+      // Load trending news from RSS sources
+      try {
+        const trendingResponse = await fetch('/data/daily/trending_news.json');
+        if (trendingResponse.ok) {
+          const trendingData = await trendingResponse.json();
+          setTrendingNews(trendingData.news || []);
+        }
+      } catch (error) {
+        console.error('Error loading trending news:', error);
+      }
     } catch (error) {
       console.error('Error loading news:', error);
     } finally {
@@ -303,7 +315,7 @@ const News = () => {
       {/* News Grid - Two Column Layout */}
       <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 xs:gap-6">
-          {/* Left Column - Trending on Internet Placeholder - Takes 2 columns */}
+          {/* Left Column - Trending on Internet - Takes 2 columns */}
           <div className="lg:col-span-2">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
@@ -311,16 +323,71 @@ const News = () => {
                 Trending on Internet
               </h2>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700 min-h-[500px] flex items-center justify-center">
-              <div className="text-center">
-                <TrendingUp className="mx-auto text-gray-400 dark:text-gray-600 mb-6" size={64} />
-                <p className="text-gray-500 dark:text-gray-400 text-xl font-semibold">
-                  Coming Soon
-                </p>
-                <p className="text-gray-400 dark:text-gray-500 text-base mt-3">
-                  Trending content will appear here
-                </p>
-              </div>
+            <div className="space-y-4">
+              {trendingNews.length > 0 ? (
+                trendingNews.map((item, index) => (
+                  <a
+                    key={item.guid || index}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border border-gray-200 dark:border-gray-700 block"
+                  >
+                    <div className="flex gap-4 p-4">
+                      {/* Thumbnail */}
+                      {item.thumbnail && (
+                        <div className="relative w-24 h-24 flex-shrink-0">
+                          <img
+                            src={item.thumbnail}
+                            alt={item.title}
+                            className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                      )}
+
+                      {/* Content */}
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-start justify-between mb-2">
+                          <div className="flex items-center gap-2">
+                            <Globe className="text-gray-600 dark:text-gray-400" size={16} />
+                            <span className="text-xs font-medium text-gray-600 dark:text-gray-400">
+                              {item.source}
+                            </span>
+                          </div>
+                          {item.pubDate && (
+                            <span className="text-xs text-gray-500 dark:text-gray-400">
+                              {new Date(item.pubDate).toLocaleDateString()}
+                            </span>
+                          )}
+                        </div>
+                        <h3 className="text-sm sm:text-base font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
+                          {item.title}
+                        </h3>
+                        {item.description && (
+                          <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed">
+                            {item.description.replace(/<[^>]*>/g, '')}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </a>
+                ))
+              ) : (
+                <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700 min-h-[300px] flex items-center justify-center">
+                  <div className="text-center">
+                    <TrendingUp className="mx-auto text-gray-400 dark:text-gray-600 mb-4" size={48} />
+                    <p className="text-gray-500 dark:text-gray-400 text-lg font-semibold">
+                      No trending news available
+                    </p>
+                    <p className="text-gray-400 dark:text-gray-500 text-sm mt-2">
+                      Check back later for updates
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
