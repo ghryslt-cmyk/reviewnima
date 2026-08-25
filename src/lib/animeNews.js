@@ -2,7 +2,6 @@ import axios from 'axios';
 
 const ANILIST_API_URL = 'https://graphql.anilist.co';
 const JIKAN_API_URL = 'https://api.jikan.moe/v4';
-const SHIKIMORI_API_URL = 'https://shikimori.io/api';
 
 // Helper function to fetch JSON data from public directory
 const fetchLocalData = async (path) => {
@@ -221,122 +220,6 @@ const fetchTrendingAnime = async () => {
   }
 };
 
-// Fetch anime schedule from Shikimori calendar API with fallback to AniList
-const fetchShikimoriCalendar = async () => {
-  try {
-    const response = await axios.get(`${SHIKIMORI_API_URL}/calendar`, {
-      timeout: 10000 // 10 second timeout
-    });
-    
-    // Group anime by day based on next_episode_at timestamp
-    const animeByDay = {};
-    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    
-    response.data.forEach(item => {
-      if (item.next_episode_at) {
-        const airingDate = new Date(item.next_episode_at);
-        const dayOfWeek = airingDate.getDay(); // 0-6 (Sunday-Saturday)
-        const dayName = dayNames[dayOfWeek];
-        
-        if (!animeByDay[dayName]) {
-          animeByDay[dayName] = [];
-        }
-        
-        animeByDay[dayName].push({
-          ...item.anime,
-          nextEpisode: item.next_episode,
-          nextEpisodeAt: item.next_episode_at,
-          duration: item.duration,
-          airingDay: dayOfWeek,
-          airingDate: airingDate,
-          kind: item.anime.kind
-        });
-      }
-    });
-    
-    console.log('Successfully fetched Shikimori calendar data');
-    return animeByDay;
-  } catch (error) {
-    console.error('Error fetching Shikimori calendar, falling back to AniList:', error.message);
-    // Fallback to AniList airing anime
-    return await fetchAiringAnimeFromAniList();
-  }
-};
-
-// Fallback: Fetch currently airing anime from AniList with airingDay property
-const fetchAiringAnimeFromAniList = async () => {
-  const query = `
-    query {
-      Page(page: 1, perPage: 50) {
-        media(type: ANIME, sort: POPULARITY_DESC, status: RELEASING) {
-          id
-          title {
-            romaji
-            english
-            native
-          }
-          coverImage {
-            large
-            medium
-            extraLarge
-          }
-          bannerImage
-          description
-          genres
-          averageScore
-          episodes
-          status
-          season
-          seasonYear
-          studios {
-            nodes {
-              name
-            }
-          }
-          nextAiringEpisode {
-            airingAt
-            episode
-          }
-        }
-      }
-    }
-  `;
-
-  try {
-    const response = await axios.post(ANILIST_API_URL, { query });
-    const media = response.data.data.Page.media;
-    
-    // Group anime by day based on airingAt timestamp
-    const animeByDay = {};
-    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    
-    media.forEach(anime => {
-      if (anime.nextAiringEpisode?.airingAt) {
-        const airingDate = new Date(anime.nextAiringEpisode.airingAt * 1000);
-        const dayOfWeek = airingDate.getDay();
-        const dayName = dayNames[dayOfWeek];
-        
-        if (!animeByDay[dayName]) {
-          animeByDay[dayName] = [];
-        }
-        
-        animeByDay[dayName].push({
-          ...anime,
-          nextEpisode: anime.nextAiringEpisode.episode,
-          nextEpisodeAt: new Date(anime.nextAiringEpisode.airingAt * 1000).toISOString(),
-          airingDay: dayOfWeek,
-          airingDate: airingDate
-        });
-      }
-    });
-    
-    console.log('Successfully fetched AniList fallback data');
-    return animeByDay;
-  } catch (error) {
-    console.error('Error fetching AniList fallback:', error);
-    return {};
-  }
-};
 
 // Convert AniList anime data to news format
 const convertAnimeToNews = (anime, category) => {
@@ -365,65 +248,6 @@ const convertAnimeToNews = (anime, category) => {
 };
 
 
-/**
- * Search for relevant images using Unsplash API based on keywords
- * @param {string} title - Article title to extract keywords from
- * @returns {Promise<Array>} Array of image URLs
- */
-export const searchRelevantImages = async (title) => {
-  try {
-    // Extract anime ID from title if it's from our news format
-    const animeIdMatch = title.match(/anime-(\d+)/);
-    if (animeIdMatch) {
-      // This is already from our anime data, return empty to avoid duplicate images
-      return [];
-    }
-    
-    // For other titles, fetch related anime from AniList
-    const keywords = extractKeywords(title);
-    if (keywords.length === 0) return [];
-    
-    const query = `
-      query ($search: String) {
-        Page(page: 1, perPage: 6) {
-          media(search: $search, type: ANIME, sort: POPULARITY_DESC) {
-            coverImage {
-              large
-              extraLarge
-            }
-            bannerImage
-          }
-        }
-      }
-    `;
-    
-    const response = await axios.post(ANILIST_API_URL, {
-      query,
-      variables: { search: keywords[0] }
-    });
-    
-    if (response.data?.data?.Page?.media) {
-      return response.data.data.Page.media
-        .map(anime => anime.bannerImage || anime.coverImage.extraLarge || anime.coverImage.large)
-        .filter(Boolean);
-    }
-    
-    return [];
-  } catch (error) {
-    console.error('Error searching images:', error);
-    return [];
-  }
-};
-
-function extractKeywords(title) {
-  const animeKeywords = ['anime', 'manga', 'one piece', 'naruto', 'bleach', 'attack on titan', 'dragon ball', 'pokemon', 'studio ghibli', 'demon slayer', 'jujutsu kaisen', 'my hero academia'];
-  const words = title.toLowerCase().split(/\s+/);
-  
-  return words.filter(word => 
-    animeKeywords.some(keyword => word.includes(keyword) || keyword.includes(word)) ||
-    word.length > 3
-  ).slice(0, 3);
-}
 
 // Cache for news data (2 minutes for fresh data)
 let newsCache = null;
@@ -449,35 +273,33 @@ export const fetchAnimeNews = async () => {
     const trendingNews = trendingAnime.map(anime => convertAnimeToNews(anime, 'Trending'));
     allNews.push(...trendingNews.slice(0, 15));
     
-    // Fetch anime schedule from Shikimori calendar
-    const animeByDay = await fetchShikimoriCalendar();
+    // Fetch anime schedule from MAL API (pre-fetched data)
+    const animeByDay = await fetchMALSchedule();
     
-    // Convert Shikimori anime to news format with Shikimori assets (no AniList dependency)
+    // Convert MAL anime to news format
     Object.keys(animeByDay).forEach(dayName => {
       animeByDay[dayName].forEach(anime => {
-        const title = anime.name || anime.russian || anime.english || 'Unknown';
-        const studio = anime.studios?.[0]?.name || 'Unknown Studio';
+        const title = anime.title || 'Unknown';
+        const studios = anime.studios?.map(s => s.name).join(', ') || 'Unknown Studio';
         const genres = anime.genres?.slice(0, 2) || ['Anime'];
+        const imageUrl = anime.main_picture?.medium || anime.main_picture?.large || anime.images?.jpg?.image_url;
         
         const newsItem = {
-          id: `shikimori-${anime.id}`,
+          id: `mal-${anime.id}`,
           title: `${title} - ${dayName}`,
-          description: anime.description?.substring(0, 200) || `Episode ${anime.nextEpisode} airing on ${dayName}`,
-          content: anime.description || `No description available for ${title}.`,
-          link: `https://shikimori.one${anime.url}`,
+          description: anime.synopsis?.substring(0, 200) || `Airing on ${dayName}`,
+          content: anime.synopsis || `No description available for ${title}.`,
+          link: `https://myanimelist.net/anime/${anime.id}`,
           pubDate: new Date().toISOString(),
-          source: 'Shikimori',
+          source: 'MAL',
           sourceIcon: '📺',
-          thumbnail: anime.image?.preview || anime.image?.x96 || anime.image?.original,
+          thumbnail: imageUrl,
           category: 'Now Airing',
-          author: studio,
+          author: studios,
           keywords: genres,
           animeData: {
             ...anime,
-            airingDay: anime.airingDay,
-            airingDate: anime.airingDate,
-            nextEpisode: anime.nextEpisode,
-            nextEpisodeAt: anime.nextEpisodeAt,
+            airingDay: dayName,
             dayName: dayName
           }
         };

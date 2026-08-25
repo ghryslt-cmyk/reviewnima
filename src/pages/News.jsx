@@ -87,14 +87,32 @@ const News = () => {
       // Get anime grouped by day from the news data
       const airingAnime = newsData.filter(item => item.category === 'Now Airing');
       
-      // Group airing anime by day based on their airingDay property
+      // Group airing anime by day based on their dayName property (from MAL API)
       const groupedByDay = {
         0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: []
       };
       
+      const dayNameToIndex = {
+        'sunday': 0,
+        'monday': 1,
+        'tuesday': 2,
+        'wednesday': 3,
+        'thursday': 4,
+        'friday': 5,
+        'saturday': 6,
+        'Sunday': 0,
+        'Monday': 1,
+        'Tuesday': 2,
+        'Wednesday': 3,
+        'Thursday': 4,
+        'Friday': 5,
+        'Saturday': 6
+      };
+      
       airingAnime.forEach(item => {
-        if (item.animeData?.airingDay !== undefined && item.animeData.airingDay >= 0 && item.animeData.airingDay <= 6) {
-          groupedByDay[item.animeData.airingDay].push(item);
+        const dayName = item.animeData?.dayName;
+        if (dayName && dayNameToIndex[dayName] !== undefined) {
+          groupedByDay[dayNameToIndex[dayName]].push(item);
         }
       });
       
