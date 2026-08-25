@@ -90,7 +90,7 @@ const SeasonalSidebars = () => {
             {displayBanners.slice(0, cardsPerSide).map((banner, index) => (
               <div
                 key={index}
-                className="relative w-40 h-56 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink"
+                className="relative w-40 h-56 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink overflow-hidden"
                 style={{
                   animationDelay: `${index * 0.3}s`
                 }}
@@ -103,6 +103,21 @@ const SeasonalSidebars = () => {
                     e.target.style.display = 'none';
                   }}
                 />
+                {/* TV Static Overlay on Card */}
+                <div className="absolute inset-0 rounded-lg overflow-hidden">
+                  <div 
+                    className="absolute inset-0 opacity-30 mix-blend-overlay"
+                    style={{
+                      backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+                      animation: 'staticNoise 0.2s infinite'
+                    }}
+                  />
+                </div>
+                {/* Scanline effect */}
+                <div className="absolute inset-0 rounded-lg pointer-events-none" style={{
+                  background: 'linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06))',
+                  backgroundSize: '100% 2px, 3px 100%'
+                }} />
               </div>
             ))}
           </div>
@@ -130,7 +145,7 @@ const SeasonalSidebars = () => {
             {displayBanners.slice(cardsPerSide, cardsPerSide * 2).reverse().map((banner, index) => (
               <div
                 key={index}
-                className="relative w-40 h-56 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink"
+                className="relative w-40 h-56 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink overflow-hidden"
                 style={{
                   animationDelay: `${index * 0.3}s`
                 }}
@@ -143,6 +158,21 @@ const SeasonalSidebars = () => {
                     e.target.style.display = 'none';
                   }}
                 />
+                {/* TV Static Overlay on Card */}
+                <div className="absolute inset-0 rounded-lg overflow-hidden">
+                  <div 
+                    className="absolute inset-0 opacity-30 mix-blend-overlay"
+                    style={{
+                      backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+                      animation: 'staticNoise 0.2s infinite'
+                    }}
+                  />
+                </div>
+                {/* Scanline effect */}
+                <div className="absolute inset-0 rounded-lg pointer-events-none" style={{
+                  background: 'linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06))',
+                  backgroundSize: '100% 2px, 3px 100%'
+                }} />
               </div>
             ))}
           </div>
