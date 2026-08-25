@@ -23,7 +23,7 @@ const Home = () => {
 
         // Fetch news
         const newsData = await fetchAnimeNews();
-        setNews(newsData.slice(0, 8)); // Get latest 8 news items
+        setNews(newsData); // Get all news items
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
@@ -83,7 +83,7 @@ const Home = () => {
         {news.length > 0 && (
           <div className="hidden xl:block absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/90 via-black/70 to-transparent border-t border-white/20">
             <div className="py-4 overflow-hidden">
-              <div className="flex animate-marquee whitespace-nowrap">
+              <div className="flex animate-scroll-right whitespace-nowrap">
                 {[...news, ...news].map((item, index) => (
                   <Link
                     key={`${item.id}-${index}`}
@@ -125,7 +125,7 @@ const Home = () => {
         {news.length > 0 && (
           <div className="xl:hidden absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/90 via-black/70 to-transparent border-t border-white/20">
             <div className="py-4 overflow-hidden">
-              <div className="flex animate-marquee whitespace-nowrap">
+              <div className="flex animate-scroll-right whitespace-nowrap">
                 {[...news, ...news].map((item, index) => (
                   <Link
                     key={`${item.id}-${index}`}
