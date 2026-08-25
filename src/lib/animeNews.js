@@ -60,7 +60,7 @@ const fetchTrendingAnime = async () => {
 const fetchAiringAnime = async () => {
   const query = `
     query {
-      Page(page: 1, perPage: 10) {
+      Page(page: 1, perPage: 15) {
         media(type: ANIME, sort: POPULARITY_DESC, status: RELEASING) {
           id
           title {
@@ -100,6 +100,7 @@ const fetchAiringAnime = async () => {
     const media = response.data.data.Page.media;
     
     // Sort by next airing episode time (soonest airing first)
+    // Anime without nextAiringEpisode go to the end
     return media.sort((a, b) => {
       const timeA = a.nextAiringEpisode?.airingAt || Infinity;
       const timeB = b.nextAiringEpisode?.airingAt || Infinity;
@@ -198,10 +199,10 @@ function extractKeywords(title) {
   ).slice(0, 3);
 }
 
-// Cache for news data (10 minutes for better performance)
+// Cache for news data (2 minutes for fresh data)
 let newsCache = null;
 let cacheTime = 0;
-const CACHE_DURATION = 10 * 60 * 1000; // 10 minutes
+const CACHE_DURATION = 2 * 60 * 1000; // 2 minutes
 
 /**
  * Fetch anime news from RSS feeds with caching and fallback

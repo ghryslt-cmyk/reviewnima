@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper } from 'lucide-react';
 import { useState } from 'react';
-import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const { user, logout, checkAdmin, isAuthenticated } = useAuth();
@@ -14,12 +13,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4 sm:space-x-8">
-            <Link to="/" className="hover:scale-105 transition-transform duration-300">
-              <img 
-                src={logo} 
-                alt="ReviewNima" 
-                className="h-8 sm:h-10 w-auto"
-              />
+            <Link to="/" className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white hover:scale-105 transition-transform duration-300">
+              ReviewNima
             </Link>
             <div className="hidden md:flex space-x-4">
               <Link to="/" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
