@@ -23,7 +23,7 @@ const Home = () => {
 
         // Fetch news
         const newsData = await fetchAnimeNews();
-        setNews(newsData); // Get all news items
+        setNews(newsData.slice(0, 10)); // Get latest 10 news items
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {

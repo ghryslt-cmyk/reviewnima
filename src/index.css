@@ -84,6 +84,9 @@ body {
   0% {
     transform: translateX(0);
   }
+  85% {
+    transform: translateX(-50%);
+  }
   100% {
     transform: translateX(-50%);
   }
@@ -118,7 +121,7 @@ body {
 }
 
 .animate-scroll-right {
-  animation: scroll-right 40s linear infinite;
+  animation: scroll-right 60s linear infinite;
   will-change: transform;
 }
 
