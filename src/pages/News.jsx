@@ -47,15 +47,14 @@ const News = () => {
 
       // Get anime grouped by day from the news data
       const airingAnime = newsData.filter(item => item.category === 'Now Airing');
-      const trendingAnime = newsData.filter(item => item.category === 'Trending');
       
-      // Group airing anime by day based on their airingDate
+      // Group airing anime by day based on their airingDay property
       const groupedByDay = {
         0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: []
       };
       
       airingAnime.forEach(item => {
-        if (item.animeData?.airingDay !== undefined) {
+        if (item.animeData?.airingDay !== undefined && item.animeData.airingDay >= 0 && item.animeData.airingDay <= 6) {
           groupedByDay[item.animeData.airingDay].push(item);
         }
       });
