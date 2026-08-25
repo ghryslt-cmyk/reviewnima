@@ -186,16 +186,6 @@ const News = () => {
                           e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
                         }}
                       />
-                      {/* Type badge */}
-                      <div className="absolute top-2 left-2">
-                        <span className={`px-2 py-1 text-xs font-bold rounded-full ${
-                          item.animeData?.isDonghua 
-                            ? 'bg-red-500/90 text-white' 
-                            : 'bg-blue-500/90 text-white'
-                        }`}>
-                          {item.animeData?.isDonghua ? '🐉' : '📺'}
-                        </span>
-                      </div>
                     </div>
                     <p className="text-xs font-medium text-gray-900 dark:text-white line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
                       {item.title.split(' - ')[0]}
