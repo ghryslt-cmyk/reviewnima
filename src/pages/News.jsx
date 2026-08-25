@@ -37,41 +37,42 @@ const News = () => {
   }, [news, selectedCategory, selectedSource]);
 
   // Continuous circular scroll animation
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer || animeByDay[currentDay]?.length === 0) return;
+  // Temporarily disabled due to React DOM manipulation conflict
+  // useEffect(() => {
+  //   const scrollContainer = scrollRef.current;
+  //   if (!scrollContainer || animeByDay[currentDay]?.length === 0) return;
 
-    let scrollPosition = 0;
-    const speed = 0.5;
-    let animationId = null;
+  //   let scrollPosition = 0;
+  //   const speed = 0.5;
+  //   let animationId = null;
 
-    const animate = () => {
-      if (!scrollContainer) return;
+  //   const animate = () => {
+  //     if (!scrollContainer) return;
 
-      scrollPosition -= speed;
+  //     scrollPosition -= speed;
       
-      const firstItem = scrollContainer.children[0];
-      if (!firstItem) return;
+  //     const firstItem = scrollContainer.children[0];
+  //     if (!firstItem) return;
       
-      const itemWidth = firstItem.offsetWidth + 12;
+  //     const itemWidth = firstItem.offsetWidth + 12;
       
-      if (Math.abs(scrollPosition) >= itemWidth) {
-        scrollContainer.appendChild(scrollContainer.children[0]);
-        scrollPosition += itemWidth;
-      }
+  //     if (Math.abs(scrollPosition) >= itemWidth) {
+  //       scrollContainer.appendChild(scrollContainer.children[0]);
+  //       scrollPosition += itemWidth;
+  //     }
       
-      scrollContainer.style.transform = `translateX(${scrollPosition}px)`;
-      animationId = requestAnimationFrame(animate);
-    };
+  //     scrollContainer.style.transform = `translateX(${scrollPosition}px)`;
+  //     animationId = requestAnimationFrame(animate);
+  //   };
 
-    animationId = requestAnimationFrame(animate);
+  //   animationId = requestAnimationFrame(animate);
 
-    return () => {
-      if (animationId !== null) {
-        cancelAnimationFrame(animationId);
-      }
-    };
-  }, [animeByDay, currentDay]);
+  //   return () => {
+  //     if (animationId !== null) {
+  //       cancelAnimationFrame(animationId);
+  //     }
+  //   };
+  // }, [animeByDay, currentDay]);
 
   const loadNews = async () => {
     try {
