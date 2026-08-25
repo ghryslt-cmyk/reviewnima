@@ -153,8 +153,67 @@ const News = () => {
         </div>
       </div>
 
+      {/* Airing Schedule - Horizontal Scroll Below Banner */}
+      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-4">
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 border border-gray-200 dark:border-gray-700">
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white flex items-center">
+              <Calendar className="mr-2 text-gray-600 dark:text-gray-400" size={20} />
+              Now Airing - {dayNames[currentDay]}
+            </h2>
+            <span className="text-sm text-gray-500 dark:text-gray-400">
+              {animeByDay[currentDay]?.length || 0} anime
+            </span>
+          </div>
+          
+          {/* Horizontal Scroll Container */}
+          <div className="relative overflow-hidden">
+            {animeByDay[currentDay]?.length > 0 ? (
+              <div className="flex gap-3 pb-2 animate-scroll-right">
+                {/* Duplicate items for seamless scrolling */}
+                {[...animeByDay[currentDay], ...animeByDay[currentDay]].map((item, index) => (
+                  <Link
+                    key={`${item.id}-${index}`}
+                    to={`/news/${item.id}`}
+                    className="flex-shrink-0 w-32 sm:w-40 group"
+                  >
+                    <div className="relative aspect-[3/4] overflow-hidden rounded-lg mb-2">
+                      <img
+                        src={item.thumbnail}
+                        alt={item.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        onError={(e) => {
+                          e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
+                        }}
+                      />
+                      {/* Type badge */}
+                      <div className="absolute top-2 left-2">
+                        <span className={`px-2 py-1 text-xs font-bold rounded-full ${
+                          item.animeData?.isDonghua 
+                            ? 'bg-red-500/90 text-white' 
+                            : 'bg-blue-500/90 text-white'
+                        }`}>
+                          {item.animeData?.isDonghua ? '🐉' : '📺'}
+                        </span>
+                      </div>
+                    </div>
+                    <p className="text-xs font-medium text-gray-900 dark:text-white line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+                      {item.title.split(' - ')[0]}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <p className="text-gray-500 dark:text-gray-400 text-center py-4">
+                No anime airing today
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+
       {/* Filters */}
-      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-6">
+      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-4">
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 xs:p-6 border border-gray-200 dark:border-gray-700">
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
@@ -194,172 +253,64 @@ const News = () => {
       {/* News Grid - Two Column Layout */}
       <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 xs:gap-6">
-          {/* Left Column - Now Airing (Large Cards) - Takes 2 columns */}
-          <div className="lg:col-span-2">
-            <div className="mb-6">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
-                <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
-                Now Airing - {dayNames[currentDay]}
-              </h2>
-            </div>
-            
-            {/* Show current day's anime */}
-            <div className="mb-8">
-              <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-4">Today's Schedule</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 xs:gap-6">
-                {animeByDay[currentDay]?.map((item) => (
-                  <Link
-                    key={item.id}
-                    to={`/news/${item.id}`}
-                    className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-200 dark:border-gray-700"
-                  >
-                    {/* Thumbnail - Large */}
-                    <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600">
-                      <img
-                        src={item.thumbnail}
-                        alt={item.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        onError={(e) => {
-                          e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
-                        }}
-                      />
-                      {/* Gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      
-                      {/* Category badge */}
-                      <div className="absolute top-3 left-3">
-                        <span className="px-3 py-1.5 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm text-gray-900 dark:text-white text-xs font-bold rounded-full shadow-lg">
-                          {item.category}
-                        </span>
-                      </div>
-                      
-                      {/* Source badge */}
-                      <div className="absolute top-3 right-3">
-                        <span className="px-3 py-1.5 bg-black/50 backdrop-blur-sm text-white text-xs font-medium rounded-full flex items-center shadow-lg">
-                          {item.sourceIcon} {item.source}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-4 xs:p-5">
-                      <h3 className="text-sm xs:text-base md:text-lg font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
-                        {item.title}
-                      </h3>
-                      <p className="text-xs xs:text-sm md:text-base text-gray-600 dark:text-gray-400 mb-3 line-clamp-2 leading-relaxed">
-                        {item.description}
-                      </p>
-                      <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-                        <div className="flex items-center">
-                          <Calendar size={12} className="mr-1" />
-                          {new Date(item.pubDate).toLocaleDateString('en-US', {
-                            month: 'short',
-                            day: 'numeric'
-                          })}
-                        </div>
-                        <div className="flex items-center text-gray-900 dark:text-white font-medium group-hover:translate-x-1 transition-transform duration-300">
-                          View
-                          <ExternalLink size={12} className="ml-1" />
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-                {animeByDay[currentDay]?.length === 0 && (
-                  <p className="text-gray-500 dark:text-gray-400 col-span-2 text-center py-8">
-                    No anime airing today
-                  </p>
-                )}
-              </div>
-            </div>
-
-            {/* Show other days */}
-            <div>
-              <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-4">Other Days</h3>
-              <div className="space-y-4">
-                {[0, 1, 2, 3, 4, 5, 6].filter(day => day !== currentDay).map(day => (
-                  animeByDay[day]?.length > 0 && (
-                    <div key={day} className="bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700">
-                      <h4 className="font-semibold text-gray-900 dark:text-white mb-3">{dayNames[day]}</h4>
-                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                        {animeByDay[day].slice(0, 6).map((item) => (
-                          <Link
-                            key={item.id}
-                            to={`/news/${item.id}`}
-                            className="group"
-                          >
-                            <div className="relative aspect-[3/4] overflow-hidden rounded-lg mb-2">
-                              <img
-                                src={item.thumbnail}
-                                alt={item.title}
-                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                                onError={(e) => {
-                                  e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
-                                }}
-                              />
-                            </div>
-                            <p className="text-xs font-medium text-gray-900 dark:text-white line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
-                              {item.title}
-                            </p>
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  )
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Trending (Small Cards) - Takes 1 column */}
+          {/* Left Column - Trending on Internet Placeholder - Takes 1 column */}
           <div className="lg:col-span-1">
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                 <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
-                Trending
+                Trending on Internet
               </h2>
             </div>
-            <div className="space-y-4">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-200 dark:border-gray-700 min-h-[400px] flex items-center justify-center">
+              <div className="text-center">
+                <TrendingUp className="mx-auto text-gray-400 dark:text-gray-600 mb-4" size={48} />
+                <p className="text-gray-500 dark:text-gray-400 text-lg">
+                  Coming Soon
+                </p>
+                <p className="text-gray-400 dark:text-gray-500 text-sm mt-2">
+                  Trending content will appear here
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Trending Anime (Small Cards) - Takes 2 columns */}
+          <div className="lg:col-span-2">
+            <div className="mb-6">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+                <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
+                Trending Anime
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {trendingNews.map((item, index) => (
                 <Link
                   key={item.id}
                   to={`/news/${item.id}`}
                   className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 border border-gray-200 dark:border-gray-700"
                 >
-                  <div className="flex gap-3 p-3">
-                    {/* Thumbnail - Small */}
-                    <div className="relative w-20 h-20 flex-shrink-0">
-                      <img
-                        src={item.thumbnail}
-                        alt={item.title}
-                        className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500"
-                        onError={(e) => {
-                          e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
-                        }}
-                      />
-                      <div className="absolute inset-0 bg-gray-900/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      {/* Rank badge */}
-                      <div className="absolute top-1 left-1 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs font-bold px-2 py-1 rounded-full">
-                        #{index + 1}
-                      </div>
+                  <div className="relative aspect-[3/4] overflow-hidden">
+                    <img
+                      src={item.thumbnail}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      onError={(e) => {
+                        e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    {/* Rank badge */}
+                    <div className="absolute top-2 left-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs font-bold px-2 py-1 rounded-full">
+                      #{index + 1}
                     </div>
-
-                    {/* Content */}
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-xs sm:text-sm font-bold text-gray-900 dark:text-white mb-1 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
-                        {item.title}
-                      </h3>
-                      <p className="text-xs text-gray-600 dark:text-gray-400 mb-2 line-clamp-1 leading-relaxed">
-                        {item.description}
-                      </p>
-                      <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
-                        <Calendar size={10} className="mr-1" />
-                        {new Date(item.pubDate).toLocaleDateString('en-US', {
-                          month: 'short',
-                          day: 'numeric'
-                        })}
-                      </div>
-                    </div>
+                  </div>
+                  <div className="p-3">
+                    <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-1 line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-300 leading-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
                 </Link>
               ))}
