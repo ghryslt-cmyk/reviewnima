@@ -165,7 +165,7 @@ const Home = () => {
       </div>
 
       {/* Top Rated Reviews Section */}
-      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-8 xs:py-10 sm:py-12 md:py-20 xl:mx-64">
+      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-8 xs:py-10 sm:py-12 md:py-20">
         <div className="mb-6 xs:mb-8 sm:mb-10 md:mb-12">
           <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
             <Star className="mr-2 xs:mr-3 text-yellow-500 fill-yellow-500" size={24} xs:size={28} sm:size={32} md:size={36} />
@@ -189,7 +189,7 @@ const Home = () => {
       </div>
 
       {/* Latest Reviews Section */}
-      <div className="bg-gray-100 dark:bg-gray-800 py-8 xs:py-10 sm:py-12 md:py-20 xl:mx-64">
+      <div className="bg-gray-100 dark:bg-gray-800 py-8 xs:py-10 sm:py-12 md:py-20">
         <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
           <div className="mb-6 xs:mb-8 sm:mb-10 md:mb-12">
             <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
@@ -215,7 +215,7 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div className="bg-white dark:bg-gray-800 py-8 xs:py-10 sm:py-12 md:py-20 border-t border-gray-200 dark:border-gray-700 xl:mx-64">
+      <div className="bg-white dark:bg-gray-800 py-8 xs:py-10 sm:py-12 md:py-20 border-t border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-8 xs:mb-10 sm:mb-12">
             <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">

@@ -131,62 +131,56 @@ const fetchTrendingAnime = async () => {
   }
 };
 
-// Fetch currently airing anime from MAL schedule and enrich with AniList assets
+// Fetch currently airing anime from AniList
 const fetchAiringAnime = async () => {
-  try {
-    // Fetch schedule from MAL for current day
-    const malAnime = await fetchMALSchedule();
-    
-    // Enrich each MAL anime with AniList assets
-    const enrichedAnime = await Promise.all(
-      malAnime.map(async (malItem) => {
-        const anilistData = await searchAniListByTitle(malItem.title);
-        
-        // Use AniList data if found, otherwise use MAL data
-        if (anilistData) {
-          return {
-            ...anilistData,
-            malTitle: malItem.title,
-            malUrl: malItem.url,
-            malScore: malItem.score,
-            malEpisodes: malItem.episodes,
-            airingDay: getCurrentDayOfWeek()
-
-          };
-        } else {
-          // Fallback to MAL data structure
-          return {
-            id: malItem.mal_id,
-            title: {
-              romaji: malItem.title,
-              english: malItem.title_english || malItem.title,
-              native: malItem.title_japanese || malItem.title
-            },
-            coverImage: {
-              large: malItem.images?.jpg?.large_image_url || malItem.images?.jpg?.image_url,
-              medium: malItem.images?.jpg?.image_url,
-              extraLarge: malItem.images?.jpg?.large_image_url
-            },
-            bannerImage: null,
-            description: malItem.synopsis || 'No description available.',
-            genres: malItem.genres?.map(g => g.name) || [],
-            averageScore: malItem.score ? malItem.score * 10 : null,
-            episodes: malItem.episodes,
-            status: malItem.status,
-            studios: {
-              nodes: malItem.studios?.map(s => ({ name: s.name })) || []
-            },
-            malTitle: malItem.title,
-            malUrl: malItem.url,
-            malScore: malItem.score,
-            malEpisodes: malItem.episodes,
-            airingDay: getCurrentDayOfWeek()
-          };
+  const query = `
+    query {
+      Page(page: 1, perPage: 15) {
+        media(type: ANIME, sort: POPULARITY_DESC, status: RELEASING) {
+          id
+          title {
+            romaji
+            english
+            native
+          }
+          coverImage {
+            large
+            medium
+            extraLarge
+          }
+          bannerImage
+          description
+          genres
+          averageScore
+          episodes
+          status
+          season
+          seasonYear
+          studios {
+            nodes {
+              name
+            }
+          }
+          nextAiringEpisode {
+            airingAt
+            episode
+          }
         }
-      })
-    );
+      }
+    }
+  `;
+
+  try {
+    const response = await axios.post(ANILIST_API_URL, { query });
+    const media = response.data.data.Page.media;
     
-    return enrichedAnime;
+    // Sort by next airing episode time (soonest airing first)
+    // Anime without nextAiringEpisode go to the end
+    return media.sort((a, b) => {
+      const timeA = a.nextAiringEpisode?.airingAt || Infinity;
+      const timeB = b.nextAiringEpisode?.airingAt || Infinity;
+      return timeA - timeB;
+    });
   } catch (error) {
     console.error('Error fetching airing anime:', error);
     return [];

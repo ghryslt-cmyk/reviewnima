@@ -70,7 +70,7 @@ const SeasonalSidebars = () => {
   return (
     <>
       {/* Left Sidebar - Desktop Only */}
-      <div className="hidden xl:block fixed left-0 top-0 bottom-0 w-64 z-40">
+      <div className="hidden lg:block fixed left-0 top-0 bottom-0 w-48 lg:w-64 z-40">
         <div 
           className="relative h-full bg-cover bg-center"
           style={{ backgroundImage: "url('/Desain tanpa judul (5).png')" }}
@@ -106,7 +106,7 @@ const SeasonalSidebars = () => {
                 {/* TV Static Overlay on Card */}
                 <div className="absolute inset-0 rounded-lg overflow-hidden">
                   <div 
-                    className="absolute inset-0 opacity-30 mix-blend-overlay"
+                    className="absolute inset-0 opacity-50 mix-blend-overlay"
                     style={{
                       backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
                       animation: 'staticNoise 0.2s infinite'
@@ -125,7 +125,7 @@ const SeasonalSidebars = () => {
       </div>
 
       {/* Right Sidebar - Desktop Only */}
-      <div className="hidden xl:block fixed right-0 top-0 bottom-0 w-64 z-40">
+      <div className="hidden lg:block fixed right-0 top-0 bottom-0 w-48 lg:w-64 z-40">
         <div 
           className="relative h-full bg-cover bg-center"
           style={{ backgroundImage: "url('/Desain tanpa judul (5).png')" }}
@@ -161,7 +161,7 @@ const SeasonalSidebars = () => {
                 {/* TV Static Overlay on Card */}
                 <div className="absolute inset-0 rounded-lg overflow-hidden">
                   <div 
-                    className="absolute inset-0 opacity-30 mix-blend-overlay"
+                    className="absolute inset-0 opacity-50 mix-blend-overlay"
                     style={{
                       backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
                       animation: 'staticNoise 0.2s infinite'
@@ -180,7 +180,7 @@ const SeasonalSidebars = () => {
       </div>
 
       {/* Center Content Indicator Line - Desktop Only */}
-      <div className="hidden xl:block fixed left-64 right-64 top-0 bottom-0 z-30 pointer-events-none">
+      <div className="hidden lg:block fixed left-48 lg:left-64 right-48 lg:right-64 top-0 bottom-0 z-30 pointer-events-none">
         <div className="h-full border-l border-r border-purple-500/30 dark:border-pink-500/30 opacity-40"></div>
       </div>
     </>

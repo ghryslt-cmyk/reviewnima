@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount } from '../lib/firebase';
 import { searchAnime, getAnimeById } from '../lib/anilist';
@@ -8,6 +8,7 @@ import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users } from 'luci
 const Admin = () => {
   const { user, checkAdmin, isAuthenticated } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
   const [isAdminUser, setIsAdminUser] = useState(false);
   const [loading, setLoading] = useState(true);
   
@@ -30,6 +31,8 @@ const Admin = () => {
   useEffect(() => {
     const checkAdminAccess = async () => {
       if (!isAuthenticated) {
+        // Store current path for redirect after login
+        localStorage.setItem('redirectPath', location.pathname);
         navigate('/login');
         return;
       }

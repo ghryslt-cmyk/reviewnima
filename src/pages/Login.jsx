@@ -1,26 +1,33 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { LogIn, Loader2 } from 'lucide-react';
 
 const Login = () => {
   const { login, isAuthenticated, loading } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
   const [isLoggingIn, setIsLoggingIn] = useState(false);
   const [error, setError] = useState('');
 
   useEffect(() => {
     if (isAuthenticated && !loading) {
-      navigate('/');
+      // Redirect to the page the user was trying to access, or home if not specified
+      const from = location.state?.from?.pathname || localStorage.getItem('redirectPath') || '/';
+      localStorage.removeItem('redirectPath');
+      navigate(from, { replace: true });
     }
-  }, [isAuthenticated, loading, navigate]);
+  }, [isAuthenticated, loading, navigate, location]);
 
   const handleGoogleLogin = async () => {
     setIsLoggingIn(true);
     setError('');
     try {
       await login();
-      navigate('/');
+      // Redirect to the page the user was trying to access
+      const from = location.state?.from?.pathname || localStorage.getItem('redirectPath') || '/';
+      localStorage.removeItem('redirectPath');
+      navigate(from, { replace: true });
     } catch (error) {
       setError('Failed to login. Please try again.');
       console.error('Login error:', error);
