@@ -152,7 +152,7 @@ const News = () => {
 
   // Separate news by category
   const airingNews = news.filter(item => item.category === 'Now Airing');
-  const trendingNews = news.filter(item => item.category === 'Trending');
+  const trendingAnimeNews = news.filter(item => item.category === 'Trending');
 
   // Get current day of week
   const currentDay = new Date().getDay();
@@ -400,7 +400,7 @@ const News = () => {
               </h2>
             </div>
             <div className="space-y-3">
-              {trendingNews.map((item, index) => (
+              {trendingAnimeNews.map((item, index) => (
                 <Link
                   key={item.id}
                   to={`/news/${item.id}`}
