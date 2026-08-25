@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { fetchAnimeNews, searchRelevantImages } from '../lib/animeNews';
+import { fetchAnimeNews } from '../lib/animeNews';
 import { ArrowLeft, Calendar, ExternalLink, Share2, Newspaper, MessageCircle, Send, User as UserIcon } from 'lucide-react';
 
 const NewsDetail = () => {
@@ -8,10 +8,8 @@ const NewsDetail = () => {
   const [newsItem, setNewsItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [relatedNews, setRelatedNews] = useState([]);
-  const [relevantImages, setRelevantImages] = useState([]);
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState('');
-  const [loadingImages, setLoadingImages] = useState(false);
 
   useEffect(() => {
     loadNewsDetail();
@@ -32,9 +30,6 @@ const NewsDetail = () => {
           .slice(0, 4);
         setRelatedNews(related);
         
-        // Search for relevant images
-        loadRelevantImages(item.title);
-        
         // Load comments from localStorage (demo purposes)
         loadComments(id);
       }
@@ -45,17 +40,6 @@ const NewsDetail = () => {
     }
   };
 
-  const loadRelevantImages = async (title) => {
-    setLoadingImages(true);
-    try {
-      const images = await searchRelevantImages(title);
-      setRelevantImages(images);
-    } catch (error) {
-      console.error('Error loading relevant images:', error);
-    } finally {
-      setLoadingImages(false);
-    }
-  };
 
   const loadComments = (newsId) => {
     const storedComments = localStorage.getItem(`news_comments_${newsId}`);
@@ -200,34 +184,6 @@ const NewsDetail = () => {
                   />
                 </div>
 
-                {/* Image Collage Section */}
-                {relevantImages.length > 0 && (
-                  <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center">
-                      <Newspaper className="mr-2 text-gray-600 dark:text-gray-400" size={20} />
-                      Related Images
-                    </h3>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                      {relevantImages.map((image, index) => (
-                        <div
-                          key={index}
-                          className={`relative overflow-hidden rounded-lg ${
-                            index === 0 ? 'col-span-2 sm:col-span-3 row-span-2' : ''
-                          }`}
-                        >
-                          <img
-                            src={image}
-                            alt={`Related image ${index + 1}`}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                            onError={(e) => {
-                              e.target.style.display = 'none';
-                            }}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
 
                 {/* Comments Section */}
                 <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
