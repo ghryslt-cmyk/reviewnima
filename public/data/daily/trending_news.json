@@ -1,6 +1,39 @@
 {
-  "fetchedAt": "2026-08-26T16:15:54.777Z",
+  "fetchedAt": "2026-08-26T18:54:55.794Z",
   "news": [
+    {
+      "title": "Bloodstained: The Scarlet Engagement Game Delayed to 2027",
+      "description": "Game initially slated for release this year for PS5, Xbox Series X|S, PC",
+      "fullDescription": "Game initially slated for release this year for PS5, Xbox Series X|S, PC",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-26/bloodstained-the-scarlet-engagement-game-delayed-to-2027/.241007",
+      "pubDate": "Wed, 26 Aug 2026 14:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241007"
+    },
+    {
+      "title": "Microsoft to Allow Customers to Claim Digital Entitlements Through Physical Xbox One, Xbox Series X|S Discs",
+      "description": "Xbox Insiders can begin using feature on August 31",
+      "fullDescription": "Xbox Insiders can begin using feature on August 31",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-26/microsoft-to-allow-customers-to-claim-digital-entitlements-through-physical-xbox-one-xbox-series-x-/.241013",
+      "pubDate": "Wed, 26 Aug 2026 13:10:10 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239363/bootup-wire-9c068aa206c9a72d2b1f-1900x1080.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241013"
+    },
+    {
+      "title": "Actor Tim Curry Dies at 80",
+      "description": "Curry played Dr. Frank-n-Furter in The Rocky Horror Picture Show, Cat King in The Cat Returns",
+      "fullDescription": "Curry played Dr. Frank-n-Furter in <cite>The Rocky Horror Picture Show</cite>, Cat King in <cite>The Cat Returns</cite>",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-26/actor-tim-curry-dies-at-80/.241014",
+      "pubDate": "Wed, 26 Aug 2026 12:33:30 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241014/tim-curry.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241014"
+    },
     {
       "title": "New Ghost in the Shell Anime Casts Chikahiro Kobayashi",
       "description": "Kobayashi plays Lee in anime's eighth episode",
@@ -132,39 +165,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/240960/kemonogari.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.240960"
-    },
-    {
-      "title": "Ruby on the Cake: Feast of the Man-Eating Witches Manga Ends",
-      "description": "Series debuted in April 2024",
-      "fullDescription": "Series debuted in April 2024",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-25/ruby-on-the-cake-feast-of-the-man-eating-witches-manga-ends/.240941",
-      "pubDate": "Tue, 25 Aug 2026 20:20:53 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/232403/ruby.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.240941"
-    },
-    {
-      "title": "Kento Amemiya's Kinato's Magic Manga Ends",
-      "description": "Manga about young boy with minor healing abilities launched on February 2",
-      "fullDescription": "Manga about young boy with minor healing abilities launched on February 2",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-25/kento-amemiya-kinato-magic-manga-ends/.240965",
-      "pubDate": "Tue, 25 Aug 2026 20:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240965/kinato.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.240965"
-    },
-    {
-      "title": "Detective Conan: The Private Eyes' Requiem Manga Ends in September",
-      "description": "Manga adaptation of franchise's 10th film launched on February 24",
-      "fullDescription": "Manga adaptation of franchise's 10th film launched on February 24",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-25/detective-conan-the-private-eyes-requiem-manga-ends-in-september/.240959",
-      "pubDate": "Tue, 25 Aug 2026 19:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240959/mode3-w650-detective-conan-the-private-eye-s-requiem-087310.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.240959"
     }
   ],
   "total": 15
