@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T18:57:20.802Z",
+  "fetchedAt": "2026-08-26T21:41:31.433Z",
   "schedule": {
     "sunday": [
       {
@@ -30,8 +30,8 @@
         "id": 63100,
         "title": "Tetsunabe no Jan!",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1452/159112.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1452/159112l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1452/159112.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1452/159112l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
@@ -402,8 +402,8 @@
         "id": 235,
         "title": "Meitantei Conan",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.webp"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
