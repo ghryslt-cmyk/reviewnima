@@ -1,6 +1,28 @@
 {
-  "fetchedAt": "2026-08-26T14:41:54.285Z",
+  "fetchedAt": "2026-08-26T16:13:48.285Z",
   "news": [
+    {
+      "title": "New Ghost in the Shell Anime Casts Chikahiro Kobayashi",
+      "description": "Kobayashi plays Lee in anime's eighth episode",
+      "fullDescription": "Kobayashi plays Lee in anime's eighth episode",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-26/new-ghost-in-the-shell-anime-casts-chikahiro-kobayashi/.241011",
+      "pubDate": "Wed, 26 Aug 2026 12:05:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241011/01-lee.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241011"
+    },
+    {
+      "title": "Manga &#039;Ochikobore Fruit Tart&#039; Concludes With 9th Volume",
+      "description": "The official X account for author Sou Hamayumiba announced on Wednesday that the Ochikobore Fruit Tart (Dropout Idol Fruit Tart) manga is ending with the ninth volume. The series concluded its magazine serialization in the September 2026 issue of Manga Time Kirara Carat on July 28, followed by the d...",
+      "fullDescription": "The official X account for author Sou Hamayumiba announced on Wednesday that the Ochikobore Fruit Tart (Dropout Idol Fruit Tart) manga is ending with the ninth volume. The series concluded its magazine serialization in the September 2026 issue of Manga Time Kirara Carat on July 28, followed by the digital release of its 123rd and final chapter on August 1. The ninth and final volume is scheduled for an August 27 release, marking the end of the series&#039; over ten-year run. Hamayumiba originall...",
+      "link": "https://myanimelist.net/news/74636310?_location=rss",
+      "pubDate": "Wed, 26 Aug 2026 07:51:19 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1787755784-88334634a627ad6d212906381695aa3d.jpeg",
+      "guid": "https://myanimelist.net/news/74636310?_location=rss"
+    },
     {
       "title": "Nia Liston: The Merciless Maiden Anime Adds 3 New Cast Members",
       "description": "Taku Yashiro, Yōko Hikasa, Satoshi Hino join cast of October 6 anime",
@@ -143,28 +165,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240959/mode3-w650-detective-conan-the-private-eye-s-requiem-087310.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.240959"
-    },
-    {
-      "title": "Maria Holic Gets Sequel Series After 12 Years",
-      "description": "Story set 12 months after ending of original story",
-      "fullDescription": "Story set 12 months after ending of original story",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-25/maria-holic-gets-sequel-series-after-12-years/.240975",
-      "pubDate": "Tue, 25 Aug 2026 18:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.240975"
-    },
-    {
-      "title": "Monster Hunter Outlanders Game's Trailer Reveals Ruger Aidal",
-      "description": "Pre-registration has begun for iOS/Android game",
-      "fullDescription": "Pre-registration has begun for iOS/Android game",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-25/monster-hunter-outlanders-game-trailer-reveals-ruger-aidal/.240980",
-      "pubDate": "Tue, 25 Aug 2026 16:27:05 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.7/217824/monster-hunter-outlanders.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.240980"
     }
   ],
   "total": 15
