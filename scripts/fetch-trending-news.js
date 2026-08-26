@@ -47,8 +47,8 @@ const scrapeArticleImage = async (url, source) => {
     
     // Extract image based on source
     if (source === 'Anime News Network') {
-      // ANN images are in figure class="fright" img
-      const figureMatch = html.match(/<figure[^>]*class=["'][^"']*fright[^"']*["'][^>]*>[\s\S]*?<img[^>]+src=["']([^"']+\.(?:jpg|jpeg|png|webp))["']/i);
+      // ANN images are in figure elements
+      const figureMatch = html.match(/<figure[^>]*>[\s\S]*?<img[^>]+src=["']([^"']+\.(?:jpg|jpeg|png|webp))["']/i);
       if (figureMatch && figureMatch[1]) {
         return figureMatch[1];
       }
