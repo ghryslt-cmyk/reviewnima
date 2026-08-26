@@ -1,16 +1,9 @@
-name: Fetch Seasonal Anime Data
+name: Fetch Daily Data
 
 on:
   schedule:
-    # Run at the start of each season
-    # Winter: January 1st at 00:00 UTC
-    # Spring: April 1st at 00:00 UTC
-    # Summer: July 1st at 00:00 UTC
-    # Fall: October 1st at 00:00 UTC
-    - cron: '0 0 1 1 *'   # January 1 (Winter)
-    - cron: '0 0 1 4 *'   # April 1 (Spring)
-    - cron: '0 0 1 7 *'   # July 1 (Summer)
-    - cron: '0 0 1 10 *'  # October 1 (Fall)
+    # Run every hour
+    - cron: '0 * * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
@@ -33,6 +26,9 @@ jobs:
       - name: Fetch trending anime data
         run: node scripts/fetch-trending-anime.js
       
+      - name: Fetch trending news data
+        run: node scripts/fetch-trending-news.js
+      
       - name: Fetch MAL schedule data
         env:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
@@ -43,5 +39,5 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add public/data/daily/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update seasonal anime data [automated]"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update daily data [automated]"
           git push

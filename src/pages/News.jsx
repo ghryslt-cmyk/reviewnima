@@ -16,6 +16,7 @@ const News = () => {
     0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: []
   });
   const [trendingNews, setTrendingNews] = useState([]);
+  const [trendingAnimeNews, setTrendingAnimeNews] = useState([]);
   const [selectedNewsItem, setSelectedNewsItem] = useState(null);
   const [showNewsDetail, setShowNewsDetail] = useState(false);
   const scrollRef = useRef(null);
@@ -123,7 +124,8 @@ const News = () => {
 
       // Load trending news from RSS sources
       try {
-        const trendingResponse = await fetch('/data/daily/trending_news.json');
+        const timestamp = Date.now();
+        const trendingResponse = await fetch(`/data/daily/trending_news.json?t=${timestamp}`);
         if (trendingResponse.ok) {
           const trendingData = await trendingResponse.json();
           setTrendingNews(trendingData.news || []);
@@ -134,7 +136,8 @@ const News = () => {
 
       // Load trending anime from JSON file
       try {
-        const trendingAnimeResponse = await fetch('/data/daily/trending_anime.json');
+        const timestamp = Date.now();
+        const trendingAnimeResponse = await fetch(`/data/daily/trending_anime.json?t=${timestamp}`);
         if (trendingAnimeResponse.ok) {
           const trendingAnimeData = await trendingAnimeResponse.json();
           // Convert trending anime to news format
@@ -181,7 +184,6 @@ const News = () => {
 
   // Separate news by category
   const airingNews = news.filter(item => item.category === 'Now Airing');
-  const trendingAnimeNews = news.filter(item => item.category === 'Trending');
 
   // Get current day of week
   const currentDay = new Date().getDay();
@@ -366,7 +368,7 @@ const News = () => {
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                 <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
-                Newspaper
+                News Paper
               </h2>
             </div>
             <div className="space-y-4">
