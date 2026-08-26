@@ -2,16 +2,23 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getReviewById, getComments, addComment } from '../lib/firebase';
 import { useAuth } from '../context/AuthContext';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
+import { translateContent } from '../lib/translator';
 import { Star, Calendar, Clock, User, MessageSquare, Send, ExternalLink } from 'lucide-react';
 
 const ReviewDetail = () => {
   const { id } = useParams();
   const { user, isAuthenticated } = useAuth();
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [review, setReview] = useState(null);
   const [comments, setComments] = useState([]);
   const [loading, setLoading] = useState(true);
   const [commentText, setCommentText] = useState('');
   const [submittingComment, setSubmittingComment] = useState(false);
+  const [translatedReviewText, setTranslatedReviewText] = useState(null);
+  const [translating, setTranslating] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,6 +39,28 @@ const ReviewDetail = () => {
 
     fetchData();
   }, [id]);
+
+  // Translate review text when language changes
+  useEffect(() => {
+    const translateReview = async () => {
+      if (review && review.reviewText && language !== 'id') {
+        setTranslating(true);
+        try {
+          const translated = await translateContent(review.reviewText, 'id', language);
+          setTranslatedReviewText(translated);
+        } catch (error) {
+          console.error('Translation error:', error);
+          setTranslatedReviewText(review.reviewText);
+        } finally {
+          setTranslating(false);
+        }
+      } else {
+        setTranslatedReviewText(null); // Use original Indonesian text
+      }
+    };
+
+    translateReview();
+  }, [review, language]);
 
   const handleSubmitComment = async (e) => {
     e.preventDefault();
@@ -68,8 +97,8 @@ const ReviewDetail = () => {
     return (
       <div className="min-h-screen bg-white dark:bg-black flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-black dark:text-white mb-4">Review Not Found</h1>
-          <p className="text-gray-700 dark:text-gray-300">The review you're looking for doesn't exist.</p>
+          <h1 className="text-2xl font-bold text-black dark:text-white mb-4">{t('reviewDetail.reviewNotFound')}</h1>
+          <p className="text-gray-700 dark:text-gray-300">{t('reviewDetail.reviewNotFoundDesc')}</p>
         </div>
       </div>
     );
@@ -135,7 +164,7 @@ const ReviewDetail = () => {
                 <div className="bg-white dark:bg-black p-4 rounded-lg shadow-lg border-2 border-gray-200 dark:border-gray-800">
                   <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 mb-1">
                     <Clock size={16} />
-                    <span className="text-sm">Episodes</span>
+                    <span className="text-sm">{t('reviewDetail.episodes')}</span>
                   </div>
                   <p className="text-xl font-bold text-black dark:text-white">{animeData.episodes}</p>
                 </div>
@@ -145,7 +174,7 @@ const ReviewDetail = () => {
                 <div className="bg-white dark:bg-black p-4 rounded-lg shadow-lg border-2 border-gray-200 dark:border-gray-800">
                   <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 mb-1">
                     <Calendar size={16} />
-                    <span className="text-sm">Year</span>
+                    <span className="text-sm">{t('reviewDetail.year')}</span>
                   </div>
                   <p className="text-xl font-bold text-black dark:text-white">{animeData.seasonYear}</p>
                 </div>
@@ -155,7 +184,7 @@ const ReviewDetail = () => {
                 <div className="bg-white dark:bg-black p-4 rounded-lg shadow-lg border-2 border-gray-200 dark:border-gray-800">
                   <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 mb-1">
                     <User size={16} />
-                    <span className="text-sm">Studio</span>
+                    <span className="text-sm">{t('reviewDetail.studio')}</span>
                   </div>
                   <p className="text-xl font-bold text-black dark:text-white">{animeData.studios.nodes[0].name}</p>
                 </div>
@@ -165,7 +194,7 @@ const ReviewDetail = () => {
                 <div className="bg-white dark:bg-black p-4 rounded-lg shadow-lg border-2 border-gray-200 dark:border-gray-800">
                   <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 mb-1">
                     <ExternalLink size={16} />
-                    <span className="text-sm">Status</span>
+                    <span className="text-sm">{t('reviewDetail.status')}</span>
                   </div>
                   <p className="text-xl font-bold text-black dark:text-white">{animeData.status}</p>
                 </div>
@@ -174,7 +203,7 @@ const ReviewDetail = () => {
 
             {animeData.description && (
               <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-lg mb-6 border-2 border-gray-200 dark:border-gray-800">
-                <h3 className="text-xl font-bold text-black dark:text-white mb-3">Synopsis</h3>
+                <h3 className="text-xl font-bold text-black dark:text-white mb-3">{t('reviewDetail.synopsis')}</h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   {animeData.description.replace(/<[^>]*>/g, '')}
                 </p>
@@ -187,18 +216,25 @@ const ReviewDetail = () => {
         <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg mb-12 border-2 border-gray-200 dark:border-gray-800">
           <h2 className="text-3xl font-bold text-black dark:text-white mb-6 flex items-center">
             <Star className="mr-3 text-black dark:text-white" size={32} />
-            My Review
+            {t('reviewDetail.myReview')}
           </h2>
           
           <div className="prose prose-lg dark:prose-invert max-w-none">
             <div className="text-gray-800 dark:text-gray-200 whitespace-pre-line leading-relaxed">
-              {review.reviewText || 'No review text available.'}
+              {translating ? (
+                <div className="flex items-center justify-center py-4">
+                  <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-gray-900 dark:border-white"></div>
+                  <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">Translating...</span>
+                </div>
+              ) : (
+                (translatedReviewText || review.reviewText) || t('reviewDetail.noReviewText')
+              )}
             </div>
           </div>
 
           <div className="mt-6 pt-6 border-t-2 border-gray-300 dark:border-gray-700">
             <div className="flex items-center space-x-4 text-sm text-gray-700 dark:text-gray-300">
-              <span>Reviewed by Morviss</span>
+              <span>{t('reviewDetail.reviewedBy')}</span>
               <span>•</span>
               <span>{new Date(review.createdAt?.toDate?.() || review.createdAt).toLocaleDateString()}</span>
             </div>
@@ -209,7 +245,7 @@ const ReviewDetail = () => {
         <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow-lg border-2 border-gray-200 dark:border-gray-800">
           <h2 className="text-3xl font-bold text-black dark:text-white mb-6 flex items-center">
             <MessageSquare className="mr-3 text-black dark:text-white" size={32} />
-            Comments ({comments.length})
+            {t('reviewDetail.comments')} ({comments.length})
           </h2>
 
           {/* Comment Form */}
@@ -227,7 +263,7 @@ const ReviewDetail = () => {
                   <textarea
                     value={commentText}
                     onChange={(e) => setCommentText(e.target.value)}
-                    placeholder="Write a comment..."
+                    placeholder={t('reviewDetail.writeComment')}
                     className="w-full p-4 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent resize-none"
                     rows="3"
                   />
@@ -238,7 +274,7 @@ const ReviewDetail = () => {
                       className="flex items-center space-x-2 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 disabled:bg-gray-400 px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105"
                     >
                       <Send size={18} />
-                      <span>{submittingComment ? 'Sending...' : 'Send Comment'}</span>
+                      <span>{submittingComment ? t('reviewDetail.sending') : t('reviewDetail.sendComment')}</span>
                     </button>
                   </div>
                 </div>
@@ -247,7 +283,7 @@ const ReviewDetail = () => {
           ) : (
             <div className="mb-8 p-4 bg-white dark:bg-black rounded-lg text-center border-2 border-black dark:border-white">
               <p className="text-black dark:text-white">
-                Please <a href="/login" className="underline font-bold">login</a> to leave a comment
+                <span dangerouslySetInnerHTML={{ __html: t('reviewDetail.pleaseLogin') }} />
               </p>
             </div>
           )}
@@ -281,7 +317,7 @@ const ReviewDetail = () => {
               ))
             ) : (
               <div className="text-center py-8 text-gray-500 dark:text-gray-400">
-                No comments yet. Be the first to comment!
+                {t('reviewDetail.noComments')}
               </div>
             )}
           </div>

@@ -1,19 +1,46 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { fetchAnimeNews } from '../lib/animeNews';
+import { useLanguage } from '../context/LanguageContext';
+import { translateContent } from '../lib/translator';
 import { ArrowLeft, Calendar, ExternalLink, Share2, Newspaper, MessageCircle, Send, User as UserIcon } from 'lucide-react';
 
 const NewsDetail = () => {
   const { id } = useParams();
+  const { language } = useLanguage();
   const [newsItem, setNewsItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [relatedNews, setRelatedNews] = useState([]);
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState('');
+  const [translatedContent, setTranslatedContent] = useState(null);
+  const [translating, setTranslating] = useState(false);
 
   useEffect(() => {
     loadNewsDetail();
   }, [id]);
+
+  // Translate news content when language changes
+  useEffect(() => {
+    const translateNewsContent = async () => {
+      if (newsItem && newsItem.description && language !== 'id') {
+        setTranslating(true);
+        try {
+          const translated = await translateContent(newsItem.description, 'id', language);
+          setTranslatedContent(translated);
+        } catch (error) {
+          console.error('Translation error:', error);
+          setTranslatedContent(newsItem.description);
+        } finally {
+          setTranslating(false);
+        }
+      } else {
+        setTranslatedContent(null); // Use original Indonesian text
+      }
+    };
+
+    translateNewsContent();
+  }, [newsItem, language]);
 
   const loadNewsDetail = async () => {
     try {
@@ -175,13 +202,22 @@ const NewsDetail = () => {
                 </div>
 
                 <div className="prose prose-lg dark:prose-invert max-w-none">
-                  <p className="text-gray-700 dark:text-gray-300 text-base xs:text-lg leading-relaxed mb-4">
-                    {newsItem.description}
-                  </p>
-                  <div 
-                    className="text-gray-700 dark:text-gray-300 text-base xs:text-lg leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: newsItem.content }}
-                  />
+                  {translating ? (
+                    <div className="flex items-center justify-center py-4">
+                      <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-gray-900 dark:border-white"></div>
+                      <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">Translating...</span>
+                    </div>
+                  ) : (
+                    <>
+                      <p className="text-gray-700 dark:text-gray-300 text-base xs:text-lg leading-relaxed mb-4">
+                        {translatedContent || newsItem.description}
+                      </p>
+                      <div 
+                        className="text-gray-700 dark:text-gray-300 text-base xs:text-lg leading-relaxed"
+                        dangerouslySetInnerHTML={{ __html: newsItem.content }}
+                      />
+                    </>
+                  )}
                 </div>
 
 

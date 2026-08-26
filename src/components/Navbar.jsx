@@ -1,12 +1,23 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
+import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages } from 'lucide-react';
 import { useState } from 'react';
 
 const Navbar = () => {
   const { user, logout, checkAdmin, isAuthenticated } = useAuth();
+  const { language, changeLanguage } = useLanguage();
+  const { t } = useTranslation(language);
   const isAdminUser = checkAdmin();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
+
+  const languages = [
+    { code: 'id', name: 'Indonesia', flag: '🇮🇩' },
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'jp', name: '日本語', flag: '🇯🇵' }
+  ];
 
   return (
     <nav className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-lg border-b border-gray-200 dark:border-gray-700 transition-all duration-300">
@@ -19,30 +30,65 @@ const Navbar = () => {
             <div className="hidden md:flex space-x-4">
               <Link to="/" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
                 <Home size={20} />
-                <span>Beranda</span>
+                <span>{t('nav.home')}</span>
               </Link>
               <Link to="/news" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
                 <Newspaper size={20} />
-                <span>Berita</span>
+                <span>{t('nav.news')}</span>
               </Link>
               <Link to="/reviews" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
                 <BookOpen size={20} />
-                <span>Reviews</span>
+                <span>{t('nav.reviews')}</span>
               </Link>
               <Link to="/top-favorites" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
                 <Heart size={20} />
-                <span>Favorit</span>
+                <span>{t('nav.favorites')}</span>
               </Link>
               {isAdminUser && (
                 <Link to="/admin" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
                   <Shield size={20} />
-                  <span>Admin Panel</span>
+                  <span>{t('nav.adminPanel')}</span>
                 </Link>
               )}
             </div>
           </div>
           
           <div className="flex items-center space-x-2 sm:space-x-4">
+            {/* Language Selector */}
+            <div className="relative">
+              <button
+                onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+              >
+                <Globe size={20} />
+                <span className="hidden md:inline">{languages.find(lang => lang.code === language)?.flag}</span>
+                <Languages size={16} className="hidden md:inline" />
+              </button>
+              
+              {languageDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        changeLanguage(lang.code);
+                        setLanguageDropdownOpen(false);
+                      }}
+                      className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
+                        language === lang.code ? 'bg-gray-100 dark:bg-gray-700' : ''
+                      }`}
+                    >
+                      <span className="text-xl">{lang.flag}</span>
+                      <span className="text-gray-900 dark:text-white">{lang.name}</span>
+                      {language === lang.code && (
+                        <span className="ml-auto text-green-500">✓</span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {isAuthenticated ? (
               <>
                 <Link to="/profile" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
@@ -62,7 +108,7 @@ const Navbar = () => {
                   className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
                 >
                   <LogOut size={20} />
-                  <span className="hidden md:inline">Logout</span>
+                  <span className="hidden md:inline">{t('nav.logout')}</span>
                 </button>
               </>
             ) : (
@@ -70,7 +116,7 @@ const Navbar = () => {
                 to="/login"
                 className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-700 dark:hover:bg-gray-200 px-3 sm:px-4 py-2 rounded-lg transition-all duration-300 font-medium hover:scale-105 border border-gray-700 dark:border-gray-300"
               >
-                Login
+                {t('nav.login')}
               </Link>
             )}
             <button
@@ -85,13 +131,37 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
+            {/* Language Selector for Mobile */}
+            <div className="px-3 py-2">
+              <div className="flex items-center space-x-2 text-gray-900 dark:text-white mb-2">
+                <Globe size={20} />
+                <span className="font-medium">Language</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => changeLanguage(lang.code)}
+                    className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-300 ${
+                      language === lang.code
+                        ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white'
+                    }`}
+                  >
+                    <span>{lang.flag}</span>
+                    <span className="text-sm">{lang.code.toUpperCase()}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+            
             <Link 
               to="/" 
               className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
               onClick={() => setMobileMenuOpen(false)}
             >
               <Home size={20} />
-              <span>Beranda</span>
+              <span>{t('nav.home')}</span>
             </Link>
             <Link 
               to="/news" 
@@ -99,7 +169,7 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <Newspaper size={20} />
-              <span>Berita</span>
+              <span>{t('nav.news')}</span>
             </Link>
             <Link 
               to="/reviews" 
@@ -107,7 +177,7 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <BookOpen size={20} />
-              <span>Reviews</span>
+              <span>{t('nav.reviews')}</span>
             </Link>
             <Link 
               to="/top-favorites" 
@@ -115,7 +185,7 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <Heart size={20} />
-              <span>Favorit</span>
+              <span>{t('nav.favorites')}</span>
             </Link>
             {isAdminUser && (
               <Link 
@@ -124,7 +194,7 @@ const Navbar = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Shield size={20} />
-                <span>Admin Panel</span>
+                <span>{t('nav.adminPanel')}</span>
               </Link>
             )}
             {isAuthenticated && (
@@ -134,7 +204,7 @@ const Navbar = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <User size={20} />
-                <span>Profile</span>
+                <span>{t('nav.profile')}</span>
               </Link>
             )}
           </div>

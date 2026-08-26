@@ -2,8 +2,12 @@ import { useState, useEffect } from 'react';
 import { getReviews } from '../lib/firebase';
 import ReviewCard from '../components/ReviewCard';
 import { BookOpen, Search } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
 
 const Reviews = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [reviews, setReviews] = useState([]);
   const [filteredReviews, setFilteredReviews] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -71,10 +75,10 @@ const Reviews = () => {
         <div className="text-center mb-8 sm:mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-4 flex items-center justify-center">
             <BookOpen className="mr-3 text-black dark:text-white" size={32} sm:size={40} />
-            All Reviews
+            {t('reviews.title')}
           </h1>
           <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
-            Browse through all anime reviews, sorted alphabetically
+            {t('reviews.subtitle')}
           </p>
         </div>
 
@@ -84,7 +88,7 @@ const Reviews = () => {
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400" size={18} sm:size={20} />
             <input
               type="text"
-              placeholder="Search anime..."
+              placeholder={t('reviews.searchPlaceholder')}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-10 pr-4 py-2 sm:py-3 rounded-lg border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent"
@@ -120,14 +124,14 @@ const Reviews = () => {
           <div className="text-center py-12 sm:py-16 bg-white dark:bg-black rounded-xl shadow-lg border-2 border-black dark:border-white">
             <BookOpen size={48} sm:size={64} className="mx-auto text-gray-500 dark:text-gray-400 mb-4" />
             <p className="text-black dark:text-white text-base sm:text-lg">
-              No reviews found matching your criteria
+              {t('reviews.noReviewsFound')}
             </p>
           </div>
         )}
 
         {/* Results Count */}
         <div className="mt-6 sm:mt-8 text-center text-gray-700 dark:text-gray-300 text-sm sm:text-base">
-          Showing {filteredReviews.length} {filteredReviews.length === 1 ? 'review' : 'reviews'}
+          {t('reviews.showing')} {filteredReviews.length} {filteredReviews.length === 1 ? t('reviews.review') : t('reviews.reviews')}
         </div>
       </div>
     </div>

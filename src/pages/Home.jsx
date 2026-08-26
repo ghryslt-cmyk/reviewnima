@@ -4,8 +4,12 @@ import { getReviews } from '../lib/firebase';
 import ReviewCard from '../components/ReviewCard';
 import { fetchAnimeNews } from '../lib/animeNews';
 import { TrendingUp, Sparkles, Star, Newspaper } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
 
 const Home = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [reviews, setReviews] = useState([]);
   const [topRatedReviews, setTopRatedReviews] = useState([]);
   const [news, setNews] = useState([]);
@@ -71,11 +75,11 @@ const Home = () => {
             <Sparkles size={20} xs:size={24} sm:size={32} className="text-white animate-spin-slow" />
           </div>
           <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-200 mb-4 xs:mb-6 sm:mb-8 font-light drop-shadow-md">
-            Discover Amazing Anime Reviews & Insights
+            {t('home.heroSubtitle')}
           </p>
           <div className="flex items-center justify-center space-x-2 text-gray-300">
             <TrendingUp size={14} xs:size={16} sm:size={20} />
-            <span className="text-xs xs:text-sm sm:text-base font-medium">Personal reviews from a true anime enthusiast</span>
+            <span className="text-xs xs:text-sm sm:text-base font-medium">{t('home.heroTagline')}</span>
           </div>
         </div>
 
@@ -169,7 +173,7 @@ const Home = () => {
         <div className="mb-6 xs:mb-8 sm:mb-10 md:mb-12">
           <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
             <Star className="mr-2 xs:mr-3 text-yellow-500 fill-yellow-500" size={24} xs:size={28} sm:size={32} md:size={36} />
-            Top Rated Reviews
+            {t('home.topRatedReviews')}
           </h2>
           <div className="h-1 w-16 xs:w-20 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full"></div>
         </div>
@@ -182,7 +186,7 @@ const Home = () => {
         ) : (
           <div className="text-center py-12 xs:py-14 sm:py-16 md:py-20 bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
             <p className="text-gray-600 dark:text-gray-400 text-sm xs:text-base sm:text-base md:text-lg">
-              No reviews yet. Check back soon!
+              {t('home.noReviews')}
             </p>
           </div>
         )}
@@ -194,7 +198,7 @@ const Home = () => {
           <div className="mb-6 xs:mb-8 sm:mb-10 md:mb-12">
             <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
               <TrendingUp className="mr-2 xs:mr-3 text-blue-500" size={24} xs:size={28} sm:size={32} md:size={36} />
-              Latest Reviews
+              {t('home.latestReviews')}
             </h2>
             <div className="h-1 w-16 xs:w-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
           </div>
@@ -207,7 +211,7 @@ const Home = () => {
           ) : (
             <div className="text-center py-12 xs:py-14 sm:py-16 md:py-20 bg-white dark:bg-gray-700 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-600">
               <p className="text-gray-600 dark:text-gray-400 text-sm xs:text-base sm:text-base md:text-lg">
-                No reviews yet. Check back soon!
+                {t('home.noReviews')}
               </p>
             </div>
           )}
@@ -219,13 +223,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
           <div className="text-center mb-8 xs:mb-10 sm:mb-12">
             <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              About ReviewNima
+              {t('home.aboutTitle')}
             </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto text-sm xs:text-base sm:text-base md:text-lg">
-              Welcome to my personal anime review website! Here I share my thoughts and insights 
-              on the anime I've watched. Each review comes from my personal experience and 
-              perspective. Feel free to browse through my reviews and leave comments if you're 
-              logged in with your Google account.
+              {t('home.aboutDescription')}
             </p>
           </div>
           
@@ -233,24 +234,24 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xs:gap-8 sm:gap-10 md:gap-12">
             {/* Left Column - Pages */}
             <div className="space-y-4 xs:space-y-6">
-              <h3 className="text-lg xs:text-xl sm:text-xl md:text-2xl font-semibold text-gray-900 dark:text-white mb-3 xs:mb-4">Pages</h3>
+              <h3 className="text-lg xs:text-xl sm:text-xl md:text-2xl font-semibold text-gray-900 dark:text-white mb-3 xs:mb-4">{t('home.pages')}</h3>
               <div className="space-y-2 xs:space-y-3">
                 <Link to="/" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
                   <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
-                    <span className="font-medium text-sm xs:text-base">Home</span>
-                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Main page with top rated and latest reviews</p>
+                    <span className="font-medium text-sm xs:text-base">{t('home.homePage')}</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">{t('home.homePageDesc')}</p>
                   </div>
                 </Link>
                 <Link to="/reviews" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
                   <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
-                    <span className="font-medium text-sm xs:text-base">Reviews</span>
-                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Browse all anime reviews alphabetically</p>
+                    <span className="font-medium text-sm xs:text-base">{t('home.reviewsPage')}</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">{t('home.reviewsPageDesc')}</p>
                   </div>
                 </Link>
                 <Link to="/top-favorites" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
                   <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
-                    <span className="font-medium text-sm xs:text-base">Top Favorites</span>
-                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">My personal top 10 favorite anime</p>
+                    <span className="font-medium text-sm xs:text-base">{t('home.topFavoritesPage')}</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">{t('home.topFavoritesPageDesc')}</p>
                   </div>
                 </Link>
               </div>
@@ -258,24 +259,24 @@ const Home = () => {
             
             {/* Right Column - Contact & Policies */}
             <div className="space-y-4 xs:space-y-6">
-              <h3 className="text-lg xs:text-xl sm:text-xl md:text-2xl font-semibold text-gray-900 dark:text-white mb-3 xs:mb-4">Contact & Policies</h3>
+              <h3 className="text-lg xs:text-xl sm:text-xl md:text-2xl font-semibold text-gray-900 dark:text-white mb-3 xs:mb-4">{t('home.contactPolicies')}</h3>
               <div className="space-y-2 xs:space-y-3">
                 <Link to="/contact" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
                   <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
-                    <span className="font-medium text-sm xs:text-base">Contact Us</span>
-                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Get in touch with us for any questions</p>
+                    <span className="font-medium text-sm xs:text-base">{t('home.contactUs')}</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">{t('home.contactUsDesc')}</p>
                   </div>
                 </Link>
                 <Link to="/privacy" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
                   <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
-                    <span className="font-medium text-sm xs:text-base">Privacy Policy</span>
-                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Learn about how we protect your data</p>
+                    <span className="font-medium text-sm xs:text-base">{t('home.privacyPolicy')}</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">{t('home.privacyPolicyDesc')}</p>
                   </div>
                 </Link>
                 <Link to="/terms" className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
                   <div className="p-3 xs:p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
-                    <span className="font-medium text-sm xs:text-base">Terms of Service</span>
-                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">Read our terms and conditions</p>
+                    <span className="font-medium text-sm xs:text-base">{t('home.termsOfService')}</span>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400 mt-1">{t('home.termsOfServiceDesc')}</p>
                   </div>
                 </Link>
               </div>

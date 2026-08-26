@@ -2,8 +2,12 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchAnimeNews, getSeasonalBanners } from '../lib/animeNews';
 import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw, TrendingUp, Globe, X, Clock, ArrowRight } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
 
 const News = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [news, setNews] = useState([]);
   const [filteredNews, setFilteredNews] = useState([]);
   const [seasonalBanners, setSeasonalBanners] = useState([]);
@@ -242,11 +246,11 @@ const News = () => {
               <div className="flex items-center space-x-3 mb-4">
                 <Newspaper className="text-white dark:text-gray-900" size={32} xs:size={36} sm:size={40} />
                 <h1 className="text-3xl xs:text-4xl sm:text-5xl font-bold text-white dark:text-gray-900">
-                  Anime News
+                  {t('news.title')}
                 </h1>
               </div>
               <p className="text-white/90 dark:text-gray-700 text-base xs:text-lg sm:text-xl">
-                Latest anime news and updates
+                {t('news.subtitle')}
               </p>
             </div>
             <button
@@ -269,7 +273,7 @@ const News = () => {
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-lg font-bold text-gray-900 dark:text-white flex items-center">
               <Calendar className="mr-2 text-gray-600 dark:text-gray-400" size={20} />
-              Now Airing - {dayNames[currentDay]}
+              {t('news.nowAiring')} - {dayNames[currentDay]}
             </h2>
             <span className="text-sm text-gray-500 dark:text-gray-400">
               {animeByDay[currentDay]?.length || 0} anime
@@ -315,7 +319,7 @@ const News = () => {
               </div>
             ) : (
               <p className="text-gray-500 dark:text-gray-400 text-center py-4">
-                No anime airing today
+                {t('news.noAnimeAiring')}
               </p>
             )}
           </div>
@@ -329,7 +333,7 @@ const News = () => {
             <div className="flex-1">
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center">
                 <Filter size={16} className="mr-2" />
-                Category
+                {t('news.category')}
               </label>
               <select
                 value={selectedCategory}
@@ -344,7 +348,7 @@ const News = () => {
             <div className="flex-1">
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center">
                 <Filter size={16} className="mr-2" />
-                Source
+                {t('news.source')}
               </label>
               <select
                 value={selectedSource}
@@ -368,7 +372,7 @@ const News = () => {
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                 <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
-                News Paper
+                {t('news.newsPaper')}
               </h2>
             </div>
             <div className="space-y-4">
@@ -423,7 +427,7 @@ const News = () => {
                           </p>
                         )}
                         <div className="flex items-center gap-1 mt-2 text-xs text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">
-                          <span>Read more</span>
+                          <span>{t('news.readMore')}</span>
                           <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                         </div>
                       </div>
@@ -435,10 +439,10 @@ const News = () => {
                   <div className="text-center">
                     <TrendingUp className="mx-auto text-gray-400 dark:text-gray-600 mb-4" size={48} />
                     <p className="text-gray-500 dark:text-gray-400 text-lg font-semibold">
-                      No trending news available
+                      {t('news.noTrendingNews')}
                     </p>
                     <p className="text-gray-400 dark:text-gray-500 text-sm mt-2">
-                      Check back later for updates
+                      {t('news.checkBackLater')}
                     </p>
                   </div>
                 </div>
@@ -451,7 +455,7 @@ const News = () => {
             <div className="mb-6">
               <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                 <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={20} />
-                Trending Anime
+                {t('news.trendingAnime')}
               </h2>
             </div>
             <div className="space-y-3">
@@ -570,7 +574,7 @@ const News = () => {
                 onClick={closeNewsDetail}
                 className="px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
               >
-                Close
+                {t('news.close')}
               </button>
               <a
                 href={selectedNewsItem.link}
@@ -578,7 +582,7 @@ const News = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
               >
-                <span>Read Full Article</span>
+                <span>{t('news.readFullArticle')}</span>
                 <ExternalLink size={16} />
               </a>
             </div>
