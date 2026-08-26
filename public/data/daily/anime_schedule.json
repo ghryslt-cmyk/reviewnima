@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T16:15:55.736Z",
+  "fetchedAt": "2026-08-26T18:57:20.802Z",
   "schedule": {
     "sunday": [
       {
@@ -30,8 +30,8 @@
         "id": 63100,
         "title": "Tetsunabe no Jan!",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1452/159112.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1452/159112l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1452/159112.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1452/159112l.webp"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
@@ -414,8 +414,8 @@
         "id": 60310,
         "title": "Mairimashita! Iruma-kun 4th Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1434/154048.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1434/154048l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1434/154048.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1434/154048l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
