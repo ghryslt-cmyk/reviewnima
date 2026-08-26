@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T13:52:37.237Z",
+  "fetchedAt": "2026-08-26T14:41:55.114Z",
   "schedule": {
     "sunday": [
       {
@@ -218,8 +218,8 @@
         "id": 63780,
         "title": "Hanazakari no Kimitachi e 2nd Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1899/158523.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1899/158523l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1899/158523.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1899/158523l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "thursday",
@@ -242,8 +242,8 @@
         "id": 63347,
         "title": "World Is Dancing",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1165/158709.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1165/158709l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1165/158709.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1165/158709l.webp"
         },
         "broadcast": {
           "day_of_the_week": "thursday",
@@ -342,8 +342,8 @@
         "id": 63817,
         "title": "Hell Mode: Yarikomizuki no Gamer wa Hai Settei no Isekai de Musou suru 2nd Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1534/156314.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1534/156314l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1534/156314.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1534/156314l.webp"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
@@ -450,8 +450,8 @@
         "id": 61483,
         "title": "Tenmaku no Jaadugar",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1098/158891.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1098/158891l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1098/158891.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1098/158891l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
