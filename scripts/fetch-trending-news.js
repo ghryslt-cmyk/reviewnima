@@ -47,10 +47,10 @@ const scrapeArticleImage = async (url, source) => {
     
     // Extract image based on source
     if (source === 'Anime News Network') {
-      // ANN images are in .KonaBody .meat figure img
-      const imgMatch = html.match(/<img[^>]+src=["']([^"']+\.(?:jpg|jpeg|png|webp))["']/i);
-      if (imgMatch && imgMatch[1]) {
-        return imgMatch[1];
+      // ANN images are in figure class="fright" img
+      const figureMatch = html.match(/<figure[^>]*class=["'][^"']*fright[^"']*["'][^>]*>[\s\S]*?<img[^>]+src=["']([^"']+\.(?:jpg|jpeg|png|webp))["']/i);
+      if (figureMatch && figureMatch[1]) {
+        return figureMatch[1];
       }
     } else if (source === 'MyAnimeList') {
       // MAL images are in various places

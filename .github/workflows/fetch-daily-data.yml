@@ -23,11 +23,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Fetch trending anime data
-        run: node scripts/fetch-trending-anime.js
-      
-      - name: Fetch trending news data
-        run: node scripts/fetch-trending-news.js
+      - name: Fetch trending anime and news data
+        run: node scripts/fetch-hourly.js
       
       - name: Fetch MAL schedule data
         env:
