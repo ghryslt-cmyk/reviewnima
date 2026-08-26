@@ -50,7 +50,12 @@ const scrapeArticleImage = async (url, source) => {
       // ANN images are in figure elements
       const figureMatch = html.match(/<figure[^>]*>[\s\S]*?<img[^>]+src=["']([^"']+\.(?:jpg|jpeg|png|webp))["']/i);
       if (figureMatch && figureMatch[1]) {
-        return figureMatch[1];
+        let imgUrl = figureMatch[1];
+        // Convert relative URLs to absolute
+        if (imgUrl.startsWith('/')) {
+          imgUrl = 'https://www.animenewsnetwork.com' + imgUrl;
+        }
+        return imgUrl;
       }
     } else if (source === 'MyAnimeList') {
       // MAL images are in various places
