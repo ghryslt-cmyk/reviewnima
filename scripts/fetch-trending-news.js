@@ -53,9 +53,34 @@ const fetchFromSource = async (sourceName, rssUrl) => {
           }
         }
         
-        // Try to extract from enclosure
-        if (!thumbnail && item.enclosure && item.enclosure.url) {
-          thumbnail = item.enclosure.url;
+        // Try to extract from enclosure (could be object or string)
+        if (!thumbnail && item.enclosure) {
+          if (typeof item.enclosure === 'string') {
+            thumbnail = item.enclosure;
+          } else if (item.enclosure.url) {
+            thumbnail = item.enclosure.url;
+          } else if (item.enclosure.link) {
+            thumbnail = item.enclosure.link;
+          }
+        }
+        
+        // Try to extract from content:encoded
+        if (!thumbnail && item['content:encoded']) {
+          const imgMatch = item['content:encoded'].match(/<img[^>]+src=["']([^"']+)["']/);
+          if (imgMatch && imgMatch[1]) {
+            thumbnail = imgMatch[1];
+          }
+        }
+        
+        // Try to extract from media:thumbnail
+        if (!thumbnail && item['media:thumbnail']) {
+          if (typeof item['media:thumbnail'] === 'string') {
+            thumbnail = item['media:thumbnail'];
+          } else if (item['media:thumbnail'].url) {
+            thumbnail = item['media:thumbnail'].url;
+          } else if (item['media:thumbnail'].$ && item['media:thumbnail'].$.url) {
+            thumbnail = item['media:thumbnail'].$.url;
+          }
         }
         
         // Clean description (remove HTML tags for preview)
@@ -70,7 +95,7 @@ const fetchFromSource = async (sourceName, rssUrl) => {
           link: item.link,
           pubDate: item.pubDate,
           source: sourceName,
-          category: 'Trending on Internet',
+          category: 'Newspaper',
           thumbnail: thumbnail,
           guid: item.guid || item.link
         };

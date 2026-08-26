@@ -249,10 +249,10 @@ const convertAnimeToNews = (anime, category) => {
 
 
 
-// Cache for news data (2 minutes for fresh data)
+// Cache for news data (30 seconds for fresh data to allow updates)
 let newsCache = null;
 let cacheTime = 0;
-const CACHE_DURATION = 2 * 60 * 1000; // 2 minutes
+const CACHE_DURATION = 30 * 1000; // 30 seconds
 
 /**
  * Fetch anime news from RSS feeds with caching and fallback
@@ -397,10 +397,10 @@ export const fetchSeasonalBanners = async () => {
   }
 };
 
-// Cache for seasonal banners (1 hour)
+// Cache for seasonal banners (30 seconds to allow updates)
 let bannerCache = null;
 let bannerCacheTime = 0;
-const BANNER_CACHE_DURATION = 60 * 60 * 1000; // 1 hour
+const BANNER_CACHE_DURATION = 30 * 1000; // 30 seconds
 
 /**
  * Fetch seasonal anime banners with caching

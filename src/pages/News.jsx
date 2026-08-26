@@ -131,6 +131,33 @@ const News = () => {
       } catch (error) {
         console.error('Error loading trending news:', error);
       }
+
+      // Load trending anime from JSON file
+      try {
+        const trendingAnimeResponse = await fetch('/data/daily/trending_anime.json');
+        if (trendingAnimeResponse.ok) {
+          const trendingAnimeData = await trendingAnimeResponse.json();
+          // Convert trending anime to news format
+          const trendingAnimeNews = trendingAnimeData.anime.map((anime, index) => {
+            const title = anime.title.english || anime.title.romaji;
+            const studio = anime.studios?.nodes?.[0]?.name || 'Unknown Studio';
+            const genres = anime.genres?.slice(0, 2) || ['Anime'];
+            
+            return {
+              id: `trending-anime-${anime.id}`,
+              title: title,
+              description: anime.description?.substring(0, 150) || `Popular ${genres.join(', ')} anime from ${studio}.`,
+              thumbnail: anime.bannerImage || anime.coverImage.extraLarge || anime.coverImage.large || anime.coverImage.medium,
+              category: 'Trending',
+              source: 'AniList',
+              rank: index + 1
+            };
+          });
+          setTrendingAnimeNews(trendingAnimeNews);
+        }
+      } catch (error) {
+        console.error('Error loading trending anime:', error);
+      }
     } catch (error) {
       console.error('Error loading news:', error);
     } finally {
@@ -248,7 +275,14 @@ const News = () => {
           </div>
           
           {/* Horizontal Scroll Container */}
-          <div className="relative overflow-hidden">
+          <div 
+            className="relative overflow-x-auto overflow-y-hidden"
+            style={{
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none',
+              WebkitOverflowScrolling: 'touch'
+            }}
+          >
             {animeByDay[currentDay]?.length > 0 ? (
               <div 
                 ref={scrollRef}
@@ -332,7 +366,7 @@ const News = () => {
             <div className="mb-6">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                 <TrendingUp className="mr-2 text-gray-600 dark:text-gray-400" size={24} />
-                Trending on Internet
+                Newspaper
               </h2>
             </div>
             <div className="space-y-4">

@@ -12,6 +12,7 @@
     "fetch:trending": "node scripts/fetch-trending-anime.js",
     "fetch:schedule": "node scripts/fetch-mal-schedule.js",
     "fetch:news": "node scripts/fetch-trending-news.js",
+    "fetch:hourly": "node scripts/fetch-hourly.js",
     "fetch:all": "npm run fetch:seasonal && npm run fetch:trending && npm run fetch:schedule && npm run fetch:news"
   },
   "dependencies": {
