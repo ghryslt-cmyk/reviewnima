@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T14:41:55.114Z",
+  "fetchedAt": "2026-08-26T16:15:55.736Z",
   "schedule": {
     "sunday": [
       {
@@ -242,8 +242,8 @@
         "id": 63347,
         "title": "World Is Dancing",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1165/158709.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1165/158709l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1165/158709.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1165/158709l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "thursday",
@@ -342,8 +342,8 @@
         "id": 63817,
         "title": "Hell Mode: Yarikomizuki no Gamer wa Hai Settei no Isekai de Musou suru 2nd Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1534/156314.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1534/156314l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1534/156314.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1534/156314l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
@@ -414,8 +414,8 @@
         "id": 60310,
         "title": "Mairimashita! Iruma-kun 4th Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1434/154048.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1434/154048l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1434/154048.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1434/154048l.webp"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
