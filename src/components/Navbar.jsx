@@ -27,7 +27,7 @@ const Navbar = memo(() => {
   const handleLanguageChange = useCallback((lang) => {
     changeLanguage(lang);
     setLanguageDropdownOpen(false);
-  }, [changeLanguage]);
+  }, []);
 
   const handleMobileMenuToggle = useCallback(() => {
     setMobileMenuOpen(prev => !prev);

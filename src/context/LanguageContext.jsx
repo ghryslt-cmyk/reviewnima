@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
 
 const LanguageContext = createContext();
 
@@ -22,14 +22,14 @@ export const LanguageProvider = ({ children }) => {
     localStorage.setItem('language', language);
   }, [language]);
 
-  const changeLanguage = (lang) => {
+  const changeLanguage = useCallback((lang) => {
     setLanguage(lang);
-  };
+  }, []);
 
-  const value = {
+  const value = useMemo(() => ({
     language,
     changeLanguage
-  };
+  }), [language, changeLanguage]);
 
   return (
     <LanguageContext.Provider value={value}>
