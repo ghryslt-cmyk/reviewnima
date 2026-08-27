@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-27T13:44:44.970Z",
+  "fetchedAt": "2026-08-27T23:34:06.264Z",
   "schedule": {
     "sunday": [
       {
@@ -51,15 +51,15 @@
         }
       },
       {
-        "id": 61269,
-        "title": "Digimon Beatbreak",
+        "id": 62683,
+        "title": "Let's Go Kaiki-gumi",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1776/151242.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1776/151242l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1024/158581.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1024/158581l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
-          "start_time": "09:00"
+          "start_time": "16:30"
         }
       },
       {
@@ -99,15 +99,51 @@
         }
       },
       {
+        "id": 2406,
+        "title": "Sazae-san",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1008/98996.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1008/98996l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "sunday",
+          "start_time": "18:30"
+        }
+      },
+      {
+        "id": 62811,
+        "title": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo 3rd Season",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1755/159708.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1755/159708l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "sunday",
+          "start_time": "22:30"
+        }
+      },
+      {
         "id": 21,
         "title": "One Piece",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
           "start_time": "23:15"
+        }
+      },
+      {
+        "id": 61240,
+        "title": "Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1958/158341.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1958/158341l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "sunday",
+          "start_time": "23:45"
         }
       }
     ],
@@ -163,29 +199,41 @@
         }
       },
       {
-        "id": 62080,
-        "title": "Mujikaku Seijo wa Kyou mo Muishiki ni Chikara wo Tare Nagasu",
+        "id": 42295,
+        "title": "Fushigi Dagashiya: Zenitendou",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1612/158373.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1612/158373l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1602/150098.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1602/150098l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "tuesday",
-          "start_time": "22:00"
+          "start_time": "18:45"
+        }
+      },
+      {
+        "id": 63047,
+        "title": "Yoroi Shin Den Samurai Troopers Part 2",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1996/158323.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1996/158323l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "tuesday",
+          "start_time": "23:30"
         }
       }
     ],
     "wednesday": [
       {
-        "id": 62476,
-        "title": "Tefuda ga Oome no Victoria",
+        "id": 49233,
+        "title": "Youjo Senki II",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1098/158743.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1098/158743l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1917/158371.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1917/158371l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "wednesday",
-          "start_time": "00:00"
+          "start_time": "21:30"
         }
       },
       {
@@ -273,43 +321,31 @@
           "day_of_the_week": "thursday",
           "start_time": "23:00"
         }
+      },
+      {
+        "id": 62076,
+        "title": "Super no Ura de Yani Suu Futari",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1768/156339.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1768/156339l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "thursday",
+          "start_time": "23:56"
+        }
       }
     ],
     "friday": [
       {
-        "id": 1960,
-        "title": "Sore Ike! Anpanman",
+        "id": 59970,
+        "title": "Tensei shitara Slime Datta Ken 4th Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1902/111797.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1902/111797l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1695/156389.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1695/156389l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "friday",
-          "start_time": "16:20"
-        }
-      },
-      {
-        "id": 56566,
-        "title": "Beyblade X",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1394/145458.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1394/145458l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "friday",
-          "start_time": "18:25"
-        }
-      },
-      {
-        "id": 8687,
-        "title": "Doraemon (2005)",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/6/23935.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/6/23935l.webp"
-        },
-        "broadcast": {
-          "day_of_the_week": "friday",
-          "start_time": "19:00"
+          "start_time": "23:00"
         }
       },
       {
@@ -339,27 +375,15 @@
         }
       },
       {
-        "id": 32353,
-        "title": "Bonobono (TV 2016)",
+        "id": 235,
+        "title": "Meitantei Conan",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1686/149949.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1686/149949l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
-          "start_time": "04:52"
-        }
-      },
-      {
-        "id": 60153,
-        "title": "Rilakkuma",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1705/158571.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1705/158571l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "saturday",
-          "start_time": "09:25"
+          "start_time": "18:00"
         }
       },
       {
@@ -378,8 +402,8 @@
         "id": 61483,
         "title": "Tenmaku no Jaadugar",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1098/158891.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1098/158891l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1098/158891.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1098/158891l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
