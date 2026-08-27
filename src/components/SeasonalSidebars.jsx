@@ -77,9 +77,7 @@ const SeasonalSidebars = () => {
           style={{ backgroundImage: `url('${leftBgImage}')` }}
         >
           {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/60"></div>
-          {/* Inner shadow for separation effect */}
-          <div className="absolute inset-0 shadow-[inset_-12px_0_48px_rgba(0,0,0,0.9)] pointer-events-none"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
           {/* TV Static Canvas */}
           <canvas
             ref={canvasRefLeft}
@@ -97,9 +95,7 @@ const SeasonalSidebars = () => {
           style={{ backgroundImage: `url('${rightBgImage}')` }}
         >
           {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/60"></div>
-          {/* Inner shadow for separation effect */}
-          <div className="absolute inset-0 shadow-[inset_12px_0_48px_rgba(0,0,0,0.9)] pointer-events-none"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
           {/* TV Static Canvas */}
           <canvas
             ref={canvasRefRight}

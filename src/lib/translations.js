@@ -1,3 +1,4 @@
+import { useCallback } from 'react';
 import idTranslations from '../locales/id.json';
 import enTranslations from '../locales/en.json';
 import jpTranslations from '../locales/jp.json';
@@ -33,6 +34,6 @@ export const getTranslation = (language, key) => {
 };
 
 export const useTranslation = (language) => {
-  const t = (key) => getTranslation(language, key);
+  const t = useCallback((key) => getTranslation(language, key), [language]);
   return { t };
 };
