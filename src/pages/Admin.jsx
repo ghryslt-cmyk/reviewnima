@@ -122,7 +122,7 @@ const Admin = memo(() => {
     } finally {
       setSubmitting(false);
     }
-  }, [selectedAnime, rating, reviewText, user?.email]);
+  }, []);
 
   const handleDeleteReview = useCallback(async (reviewId) => {
     if (!window.confirm('Are you sure you want to delete this review?')) return;

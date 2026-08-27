@@ -69,8 +69,7 @@ const SeasonalSidebars = () => {
   const displayImages = animeImages;
   const cardsPerSide = Math.min(Math.ceil(displayImages.length / 2), 8);
 
-  // Memoize image card component for performance
-  const ImageCard = useCallback(({ image, index, objectPosition }) => (
+  const ImageCard = ({ image, index, objectPosition }) => (
     <div
       className="relative w-40 h-56 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink overflow-hidden"
       style={{
@@ -103,7 +102,7 @@ const SeasonalSidebars = () => {
         backgroundSize: '100% 2px, 3px 100%'
       }} />
     </div>
-  ), []);
+  );
 
   return (
     <>
