@@ -1,10 +1,11 @@
 import { useState, useEffect, useCallback, memo } from 'react';
 import { Link } from 'react-router-dom';
 import { X, Check, Globe, Lock, User, Info } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const WelcomeAlert = memo(() => {
+  const { language, changeLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState('id');
   const [hasReadPrivacy, setHasReadPrivacy] = useState(false);
   const [hasReadTerms, setHasReadTerms] = useState(false);
 
@@ -80,10 +81,6 @@ const WelcomeAlert = memo(() => {
     setHasReadTerms(prev => !prev);
   }, []);
 
-  const handleLanguageChange = useCallback((lang) => {
-    setLanguage(lang);
-  }, []);
-
 
   if (!isOpen) return null;
 
@@ -99,7 +96,7 @@ const WelcomeAlert = memo(() => {
             </div>
             <div className="flex gap-2">
               <button
-                onClick={() => handleLanguageChange('id')}
+                onClick={() => changeLanguage('id')}
                 className={`px-3 py-1 rounded-lg text-sm font-medium transition-all ${
                   language === 'id' ? 'bg-white text-gray-700' : 'bg-white/20 text-white hover:bg-white/30'
                 }`}
@@ -107,7 +104,7 @@ const WelcomeAlert = memo(() => {
                 ID
               </button>
               <button
-                onClick={() => handleLanguageChange('en')}
+                onClick={() => changeLanguage('en')}
                 className={`px-3 py-1 rounded-lg text-sm font-medium transition-all ${
                   language === 'en' ? 'bg-white text-gray-700' : 'bg-white/20 text-white hover:bg-white/30'
                 }`}
@@ -115,7 +112,7 @@ const WelcomeAlert = memo(() => {
                 EN
               </button>
               <button
-                onClick={() => handleLanguageChange('jp')}
+                onClick={() => changeLanguage('jp')}
                 className={`px-3 py-1 rounded-lg text-sm font-medium transition-all ${
                   language === 'jp' ? 'bg-white text-gray-700' : 'bg-white/20 text-white hover:bg-white/30'
                 }`}
