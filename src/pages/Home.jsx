@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, memo } from 'react';
 import { Link } from 'react-router-dom';
 import { getReviews } from '../lib/firebase';
 import ReviewCard from '../components/ReviewCard';
@@ -7,7 +7,7 @@ import { TrendingUp, Sparkles, Star, Newspaper } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
 
-const Home = () => {
+const Home = memo(() => {
   const { language } = useLanguage();
   const { t } = useTranslation(language);
   const [reviews, setReviews] = useState([]);
@@ -15,28 +15,28 @@ const Home = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const reviewsData = await getReviews();
-        setReviews(reviewsData);
-        
-        // Sort reviews by rating (highest first) and get top 6
-        const sortedByRating = [...reviewsData].sort((a, b) => (b.rating || 0) - (a.rating || 0));
-        setTopRatedReviews(sortedByRating.slice(0, 6));
+  const fetchData = useCallback(async () => {
+    try {
+      const reviewsData = await getReviews();
+      setReviews(reviewsData);
+      
+      // Sort reviews by rating (highest first) and get top 6
+      const sortedByRating = [...reviewsData].sort((a, b) => (b.rating || 0) - (a.rating || 0));
+      setTopRatedReviews(sortedByRating.slice(0, 6));
 
-        // Fetch news
-        const newsData = await fetchAnimeNews();
-        setNews(newsData.slice(0, 10)); // Get latest 10 news items
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
+      // Fetch news
+      const newsData = await fetchAnimeNews();
+      setNews(newsData.slice(0, 10)); // Get latest 10 news items
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    } finally {
+      setLoading(false);
+    }
   }, []);
+
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
 
   if (loading) {
     return (
@@ -58,6 +58,7 @@ const Home = () => {
             muted
             playsInline
             className="w-full h-full object-cover"
+            preload="metadata"
           >
             <source src="/cake-by-the-ocean-amv-mix-anime-mix-1080-ytshorts.savetube.me.mp4" type="video/mp4" />
           </video>
@@ -99,6 +100,7 @@ const Home = () => {
                         src={item.thumbnail}
                         alt={item.title}
                         className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500"
+                        loading="lazy"
                         onError={(e) => {
                           e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
                         }}
@@ -141,6 +143,7 @@ const Home = () => {
                         src={item.thumbnail}
                         alt={item.title}
                         className="w-full h-full object-cover rounded-lg group-hover:scale-110 transition-transform duration-500"
+                        loading="lazy"
                         onError={(e) => {
                           e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
                         }}
@@ -203,7 +206,7 @@ const Home = () => {
             <div className="h-1 w-16 xs:w-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
           </div>
           {reviews.length > 0 ? (
-            <div className="grid grid-cols-1 gap-4 xs:gap-6 sm:gap-6 md:gap-8 max-w-2xl">
+            <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-6 sm:gap-6 md:gap-8">
               {reviews.slice(0, 6).map((review) => (
                 <ReviewCard key={review.id} review={review} />
               ))}
@@ -286,6 +289,8 @@ const Home = () => {
       </div>
     </div>
   );
-};
+});
+
+Home.displayName = 'Home';
 
 export default Home;

@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Star, Calendar } from 'lucide-react';
+import { memo } from 'react';
 
-const ReviewCard = ({ review }) => {
+const ReviewCard = memo(({ review }) => {
   const animeTitle = review.animeData?.title?.english || review.animeData?.title?.romaji || 'Unknown';
   // Use highest quality image available: extraLarge > large > medium
   const coverImage = review.animeData?.coverImage?.extraLarge || review.animeData?.coverImage?.large || review.animeData?.coverImage?.medium;
   const rating = review.rating || 0;
+  const createdAt = review.createdAt?.toDate?.() || review.createdAt;
 
   return (
     <Link to={`/review/${review.id}`} className="block">
@@ -33,7 +35,7 @@ const ReviewCard = ({ review }) => {
           <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
             <div className="flex items-center space-x-1">
               <Calendar size={10} />
-              <span className="text-[10px] sm:text-xs">{new Date(review.createdAt?.toDate?.() || review.createdAt).toLocaleDateString()}</span>
+              <span className="text-[10px] sm:text-xs">{new Date(createdAt).toLocaleDateString()}</span>
             </div>
             <span className="text-gray-900 dark:text-white font-medium text-xs">Read Review →</span>
           </div>
@@ -41,6 +43,8 @@ const ReviewCard = ({ review }) => {
       </div>
     </Link>
   );
-};
+});
+
+ReviewCard.displayName = 'ReviewCard';
 
 export default ReviewCard;

@@ -12,6 +12,11 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
+// Validate Firebase config
+if (!firebaseConfig.apiKey || !firebaseConfig.projectId) {
+  console.error('Firebase configuration is incomplete. Please check your environment variables.');
+}
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
@@ -28,7 +33,7 @@ export const signInWithGoogle = async () => {
     return result.user;
   } catch (error) {
     console.error('Error signing in with Google:', error);
-    throw error;
+    throw new Error('Authentication failed. Please try again.');
   }
 };
 
@@ -37,7 +42,7 @@ export const logoutUser = async () => {
     await signOut(auth);
   } catch (error) {
     console.error('Error signing out:', error);
-    throw error;
+    throw new Error('Logout failed. Please try again.');
   }
 };
 
@@ -60,7 +65,7 @@ export const addReview = async (reviewData) => {
     return docRef.id;
   } catch (error) {
     console.error('Error adding review:', error);
-    throw error;
+    throw new Error('Failed to add review. Please try again.');
   }
 };
 
@@ -74,7 +79,7 @@ export const getReviews = async () => {
     return reviews;
   } catch (error) {
     console.error('Error getting reviews:', error);
-    throw error;
+    throw new Error('Failed to fetch reviews. Please try again.');
   }
 };
 
@@ -88,7 +93,7 @@ export const getReviewById = async (reviewId) => {
     return null;
   } catch (error) {
     console.error('Error getting review:', error);
-    throw error;
+    throw new Error('Failed to fetch review. Please try again.');
   }
 };
 
@@ -102,7 +107,7 @@ export const addComment = async (reviewId, commentData) => {
     return docRef.id;
   } catch (error) {
     console.error('Error adding comment:', error);
-    throw error;
+    throw new Error('Failed to add comment. Please try again.');
   }
 };
 
@@ -117,7 +122,7 @@ export const getComments = async (reviewId) => {
     return comments;
   } catch (error) {
     console.error('Error getting comments:', error);
-    throw error;
+    throw new Error('Failed to fetch comments. Please try again.');
   }
 };
 
@@ -131,7 +136,7 @@ export const getUserProfile = async (userId) => {
     return null;
   } catch (error) {
     console.error('Error getting user profile:', error);
-    throw error;
+    throw new Error('Failed to fetch user profile. Please try again.');
   }
 };
 
@@ -141,7 +146,7 @@ export const updateUserProfile = async (userId, profileData) => {
     await updateDoc(docRef, profileData);
   } catch (error) {
     console.error('Error updating user profile:', error);
-    throw error;
+    throw new Error('Failed to update user profile. Please try again.');
   }
 };
 
@@ -151,7 +156,7 @@ export const deleteReview = async (reviewId) => {
     await deleteDoc(docRef);
   } catch (error) {
     console.error('Error deleting review:', error);
-    throw error;
+    throw new Error('Failed to delete review. Please try again.');
   }
 };
 
@@ -161,7 +166,7 @@ export const toggleFavorite = async (reviewId, isFavorite) => {
     await updateDoc(docRef, { isFavorite, updatedAt: serverTimestamp() });
   } catch (error) {
     console.error('Error toggling favorite:', error);
-    throw error;
+    throw new Error('Failed to update favorite status. Please try again.');
   }
 };
 
@@ -176,7 +181,7 @@ export const getFavoriteReviews = async () => {
     return reviews;
   } catch (error) {
     console.error('Error getting favorite reviews:', error);
-    throw error;
+    throw new Error('Failed to fetch favorite reviews. Please try again.');
   }
 };
 
@@ -213,6 +218,7 @@ export const incrementVisitorCount = async () => {
     }
   } catch (error) {
     console.error('Error incrementing visitor count:', error);
+    // Silently fail for visitor count to not affect user experience
   }
 };
 

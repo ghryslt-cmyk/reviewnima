@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount } from '../lib/firebase';
 import { searchAnime, getAnimeById } from '../lib/anilist';
 import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users } from 'lucide-react';
 
-const Admin = () => {
+const Admin = memo(() => {
   const { user, checkAdmin, isAuthenticated } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -28,46 +28,40 @@ const Admin = () => {
   // Visitor count
   const [visitorCount, setVisitorCount] = useState(0);
 
-  useEffect(() => {
-    const checkAdminAccess = async () => {
-      if (!isAuthenticated) {
-        // Store current path for redirect after login
-        localStorage.setItem('redirectPath', location.pathname);
-        navigate('/login');
-        return;
-      }
-      
-      const adminStatus = checkAdmin();
-      setIsAdminUser(adminStatus);
-      
-      if (!adminStatus) {
-        navigate('/');
-        return;
-      }
-      
-      // Load existing reviews
-      try {
-        const reviews = await getReviews();
-        setExistingReviews(reviews);
-      } catch (error) {
-        console.error('Error loading reviews:', error);
-      }
-      
-      // Load visitor count
-      try {
-        const count = await getVisitorCount();
-        setVisitorCount(count);
-      } catch (error) {
-        console.error('Error loading visitor count:', error);
-      }
-      
+  const checkAdminAccess = useCallback(async () => {
+    if (!isAuthenticated) {
+      localStorage.setItem('redirectPath', location.pathname);
+      navigate('/login');
+      return;
+    }
+    
+    const adminStatus = checkAdmin();
+    setIsAdminUser(adminStatus);
+    
+    if (!adminStatus) {
+      navigate('/');
+      return;
+    }
+    
+    try {
+      const [reviews, count] = await Promise.all([
+        getReviews(),
+        getVisitorCount()
+      ]);
+      setExistingReviews(reviews);
+      setVisitorCount(count);
+    } catch (error) {
+      console.error('Error loading admin data:', error);
+    } finally {
       setLoading(false);
-    };
+    }
+  }, [isAuthenticated, checkAdmin, navigate, location.pathname]);
 
+  useEffect(() => {
     checkAdminAccess();
-  }, [isAuthenticated, checkAdmin, navigate]);
+  }, [checkAdminAccess]);
 
-  const handleSearch = async (e) => {
+  const handleSearch = useCallback(async (e) => {
     e.preventDefault();
     if (!searchTerm.trim()) return;
 
@@ -78,9 +72,9 @@ const Admin = () => {
       console.error('Error searching anime:', error);
       setError('Failed to search anime. Please try again.');
     }
-  };
+  }, [searchTerm]);
 
-  const handleSelectAnime = async (anime) => {
+  const handleSelectAnime = useCallback(async (anime) => {
     try {
       const fullAnimeData = await getAnimeById(anime.id);
       setSelectedAnime(fullAnimeData);
@@ -90,9 +84,9 @@ const Admin = () => {
       console.error('Error fetching anime details:', error);
       setError('Failed to load anime details. Please try again.');
     }
-  };
+  }, []);
 
-  const handleSubmitReview = async (e) => {
+  const handleSubmitReview = useCallback(async (e) => {
     e.preventDefault();
     
     if (!selectedAnime || !reviewText.trim()) {
@@ -118,7 +112,6 @@ const Admin = () => {
       setRating(8);
       setReviewText('');
       
-      // Refresh existing reviews
       const reviews = await getReviews();
       setExistingReviews(reviews);
       
@@ -129,26 +122,26 @@ const Admin = () => {
     } finally {
       setSubmitting(false);
     }
-  };
+  }, [selectedAnime, rating, reviewText, user?.email]);
 
-  const handleDeleteReview = async (reviewId) => {
+  const handleDeleteReview = useCallback(async (reviewId) => {
     if (!window.confirm('Are you sure you want to delete this review?')) return;
     
     try {
       await deleteReview(reviewId);
-      setExistingReviews(existingReviews.filter(r => r.id !== reviewId));
+      setExistingReviews(prev => prev.filter(r => r.id !== reviewId));
       setSuccess('Review deleted successfully!');
       setTimeout(() => setSuccess(''), 3000);
     } catch (error) {
       console.error('Error deleting review:', error);
       setError('Failed to delete review. Please try again.');
     }
-  };
+  }, []);
 
-  const handleToggleFavorite = async (reviewId, currentFavorite) => {
+  const handleToggleFavorite = useCallback(async (reviewId, currentFavorite) => {
     try {
       await toggleFavorite(reviewId, !currentFavorite);
-      setExistingReviews(existingReviews.map(r => 
+      setExistingReviews(prev => prev.map(r => 
         r.id === reviewId ? { ...r, isFavorite: !currentFavorite } : r
       ));
       setSuccess(!currentFavorite ? 'Added to favorites!' : 'Removed from favorites!');
@@ -157,7 +150,7 @@ const Admin = () => {
       console.error('Error toggling favorite:', error);
       setError('Failed to update favorite status. Please try again.');
     }
-  };
+  }, []);
 
   if (loading) {
     return (
@@ -436,6 +429,8 @@ const Admin = () => {
       </div>
     </div>
   );
-};
+});
+
+Admin.displayName = 'Admin';
 
 export default Admin;

@@ -403,6 +403,70 @@ let bannerCacheTime = 0;
 const BANNER_CACHE_DURATION = 30 * 1000; // 30 seconds
 
 /**
+ * Fetch random anime images with 2:3 aspect ratio for sidebar
+ * @returns {Promise<Array>} Array of anime image URLs with 2:3 aspect ratio
+ */
+export const fetchRandomAnimeImages = async () => {
+  const query = `
+    query {
+      Page(page: 1, perPage: 50) {
+        media(type: ANIME, sort: POPULARITY_DESC) {
+          id
+          coverImage {
+            extraLarge
+            large
+            medium
+          }
+          bannerImage
+        }
+      }
+    }
+  `;
+
+  try {
+    const response = await axios.post(ANILIST_API_URL, { query });
+    const media = response.data.data.Page.media;
+    
+    // Shuffle array for randomness
+    const shuffled = [...media].sort(() => Math.random() - 0.5);
+    
+    // Extract cover images (which typically have portrait/2:3 aspect ratio)
+    const images = shuffled
+      .map(anime => anime.coverImage.extraLarge || anime.coverImage.large || anime.coverImage.medium)
+      .filter(Boolean)
+      .slice(0, 16); // Get 16 images for sidebar
+    
+    console.log(`Fetched ${images.length} random anime images with 2:3 aspect ratio`);
+    return images;
+  } catch (error) {
+    console.error('Error fetching random anime images:', error);
+    return [];
+  }
+};
+
+// Cache for random anime images
+let randomImagesCache = null;
+let randomImagesCacheTime = 0;
+const RANDOM_IMAGES_CACHE_DURATION = 60 * 1000; // 1 minute
+
+/**
+ * Get random anime images with caching
+ * @returns {Promise<Array>} Array of anime image URLs
+ */
+export const getRandomAnimeImages = async () => {
+  const now = Date.now();
+  if (randomImagesCache && (now - randomImagesCacheTime) < RANDOM_IMAGES_CACHE_DURATION) {
+    return randomImagesCache;
+  }
+
+  const images = await fetchRandomAnimeImages();
+  randomImagesCache = images;
+  randomImagesCacheTime = now;
+  
+  return images;
+};
+
+/**
  * Fetch seasonal anime banners with caching
  * @returns {Promise<Array>} Array of banner image URLs
  */

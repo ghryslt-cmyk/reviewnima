@@ -3,15 +3,44 @@ import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
 import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useCallback, useEffect, memo } from 'react';
 
-const Navbar = () => {
+const Navbar = memo(() => {
   const { user, logout, checkAdmin, isAuthenticated } = useAuth();
   const { language, changeLanguage } = useLanguage();
   const { t } = useTranslation(language);
   const isAdminUser = checkAdmin();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (languageDropdownOpen && !event.target.closest('.language-dropdown')) {
+        setLanguageDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [languageDropdownOpen]);
+
+  const handleLanguageChange = useCallback((lang) => {
+    changeLanguage(lang);
+    setLanguageDropdownOpen(false);
+  }, [changeLanguage]);
+
+  const handleMobileMenuToggle = useCallback(() => {
+    setMobileMenuOpen(prev => !prev);
+  }, []);
+
+  const handleLogout = useCallback(async () => {
+    try {
+      await logout();
+      setMobileMenuOpen(false);
+    } catch (error) {
+      console.error('Logout error:', error);
+    }
+  }, [logout]);
 
   const languages = [
     { code: 'id', name: 'Indonesia', flag: '🇮🇩' },
@@ -58,7 +87,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
-                className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                className="language-dropdown flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
               >
                 <Globe size={20} />
                 <span className="hidden md:inline">{languages.find(lang => lang.code === language)?.flag}</span>
@@ -70,10 +99,7 @@ const Navbar = () => {
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
-                      onClick={() => {
-                        changeLanguage(lang.code);
-                        setLanguageDropdownOpen(false);
-                      }}
+                      onClick={() => handleLanguageChange(lang.code)}
                       className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
                         language === lang.code ? 'bg-gray-100 dark:bg-gray-700' : ''
                       }`}
@@ -104,7 +130,7 @@ const Navbar = () => {
                   <span className="hidden md:inline">{user?.displayName}</span>
                 </Link>
                 <button
-                  onClick={logout}
+                  onClick={handleLogout}
                   className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
                 >
                   <LogOut size={20} />
@@ -120,7 +146,7 @@ const Navbar = () => {
               </Link>
             )}
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={handleMobileMenuToggle}
               className="md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -158,7 +184,7 @@ const Navbar = () => {
             <Link 
               to="/" 
               className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={handleMobileMenuToggle}
             >
               <Home size={20} />
               <span>{t('nav.home')}</span>
@@ -166,7 +192,7 @@ const Navbar = () => {
             <Link 
               to="/news" 
               className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={handleMobileMenuToggle}
             >
               <Newspaper size={20} />
               <span>{t('nav.news')}</span>
@@ -174,7 +200,7 @@ const Navbar = () => {
             <Link 
               to="/reviews" 
               className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={handleMobileMenuToggle}
             >
               <BookOpen size={20} />
               <span>{t('nav.reviews')}</span>
@@ -182,7 +208,7 @@ const Navbar = () => {
             <Link 
               to="/top-favorites" 
               className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={handleMobileMenuToggle}
             >
               <Heart size={20} />
               <span>{t('nav.favorites')}</span>
@@ -191,7 +217,7 @@ const Navbar = () => {
               <Link 
                 to="/admin" 
                 className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleMobileMenuToggle}
               >
                 <Shield size={20} />
                 <span>{t('nav.adminPanel')}</span>
@@ -201,7 +227,7 @@ const Navbar = () => {
               <Link 
                 to="/profile" 
                 className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleMobileMenuToggle}
               >
                 <User size={20} />
                 <span>{t('nav.profile')}</span>
@@ -212,6 +238,8 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+});
+
+Navbar.displayName = 'Navbar';
 
 export default Navbar;

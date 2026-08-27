@@ -1,37 +1,30 @@
-import { useState, useEffect, useRef } from 'react';
-import { getSeasonalBanners } from '../lib/animeNews';
+import { useState, useEffect, useRef, useCallback, memo } from 'react';
+import { getRandomAnimeImages } from '../lib/animeNews';
 
 const SeasonalSidebars = () => {
-  const [seasonalBanners, setSeasonalBanners] = useState([]);
-  const [currentSeason, setCurrentSeason] = useState('');
+  const [animeImages, setAnimeImages] = useState([]);
   const canvasRefLeft = useRef(null);
   const canvasRefRight = useRef(null);
+  const animationFrameRefLeft = useRef(null);
+  const animationFrameRefRight = useRef(null);
 
   useEffect(() => {
-    const loadBanners = async () => {
+    const loadImages = async () => {
       try {
-        const banners = await getSeasonalBanners();
-        setSeasonalBanners(banners);
-        
-        // Determine current season
-        const month = new Date().getMonth();
-        let season = '';
-        if (month >= 2 && month <= 4) season = 'Spring';
-        else if (month >= 5 && month <= 7) season = 'Summer';
-        else if (month >= 8 && month <= 10) season = 'Fall';
-        else season = 'Winter';
-        
-        setCurrentSeason(season);
+        const images = await getRandomAnimeImages();
+        if (images.length > 0) {
+          setAnimeImages(images);
+        }
       } catch (error) {
-        console.error('Error loading seasonal banners:', error);
+        console.error('Error loading anime images:', error);
       }
     };
-    loadBanners();
+    loadImages();
   }, []);
 
-  // TV Static Effect
+  // TV Static Effect - Optimized with cleanup
   useEffect(() => {
-    const createStatic = (canvas) => {
+    const createStatic = (canvas, animationRef) => {
       if (!canvas) return;
       const ctx = canvas.getContext('2d');
       const width = canvas.width;
@@ -50,22 +43,67 @@ const SeasonalSidebars = () => {
         }
         
         ctx.putImageData(imageData, 0, 0);
-        requestAnimationFrame(drawStatic);
+        animationRef.current = requestAnimationFrame(drawStatic);
       };
 
       drawStatic();
     };
 
-    createStatic(canvasRefLeft.current);
-    createStatic(canvasRefRight.current);
+    createStatic(canvasRefLeft.current, animationFrameRefLeft);
+    createStatic(canvasRefRight.current, animationFrameRefRight);
+
+    return () => {
+      if (animationFrameRefLeft.current) {
+        cancelAnimationFrame(animationFrameRefLeft.current);
+      }
+      if (animationFrameRefRight.current) {
+        cancelAnimationFrame(animationFrameRefRight.current);
+      }
+    };
   }, []);
 
-  if (seasonalBanners.length === 0) {
+  if (animeImages.length === 0) {
     return null;
   }
 
-  const displayBanners = seasonalBanners.length > 0 ? seasonalBanners : [];
-  const cardsPerSide = Math.min(Math.ceil(displayBanners.length / 2), 8);
+  const displayImages = animeImages;
+  const cardsPerSide = Math.min(Math.ceil(displayImages.length / 2), 8);
+
+  // Memoize image card component for performance
+  const ImageCard = useCallback(({ image, index, objectPosition }) => (
+    <div
+      className="relative w-40 h-56 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink overflow-hidden"
+      style={{
+        animationDelay: `${index * 0.3}s`
+      }}
+    >
+      <img
+        src={image}
+        alt={`Anime Character ${index + 1}`}
+        className="w-full h-full object-cover rounded-lg"
+        style={{ objectPosition }}
+        loading="lazy"
+        onError={(e) => {
+          e.target.style.display = 'none';
+        }}
+      />
+      {/* TV Static Overlay on Card */}
+      <div className="absolute inset-0 rounded-lg overflow-hidden">
+        <div 
+          className="absolute inset-0 opacity-50 mix-blend-overlay"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+            animation: 'staticNoise 0.2s infinite'
+          }}
+        />
+      </div>
+      {/* Scanline effect */}
+      <div className="absolute inset-0 rounded-lg pointer-events-none" style={{
+        background: 'linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06))',
+        backgroundSize: '100% 2px, 3px 100%'
+      }} />
+    </div>
+  ), []);
 
   return (
     <>
@@ -87,38 +125,13 @@ const SeasonalSidebars = () => {
           
           {/* Floating Anime Cards - Vertical Stack */}
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 py-8 overflow-y-auto">
-            {displayBanners.slice(0, cardsPerSide).map((banner, index) => (
-              <div
-                key={index}
-                className="relative w-40 h-56 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink overflow-hidden"
-                style={{
-                  animationDelay: `${index * 0.3}s`
-                }}
-              >
-                <img
-                  src={banner}
-                  alt={`Seasonal Anime ${index + 1}`}
-                  className="w-full h-full object-cover rounded-lg"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                  }}
-                />
-                {/* TV Static Overlay on Card */}
-                <div className="absolute inset-0 rounded-lg overflow-hidden">
-                  <div 
-                    className="absolute inset-0 opacity-50 mix-blend-overlay"
-                    style={{
-                      backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-                      animation: 'staticNoise 0.2s infinite'
-                    }}
-                  />
-                </div>
-                {/* Scanline effect */}
-                <div className="absolute inset-0 rounded-lg pointer-events-none" style={{
-                  background: 'linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06))',
-                  backgroundSize: '100% 2px, 3px 100%'
-                }} />
-              </div>
+            {displayImages.slice(0, cardsPerSide).map((image, index) => (
+              <ImageCard 
+                key={index} 
+                image={image} 
+                index={index} 
+                objectPosition="center 20%" 
+              />
             ))}
           </div>
         </div>
@@ -142,38 +155,13 @@ const SeasonalSidebars = () => {
           
           {/* Floating Anime Cards - Vertical Stack (Reversed) */}
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 py-8 overflow-y-auto">
-            {displayBanners.slice(cardsPerSide, cardsPerSide * 2).reverse().map((banner, index) => (
-              <div
-                key={index}
-                className="relative w-40 h-56 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 animate-grow-shrink overflow-hidden"
-                style={{
-                  animationDelay: `${index * 0.3}s`
-                }}
-              >
-                <img
-                  src={banner}
-                  alt={`Seasonal Anime ${index + 1}`}
-                  className="w-full h-full object-cover rounded-lg"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                  }}
-                />
-                {/* TV Static Overlay on Card */}
-                <div className="absolute inset-0 rounded-lg overflow-hidden">
-                  <div 
-                    className="absolute inset-0 opacity-50 mix-blend-overlay"
-                    style={{
-                      backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-                      animation: 'staticNoise 0.2s infinite'
-                    }}
-                  />
-                </div>
-                {/* Scanline effect */}
-                <div className="absolute inset-0 rounded-lg pointer-events-none" style={{
-                  background: 'linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06))',
-                  backgroundSize: '100% 2px, 3px 100%'
-                }} />
-              </div>
+            {displayImages.slice(0, cardsPerSide).reverse().map((image, index) => (
+              <ImageCard 
+                key={`right-${index}`} 
+                image={image} 
+                index={index} 
+                objectPosition="center 80%" 
+              />
             ))}
           </div>
         </div>
