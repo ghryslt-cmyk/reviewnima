@@ -14,6 +14,7 @@ const NewsDetail = () => {
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState('');
   const [translatedContent, setTranslatedContent] = useState(null);
+  const [translatedTitle, setTranslatedTitle] = useState(null);
   const [translating, setTranslating] = useState(false);
 
   useEffect(() => {
@@ -23,19 +24,25 @@ const NewsDetail = () => {
   // Translate news content when language changes
   useEffect(() => {
     const translateNewsContent = async () => {
-      if (newsItem && newsItem.description && language !== 'id') {
+      if (newsItem && language !== 'id') {
         setTranslating(true);
         try {
-          const translated = await translateContent(newsItem.description, 'id', language);
-          setTranslatedContent(translated);
+          const [translatedDesc, translatedTitleText] = await Promise.all([
+            newsItem.description ? translateContent(newsItem.description, 'id', language) : newsItem.description,
+            newsItem.title ? translateContent(newsItem.title, 'id', language) : newsItem.title
+          ]);
+          setTranslatedContent(translatedDesc);
+          setTranslatedTitle(translatedTitleText);
         } catch (error) {
           console.error('Translation error:', error);
           setTranslatedContent(newsItem.description);
+          setTranslatedTitle(newsItem.title);
         } finally {
           setTranslating(false);
         }
       } else {
         setTranslatedContent(null); // Use original Indonesian text
+        setTranslatedTitle(null);
       }
     };
 
@@ -188,7 +195,14 @@ const NewsDetail = () => {
                 </div>
 
                 <h1 className="text-2xl xs:text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-                  {newsItem.title}
+                  {translating ? (
+                    <div className="flex items-center">
+                      <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-gray-900 dark:border-white mr-2"></div>
+                      <span>Translating...</span>
+                    </div>
+                  ) : (
+                    translatedTitle || newsItem.title
+                  )}
                 </h1>
 
                 <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-6">

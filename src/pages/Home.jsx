@@ -203,7 +203,7 @@ const Home = () => {
             <div className="h-1 w-16 xs:w-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
           </div>
           {reviews.length > 0 ? (
-            <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-6 sm:gap-6 md:gap-8">
+            <div className="grid grid-cols-1 gap-4 xs:gap-6 sm:gap-6 md:gap-8 max-w-2xl">
               {reviews.slice(0, 6).map((review) => (
                 <ReviewCard key={review.id} review={review} />
               ))}

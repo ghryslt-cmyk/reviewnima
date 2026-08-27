@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchAnimeNews, getSeasonalBanners } from '../lib/animeNews';
+import { translateContent } from '../lib/translator';
 import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw, TrendingUp, Globe, X, Clock, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
@@ -23,6 +24,10 @@ const News = () => {
   const [trendingAnimeNews, setTrendingAnimeNews] = useState([]);
   const [selectedNewsItem, setSelectedNewsItem] = useState(null);
   const [showNewsDetail, setShowNewsDetail] = useState(false);
+  const [translatedNews, setTranslatedNews] = useState([]);
+  const [translatedTrendingNews, setTranslatedTrendingNews] = useState([]);
+  const [translatedTrendingAnimeNews, setTranslatedTrendingAnimeNews] = useState([]);
+  const [translating, setTranslating] = useState(false);
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -43,6 +48,56 @@ const News = () => {
   useEffect(() => {
     filterNews();
   }, [news, selectedCategory, selectedSource]);
+
+  // Translate news items when language changes
+  useEffect(() => {
+    const translateAllNews = async () => {
+      if (language !== 'id' && (news.length > 0 || trendingNews.length > 0 || trendingAnimeNews.length > 0)) {
+        setTranslating(true);
+        try {
+          // Translate regular news
+          const translatedRegularNews = await Promise.all(
+            news.map(async (item) => ({
+              ...item,
+              title: item.title ? await translateContent(item.title, 'id', language) : item.title,
+              description: item.description ? await translateContent(item.description, 'id', language) : item.description
+            }))
+          );
+          setTranslatedNews(translatedRegularNews);
+
+          // Translate trending news
+          const translatedTrending = await Promise.all(
+            trendingNews.map(async (item) => ({
+              ...item,
+              title: item.title ? await translateContent(item.title, 'id', language) : item.title,
+              description: item.description ? await translateContent(item.description, 'id', language) : item.description
+            }))
+          );
+          setTranslatedTrendingNews(translatedTrending);
+
+          // Translate trending anime news
+          const translatedTrendingAnime = await Promise.all(
+            trendingAnimeNews.map(async (item) => ({
+              ...item,
+              title: item.title ? await translateContent(item.title, 'id', language) : item.title,
+              description: item.description ? await translateContent(item.description, 'id', language) : item.description
+            }))
+          );
+          setTranslatedTrendingAnimeNews(translatedTrendingAnime);
+        } catch (error) {
+          console.error('Translation error:', error);
+        } finally {
+          setTranslating(false);
+        }
+      } else {
+        setTranslatedNews([]);
+        setTranslatedTrendingNews([]);
+        setTranslatedTrendingAnimeNews([]);
+      }
+    };
+
+    translateAllNews();
+  }, [language, news, trendingNews, trendingAnimeNews]);
 
   // Continuous circular scroll animation
   // Temporarily disabled due to React DOM manipulation conflict
@@ -187,7 +242,10 @@ const News = () => {
   };
 
   // Separate news by category
-  const airingNews = news.filter(item => item.category === 'Now Airing');
+  const airingNews = (translatedNews.length > 0 ? translatedNews : news).filter(item => item.category === 'Now Airing');
+  const displayNews = translatedNews.length > 0 ? translatedNews : news;
+  const displayTrendingNews = translatedTrendingNews.length > 0 ? translatedTrendingNews : trendingNews;
+  const displayTrendingAnimeNews = translatedTrendingAnimeNews.length > 0 ? translatedTrendingAnimeNews : trendingAnimeNews;
 
   // Get current day of week
   const currentDay = new Date().getDay();
@@ -295,27 +353,30 @@ const News = () => {
                 className="flex gap-3 pb-2 will-change-transform"
                 style={{ transform: 'translateX(0)' }}
               >
-                {animeByDay[currentDay].map((item) => (
-                  <Link
-                    key={item.id}
-                    to={`/news/${item.id}`}
-                    className="flex-shrink-0 w-32 sm:w-40 group"
-                  >
-                    <div className="relative aspect-[3/4] overflow-hidden rounded-lg mb-2">
-                      <img
-                        src={item.thumbnail}
-                        alt={item.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                        onError={(e) => {
-                          e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
-                        }}
-                      />
-                    </div>
-                    <p className="text-xs font-medium text-gray-900 dark:text-white line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
-                      {item.title.split(' - ')[0]}
-                    </p>
-                  </Link>
-                ))}
+                {animeByDay[currentDay].map((item) => {
+                  const displayItem = displayNews.find(d => d.id === item.id) || item;
+                  return (
+                    <Link
+                      key={item.id}
+                      to={`/news/${item.id}`}
+                      className="flex-shrink-0 w-32 sm:w-40 group"
+                    >
+                      <div className="relative aspect-[3/4] overflow-hidden rounded-lg mb-2">
+                        <img
+                          src={item.thumbnail}
+                          alt={displayItem.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                          onError={(e) => {
+                            e.target.src = 'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=400&fit=crop';
+                          }}
+                        />
+                      </div>
+                      <p className="text-xs font-medium text-gray-900 dark:text-white line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+                        {translating ? 'Translating...' : displayItem.title.split(' - ')[0]}
+                      </p>
+                    </Link>
+                  );
+                })}
               </div>
             ) : (
               <p className="text-gray-500 dark:text-gray-400 text-center py-4">
@@ -376,8 +437,8 @@ const News = () => {
               </h2>
             </div>
             <div className="space-y-4">
-              {trendingNews.length > 0 ? (
-                trendingNews.map((item, index) => (
+              {displayTrendingNews.length > 0 ? (
+                displayTrendingNews.map((item, index) => (
                   <div
                     key={item.guid || index}
                     onClick={() => handleNewsClick(item)}
@@ -459,7 +520,7 @@ const News = () => {
               </h2>
             </div>
             <div className="space-y-3">
-              {trendingAnimeNews.map((item, index) => (
+              {displayTrendingAnimeNews.map((item, index) => (
                 <Link
                   key={item.id}
                   to={`/news/${item.id}`}

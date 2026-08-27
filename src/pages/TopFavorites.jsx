@@ -2,8 +2,12 @@ import { useState, useEffect } from 'react';
 import { getFavoriteReviews } from '../lib/firebase';
 import ReviewCard from '../components/ReviewCard';
 import { Star, Sparkles } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
 
 const TopFavorites = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [favoriteReviews, setFavoriteReviews] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -41,10 +45,10 @@ const TopFavorites = () => {
             <Sparkles size={24} sm:size={32} className="text-white dark:text-black animate-spin-slow" />
           </div>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white dark:text-black animate-fade-in">
-            Top 10 Anime Favorit Ku
+            {t('topFavorites.title')}
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300 dark:text-gray-700 mt-4 sm:mt-6">
-            Koleksi anime terbaik pilihan saya
+            {t('topFavorites.subtitle')}
           </p>
         </div>
       </div>
@@ -61,7 +65,7 @@ const TopFavorites = () => {
           <div className="text-center py-12 sm:py-16 bg-white dark:bg-black rounded-xl shadow-lg border-2 border-black dark:border-white">
             <Star size={48} className="mx-auto mb-4 text-gray-400 dark:text-gray-600" />
             <p className="text-black dark:text-white text-base sm:text-lg">
-              Belum ada anime favorit. Tunggu update selanjutnya!
+              {t('topFavorites.noFavorites')}
             </p>
           </div>
         )}

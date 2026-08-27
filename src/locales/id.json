@@ -168,6 +168,11 @@
     "contactUs": "Hubungi Kami",
     "contactUsDesc": "Jika Anda memiliki pertanyaan tentang Syarat & Ketentuan ini, silakan hubungi kami di morvissenter@gmail.com"
   },
+  "topFavorites": {
+    "title": "Top 10 Anime Favorit Ku",
+    "subtitle": "Koleksi anime terbaik pilihan saya",
+    "noFavorites": "Belum ada anime favorit. Tunggu update selanjutnya!"
+  },
   "common": {
     "loading": "Memuat...",
     "error": "Terjadi kesalahan",

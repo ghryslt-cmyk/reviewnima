@@ -2,6 +2,7 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import { AuthProvider } from './context/AuthContext';
 import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
+import WelcomeAlert from './components/WelcomeAlert';
 import Home from './pages/Home';
 import Reviews from './pages/Reviews';
 import ReviewDetail from './pages/ReviewDetail';
@@ -30,6 +31,7 @@ function AppContent() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <WelcomeAlert />
       <div className="relative z-10 lg:z-0">
         <Navbar />
         <Routes>

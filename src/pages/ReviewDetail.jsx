@@ -19,6 +19,7 @@ const ReviewDetail = () => {
   const [submittingComment, setSubmittingComment] = useState(false);
   const [translatedReviewText, setTranslatedReviewText] = useState(null);
   const [translating, setTranslating] = useState(false);
+  const [translatedAnimeData, setTranslatedAnimeData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -60,6 +61,32 @@ const ReviewDetail = () => {
     };
 
     translateReview();
+  }, [review, language]);
+
+  // Translate anime data when language changes
+  useEffect(() => {
+    const translateAnimeData = async () => {
+      if (review && review.animeData && language !== 'id') {
+        setTranslating(true);
+        try {
+          const animeData = review.animeData;
+          const translatedData = {
+            ...animeData,
+            description: animeData.description ? await translateContent(animeData.description.replace(/<[^>]*>/g, ''), 'id', language) : animeData.description
+          };
+          setTranslatedAnimeData(translatedData);
+        } catch (error) {
+          console.error('Translation error:', error);
+          setTranslatedAnimeData(review.animeData);
+        } finally {
+          setTranslating(false);
+        }
+      } else {
+        setTranslatedAnimeData(null); // Use original Indonesian data
+      }
+    };
+
+    translateAnimeData();
   }, [review, language]);
 
   const handleSubmitComment = async (e) => {
@@ -104,7 +131,7 @@ const ReviewDetail = () => {
     );
   }
 
-  const animeData = review.animeData || {};
+  const animeData = translatedAnimeData || review.animeData || {};
   const animeTitle = animeData.title?.english || animeData.title?.romaji || 'Unknown';
   const coverImage = animeData.coverImage?.large || animeData.coverImage?.medium;
   const bannerImage = animeData.bannerImage;
@@ -205,7 +232,14 @@ const ReviewDetail = () => {
               <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-lg mb-6 border-2 border-gray-200 dark:border-gray-800">
                 <h3 className="text-xl font-bold text-black dark:text-white mb-3">{t('reviewDetail.synopsis')}</h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  {animeData.description.replace(/<[^>]*>/g, '')}
+                  {translating ? (
+                    <div className="flex items-center justify-center py-4">
+                      <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-gray-900 dark:border-white"></div>
+                      <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">Translating...</span>
+                    </div>
+                  ) : (
+                    animeData.description.replace(/<[^>]*>/g, '')
+                  )}
                 </p>
               </div>
             )}

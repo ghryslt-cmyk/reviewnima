@@ -168,6 +168,11 @@
     "contactUs": "お問い合わせ",
     "contactUsDesc": "これらの利用規約について質問がある場合は、morvissenter@gmail.comまでお問い合わせください"
   },
+  "topFavorites": {
+    "title": "私のトップ10お気に入りアニメ",
+    "subtitle": "最高のアニメのコレクション",
+    "noFavorites": "まだお気に入りのアニメはありません。次の更新をお待ちください！"
+  },
   "common": {
     "loading": "読み込み中...",
     "error": "エラーが発生しました",
