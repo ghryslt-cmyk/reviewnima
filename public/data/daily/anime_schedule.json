@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T21:41:31.433Z",
+  "fetchedAt": "2026-08-27T02:53:17.413Z",
   "schedule": {
     "sunday": [
       {
@@ -18,8 +18,8 @@
         "id": 63832,
         "title": "Seihantai na Kimi to Boku 2nd Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1143/158409.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1143/158409l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1143/158409.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1143/158409l.webp"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
@@ -316,8 +316,8 @@
         "id": 59970,
         "title": "Tensei shitara Slime Datta Ken 4th Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1695/156389.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1695/156389l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1695/156389.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1695/156389l.webp"
         },
         "broadcast": {
           "day_of_the_week": "friday",
@@ -402,8 +402,8 @@
         "id": 235,
         "title": "Meitantei Conan",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
