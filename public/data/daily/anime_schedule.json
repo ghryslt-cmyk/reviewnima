@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T13:05:44.848Z",
+  "fetchedAt": "2026-08-26T21:41:31.433Z",
   "schedule": {
     "sunday": [
       {
@@ -66,8 +66,8 @@
         "id": 62856,
         "title": "Nijusseiki Denki Mokuroku: Eureka Evrika",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1068/158475.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1068/158475l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1068/158475.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1068/158475l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
@@ -78,8 +78,8 @@
         "id": 21,
         "title": "One Piece",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
@@ -402,8 +402,8 @@
         "id": 235,
         "title": "Meitantei Conan",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.webp"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
