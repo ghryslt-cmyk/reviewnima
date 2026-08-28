@@ -1,6 +1,28 @@
 {
-  "fetchedAt": "2026-08-28T20:37:38.825Z",
+  "fetchedAt": "2026-08-28T21:04:12.000Z",
   "news": [
+    {
+      "title": "North American Anime, Manga Releases, August 23-29",
+      "description": "Is It Wrong to Try to Pick Up Girls in a Dungeon? V, Your Name. anime; Elden Ring: Distant Tales Between, Colori Colore Creare manga ship",
+      "fullDescription": "<cite>Is It Wrong to Try to Pick Up Girls in a Dungeon? V, Your Name.</cite> anime; <cite>Elden Ring: Distant Tales Between, Colori Colore Creare</cite> manga ship",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-28/north-american-anime-manga-releases-august-23-29/.240937",
+      "pubDate": "Fri, 28 Aug 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.240937"
+    },
+    {
+      "title": "Attack on Titan: Brave Order Cooperative Smartphone Game Ends Service on September 28",
+      "description": "Game launched for iOS/Android in February 2022",
+      "fullDescription": "Game launched for iOS/Android in February 2022",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-28/attack-on-titan-brave-order-cooperative-smartphone-game-ends-service-on-september-28/.241092",
+      "pubDate": "Fri, 28 Aug 2026 16:00:11 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241092/attack-on-titan-brave-order.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241092"
+    },
     {
       "title": "OceanVeil Reveals September 11 Simulcast Debut of Now That I Can Control Reality With A Mouse Cursor Anime; English Dub of Marika's Love Meter Malfunction",
       "description": "Marika's Love Meter Malfunction English dub debuts on September 3",
@@ -143,28 +165,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1787914113-b5a66a3bcd0438ca395d8cbe0fecdc71.jpeg",
       "guid": "https://myanimelist.net/news/74642759?_location=rss"
-    },
-    {
-      "title": "Frontwing, Good Smile Co. Release Cocoro Visual Novel on Steam in English",
-      "description": "Visual novel takes place in former utopian city ruined by global insurgence of AI",
-      "fullDescription": "Visual novel takes place in former utopian city ruined by global insurgence of AI",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-28/frontwing-good-smile-co-release-cocoro-visual-novel-on-steam-in-english/.241076",
-      "pubDate": "Fri, 28 Aug 2026 04:49:57 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241076/keyvisual-release-date.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241076"
-    },
-    {
-      "title": "Arc System Works' Donutal Alien Immigration Simulation Game Reveals September 3 Debut in Trailer",
-      "description": "Game will launch on PC via Steam",
-      "fullDescription": "Game will launch on PC via Steam",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-28/arc-system-works-donutal-alien-immigration-simulation-game-reveals-september-3-debut-in-trailer/.241072",
-      "pubDate": "Fri, 28 Aug 2026 03:26:58 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241072"
     }
   ],
   "total": 15

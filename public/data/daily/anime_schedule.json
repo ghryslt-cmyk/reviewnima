@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-28T09:26:05.997Z",
+  "fetchedAt": "2026-08-28T21:04:12.734Z",
   "schedule": {
     "sunday": [
       {
@@ -18,8 +18,8 @@
         "id": 63042,
         "title": "Meitantei Precure!",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1706/154944.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1706/154944l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1706/154944.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1706/154944l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
@@ -122,18 +122,6 @@
         "broadcast": {
           "day_of_the_week": "monday",
           "start_time": "01:00"
-        }
-      },
-      {
-        "id": 37096,
-        "title": "Puzzle & Dragon",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1460/149962.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1460/149962l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "monday",
-          "start_time": "18:25"
         }
       },
       {
@@ -256,8 +244,8 @@
         "id": 63150,
         "title": "Otome Kaijuu Caraméliser",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1981/156340.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1981/156340l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1981/156340.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1981/156340l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "friday",
@@ -316,24 +304,12 @@
         "id": 59970,
         "title": "Tensei shitara Slime Datta Ken 4th Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1695/156389.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1695/156389l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1695/156389.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1695/156389l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "friday",
           "start_time": "23:00"
-        }
-      },
-      {
-        "id": 60059,
-        "title": "Nige Jouzu no Wakagimi 2nd Season",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1289/156329.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1289/156329l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "friday",
-          "start_time": "23:30"
         }
       },
       {
@@ -342,6 +318,18 @@
         "main_picture": {
           "medium": "https://cdn.myanimelist.net/images/anime/1649/154997.jpg",
           "large": "https://cdn.myanimelist.net/images/anime/1649/154997l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "friday",
+          "start_time": "23:30"
+        }
+      },
+      {
+        "id": 60059,
+        "title": "Nige Jouzu no Wakagimi 2nd Season",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1289/156329.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1289/156329l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "friday",
