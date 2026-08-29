@@ -1,6 +1,17 @@
 {
-  "fetchedAt": "2026-08-29T15:28:05.056Z",
+  "fetchedAt": "2026-08-29T19:06:04.587Z",
   "news": [
+    {
+      "title": "Director, Scriptwriter Izuru Narushima Dies at 65",
+      "description": "Award-winning Rebirth director also wrote screenplay for 2000 anime film The Boy Who Saw the Wind",
+      "fullDescription": "Award-winning <cite>Rebirth</cite> director also wrote screenplay for 2000 anime film <cite>The Boy Who Saw the Wind</cite>",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-29/director-scriptwriter-izuru-narushima-dies-at-65/.241105",
+      "pubDate": "Sat, 29 Aug 2026 13:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241105"
+    },
     {
       "title": "Youka Nitta to Publish More Embracing Love Manga in Spring 2027",
       "description": "Author recently published 2-chapter spinoff manga in Be-Boy Gold magazine",
@@ -154,17 +165,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241077/rock-paper-landmine.jfif.jpeg",
       "guid": "https://www.animenewsnetwork.com/cms/.241077"
-    },
-    {
-      "title": "Kemono Jihen Manga Goes on Hiatus After Brother of Creator Shō Aimoto Dies",
-      "description": "Aimoto's brother died peacefully on August 15",
-      "fullDescription": "Aimoto's brother died peacefully on August 15",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-28/kemono-jihen-manga-goes-on-hiatus-after-brother-of-creator-sho-aimoto-dies/.241087",
-      "pubDate": "Fri, 28 Aug 2026 10:51:59 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max400x400/cms/news.5/182181/kemonojihen.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241087"
     }
   ],
   "total": 15
