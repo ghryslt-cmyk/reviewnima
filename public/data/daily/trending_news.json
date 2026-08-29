@@ -1,6 +1,28 @@
 {
-  "fetchedAt": "2026-08-29T10:45:44.193Z",
+  "fetchedAt": "2026-08-29T15:25:33.023Z",
   "news": [
+    {
+      "title": "Youka Nitta to Publish More Embracing Love Manga in Spring 2027",
+      "description": "Author recently published 2-chapter spinoff manga in Be-Boy Gold magazine",
+      "fullDescription": "Author recently published 2-chapter spinoff manga in <cite>Be-Boy Gold</cite> magazine",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-29/youka-nitta-to-publish-more-embracing-love-manga-in-spring-2027/.241108",
+      "pubDate": "Sat, 29 Aug 2026 11:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241108/embracing-love.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241108"
+    },
+    {
+      "title": "Comic, Manga Letterer Dave Lanphear Dies at 58",
+      "description": "Prolific letterer won 2 Eisner Awards, worked on manga such as Bleach, Beyblade",
+      "fullDescription": "Prolific letterer won 2 Eisner Awards, worked on manga such as <cite>Bleach, Beyblade</cite>",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-29/comic-manga-letterer-dave-lanphear-dies-at-58/.241104",
+      "pubDate": "Sat, 29 Aug 2026 09:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241104/dave-lanphear.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241104"
+    },
     {
       "title": "Arcanadea TV Anime Reveals More Cast, January 2027 Debut in Video",
       "description": "Keiichirō Kawaguchi directs anime at Yokohama Animation Lab",
@@ -143,28 +165,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max400x400/cms/news.5/182181/kemonojihen.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241087"
-    },
-    {
-      "title": "Kotaro Lives Alone Author Mami Tsumura Launches New Manga",
-      "description": "Tanosuke no Kawazanyō debuts September 11",
-      "fullDescription": "<cite>Tanosuke no Kawazanyō</cite> debuts September 11",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-28/kotaro-lives-alone-author-mami-tsumura-launches-new-manga/.240982",
-      "pubDate": "Fri, 28 Aug 2026 10:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/240982/gurashi.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.240982"
-    },
-    {
-      "title": "Blaze of Flesh and Blood Manga Ends in September",
-      "description": "Manga adaptation debuted in November 2024",
-      "fullDescription": "Manga adaptation debuted in November 2024",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-28/blaze-of-flesh-and-blood-manga-ends-in-september/.240202",
-      "pubDate": "Fri, 28 Aug 2026 09:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240202/81zwyoc-m2l.sl1500.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.240202"
     }
   ],
   "total": 15
