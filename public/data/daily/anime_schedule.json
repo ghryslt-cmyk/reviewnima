@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-29T15:28:06.798Z",
+  "fetchedAt": "2026-08-29T19:10:37.004Z",
   "schedule": {
     "sunday": [
       {
@@ -218,8 +218,8 @@
         "id": 62430,
         "title": "BanG Dream! Yume∞Mita",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1467/158693.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1467/158693l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1467/158693.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1467/158693l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "thursday",
@@ -366,8 +366,8 @@
         "id": 966,
         "title": "Crayon Shin-chan",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/10/59897.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/10/59897l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/10/59897.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/10/59897l.webp"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
@@ -390,8 +390,8 @@
         "id": 235,
         "title": "Meitantei Conan",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.webp"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
