@@ -1,19 +1,7 @@
 {
-  "fetchedAt": "2026-08-29T19:10:37.004Z",
+  "fetchedAt": "2026-08-29T22:19:23.756Z",
   "schedule": {
     "sunday": [
-      {
-        "id": 60552,
-        "title": "Kabushikigaisha Magi-Lumière 2nd Season",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1917/156186.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1917/156186l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "sunday",
-          "start_time": "00:55"
-        }
-      },
       {
         "id": 63042,
         "title": "Meitantei Precure!",
@@ -24,6 +12,18 @@
         "broadcast": {
           "day_of_the_week": "sunday",
           "start_time": "08:30"
+        }
+      },
+      {
+        "id": 62683,
+        "title": "Let's Go Kaiki-gumi",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1024/158581.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1024/158581l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "sunday",
+          "start_time": "16:30"
         }
       },
       {
@@ -48,6 +48,18 @@
         "broadcast": {
           "day_of_the_week": "sunday",
           "start_time": "18:00"
+        }
+      },
+      {
+        "id": 2406,
+        "title": "Sazae-san",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1008/98996.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1008/98996l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "sunday",
+          "start_time": "18:30"
         }
       },
       {
@@ -135,6 +147,18 @@
           "day_of_the_week": "monday",
           "start_time": "21:00"
         }
+      },
+      {
+        "id": 62031,
+        "title": "Honoo no Toukyuujo: Dodge Danko",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1017/158603.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1017/158603l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "monday",
+          "start_time": "23:00"
+        }
       }
     ],
     "tuesday": [
@@ -160,6 +184,18 @@
         "broadcast": {
           "day_of_the_week": "tuesday",
           "start_time": "23:00"
+        }
+      },
+      {
+        "id": 63047,
+        "title": "Yoroi Shin Den Samurai Troopers Part 2",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1996/158323.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1996/158323l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "tuesday",
+          "start_time": "23:30"
         }
       }
     ],
@@ -203,23 +239,23 @@
     ],
     "thursday": [
       {
-        "id": 62883,
-        "title": "Bungou Stray Dogs Wan! 2",
+        "id": 63418,
+        "title": "Thunder 3",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1591/157071.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1591/157071l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1084/158946.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1084/158946l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "thursday",
-          "start_time": "21:40"
+          "start_time": "00:45"
         }
       },
       {
         "id": 62430,
         "title": "BanG Dream! Yume∞Mita",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1467/158693.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1467/158693l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1467/158693.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1467/158693l.webp"
         },
         "broadcast": {
           "day_of_the_week": "thursday",
@@ -277,18 +313,6 @@
         }
       },
       {
-        "id": 53876,
-        "title": "Pokemon (2023)",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1703/137216.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1703/137216l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "friday",
-          "start_time": "18:55"
-        }
-      },
-      {
         "id": 8687,
         "title": "Doraemon (2005)",
         "main_picture": {
@@ -318,6 +342,18 @@
         "main_picture": {
           "medium": "https://cdn.myanimelist.net/images/anime/1649/154997.jpg",
           "large": "https://cdn.myanimelist.net/images/anime/1649/154997l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "friday",
+          "start_time": "23:30"
+        }
+      },
+      {
+        "id": 62981,
+        "title": "Kami no Shizuku",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1045/155698.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1045/155698l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "friday",
@@ -366,8 +402,8 @@
         "id": 966,
         "title": "Crayon Shin-chan",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/10/59897.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/10/59897l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/10/59897.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/10/59897l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
@@ -390,8 +426,8 @@
         "id": 235,
         "title": "Meitantei Conan",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/7/75199.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/7/75199l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
@@ -408,18 +444,6 @@
         "broadcast": {
           "day_of_the_week": "saturday",
           "start_time": "18:25"
-        }
-      },
-      {
-        "id": 61048,
-        "title": "Neko to Ryuu",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1878/157796.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1878/157796l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "saturday",
-          "start_time": "21:00"
         }
       },
       {
