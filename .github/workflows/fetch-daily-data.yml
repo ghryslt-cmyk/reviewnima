@@ -2,13 +2,18 @@ name: Fetch Daily Data
 
 on:
   schedule:
-    # Run every hour
-    - cron: '0 * * * *'
+    # Run every 15 minutes to ensure regular updates even if some runs are delayed
+    - cron: '*/15 * * * *'
   workflow_dispatch: # Allow manual trigger
+
+concurrency:
+  group: fetch-daily-data
+  cancel-in-progress: true
 
 jobs:
   fetch-seasonal-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     
     steps:
       - name: Checkout repository
@@ -24,9 +29,15 @@ jobs:
         run: npm ci
       
       - name: Fetch trending anime and news data
+        continue-on-error: true
         run: node scripts/fetch-hourly.js
       
+      - name: Fetch trending news
+        continue-on-error: true
+        run: node scripts/fetch-trending-news.js
+      
       - name: Fetch MAL schedule data
+        continue-on-error: true
         env:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
         run: node scripts/fetch-mal-schedule.js
