@@ -1,19 +1,7 @@
-import { memo, useEffect, useState } from 'react';
+import { memo } from 'react';
 import TopGutter from './TopGutter';
 
 const Layout = memo(({ children }) => {
-  const [isZoomed, setIsZoomed] = useState(false);
-
-  useEffect(() => {
-    const checkZoom = () => {
-      const zoomLevel = window.outerWidth / window.innerWidth;
-      setIsZoomed(zoomLevel > 1.1);
-    };
-
-    checkZoom();
-    window.addEventListener('resize', checkZoom);
-    return () => window.removeEventListener('resize', checkZoom);
-  }, []);
   return (
     <div 
       className="min-h-screen transition-all duration-300 relative"
@@ -27,7 +15,7 @@ const Layout = memo(({ children }) => {
       }}
     >
       {/* Left Gutter */}
-      <div className="fixed left-0 bottom-0 w-[310px] h-[900px] z-0 hidden lg:block pointer-events-none">
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed left-0 bottom-0 w-[310px] h-[900px] z-0 hidden lg:block">
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
@@ -38,7 +26,7 @@ const Layout = memo(({ children }) => {
             backgroundSize: 'contain'
           }}
         ></div>
-      </div>
+      </a>
 
       {/* Right Gutter */}
       <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed right-0 bottom-0 w-[310px] h-[900px] z-0 hidden lg:block">
