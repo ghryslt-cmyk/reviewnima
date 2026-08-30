@@ -4,6 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
 import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages } from 'lucide-react';
 import { useState, useCallback, useEffect, memo } from 'react';
+import TopGutter from './TopGutter';
 
 const Navbar = () => {
   const { user, logout, checkAdmin, isAuthenticated } = useAuth();
@@ -53,9 +54,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-lg border-b border-gray-200 dark:border-gray-700 transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <>
+      <nav className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-lg border-b border-gray-200 dark:border-gray-700 transition-all duration-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-4 sm:space-x-8">
             <Link to="/" className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white hover:scale-105 transition-transform duration-300">
               ReviewNima
@@ -253,6 +255,8 @@ const Navbar = () => {
         )}
       </div>
     </nav>
+    <TopGutter />
+    </>
   );
 };
 

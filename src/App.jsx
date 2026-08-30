@@ -15,7 +15,6 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import News from './pages/News';
 import NewsDetail from './pages/NewsDetail';
-import SeasonalSidebars from './components/SeasonalSidebars';
 import { incrementVisitorCount } from './lib/firebase';
 import { useEffect } from 'react';
 
@@ -49,7 +48,6 @@ function AppContent() {
           <Route path="/terms" element={<Terms />} />
         </Routes>
       </div>
-      <SeasonalSidebars />
     </div>
   );
 }

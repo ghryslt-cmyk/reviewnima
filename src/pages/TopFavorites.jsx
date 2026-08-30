@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getFavoriteReviews } from '../lib/firebase';
 import ReviewCard from '../components/ReviewCard';
+import Layout from '../components/Layout';
 import { Star, Sparkles } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
@@ -35,7 +36,7 @@ const TopFavorites = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black">
+    <Layout>
       {/* Hero Section */}
       <div className="bg-black dark:bg-white text-white dark:text-black py-12 sm:py-20 border-b-4 border-black dark:border-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -70,7 +71,7 @@ const TopFavorites = () => {
           </div>
         )}
       </div>
-    </div>
+    </Layout>
   );
 };
 

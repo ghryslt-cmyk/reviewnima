@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import Layout from '../components/Layout';
 import { fetchAnimeNews } from '../lib/animeNews';
 import { useLanguage } from '../context/LanguageContext';
 import { ArrowLeft, Calendar, ExternalLink, Share2, Newspaper, MessageCircle, Send, User as UserIcon } from 'lucide-react';
@@ -108,7 +109,7 @@ const NewsDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-all duration-300">
+    <Layout>
       {/* Header */}
       <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-4">
@@ -332,7 +333,7 @@ const NewsDetail = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

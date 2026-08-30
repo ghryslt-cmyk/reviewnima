@@ -1,13 +1,14 @@
 import { FileText, AlertCircle, CheckCircle, XCircle, CreditCard } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
+import Layout from '../components/Layout';
 
 const Terms = () => {
   const { language } = useLanguage();
   const { t } = useTranslation(language);
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12 px-4">
+    <Layout>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{t('terms.title')}</h1>
@@ -137,7 +138,7 @@ const Terms = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

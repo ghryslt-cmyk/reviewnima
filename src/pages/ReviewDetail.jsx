@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Layout from '../components/Layout';
 import { getReviewById, getComments, addComment } from '../lib/firebase';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
@@ -95,7 +96,7 @@ const ReviewDetail = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black">
+    <Layout>
       {/* Banner */}
       {bannerImage && (
         <div className="h-64 md:h-96 relative overflow-hidden">
@@ -300,7 +301,7 @@ const ReviewDetail = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
