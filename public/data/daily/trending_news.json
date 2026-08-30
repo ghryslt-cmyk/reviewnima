@@ -1,6 +1,17 @@
 {
-  "fetchedAt": "2026-08-30T19:29:22.636Z",
+  "fetchedAt": "2026-08-30T22:02:34.410Z",
   "news": [
+    {
+      "title": "Kono Oto Tomare! Manga to End in 3 Chapters",
+      "description": "Series debuted in August 2012",
+      "fullDescription": "Series debuted in August 2012",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-30/kono-oto-tomare-manga-to-end-in-3-chapters/.241138",
+      "pubDate": "Sun, 30 Aug 2026 15:45:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241138"
+    },
     {
       "title": "North American Anime & Manga Releases for September",
       "description": "Here are the North American anime, manga, and light novel releases for September. Week 1: September 1 - 7 Anime Releases Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka Movie: Orion no Ya (Is It Wrong to Try to Pick Up Girls in a Dungeon?: Arrow of the Orion) Blu-ray Kuroshitsuji: Midori no...",
@@ -154,17 +165,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241104/dave-lanphear.jfif.jpeg",
       "guid": "https://www.animenewsnetwork.com/cms/.241104"
-    },
-    {
-      "title": "Arcanadea TV Anime Reveals More Cast, January 2027 Debut in Video",
-      "description": "Keiichirō Kawaguchi directs anime at Yokohama Animation Lab",
-      "fullDescription": "Keiichirō Kawaguchi directs anime at Yokohama Animation Lab",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-29/arcanadea-tv-anime-reveals-more-cast-january-2027-debut-in-video/.241107",
-      "pubDate": "Sat, 29 Aug 2026 03:56:08 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max550x550/cms/news.9/241107/shogo.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241107"
     }
   ],
   "total": 15
