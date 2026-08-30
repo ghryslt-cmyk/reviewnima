@@ -14,6 +14,7 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(() => {
     // Get saved language from localStorage or default to 'id'
     const saved = localStorage.getItem('language');
+    console.log('LanguageProvider: Initial language from localStorage:', saved);
     // Only use saved value if it's valid
     if (saved && ['id', 'en', 'jp'].includes(saved)) {
       return saved;
@@ -23,11 +24,12 @@ export const LanguageProvider = ({ children }) => {
 
   useEffect(() => {
     // Save language preference to localStorage
+    console.log('LanguageProvider: Saving language to localStorage:', language);
     localStorage.setItem('language', language);
   }, [language]);
 
   const changeLanguage = useCallback((lang) => {
-    // Force update even if same language to ensure reactivity
+    console.log('LanguageProvider: changeLanguage called with:', lang);
     setLanguage(lang);
   }, []);
 

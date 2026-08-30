@@ -25,9 +25,10 @@ const Navbar = () => {
   }, [languageDropdownOpen]);
 
   const handleLanguageChange = useCallback((lang) => {
+    console.log('Navbar: Changing language to', lang);
     changeLanguage(lang);
     setLanguageDropdownOpen(false);
-  }, []);
+  }, [changeLanguage]);
 
   const handleMobileMenuToggle = useCallback(() => {
     setMobileMenuOpen(prev => !prev);
@@ -167,7 +168,10 @@ const Navbar = () => {
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
-                    onClick={() => changeLanguage(lang.code)}
+                    onClick={() => {
+                      console.log('Mobile: Changing language to', lang.code);
+                      changeLanguage(lang.code);
+                    }}
                     className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-300 ${
                       language === lang.code
                         ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900'
