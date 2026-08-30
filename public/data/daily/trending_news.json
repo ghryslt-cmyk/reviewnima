@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-30T04:36:58.960Z",
+  "fetchedAt": "2026-08-30T01:01:43.026Z",
   "news": [
     {
       "title": "Director, Scriptwriter Izuru Narushima Dies at 65",
@@ -11,17 +11,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241105"
-    },
-    {
-      "title": "A Conversation With &#8220;Aoashi&#8221; Producer Juinichi Katsutani At Anime Expo 2026",
-      "description": "Anime Herald: Aoashi has proven to be rather popular. What do you think has led to its success? Juinichi Katsutani: We’ve been told that real sports animation has a difficult path to success. Nevertheless, soccer is a very popular major sport. We believe Aoashi’s success is based on the fact we are ...",
-      "fullDescription": "<p>Anime Herald: Aoashi has proven to be rather popular. What do you think has led to its success? Juinichi Katsutani: We’ve been told that real sports animation has a difficult path to success. Nevertheless, soccer is a very popular major sport. We believe Aoashi’s success is based on the fact we are very focused on [&#8230;]</p>\n<p><a href=\"https://animeherald.com/2026/08/29/a-conversation-with-aoashi-producer-juinichi-katsutani-at-anime-expo-2026/\">A Conversation With &#8220;Aoashi&#8221; Producer Juinichi Katsutani At Anime Expo 2026</a> - <a href=\"https://animeherald.com/author/sethburn/\">Seth Burn</a></p>\n",
-      "link": "https://animeherald.com/2026/08/29/a-conversation-with-aoashi-producer-juinichi-katsutani-at-anime-expo-2026/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=a-conversation-with-aoashi-producer-juinichi-katsutani-at-anime-expo-2026",
-      "pubDate": "Sat, 29 Aug 2026 16:00:00 +0000",
-      "source": "Anime Herald",
-      "category": "Newspaper",
-      "thumbnail": "https://www-animeherald-com.exactdn.com/wp-content/uploads/2026/08/aoashi_season2_KV_B2_A_0626解禁用EN-1-724x1024.jpg?strip=all",
-      "guid": "https://animeherald.com/?p=78148"
     },
     {
       "title": "Youka Nitta to Publish More Embracing Love Manga in Spring 2027",
@@ -112,17 +101,6 @@
       "guid": "https://www.animenewsnetwork.com/cms/.240937"
     },
     {
-      "title": "A Conversation With The MARRIAGETOXIN Anime Staff",
-      "description": "\"In the first episode, we combined two chapters from the original MARRIAGETOXIN manga. It switches back and forth from comical to serious, back and forth from comic to tragic. We’re changing genres every four or five shots.\"\nA Conversation With The MARRIAGETOXIN Anime Staff - Seth Burn",
-      "fullDescription": "<p>\"In the first episode, we combined two chapters from the original MARRIAGETOXIN manga. It switches back and forth from comical to serious, back and forth from comic to tragic. We’re changing genres every four or five shots.\"</p>\n<p><a href=\"https://animeherald.com/2026/08/28/a-conversation-with-the-marriagetoxin-anime-staff/\">A Conversation With The MARRIAGETOXIN Anime Staff</a> - <a href=\"https://animeherald.com/author/sethburn/\">Seth Burn</a></p>\n",
-      "link": "https://animeherald.com/2026/08/28/a-conversation-with-the-marriagetoxin-anime-staff/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=a-conversation-with-the-marriagetoxin-anime-staff",
-      "pubDate": "Fri, 28 Aug 2026 20:59:50 +0000",
-      "source": "Anime Herald",
-      "category": "Newspaper",
-      "thumbnail": "https://www-animeherald-com.exactdn.com/wp-content/uploads/2026/08/Marriagetoxin-Team-Photo-002-20260828-819x1024.jpg?strip=all",
-      "guid": "https://animeherald.com/?p=78146"
-    },
-    {
       "title": "Attack on Titan: Brave Order Cooperative Smartphone Game Ends Service on September 28",
       "description": "Game launched for iOS/Android in February 2022",
       "fullDescription": "Game launched for iOS/Android in February 2022",
@@ -165,6 +143,28 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/233921/782009248767.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241080"
+    },
+    {
+      "title": "Yang Can't Live Alone Manga Switches Publishers (Updated)",
+      "description": "Creator sooncha withdrew copyright for manga from Square Enix",
+      "fullDescription": "Creator sooncha withdrew copyright for manga from Square Enix",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-28/yang-cant-live-alone-manga-switches-publishers/.241090",
+      "pubDate": "Fri, 28 Aug 2026 11:50:08 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/234321/yang-can-t-live-alone-01-9798899100499-not-final-cover.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241090"
+    },
+    {
+      "title": "Yugo Aosaki's Rock Paper Landmine Novel Gets Live-Action Series With Worldwide Distribution on Amazon Prime Video",
+      "description": "Nana Mori, Aju Makita star in \"bloodless survival game\" series",
+      "fullDescription": "Nana Mori, Aju Makita star in \"bloodless survival game\" series",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-28/yugo-aosaki-rock-paper-landmine-novel-gets-live-action-series-with-worldwide-distribution-on-amazon-/.241077",
+      "pubDate": "Fri, 28 Aug 2026 11:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241077/rock-paper-landmine.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241077"
     }
   ],
   "total": 15

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-27T02:53:17.413Z",
+  "fetchedAt": "2026-08-30T01:01:43.952Z",
   "schedule": {
     "sunday": [
       {
@@ -15,27 +15,27 @@
         }
       },
       {
+        "id": 62683,
+        "title": "Let's Go Kaiki-gumi",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1024/158581.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1024/158581l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "sunday",
+          "start_time": "16:30"
+        }
+      },
+      {
         "id": 63832,
         "title": "Seihantai na Kimi to Boku 2nd Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1143/158409.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1143/158409l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1143/158409.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1143/158409l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
           "start_time": "17:00"
-        }
-      },
-      {
-        "id": 63100,
-        "title": "Tetsunabe no Jan!",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1452/159112.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1452/159112l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "sunday",
-          "start_time": "17:30"
         }
       },
       {
@@ -48,6 +48,18 @@
         "broadcast": {
           "day_of_the_week": "sunday",
           "start_time": "18:00"
+        }
+      },
+      {
+        "id": 2406,
+        "title": "Sazae-san",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1008/98996.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1008/98996l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "sunday",
+          "start_time": "18:30"
         }
       },
       {
@@ -78,8 +90,8 @@
         "id": 21,
         "title": "One Piece",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.webp"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
@@ -135,6 +147,18 @@
           "day_of_the_week": "monday",
           "start_time": "21:00"
         }
+      },
+      {
+        "id": 62031,
+        "title": "Honoo no Toukyuujo: Dodge Danko",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1017/158603.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1017/158603l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "monday",
+          "start_time": "23:00"
+        }
       }
     ],
     "tuesday": [
@@ -142,8 +166,8 @@
         "id": 62542,
         "title": "Grand Blue Season 3",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1615/158194.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1615/158194l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1615/158194.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1615/158194l.webp"
         },
         "broadcast": {
           "day_of_the_week": "tuesday",
@@ -161,21 +185,21 @@
           "day_of_the_week": "tuesday",
           "start_time": "23:00"
         }
+      },
+      {
+        "id": 63047,
+        "title": "Yoroi Shin Den Samurai Troopers Part 2",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1996/158323.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1996/158323l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "tuesday",
+          "start_time": "23:30"
+        }
       }
     ],
     "wednesday": [
-      {
-        "id": 62476,
-        "title": "Tefuda ga Oome no Victoria",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1098/158743.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1098/158743l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "wednesday",
-          "start_time": "00:00"
-        }
-      },
       {
         "id": 62513,
         "title": "Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou",
@@ -215,39 +239,15 @@
     ],
     "thursday": [
       {
-        "id": 63780,
-        "title": "Hanazakari no Kimitachi e 2nd Season",
+        "id": 63418,
+        "title": "Thunder 3",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1899/158523.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1899/158523l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1084/158946.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1084/158946l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "thursday",
-          "start_time": "00:30"
-        }
-      },
-      {
-        "id": 62883,
-        "title": "Bungou Stray Dogs Wan! 2",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1591/157071.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1591/157071l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "thursday",
-          "start_time": "21:40"
-        }
-      },
-      {
-        "id": 63347,
-        "title": "World Is Dancing",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1165/158709.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1165/158709l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "thursday",
-          "start_time": "22:00"
+          "start_time": "00:45"
         }
       },
       {
@@ -261,9 +261,33 @@
           "day_of_the_week": "thursday",
           "start_time": "23:00"
         }
+      },
+      {
+        "id": 62076,
+        "title": "Super no Ura de Yani Suu Futari",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1768/156339.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1768/156339l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "thursday",
+          "start_time": "23:56"
+        }
       }
     ],
     "friday": [
+      {
+        "id": 63150,
+        "title": "Otome Kaijuu Caraméliser",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1981/156340.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1981/156340l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "friday",
+          "start_time": "01:28"
+        }
+      },
       {
         "id": 1960,
         "title": "Sore Ike! Anpanman",
@@ -289,18 +313,6 @@
         }
       },
       {
-        "id": 53876,
-        "title": "Pokemon (2023)",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1703/137216.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1703/137216l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "friday",
-          "start_time": "18:55"
-        }
-      },
-      {
         "id": 8687,
         "title": "Doraemon (2005)",
         "main_picture": {
@@ -316,8 +328,8 @@
         "id": 59970,
         "title": "Tensei shitara Slime Datta Ken 4th Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1695/156389.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1695/156389l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1695/156389.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1695/156389l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "friday",
@@ -335,21 +347,33 @@
           "day_of_the_week": "friday",
           "start_time": "23:30"
         }
+      },
+      {
+        "id": 62981,
+        "title": "Kami no Shizuku",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1045/155698.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1045/155698l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "friday",
+          "start_time": "23:30"
+        }
+      },
+      {
+        "id": 60059,
+        "title": "Nige Jouzu no Wakagimi 2nd Season",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1289/156329.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1289/156329l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "friday",
+          "start_time": "23:30"
+        }
       }
     ],
     "saturday": [
-      {
-        "id": 63817,
-        "title": "Hell Mode: Yarikomizuki no Gamer wa Hai Settei no Isekai de Musou suru 2nd Season",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1534/156314.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1534/156314l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "saturday",
-          "start_time": "01:00"
-        }
-      },
       {
         "id": 32353,
         "title": "Bonobono (TV 2016)",
@@ -423,18 +447,6 @@
         }
       },
       {
-        "id": 61048,
-        "title": "Neko to Ryuu",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1878/157796.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1878/157796l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "saturday",
-          "start_time": "21:00"
-        }
-      },
-      {
         "id": 60636,
         "title": "Bleach: Sennen Kessen-hen - Kashin-tan",
         "main_picture": {
@@ -462,8 +474,8 @@
         "id": 62001,
         "title": "Yomi no Tsugai",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1171/156397.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1171/156397l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1171/156397.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1171/156397l.webp"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
