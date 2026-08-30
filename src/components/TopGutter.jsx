@@ -2,7 +2,7 @@ import { memo } from 'react';
 
 const TopGutter = memo(() => {
   return (
-    <div className="w-full h-10 md:h-12 lg:h-14 relative overflow-hidden">
+    <div className="w-full h-20 md:h-24 lg:h-28 relative overflow-hidden">
       <img 
         src="/top-gutter.png" 
         alt="Top Gutter" 
