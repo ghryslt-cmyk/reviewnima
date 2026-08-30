@@ -59,8 +59,8 @@ const News = () => {
           const translatedRegularNews = await Promise.all(
             news.map(async (item) => ({
               ...item,
-              title: item.title ? await translateContent(item.title, 'id', language) : item.title,
-              description: item.description ? await translateContent(item.description, 'id', language) : item.description
+              title: item.title ? await translateContent(item.title, 'en', language) : item.title,
+              description: item.description ? await translateContent(item.description, 'en', language) : item.description
             }))
           );
           setTranslatedNews(translatedRegularNews);
@@ -69,8 +69,8 @@ const News = () => {
           const translatedTrending = await Promise.all(
             trendingNews.map(async (item) => ({
               ...item,
-              title: item.title ? await translateContent(item.title, 'id', language) : item.title,
-              description: item.description ? await translateContent(item.description, 'id', language) : item.description
+              title: item.title ? await translateContent(item.title, 'en', language) : item.title,
+              description: item.description ? await translateContent(item.description, 'en', language) : item.description
             }))
           );
           setTranslatedTrendingNews(translatedTrending);
@@ -79,13 +79,17 @@ const News = () => {
           const translatedTrendingAnime = await Promise.all(
             trendingAnimeNews.map(async (item) => ({
               ...item,
-              title: item.title ? await translateContent(item.title, 'id', language) : item.title,
-              description: item.description ? await translateContent(item.description, 'id', language) : item.description
+              title: item.title ? await translateContent(item.title, 'en', language) : item.title,
+              description: item.description ? await translateContent(item.description, 'en', language) : item.description
             }))
           );
           setTranslatedTrendingAnimeNews(translatedTrendingAnime);
         } catch (error) {
           console.error('Translation error:', error);
+          // Set empty arrays on error to fallback to original
+          setTranslatedNews([]);
+          setTranslatedTrendingNews([]);
+          setTranslatedTrendingAnimeNews([]);
         } finally {
           setTranslating(false);
         }

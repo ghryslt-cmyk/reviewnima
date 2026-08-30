@@ -24,12 +24,12 @@ const NewsDetail = () => {
   // Translate news content when language changes
   useEffect(() => {
     const translateNewsContent = async () => {
-      if (newsItem && language !== 'id') {
+      if (newsItem && language !== 'en') {
         setTranslating(true);
         try {
           const [translatedDesc, translatedTitleText] = await Promise.all([
-            newsItem.description ? translateContent(newsItem.description, 'id', language) : newsItem.description,
-            newsItem.title ? translateContent(newsItem.title, 'id', language) : newsItem.title
+            newsItem.description ? translateContent(newsItem.description, 'en', language) : newsItem.description,
+            newsItem.title ? translateContent(newsItem.title, 'en', language) : newsItem.title
           ]);
           setTranslatedContent(translatedDesc);
           setTranslatedTitle(translatedTitleText);
@@ -41,7 +41,7 @@ const NewsDetail = () => {
           setTranslating(false);
         }
       } else {
-        setTranslatedContent(null); // Use original Indonesian text
+        setTranslatedContent(null); // Use original English text
         setTranslatedTitle(null);
       }
     };

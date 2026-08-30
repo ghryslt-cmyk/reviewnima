@@ -1,7 +1,17 @@
-// Simple translation utility for dynamic content translation
-// In production, this should be replaced with a proper translation API like Google Translate, DeepL, etc.
+// Translation utility using MyMemory API (free, reliable)
+// For production, consider using Google Translate API with proper API key
 
 const translationsCache = new Map();
+const TRANSLATION_DELAY = 300; // ms between requests to avoid rate limiting
+
+// Language code mapping for MyMemory API
+const languageMap = {
+  'id': 'id',
+  'en': 'en-GB',
+  'jp': 'ja'
+};
+
+let lastTranslationTime = 0;
 
 export const translateText = async (text, fromLang, toLang) => {
   // If same language, return original text
@@ -13,33 +23,40 @@ export const translateText = async (text, fromLang, toLang) => {
     return translationsCache.get(cacheKey);
   }
 
-  // For demo purposes, we'll use a simple approach
-  // In production, integrate with a translation API
+  // Rate limiting
+  const now = Date.now();
+  const timeSinceLastTranslation = now - lastTranslationTime;
+  if (timeSinceLastTranslation < TRANSLATION_DELAY) {
+    await new Promise(resolve => setTimeout(resolve, TRANSLATION_DELAY - timeSinceLastTranslation));
+  }
+  lastTranslationTime = Date.now();
+
   try {
-    // Using LibreTranslate API (free, open-source)
-    // Note: This is a public API, for production use your own instance
-    const response = await fetch('https://libretranslate.de/translate', {
-      method: 'POST',
-      body: JSON.stringify({
-        q: text,
-        source: fromLang === 'id' ? 'id' : fromLang === 'jp' ? 'ja' : 'en',
-        target: toLang === 'id' ? 'id' : toLang === 'jp' ? 'ja' : 'en',
-        format: 'text'
-      }),
+    // Using MyMemory Translation API (free, no API key required for basic usage)
+    const sourceLang = languageMap[fromLang] || fromLang;
+    const targetLang = languageMap[toLang] || toLang;
+    
+    const response = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${sourceLang}|${targetLang}`, {
+      method: 'GET',
       headers: { 'Content-Type': 'application/json' }
     });
 
     if (!response.ok) {
-      throw new Error('Translation failed');
+      throw new Error(`Translation API error: ${response.status}`);
     }
 
     const data = await response.json();
-    const translatedText = data.translatedText;
     
-    // Cache the result
-    translationsCache.set(cacheKey, translatedText);
-    
-    return translatedText;
+    if (data.responseStatus === 200 && data.responseData) {
+      const translatedText = data.responseData.translatedText;
+      
+      // Cache the result
+      translationsCache.set(cacheKey, translatedText);
+      
+      return translatedText;
+    } else {
+      throw new Error('Translation failed');
+    }
   } catch (error) {
     console.error('Translation error:', error);
     // Fallback: return original text if translation fails
@@ -54,13 +71,25 @@ export const translateContent = async (content, currentLanguage, targetLanguage)
   const fromLang = 'id';
   const toLang = targetLanguage;
   
-  // Split content into sentences for better translation
-  const sentences = content.split(/(?<=[.!?])\s+/);
-  const translatedSentences = await Promise.all(
-    sentences.map(sentence => translateText(sentence.trim(), fromLang, toLang))
+  // Split content into chunks for better translation (max 500 chars per chunk)
+  const chunks = [];
+  let currentChunk = '';
+  
+  content.split(/(?<=[.!?])\s+/).forEach(sentence => {
+    if ((currentChunk + sentence).length > 500) {
+      if (currentChunk) chunks.push(currentChunk.trim());
+      currentChunk = sentence;
+    } else {
+      currentChunk += ' ' + sentence;
+    }
+  });
+  if (currentChunk.trim()) chunks.push(currentChunk.trim());
+  
+  const translatedChunks = await Promise.all(
+    chunks.map(chunk => translateText(chunk.trim(), fromLang, toLang))
   );
   
-  return translatedSentences.join(' ');
+  return translatedChunks.join(' ');
 };
 
 // Hook for translating content with loading state

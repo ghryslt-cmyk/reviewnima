@@ -14,7 +14,11 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState(() => {
     // Get saved language from localStorage or default to 'id'
     const saved = localStorage.getItem('language');
-    return saved || 'id';
+    // Only use saved value if it's valid
+    if (saved && ['id', 'en', 'jp'].includes(saved)) {
+      return saved;
+    }
+    return 'id';
   });
 
   useEffect(() => {
