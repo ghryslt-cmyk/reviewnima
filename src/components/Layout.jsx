@@ -23,8 +23,8 @@ const Layout = memo(({ children }) => {
         </div>
       </div>
 
-      {/* Fixed Side Gutters - ANN Style - Overlay on top of main skin */}
-      <div className="fixed left-0 top-0 bottom-0 min-w-[180px] z-20 hidden lg:block">
+      {/* Fixed Side Gutters - ANN Style - Transparent overlay on top of main skin */}
+      <div className="fixed left-0 top-0 bottom-0 min-w-[180px] z-20 hidden lg:block pointer-events-none">
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
@@ -35,7 +35,7 @@ const Layout = memo(({ children }) => {
         ></div>
       </div>
 
-      <div className="fixed right-0 top-0 bottom-0 min-w-[180px] z-20 hidden lg:block">
+      <div className="fixed right-0 top-0 bottom-0 min-w-[180px] z-20 hidden lg:block pointer-events-none">
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
