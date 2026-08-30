@@ -16,16 +16,19 @@ const Navbar = () => {
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (languageDropdownOpen && !event.target.closest('.language-dropdown') && !event.target.closest('[class*="absolute"]')) {
-        setLanguageDropdownOpen(false);
+      if (languageDropdownOpen) {
+        const container = document.querySelector('.language-selector-container');
+        if (container && !container.contains(event.target)) {
+          setLanguageDropdownOpen(false);
+        }
       }
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
   }, [languageDropdownOpen]);
 
   const handleLanguageChange = useCallback((lang) => {
-    console.log('Navbar: Changing language to', lang);
+    console.log('Navbar handleLanguageChange called with:', lang);
     changeLanguage(lang);
     setLanguageDropdownOpen(false);
   }, [changeLanguage]);
@@ -85,15 +88,13 @@ const Navbar = () => {
           
           <div className="flex items-center space-x-2 sm:space-x-4">
             {/* Language Selector */}
-            <div className="relative z-50">
+            <div className="relative language-selector-container">
               <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  console.log('Desktop: Toggle dropdown, current state:', languageDropdownOpen);
+                onClick={() => {
+                  console.log('Toggle dropdown, current:', languageDropdownOpen, 'new:', !languageDropdownOpen);
                   setLanguageDropdownOpen(!languageDropdownOpen);
                 }}
-                className="language-dropdown flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
               >
                 <Globe size={20} />
                 <span className="hidden md:inline">{languages.find(lang => lang.code === language)?.flag}</span>
@@ -101,18 +102,15 @@ const Navbar = () => {
               </button>
               
               {languageDropdownOpen && (
-                <div 
-                  className="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-[9999] visible"
-                  style={{ display: 'block' }}
-                  onClick={(e) => e.stopPropagation()}
-                >
+                <div className="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
+                      type="button"
                       onClick={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
-                        console.log('Desktop dropdown: Changing language to', lang.code);
+                        console.log('Selected language:', lang.code, 'current language:', language);
                         handleLanguageChange(lang.code);
                       }}
                       className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
