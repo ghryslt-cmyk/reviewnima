@@ -41,7 +41,7 @@ const Layout = memo(({ children }) => {
       </div>
 
       {/* Right Gutter */}
-      <div className="fixed right-0 bottom-0 w-[310px] h-[900px] z-0 hidden lg:block pointer-events-none">
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed right-0 bottom-0 w-[310px] h-[900px] z-0 hidden lg:block">
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
@@ -52,7 +52,7 @@ const Layout = memo(({ children }) => {
             backgroundSize: 'contain'
           }}
         ></div>
-      </div>
+      </a>
 
       {/* Canvas */}
       <div id="canvas" className="mx-auto max-w-[1300px] relative z-10">

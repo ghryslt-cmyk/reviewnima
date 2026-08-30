@@ -2,7 +2,7 @@ import { memo } from 'react';
 
 const TopGutter = memo(() => {
   return (
-    <div className="w-full h-[200px] relative overflow-hidden">
+    <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="block w-full h-[200px] relative overflow-hidden">
       <img 
         src="/pc-top-gutter.png" 
         alt="Top Gutter" 
@@ -12,7 +12,7 @@ const TopGutter = memo(() => {
           backgroundPosition: 'center top'
         }}
       />
-    </div>
+    </a>
   );
 });
 
