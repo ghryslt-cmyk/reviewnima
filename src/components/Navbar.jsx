@@ -16,7 +16,7 @@ const Navbar = () => {
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (languageDropdownOpen && !event.target.closest('.language-dropdown')) {
+      if (languageDropdownOpen && !event.target.closest('.language-dropdown') && !event.target.closest('[class*="absolute"]')) {
         setLanguageDropdownOpen(false);
       }
     };
@@ -85,7 +85,7 @@ const Navbar = () => {
           
           <div className="flex items-center space-x-2 sm:space-x-4">
             {/* Language Selector */}
-            <div className="relative">
+            <div className="relative z-50">
               <button
                 onClick={(e) => {
                   e.preventDefault();
@@ -102,7 +102,8 @@ const Navbar = () => {
               
               {languageDropdownOpen && (
                 <div 
-                  className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50"
+                  className="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-[9999] visible"
+                  style={{ display: 'block' }}
                   onClick={(e) => e.stopPropagation()}
                 >
                   {languages.map((lang) => (
