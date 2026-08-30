@@ -14,8 +14,17 @@ const Layout = memo(({ children }) => {
         backgroundSize: 'cover'
       }}
     >
-      {/* Fixed Side Gutters - ANN Style */}
-      <div className="fixed left-0 top-0 bottom-0 min-w-[180px] z-10 hidden lg:block">
+      {/* Main Content Area with Top Gutter */}
+      <div className="flex max-w-[1600px] mx-auto relative z-10">
+        {/* Main content */}
+        <div className="flex-1 min-w-0">
+          <TopGutter />
+          {children}
+        </div>
+      </div>
+
+      {/* Fixed Side Gutters - ANN Style - Overlay on top of main skin */}
+      <div className="fixed left-0 top-0 bottom-0 min-w-[180px] z-20 hidden lg:block">
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
@@ -26,7 +35,7 @@ const Layout = memo(({ children }) => {
         ></div>
       </div>
 
-      <div className="fixed right-0 top-0 bottom-0 min-w-[180px] z-10 hidden lg:block">
+      <div className="fixed right-0 top-0 bottom-0 min-w-[180px] z-20 hidden lg:block">
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
@@ -35,21 +44,6 @@ const Layout = memo(({ children }) => {
             backgroundPosition: 'center top'
           }}
         ></div>
-      </div>
-
-      {/* Main Content Area with Top Gutter */}
-      <div className="flex max-w-[1600px] mx-auto relative z-20">
-        {/* Spacer for left gutter */}
-        <div className="hidden lg:block min-w-[180px] flex-shrink-0"></div>
-        
-        {/* Main content */}
-        <div className="flex-1 min-w-0">
-          <TopGutter />
-          {children}
-        </div>
-        
-        {/* Spacer for right gutter */}
-        <div className="hidden lg:block min-w-[180px] flex-shrink-0"></div>
       </div>
     </div>
   );
