@@ -27,6 +27,7 @@ export const LanguageProvider = ({ children }) => {
   }, [language]);
 
   const changeLanguage = useCallback((lang) => {
+    // Force update even if same language to ensure reactivity
     setLanguage(lang);
   }, []);
 

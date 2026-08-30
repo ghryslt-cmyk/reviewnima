@@ -5,7 +5,7 @@ import { useTranslation } from '../lib/translations';
 import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages } from 'lucide-react';
 import { useState, useCallback, useEffect, memo } from 'react';
 
-const Navbar = memo(() => {
+const Navbar = () => {
   const { user, logout, checkAdmin, isAuthenticated } = useAuth();
   const { language, changeLanguage } = useLanguage();
   const { t } = useTranslation(language);
@@ -238,8 +238,6 @@ const Navbar = memo(() => {
       </div>
     </nav>
   );
-});
-
-Navbar.displayName = 'Navbar';
+};
 
 export default Navbar;

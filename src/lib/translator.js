@@ -1,13 +1,13 @@
-// Translation utility using MyMemory API (free, reliable)
+// Translation utility using Google Translate via CORS proxy
 // For production, consider using Google Translate API with proper API key
 
 const translationsCache = new Map();
-const TRANSLATION_DELAY = 300; // ms between requests to avoid rate limiting
+const TRANSLATION_DELAY = 500; // ms between requests to avoid rate limiting
 
-// Language code mapping for MyMemory API
+// Language code mapping for Google Translate
 const languageMap = {
   'id': 'id',
-  'en': 'en-GB',
+  'en': 'en',
   'jp': 'ja'
 };
 
@@ -32,11 +32,17 @@ export const translateText = async (text, fromLang, toLang) => {
   lastTranslationTime = Date.now();
 
   try {
-    // Using MyMemory Translation API (free, no API key required for basic usage)
+    // Using Google Translate via CORS proxy (allorigins.win)
     const sourceLang = languageMap[fromLang] || fromLang;
     const targetLang = languageMap[toLang] || toLang;
     
-    const response = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${sourceLang}|${targetLang}`, {
+    // Using Google Translate unofficial API via CORS proxy
+    const apiUrl = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=${sourceLang}&tl=${targetLang}&dt=t&q=${encodeURIComponent(text)}`;
+    
+    // Use CORS proxy
+    const proxyUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(apiUrl)}`;
+    
+    const response = await fetch(proxyUrl, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' }
     });
@@ -47,8 +53,9 @@ export const translateText = async (text, fromLang, toLang) => {
 
     const data = await response.json();
     
-    if (data.responseStatus === 200 && data.responseData) {
-      const translatedText = data.responseData.translatedText;
+    // Google Translate returns array of arrays, extract translated text
+    if (data && data[0]) {
+      const translatedText = data[0].map(item => item[0]).join('');
       
       // Cache the result
       translationsCache.set(cacheKey, translatedText);
@@ -67,8 +74,8 @@ export const translateText = async (text, fromLang, toLang) => {
 export const translateContent = async (content, currentLanguage, targetLanguage) => {
   if (!content || currentLanguage === targetLanguage) return content;
   
-  // Assume original content is in Indonesian (id)
-  const fromLang = 'id';
+  // Assume original content is in English (en) for news
+  const fromLang = 'en';
   const toLang = targetLanguage;
   
   // Split content into chunks for better translation (max 500 chars per chunk)
@@ -94,7 +101,7 @@ export const translateContent = async (content, currentLanguage, targetLanguage)
 
 // Hook for translating content with loading state
 export const useTranslator = () => {
-  const translate = async (text, fromLang = 'id', toLang = 'id') => {
+  const translate = async (text, fromLang = 'en', toLang = 'en') => {
     return await translateText(text, fromLang, toLang);
   };
 
