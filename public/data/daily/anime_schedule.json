@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-29T22:19:23.756Z",
+  "fetchedAt": "2026-08-30T01:01:43.952Z",
   "schedule": {
     "sunday": [
       {
@@ -90,8 +90,8 @@
         "id": 21,
         "title": "One Piece",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.webp"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
@@ -166,8 +166,8 @@
         "id": 62542,
         "title": "Grand Blue Season 3",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1615/158194.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1615/158194l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1615/158194.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1615/158194l.webp"
         },
         "broadcast": {
           "day_of_the_week": "tuesday",
@@ -254,8 +254,8 @@
         "id": 62430,
         "title": "BanG Dream! Yume∞Mita",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1467/158693.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1467/158693l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1467/158693.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1467/158693l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "thursday",
@@ -474,8 +474,8 @@
         "id": 62001,
         "title": "Yomi no Tsugai",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1171/156397.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1171/156397l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1171/156397.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1171/156397l.webp"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
