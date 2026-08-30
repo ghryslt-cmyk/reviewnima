@@ -89,10 +89,8 @@ const Reviews = memo(() => {
             </h1>
             <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
               {t('reviews.subtitle')}
-          <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
-            {t('reviews.subtitle')}
-          </p>
-        </div>
+            </p>
+          </div>
 
         {/* Search Bar */}
         <div className="mb-6 sm:mb-8">
@@ -146,6 +144,7 @@ const Reviews = memo(() => {
           {t('reviews.showing')} {filteredReviews.length} {filteredReviews.length === 1 ? t('reviews.review') : t('reviews.reviews')}
         </div>
       </div>
+    </div>
     </Layout>
   );
 });
