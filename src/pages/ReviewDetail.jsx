@@ -4,7 +4,6 @@ import { getReviewById, getComments, addComment } from '../lib/firebase';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { translateContent } from '../lib/translator';
 import { Star, Calendar, Clock, User, MessageSquare, Send, ExternalLink } from 'lucide-react';
 
 const ReviewDetail = () => {
@@ -17,9 +16,6 @@ const ReviewDetail = () => {
   const [loading, setLoading] = useState(true);
   const [commentText, setCommentText] = useState('');
   const [submittingComment, setSubmittingComment] = useState(false);
-  const [translatedReviewText, setTranslatedReviewText] = useState(null);
-  const [translating, setTranslating] = useState(false);
-  const [translatedAnimeData, setTranslatedAnimeData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,54 +36,6 @@ const ReviewDetail = () => {
 
     fetchData();
   }, [id]);
-
-  // Translate review text when language changes
-  useEffect(() => {
-    const translateReview = async () => {
-      if (review && review.reviewText && language !== 'id') {
-        setTranslating(true);
-        try {
-          const translated = await translateContent(review.reviewText, 'id', language);
-          setTranslatedReviewText(translated);
-        } catch (error) {
-          console.error('Translation error:', error);
-          setTranslatedReviewText(review.reviewText);
-        } finally {
-          setTranslating(false);
-        }
-      } else {
-        setTranslatedReviewText(null); // Use original Indonesian text
-      }
-    };
-
-    translateReview();
-  }, [review, language]);
-
-  // Translate anime data when language changes
-  useEffect(() => {
-    const translateAnimeData = async () => {
-      if (review && review.animeData && language !== 'id') {
-        setTranslating(true);
-        try {
-          const animeData = review.animeData;
-          const translatedData = {
-            ...animeData,
-            description: animeData.description ? await translateContent(animeData.description.replace(/<[^>]*>/g, ''), 'id', language) : animeData.description
-          };
-          setTranslatedAnimeData(translatedData);
-        } catch (error) {
-          console.error('Translation error:', error);
-          setTranslatedAnimeData(review.animeData);
-        } finally {
-          setTranslating(false);
-        }
-      } else {
-        setTranslatedAnimeData(null); // Use original Indonesian data
-      }
-    };
-
-    translateAnimeData();
-  }, [review, language]);
 
   const handleSubmitComment = async (e) => {
     e.preventDefault();
@@ -131,11 +79,20 @@ const ReviewDetail = () => {
     );
   }
 
-  const animeData = translatedAnimeData || review.animeData || {};
+  const animeData = review.animeData || {};
   const animeTitle = animeData.title?.english || animeData.title?.romaji || 'Unknown';
   const coverImage = animeData.coverImage?.large || animeData.coverImage?.medium;
   const bannerImage = animeData.bannerImage;
   const rating = review.rating || 0;
+
+  // Get language-specific review text
+  const getReviewText = () => {
+    if (language === 'id' && review.reviewTextId) return review.reviewTextId;
+    if (language === 'en' && review.reviewTextEn) return review.reviewTextEn;
+    if (language === 'jp' && review.reviewTextJp) return review.reviewTextJp;
+    // Fallback to Indonesian or original reviewText
+    return review.reviewTextId || review.reviewText || t('reviewDetail.noReviewText');
+  };
 
   return (
     <div className="min-h-screen bg-white dark:bg-black">
@@ -232,14 +189,7 @@ const ReviewDetail = () => {
               <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-lg mb-6 border-2 border-gray-200 dark:border-gray-800">
                 <h3 className="text-xl font-bold text-black dark:text-white mb-3">{t('reviewDetail.synopsis')}</h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  {translating ? (
-                    <div className="flex items-center justify-center py-4">
-                      <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-gray-900 dark:border-white"></div>
-                      <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">Translating...</span>
-                    </div>
-                  ) : (
-                    animeData.description.replace(/<[^>]*>/g, '')
-                  )}
+                  {animeData.description.replace(/<[^>]*>/g, '')}
                 </p>
               </div>
             )}
@@ -255,14 +205,7 @@ const ReviewDetail = () => {
           
           <div className="prose prose-lg dark:prose-invert max-w-none">
             <div className="text-gray-800 dark:text-gray-200 whitespace-pre-line leading-relaxed">
-              {translating ? (
-                <div className="flex items-center justify-center py-4">
-                  <div className="animate-spin rounded-full h-6 w-6 border-t-2 border-gray-900 dark:border-white"></div>
-                  <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">Translating...</span>
-                </div>
-              ) : (
-                (translatedReviewText || review.reviewText) || t('reviewDetail.noReviewText')
-              )}
+              {getReviewText()}
             </div>
           </div>
 

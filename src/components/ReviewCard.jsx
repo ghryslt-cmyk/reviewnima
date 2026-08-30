@@ -1,13 +1,24 @@
 import { Link } from 'react-router-dom';
 import { Star, Calendar } from 'lucide-react';
 import { memo } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 const ReviewCard = memo(({ review }) => {
+  const { language } = useLanguage();
   const animeTitle = review.animeData?.title?.english || review.animeData?.title?.romaji || 'Unknown';
   // Use highest quality image available: extraLarge > large > medium
   const coverImage = review.animeData?.coverImage?.extraLarge || review.animeData?.coverImage?.large || review.animeData?.coverImage?.medium;
   const rating = review.rating || 0;
   const createdAt = review.createdAt?.toDate?.() || review.createdAt;
+
+  // Get language-specific review text
+  const getReviewText = () => {
+    if (language === 'id' && review.reviewTextId) return review.reviewTextId;
+    if (language === 'en' && review.reviewTextEn) return review.reviewTextEn;
+    if (language === 'jp' && review.reviewTextJp) return review.reviewTextJp;
+    // Fallback to Indonesian or original reviewText
+    return review.reviewTextId || review.reviewText || 'No review text available';
+  };
 
   return (
     <Link to={`/review/${review.id}`} className="block">
@@ -30,7 +41,7 @@ const ReviewCard = memo(({ review }) => {
             {animeTitle}
           </h3>
           <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-xs md:text-sm line-clamp-1 mb-3 flex-grow">
-            {review.reviewText || 'No review text available'}
+            {getReviewText()}
           </p>
           <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
             <div className="flex items-center space-x-1">

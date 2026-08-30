@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchAnimeNews, getSeasonalBanners } from '../lib/animeNews';
-import { translateContent } from '../lib/translator';
 import { Newspaper, Calendar, ExternalLink, Filter, RefreshCw, TrendingUp, Globe, X, Clock, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
@@ -24,10 +23,6 @@ const News = () => {
   const [trendingAnimeNews, setTrendingAnimeNews] = useState([]);
   const [selectedNewsItem, setSelectedNewsItem] = useState(null);
   const [showNewsDetail, setShowNewsDetail] = useState(false);
-  const [translatedNews, setTranslatedNews] = useState([]);
-  const [translatedTrendingNews, setTranslatedTrendingNews] = useState([]);
-  const [translatedTrendingAnimeNews, setTranslatedTrendingAnimeNews] = useState([]);
-  const [translating, setTranslating] = useState(false);
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -48,60 +43,6 @@ const News = () => {
   useEffect(() => {
     filterNews();
   }, [news, selectedCategory, selectedSource]);
-
-  // Translate news items when language changes
-  useEffect(() => {
-    const translateAllNews = async () => {
-      if (language !== 'id' && (news.length > 0 || trendingNews.length > 0 || trendingAnimeNews.length > 0)) {
-        setTranslating(true);
-        try {
-          // Translate regular news
-          const translatedRegularNews = await Promise.all(
-            news.map(async (item) => ({
-              ...item,
-              title: item.title ? await translateContent(item.title, 'en', language) : item.title,
-              description: item.description ? await translateContent(item.description, 'en', language) : item.description
-            }))
-          );
-          setTranslatedNews(translatedRegularNews);
-
-          // Translate trending news
-          const translatedTrending = await Promise.all(
-            trendingNews.map(async (item) => ({
-              ...item,
-              title: item.title ? await translateContent(item.title, 'en', language) : item.title,
-              description: item.description ? await translateContent(item.description, 'en', language) : item.description
-            }))
-          );
-          setTranslatedTrendingNews(translatedTrending);
-
-          // Translate trending anime news
-          const translatedTrendingAnime = await Promise.all(
-            trendingAnimeNews.map(async (item) => ({
-              ...item,
-              title: item.title ? await translateContent(item.title, 'en', language) : item.title,
-              description: item.description ? await translateContent(item.description, 'en', language) : item.description
-            }))
-          );
-          setTranslatedTrendingAnimeNews(translatedTrendingAnime);
-        } catch (error) {
-          console.error('Translation error:', error);
-          // Set empty arrays on error to fallback to original
-          setTranslatedNews([]);
-          setTranslatedTrendingNews([]);
-          setTranslatedTrendingAnimeNews([]);
-        } finally {
-          setTranslating(false);
-        }
-      } else {
-        setTranslatedNews([]);
-        setTranslatedTrendingNews([]);
-        setTranslatedTrendingAnimeNews([]);
-      }
-    };
-
-    translateAllNews();
-  }, [language, news, trendingNews, trendingAnimeNews]);
 
   // Continuous circular scroll animation
   // Temporarily disabled due to React DOM manipulation conflict
@@ -246,10 +187,10 @@ const News = () => {
   };
 
   // Separate news by category
-  const airingNews = (translatedNews.length > 0 ? translatedNews : news).filter(item => item.category === 'Now Airing');
-  const displayNews = translatedNews.length > 0 ? translatedNews : news;
-  const displayTrendingNews = translatedTrendingNews.length > 0 ? translatedTrendingNews : trendingNews;
-  const displayTrendingAnimeNews = translatedTrendingAnimeNews.length > 0 ? translatedTrendingAnimeNews : trendingAnimeNews;
+  const airingNews = news.filter(item => item.category === 'Now Airing');
+  const displayNews = news;
+  const displayTrendingNews = trendingNews;
+  const displayTrendingAnimeNews = trendingAnimeNews;
 
   // Get current day of week
   const currentDay = new Date().getDay();
@@ -374,7 +315,7 @@ const News = () => {
                         />
                       </div>
                       <p className="text-xs font-medium text-gray-900 dark:text-white line-clamp-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
-                        {translating ? 'Translating...' : displayItem.title.split(' - ')[0]}
+                        {displayItem.title.split(' - ')[0]}
                       </p>
                     </Link>
                   );

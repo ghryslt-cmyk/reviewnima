@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback, memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount } from '../lib/firebase';
+import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount, updateReview } from '../lib/firebase';
 import { searchAnime, getAnimeById } from '../lib/anilist';
-import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users } from 'lucide-react';
+import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users, Edit } from 'lucide-react';
 
 const Admin = memo(() => {
   const { user, checkAdmin, isAuthenticated } = useAuth();
@@ -17,10 +17,13 @@ const Admin = memo(() => {
   const [searchResults, setSearchResults] = useState([]);
   const [selectedAnime, setSelectedAnime] = useState(null);
   const [rating, setRating] = useState(8);
-  const [reviewText, setReviewText] = useState('');
+  const [reviewTextId, setReviewTextId] = useState('');
+  const [reviewTextEn, setReviewTextEn] = useState('');
+  const [reviewTextJp, setReviewTextJp] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
+  const [editingReview, setEditingReview] = useState(null);
   
   // Existing reviews
   const [existingReviews, setExistingReviews] = useState([]);
@@ -89,8 +92,8 @@ const Admin = memo(() => {
   const handleSubmitReview = useCallback(async (e) => {
     e.preventDefault();
     
-    if (!selectedAnime || !reviewText.trim()) {
-      setError('Please select an anime and write a review.');
+    if (!selectedAnime || !reviewTextId.trim()) {
+      setError('Please select an anime and write a review in Indonesian.');
       return;
     }
 
@@ -99,30 +102,42 @@ const Admin = memo(() => {
     setSuccess('');
 
     try {
-      await addReview({
+      const reviewData = {
         animeData: selectedAnime,
         rating,
-        reviewText,
+        reviewTextId,
+        reviewTextEn: reviewTextEn.trim() || reviewTextId,
+        reviewTextJp: reviewTextJp.trim() || reviewTextId,
         authorName: 'Morviss',
         authorEmail: user?.email
-      });
+      };
+
+      if (editingReview) {
+        await updateReview(editingReview.id, reviewData);
+        setSuccess('Review updated successfully!');
+      } else {
+        await addReview(reviewData);
+        setSuccess('Review added successfully!');
+      }
       
-      setSuccess('Review added successfully!');
       setSelectedAnime(null);
       setRating(8);
-      setReviewText('');
+      setReviewTextId('');
+      setReviewTextEn('');
+      setReviewTextJp('');
+      setEditingReview(null);
       
       const reviews = await getReviews();
       setExistingReviews(reviews);
       
       setTimeout(() => setSuccess(''), 3000);
     } catch (error) {
-      console.error('Error adding review:', error);
-      setError('Failed to add review. Please try again.');
+      console.error('Error adding/updating review:', error);
+      setError('Failed to add/update review. Please try again.');
     } finally {
       setSubmitting(false);
     }
-  }, []);
+  }, [selectedAnime, rating, reviewTextId, reviewTextEn, reviewTextJp, user?.email, editingReview]);
 
   const handleDeleteReview = useCallback(async (reviewId) => {
     if (!window.confirm('Are you sure you want to delete this review?')) return;
@@ -136,6 +151,15 @@ const Admin = memo(() => {
       console.error('Error deleting review:', error);
       setError('Failed to delete review. Please try again.');
     }
+  }, []);
+
+  const handleEditReview = useCallback(async (review) => {
+    setSelectedAnime(review.animeData);
+    setRating(review.rating);
+    setReviewTextId(review.reviewTextId || review.reviewText || '');
+    setReviewTextEn(review.reviewTextEn || '');
+    setReviewTextJp(review.reviewTextJp || '');
+    setEditingReview(review);
   }, []);
 
   const handleToggleFavorite = useCallback(async (reviewId, currentFavorite) => {
@@ -201,7 +225,7 @@ const Admin = memo(() => {
         <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-gray-200 dark:border-gray-800">
           <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 sm:mb-6 flex items-center">
             <Plus className="mr-2 text-black dark:text-white" size={20} sm:size={24} />
-            Add New Review
+            {editingReview ? 'Edit Review' : 'Add New Review'}
           </h2>
 
           {error && (
@@ -331,18 +355,46 @@ const Admin = memo(() => {
                 </div>
               </div>
 
-              {/* Review Text */}
+              {/* Review Text - Indonesian */}
               <div className="mb-6">
                 <label className="block text-black dark:text-white font-medium mb-2">
-                  Your Review
+                  Review (Indonesian) *
                 </label>
                 <textarea
-                  value={reviewText}
-                  onChange={(e) => setReviewText(e.target.value)}
+                  value={reviewTextId}
+                  onChange={(e) => setReviewTextId(e.target.value)}
+                  placeholder="Tulis review detail di sini..."
+                  className="w-full p-4 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent resize-none"
+                  rows="6"
+                  required
+                />
+              </div>
+
+              {/* Review Text - English */}
+              <div className="mb-6">
+                <label className="block text-black dark:text-white font-medium mb-2">
+                  Review (English)
+                </label>
+                <textarea
+                  value={reviewTextEn}
+                  onChange={(e) => setReviewTextEn(e.target.value)}
                   placeholder="Write your detailed review here..."
                   className="w-full p-4 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent resize-none"
-                  rows="10"
-                  required
+                  rows="6"
+                />
+              </div>
+
+              {/* Review Text - Japanese */}
+              <div className="mb-6">
+                <label className="block text-black dark:text-white font-medium mb-2">
+                  Review (Japanese)
+                </label>
+                <textarea
+                  value={reviewTextJp}
+                  onChange={(e) => setReviewTextJp(e.target.value)}
+                  placeholder="ここに詳細なレビューを書いてください..."
+                  className="w-full p-4 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent resize-none"
+                  rows="6"
                 />
               </div>
 
@@ -354,15 +406,33 @@ const Admin = memo(() => {
                 {submitting ? (
                   <>
                     <Loader2 className="animate-spin" size={20} />
-                    <span>Adding Review...</span>
+                    <span>{editingReview ? 'Updating Review...' : 'Adding Review...'}</span>
                   </>
                 ) : (
                   <>
                     <Plus size={20} />
-                    <span>Add Review</span>
+                    <span>{editingReview ? 'Update Review' : 'Add Review'}</span>
                   </>
                 )}
               </button>
+
+              {editingReview && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSelectedAnime(null);
+                    setRating(8);
+                    setReviewTextId('');
+                    setReviewTextEn('');
+                    setReviewTextJp('');
+                    setEditingReview(null);
+                  }}
+                  className="ml-4 flex items-center space-x-2 bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300"
+                >
+                  <X size={20} />
+                  <span>Cancel Edit</span>
+                </button>
+              )}
             </form>
           )}
         </div>
@@ -399,6 +469,12 @@ const Admin = memo(() => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-2">
+                    <button
+                      onClick={() => handleEditReview(review)}
+                      className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 px-4 py-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors border border-transparent hover:border-blue-200 dark:hover:border-blue-800"
+                    >
+                      <Edit size={20} />
+                    </button>
                     <button
                       onClick={() => handleToggleFavorite(review.id, review.isFavorite)}
                       className={`p-2 rounded-lg transition-colors ${

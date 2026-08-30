@@ -170,6 +170,19 @@ export const toggleFavorite = async (reviewId, isFavorite) => {
   }
 };
 
+export const updateReview = async (reviewId, reviewData) => {
+  try {
+    const docRef = doc(db, 'reviews', reviewId);
+    await updateDoc(docRef, {
+      ...reviewData,
+      updatedAt: serverTimestamp()
+    });
+  } catch (error) {
+    console.error('Error updating review:', error);
+    throw new Error('Failed to update review. Please try again.');
+  }
+};
+
 export const getFavoriteReviews = async () => {
   try {
     const q = query(collection(db, 'reviews'), where('isFavorite', '==', true));
