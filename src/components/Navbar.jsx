@@ -87,7 +87,12 @@ const Navbar = () => {
             {/* Language Selector */}
             <div className="relative">
               <button
-                onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  console.log('Desktop: Toggle dropdown, current state:', languageDropdownOpen);
+                  setLanguageDropdownOpen(!languageDropdownOpen);
+                }}
                 className="language-dropdown flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
               >
                 <Globe size={20} />
@@ -96,11 +101,19 @@ const Navbar = () => {
               </button>
               
               {languageDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50">
+                <div 
+                  className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50"
+                  onClick={(e) => e.stopPropagation()}
+                >
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
-                      onClick={() => handleLanguageChange(lang.code)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        console.log('Desktop dropdown: Changing language to', lang.code);
+                        handleLanguageChange(lang.code);
+                      }}
                       className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
                         language === lang.code ? 'bg-gray-100 dark:bg-gray-700' : ''
                       }`}
