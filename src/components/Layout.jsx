@@ -1,7 +1,19 @@
-import { memo } from 'react';
+import { memo, useEffect, useState } from 'react';
 import TopGutter from './TopGutter';
 
 const Layout = memo(({ children }) => {
+  const [isZoomed, setIsZoomed] = useState(false);
+
+  useEffect(() => {
+    const checkZoom = () => {
+      const zoomLevel = window.outerWidth / window.innerWidth;
+      setIsZoomed(zoomLevel > 1.1);
+    };
+
+    checkZoom();
+    window.addEventListener('resize', checkZoom);
+    return () => window.removeEventListener('resize', checkZoom);
+  }, []);
   return (
     <div 
       className="min-h-screen transition-all duration-300 relative"
@@ -14,31 +26,36 @@ const Layout = memo(({ children }) => {
         backgroundSize: 'cover'
       }}
     >
-      {/* Fixed Side Gutters - ANN Style */}
-      <div className="fixed left-0 top-0 bottom-0 min-w-[180px] z-20 hidden lg:block pointer-events-none">
+      {/* Left Gutter */}
+      <div className="fixed left-0 bottom-0 w-[310px] h-[900px] z-0 hidden lg:block pointer-events-none">
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
             backgroundImage: "url('/left-gutter.png')",
             backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center top'
+            backgroundPosition: 'center bottom',
+            mixBlendMode: 'multiply',
+            backgroundSize: 'contain'
           }}
         ></div>
       </div>
 
-      <div className="fixed right-0 top-0 bottom-0 min-w-[180px] z-20 hidden lg:block pointer-events-none">
+      {/* Right Gutter */}
+      <div className="fixed right-0 bottom-0 w-[310px] h-[900px] z-0 hidden lg:block pointer-events-none">
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
             backgroundImage: "url('/right-gutter.png')",
             backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center top'
+            backgroundPosition: 'center bottom',
+            mixBlendMode: 'multiply',
+            backgroundSize: 'contain'
           }}
         ></div>
       </div>
 
-      {/* Canvas - ANN Style - Fixed width container */}
-      <div className="mx-auto relative z-10" style={{ width: '768px', maxWidth: '721px' }}>
+      {/* Canvas */}
+      <div id="canvas" className="mx-auto max-w-[1300px] relative z-10">
         {/* Top Gutter */}
         <TopGutter />
         
