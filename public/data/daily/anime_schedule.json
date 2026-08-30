@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-30T16:35:13.019Z",
+  "fetchedAt": "2026-08-30T19:29:23.169Z",
   "schedule": {
     "sunday": [
       {
@@ -102,8 +102,8 @@
         "id": 21,
         "title": "One Piece",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1244/138851.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1244/138851l.webp"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
@@ -128,8 +128,8 @@
         "id": 59193,
         "title": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1527/158340.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1527/158340l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1527/158340.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1527/158340l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "monday",
@@ -216,8 +216,8 @@
         "id": 62102,
         "title": "Ibitte Konai Gibo to Gishi",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1912/157082.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1912/157082l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1912/157082.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1912/157082l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "wednesday",
