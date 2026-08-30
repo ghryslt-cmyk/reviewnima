@@ -1,4 +1,5 @@
 import { memo } from 'react';
+import TopGutter from './TopGutter';
 
 const Layout = memo(({ children }) => {
   return (
@@ -15,8 +16,9 @@ const Layout = memo(({ children }) => {
           </div>
         </div>
 
-        {/* Main Content Area */}
+        {/* Main Content Area with Top Gutter */}
         <div className="flex-1 min-w-0">
+          <TopGutter />
           {children}
         </div>
 
