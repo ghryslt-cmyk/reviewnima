@@ -14,16 +14,7 @@ const Layout = memo(({ children }) => {
         backgroundSize: 'cover'
       }}
     >
-      {/* Main Content Area with Top Gutter */}
-      <div className="flex max-w-[1600px] mx-auto relative z-10">
-        {/* Main content */}
-        <div className="flex-1 min-w-0">
-          <TopGutter />
-          {children}
-        </div>
-      </div>
-
-      {/* Fixed Side Gutters - ANN Style - Transparent overlay on top of main skin */}
+      {/* Fixed Side Gutters - ANN Style */}
       <div className="fixed left-0 top-0 bottom-0 min-w-[180px] z-20 hidden lg:block pointer-events-none">
         <div 
           className="w-full h-full bg-cover bg-center"
@@ -44,6 +35,17 @@ const Layout = memo(({ children }) => {
             backgroundPosition: 'center top'
           }}
         ></div>
+      </div>
+
+      {/* Canvas - ANN Style - Fixed width container */}
+      <div className="mx-auto relative z-10" style={{ width: '768px', maxWidth: '721px' }}>
+        {/* Top Gutter */}
+        <TopGutter />
+        
+        {/* Middle Area - Main Content */}
+        <div className="bg-white dark:bg-gray-900">
+          {children}
+        </div>
       </div>
     </div>
   );

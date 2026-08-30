@@ -68,7 +68,7 @@ const Home = memo(() => {
             </div>
             
             {/* Content */}
-            <div className="relative z-10 max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 text-center">
+            <div className="relative z-10 px-4 xs:px-6 sm:px-6 lg:px-8 text-center">
               <div className="flex items-center justify-center space-x-2 xs:space-x-3 sm:space-x-3 mb-3 xs:mb-4">
                 <Sparkles size={20} xs:size={24} sm:size={32} className="text-white animate-spin-slow" />
                 <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white animate-fade-in drop-shadow-lg">
@@ -173,7 +173,7 @@ const Home = memo(() => {
           </div>
 
           {/* Top Rated Reviews Section */}
-          <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-8 xs:py-10 sm:py-12 md:py-20 bg-white dark:bg-gray-900">
+          <div className="px-4 xs:px-6 sm:px-6 lg:px-8 py-8 xs:py-10 sm:py-12 md:py-20">
             <div className="mb-6 xs:mb-8 sm:mb-10 md:mb-12">
               <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
                 <Star className="mr-2 xs:mr-3 text-yellow-500 fill-yellow-500" size={24} xs:size={28} sm:size={32} md:size={36} />
@@ -197,8 +197,8 @@ const Home = memo(() => {
           </div>
 
           {/* Latest Reviews Section */}
-          <div className="bg-white dark:bg-gray-900 py-8 xs:py-10 sm:py-12 md:py-20">
-            <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
+          <div className="py-8 xs:py-10 sm:py-12 md:py-20">
+            <div className="px-4 xs:px-6 sm:px-6 lg:px-8">
               <div className="mb-6 xs:mb-8 sm:mb-10 md:mb-12">
                 <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
                   <TrendingUp className="mr-2 xs:mr-3 text-blue-500" size={24} xs:size={28} sm:size={32} md:size={36} />

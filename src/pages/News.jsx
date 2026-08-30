@@ -272,7 +272,7 @@ const News = () => {
       </div>
 
       {/* Airing Schedule - Horizontal Scroll Below Banner */}
-      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-4 bg-white dark:bg-gray-900">
+      <div className="px-4 xs:px-6 sm:px-6 lg:px-8 py-4">
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 border border-gray-200 dark:border-gray-700">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-lg font-bold text-gray-900 dark:text-white flex items-center">
@@ -332,7 +332,7 @@ const News = () => {
       </div>
 
       {/* Filters */}
-      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-4 bg-white dark:bg-gray-900">
+      <div className="px-4 xs:px-6 sm:px-6 lg:px-8 py-4">
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 xs:p-6 border border-gray-200 dark:border-gray-700">
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
@@ -370,7 +370,7 @@ const News = () => {
       </div>
 
       {/* News Grid */}
-      <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8 py-4 bg-white dark:bg-gray-900">
+      <div className="px-4 xs:px-6 sm:px-6 lg:px-8 py-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Left Column - Trending on Internet - Takes 2 columns */}
           <div className="lg:col-span-2">
