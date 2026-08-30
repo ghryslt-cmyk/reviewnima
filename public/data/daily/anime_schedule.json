@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-30T01:01:43.952Z",
+  "fetchedAt": "2026-08-30T07:50:43.175Z",
   "schedule": {
     "sunday": [
       {
@@ -78,8 +78,8 @@
         "id": 62856,
         "title": "Nijusseiki Denki Mokuroku: Eureka Evrika",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1068/158475.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1068/158475l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1068/158475.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1068/158475l.webp"
         },
         "broadcast": {
           "day_of_the_week": "sunday",
@@ -166,8 +166,8 @@
         "id": 62542,
         "title": "Grand Blue Season 3",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1615/158194.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1615/158194l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1615/158194.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1615/158194l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "tuesday",
@@ -200,6 +200,18 @@
       }
     ],
     "wednesday": [
+      {
+        "id": 62476,
+        "title": "Tefuda ga Oome no Victoria",
+        "main_picture": {
+          "medium": "https://cdn.myanimelist.net/images/anime/1098/158743.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1098/158743l.jpg"
+        },
+        "broadcast": {
+          "day_of_the_week": "wednesday",
+          "start_time": "00:00"
+        }
+      },
       {
         "id": 62513,
         "title": "Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou",
@@ -277,18 +289,6 @@
     ],
     "friday": [
       {
-        "id": 63150,
-        "title": "Otome Kaijuu Caraméliser",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1981/156340.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1981/156340l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "friday",
-          "start_time": "01:28"
-        }
-      },
-      {
         "id": 1960,
         "title": "Sore Ike! Anpanman",
         "main_picture": {
@@ -328,8 +328,8 @@
         "id": 59970,
         "title": "Tensei shitara Slime Datta Ken 4th Season",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1695/156389.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1695/156389l.jpg"
+          "medium": "https://cdn.myanimelist.net/images/anime/1695/156389.webp",
+          "large": "https://cdn.myanimelist.net/images/anime/1695/156389l.webp"
         },
         "broadcast": {
           "day_of_the_week": "friday",
@@ -411,18 +411,6 @@
         }
       },
       {
-        "id": 57466,
-        "title": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen - Ryoushu no Youjo",
-        "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1371/155054.jpg",
-          "large": "https://cdn.myanimelist.net/images/anime/1371/155054l.jpg"
-        },
-        "broadcast": {
-          "day_of_the_week": "saturday",
-          "start_time": "17:30"
-        }
-      },
-      {
         "id": 235,
         "title": "Meitantei Conan",
         "main_picture": {
@@ -474,8 +462,8 @@
         "id": 62001,
         "title": "Yomi no Tsugai",
         "main_picture": {
-          "medium": "https://cdn.myanimelist.net/images/anime/1171/156397.webp",
-          "large": "https://cdn.myanimelist.net/images/anime/1171/156397l.webp"
+          "medium": "https://cdn.myanimelist.net/images/anime/1171/156397.jpg",
+          "large": "https://cdn.myanimelist.net/images/anime/1171/156397l.jpg"
         },
         "broadcast": {
           "day_of_the_week": "saturday",
