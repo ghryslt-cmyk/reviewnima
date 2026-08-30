@@ -342,8 +342,6 @@ const News = () => {
           <div 
             className="relative overflow-x-auto overflow-y-hidden"
             style={{
-              scrollbarWidth: 'none',
-              msOverflowStyle: 'none',
               WebkitOverflowScrolling: 'touch'
             }}
           >
