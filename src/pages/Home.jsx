@@ -50,7 +50,7 @@ const Home = memo(() => {
   return (
     <Layout>
       {/* Hero Section */}
-      <div className="relative min-h-[350px] xs:min-h-[400px] sm:min-h-[450px] md:min-h-[500px] lg:min-h-[600px] flex items-center justify-center overflow-hidden">
+      <div className="relative min-h-[350px] xs:min-h-[400px] sm:min-h-[450px] md:min-h-[500px] lg:min-h-[600px] overflow-hidden">
             {/* Video Background */}
             <div className="absolute inset-0 z-0">
               <video
@@ -68,15 +68,15 @@ const Home = memo(() => {
             </div>
             
             {/* Content */}
-            <div className="relative z-10 px-4 xs:px-6 sm:px-6 lg:px-8 text-center">
-              <div className="flex items-center justify-center space-x-2 xs:space-x-3 sm:space-x-3 mb-3 xs:mb-4">
+            <div className="relative z-10 px-4 xs:px-6 sm:px-6 lg:px-8 text-center" style={{ position: 'absolute', top: '150px', left: '0', right: '0' }}>
+              <div className="flex items-center justify-center space-x-2 xs:space-x-3 sm:space-x-3 mb-2 xs:mb-3">
                 <Sparkles size={20} xs:size={24} sm:size={32} className="text-white animate-spin-slow" />
                 <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white animate-fade-in drop-shadow-lg">
                   ReviewNima
                 </h1>
                 <Sparkles size={20} xs:size={24} sm:size={32} className="text-white animate-spin-slow" />
               </div>
-              <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-200 mb-4 xs:mb-6 sm:mb-8 font-light drop-shadow-md">
+              <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-200 mb-2 xs:mb-3 font-light drop-shadow-md">
                 {t('home.heroSubtitle')}
               </p>
               <div className="flex items-center justify-center space-x-2 text-gray-300">
