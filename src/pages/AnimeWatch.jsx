@@ -1,9 +1,47 @@
-import { useState, useEffect, useCallback, memo } from 'react';
+import { useState, useEffect, useCallback, memo, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getAnimeById } from '../lib/anilist';
 import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode } from '../lib/firebase';
 import Layout from '../components/Layout';
 import { Play, Star, Calendar, Clock, Film, ChevronLeft, ChevronRight, Loader2, Share, Heart, Plus, X } from 'lucide-react';
+
+const TelegramWidget = ({ postUrl }) => {
+  const containerRef = useRef(null);
+  const scriptRef = useRef(null);
+
+  useEffect(() => {
+    if (!postUrl || !containerRef.current) return;
+
+    // Remove existing script
+    if (scriptRef.current) {
+      scriptRef.current.remove();
+    }
+
+    // Clear container
+    containerRef.current.innerHTML = '';
+
+    // Create script element
+    const script = document.createElement('script');
+    script.src = 'https://telegram.org/js/telegram-widget.js?22';
+    script.setAttribute('data-telegram-post', postUrl);
+    script.setAttribute('data-width', '100%');
+    script.setAttribute('data-height', '100%');
+    script.setAttribute('data-color', '000000');
+    script.setAttribute('data-dark', '1');
+    script.async = true;
+
+    containerRef.current.appendChild(script);
+    scriptRef.current = script;
+
+    return () => {
+      if (scriptRef.current) {
+        scriptRef.current.remove();
+      }
+    };
+  }, [postUrl]);
+
+  return <div ref={containerRef} className="w-full h-full" />;
+};
 
 const AnimeWatch = memo(() => {
   const { id } = useParams();
@@ -177,14 +215,8 @@ const AnimeWatch = memo(() => {
               <div className="bg-black rounded-2xl overflow-hidden shadow-2xl">
                 {currentEpisode ? (
                   <>
-                    <div className="aspect-video w-full">
-                      <iframe
-                        src={currentEpisode.videoUrl}
-                        className="w-full h-full"
-                        allowFullScreen
-                        title={`Episode ${currentEpisode.episodeNumber}`}
-                        allow="autoplay; fullscreen"
-                      />
+                    <div className="aspect-video w-full bg-black flex items-center justify-center">
+                      <TelegramWidget postUrl={currentEpisode.videoUrl} />
                     </div>
                     
                     {/* Video Controls */}
