@@ -15,6 +15,9 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import News from './pages/News';
 import NewsDetail from './pages/NewsDetail';
+import AnimeList from './pages/AnimeList';
+import AnimeWatch from './pages/AnimeWatch';
+import AnimeAdmin from './pages/AnimeAdmin';
 import { incrementVisitorCount } from './lib/firebase';
 import { useEffect } from 'react';
 
@@ -46,6 +49,9 @@ function AppContent() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/anime" element={<AnimeList />} />
+          <Route path="/anime/:id" element={<AnimeWatch />} />
+          <Route path="/anime-admin" element={<AnimeAdmin />} />
         </Routes>
       </div>
     </div>

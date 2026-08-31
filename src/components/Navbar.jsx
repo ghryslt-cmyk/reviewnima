@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages } from 'lucide-react';
+import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages, Film } from 'lucide-react';
 import { useState, useCallback, useEffect, memo } from 'react';
 
 const Navbar = () => {
@@ -73,15 +73,25 @@ const Navbar = () => {
                 <BookOpen size={20} />
                 <span>{t('nav.reviews')}</span>
               </Link>
+              <Link to="/anime" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
+                <Film size={20} />
+                <span>Anime</span>
+              </Link>
               <Link to="/top-favorites" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
                 <Heart size={20} />
                 <span>{t('nav.favorites')}</span>
               </Link>
               {isAdminUser && (
-                <Link to="/admin" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
-                  <Shield size={20} />
-                  <span>{t('nav.adminPanel')}</span>
-                </Link>
+                <>
+                  <Link to="/admin" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
+                    <Shield size={20} />
+                    <span>{t('nav.adminPanel')}</span>
+                  </Link>
+                  <Link to="/anime-admin" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
+                    <Film size={20} />
+                    <span>Anime Admin</span>
+                  </Link>
+                </>
               )}
             </div>
           </div>
@@ -222,6 +232,14 @@ const Navbar = () => {
               <span>{t('nav.reviews')}</span>
             </Link>
             <Link 
+              to="/anime" 
+              className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+              onClick={handleMobileMenuToggle}
+            >
+              <Film size={20} />
+              <span>Anime</span>
+            </Link>
+            <Link 
               to="/top-favorites" 
               className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
               onClick={handleMobileMenuToggle}
@@ -230,14 +248,24 @@ const Navbar = () => {
               <span>{t('nav.favorites')}</span>
             </Link>
             {isAdminUser && (
-              <Link 
-                to="/admin" 
-                className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                onClick={handleMobileMenuToggle}
-              >
-                <Shield size={20} />
-                <span>{t('nav.adminPanel')}</span>
-              </Link>
+              <>
+                <Link 
+                  to="/admin" 
+                  className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                  onClick={handleMobileMenuToggle}
+                >
+                  <Shield size={20} />
+                  <span>{t('nav.adminPanel')}</span>
+                </Link>
+                <Link 
+                  to="/anime-admin" 
+                  className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                  onClick={handleMobileMenuToggle}
+                >
+                  <Film size={20} />
+                  <span>Anime Admin</span>
+                </Link>
+              </>
             )}
             {isAuthenticated && (
               <Link 
