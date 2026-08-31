@@ -68,7 +68,7 @@ const Home = memo(() => {
             </div>
             
             {/* Content */}
-            <div className="relative z-10 px-4 xs:px-6 sm:px-6 lg:px-8 text-center" style={{ position: 'absolute', top: '150px', left: '0', right: '0' }}>
+            <div className="relative z-10 px-4 xs:px-6 sm:px-6 lg:px-8 text-center hero-content-position">
               <div className="flex items-center justify-center space-x-2 xs:space-x-3 sm:space-x-3 mb-2 xs:mb-3">
                 <Sparkles size={20} xs:size={24} sm:size={32} className="text-white animate-spin-slow" />
                 <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white animate-fade-in drop-shadow-lg">

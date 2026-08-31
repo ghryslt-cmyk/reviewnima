@@ -167,3 +167,17 @@ body {
 .dark .side-gutter::-webkit-scrollbar-thumb {
   background: #475569;
 }
+
+/* Hero Content Positioning */
+.hero-content-position {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 1024px) {
+  .hero-content-position {
+    top: 160px;
+  }
+}
