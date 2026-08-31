@@ -869,18 +869,18 @@ const Admin = memo(() => {
                   
                   <div className="mb-4">
                     <label className="block text-black dark:text-white font-medium mb-2">
-                      Telegram Post URL *
+                      Streamtape Embed URL *
                     </label>
                     <input
                       type="text"
                       value={videoUrl}
                       onChange={(e) => setVideoUrl(e.target.value)}
-                      placeholder="https://t.me/channelname/postid or channelname/postid"
+                      placeholder="https://streamtape.com/e/..."
                       className="w-full px-4 py-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent"
                       required
                     />
                     <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
-                      Enter full URL or just channel/postid (e.g., https://t.me/animex/12345 or animex/12345)
+                      Use Streamtape embed URL (e.g., https://streamtape.com/e/xyz123)
                     </p>
                   </div>
 
