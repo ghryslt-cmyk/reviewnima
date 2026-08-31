@@ -82,16 +82,10 @@ const Navbar = () => {
                 <span>{t('nav.favorites')}</span>
               </Link>
               {isAdminUser && (
-                <>
-                  <Link to="/admin" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
-                    <Shield size={20} />
-                    <span>{t('nav.adminPanel')}</span>
-                  </Link>
-                  <Link to="/anime-admin" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
-                    <Film size={20} />
-                    <span>Anime Admin</span>
-                  </Link>
-                </>
+                <Link to="/admin" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
+                  <Shield size={20} />
+                  <span>{t('nav.adminPanel')}</span>
+                </Link>
               )}
             </div>
           </div>
@@ -248,24 +242,14 @@ const Navbar = () => {
               <span>{t('nav.favorites')}</span>
             </Link>
             {isAdminUser && (
-              <>
-                <Link 
-                  to="/admin" 
-                  className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                  onClick={handleMobileMenuToggle}
-                >
-                  <Shield size={20} />
-                  <span>{t('nav.adminPanel')}</span>
-                </Link>
-                <Link 
-                  to="/anime-admin" 
-                  className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                  onClick={handleMobileMenuToggle}
-                >
-                  <Film size={20} />
-                  <span>Anime Admin</span>
-                </Link>
-              </>
+              <Link 
+                to="/admin" 
+                className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                onClick={handleMobileMenuToggle}
+              >
+                <Shield size={20} />
+                <span>{t('nav.adminPanel')}</span>
+              </Link>
             )}
             {isAuthenticated && (
               <Link 
