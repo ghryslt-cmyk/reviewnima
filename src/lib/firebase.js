@@ -235,4 +235,124 @@ export const incrementVisitorCount = async () => {
   }
 };
 
+// Anime management functions
+export const addAnime = async (animeData) => {
+  try {
+    const docRef = await addDoc(collection(db, 'anime'), {
+      ...animeData,
+      createdAt: serverTimestamp(),
+      updatedAt: serverTimestamp()
+    });
+    return docRef.id;
+  } catch (error) {
+    console.error('Error adding anime:', error);
+    throw new Error('Failed to add anime. Please try again.');
+  }
+};
+
+export const getAllAnime = async () => {
+  try {
+    const querySnapshot = await getDocs(collection(db, 'anime'));
+    const animeList = [];
+    querySnapshot.forEach((doc) => {
+      animeList.push({ id: doc.id, ...doc.data() });
+    });
+    return animeList;
+  } catch (error) {
+    console.error('Error getting anime:', error);
+    throw new Error('Failed to fetch anime. Please try again.');
+  }
+};
+
+export const getAnimeById = async (animeId) => {
+  try {
+    const docRef = doc(db, 'anime', animeId);
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+      return { id: docSnap.id, ...docSnap.data() };
+    }
+    return null;
+  } catch (error) {
+    console.error('Error getting anime:', error);
+    throw new Error('Failed to fetch anime. Please try again.');
+  }
+};
+
+export const updateAnime = async (animeId, animeData) => {
+  try {
+    const docRef = doc(db, 'anime', animeId);
+    await updateDoc(docRef, {
+      ...animeData,
+      updatedAt: serverTimestamp()
+    });
+  } catch (error) {
+    console.error('Error updating anime:', error);
+    throw new Error('Failed to update anime. Please try again.');
+  }
+};
+
+export const deleteAnime = async (animeId) => {
+  try {
+    const docRef = doc(db, 'anime', animeId);
+    await deleteDoc(docRef);
+  } catch (error) {
+    console.error('Error deleting anime:', error);
+    throw new Error('Failed to delete anime. Please try again.');
+  }
+};
+
+// Episode management functions
+export const addAnimeEpisode = async (animeId, episodeData) => {
+  try {
+    const episodesRef = collection(db, 'anime', animeId, 'episodes');
+    const docRef = await addDoc(episodesRef, {
+      ...episodeData,
+      createdAt: serverTimestamp(),
+      updatedAt: serverTimestamp()
+    });
+    return docRef.id;
+  } catch (error) {
+    console.error('Error adding episode:', error);
+    throw new Error('Failed to add episode. Please try again.');
+  }
+};
+
+export const getAnimeEpisodes = async (animeId) => {
+  try {
+    const episodesRef = collection(db, 'anime', animeId, 'episodes');
+    const querySnapshot = await getDocs(query(episodesRef, orderBy('episodeNumber', 'asc')));
+    const episodes = [];
+    querySnapshot.forEach((doc) => {
+      episodes.push({ id: doc.id, ...doc.data() });
+    });
+    return episodes;
+  } catch (error) {
+    console.error('Error getting episodes:', error);
+    throw new Error('Failed to fetch episodes. Please try again.');
+  }
+};
+
+export const updateAnimeEpisode = async (animeId, episodeId, episodeData) => {
+  try {
+    const episodeRef = doc(db, 'anime', animeId, 'episodes', episodeId);
+    await updateDoc(episodeRef, {
+      ...episodeData,
+      updatedAt: serverTimestamp()
+    });
+  } catch (error) {
+    console.error('Error updating episode:', error);
+    throw new Error('Failed to update episode. Please try again.');
+  }
+};
+
+export const deleteAnimeEpisode = async (animeId, episodeId) => {
+  try {
+    const episodeRef = doc(db, 'anime', animeId, 'episodes', episodeId);
+    await deleteDoc(episodeRef);
+  } catch (error) {
+    console.error('Error deleting episode:', error);
+    throw new Error('Failed to delete episode. Please try again.');
+  }
+};
+
 export { auth, db };
