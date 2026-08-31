@@ -20,10 +20,13 @@ const TelegramWidget = ({ postUrl }) => {
     // Clear container
     containerRef.current.innerHTML = '';
 
+    // Strip https://t.me/ prefix if present
+    const cleanPostUrl = postUrl.replace(/^https?:\/\/t\.me\//, '');
+
     // Create script element
     const script = document.createElement('script');
     script.src = 'https://telegram.org/js/telegram-widget.js?22';
-    script.setAttribute('data-telegram-post', postUrl);
+    script.setAttribute('data-telegram-post', cleanPostUrl);
     script.setAttribute('data-width', '100%');
     script.setAttribute('data-height', '100%');
     script.setAttribute('data-color', '000000');

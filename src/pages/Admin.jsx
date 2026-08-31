@@ -869,18 +869,18 @@ const Admin = memo(() => {
                   
                   <div className="mb-4">
                     <label className="block text-black dark:text-white font-medium mb-2">
-                      Telegram Post ID *
+                      Telegram Post URL *
                     </label>
                     <input
                       type="text"
                       value={videoUrl}
                       onChange={(e) => setVideoUrl(e.target.value)}
-                      placeholder="channelname/postid"
+                      placeholder="https://t.me/channelname/postid or channelname/postid"
                       className="w-full px-4 py-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent"
                       required
                     />
                     <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
-                      Use Telegram post format: channelname/postid (e.g., animex/12345)
+                      Enter full URL or just channel/postid (e.g., https://t.me/animex/12345 or animex/12345)
                     </p>
                   </div>
 
