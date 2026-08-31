@@ -1,6 +1,28 @@
 {
-  "fetchedAt": "2026-08-31T00:38:52.914Z",
+  "fetchedAt": "2026-08-31T03:11:38.130Z",
   "news": [
+    {
+      "title": "My Happy Marriage Anime Special Airs on October 25 With All 3 Episodes",
+      "description": "New teaser, cast member, ending theme song artist also revealed",
+      "fullDescription": "New teaser, cast member, ending theme song artist also revealed",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-29/my-happy-marriage-anime-special-airs-on-october-25-with-all-3-episodes/.241115",
+      "pubDate": "Sun, 30 Aug 2026 23:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241115/happymarriage.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241115"
+    },
+    {
+      "title": "Live-Action Wakako-zake Series Gets 10th Season Partly Set in Australia",
+      "description": "Rina Takeda returns to star as Wakako, a woman who explores places to drink",
+      "fullDescription": "Rina Takeda returns to star as Wakako, a woman who explores places to drink",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-30/live-action-wakako-zake-series-gets-10th-season-partly-set-in-australia/.241140",
+      "pubDate": "Sun, 30 Aug 2026 22:21:11 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241140/img-sns.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241140"
+    },
     {
       "title": "Kono Oto Tomare! Manga to End in 3 Chapters",
       "description": "Series debuted in August 2012",
@@ -143,28 +165,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241105"
-    },
-    {
-      "title": "Youka Nitta to Publish More Embracing Love Manga in Spring 2027",
-      "description": "Author recently published 2-chapter spinoff manga in Be-Boy Gold magazine",
-      "fullDescription": "Author recently published 2-chapter spinoff manga in <cite>Be-Boy Gold</cite> magazine",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-29/youka-nitta-to-publish-more-embracing-love-manga-in-spring-2027/.241108",
-      "pubDate": "Sat, 29 Aug 2026 11:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241108/embracing-love.jfif.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241108"
-    },
-    {
-      "title": "Comic, Manga Letterer Dave Lanphear Dies at 58",
-      "description": "Prolific letterer won 2 Eisner Awards, worked on manga such as Bleach, Beyblade",
-      "fullDescription": "Prolific letterer won 2 Eisner Awards, worked on manga such as <cite>Bleach, Beyblade</cite>",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-29/comic-manga-letterer-dave-lanphear-dies-at-58/.241104",
-      "pubDate": "Sat, 29 Aug 2026 09:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241104/dave-lanphear.jfif.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241104"
     }
   ],
   "total": 15
