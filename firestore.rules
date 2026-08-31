@@ -5,25 +5,30 @@ service cloud.firestore {
     // Visitor count - allow read for everyone, write for admin
     match /visitorCount/{document=**} {
       allow read: if true;
-      allow write: if request.auth != null && request.auth.token.email == 'morvissdev@gmail.com';
+      allow write: if request.auth != null && request.auth.token.email == 'ghryslt@gmail.com';
     }
     
     // Reviews collection
     match /reviews/{reviewId} {
       allow read: if true;
-      allow create: if request.auth != null;
-      allow update, delete: if request.auth != null && (request.auth.token.email == 'morvissdev@gmail.com' || resource.data.authorEmail == request.auth.email);
+      allow write: if request.auth != null && request.auth.token.email == 'ghryslt@gmail.com';
+      
+      match /comments/{commentId} {
+        allow read: if true;
+        allow create: if request.auth != null;
+        allow update, delete: if request.auth != null && request.auth.token.email == request.resource.data.authorEmail;
+      }
     }
     
     // Anime collection
     match /anime/{animeId} {
       allow read: if true;
-      allow create, update, delete: if request.auth != null && request.auth.token.email == 'morvissdev@gmail.com';
+      allow create, update, delete: if request.auth != null && request.auth.token.email == 'ghryslt@gmail.com';
       
       // Episodes subcollection
       match /episodes/{episodeId} {
         allow read: if true;
-        allow create, update, delete: if request.auth != null && request.auth.token.email == 'morvissdev@gmail.com';
+        allow create, update, delete: if request.auth != null && request.auth.token.email == 'ghryslt@gmail.com';
       }
     }
     
