@@ -869,18 +869,18 @@ const Admin = memo(() => {
                   
                   <div className="mb-4">
                     <label className="block text-black dark:text-white font-medium mb-2">
-                      Streamtape Embed URL *
+                      Video Embed URL *
                     </label>
                     <input
                       type="text"
                       value={videoUrl}
                       onChange={(e) => setVideoUrl(e.target.value)}
-                      placeholder="https://streamtape.com/e/..."
+                      placeholder="https://www.youtube.com/embed/... or any video embed URL"
                       className="w-full px-4 py-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent"
                       required
                     />
                     <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
-                      Use Streamtape embed URL (e.g., https://streamtape.com/e/xyz123)
+                      Use any video embed URL (YouTube, Vimeo, etc.)
                     </p>
                   </div>
 
