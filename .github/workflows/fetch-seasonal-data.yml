@@ -7,6 +7,9 @@ on:
     - cron: '0 0 1 1,4,7,10 *'
   workflow_dispatch: # Allow manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   fetch-seasonal-data:
     runs-on: ubuntu-latest
@@ -27,10 +30,15 @@ jobs:
       - name: Fetch seasonal anime data
         run: node scripts/fetch-seasonal-anime.js
       
+      - name: Fetch MAL schedule data
+        env:
+          MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
+        run: node scripts/fetch-mal-schedule.js
+      
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add -f public/data/seasonal/
+          git add -f public/data/seasonal/ public/data/daily/anime_schedule.json
           git diff --quiet && git diff --staged --quiet || git commit -m "Update seasonal anime data [automated]"
           git push

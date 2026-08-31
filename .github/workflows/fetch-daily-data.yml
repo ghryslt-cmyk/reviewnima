@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  fetch-seasonal-data:
+  fetch-daily-data:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     
@@ -33,11 +33,6 @@ jobs:
       
       - name: Fetch trending anime and news data
         run: node scripts/fetch-hourly.js
-
-      - name: Fetch MAL schedule data
-        env:
-          MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
-        run: node scripts/fetch-mal-schedule.js
       
       - name: Commit and push changes
         run: |
