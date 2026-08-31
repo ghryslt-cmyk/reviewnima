@@ -1,0 +1,35 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Visitor count - allow read for everyone, write for admin
+    match /visitorCount/{document=**} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.email == 'morvissdev@gmail.com';
+    }
+    
+    // Reviews collection
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null && (request.auth.token.email == 'morvissdev@gmail.com' || resource.data.authorEmail == request.auth.email);
+    }
+    
+    // Anime collection
+    match /anime/{animeId} {
+      allow read: if true;
+      allow create, update, delete: if request.auth != null && request.auth.token.email == 'morvissdev@gmail.com';
+      
+      // Episodes subcollection
+      match /episodes/{episodeId} {
+        allow read: if true;
+        allow create, update, delete: if request.auth != null && request.auth.token.email == 'morvissdev@gmail.com';
+      }
+    }
+    
+    // Users collection
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

@@ -41,6 +41,7 @@ const Admin = memo(() => {
   const [episodeNumber, setEpisodeNumber] = useState(1);
   const [episodeTitle, setEpisodeTitle] = useState('');
   const [videoUrl, setVideoUrl] = useState('');
+  const [episodeReview, setEpisodeReview] = useState('');
   const [episodes, setEpisodes] = useState([]);
   const [editingEpisode, setEditingEpisode] = useState(null);
   const [allAnimeList, setAllAnimeList] = useState([]);
@@ -187,7 +188,8 @@ const Admin = memo(() => {
       const episodeData = {
         episodeNumber,
         title: episodeTitle,
-        videoUrl
+        videoUrl,
+        review: episodeReview
       };
 
       if (editingEpisode) {
@@ -202,6 +204,7 @@ const Admin = memo(() => {
       setEpisodeNumber(prev => prev + 1);
       setEpisodeTitle('');
       setVideoUrl('');
+      setEpisodeReview('');
       
       const updatedEpisodes = await getAnimeEpisodes(selectedAnimeForManagement.id.toString());
       setEpisodes(updatedEpisodes);
@@ -213,12 +216,13 @@ const Admin = memo(() => {
     } finally {
       setSubmitting(false);
     }
-  }, [selectedAnimeForManagement, episodeNumber, episodeTitle, videoUrl, editingEpisode]);
+  }, [selectedAnimeForManagement, episodeNumber, episodeTitle, videoUrl, episodeReview, editingEpisode]);
 
   const handleEditEpisode = useCallback((episode) => {
     setEpisodeNumber(episode.episodeNumber);
     setEpisodeTitle(episode.title || '');
     setVideoUrl(episode.videoUrl);
+    setEpisodeReview(episode.review || '');
     setEditingEpisode(episode);
   }, []);
 
@@ -865,19 +869,32 @@ const Admin = memo(() => {
                   
                   <div className="mb-4">
                     <label className="block text-black dark:text-white font-medium mb-2">
-                      Archive.org Video URL *
+                      Telegram Video URL *
                     </label>
                     <input
                       type="url"
                       value={videoUrl}
                       onChange={(e) => setVideoUrl(e.target.value)}
-                      placeholder="https://archive.org/embed/..."
+                      placeholder="https://t.me/..."
                       className="w-full px-4 py-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent"
                       required
                     />
                     <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
-                      Use the embed URL from archive.org (e.g., https://archive.org/embed/identifier)
+                      Use the Telegram video URL (e.g., https://t.me/channelname/postid)
                     </p>
+                  </div>
+
+                  <div className="mb-4">
+                    <label className="block text-black dark:text-white font-medium mb-2">
+                      Episode Review (Optional)
+                    </label>
+                    <textarea
+                      value={episodeReview}
+                      onChange={(e) => setEpisodeReview(e.target.value)}
+                      placeholder="Write your review for this episode..."
+                      className="w-full px-4 py-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent resize-none"
+                      rows="4"
+                    />
                   </div>
 
                   <div className="flex space-x-4">
@@ -906,6 +923,7 @@ const Admin = memo(() => {
                           setEditingEpisode(null);
                           setEpisodeTitle('');
                           setVideoUrl('');
+                          setEpisodeReview('');
                         }}
                         className="flex items-center space-x-2 bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300"
                       >
