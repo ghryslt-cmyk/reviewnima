@@ -284,7 +284,9 @@ const saveTrendingNews = (newsData) => {
   // Limit to 15 items
   const limitedData = newsData.slice(0, 15);
   
+  const version = Date.now();
   const dataToSave = {
+    version: version,
     fetchedAt: new Date().toISOString(),
     news: limitedData,
     total: limitedData.length
@@ -293,6 +295,15 @@ const saveTrendingNews = (newsData) => {
   fs.writeFileSync(filePath, JSON.stringify(dataToSave, null, 2));
   console.log(`Saved trending news to ${filePath}`);
   console.log(`Total news items: ${limitedData.length}`);
+  console.log(`Version: ${version}`);
+  
+  // Also save version to a separate file for cache busting
+  const versionFilePath = path.join(dataDir, 'version.json');
+  const versionData = {
+    trending_news: version,
+    updated_at: new Date().toISOString()
+  };
+  fs.writeFileSync(versionFilePath, JSON.stringify(versionData, null, 2));
 };
 
 /**

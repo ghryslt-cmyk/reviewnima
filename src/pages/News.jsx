@@ -129,8 +129,18 @@ const News = () => {
 
       // Load trending news from RSS sources
       try {
-        const timestamp = Date.now();
-        const trendingResponse = await fetch(`/data/daily/trending_news.json?t=${timestamp}`);
+        let version = '';
+        try {
+          const versionResponse = await fetch(`/data/daily/version.json?${Date.now()}`);
+          if (versionResponse.ok) {
+            const versionData = await versionResponse.json();
+            version = versionData.trending_news || '';
+          }
+        } catch (e) {
+          console.log('Could not load version file');
+        }
+        
+        const trendingResponse = await fetch(`/data/daily/trending_news.json?v=${version}`);
         if (trendingResponse.ok) {
           const trendingData = await trendingResponse.json();
           setTrendingNews(trendingData.news || []);
@@ -141,8 +151,18 @@ const News = () => {
 
       // Load trending anime from JSON file
       try {
-        const timestamp = Date.now();
-        const trendingAnimeResponse = await fetch(`/data/daily/trending_anime.json?t=${timestamp}`);
+        let version = '';
+        try {
+          const versionResponse = await fetch(`/data/daily/version.json?${Date.now()}`);
+          if (versionResponse.ok) {
+            const versionData = await versionResponse.json();
+            version = versionData.trending_anime || '';
+          }
+        } catch (e) {
+          console.log('Could not load version file');
+        }
+        
+        const trendingAnimeResponse = await fetch(`/data/daily/trending_anime.json?v=${version}`);
         if (trendingAnimeResponse.ok) {
           const trendingAnimeData = await trendingAnimeResponse.json();
           // Convert trending anime to news format

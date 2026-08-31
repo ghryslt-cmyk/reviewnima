@@ -74,7 +74,9 @@ const saveTrendingData = (animeData) => {
   const fileName = `trending_anime.json`;
   const filePath = path.join(dataDir, fileName);
   
+  const version = Date.now();
   const dataToSave = {
+    version: version,
     fetchedAt: new Date().toISOString(),
     anime: animeData
   };
@@ -82,6 +84,22 @@ const saveTrendingData = (animeData) => {
   fs.writeFileSync(filePath, JSON.stringify(dataToSave, null, 2));
   console.log(`Saved trending data to ${filePath}`);
   console.log(`Total anime: ${animeData.length}`);
+  console.log(`Version: ${version}`);
+  
+  // Update version file for cache busting
+  const versionFilePath = path.join(dataDir, 'version.json');
+  let versionData = {};
+  try {
+    if (fs.existsSync(versionFilePath)) {
+      versionData = JSON.parse(fs.readFileSync(versionFilePath, 'utf8'));
+    }
+  } catch (e) {
+    // File doesn't exist or is invalid, start fresh
+  }
+  
+  versionData.trending_anime = version;
+  versionData.updated_at = new Date().toISOString();
+  fs.writeFileSync(versionFilePath, JSON.stringify(versionData, null, 2));
 };
 
 /**
