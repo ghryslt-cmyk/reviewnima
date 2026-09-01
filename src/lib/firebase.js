@@ -666,4 +666,4 @@ export const getUserRankByEmail = async (email) => {
   }
 };
 
-export { auth, db };
+export { auth, db, doc, getDoc, setDoc };
