@@ -101,6 +101,14 @@ const Navbar = () => {
                       <span>{t('nav.news')}</span>
                     </Link>
                     <Link
+                      to="/anime"
+                      className="flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-900 dark:text-white"
+                      onClick={() => setAnimeDropdownOpen(false)}
+                    >
+                      <Film size={18} />
+                      <span>Anime</span>
+                    </Link>
+                    <Link
                       to="/reviews"
                       className="flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-900 dark:text-white"
                       onClick={() => setAnimeDropdownOpen(false)}
@@ -303,6 +311,14 @@ const Navbar = () => {
                 >
                   <Newspaper size={18} />
                   <span>{t('nav.news')}</span>
+                </Link>
+                <Link 
+                  to="/anime" 
+                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                  onClick={handleMobileMenuToggle}
+                >
+                  <Film size={18} />
+                  <span>Anime</span>
                 </Link>
                 <Link 
                   to="/reviews" 
