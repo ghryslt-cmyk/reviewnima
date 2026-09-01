@@ -12,6 +12,8 @@ const Navbar = () => {
   const isAdminUser = checkAdmin();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
+  const [animeDropdownOpen, setAnimeDropdownOpen] = useState(false);
+  const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -22,10 +24,22 @@ const Navbar = () => {
           setLanguageDropdownOpen(false);
         }
       }
+      if (animeDropdownOpen) {
+        const container = document.querySelector('.anime-dropdown-container');
+        if (container && !container.contains(event.target)) {
+          setAnimeDropdownOpen(false);
+        }
+      }
+      if (blogDropdownOpen) {
+        const container = document.querySelector('.blog-dropdown-container');
+        if (container && !container.contains(event.target)) {
+          setBlogDropdownOpen(false);
+        }
+      }
     };
     document.addEventListener('click', handleClickOutside);
     return () => document.removeEventListener('click', handleClickOutside);
-  }, [languageDropdownOpen]);
+  }, [languageDropdownOpen, animeDropdownOpen, blogDropdownOpen]);
 
   const handleLanguageChange = useCallback((lang) => {
     console.log('Navbar handleLanguageChange called with:', lang);
@@ -65,22 +79,87 @@ const Navbar = () => {
                 <Home size={20} />
                 <span>{t('nav.home')}</span>
               </Link>
-              <Link to="/news" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
-                <Newspaper size={20} />
-                <span>{t('nav.news')}</span>
-              </Link>
-              <Link to="/reviews" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
-                <BookOpen size={20} />
-                <span>{t('nav.reviews')}</span>
-              </Link>
-              <Link to="/anime" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
-                <Film size={20} />
-                <span>Anime</span>
-              </Link>
-              <Link to="/top-favorites" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
-                <Heart size={20} />
-                <span>{t('nav.favorites')}</span>
-              </Link>
+              
+              {/* Anime Dropdown */}
+              <div className="relative anime-dropdown-container">
+                <button
+                  onClick={() => setAnimeDropdownOpen(!animeDropdownOpen)}
+                  className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                >
+                  <Film size={20} />
+                  <span>Anime</span>
+                </button>
+                
+                {animeDropdownOpen && (
+                  <div className="absolute left-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50">
+                    <Link
+                      to="/news"
+                      className="flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-900 dark:text-white"
+                      onClick={() => setAnimeDropdownOpen(false)}
+                    >
+                      <Newspaper size={18} />
+                      <span>{t('nav.news')}</span>
+                    </Link>
+                    <Link
+                      to="/reviews"
+                      className="flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-900 dark:text-white"
+                      onClick={() => setAnimeDropdownOpen(false)}
+                    >
+                      <BookOpen size={18} />
+                      <span>{t('nav.reviews')}</span>
+                    </Link>
+                    <Link
+                      to="/top-favorites"
+                      className="flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-900 dark:text-white"
+                      onClick={() => setAnimeDropdownOpen(false)}
+                    >
+                      <Heart size={18} />
+                      <span>{t('nav.favorites')}</span>
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* My Blog Dropdown */}
+              <div className="relative blog-dropdown-container">
+                <button
+                  onClick={() => setBlogDropdownOpen(!blogDropdownOpen)}
+                  className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                >
+                  <User size={20} />
+                  <span>My Blog</span>
+                </button>
+                
+                {blogDropdownOpen && (
+                  <div className="absolute left-0 top-full mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 z-50">
+                    <Link
+                      to="/contact"
+                      className="flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-900 dark:text-white"
+                      onClick={() => setBlogDropdownOpen(false)}
+                    >
+                      <User size={18} />
+                      <span>{t('home.contactUs')}</span>
+                    </Link>
+                    <Link
+                      to="/privacy"
+                      className="flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-900 dark:text-white"
+                      onClick={() => setBlogDropdownOpen(false)}
+                    >
+                      <Shield size={18} />
+                      <span>{t('home.privacyPolicy')}</span>
+                    </Link>
+                    <Link
+                      to="/terms"
+                      className="flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-900 dark:text-white"
+                      onClick={() => setBlogDropdownOpen(false)}
+                    >
+                      <BookOpen size={18} />
+                      <span>{t('home.termsOfService')}</span>
+                    </Link>
+                  </div>
+                )}
+              </div>
+
               {isAdminUser && (
                 <Link to="/admin" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
                   <Shield size={20} />
@@ -209,38 +288,75 @@ const Navbar = () => {
               <Home size={20} />
               <span>{t('nav.home')}</span>
             </Link>
-            <Link 
-              to="/news" 
-              className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-              onClick={handleMobileMenuToggle}
-            >
-              <Newspaper size={20} />
-              <span>{t('nav.news')}</span>
-            </Link>
-            <Link 
-              to="/reviews" 
-              className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-              onClick={handleMobileMenuToggle}
-            >
-              <BookOpen size={20} />
-              <span>{t('nav.reviews')}</span>
-            </Link>
-            <Link 
-              to="/anime" 
-              className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-              onClick={handleMobileMenuToggle}
-            >
-              <Film size={20} />
-              <span>Anime</span>
-            </Link>
-            <Link 
-              to="/top-favorites" 
-              className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-              onClick={handleMobileMenuToggle}
-            >
-              <Heart size={20} />
-              <span>{t('nav.favorites')}</span>
-            </Link>
+            
+            {/* Anime Section for Mobile */}
+            <div className="px-3 py-2">
+              <div className="flex items-center space-x-2 text-gray-900 dark:text-white mb-2">
+                <Film size={20} />
+                <span className="font-medium">Anime</span>
+              </div>
+              <div className="pl-4 space-y-1">
+                <Link 
+                  to="/news" 
+                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                  onClick={handleMobileMenuToggle}
+                >
+                  <Newspaper size={18} />
+                  <span>{t('nav.news')}</span>
+                </Link>
+                <Link 
+                  to="/reviews" 
+                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                  onClick={handleMobileMenuToggle}
+                >
+                  <BookOpen size={18} />
+                  <span>{t('nav.reviews')}</span>
+                </Link>
+                <Link 
+                  to="/top-favorites" 
+                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                  onClick={handleMobileMenuToggle}
+                >
+                  <Heart size={18} />
+                  <span>{t('nav.favorites')}</span>
+                </Link>
+              </div>
+            </div>
+            
+            {/* My Blog Section for Mobile */}
+            <div className="px-3 py-2">
+              <div className="flex items-center space-x-2 text-gray-900 dark:text-white mb-2">
+                <User size={20} />
+                <span className="font-medium">My Blog</span>
+              </div>
+              <div className="pl-4 space-y-1">
+                <Link 
+                  to="/contact" 
+                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                  onClick={handleMobileMenuToggle}
+                >
+                  <User size={18} />
+                  <span>{t('home.contactUs')}</span>
+                </Link>
+                <Link 
+                  to="/privacy" 
+                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                  onClick={handleMobileMenuToggle}
+                >
+                  <Shield size={18} />
+                  <span>{t('home.privacyPolicy')}</span>
+                </Link>
+                <Link 
+                  to="/terms" 
+                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
+                  onClick={handleMobileMenuToggle}
+                >
+                  <BookOpen size={18} />
+                  <span>{t('home.termsOfService')}</span>
+                </Link>
+              </div>
+            </div>
+            
             {isAdminUser && (
               <Link 
                 to="/admin" 

@@ -92,6 +92,15 @@ body {
   }
 }
 
+@keyframes scroll-left-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -170,6 +179,11 @@ body {
 
 .animate-scroll-right {
   animation: scroll-right 60s linear infinite;
+  will-change: transform;
+}
+
+.animate-scroll-left-to-right {
+  animation: scroll-left-to-right 180s linear infinite;
   will-change: transform;
 }
 

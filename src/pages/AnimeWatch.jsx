@@ -4,9 +4,13 @@ import { getAnimeById } from '../lib/anilist';
 import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode } from '../lib/firebase';
 import Layout from '../components/Layout';
 import { Play, Star, Calendar, Clock, Film, ChevronLeft, ChevronRight, Loader2, Share, Heart, Plus, X } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
 
 const AnimeWatch = memo(() => {
   const { id } = useParams();
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [anime, setAnime] = useState(null);
   const [episodes, setEpisodes] = useState([]);
   const [currentEpisode, setCurrentEpisode] = useState(null);
@@ -28,11 +32,11 @@ const AnimeWatch = memo(() => {
       }
     } catch (err) {
       console.error('Error fetching anime data:', err);
-      setError('Failed to load anime data. Please try again.');
+      setError(t('animeWatch.error'));
     } finally {
       setLoading(false);
     }
-  }, [id]);
+  }, [id, t]);
 
   useEffect(() => {
     fetchAnimeData();
@@ -72,7 +76,7 @@ const AnimeWatch = memo(() => {
         <div className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900">
           <div className="text-center">
             <Loader2 className="animate-spin text-gray-600 mx-auto mb-4" size={48} />
-            <p className="text-gray-600 dark:text-gray-400">Loading anime...</p>
+            <p className="text-gray-600 dark:text-gray-400">{t('animeWatch.loading')}</p>
           </div>
         </div>
       </Layout>
@@ -84,9 +88,9 @@ const AnimeWatch = memo(() => {
       <Layout>
         <div className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900">
           <div className="text-center">
-            <p className="text-red-600 dark:text-red-400 text-lg mb-4">{error || 'Anime not found'}</p>
+            <p className="text-red-600 dark:text-red-400 text-lg mb-4">{error || t('animeWatch.animeNotFound')}</p>
             <Link to="/" className="text-gray-600 hover:text-gray-900 hover:underline">
-              Return to Home
+              {t('animeWatch.returnHome')}
             </Link>
           </div>
         </div>
@@ -220,14 +224,14 @@ const AnimeWatch = memo(() => {
                             className="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 disabled:bg-gray-800 disabled:text-gray-500 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
                           >
                             <ChevronLeft size={20} />
-                            <span className="hidden sm:inline">Previous</span>
+                            <span className="hidden sm:inline">{t('animeWatch.previous')}</span>
                           </button>
                           <button
                             onClick={handleNextEpisode}
                             disabled={episodes.findIndex(ep => ep.id === currentEpisode?.id) === episodes.length - 1}
                             className="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 disabled:bg-gray-800 disabled:text-gray-500 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
                           >
-                            <span className="hidden sm:inline">Next</span>
+                            <span className="hidden sm:inline">{t('animeWatch.next')}</span>
                             <ChevronRight size={20} />
                           </button>
                           <button
@@ -235,7 +239,7 @@ const AnimeWatch = memo(() => {
                             className="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
                           >
                             <Share size={20} />
-                            <span className="hidden sm:inline">Share</span>
+                            <span className="hidden sm:inline">{t('animeWatch.share')}</span>
                           </button>
                         </div>
                       </div>
@@ -246,7 +250,7 @@ const AnimeWatch = memo(() => {
                   <div className="text-center">
                     <div className="text-gray-500">
                       <Play size={48} className="mx-auto mb-4 opacity-50" />
-                      <p className="text-lg text-white">No episodes available</p>
+                      <p className="text-lg text-white">{t('animeWatch.noEpisodes')}</p>
                     </div>
                   </div>
                 </div>
@@ -256,7 +260,7 @@ const AnimeWatch = memo(() => {
               {/* Episode Review */}
               {currentEpisode?.review && (
                 <div className="mt-6 bg-gray-800 rounded-xl p-6">
-                  <h3 className="text-xl font-bold text-white mb-3">Episode Review</h3>
+                  <h3 className="text-xl font-bold text-white mb-3">{t('animeWatch.episodeReview')}</h3>
                   <p className="text-gray-300 leading-relaxed">{currentEpisode.review}</p>
                 </div>
               )}
@@ -267,7 +271,7 @@ const AnimeWatch = memo(() => {
               <div className="bg-gray-800 rounded-xl p-4 sticky top-4">
                 <h3 className="text-lg font-bold text-white mb-4 flex items-center">
                   <Film size={20} className="mr-2" />
-                  Episodes ({episodes.length})
+                  {t('animeWatch.episodes')} ({episodes.length})
                 </h3>
                 <div className="space-y-2 max-h-[600px] overflow-y-auto pr-2">
                   {episodes.map((episode) => (
@@ -304,7 +308,7 @@ const AnimeWatch = memo(() => {
       {anime.description && (
         <div className="px-4 sm:px-6 lg:px-8 py-8 bg-gray-900">
           <div className="max-w-7xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">Synopsis</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">{t('animeWatch.synopsis')}</h3>
             <div
               className="prose prose-invert max-w-none text-gray-300 leading-relaxed"
               dangerouslySetInnerHTML={{ __html: anime.description }}
@@ -317,7 +321,7 @@ const AnimeWatch = memo(() => {
       {anime.studios?.nodes?.length > 0 && (
         <div className="px-4 sm:px-6 lg:px-8 py-8 bg-gray-900">
           <div className="max-w-7xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">Studios</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">{t('animeWatch.studios')}</h3>
             <div className="flex flex-wrap gap-3">
               {anime.studios.nodes.map((studio) => (
                 <span
@@ -337,7 +341,7 @@ const AnimeWatch = memo(() => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
           <div className="bg-gray-800 rounded-2xl p-6 max-w-md w-full shadow-2xl animate-scale-in">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-xl font-bold text-white">Share Anime</h3>
+              <h3 className="text-xl font-bold text-white">{t('animeWatch.shareAnime')}</h3>
               <button
                 onClick={() => setShowShareModal(false)}
                 className="text-gray-400 hover:text-white"
@@ -348,7 +352,7 @@ const AnimeWatch = memo(() => {
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">
-                  Share Link
+                  {t('animeWatch.shareLink')}
                 </label>
                 <div className="flex gap-2">
                   <input
@@ -361,7 +365,7 @@ const AnimeWatch = memo(() => {
                     onClick={copyShareLink}
                     className="px-4 py-2 bg-gray-600 hover:bg-gray-500 text-white rounded-lg transition-colors"
                   >
-                    Copy
+                    {t('animeWatch.copy')}
                   </button>
                 </div>
               </div>

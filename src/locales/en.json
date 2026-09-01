@@ -173,6 +173,23 @@
     "subtitle": "My collection of the best anime",
     "noFavorites": "No favorite anime yet. Wait for the next update!"
   },
+  "animeWatch": {
+    "loading": "Loading anime...",
+    "error": "Failed to load anime data. Please try again.",
+    "animeNotFound": "Anime not found",
+    "returnHome": "Return to Home",
+    "episodes": "Episodes",
+    "noEpisodes": "No episodes available",
+    "episodeReview": "Episode Review",
+    "synopsis": "Synopsis",
+    "studios": "Studios",
+    "shareAnime": "Share Anime",
+    "shareLink": "Share Link",
+    "copy": "Copy",
+    "previous": "Previous",
+    "next": "Next",
+    "share": "Share"
+  },
   "common": {
     "loading": "Loading...",
     "error": "An error occurred",

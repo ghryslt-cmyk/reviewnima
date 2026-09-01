@@ -2,12 +2,206 @@ import { useState, useEffect, useCallback, memo } from 'react';
 import { Link } from 'react-router-dom';
 import { X, Check, Globe, Lock, User, Info } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
+
+// Privacy Content Component
+const PrivacyContent = ({ language }) => {
+  const { t } = useTranslation(language);
+  
+  return (
+    <div className="space-y-6">
+      <div className="text-center mb-8">
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">{t('privacy.title')}</h1>
+        <p className="text-gray-600">
+          {t('privacy.lastUpdated')}
+        </p>
+      </div>
+
+      <div className="space-y-6">
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('privacy.informationWeCollect')}</h2>
+          <p className="text-gray-700 mb-3">{t('privacy.informationWeCollectDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>{t('privacy.accountInfo')}</li>
+            <li>{t('privacy.reviewContent')}</li>
+            <li>{t('privacy.commentsInteractions')}</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('privacy.howWeUseInfo')}</h2>
+          <p className="text-gray-700 mb-3">{t('privacy.howWeUseInfoDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>{t('privacy.provideServices')}</li>
+            <li>{t('privacy.processDisplay')}</li>
+            <li>{t('privacy.communicate')}</li>
+            <li>{t('privacy.ensureSecurity')}</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('privacy.informationSharing')}</h2>
+          <p className="text-gray-700 mb-3">{t('privacy.informationSharingDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>{t('privacy.serviceProviders')}</li>
+            <li>{t('privacy.legalObligations')}</li>
+            <li>{t('privacy.protectRights')}</li>
+            <li>{t('privacy.withConsent')}</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('privacy.dataSecurity')}</h2>
+          <p className="text-gray-700 mb-3">{t('privacy.dataSecurityDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>{t('privacy.encryption')}</li>
+            <li>{t('privacy.secureAuth')}</li>
+            <li>{t('privacy.securityAudits')}</li>
+            <li>{t('privacy.accessControls')}</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('privacy.yourRights')}</h2>
+          <p className="text-gray-700 mb-3">{t('privacy.yourRightsDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>{t('privacy.accessInfo')}</li>
+            <li>{t('privacy.correctInfo')}</li>
+            <li>{t('privacy.requestDeletion')}</li>
+            <li>{t('privacy.optOut')}</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('privacy.assetCredits')}</h2>
+          <p className="text-gray-700 mb-3">{t('privacy.assetCreditsDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li><strong>Homepage Video:</strong> <span dangerouslySetInnerHTML={{ __html: t('privacy.homepageVideo') }} /></li>
+            <li><strong>Seasonal Anime Banners:</strong> {t('privacy.seasonalBanners')}</li>
+            <li><strong>Anime Information:</strong> {t('privacy.animeInformation')}</li>
+            <li><strong>Icons:</strong> {t('privacy.icons')}</li>
+          </ul>
+          <p className="text-sm italic mt-3">{t('privacy.assetDisclaimer')}</p>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('privacy.contactUs')}</h2>
+          <p className="text-gray-700">{t('privacy.contactUsDesc')}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Terms Content Component
+const TermsContent = ({ language }) => {
+  const { t } = useTranslation(language);
+  
+  return (
+    <div className="space-y-6">
+      <div className="text-center mb-8">
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">{t('terms.title')}</h1>
+        <p className="text-gray-600">
+          {t('terms.lastUpdated')}
+        </p>
+      </div>
+
+      <div className="space-y-6">
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.acceptanceOfTerms')}</h2>
+          <p className="text-gray-700 mb-3">{t('terms.acceptanceOfTermsDesc')}</p>
+          <p className="text-gray-700">{t('terms.disagreeTerms')}</p>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.userResponsibilities')}</h2>
+          <p className="text-gray-700 mb-3">{t('terms.userResponsibilitiesDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>{t('terms.provideAccurateInfo')}</li>
+            <li>{t('terms.postRespectful')}</li>
+            <li>{t('terms.noSpam')}</li>
+            <li>{t('terms.respectIP')}</li>
+            <li>{t('terms.noCompromiseSecurity')}</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.contentGuidelines')}</h2>
+          <p className="text-gray-700 mb-3">{t('terms.contentGuidelinesDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>{t('terms.personalOpinions')}</li>
+            <li>{t('terms.actualViewing')}</li>
+            <li>{t('terms.spoilerWarnings')}</li>
+            <li>{t('terms.respectfulComments')}</li>
+            <li>{t('terms.noHarassment')}</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.prohibitedActivities')}</h2>
+          <p className="text-gray-700 mb-3">{t('terms.prohibitedActivitiesDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>{t('terms.noPostReviews')}</li>
+            <li>{t('terms.noAutomatedTools')}</li>
+            <li>{t('terms.noInappropriateContent')}</li>
+            <li>{t('terms.noImpersonation')}</li>
+            <li>{t('terms.noUnauthorizedAccess')}</li>
+            <li>{t('terms.noInterference')}</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.intellectualProperty')}</h2>
+          <p className="text-gray-700 mb-3">{t('terms.intellectualPropertyDesc')}</p>
+          <p className="text-gray-700">{t('terms.animeInfo')}</p>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.assetCredits')}</h2>
+          <p className="text-gray-700 mb-3">{t('terms.assetCreditsDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li><strong>Homepage Video:</strong> <span dangerouslySetInnerHTML={{ __html: t('terms.homepageVideo') }} /></li>
+            <li><strong>Seasonal Anime Banners:</strong> {t('terms.seasonalBanners')}</li>
+            <li><strong>Anime Information:</strong> {t('terms.animeInformation')}</li>
+            <li><strong>Icons:</strong> {t('terms.icons')}</li>
+          </ul>
+          <p className="text-sm italic mt-3">{t('terms.assetDisclaimer')}</p>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.accountTermination')}</h2>
+          <p className="text-gray-700 mb-3">{t('terms.accountTerminationDesc')}</p>
+          <p className="text-gray-700">{t('terms.deleteAccount')}</p>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.limitationOfLiability')}</h2>
+          <p className="text-gray-700 mb-3">{t('terms.limitationOfLiabilityDesc')}</p>
+          <p className="text-gray-700">{t('terms.noGuarantee')}</p>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.changesToTerms')}</h2>
+          <p className="text-gray-700 mb-3">{t('terms.changesToTermsDesc')}</p>
+          <p className="text-gray-700">{t('terms.notifyUsers')}</p>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.contactUs')}</h2>
+          <p className="text-gray-700">{t('terms.contactUsDesc')}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const WelcomeAlert = memo(() => {
   const { language, changeLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [hasReadPrivacy, setHasReadPrivacy] = useState(false);
   const [hasReadTerms, setHasReadTerms] = useState(false);
+  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
+  const [showTermsModal, setShowTermsModal] = useState(false);
 
   const translations = {
     id: {
@@ -81,6 +275,22 @@ const WelcomeAlert = memo(() => {
     setHasReadTerms(prev => !prev);
   }, []);
 
+  const handleOpenPrivacyModal = useCallback(() => {
+    setShowPrivacyModal(true);
+  }, []);
+
+  const handleClosePrivacyModal = useCallback(() => {
+    setShowPrivacyModal(false);
+  }, []);
+
+  const handleOpenTermsModal = useCallback(() => {
+    setShowTermsModal(true);
+  }, []);
+
+  const handleCloseTermsModal = useCallback(() => {
+    setShowTermsModal(false);
+  }, []);
+
 
   if (!isOpen) return null;
 
@@ -143,22 +353,20 @@ const WelcomeAlert = memo(() => {
               {t.creditsText}
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link
-                to="/privacy"
-                target="_blank"
+              <button
+                onClick={handleOpenPrivacyModal}
                 className="inline-flex items-center px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors text-sm font-medium"
               >
                 <Lock className="w-4 h-4 mr-2" />
                 {t.viewPrivacy}
-              </Link>
-              <Link
-                to="/terms"
-                target="_blank"
+              </button>
+              <button
+                onClick={handleOpenTermsModal}
                 className="inline-flex items-center px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors text-sm font-medium"
               >
                 <Lock className="w-4 h-4 mr-2" />
                 {t.viewTerms}
-              </Link>
+              </button>
             </div>
           </div>
 
@@ -237,6 +445,46 @@ const WelcomeAlert = memo(() => {
           </button>
         </div>
       </div>
+
+      {/* Privacy Policy Modal */}
+      {showPrivacyModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto animate-scale-in">
+            <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex items-center justify-between">
+              <h2 className="text-2xl font-bold text-gray-900">{t.viewPrivacy}</h2>
+              <button
+                onClick={handleClosePrivacyModal}
+                className="text-gray-400 hover:text-gray-600"
+              >
+                <X size={24} />
+              </button>
+            </div>
+            <div className="p-6">
+              <PrivacyContent language={language} />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Terms & Conditions Modal */}
+      {showTermsModal && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto animate-scale-in">
+            <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex items-center justify-between">
+              <h2 className="text-2xl font-bold text-gray-900">{t.viewTerms}</h2>
+              <button
+                onClick={handleCloseTermsModal}
+                className="text-gray-400 hover:text-gray-600"
+              >
+                <X size={24} />
+              </button>
+            </div>
+            <div className="p-6">
+              <TermsContent language={language} />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 });

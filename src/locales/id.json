@@ -173,6 +173,23 @@
     "subtitle": "Koleksi anime terbaik pilihan saya",
     "noFavorites": "Belum ada anime favorit. Tunggu update selanjutnya!"
   },
+  "animeWatch": {
+    "loading": "Memuat anime...",
+    "error": "Gagal memuat data anime. Silakan coba lagi.",
+    "animeNotFound": "Anime tidak ditemukan",
+    "returnHome": "Kembali ke Beranda",
+    "episodes": "Episode",
+    "noEpisodes": "Tidak ada episode tersedia",
+    "episodeReview": "Review Episode",
+    "synopsis": "Sinopsis",
+    "studios": "Studio",
+    "shareAnime": "Bagikan Anime",
+    "shareLink": "Bagikan Tautan",
+    "copy": "Salin",
+    "previous": "Sebelumnya",
+    "next": "Selanjutnya",
+    "share": "Bagikan"
+  },
   "common": {
     "loading": "Memuat...",
     "error": "Terjadi kesalahan",
