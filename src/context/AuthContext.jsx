@@ -16,26 +16,38 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const unsubscribe = onAuthChange(async (user) => {
-      setUser(user);
-      
-      // Create user document in Firestore if it doesn't exist
-      if (user) {
+    const unsubscribe = onAuthChange(async (authUser) => {
+      // Create user document in Firestore if it doesn't exist and sync data
+      if (authUser) {
         try {
-          const userDocRef = doc(db, 'users', user.uid);
+          const userDocRef = doc(db, 'users', authUser.uid);
           const userDoc = await getDoc(userDocRef);
           
           if (!userDoc.exists()) {
             await setDoc(userDocRef, {
-              email: user.email,
-              displayName: user.displayName,
-              photoURL: user.photoURL,
+              email: authUser.email,
+              displayName: authUser.displayName,
+              photoURL: authUser.photoURL,
               createdAt: new Date().toISOString()
             });
+            setUser(authUser);
+          } else {
+            // Sync Firestore data with auth user
+            const firestoreData = userDoc.data();
+            // Create a merged user object with Firestore data taking precedence
+            const mergedUser = {
+              ...authUser,
+              displayName: firestoreData.displayName || authUser.displayName,
+              photoURL: firestoreData.photoURL || authUser.photoURL
+            };
+            setUser(mergedUser);
           }
         } catch (error) {
-          console.error('Error creating user document:', error);
+          console.error('Error creating/syncing user document:', error);
+          setUser(authUser);
         }
+      } else {
+        setUser(null);
       }
       
       setLoading(false);
@@ -71,7 +83,25 @@ export const AuthProvider = ({ children }) => {
 
   const refreshUser = useCallback(async () => {
     if (auth.currentUser) {
-      setUser(auth.currentUser);
+      try {
+        const userDocRef = doc(db, 'users', auth.currentUser.uid);
+        const userDoc = await getDoc(userDocRef);
+        
+        if (userDoc.exists()) {
+          const firestoreData = userDoc.data();
+          const mergedUser = {
+            ...auth.currentUser,
+            displayName: firestoreData.displayName || auth.currentUser.displayName,
+            photoURL: firestoreData.photoURL || auth.currentUser.photoURL
+          };
+          setUser(mergedUser);
+        } else {
+          setUser(auth.currentUser);
+        }
+      } catch (error) {
+        console.error('Error refreshing user data:', error);
+        setUser(auth.currentUser);
+      }
     }
   }, []);
 
