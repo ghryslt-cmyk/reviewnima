@@ -178,15 +178,26 @@ const AnimeWatch = memo(() => {
                 {currentEpisode ? (
                   <>
                     <div className="aspect-video w-full bg-black flex items-center justify-center">
-                      <iframe
-                        src={currentEpisode.videoUrl}
-                        className="w-full h-full"
-                        allowFullScreen
-                        title={`Episode ${currentEpisode.episodeNumber}`}
-                        allow="autoplay; fullscreen"
-                        scrolling="no"
-                        frameBorder="0"
-                      />
+                      {currentEpisode.videoUrl.match(/\.(mp4|webm|ogg|m3u8|mpd)(\?.*)?$/i) ? (
+                        <video
+                          src={currentEpisode.videoUrl}
+                          className="w-full h-full"
+                          controls
+                          autoPlay
+                          title={`Episode ${currentEpisode.episodeNumber}`}
+                          allowFullScreen
+                        />
+                      ) : (
+                        <iframe
+                          src={currentEpisode.videoUrl}
+                          className="w-full h-full"
+                          allowFullScreen
+                          title={`Episode ${currentEpisode.episodeNumber}`}
+                          allow="autoplay; fullscreen"
+                          scrolling="no"
+                          frameBorder="0"
+                        />
+                      )}
                     </div>
                     
                     {/* Video Controls */}
