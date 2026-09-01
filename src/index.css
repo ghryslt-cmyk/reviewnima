@@ -82,22 +82,10 @@ body {
 
 @keyframes scroll-right {
   0% {
-    transform: translateX(0);
-  }
-  85% {
-    transform: translateX(-50%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes scroll-left-to-right {
-  0% {
     transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 
@@ -178,12 +166,7 @@ body {
 }
 
 .animate-scroll-right {
-  animation: scroll-right 60s linear infinite;
-  will-change: transform;
-}
-
-.animate-scroll-left-to-right {
-  animation: scroll-left-to-right 180s linear infinite;
+  animation: scroll-right 30s linear infinite;
   will-change: transform;
 }
 
