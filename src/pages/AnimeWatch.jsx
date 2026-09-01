@@ -85,26 +85,28 @@ const AnimeWatch = memo(() => {
 
     setSubmittingComment(true);
     try {
-      const newComment = await addAnimeComment(id, {
+      const commentId = await addAnimeComment(id, {
         text: commentText,
         author: user.displayName,
         authorEmail: user.email,
         authorPhotoURL: user.photoURL
       });
       
-      // Add the new comment locally with a temporary ID
-      setComments(prev => [{
-        id: newComment || 'temp-' + Date.now(),
+      // Add the new comment locally
+      const newComment = {
+        id: commentId,
         text: commentText,
         author: user.displayName,
         authorEmail: user.email,
         authorPhotoURL: user.photoURL,
         createdAt: new Date()
-      }, ...prev]);
+      };
       
+      setComments(prev => [newComment, ...prev]);
       setCommentText('');
     } catch (error) {
       console.error('Error adding comment:', error);
+      alert('Failed to add comment. Please try again.');
     } finally {
       setSubmittingComment(false);
     }
