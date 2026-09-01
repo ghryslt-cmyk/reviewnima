@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, memo } from 'react';
+import { useState, useEffect, useCallback, memo, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getAnimeById } from '../lib/anilist';
 import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode, getAnimeComments, addAnimeComment, saveAnimeToProfile, removeAnimeFromProfile, getSavedAnime, reportAnime } from '../lib/firebase';
@@ -26,6 +26,7 @@ const AnimeWatch = memo(() => {
   const [showReportModal, setShowReportModal] = useState(false);
   const [reportReason, setReportReason] = useState('');
   const [submittingReport, setSubmittingReport] = useState(false);
+  const hasFetchedComments = useRef(false);
 
   const fetchAnimeData = useCallback(async () => {
     try {
@@ -114,9 +115,11 @@ const AnimeWatch = memo(() => {
 
   useEffect(() => {
     const fetchComments = async () => {
+      if (hasFetchedComments.current) return;
       try {
         const commentsData = await getAnimeComments(id);
         setComments(commentsData);
+        hasFetchedComments.current = true;
       } catch (error) {
         console.error('Error fetching comments:', error);
       }
