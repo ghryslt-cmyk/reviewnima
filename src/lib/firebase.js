@@ -679,18 +679,4 @@ export const getUserByEmail = async (email) => {
   }
 };
 
-// Get user rank by email (for comment display)
-export const getUserRankByEmail = async (email) => {
-  try {
-    const user = await getUserByEmail(email);
-    if (user && user.rank) {
-      return user.rank;
-    }
-    return null;
-  } catch (error) {
-    console.error('Error getting user rank by email:', error);
-    return null;
-  }
-};
-
 export { auth, db, doc, getDoc, setDoc };
