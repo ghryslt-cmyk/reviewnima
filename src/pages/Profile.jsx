@@ -2,18 +2,19 @@ import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { getReviews } from '../lib/firebase';
-import { User, Mail, Calendar, BookOpen, Star } from 'lucide-react';
+import { getReviews, getSavedAnime } from '../lib/firebase';
+import { User, Mail, Calendar, BookOpen, Star, Play, Trash2 } from 'lucide-react';
 
 const Profile = () => {
   const { user, isAuthenticated, logout } = useAuth();
   const { language } = useLanguage();
   const { t } = useTranslation(language);
   const [userReviews, setUserReviews] = useState([]);
+  const [savedAnime, setSavedAnime] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchUserReviews = async () => {
+    const fetchUserData = async () => {
       if (!isAuthenticated) return;
       
       try {
@@ -21,15 +22,18 @@ const Profile = () => {
         // Filter reviews by user's email (if they've commented)
         // For now, we'll show all reviews since this is a personal review site
         setUserReviews(allReviews.slice(0, 6));
+        
+        const savedAnimeData = await getSavedAnime(user.uid);
+        setSavedAnime(savedAnimeData);
       } catch (error) {
-        console.error('Error fetching reviews:', error);
+        console.error('Error fetching user data:', error);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchUserReviews();
-  }, [isAuthenticated]);
+    fetchUserData();
+  }, [isAuthenticated, user]);
 
   if (!isAuthenticated) {
     return (
@@ -91,7 +95,7 @@ const Profile = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
           <div className="bg-black dark:bg-white rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-black border-2 border-black dark:border-white">
             <div className="flex items-center justify-between">
               <div>
@@ -123,6 +127,56 @@ const Profile = () => {
               <Star size={24} sm:size={32} className="text-gray-500 dark:text-gray-500" />
             </div>
           </div>
+
+          <div className="bg-purple-900 dark:bg-purple-100 rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-black border-2 border-purple-900 dark:border-purple-100">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-purple-300 dark:text-purple-700 text-xs sm:text-sm mb-1">Saved Anime</p>
+                <p className="text-2xl sm:text-3xl font-bold">{savedAnime.length}</p>
+              </div>
+              <Play size={24} sm:size={32} className="text-purple-400 dark:text-purple-600" />
+            </div>
+          </div>
+        </div>
+
+        {/* Saved Anime Section */}
+        <div className="bg-white dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-black dark:border-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 sm:mb-6 flex items-center">
+            <Play className="mr-3 text-black dark:text-white" size={24} />
+            Saved Anime
+          </h2>
+          
+          {savedAnime.length > 0 ? (
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+              {savedAnime.map((anime) => (
+                <div
+                  key={anime.id}
+                  className="relative group bg-gray-50 dark:bg-gray-900 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-800"
+                >
+                  {anime.coverImage && (
+                    <img
+                      src={anime.coverImage}
+                      alt={anime.title}
+                      className="w-full h-32 sm:h-40 object-cover"
+                    />
+                  )}
+                  <div className="p-2 sm:p-3">
+                    <h3 className="font-bold text-black dark:text-white text-xs sm:text-sm truncate">
+                      {anime.title}
+                    </h3>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                      {new Date(anime.savedAt).toLocaleDateString()}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-6 sm:py-8 text-gray-500 dark:text-gray-400">
+              <Play size={32} sm:size={48} className="mx-auto mb-4 text-gray-400" />
+              <p className="text-sm sm:text-base">No saved anime yet</p>
+            </div>
+          )}
         </div>
 
         {/* Recent Activity */}
