@@ -1,12 +1,34 @@
 {
-  "version": 1788297329405,
-  "fetchedAt": "2026-09-01T21:15:29.405Z",
+  "version": 1788305474755,
+  "fetchedAt": "2026-09-01T23:31:14.755Z",
   "news": [
+    {
+      "title": "Toshiko Machida's Hanako-gari Manga Ends",
+      "description": "Series debuted in September 2025",
+      "fullDescription": "Series debuted in September 2025",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-31/toshiko-machida-hanako-gari-manga-ends/.241172",
+      "pubDate": "Tue, 01 Sep 2026 19:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241172/619aqcenxfl.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241172"
+    },
+    {
+      "title": "bilibili App Relaunches Globally Without ID Verification",
+      "description": "Android version out now, with iOS version coming soon",
+      "fullDescription": "Android version out now, with iOS version coming soon",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-01/bilibili-app-relaunches-globally-without-id-verification/.240729",
+      "pubDate": "Tue, 01 Sep 2026 18:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240729/hqf61khbcaa47xw.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.240729"
+    },
     {
       "title": "Busan Film Festival to Host Japanese Animation Special Program, Screening 13 Films",
       "description": "The White Snake Enchantress, Belladonna of Sadness, Phoenix 2772, Angel's Egg, Memories, Metropolis, more",
       "fullDescription": "<cite>The White Snake Enchantress, Belladonna of Sadness, Phoenix 2772, Angel's Egg, Memories, Metropolis</cite>, more",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-31/busan-film-festival-to-host-japanese-animation-special-program-screening-13-films/.241157",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-01/busan-film-festival-to-host-japanese-animation-special-program-screening-13-films/.241157",
       "pubDate": "Tue, 01 Sep 2026 17:00:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241180/sirotan.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241180"
-    },
-    {
-      "title": "Focus: Kyoto Animation Charts New Frontier with Sparks of Tomorrow",
-      "description": "Anime fans gathered on Day 2 of Anime Expo to watch the U.S. premiere of the newest masterfully animated work from beloved studio Kyoto Animation, Sparks of Tomorrow (Nijusseiki Denki Mokuroku), and hear from the staff behind the Summer 2026 TV anime. MyAnimeList&#039;s community was invited to send...",
-      "fullDescription": "Anime fans gathered on Day 2 of Anime Expo to watch the U.S. premiere of the newest masterfully animated work from beloved studio Kyoto Animation, Sparks of Tomorrow (Nijusseiki Denki Mokuroku), and hear from the staff behind the Summer 2026 TV anime. MyAnimeList&#039;s community was invited to send questions after reading our previous interview with Director Minoru Ota, ahead of the Anime Expo panel and the anime&#039;s broadcast. Five of these questions were selected and answered by the staff...",
-      "link": "https://myanimelist.net/news/74657428?_location=rss",
-      "pubDate": "Mon, 31 Aug 2026 22:04:06 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788238824-9f6594106159a75bae6692cc9fe5e50c.jpeg",
-      "guid": "https://myanimelist.net/news/74657428?_location=rss"
-    },
-    {
-      "title": "Manga &#039;Hikaru ga Shinda Natsu&#039; Ends in Two Chapters",
-      "description": "The official X account for Mokumokuren&#039;s Hikaru ga Shinda Natsu (The Summer Hikaru Died) manga announced on Tuesday that the series will end in two chapters. The 50th chapter is scheduled to be released on October 13, with the 51st and final chapter to follow on October 20. Mokumokuren original...",
-      "fullDescription": "The official X account for Mokumokuren&#039;s Hikaru ga Shinda Natsu (The Summer Hikaru Died) manga announced on Tuesday that the series will end in two chapters. The 50th chapter is scheduled to be released on October 13, with the 51st and final chapter to follow on October 20. Mokumokuren originally posted the horror mystery manga, also known by its short name Hikanatsu, on their X (formerly Twitter) account before beginning regular serialization on the Young Ace UP web magazine in August 202...",
-      "link": "https://myanimelist.net/news/74657377?_location=rss",
-      "pubDate": "Mon, 31 Aug 2026 21:45:07 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788237859-b42c80c700c655f857b224910054ecb7.jpeg",
-      "guid": "https://myanimelist.net/news/74657377?_location=rss"
     }
   ],
   "total": 15
