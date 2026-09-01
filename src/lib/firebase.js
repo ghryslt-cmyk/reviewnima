@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from 'firebase/auth';
-import { getFirestore, collection, addDoc, getDocs, doc, getDoc, updateDoc, deleteDoc, query, where, orderBy, serverTimestamp } from 'firebase/firestore';
+import { getFirestore, collection, addDoc, getDocs, doc, getDoc, updateDoc, deleteDoc, query, where, orderBy, serverTimestamp, setDoc } from 'firebase/firestore';
 
 // Firebase configuration - REPLACE WITH YOUR OWN CONFIG
 const firebaseConfig = {
@@ -406,9 +406,8 @@ export const saveAnimeToProfile = async (userId, animeData) => {
         await updateDoc(userDocRef, { savedAnime });
       }
     } else {
-      // Create user document if it doesn't exist
-      await addDoc(collection(db, 'users'), {
-        userId,
+      // Create user document if it doesn't exist (using userId as document ID)
+      await setDoc(userDocRef, {
         savedAnime: [{
           id: animeData.id,
           title: animeData.title,
