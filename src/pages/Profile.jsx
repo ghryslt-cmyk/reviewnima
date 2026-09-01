@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { getReviews, getSavedAnime } from '../lib/firebase';
-import { User, Mail, Calendar, BookOpen, Star, Play, Trash2 } from 'lucide-react';
+import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank, updateUserRank, canAssignRank, getUserByEmail } from '../lib/firebase';
+import { User, Mail, BookOpen, Star, Play, Trash2, Edit, Camera, Crown, Shield } from 'lucide-react';
 
 const Profile = () => {
   const { user, isAuthenticated, logout } = useAuth();
@@ -12,6 +12,14 @@ const Profile = () => {
   const [userReviews, setUserReviews] = useState([]);
   const [savedAnime, setSavedAnime] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [userRank, setUserRank] = useState(null);
+  const [editingName, setEditingName] = useState(false);
+  const [editingPhoto, setEditingPhoto] = useState(false);
+  const [newName, setNewName] = useState('');
+  const [newPhotoUrl, setNewPhotoUrl] = useState('');
+  const [editingRank, setEditingRank] = useState(false);
+  const [newRank, setNewRank] = useState('');
+  const [targetUserEmail, setTargetUserEmail] = useState('');
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -25,6 +33,12 @@ const Profile = () => {
         
         const savedAnimeData = await getSavedAnime(user.uid);
         setSavedAnime(savedAnimeData);
+        
+        const rank = await getUserRank(user.uid);
+        setUserRank(rank);
+        
+        setNewName(user?.displayName || '');
+        setNewPhotoUrl(user?.photoURL || '');
       } catch (error) {
         console.error('Error fetching user data:', error);
       } finally {
@@ -34,6 +48,60 @@ const Profile = () => {
 
     fetchUserData();
   }, [isAuthenticated, user]);
+
+  const handleUpdateName = async () => {
+    if (!newName.trim()) return;
+    try {
+      await updateUserDisplayName(user.uid, newName);
+      setEditingName(false);
+      // Reload page to reflect changes
+      window.location.reload();
+    } catch (error) {
+      console.error('Error updating name:', error);
+      alert('Failed to update name');
+    }
+  };
+
+  const handleUpdatePhoto = async () => {
+    if (!newPhotoUrl.trim()) return;
+    try {
+      await updateUserPhotoURL(user.uid, newPhotoUrl);
+      setEditingPhoto(false);
+      // Reload page to reflect changes
+      window.location.reload();
+    } catch (error) {
+      console.error('Error updating photo:', error);
+      alert('Failed to update photo');
+    }
+  };
+
+  const handleUpdateRank = async () => {
+    if (!targetUserEmail.trim() || !newRank.trim()) {
+      alert('Please enter both user email and select a rank');
+      return;
+    }
+    try {
+      const targetUser = await getUserByEmail(targetUserEmail);
+      if (!targetUser) {
+        alert('User not found with this email');
+        return;
+      }
+      
+      await updateUserRank(targetUser.id, newRank);
+      setEditingRank(false);
+      setNewRank('');
+      setTargetUserEmail('');
+      alert(`Rank ${newRank} assigned to ${targetUserEmail}`);
+      // Reload page to reflect changes
+      window.location.reload();
+    } catch (error) {
+      console.error('Error updating rank:', error);
+      alert('Failed to update rank');
+    }
+  };
+
+  const isAdminUser = canAssignRank(user?.email);
+  const isAdminRank = userRank === 'admin';
 
   if (!isAuthenticated) {
     return (
@@ -60,39 +128,177 @@ const Profile = () => {
         {/* Profile Header */}
         <div className="bg-white dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-black dark:border-white">
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 sm:md:space-x-8">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 relative">
               {user?.photoURL ? (
-                <img
-                  src={user.photoURL}
-                  alt={user.displayName}
-                  className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-black dark:border-white shadow-xl"
-                />
+                <div className={`relative ${isAdminRank ? 'ring-4 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white' : ''}`}>
+                  <img
+                    src={user.photoURL}
+                    alt={user.displayName}
+                    className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-black dark:border-white shadow-xl"
+                  />
+                  {isAdminRank && (
+                    <div className="absolute -top-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg">
+                      <Crown className="text-black" size={20} />
+                    </div>
+                  )}
+                </div>
               ) : (
-                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black text-3xl sm:text-4xl font-bold shadow-xl">
+                <div className={`w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black text-3xl sm:text-4xl font-bold shadow-xl ${isAdminRank ? 'ring-4 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white' : ''}`}>
                   {user?.displayName?.charAt(0) || 'U'}
+                  {isAdminRank && (
+                    <div className="absolute -top-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg">
+                      <Crown className="text-black" size={20} />
+                    </div>
+                  )}
                 </div>
               )}
+              <button
+                onClick={() => setEditingPhoto(true)}
+                className="absolute bottom-0 right-0 bg-black dark:bg-white text-white dark:text-black p-2 rounded-full shadow-lg hover:scale-110 transition-transform"
+              >
+                <Camera size={16} />
+              </button>
             </div>
             
             <div className="flex-grow text-center md:text-left">
-              <h1 className="text-2xl sm:text-3xl font-bold text-black dark:text-white mb-2">
-                {user?.displayName || 'User'}
-              </h1>
-              <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4 sm:md:space-x-6 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+              <div className="flex items-center justify-center md:justify-start space-x-2">
+                {editingName ? (
+                  <div className="flex items-center space-x-2">
+                    <input
+                      type="text"
+                      value={newName}
+                      onChange={(e) => setNewName(e.target.value)}
+                      className="px-3 py-1 border-2 border-black dark:border-white rounded bg-white dark:bg-black text-black dark:text-white text-2xl sm:text-3xl font-bold"
+                    />
+                    <button
+                      onClick={handleUpdateName}
+                      className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600"
+                    >
+                      Save
+                    </button>
+                    <button
+                      onClick={() => {
+                        setEditingName(false);
+                        setNewName(user?.displayName || '');
+                      }}
+                      className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                ) : (
+                  <>
+                    <h1 className={`text-2xl sm:text-3xl font-bold mb-2 ${isAdminRank ? 'bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400 bg-clip-text text-transparent animate-pulse' : 'text-black dark:text-white'}`}>
+                      {user?.displayName || 'User'}
+                    </h1>
+                    <button
+                      onClick={() => setEditingName(true)}
+                      className="text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300"
+                    >
+                      <Edit size={16} />
+                    </button>
+                  </>
+                )}
+              </div>
+              {isAdminRank && (
+                <div className="flex items-center justify-center md:justify-start space-x-2 mt-2">
+                  <Shield className="text-yellow-400" size={16} />
+                  <span className="text-yellow-400 font-bold text-sm">ADMIN</span>
+                </div>
+              )}
+              <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4 sm:md:space-x-6 text-gray-700 dark:text-gray-300 text-sm sm:text-base mt-2">
                 <div className="flex items-center justify-center md:justify-start space-x-2">
                   <Mail size={14} sm:size={18} />
                   <span>{user?.email}</span>
                 </div>
-                {user?.metadata?.createdAt && (
-                  <div className="flex items-center justify-center md:justify-start space-x-2">
-                    <Calendar size={14} sm:size={18} />
-                    <span>Joined {new Date(user.metadata.createdAt).toLocaleDateString()}</span>
-                  </div>
-                )}
               </div>
             </div>
           </div>
         </div>
+
+        {/* Photo Edit Modal */}
+        {editingPhoto && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white dark:bg-black rounded-xl p-6 sm:p-8 max-w-md w-full border-2 border-black dark:border-white">
+              <h3 className="text-xl font-bold text-black dark:text-white mb-4">Update Profile Photo</h3>
+              <input
+                type="text"
+                value={newPhotoUrl}
+                onChange={(e) => setNewPhotoUrl(e.target.value)}
+                placeholder="Enter image URL"
+                className="w-full px-4 py-2 border-2 border-black dark:border-white rounded-lg bg-white dark:bg-black text-black dark:text-white mb-4"
+              />
+              {newPhotoUrl && (
+                <img
+                  src={newPhotoUrl}
+                  alt="Preview"
+                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-2 border-black dark:border-white"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
+              )}
+              <div className="flex gap-3 justify-end">
+                <button
+                  onClick={() => {
+                    setEditingPhoto(false);
+                    setNewPhotoUrl(user?.photoURL || '');
+                  }}
+                  className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleUpdatePhoto}
+                  className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Admin Rank Management Section */}
+        {isAdminUser && (
+          <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 dark:from-yellow-900 dark:to-yellow-800 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-yellow-400 dark:border-yellow-600">
+            <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 flex items-center">
+              <Crown className="mr-3 text-yellow-600 dark:text-yellow-400" size={24} />
+              Admin Rank Management
+            </h2>
+            <div className="space-y-4">
+              <div className="flex flex-col sm:flex-row gap-3">
+                <input
+                  type="text"
+                  placeholder="User Email"
+                  value={targetUserEmail}
+                  onChange={(e) => setTargetUserEmail(e.target.value)}
+                  className="flex-1 px-4 py-2 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg bg-white dark:bg-black text-black dark:text-white"
+                />
+                <select
+                  value={newRank}
+                  onChange={(e) => setNewRank(e.target.value)}
+                  className="px-4 py-2 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg bg-white dark:bg-black text-black dark:text-white"
+                >
+                  <option value="">Select Rank</option>
+                  <option value="admin">Admin</option>
+                  <option value="moderator">Moderator</option>
+                  <option value="vip">VIP</option>
+                  <option value="premium">Premium</option>
+                </select>
+                <button
+                  onClick={handleUpdateRank}
+                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-2 rounded-lg transition-colors"
+                >
+                  Assign Rank
+                </button>
+              </div>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Note: Only you (ghryslt@gmail.com) can assign ranks to users.
+              </p>
+            </div>
+          </div>
+        )}
 
         {/* Stats Section */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
@@ -119,12 +325,12 @@ const Profile = () => {
           <div className="bg-gray-800 dark:bg-gray-200 rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-black border-2 border-gray-800 dark:border-gray-200">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">{t('profile.memberSince')}</p>
+                <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">Rank</p>
                 <p className="text-lg sm:text-xl font-bold">
-                  {user?.metadata?.createdAt ? new Date(user.metadata.createdAt).getFullYear() : '2024'}
+                  {userRank ? userRank.toUpperCase() : 'None'}
                 </p>
               </div>
-              <Star size={24} sm:size={32} className="text-gray-500 dark:text-gray-500" />
+              <Crown size={24} sm:size={32} className="text-gray-500 dark:text-gray-500" />
             </div>
           </div>
 
@@ -155,9 +361,12 @@ const Profile = () => {
                 >
                   {anime.coverImage && (
                     <img
-                      src={anime.coverImage}
+                      src={anime.coverImage.large || anime.coverImage.medium || anime.coverImage}
                       alt={typeof anime.title === 'object' ? (anime.title.english || anime.title.romaji) : anime.title}
                       className="w-full h-32 sm:h-40 object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                      }}
                     />
                   )}
                   <div className="p-2 sm:p-3">

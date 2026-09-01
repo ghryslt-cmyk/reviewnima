@@ -464,7 +464,7 @@ export const getAnimeCommentReplies = async (animeId, commentId) => {
 };
 
 // Save anime to user profile
-export const saveAnimeToProfile = async (userId, animeData) => {
+export const saveAnimeToProfile = async (userId, animeData, userEmail) => {
   try {
     const userDocRef = doc(db, 'users', userId);
     const userDoc = await getDoc(userDocRef);
@@ -486,6 +486,7 @@ export const saveAnimeToProfile = async (userId, animeData) => {
     } else {
       // Create user document if it doesn't exist (using userId as document ID)
       await setDoc(userDocRef, {
+        email: userEmail,
         savedAnime: [{
           id: animeData.id,
           title: animeData.title,
@@ -545,6 +546,95 @@ export const reportAnime = async (reportData) => {
   } catch (error) {
     console.error('Error reporting anime:', error);
     throw new Error('Failed to submit report. Please try again.');
+  }
+};
+
+// Update user display name and photo URL
+export const updateUserDisplayName = async (userId, displayName) => {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    const userDoc = await getDoc(userDocRef);
+    
+    if (userDoc.exists()) {
+      await updateDoc(userDocRef, { displayName });
+    } else {
+      await setDoc(userDocRef, { displayName });
+    }
+  } catch (error) {
+    console.error('Error updating display name:', error);
+    throw new Error('Failed to update display name. Please try again.');
+  }
+};
+
+export const updateUserPhotoURL = async (userId, photoURL) => {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    const userDoc = await getDoc(userDocRef);
+    
+    if (userDoc.exists()) {
+      await updateDoc(userDocRef, { photoURL });
+    } else {
+      await setDoc(userDocRef, { photoURL });
+    }
+  } catch (error) {
+    console.error('Error updating photo URL:', error);
+    throw new Error('Failed to update photo. Please try again.');
+  }
+};
+
+// Rank management functions
+export const updateUserRank = async (userId, rank) => {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    const userDoc = await getDoc(userDocRef);
+    
+    if (userDoc.exists()) {
+      await updateDoc(userDocRef, { rank });
+    } else {
+      await setDoc(userDocRef, { rank });
+    }
+  } catch (error) {
+    console.error('Error updating user rank:', error);
+    throw new Error('Failed to update rank. Please try again.');
+  }
+};
+
+export const getUserRank = async (userId) => {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    const userDoc = await getDoc(userDocRef);
+    
+    if (userDoc.exists()) {
+      const userData = userDoc.data();
+      return userData.rank || null;
+    }
+    return null;
+  } catch (error) {
+    console.error('Error getting user rank:', error);
+    return null;
+  }
+};
+
+// Check if user can assign ranks (only admin)
+export const canAssignRank = (userEmail) => {
+  return userEmail === 'ghryslt@gmail.com';
+};
+
+// Get user by email (for admin rank assignment)
+export const getUserByEmail = async (email) => {
+  try {
+    const usersRef = collection(db, 'users');
+    const q = query(usersRef, where('email', '==', email));
+    const querySnapshot = await getDocs(q);
+    
+    if (!querySnapshot.empty) {
+      const userDoc = querySnapshot.docs[0];
+      return { id: userDoc.id, ...userDoc.data() };
+    }
+    return null;
+  } catch (error) {
+    console.error('Error getting user by email:', error);
+    return null;
   }
 };
 

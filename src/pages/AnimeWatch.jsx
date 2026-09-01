@@ -225,7 +225,7 @@ const AnimeWatch = memo(() => {
           id,
           title: anime.title,
           coverImage: anime.coverImage
-        });
+        }, user.email);
         setIsSaved(true);
       }
     } catch (error) {
