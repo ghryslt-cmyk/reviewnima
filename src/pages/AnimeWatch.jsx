@@ -1,22 +1,27 @@
 import { useState, useEffect, useCallback, memo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getAnimeById } from '../lib/anilist';
-import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode } from '../lib/firebase';
+import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode, getComments, addComment } from '../lib/firebase';
 import WatchLayout from '../components/WatchLayout';
-import { Play, ThumbsUp, ThumbsDown, Share, Bookmark, Flag, Loader2, X, AlertCircle, Heart } from 'lucide-react';
+import { Play, ThumbsUp, ThumbsDown, Share, Bookmark, Flag, Loader2, X, AlertCircle, Heart, MessageSquare, Send, User } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { useAuth } from '../context/AuthContext';
 import { useTranslation } from '../lib/translations';
 
 const AnimeWatch = memo(() => {
   const { id } = useParams();
   const { language } = useLanguage();
   const { t } = useTranslation(language);
+  const { user, isAuthenticated } = useAuth();
   const [anime, setAnime] = useState(null);
   const [episodes, setEpisodes] = useState([]);
   const [currentEpisode, setCurrentEpisode] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [showShareModal, setShowShareModal] = useState(false);
+  const [comments, setComments] = useState([]);
+  const [commentText, setCommentText] = useState('');
+  const [submittingComment, setSubmittingComment] = useState(false);
 
   const fetchAnimeData = useCallback(async () => {
     try {
@@ -69,6 +74,41 @@ const AnimeWatch = memo(() => {
     navigator.clipboard.writeText(window.location.href);
     setShowShareModal(false);
   }, []);
+
+  const handleSubmitComment = useCallback(async (e) => {
+    e.preventDefault();
+    if (!commentText.trim() || !isAuthenticated) return;
+
+    setSubmittingComment(true);
+    try {
+      await addComment(id, {
+        text: commentText,
+        author: user.displayName,
+        authorEmail: user.email,
+        authorPhotoURL: user.photoURL
+      });
+      
+      const commentsData = await getComments(id);
+      setComments(commentsData);
+      setCommentText('');
+    } catch (error) {
+      console.error('Error adding comment:', error);
+    } finally {
+      setSubmittingComment(false);
+    }
+  }, [id, isAuthenticated, user]);
+
+  useEffect(() => {
+    const fetchComments = async () => {
+      try {
+        const commentsData = await getComments(id);
+        setComments(commentsData);
+      } catch (error) {
+        console.error('Error fetching comments:', error);
+      }
+    };
+    fetchComments();
+  }, [id]);
 
   if (loading) {
     return (
@@ -178,7 +218,10 @@ const AnimeWatch = memo(() => {
               )}
               <div className="flex-grow min-w-0">
                 <h1 className="text-2xl font-bold text-white mb-2">
-                  {anime.title.english || anime.title.romaji}
+                  {language === 'id' && anime.title?.english ? anime.title.english :
+                   language === 'en' && anime.title?.english ? anime.title.english :
+                   language === 'jp' && anime.title?.native ? anime.title.native :
+                   anime.title.english || anime.title.romaji}
                 </h1>
                 {currentEpisode && (
                   <p className="text-lg text-gray-300 mb-2">
@@ -186,8 +229,10 @@ const AnimeWatch = memo(() => {
                     {currentEpisode.title && `: ${currentEpisode.title}`}
                   </p>
                 )}
-                {anime.title.native && (
-                  <p className="text-gray-400 mb-2">{anime.title.native}</p>
+                {(language === 'jp' ? anime.title?.romaji : anime.title?.native) && (
+                  <p className="text-gray-400 mb-2">
+                    {language === 'jp' ? anime.title?.romaji : anime.title?.native}
+                  </p>
                 )}
               </div>
             </div>
@@ -218,22 +263,84 @@ const AnimeWatch = memo(() => {
             {/* Comments */}
             <div>
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-bold text-white">Comments</h3>
-                <button className="text-gray-400 hover:text-white text-sm">Sort by: Newest</button>
+                <h3 className="text-lg font-bold text-white flex items-center">
+                  <MessageSquare className="mr-2" size={20} />
+                  Comments ({comments.length})
+                </h3>
               </div>
-              <div className="bg-gray-800 rounded-lg p-4 mb-4">
-                <textarea
-                  placeholder="Add a comment..."
-                  className="w-full bg-gray-900 text-white rounded-lg p-3 min-h-[80px] resize-none border border-gray-700 focus:outline-none focus:border-gray-600"
-                />
-                <div className="flex justify-end mt-2">
-                  <button className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors">
-                    Comment
-                  </button>
+              
+              {/* Comment Form */}
+              {isAuthenticated ? (
+                <form onSubmit={handleSubmitComment} className="mb-6">
+                  <div className="flex space-x-4">
+                    {user?.photoURL && (
+                      <img
+                        src={user.photoURL}
+                        alt={user.displayName}
+                        className="w-10 h-10 rounded-full border-2 border-gray-600"
+                      />
+                    )}
+                    <div className="flex-grow">
+                      <textarea
+                        value={commentText}
+                        onChange={(e) => setCommentText(e.target.value)}
+                        placeholder="Add a comment..."
+                        className="w-full p-4 border-2 border-gray-700 rounded-lg bg-gray-900 text-white focus:ring-2 focus:ring-gray-500 focus:border-transparent resize-none"
+                        rows="3"
+                      />
+                      <div className="mt-2 flex justify-end">
+                        <button
+                          type="submit"
+                          disabled={submittingComment || !commentText.trim()}
+                          className="flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white disabled:bg-gray-800 disabled:text-gray-500 px-6 py-2 rounded-lg transition-colors"
+                        >
+                          <Send size={18} />
+                          <span>{submittingComment ? 'Sending...' : 'Send Comment'}</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              ) : (
+                <div className="mb-6 p-4 bg-gray-800 rounded-lg text-center border-2 border-gray-700">
+                  <p className="text-white">
+                    Please <Link to="/login" className="text-cyan-400 hover:text-cyan-300 underline">login</Link> to leave a comment.
+                  </p>
                 </div>
-              </div>
-              <div className="text-gray-400 text-center py-8">
-                No comments yet. Be the first to comment!
+              )}
+
+              {/* Comments List */}
+              <div className="space-y-4">
+                {comments.length > 0 ? (
+                  comments.map(comment => (
+                    <div key={comment.id} className="flex space-x-4 p-4 bg-gray-800 rounded-lg">
+                      {comment.authorPhotoURL ? (
+                        <img
+                          src={comment.authorPhotoURL}
+                          alt={comment.author}
+                          className="w-10 h-10 rounded-full"
+                        />
+                      ) : (
+                        <div className="w-10 h-10 rounded-full bg-cyan-600 flex items-center justify-center text-white font-bold">
+                          {comment.author?.charAt(0) || 'U'}
+                        </div>
+                      )}
+                      <div className="flex-grow">
+                        <div className="flex items-center space-x-2 mb-2">
+                          <span className="font-bold text-white">{comment.author}</span>
+                          <span className="text-sm text-gray-400">
+                            {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}
+                          </span>
+                        </div>
+                        <p className="text-gray-300">{comment.text}</p>
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <div className="text-center py-8 text-gray-400">
+                    No comments yet. Be the first to comment!
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -246,19 +353,19 @@ const AnimeWatch = memo(() => {
                 <AlertCircle className="text-yellow-500 flex-shrink-0 mt-0.5" size={20} />
                 <div>
                   <h4 className="text-white font-semibold mb-1">Important Notice</h4>
-                  <p className="text-gray-400 text-sm">Please report any broken videos or issues you encounter.</p>
+                  <p className="text-gray-400 text-sm">Jika video eps anime yang kalian tonton tidak bisa berjalan maka limit Bandwidth sudah penuh, saya memakai free cloud storage jadi akan ada limit Bandwidth harian. Jika kalian ingin website ini bisa streaming semua anime tanpa limit Bandwidth harian, kalian bisa donasi di bawah ini....</p>
                 </div>
               </div>
             </div>
 
             {/* Donation Banner */}
-            <div className="bg-gradient-to-r from-purple-900 to-pink-900 rounded-lg p-4 mb-4">
+            <div className="bg-gradient-to-r from-cyan-600 to-teal-600 rounded-lg p-4 mb-4">
               <div className="flex items-center gap-3 mb-2">
-                <Heart className="text-pink-400" size={20} />
+                <Heart className="text-white" size={20} />
                 <h4 className="text-white font-semibold">Support Us</h4>
               </div>
-              <p className="text-gray-300 text-sm mb-3">Help keep this site running by donating.</p>
-              <button className="w-full px-4 py-2 bg-white text-purple-900 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <p className="text-gray-100 text-sm mb-3">Help keep this site running by donating.</p>
+              <button className="w-full px-4 py-2 bg-white text-cyan-700 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                 Donate Now
               </button>
             </div>
@@ -266,7 +373,7 @@ const AnimeWatch = memo(() => {
             {/* Episode List - Text Only */}
             <div className="bg-gray-800 rounded-lg p-4">
               <h3 className="text-lg font-bold text-white mb-4">Episodes ({episodes.length})</h3>
-              <div className="space-y-2 max-h-[600px] overflow-y-auto">
+              <div className="space-y-2">
                 {episodes.map((episode) => (
                   <button
                     key={episode.id}

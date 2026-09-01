@@ -1,5 +1,4 @@
 import { memo, useEffect } from 'react';
-import WatchHeader from './WatchHeader';
 
 const WatchLayout = memo(({ children }) => {
   useEffect(() => {
@@ -16,7 +15,6 @@ const WatchLayout = memo(({ children }) => {
 
   return (
     <div className="min-h-screen bg-black">
-      <WatchHeader />
       {children}
     </div>
   );
