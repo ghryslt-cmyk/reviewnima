@@ -1,12 +1,89 @@
 {
-  "version": 1788186033465,
-  "fetchedAt": "2026-08-31T14:20:33.465Z",
+  "version": 1788220953847,
+  "fetchedAt": "2026-09-01T00:02:33.847Z",
   "news": [
+    {
+      "title": "Inukami! Novel Illustrator Kanna Wakatsuki Plans to Sue Publisher WiZH for Alleged Copyright Infringement",
+      "description": "Wakatsuki claims that WiZH used unauthorized artwork for complete edition volumes of Inukami! novels",
+      "fullDescription": "Wakatsuki claims that WiZH used unauthorized artwork for complete edition volumes of <cite>Inukami!</cite> novels",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-31/inukami-novel-illustrator-kanna-wakatsuki-plans-to-sue-publisher-wizh-for-alleged-copyright-/.241161",
+      "pubDate": "Mon, 31 Aug 2026 16:05:46 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241161/wizh-inumaki-vol-1.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241161"
+    },
+    {
+      "title": "Sony Launches Ad-Supported Live TV on PlayStation 5 in U.S.",
+      "description": "Free service includes anime, movies, TV shows, sports, news, more",
+      "fullDescription": "Free service includes anime, movies, TV shows, sports, news, more",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-31/sony-launches-ad-supported-live-tv-on-playstation-5-in-u.s/.241166",
+      "pubDate": "Mon, 31 Aug 2026 14:12:12 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241166"
+    },
+    {
+      "title": "Pluto TV Adds Mononoke, Terror in Resonance, Kabaneri of the Iron Fortress, More Anime",
+      "description": "Streaming service launches linear channels \"It's Anime,\" \"Big A Anime\"",
+      "fullDescription": "Streaming service launches linear channels \"It's Anime,\" \"Big A Anime\"",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-31/pluto-tv-adds-mononoke-terror-in-resonance-kabaneri-of-the-iron-fortress-more-anime/.241112",
+      "pubDate": "Mon, 31 Aug 2026 13:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241112/kabaneri.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241112"
+    },
+    {
+      "title": "Kodansha Annnounces Buzz or Die Visual Novel for PC",
+      "description": "Indie game creator Bon's game launches on Steam in 2026",
+      "fullDescription": "Indie game creator Bon's game launches on Steam in 2026",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-31/kodansha-annnounces-buzz-or-die-visual-novel-for-pc/.241163",
+      "pubDate": "Mon, 31 Aug 2026 12:02:41 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241163"
+    },
+    {
+      "title": "Japan's Video Game Rankings, August 17-23",
+      "description": "Steins;Gate Re:Boot for Switch 2 debuts at #4, for PS5 at #5",
+      "fullDescription": "<cite>Steins;Gate Re:Boot</cite> for Switch 2 debuts at #4, for PS5 at #5",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-31/japan-video-game-rankings-august-17-23/.241156",
+      "pubDate": "Mon, 31 Aug 2026 12:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241156"
+    },
+    {
+      "title": "Manga Up! Global Adds Escape from the Seventh Night, Daughter of the Dragon God in English",
+      "description": "Escape from the Seventh Night is based on Takuma Sakai's Nanoka no Yoru o Nukedashite light novel series with character designs by Nanna Fujimi",
+      "fullDescription": "<cite>Escape from the Seventh Night</cite> is based on Takuma Sakai's <cite>Nanoka no Yoru o Nukedashite</cite> light novel series with character designs by Nanna Fujimi",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-31/manga-up-global-adds-escape-from-the-seventh-night-daughter-of-the-dragon-god-in-english/.241110",
+      "pubDate": "Mon, 31 Aug 2026 11:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241110/948.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241110"
+    },
+    {
+      "title": "My Stepmother and Stepsisters Aren't Wicked TV Anime Reveals 3 More Cast Members",
+      "description": "Riho Sugiyama as Takiko Mizuse, Ai Kakuma as Homare Takanashi, Minami Tsuda as Chiyo Mitsunaka",
+      "fullDescription": "Riho Sugiyama as Takiko Mizuse, Ai Kakuma as Homare Takanashi, Minami Tsuda as Chiyo Mitsunaka",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-31/my-stepmother-and-stepsisters-arent-wicked-tv-anime-reveals-3-more-cast-members/.241160",
+      "pubDate": "Mon, 31 Aug 2026 10:32:36 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241160/takiko-mizuse.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241160"
+    },
     {
       "title": "Sony Music Entertainment Japan, GungHo Online Entertainment Form Capital, Business Alliance",
       "description": "Business alliance to possibly see joint development of games, development of new game projects including utilization of Sony IPs",
       "fullDescription": "Business alliance to possibly see joint development of games, development of new game projects including utilization of Sony IPs",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-30/sony-music-entertainment-japan-gungho-online-entertainment-form-capital-business-alliance/.241132",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-31/sony-music-entertainment-japan-gungho-online-entertainment-form-capital-business-alliance/.241132",
       "pubDate": "Mon, 31 Aug 2026 10:15:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
@@ -89,83 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241148/fate.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241148"
-    },
-    {
-      "title": "CloverWorks Produces New &#039;Pokemon: Wildcard&#039; Movie for 2027",
-      "description": "The Pokemon Company announced a new anime film titled Pokemon: Wildcard during the Pokemon World Championships 2026 in San Francisco on Monday, revealing the main staff, announcement visual, and promotional video. The first new film in the Pokemon franchise in seven years is scheduled to premiere in...",
-      "fullDescription": "The Pokemon Company announced a new anime film titled Pokemon: Wildcard during the Pokemon World Championships 2026 in San Francisco on Monday, revealing the main staff, announcement visual, and promotional video. The first new film in the Pokemon franchise in seven years is scheduled to premiere in 2027. Katsuhiko Kitada (The First Slam Dunk episode director) is directing the film at CloverWorks. Akemi Hayashi (Lazarus) is designing the characters. STORY inc. is handling the planning and produc...",
-      "link": "https://myanimelist.net/news/74653487?_location=rss",
-      "pubDate": "Sun, 30 Aug 2026 23:10:16 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788156345-e482b5c83431dee713334006062d0e0f.jpeg",
-      "guid": "https://myanimelist.net/news/74653487?_location=rss"
-    },
-    {
-      "title": "Ikkado Ito's The Long Summer of August 31 Manga Gets TV Anime, Live-Action Series Adaptations",
-      "description": "SHAFT to produce anime adaptation",
-      "fullDescription": "SHAFT to produce anime adaptation",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-31/ikkado-ito-the-long-summer-of-august-31-manga-gets-tv-anime-live-action-series-adaptations/.241146",
-      "pubDate": "Mon, 31 Aug 2026 01:44:42 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241146/summer.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241146"
-    },
-    {
-      "title": "Pokémon: Wild Card Anime Film Announced for 2027",
-      "description": "CloverWorks animates 1st new anime film in franchise in 6+ years",
-      "fullDescription": "CloverWorks animates 1st new anime film in franchise in 6+ years",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-31/pokemon-wild-card-anime-film-announced-for-2027/.241147",
-      "pubDate": "Mon, 31 Aug 2026 01:36:06 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241147/pokemon-wild-card-visual.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241147"
-    },
-    {
-      "title": "Manga &#039;8-gatsu 31-nichi no Long Summer&#039; Gets TV Anime, Live-Action Adaptation",
-      "description": "The official X account for Ikkado Itou&#039;s 8-gatsu 31-nichi no Long Summer (The Long Summer of August 31) manga announced a television anime adaptation and live-action television drama on Monday, revealing an ultra teaser visual (pictured). Shaft, the animation studio known for Mahou Shoujo Madok...",
-      "fullDescription": "The official X account for Ikkado Itou&#039;s 8-gatsu 31-nichi no Long Summer (The Long Summer of August 31) manga announced a television anime adaptation and live-action television drama on Monday, revealing an ultra teaser visual (pictured). Shaft, the animation studio known for Mahou Shoujo Madoka★Magica (Puella Magi Madoka Magica) and Monogatari series, is producing the anime series. Itou began serializing the sci-fi comedy manga in Morning magazine in March 2023. Kodansha published the 13th...",
-      "link": "https://myanimelist.net/news/74653274?_location=rss",
-      "pubDate": "Sun, 30 Aug 2026 21:15:09 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788149619-ce00288786ad174e7581d1009e681849.jpeg",
-      "guid": "https://myanimelist.net/news/74653274?_location=rss"
-    },
-    {
-      "title": "My Happy Marriage Anime Special Airs on October 25 With All 3 Episodes",
-      "description": "New teaser, cast member, ending theme song artist also revealed",
-      "fullDescription": "New teaser, cast member, ending theme song artist also revealed",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-30/my-happy-marriage-anime-special-airs-on-october-25-with-all-3-episodes/.241115",
-      "pubDate": "Sun, 30 Aug 2026 23:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241115/happymarriage.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241115"
-    },
-    {
-      "title": "Live-Action Wakako-zake Series Gets 10th Season Partly Set in Australia",
-      "description": "Rina Takeda returns to star as Wakako, a woman who explores places to drink",
-      "fullDescription": "Rina Takeda returns to star as Wakako, a woman who explores places to drink",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-30/live-action-wakako-zake-series-gets-10th-season-partly-set-in-australia/.241140",
-      "pubDate": "Sun, 30 Aug 2026 22:21:11 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241140/img-sns.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241140"
-    },
-    {
-      "title": "Kono Oto Tomare! Manga to End in 3 Chapters",
-      "description": "Series debuted in August 2012",
-      "fullDescription": "Series debuted in August 2012",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-30/kono-oto-tomare-manga-to-end-in-3-chapters/.241138",
-      "pubDate": "Sun, 30 Aug 2026 15:45:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241138"
     }
   ],
   "total": 15
