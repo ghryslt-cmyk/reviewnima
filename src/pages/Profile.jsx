@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank } from '../lib/firebase';
+import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank, getUserProfile } from '../lib/firebase';
 import { User, Mail, BookOpen, Star, Play, Trash2, Edit, Camera, Crown, Shield } from 'lucide-react';
 
 const Profile = () => {
@@ -17,6 +17,7 @@ const Profile = () => {
   const [editingPhoto, setEditingPhoto] = useState(false);
   const [newName, setNewName] = useState('');
   const [newPhotoUrl, setNewPhotoUrl] = useState('');
+  const [firestoreUserData, setFirestoreUserData] = useState(null);
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -34,8 +35,12 @@ const Profile = () => {
         const rank = await getUserRank(user.uid);
         setUserRank(rank);
         
-        setNewName(user?.displayName || '');
-        setNewPhotoUrl(user?.photoURL || '');
+        // Fetch user profile data from Firestore as fallback
+        const profileData = await getUserProfile(user.uid);
+        setFirestoreUserData(profileData);
+        
+        setNewName(user?.displayName || profileData?.displayName || '');
+        setNewPhotoUrl(user?.photoURL || profileData?.photoURL || '');
       } catch (error) {
         console.error('Error fetching user data:', error);
       } finally {
@@ -51,8 +56,11 @@ const Profile = () => {
     try {
       await updateUserDisplayName(user.uid, newName);
       setEditingName(false);
+      // Refresh Firestore data
+      const profileData = await getUserProfile(user.uid);
+      setFirestoreUserData(profileData);
       await refreshUser();
-      setNewName(user?.displayName || '');
+      setNewName(user?.displayName || profileData?.displayName || '');
     } catch (error) {
       console.error('Error updating name:', error);
       alert('Failed to update name');
@@ -64,8 +72,11 @@ const Profile = () => {
     try {
       await updateUserPhotoURL(user.uid, newPhotoUrl);
       setEditingPhoto(false);
+      // Refresh Firestore data
+      const profileData = await getUserProfile(user.uid);
+      setFirestoreUserData(profileData);
       await refreshUser();
-      setNewPhotoUrl(user?.photoURL || '');
+      setNewPhotoUrl(user?.photoURL || profileData?.photoURL || '');
     } catch (error) {
       console.error('Error updating photo:', error);
       alert('Failed to update photo');
@@ -100,11 +111,11 @@ const Profile = () => {
         <div className="bg-white dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-black dark:border-white">
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 sm:md:space-x-8">
             <div className="flex-shrink-0 relative">
-              {user?.photoURL ? (
+              {(user?.photoURL || firestoreUserData?.photoURL) ? (
                 <div className={`relative ${isAdminRank ? 'ring-4 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white' : ''}`}>
                   <img
-                    src={user.photoURL}
-                    alt={user.displayName}
+                    src={user?.photoURL || firestoreUserData?.photoURL}
+                    alt={user?.displayName || firestoreUserData?.displayName}
                     className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-black dark:border-white shadow-xl"
                   />
                   {isAdminRank && (
@@ -115,7 +126,7 @@ const Profile = () => {
                 </div>
               ) : (
                 <div className={`w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black text-3xl sm:text-4xl font-bold shadow-xl ${isAdminRank ? 'ring-4 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white' : ''}`}>
-                  {user?.displayName?.charAt(0) || 'U'}
+                  {(user?.displayName || firestoreUserData?.displayName)?.charAt(0) || 'U'}
                   {isAdminRank && (
                     <div className="absolute -top-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg">
                       <Crown className="text-black" size={20} />
@@ -160,7 +171,7 @@ const Profile = () => {
                 ) : (
                   <>
                     <h1 className={`text-2xl sm:text-3xl font-bold mb-2 ${isAdminRank ? 'bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400 bg-clip-text text-transparent animate-pulse' : 'text-black dark:text-white'}`}>
-                      {user?.displayName || 'User'}
+                      {user?.displayName || firestoreUserData?.displayName || 'User'}
                     </h1>
                     <button
                       onClick={() => setEditingName(true)}

@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount, updateReview, addAnime, getAllAnime, deleteAnime, addAnimeEpisode, getAnimeEpisodes, updateAnimeEpisode, deleteAnimeEpisode, updateUserRank, getUserByEmail } from '../lib/firebase';
+import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount, updateReview, addAnime, getAllAnime, deleteAnime, addAnimeEpisode, getAnimeEpisodes, updateAnimeEpisode, deleteAnimeEpisode, updateUserRank, getUserByEmail, setDoc, doc, db } from '../lib/firebase';
 import { searchAnime, getAnimeById } from '../lib/anilist';
 import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users, Edit, Film, Trash2, Play, ChevronLeft, ChevronRight, Crown } from 'lucide-react';
 
@@ -92,13 +92,22 @@ const Admin = memo(() => {
     
     try {
       const targetUser = await getUserByEmail(targetUserEmail);
+      
       if (!targetUser) {
-        setRankMessage('User not found with this email. Make sure the user has saved anime or has activity in the app.');
-        return;
+        // Create user document if it doesn't exist
+        // Generate a simple document ID based on email (in production, you'd want a better approach)
+        const userId = targetUserEmail.replace(/[^a-zA-Z0-9]/g, '_');
+        await setDoc(doc(db, 'users', userId), {
+          email: targetUserEmail,
+          rank: newRank,
+          createdAt: new Date().toISOString()
+        });
+        setRankMessage(`User document created and rank ${newRank.toUpperCase()} assigned to ${targetUserEmail}`);
+      } else {
+        await updateUserRank(targetUser.id, newRank);
+        setRankMessage(`Rank ${newRank.toUpperCase()} assigned to ${targetUserEmail}`);
       }
       
-      await updateUserRank(targetUser.id, newRank);
-      setRankMessage(`Rank ${newRank.toUpperCase()} assigned to ${targetUserEmail}`);
       setTargetUserEmail('');
       setNewRank('');
       
