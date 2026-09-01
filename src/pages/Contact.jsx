@@ -1,5 +1,4 @@
-import { Mail, MessageSquare, Send } from 'lucide-react';
-import { useState } from 'react';
+import { Mail, MessageSquare } from 'lucide-react';
 import Layout from '../components/Layout';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
@@ -7,27 +6,6 @@ import { useTranslation } from '../lib/translations';
 const Contact = () => {
   const { language } = useLanguage();
   const { t } = useTranslation(language);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { name, email, message } = formData;
-    
-    const mailtoLink = `mailto:morvissenter@gmail.com?subject=Contact from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-    
-    window.location.href = mailtoLink;
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
     <Layout>
@@ -66,60 +44,6 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{t('contact.sendMessage')}</h2>
-          <form className="space-y-6" onSubmit={handleSubmit}>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                {t('contact.name')}
-              </label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder={t('contact.namePlaceholder')}
-                required
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                {t('contact.emailLabel')}
-              </label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder={t('contact.emailPlaceholder')}
-                required
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                {t('contact.message')}
-              </label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows="5"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder={t('contact.messagePlaceholder')}
-                required
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
-            >
-              <Send size={20} />
-              <span>{t('contact.sendButton')}</span>
-            </button>
-          </form>
-        </div>
       </div>
     </Layout>
   );

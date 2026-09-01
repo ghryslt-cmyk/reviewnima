@@ -103,9 +103,13 @@ const Privacy = () => {
               <p>{t('privacy.assetCreditsDesc')}</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Homepage Video:</strong> <span dangerouslySetInnerHTML={{ __html: t('privacy.homepageVideo') }} /></li>
+                <li><strong>Anime Information:</strong> <span dangerouslySetInnerHTML={{ __html: t('privacy.animeInformation') }} /></li>
                 <li><strong>Seasonal Anime Banners:</strong> {t('privacy.seasonalBanners')}</li>
-                <li><strong>Anime Information:</strong> {t('privacy.animeInformation')}</li>
-                <li><strong>Icons:</strong> {t('privacy.icons')}</li>
+                <li><strong>Trending Anime:</strong> {t('privacy.trendingAnime')}</li>
+                <li><strong>Anime Schedule:</strong> <span dangerouslySetInnerHTML={{ __html: t('privacy.animeSchedule') }} /></li>
+                <li><strong>Icons:</strong> <span dangerouslySetInnerHTML={{ __html: t('privacy.icons') }} /></li>
+                <li><strong>Firebase:</strong> <span dangerouslySetInnerHTML={{ __html: t('privacy.firebase') }} /></li>
+                <li><strong>Axios:</strong> <span dangerouslySetInnerHTML={{ __html: t('privacy.axios') }} /></li>
               </ul>
               <p className="text-sm italic">{t('privacy.assetDisclaimer')}</p>
             </div>

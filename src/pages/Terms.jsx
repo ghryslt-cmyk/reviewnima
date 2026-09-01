@@ -98,9 +98,13 @@ const Terms = () => {
               <p>{t('terms.assetCreditsDesc')}</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Homepage Video:</strong> <span dangerouslySetInnerHTML={{ __html: t('terms.homepageVideo') }} /></li>
+                <li><strong>Anime Information:</strong> <span dangerouslySetInnerHTML={{ __html: t('terms.animeInformation') }} /></li>
                 <li><strong>Seasonal Anime Banners:</strong> {t('terms.seasonalBanners')}</li>
-                <li><strong>Anime Information:</strong> {t('terms.animeInformation')}</li>
-                <li><strong>Icons:</strong> {t('terms.icons')}</li>
+                <li><strong>Trending Anime:</strong> {t('terms.trendingAnime')}</li>
+                <li><strong>Anime Schedule:</strong> <span dangerouslySetInnerHTML={{ __html: t('terms.animeSchedule') }} /></li>
+                <li><strong>Icons:</strong> <span dangerouslySetInnerHTML={{ __html: t('terms.icons') }} /></li>
+                <li><strong>Firebase:</strong> <span dangerouslySetInnerHTML={{ __html: t('terms.firebase') }} /></li>
+                <li><strong>Axios:</strong> <span dangerouslySetInnerHTML={{ __html: t('terms.axios') }} /></li>
               </ul>
               <p className="text-sm italic">{t('terms.assetDisclaimer')}</p>
             </div>
