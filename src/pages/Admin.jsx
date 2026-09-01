@@ -92,21 +92,16 @@ const Admin = memo(() => {
     
     try {
       const targetUser = await getUserByEmail(targetUserEmail);
+      console.log('Admin - Found user:', targetUser, 'for email:', targetUserEmail);
       
       if (!targetUser) {
-        // Create user document if it doesn't exist
-        // Generate a simple document ID based on email (in production, you'd want a better approach)
-        const userId = targetUserEmail.replace(/[^a-zA-Z0-9]/g, '_');
-        await setDoc(doc(db, 'users', userId), {
-          email: targetUserEmail,
-          rank: newRank,
-          createdAt: new Date().toISOString()
-        });
-        setRankMessage(`User document created and rank ${newRank.toUpperCase()} assigned to ${targetUserEmail}`);
-      } else {
-        await updateUserRank(targetUser.id, newRank);
-        setRankMessage(`Rank ${newRank.toUpperCase()} assigned to ${targetUserEmail}`);
+        setRankMessage('User not found. The user must be logged in or have activity in the app to be found.');
+        return;
       }
+      
+      await updateUserRank(targetUser.id, newRank);
+      console.log('Admin - Rank assigned:', newRank, 'to user ID:', targetUser.id);
+      setRankMessage(`Rank ${newRank.toUpperCase()} assigned to ${targetUserEmail}`);
       
       setTargetUserEmail('');
       setNewRank('');

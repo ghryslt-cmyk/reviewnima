@@ -74,6 +74,7 @@ const Navbar = () => {
       if (isAuthenticated && user?.uid) {
         try {
           const rank = await getUserRank(user.uid);
+          console.log('Navbar - User rank:', rank, 'for user:', user.uid, 'email:', user.email);
           setUserRank(rank);
         } catch (error) {
           console.error('Error fetching user rank:', error);

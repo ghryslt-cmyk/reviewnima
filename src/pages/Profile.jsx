@@ -33,6 +33,7 @@ const Profile = () => {
         setSavedAnime(savedAnimeData);
         
         const rank = await getUserRank(user.uid);
+        console.log('Profile - User rank:', rank, 'for user:', user.uid);
         setUserRank(rank);
         
         // Fetch user profile data from Firestore as fallback
