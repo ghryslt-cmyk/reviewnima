@@ -2,8 +2,8 @@ import { useState, useEffect, useCallback, memo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getAnimeById } from '../lib/anilist';
 import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode } from '../lib/firebase';
-import Layout from '../components/Layout';
-import { Play, Star, Calendar, Clock, Film, ChevronLeft, ChevronRight, Loader2, Share, Heart, Plus, X } from 'lucide-react';
+import WatchLayout from '../components/WatchLayout';
+import { Play, ThumbsUp, ThumbsDown, Share, Bookmark, Flag, Loader2, X, AlertCircle, Heart } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
 
@@ -72,269 +72,219 @@ const AnimeWatch = memo(() => {
 
   if (loading) {
     return (
-      <Layout>
-        <div className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900">
+      <WatchLayout>
+        <div className="flex items-center justify-center min-h-screen bg-black">
           <div className="text-center">
-            <Loader2 className="animate-spin text-gray-600 mx-auto mb-4" size={48} />
-            <p className="text-gray-600 dark:text-gray-400">{t('animeWatch.loading')}</p>
+            <Loader2 className="animate-spin text-white mx-auto mb-4" size={48} />
+            <p className="text-white">{t('animeWatch.loading')}</p>
           </div>
         </div>
-      </Layout>
+      </WatchLayout>
     );
   }
 
   if (error || !anime) {
     return (
-      <Layout>
-        <div className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900">
+      <WatchLayout>
+        <div className="flex items-center justify-center min-h-screen bg-black">
           <div className="text-center">
-            <p className="text-red-600 dark:text-red-400 text-lg mb-4">{error || t('animeWatch.animeNotFound')}</p>
-            <Link to="/" className="text-gray-600 hover:text-gray-900 hover:underline">
+            <p className="text-red-400 text-lg mb-4">{error || t('animeWatch.animeNotFound')}</p>
+            <Link to="/" className="text-white hover:text-gray-300 hover:underline">
               {t('animeWatch.returnHome')}
             </Link>
           </div>
         </div>
-      </Layout>
+      </WatchLayout>
     );
   }
 
   return (
-    <Layout>
-      {/* Hero Banner */}
-      <div className="relative min-h-[500px] overflow-hidden bg-gradient-to-b from-gray-800 to-gray-900">
-        {anime.bannerImage && (
-          <div className="absolute inset-0 z-0">
-            <img
-              src={anime.bannerImage}
-              alt={anime.title.english || anime.title.romaji}
-              className="w-full h-full object-cover opacity-40"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/80 to-transparent"></div>
-          </div>
-        )}
-        
-        <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-6 items-end">
+    <WatchLayout>
+      <div className="w-full bg-black">
+        {/* Main Layout - CSS Grid 2 Columns */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 px-4 py-6 max-w-[1920px] mx-auto">
+          {/* Main Content - Left Column (75%) */}
+          <div className="lg:col-span-3 min-w-0">
+            {/* Video Player */}
+            <div className="w-full aspect-video bg-black flex items-center justify-center mb-4">
+              {currentEpisode ? (
+                currentEpisode.videoUrl.match(/\.(mp4|webm|ogg|m3u8|mpd)(\?.*)?$/i) ? (
+                  <video
+                    src={currentEpisode.videoUrl}
+                    className="w-full h-full max-w-full"
+                    controls
+                    autoPlay
+                    title={`Episode ${currentEpisode.episodeNumber}`}
+                    allowFullScreen
+                  />
+                ) : (
+                  <iframe
+                    src={currentEpisode.videoUrl}
+                    className="w-full h-full max-w-full"
+                    allowFullScreen
+                    title={`Episode ${currentEpisode.episodeNumber}`}
+                    allow="autoplay; fullscreen"
+                    scrolling="no"
+                    frameBorder="0"
+                  />
+                )
+              ) : (
+                <div className="w-full aspect-video flex items-center justify-center bg-gray-900">
+                  <div className="text-center">
+                    <Play size={48} className="mx-auto mb-4 opacity-50 text-gray-500" />
+                    <p className="text-lg text-white">{t('animeWatch.noEpisodes')}</p>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Action Buttons */}
+            <div className="flex flex-wrap items-center gap-2 mb-4">
+              <button className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors">
+                <ThumbsUp size={18} />
+                <span>Like</span>
+              </button>
+              <button className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors">
+                <ThumbsDown size={18} />
+                <span>Dislike</span>
+              </button>
+              <button
+                onClick={handleShare}
+                className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors"
+              >
+                <Share size={18} />
+                <span>Share</span>
+              </button>
+              <button className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors">
+                <Bookmark size={18} />
+                <span>Save</span>
+              </button>
+              <button className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors">
+                <Flag size={18} />
+                <span>Report</span>
+              </button>
+            </div>
+
+            {/* Content Information */}
+            <div className="flex gap-4 mb-4">
               {anime.coverImage?.extraLarge && (
-                <div className="flex-shrink-0 animate-fade-in-up">
+                <div className="flex-shrink-0">
                   <img
                     src={anime.coverImage.extraLarge}
                     alt={anime.title.english || anime.title.romaji}
-                    className="w-40 h-60 sm:w-48 sm:h-72 object-cover rounded-xl shadow-2xl border-4 border-white/20 backdrop-blur-sm hover:scale-105 transition-transform duration-500"
+                    className="w-32 h-48 object-cover rounded-lg"
                   />
                 </div>
               )}
-              <div className="flex-grow text-white animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3">
+              <div className="flex-grow min-w-0">
+                <h1 className="text-2xl font-bold text-white mb-2">
                   {anime.title.english || anime.title.romaji}
                 </h1>
-                {anime.title.native && (
-                  <p className="text-lg sm:text-xl text-gray-300 mb-4">{anime.title.native}</p>
+                {currentEpisode && (
+                  <p className="text-lg text-gray-300 mb-2">
+                    {t('animeWatch.episode')} {currentEpisode.episodeNumber}
+                    {currentEpisode.title && `: ${currentEpisode.title}`}
+                  </p>
                 )}
-                <div className="flex flex-wrap gap-3 mb-4">
-                  {anime.genres?.slice(0, 5).map((genre) => (
-                    <span
-                      key={genre}
-                      className="px-3 py-1 bg-gray-700 rounded-full text-sm border border-gray-600"
-                    >
-                      {genre}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex flex-wrap gap-4 text-sm sm:text-base text-gray-300">
-                  <div className="flex items-center gap-2">
-                    <Star className="text-yellow-500" size={18} fill="currentColor" />
-                    <span>{anime.averageScore ? (anime.averageScore / 10).toFixed(1) : 'N/A'}/10</span>
-                  </div>
-                  {anime.season && anime.seasonYear && (
-                    <div className="flex items-center gap-2">
-                      <Calendar size={18} />
-                      <span>{anime.season} {anime.seasonYear}</span>
-                    </div>
-                  )}
-                  {anime.episodes && (
-                    <div className="flex items-center gap-2">
-                      <Film size={18} />
-                      <span>{anime.episodes} {t('animeWatch.episodes')}</span>
-                    </div>
-                  )}
-                  {anime.duration && (
-                    <div className="flex items-center gap-2">
-                      <Clock size={18} />
-                      <span>{anime.duration} min</span>
-                    </div>
-                  )}
-                </div>
+                {anime.title.native && (
+                  <p className="text-gray-400 mb-2">{anime.title.native}</p>
+                )}
               </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Video Player Section */}
-      <div className="px-4 sm:px-6 lg:px-8 py-8 bg-gray-900">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-            {/* Main Video Area */}
-            <div className="lg:col-span-3">
-              <div className="bg-black rounded-2xl overflow-hidden shadow-2xl">
-                {currentEpisode ? (
-                  <>
-                    <div className="aspect-video w-full bg-black flex items-center justify-center">
-                      {currentEpisode.videoUrl.match(/\.(mp4|webm|ogg|m3u8|mpd)(\?.*)?$/i) ? (
-                        <video
-                          src={currentEpisode.videoUrl}
-                          className="w-full h-full"
-                          controls
-                          autoPlay
-                          title={`Episode ${currentEpisode.episodeNumber}`}
-                          allowFullScreen
-                        />
-                      ) : (
-                        <iframe
-                          src={currentEpisode.videoUrl}
-                          className="w-full h-full"
-                          allowFullScreen
-                          title={`Episode ${currentEpisode.episodeNumber}`}
-                          allow="autoplay; fullscreen"
-                          scrolling="no"
-                          frameBorder="0"
-                        />
-                      )}
-                    </div>
-                    
-                    {/* Video Controls */}
-                    <div className="bg-gray-800 p-4 sm:p-6">
-                      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                        <div>
-                          <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">
-                            {t('animeWatch.episode')} {currentEpisode.episodeNumber}
-                            {currentEpisode.title && `: ${currentEpisode.title}`}
-                          </h3>
-                          <p className="text-gray-400 text-sm">
-                            {anime.title.english || anime.title.romaji}
-                          </p>
-                        </div>
-                        
-                        <div className="flex items-center gap-2">
-                          <button
-                            onClick={handlePreviousEpisode}
-                            disabled={episodes.findIndex(ep => ep.id === currentEpisode?.id) === 0}
-                            className="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 disabled:bg-gray-800 disabled:text-gray-500 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
-                          >
-                            <ChevronLeft size={20} />
-                            <span className="hidden sm:inline">{t('animeWatch.previous')}</span>
-                          </button>
-                          <button
-                            onClick={handleNextEpisode}
-                            disabled={episodes.findIndex(ep => ep.id === currentEpisode?.id) === episodes.length - 1}
-                            className="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 disabled:bg-gray-800 disabled:text-gray-500 text-white rounded-lg transition-colors disabled:cursor-not-allowed"
-                          >
-                            <span className="hidden sm:inline">{t('animeWatch.next')}</span>
-                            <ChevronRight size={20} />
-                          </button>
-                          <button
-                            onClick={handleShare}
-                            className="flex items-center gap-2 px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
-                          >
-                            <Share size={20} />
-                            <span className="hidden sm:inline">{t('animeWatch.share')}</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-              </>
-              ) : (
-                <div className="aspect-video flex items-center justify-center bg-gray-900">
-                  <div className="text-center">
-                    <div className="text-gray-500">
-                      <Play size={48} className="mx-auto mb-4 opacity-50" />
-                      <p className="text-lg text-white">{t('animeWatch.noEpisodes')}</p>
-                    </div>
-                  </div>
-                </div>
-              )}
-              </div>
-
-              {/* Episode Review */}
-              {currentEpisode?.review && (
-                <div className="mt-6 bg-gray-800 rounded-xl p-6">
-                  <h3 className="text-xl font-bold text-white mb-3">{t('animeWatch.episodeReview')}</h3>
-                  <p className="text-gray-300 leading-relaxed">{currentEpisode.review}</p>
-                </div>
-              )}
-            </div>
-
-            {/* Episode Sidebar */}
-            <div className="lg:col-span-1">
-              <div className="bg-gray-800 rounded-xl p-4 sticky top-4">
-                <h3 className="text-lg font-bold text-white mb-4 flex items-center">
-                  <Film size={20} className="mr-2" />
-                  {t('animeWatch.episodes')} ({episodes.length})
-                </h3>
-                <div className="space-y-2 max-h-[600px] overflow-y-auto pr-2">
-                  {episodes.map((episode) => (
-                    <button
-                      key={episode.id}
-                      onClick={() => handleEpisodeChange(episode)}
-                      className={`w-full p-3 rounded-lg text-left transition-all duration-200 hover:scale-102 ${
-                        currentEpisode?.id === episode.id
-                          ? 'bg-gray-700 text-white border-l-4 border-white'
-                          : 'bg-gray-900 text-gray-300 hover:bg-gray-700'
-                      }`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <div className="flex-shrink-0 w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center">
-                          <Play size={16} className={currentEpisode?.id === episode.id ? 'text-white' : 'text-gray-400'} />
-                        </div>
-                        <div className="flex-grow min-w-0">
-                          <div className="font-semibold text-sm truncate">{t('animeWatch.ep')} {episode.episodeNumber}</div>
-                          {episode.title && (
-                            <div className="text-xs text-gray-400 truncate">{episode.title}</div>
-                          )}
-                        </div>
-                      </div>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Description Section */}
-      {anime.description && (
-        <div className="px-4 sm:px-6 lg:px-8 py-8 bg-gray-900">
-          <div className="max-w-7xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">{t('animeWatch.synopsis')}</h3>
-            <div
-              className="prose prose-invert max-w-none text-gray-300 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: anime.description }}
-            />
-          </div>
-        </div>
-      )}
-
-      {/* Studios Section */}
-      {anime.studios?.nodes?.length > 0 && (
-        <div className="px-4 sm:px-6 lg:px-8 py-8 bg-gray-900">
-          <div className="max-w-7xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">{t('animeWatch.studios')}</h3>
-            <div className="flex flex-wrap gap-3">
-              {anime.studios.nodes.map((studio) => (
+            {/* Tags */}
+            <div className="flex flex-wrap gap-2 mb-4">
+              {anime.genres?.slice(0, 10).map((genre) => (
                 <span
-                  key={studio.name}
-                  className="px-4 py-2 bg-gray-800 rounded-lg border border-gray-700 text-white font-medium"
+                  key={genre}
+                  className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm"
                 >
-                  {studio.name}
+                  {genre}
                 </span>
               ))}
             </div>
+
+            {/* Description */}
+            {anime.description && (
+              <div className="mb-4">
+                <h3 className="text-lg font-bold text-white mb-2">{t('animeWatch.synopsis')}</h3>
+                <div
+                  className="prose prose-invert max-w-none text-gray-300 text-sm"
+                  dangerouslySetInnerHTML={{ __html: anime.description }}
+                />
+              </div>
+            )}
+
+            {/* Comments */}
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-lg font-bold text-white">Comments</h3>
+                <button className="text-gray-400 hover:text-white text-sm">Sort by: Newest</button>
+              </div>
+              <div className="bg-gray-800 rounded-lg p-4 mb-4">
+                <textarea
+                  placeholder="Add a comment..."
+                  className="w-full bg-gray-900 text-white rounded-lg p-3 min-h-[80px] resize-none border border-gray-700 focus:outline-none focus:border-gray-600"
+                />
+                <div className="flex justify-end mt-2">
+                  <button className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors">
+                    Comment
+                  </button>
+                </div>
+              </div>
+              <div className="text-gray-400 text-center py-8">
+                No comments yet. Be the first to comment!
+              </div>
+            </div>
+          </div>
+
+          {/* Sidebar - Right Column (25%) */}
+          <div className="lg:col-span-1 min-w-0">
+            {/* Alert */}
+            <div className="bg-gray-800 rounded-lg p-4 mb-4">
+              <div className="flex items-start gap-3">
+                <AlertCircle className="text-yellow-500 flex-shrink-0 mt-0.5" size={20} />
+                <div>
+                  <h4 className="text-white font-semibold mb-1">Important Notice</h4>
+                  <p className="text-gray-400 text-sm">Please report any broken videos or issues you encounter.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Donation Banner */}
+            <div className="bg-gradient-to-r from-purple-900 to-pink-900 rounded-lg p-4 mb-4">
+              <div className="flex items-center gap-3 mb-2">
+                <Heart className="text-pink-400" size={20} />
+                <h4 className="text-white font-semibold">Support Us</h4>
+              </div>
+              <p className="text-gray-300 text-sm mb-3">Help keep this site running by donating.</p>
+              <button className="w-full px-4 py-2 bg-white text-purple-900 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Donate Now
+              </button>
+            </div>
+
+            {/* Episode List - Text Only */}
+            <div className="bg-gray-800 rounded-lg p-4">
+              <h3 className="text-lg font-bold text-white mb-4">Episodes ({episodes.length})</h3>
+              <div className="space-y-2 max-h-[600px] overflow-y-auto">
+                {episodes.map((episode) => (
+                  <button
+                    key={episode.id}
+                    onClick={() => handleEpisodeChange(episode)}
+                    className={`w-full px-4 py-3 text-left rounded-lg transition-colors ${
+                      currentEpisode?.id === episode.id
+                        ? 'bg-gray-700 text-white'
+                        : 'bg-gray-900 text-gray-300 hover:bg-gray-700'
+                    }`}
+                  >
+                    <div className="font-medium">{t('animeWatch.episode')} {episode.episodeNumber}</div>
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      )}
+      </div>
 
       {/* Share Modal */}
       {showShareModal && (
@@ -373,7 +323,7 @@ const AnimeWatch = memo(() => {
           </div>
         </div>
       )}
-    </Layout>
+    </WatchLayout>
   );
 });
 
