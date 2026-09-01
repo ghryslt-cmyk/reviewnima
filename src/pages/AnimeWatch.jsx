@@ -82,16 +82,33 @@ const AnimeWatch = memo(() => {
 
   const handleSubmitComment = useCallback(async (e) => {
     e.preventDefault();
-    if (!commentText.trim() || !isAuthenticated) return;
+    console.log('handleSubmitComment called');
+    console.log('commentText:', commentText);
+    console.log('isAuthenticated:', isAuthenticated);
+    console.log('user:', user);
+    
+    if (!commentText.trim()) {
+      console.log('Comment text is empty');
+      return;
+    }
+    
+    if (!isAuthenticated) {
+      console.log('User not authenticated');
+      alert('Please login to comment');
+      return;
+    }
 
     setSubmittingComment(true);
     try {
+      console.log('Calling addAnimeComment with id:', id);
       const commentId = await addAnimeComment(id, {
         text: commentText,
         author: user.displayName,
         authorEmail: user.email,
         authorPhotoURL: user.photoURL
       });
+      
+      console.log('Comment added with ID:', commentId);
       
       // Add the new comment locally
       const newComment = {
@@ -103,15 +120,22 @@ const AnimeWatch = memo(() => {
         createdAt: new Date()
       };
       
-      setComments(prev => [newComment, ...prev]);
+      console.log('Adding new comment to state:', newComment);
+      setComments(prev => {
+        console.log('Previous comments:', prev);
+        const updated = [newComment, ...prev];
+        console.log('Updated comments:', updated);
+        return updated;
+      });
       setCommentText('');
+      console.log('Comment text cleared');
     } catch (error) {
       console.error('Error adding comment:', error);
-      alert('Failed to add comment. Please try again.');
+      alert('Failed to add comment: ' + error.message);
     } finally {
       setSubmittingComment(false);
     }
-  }, [id, isAuthenticated, user]);
+  }, [id, isAuthenticated, user, commentText]);
 
   useEffect(() => {
     const fetchComments = async () => {
