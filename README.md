@@ -1,18 +1,22 @@
-# Review Form Morviss - ReviewNima
-Ini adalah project website khusus untuk membagikan pengalaman dan reting pribadi saya mengenai anime anime yang ku tonton
+# ReviewNima - Personal Anime Review Platform
 
+Platform review anime pribadi dengan fitur lengkap untuk berbagi pengalaman menonton anime.
 
-## Features
+## Fitur Utama
 
-- **🏠 Homepage**: Displays popular anime from AniList and latest reviews
-- **📚 Reviews Page**: Browse all reviews sorted alphabetically (A-Z)
-- **🔍 Detail Review Pages**: Comprehensive anime information with detailed personal reviews
-- **💬 Comment System**: Logged-in users can leave comments on reviews
-- **🔐 Google Authentication**: Secure login with Google OAuth
-- **👤 User Profiles**: Personal profile pages for logged-in users
-- **⚙️ Admin Panel**: Secure admin panel for adding and managing reviews
-- **🎨 Modern UI**: Beautiful gradient design with dark mode support
-- **📱 Responsive**: Fully responsive design for all screen sizes
+- **🏠 Homepage**: Hero video background, review terbaru, dan navigasi halaman
+- **📰 Berita Anime**: Update trending anime, jadwal tayang harian, dan banner musiman
+- **📚 Halaman Review**: Semua review anime diurutkan alfabetis (A-Z)
+- **⭐ Top Favorites**: 10 anime favorit pribadi
+- **🔍 Detail Review**: Informasi lengkap anime dengan review personal dan komentar
+- **💬 Sistem Komentar**: Pengguna login bisa meninggalkan komentar
+- **🌐 Multi-Bahasa**: Dukungan Indonesia, Inggris, dan Jepang
+- **🔐 Google Authentication**: Login aman dengan Google OAuth
+- **👤 Profil Pengguna**: Halaman profil personal dengan riwayat review
+- **⚙️ Admin Panel**: Panel admin untuk mengelola review dan anime
+- **📺 Anime Library**: Perpustakaan anime dengan fitur tonton streaming
+- **🎨 Modern UI**: Desain gradient dengan dark mode support
+- **📱 Responsive**: Tampilan optimal di semua device
 
 ## Tech Stack
 
@@ -21,24 +25,40 @@ Ini adalah project website khusus untuk membagikan pengalaman dan reting pribadi
 - **Icons**: Lucide React
 - **Authentication**: Firebase Authentication (Google OAuth)
 - **Database**: Firebase Firestore
-- **API**: AniList GraphQL API
-- **Routing**: React Router DOM
+- **APIs**: 
+  - AniList GraphQL API (data anime)
+  - MyAnimeList API (jadwal anime harian)
 - **HTTP Client**: Axios
+- **Routing**: React Router DOM
+- **Deployment**: GitHub Pages
+
+## Data Sources & Credits
+
+- **AniList API** - Data anime, gambar, metadata
+- **MyAnimeList API** - Jadwal tayang anime harian
+- **Firebase** - Autentikasi dan database
+- **Lucide React** - Icon library (MIT License)
+- **monomogu (YouTube)** - Homepage background video
 
 ## Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn
+- Node.js (v16 atau lebih tinggi)
+- npm atau yarn
 - Firebase account
-- GitHub account (for deployment)
+- GitHub account (untuk deployment)
+
+## Installation
+
+```bash
+npm install
+npm run dev
+```
 
 ## License
 
-This project is for personal use. Feel free to modify and use it for your own anime review website.
+Project ini untuk penggunaan personal. Bebas dimodifikasi untuk website review anime Anda sendiri.
 
-## Credits
+## Contact
 
-- [AniList](https://anilist.co/) - Anime data API
-- [Firebase](https://firebase.google.com/) - Authentication and database
-- [TailwindCSS](https://tailwindcss.com/) - Styling framework
-- [Lucide](https://lucide.dev/) - Icon library
+- Email: morvissenter@gmail.com
+- YouTube: [@Morviss09](https://www.youtube.com/@Morviss09)
