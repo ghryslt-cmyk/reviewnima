@@ -123,14 +123,14 @@ const Profile = () => {
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 sm:md:space-x-8">
             <div className="flex-shrink-0 relative">
               {(user?.photoURL || firestoreUserData?.photoURL) ? (
-                <div className={`relative ${isAdminRank ? 'ring-4 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white' : ''}`}>
+                <div className={`relative rounded-full ${isAdminRank ? 'ring-4 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white' : ''}`}>
                   <img
                     src={user?.photoURL || firestoreUserData?.photoURL}
                     alt={user?.displayName || firestoreUserData?.displayName}
                     className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-black dark:border-white shadow-xl"
                   />
                   {isAdminRank && (
-                    <div className="absolute -top-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg">
+                    <div className="absolute -top-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg animate-pulse">
                       <Crown className="text-black" size={20} />
                     </div>
                   )}
@@ -139,7 +139,7 @@ const Profile = () => {
                 <div className={`w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black text-3xl sm:text-4xl font-bold shadow-xl ${isAdminRank ? 'ring-4 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white' : ''}`}>
                   {(user?.displayName || firestoreUserData?.displayName)?.charAt(0) || 'U'}
                   {isAdminRank && (
-                    <div className="absolute -top-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg">
+                    <div className="absolute -top-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg animate-pulse">
                       <Crown className="text-black" size={20} />
                     </div>
                   )}
@@ -181,7 +181,7 @@ const Profile = () => {
                   </div>
                 ) : (
                   <>
-                    <h1 className={`text-2xl sm:text-3xl font-bold mb-2 ${isAdminRank ? 'bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 bg-clip-text text-transparent' : 'text-black dark:text-white'}`}>
+                    <h1 className={`text-2xl sm:text-3xl font-bold mb-2 ${isAdminRank ? 'bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse' : 'text-black dark:text-white'}`}>
                       {user?.displayName || firestoreUserData?.displayName || 'User'}
                     </h1>
                     <button
