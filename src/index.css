@@ -166,8 +166,11 @@ body {
 }
 
 .animate-scroll-right {
-  animation: scroll-right 30s linear infinite;
+  animation: scroll-right 180s linear infinite;
   will-change: transform;
+  display: flex;
+  width: max-content;
+  flex-shrink: 0;
 }
 
 .animate-fade-in-up {

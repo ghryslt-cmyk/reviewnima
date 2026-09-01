@@ -156,7 +156,7 @@ const AnimeWatch = memo(() => {
                   {anime.episodes && (
                     <div className="flex items-center gap-2">
                       <Film size={18} />
-                      <span>{anime.episodes} Episodes</span>
+                      <span>{anime.episodes} {t('animeWatch.episodes')}</span>
                     </div>
                   )}
                   {anime.duration && (
@@ -209,7 +209,7 @@ const AnimeWatch = memo(() => {
                       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                         <div>
                           <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">
-                            Episode {currentEpisode.episodeNumber}
+                            {t('animeWatch.episode')} {currentEpisode.episodeNumber}
                             {currentEpisode.title && `: ${currentEpisode.title}`}
                           </h3>
                           <p className="text-gray-400 text-sm">
@@ -289,7 +289,7 @@ const AnimeWatch = memo(() => {
                           <Play size={16} className={currentEpisode?.id === episode.id ? 'text-white' : 'text-gray-400'} />
                         </div>
                         <div className="flex-grow min-w-0">
-                          <div className="font-semibold text-sm truncate">EP {episode.episodeNumber}</div>
+                          <div className="font-semibold text-sm truncate">{t('animeWatch.ep')} {episode.episodeNumber}</div>
                           {episode.title && (
                             <div className="text-xs text-gray-400 truncate">{episode.title}</div>
                           )}

@@ -7,7 +7,10 @@
     "adminPanel": "管理パネル",
     "login": "ログイン",
     "logout": "ログアウト",
-    "profile": "プロフィール"
+    "profile": "プロフィール",
+    "anime": "アニメ",
+    "myBlog": "マイブログ",
+    "language": "言語"
   },
   "home": {
     "heroTitle": "ReviewNima",
@@ -173,12 +176,26 @@
     "subtitle": "最高のアニメのコレクション",
     "noFavorites": "まだお気に入りのアニメはありません。次の更新をお待ちください！"
   },
+  "animeList": {
+    "title": "アニメライブラリ",
+    "subtitle": "お気に入りのアニメを閲覧して視聴",
+    "searchPlaceholder": "タイトル、ジャンルでアニメを検索...",
+    "loading": "アニメを読み込み中...",
+    "animeFound": "アニメが見つかりました",
+    "animeFoundSingle": "アニメが見つかりました",
+    "noAnimeFound": "アニメが見つかりません",
+    "noAnimeYet": "まだアニメが追加されていません。後でもう一度チェックしてください！",
+    "tryAdjusting": "検索やフィルターを調整してみてください",
+    "clearFilters": "フィルターをクリア"
+  },
   "animeWatch": {
     "loading": "アニメを読み込み中...",
     "error": "アニメデータの読み込みに失敗しました。もう一度お試しください。",
     "animeNotFound": "アニメが見つかりません",
     "returnHome": "ホームに戻る",
     "episodes": "エピソード",
+    "episode": "エピソード",
+    "ep": "EP",
     "noEpisodes": "エピソードが利用可能ではありません",
     "episodeReview": "エピソードレビュー",
     "synopsis": "あらすじ",
@@ -189,6 +206,51 @@
     "previous": "前へ",
     "next": "次へ",
     "share": "共有"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "ご質問やフィードバックがありますか？お聞かせください！",
+    "email": "メール",
+    "socialMedia": "ソーシャルメディア",
+    "sendMessage": "メッセージを送信",
+    "name": "名前",
+    "emailLabel": "メール",
+    "message": "メッセージ",
+    "namePlaceholder": "Morviss",
+    "emailPlaceholder": "morvissenter@gmail.com",
+    "messagePlaceholder": "ini adalah website khusus untuk konten yt, jika ada bug atau kesalahan dalam informasi atau pun review kalian bisa email atau tulis komentar di reviewdetail anime.",
+    "sendButton": "メッセージを送信"
+  },
+  "login": {
+    "welcome": "ReviewNimaへようこそ",
+    "subtitle": "機能にアクセスしてコメントを残すためにログイン",
+    "signInWithGoogle": "Googleでログイン",
+    "signingIn": "ログイン中...",
+    "loginError": "ログインに失敗しました。もう一度お試しください。",
+    "agreeTerms": "ログインすることで、利用規約に同意したものとみなされます"
+  },
+  "newsDetail": {
+    "backToNews": "ニュースに戻る",
+    "newsNotFound": "ニュースが見つかりません",
+    "comments": "コメント",
+    "addComment": "コメントを追加...",
+    "postComment": "コメントを投稿",
+    "noComments": "まだコメントがありません。最初にコメントしてください！",
+    "relatedNews": "関連ニュース",
+    "noRelatedNews": "関連ニュースが見つかりません。",
+    "readFullArticle": "記事全文を読む",
+    "linkCopied": "リンクをクリップボードにコピーしました！"
+  },
+  "profile": {
+    "pleaseLogin": "ログインしてください",
+    "needLogin": "プロフィールを表示するにはログインが必要です。",
+    "reviewsRead": "レビューを読んだ",
+    "accountStatus": "アカウントステータス",
+    "active": "アクティブ",
+    "memberSince": "登録日",
+    "recentReviews": "最近のレビュー",
+    "noReviewsViewed": "まだレビューを閲覧していません。探索を始めましょう！",
+    "logout": "ログアウト"
   },
   "common": {
     "loading": "読み込み中...",

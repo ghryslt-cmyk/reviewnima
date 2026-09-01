@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
 import { getReviews } from '../lib/firebase';
 import { User, Mail, Calendar, BookOpen, Star } from 'lucide-react';
 
 const Profile = () => {
   const { user, isAuthenticated, logout } = useAuth();
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [userReviews, setUserReviews] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -31,8 +35,8 @@ const Profile = () => {
     return (
       <div className="min-h-screen bg-white dark:bg-black flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-black dark:text-white mb-4">Please Login</h1>
-          <p className="text-gray-700 dark:text-gray-300">You need to login to view your profile.</p>
+          <h1 className="text-2xl font-bold text-black dark:text-white mb-4">{t('profile.pleaseLogin')}</h1>
+          <p className="text-gray-700 dark:text-gray-300">{t('profile.needLogin')}</p>
         </div>
       </div>
     );
@@ -91,7 +95,7 @@ const Profile = () => {
           <div className="bg-black dark:bg-white rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-black border-2 border-black dark:border-white">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">Reviews Read</p>
+                <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">{t('profile.reviewsRead')}</p>
                 <p className="text-2xl sm:text-3xl font-bold">{userReviews.length}</p>
               </div>
               <BookOpen size={24} sm:size={32} className="text-gray-500 dark:text-gray-500" />
@@ -101,8 +105,8 @@ const Profile = () => {
           <div className="bg-gray-900 dark:bg-gray-100 rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-black border-2 border-gray-900 dark:border-gray-100">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">Account Status</p>
-                <p className="text-2xl sm:text-3xl font-bold">Active</p>
+                <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">{t('profile.accountStatus')}</p>
+                <p className="text-2xl sm:text-3xl font-bold">{t('profile.active')}</p>
               </div>
               <User size={24} sm:size={32} className="text-gray-500 dark:text-gray-500" />
             </div>
@@ -111,7 +115,7 @@ const Profile = () => {
           <div className="bg-gray-800 dark:bg-gray-200 rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-black border-2 border-gray-800 dark:border-gray-200">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">Member Since</p>
+                <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">{t('profile.memberSince')}</p>
                 <p className="text-lg sm:text-xl font-bold">
                   {user?.metadata?.createdAt ? new Date(user.metadata.createdAt).getFullYear() : '2024'}
                 </p>
@@ -124,7 +128,7 @@ const Profile = () => {
         {/* Recent Activity */}
         <div className="bg-white dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border-2 border-black dark:border-white">
           <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 sm:mb-6">
-            Recent Reviews
+            {t('profile.recentReviews')}
           </h2>
           
           {userReviews.length > 0 ? (
@@ -159,7 +163,7 @@ const Profile = () => {
           ) : (
             <div className="text-center py-6 sm:py-8 text-gray-500 dark:text-gray-400">
               <BookOpen size={32} sm:size={48} className="mx-auto mb-4 text-gray-400" />
-              <p className="text-sm sm:text-base">No reviews viewed yet. Start exploring!</p>
+              <p className="text-sm sm:text-base">{t('profile.noReviewsViewed')}</p>
             </div>
           )}
         </div>
@@ -170,7 +174,7 @@ const Profile = () => {
             onClick={logout}
             className="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 text-sm sm:text-base border-2 border-black dark:border-white"
           >
-            Logout
+            {t('profile.logout')}
           </button>
         </div>
       </div>

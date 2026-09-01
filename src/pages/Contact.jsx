@@ -1,8 +1,12 @@
 import { Mail, MessageSquare, Send } from 'lucide-react';
 import { useState } from 'react';
 import Layout from '../components/Layout';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
 
 const Contact = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,9 +33,9 @@ const Contact = () => {
     <Layout>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Contact Us</h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{t('contact.title')}</h1>
           <p className="text-gray-600 dark:text-gray-400 text-lg">
-            Have questions or feedback? We'd love to hear from you!
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -39,7 +43,7 @@ const Contact = () => {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
             <div className="flex items-center space-x-3 mb-4">
               <Mail className="text-blue-500" size={24} />
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Email</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('contact.email')}</h3>
             </div>
             <p className="text-gray-600 dark:text-gray-400">
               morvissenter@gmail.com
@@ -49,7 +53,7 @@ const Contact = () => {
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
             <div className="flex items-center space-x-3 mb-4">
               <MessageSquare className="text-green-500" size={24} />
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Social Media</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{t('contact.socialMedia')}</h3>
             </div>
             <a
               href="https://www.youtube.com/@Morviss09"
@@ -63,11 +67,11 @@ const Contact = () => {
         </div>
 
         <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send us a Message</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">{t('contact.sendMessage')}</h2>
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Name
+                {t('contact.name')}
               </label>
               <input
                 type="text"
@@ -75,13 +79,13 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="Morviss"
+                placeholder={t('contact.namePlaceholder')}
                 required
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Email
+                {t('contact.emailLabel')}
               </label>
               <input
                 type="email"
@@ -89,13 +93,13 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="morvissenter@gmail.com"
+                placeholder={t('contact.emailPlaceholder')}
                 required
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Message
+                {t('contact.message')}
               </label>
               <textarea
                 name="message"
@@ -103,7 +107,7 @@ const Contact = () => {
                 onChange={handleChange}
                 rows="5"
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="ini adalah website khusus untuk konten yt, jika ada bug atau kesalahan dalam informasi atau pun review kalian bisa email atau tulis komentar di reviewdetail anime."
+                placeholder={t('contact.messagePlaceholder')}
                 required
               ></textarea>
             </div>
@@ -112,7 +116,7 @@ const Contact = () => {
               className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Send size={20} />
-              <span>Send Message</span>
+              <span>{t('contact.sendButton')}</span>
             </button>
           </form>
         </div>

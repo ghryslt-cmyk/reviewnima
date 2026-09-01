@@ -85,11 +85,11 @@ const Home = memo(() => {
               </div>
             </div>
 
-            {/* News Carousel - Moving Left to Right (Desktop) */}
+            {/* News Carousel - Moving Right to Left (Desktop) */}
             {news.length > 0 && (
               <div className="hidden xl:block absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/90 via-black/70 to-transparent border-t border-white/20">
                 <div className="py-4 overflow-hidden">
-                  <div className="flex animate-scroll-left-to-right whitespace-nowrap">
+                  <div className="flex animate-scroll-right whitespace-nowrap">
                     {[...news, ...news].map((item, index) => (
                       <Link
                         key={`${item.id}-${index}`}
@@ -132,7 +132,7 @@ const Home = memo(() => {
             {news.length > 0 && (
               <div className="xl:hidden absolute bottom-0 left-0 right-0 z-20 bg-gradient-to-t from-black/90 via-black/70 to-transparent border-t border-white/20">
                 <div className="py-4 overflow-hidden">
-                  <div className="flex animate-scroll-left-to-right whitespace-nowrap">
+                  <div className="flex animate-scroll-right whitespace-nowrap">
                     {[...news, ...news].map((item, index) => (
                       <Link
                         key={`${item.id}-${index}`}

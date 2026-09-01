@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 import { getAllAnime } from '../lib/firebase';
 import Layout from '../components/Layout';
 import { Film, Star, Calendar, Clock, Search, Loader2, Play } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
 
 const AnimeList = memo(() => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [animeList, setAnimeList] = useState([]);
   const [filteredAnime, setFilteredAnime] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -61,7 +65,7 @@ const AnimeList = memo(() => {
         <div className="flex items-center justify-center min-h-screen bg-gray-50">
           <div className="text-center">
             <Loader2 className="animate-spin text-gray-600 mx-auto mb-4" size={48} />
-            <p className="text-gray-600">Loading anime...</p>
+            <p className="text-gray-600">{t('animeList.loading')}</p>
           </div>
         </div>
       </Layout>
@@ -75,10 +79,10 @@ const AnimeList = memo(() => {
         <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 animate-fade-in-up">
-              Anime Library
+              {t('animeList.title')}
             </h1>
             <p className="text-lg sm:text-xl text-gray-700 mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              Browse and watch your favorite anime
+              {t('animeList.subtitle')}
             </p>
             
             <div className="max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
@@ -88,7 +92,7 @@ const AnimeList = memo(() => {
                   type="text"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  placeholder="Search anime by title, genre..."
+                  placeholder={t('animeList.searchPlaceholder')}
                   className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-gray-400 focus:border-transparent text-lg"
                 />
               </div>
@@ -124,7 +128,7 @@ const AnimeList = memo(() => {
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 flex items-center">
               <Film className="mr-2 text-gray-600" size={28} />
-              {filteredAnime.length} Anime{filteredAnime.length !== 1 ? 's' : ''} Found
+              {filteredAnime.length} {filteredAnime.length === 1 ? t('animeList.animeFoundSingle') : t('animeList.animeFound')}
             </h2>
           </div>
 
@@ -208,12 +212,12 @@ const AnimeList = memo(() => {
             <div className="text-center py-16 bg-white rounded-2xl shadow-lg border-2 border-gray-200">
               <Film size={64} className="mx-auto text-gray-400 mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">
-                No anime found
+                {t('animeList.noAnimeFound')}
               </h3>
               <p className="text-gray-600 mb-4">
                 {searchTerm || selectedGenre !== 'All'
-                  ? 'Try adjusting your search or filters'
-                  : 'No anime have been added yet. Check back later!'}
+                  ? t('animeList.tryAdjusting')
+                  : t('animeList.noAnimeYet')}
               </p>
               {(searchTerm || selectedGenre !== 'All') && (
                 <button
@@ -223,7 +227,7 @@ const AnimeList = memo(() => {
                   }}
                   className="px-6 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors"
                 >
-                  Clear Filters
+                  {t('animeList.clearFilters')}
                 </button>
               )}
             </div>

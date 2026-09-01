@@ -7,7 +7,10 @@
     "adminPanel": "Admin Panel",
     "login": "Login",
     "logout": "Logout",
-    "profile": "Profile"
+    "profile": "Profile",
+    "anime": "Anime",
+    "myBlog": "My Blog",
+    "language": "Language"
   },
   "home": {
     "heroTitle": "ReviewNima",
@@ -173,12 +176,26 @@
     "subtitle": "My collection of the best anime",
     "noFavorites": "No favorite anime yet. Wait for the next update!"
   },
+  "animeList": {
+    "title": "Anime Library",
+    "subtitle": "Browse and watch your favorite anime",
+    "searchPlaceholder": "Search anime by title, genre...",
+    "loading": "Loading anime...",
+    "animeFound": "Anime Found",
+    "animeFoundSingle": "Anime Found",
+    "noAnimeFound": "No anime found",
+    "noAnimeYet": "No anime have been added yet. Check back later!",
+    "tryAdjusting": "Try adjusting your search or filters",
+    "clearFilters": "Clear Filters"
+  },
   "animeWatch": {
     "loading": "Loading anime...",
     "error": "Failed to load anime data. Please try again.",
     "animeNotFound": "Anime not found",
     "returnHome": "Return to Home",
     "episodes": "Episodes",
+    "episode": "Episode",
+    "ep": "EP",
     "noEpisodes": "No episodes available",
     "episodeReview": "Episode Review",
     "synopsis": "Synopsis",
@@ -189,6 +206,51 @@
     "previous": "Previous",
     "next": "Next",
     "share": "Share"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions or feedback? We'd love to hear from you!",
+    "email": "Email",
+    "socialMedia": "Social Media",
+    "sendMessage": "Send us a Message",
+    "name": "Name",
+    "emailLabel": "Email",
+    "message": "Message",
+    "namePlaceholder": "Morviss",
+    "emailPlaceholder": "morvissenter@gmail.com",
+    "messagePlaceholder": "ini adalah website khusus untuk konten yt, jika ada bug atau kesalahan dalam informasi atau pun review kalian bisa email atau tulis komentar di reviewdetail anime.",
+    "sendButton": "Send Message"
+  },
+  "login": {
+    "welcome": "Welcome to ReviewNima",
+    "subtitle": "Sign in to access features and leave comments",
+    "signInWithGoogle": "Sign in with Google",
+    "signingIn": "Signing in...",
+    "loginError": "Failed to login. Please try again.",
+    "agreeTerms": "By signing in, you agree to our terms and conditions"
+  },
+  "newsDetail": {
+    "backToNews": "Back to News",
+    "newsNotFound": "News Not Found",
+    "comments": "Comments",
+    "addComment": "Add a comment...",
+    "postComment": "Post Comment",
+    "noComments": "No comments yet. Be the first to comment!",
+    "relatedNews": "Related News",
+    "noRelatedNews": "No related news found.",
+    "readFullArticle": "Read Full Article",
+    "linkCopied": "Link copied to clipboard!"
+  },
+  "profile": {
+    "pleaseLogin": "Please Login",
+    "needLogin": "You need to login to view your profile.",
+    "reviewsRead": "Reviews Read",
+    "accountStatus": "Account Status",
+    "active": "Active",
+    "memberSince": "Member Since",
+    "recentReviews": "Recent Reviews",
+    "noReviewsViewed": "No reviews viewed yet. Start exploring!",
+    "logout": "Logout"
   },
   "common": {
     "loading": "Loading...",

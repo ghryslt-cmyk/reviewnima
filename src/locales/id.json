@@ -7,7 +7,10 @@
     "adminPanel": "Admin Panel",
     "login": "Login",
     "logout": "Logout",
-    "profile": "Profil"
+    "profile": "Profil",
+    "anime": "Anime",
+    "myBlog": "Blog Saya",
+    "language": "Bahasa"
   },
   "home": {
     "heroTitle": "ReviewNima",
@@ -173,12 +176,26 @@
     "subtitle": "Koleksi anime terbaik pilihan saya",
     "noFavorites": "Belum ada anime favorit. Tunggu update selanjutnya!"
   },
+  "animeList": {
+    "title": "Perpustakaan Anime",
+    "subtitle": "Telusuri dan tonton anime favorit Anda",
+    "searchPlaceholder": "Cari anime berdasarkan judul, genre...",
+    "loading": "Memuat anime...",
+    "animeFound": "Anime Ditemukan",
+    "animeFoundSingle": "Anime Ditemukan",
+    "noAnimeFound": "Tidak ada anime yang ditemukan",
+    "noAnimeYet": "Belum ada anime yang ditambahkan. Cek lagi nanti!",
+    "tryAdjusting": "Coba sesuaikan pencarian atau filter Anda",
+    "clearFilters": "Hapus Filter"
+  },
   "animeWatch": {
     "loading": "Memuat anime...",
     "error": "Gagal memuat data anime. Silakan coba lagi.",
     "animeNotFound": "Anime tidak ditemukan",
     "returnHome": "Kembali ke Beranda",
     "episodes": "Episode",
+    "episode": "Episode",
+    "ep": "EP",
     "noEpisodes": "Tidak ada episode tersedia",
     "episodeReview": "Review Episode",
     "synopsis": "Sinopsis",
@@ -189,6 +206,51 @@
     "previous": "Sebelumnya",
     "next": "Selanjutnya",
     "share": "Bagikan"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Punya pertanyaan atau masukan? Kami ingin mendengar dari Anda!",
+    "email": "Email",
+    "socialMedia": "Media Sosial",
+    "sendMessage": "Kirim Pesan",
+    "name": "Nama",
+    "emailLabel": "Email",
+    "message": "Pesan",
+    "namePlaceholder": "Morviss",
+    "emailPlaceholder": "morvissenter@gmail.com",
+    "messagePlaceholder": "ini adalah website khusus untuk konten yt, jika ada bug atau kesalahan dalam informasi atau pun review kalian bisa email atau tulis komentar di reviewdetail anime.",
+    "sendButton": "Kirim Pesan"
+  },
+  "login": {
+    "welcome": "Selamat Datang di ReviewNima",
+    "subtitle": "Masuk untuk mengakses fitur dan meninggalkan komentar",
+    "signInWithGoogle": "Masuk dengan Google",
+    "signingIn": "Masuk...",
+    "loginError": "Gagal masuk. Silakan coba lagi.",
+    "agreeTerms": "Dengan masuk, Anda menyetujui syarat dan ketentuan kami"
+  },
+  "newsDetail": {
+    "backToNews": "Kembali ke Berita",
+    "newsNotFound": "Berita Tidak Ditemukan",
+    "comments": "Komentar",
+    "addComment": "Tambah komentar...",
+    "postComment": "Kirim Komentar",
+    "noComments": "Belum ada komentar. Jadilah yang pertama berkomentar!",
+    "relatedNews": "Berita Terkait",
+    "noRelatedNews": "Tidak ada berita terkait ditemukan.",
+    "readFullArticle": "Baca Artikel Lengkap",
+    "linkCopied": "Tautan disalin ke clipboard!"
+  },
+  "profile": {
+    "pleaseLogin": "Silakan Login",
+    "needLogin": "Anda perlu login untuk melihat profil Anda.",
+    "reviewsRead": "Review Dibaca",
+    "accountStatus": "Status Akun",
+    "active": "Aktif",
+    "memberSince": "Anggota Sejak",
+    "recentReviews": "Review Terbaru",
+    "noReviewsViewed": "Belum ada review yang dilihat. Mulai jelajahi!",
+    "logout": "Logout"
   },
   "common": {
     "loading": "Memuat...",

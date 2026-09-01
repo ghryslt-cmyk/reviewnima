@@ -87,7 +87,7 @@ const Navbar = () => {
                   className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
                 >
                   <Film size={20} />
-                  <span>Anime</span>
+                  <span>{t('nav.anime')}</span>
                 </button>
                 
                 {animeDropdownOpen && (
@@ -106,7 +106,7 @@ const Navbar = () => {
                       onClick={() => setAnimeDropdownOpen(false)}
                     >
                       <Film size={18} />
-                      <span>Anime</span>
+                      <span>{t('nav.anime')}</span>
                     </Link>
                     <Link
                       to="/reviews"
@@ -135,7 +135,7 @@ const Navbar = () => {
                   className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
                 >
                   <User size={20} />
-                  <span>My Blog</span>
+                  <span>{t('nav.myBlog')}</span>
                 </button>
                 
                 {blogDropdownOpen && (
@@ -265,7 +265,7 @@ const Navbar = () => {
             <div className="px-3 py-2">
               <div className="flex items-center space-x-2 text-gray-900 dark:text-white mb-2">
                 <Globe size={20} />
-                <span className="font-medium">Language</span>
+                <span className="font-medium">{t('nav.language')}</span>
               </div>
               <div className="flex flex-wrap gap-2">
                 {languages.map((lang) => (
@@ -301,7 +301,7 @@ const Navbar = () => {
             <div className="px-3 py-2">
               <div className="flex items-center space-x-2 text-gray-900 dark:text-white mb-2">
                 <Film size={20} />
-                <span className="font-medium">Anime</span>
+                <span className="font-medium">{t('nav.anime')}</span>
               </div>
               <div className="pl-4 space-y-1">
                 <Link 
@@ -318,7 +318,7 @@ const Navbar = () => {
                   onClick={handleMobileMenuToggle}
                 >
                   <Film size={18} />
-                  <span>Anime</span>
+                  <span>{t('nav.anime')}</span>
                 </Link>
                 <Link 
                   to="/reviews" 
@@ -343,7 +343,7 @@ const Navbar = () => {
             <div className="px-3 py-2">
               <div className="flex items-center space-x-2 text-gray-900 dark:text-white mb-2">
                 <User size={20} />
-                <span className="font-medium">My Blog</span>
+                <span className="font-medium">{t('nav.myBlog')}</span>
               </div>
               <div className="pl-4 space-y-1">
                 <Link 

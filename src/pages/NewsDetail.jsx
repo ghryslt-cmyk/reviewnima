@@ -3,11 +3,13 @@ import { useParams, Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { fetchAnimeNews } from '../lib/animeNews';
 import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
 import { ArrowLeft, Calendar, ExternalLink, Share2, Newspaper, MessageCircle, Send, User as UserIcon } from 'lucide-react';
 
 const NewsDetail = () => {
   const { id } = useParams();
   const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const [newsItem, setNewsItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [relatedNews, setRelatedNews] = useState([]);
@@ -82,7 +84,7 @@ const NewsDetail = () => {
     } else {
       // Fallback: copy to clipboard
       navigator.clipboard.writeText(window.location.href);
-      alert('Link copied to clipboard!');
+      alert(t('newsDetail.linkCopied'));
     }
   };
 
@@ -99,9 +101,9 @@ const NewsDetail = () => {
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-center">
           <Newspaper size={64} className="mx-auto text-gray-400 mb-4" />
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">News Not Found</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{t('newsDetail.newsNotFound')}</h2>
           <Link to="/news" className="text-purple-600 dark:text-purple-400 hover:underline">
-            Back to News
+            {t('newsDetail.backToNews')}
           </Link>
         </div>
       </div>
@@ -118,7 +120,7 @@ const NewsDetail = () => {
             className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-300"
           >
             <ArrowLeft size={20} className="mr-2" />
-            Back to News
+            {t('newsDetail.backToNews')}
           </Link>
         </div>
       </div>
@@ -192,7 +194,7 @@ const NewsDetail = () => {
                 <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                     <MessageCircle className="mr-2 text-gray-600 dark:text-gray-400" size={20} />
-                    Comments ({comments.length})
+                    {t('newsDetail.comments')} ({comments.length})
                   </h3>
                   
                   {/* Add Comment Form */}
@@ -205,7 +207,7 @@ const NewsDetail = () => {
                         <textarea
                           value={newComment}
                           onChange={(e) => setNewComment(e.target.value)}
-                          placeholder="Add a comment..."
+                          placeholder={t('newsDetail.addComment')}
                           className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent resize-none transition-all duration-300"
                           rows="3"
                         />
@@ -216,7 +218,7 @@ const NewsDetail = () => {
                             className="flex items-center px-4 py-2 bg-gray-900 dark:bg-white hover:bg-gray-700 dark:hover:bg-gray-200 text-white dark:text-gray-900 font-medium rounded-lg transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                           >
                             <Send size={16} className="mr-2" />
-                            Post Comment
+                            {t('newsDetail.postComment')}
                           </button>
                         </div>
                       </div>
@@ -256,7 +258,7 @@ const NewsDetail = () => {
                     </div>
                   ) : (
                     <p className="text-gray-500 dark:text-gray-400 text-sm text-center py-4">
-                      No comments yet. Be the first to comment!
+                      {t('newsDetail.noComments')}
                     </p>
                   )}
                 </div>
@@ -268,7 +270,7 @@ const NewsDetail = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-6 py-3 bg-gray-900 dark:bg-white hover:bg-gray-700 dark:hover:bg-gray-200 text-white dark:text-gray-900 font-bold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
                   >
-                    Read Full Article
+                    {t('newsDetail.readFullArticle')}
                     <ExternalLink size={18} className="ml-2" />
                   </a>
                 </div>
@@ -281,7 +283,7 @@ const NewsDetail = () => {
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 border border-gray-200 dark:border-gray-700 sticky top-4">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
                 <Newspaper className="mr-2 text-gray-600 dark:text-gray-400" size={20} />
-                Related News
+                {t('newsDetail.relatedNews')}
               </h3>
               
               {relatedNews.length > 0 ? (
@@ -326,7 +328,7 @@ const NewsDetail = () => {
                 </div>
               ) : (
                 <p className="text-gray-500 dark:text-gray-400 text-sm">
-                  No related news found.
+                  {t('newsDetail.noRelatedNews')}
                 </p>
               )}
             </div>
