@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, memo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getAnimeById } from '../lib/anilist';
-import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode, getComments, addComment } from '../lib/firebase';
+import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode, getAnimeComments, addAnimeComment, saveAnimeToProfile, removeAnimeFromProfile, getSavedAnime, reportAnime } from '../lib/firebase';
 import WatchLayout from '../components/WatchLayout';
 import { Play, ThumbsUp, ThumbsDown, Share, Bookmark, Flag, Loader2, X, AlertCircle, Heart, MessageSquare, Send, User } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -22,6 +22,10 @@ const AnimeWatch = memo(() => {
   const [comments, setComments] = useState([]);
   const [commentText, setCommentText] = useState('');
   const [submittingComment, setSubmittingComment] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
+  const [showReportModal, setShowReportModal] = useState(false);
+  const [reportReason, setReportReason] = useState('');
+  const [submittingReport, setSubmittingReport] = useState(false);
 
   const fetchAnimeData = useCallback(async () => {
     try {
@@ -81,14 +85,14 @@ const AnimeWatch = memo(() => {
 
     setSubmittingComment(true);
     try {
-      await addComment(id, {
+      await addAnimeComment(id, {
         text: commentText,
         author: user.displayName,
         authorEmail: user.email,
         authorPhotoURL: user.photoURL
       });
       
-      const commentsData = await getComments(id);
+      const commentsData = await getAnimeComments(id);
       setComments(commentsData);
       setCommentText('');
     } catch (error) {
@@ -101,7 +105,7 @@ const AnimeWatch = memo(() => {
   useEffect(() => {
     const fetchComments = async () => {
       try {
-        const commentsData = await getComments(id);
+        const commentsData = await getAnimeComments(id);
         setComments(commentsData);
       } catch (error) {
         console.error('Error fetching comments:', error);
@@ -109,6 +113,70 @@ const AnimeWatch = memo(() => {
     };
     fetchComments();
   }, [id]);
+
+  useEffect(() => {
+    const checkIfSaved = async () => {
+      if (isAuthenticated && user?.uid) {
+        try {
+          const savedAnime = await getSavedAnime(user.uid);
+          setIsSaved(savedAnime.some(anime => anime.id === id));
+        } catch (error) {
+          console.error('Error checking saved status:', error);
+        }
+      }
+    };
+    checkIfSaved();
+  }, [id, isAuthenticated, user]);
+
+  const handleSave = useCallback(async () => {
+    if (!isAuthenticated) {
+      alert('Please login to save anime');
+      return;
+    }
+
+    try {
+      if (isSaved) {
+        await removeAnimeFromProfile(user.uid, id);
+        setIsSaved(false);
+      } else {
+        await saveAnimeToProfile(user.uid, {
+          id,
+          title: anime.title,
+          coverImage: anime.coverImage
+        });
+        setIsSaved(true);
+      }
+    } catch (error) {
+      console.error('Error saving/removing anime:', error);
+      alert('Failed to save anime. Please try again.');
+    }
+  }, [isSaved, isAuthenticated, user, id, anime]);
+
+  const handleReport = useCallback(async () => {
+    if (!reportReason.trim()) {
+      alert('Please provide a reason for reporting');
+      return;
+    }
+
+    setSubmittingReport(true);
+    try {
+      await reportAnime({
+        animeId: id,
+        animeTitle: anime.title.english || anime.title.romaji,
+        reason: reportReason,
+        reportedBy: user?.email || 'anonymous',
+        reportedAt: new Date().toISOString()
+      });
+      alert('Report submitted successfully. Thank you for your feedback.');
+      setReportReason('');
+      setShowReportModal(false);
+    } catch (error) {
+      console.error('Error reporting anime:', error);
+      alert('Failed to submit report. Please try again.');
+    } finally {
+      setSubmittingReport(false);
+    }
+  }, [id, anime, reportReason, user]);
 
   if (loading) {
     return (
@@ -180,14 +248,6 @@ const AnimeWatch = memo(() => {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-2 mb-4">
-              <button className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors">
-                <ThumbsUp size={18} />
-                <span>Like</span>
-              </button>
-              <button className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors">
-                <ThumbsDown size={18} />
-                <span>Dislike</span>
-              </button>
               <button
                 onClick={handleShare}
                 className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors"
@@ -195,11 +255,17 @@ const AnimeWatch = memo(() => {
                 <Share size={18} />
                 <span>Share</span>
               </button>
-              <button className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors">
+              <button
+                onClick={handleSave}
+                className={`flex items-center gap-2 px-4 py-2 ${isSaved ? 'bg-cyan-600 hover:bg-cyan-700' : 'bg-gray-800 hover:bg-gray-700'} text-white rounded-lg transition-colors`}
+              >
                 <Bookmark size={18} />
-                <span>Save</span>
+                <span>{isSaved ? 'Saved' : 'Save'}</span>
               </button>
-              <button className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors">
+              <button
+                onClick={() => setShowReportModal(true)}
+                className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors"
+              >
                 <Flag size={18} />
                 <span>Report</span>
               </button>
@@ -348,12 +414,12 @@ const AnimeWatch = memo(() => {
           {/* Sidebar - Right Column (25%) */}
           <div className="lg:col-span-1 min-w-0">
             {/* Alert */}
-            <div className="bg-gray-800 rounded-lg p-4 mb-4">
-              <div className="flex items-start gap-3">
-                <AlertCircle className="text-yellow-500 flex-shrink-0 mt-0.5" size={20} />
+            <div className="bg-gray-800 rounded-lg p-6 mb-4 border-2 border-yellow-500">
+              <div className="flex items-start gap-4">
+                <AlertCircle className="text-yellow-500 flex-shrink-0 mt-1" size={32} />
                 <div>
-                  <h4 className="text-white font-semibold mb-1">Important Notice</h4>
-                  <p className="text-gray-400 text-sm">Jika video eps anime yang kalian tonton tidak bisa berjalan maka limit Bandwidth sudah penuh, saya memakai free cloud storage jadi akan ada limit Bandwidth harian. Jika kalian ingin website ini bisa streaming semua anime tanpa limit Bandwidth harian, kalian bisa donasi di bawah ini....</p>
+                  <h4 className="text-white font-bold text-lg mb-2">Important Notice</h4>
+                  <p className="text-gray-300 text-base leading-relaxed">Jika video eps anime yang kalian tonton tidak bisa berjalan maka limit Bandwidth sudah penuh, saya memakai free cloud storage jadi akan ada limit Bandwidth harian. Jika kalian ingin website ini bisa streaming semua anime tanpa limit Bandwidth harian, kalian bisa donasi di bawah ini....</p>
                 </div>
               </div>
             </div>
@@ -425,6 +491,52 @@ const AnimeWatch = memo(() => {
                     {t('animeWatch.copy')}
                   </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Report Modal */}
+      {showReportModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
+          <div className="bg-gray-800 rounded-2xl p-6 max-w-md w-full shadow-2xl animate-scale-in">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xl font-bold text-white">Report Anime</h3>
+              <button
+                onClick={() => setShowReportModal(false)}
+                className="text-gray-400 hover:text-white"
+              >
+                <X size={24} />
+              </button>
+            </div>
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-300 mb-2">
+                  Reason for reporting
+                </label>
+                <textarea
+                  value={reportReason}
+                  onChange={(e) => setReportReason(e.target.value)}
+                  placeholder="Please describe the issue..."
+                  className="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-700 text-white resize-none"
+                  rows="4"
+                />
+              </div>
+              <div className="flex justify-end gap-2">
+                <button
+                  onClick={() => setShowReportModal(false)}
+                  className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={handleReport}
+                  disabled={submittingReport || !reportReason.trim()}
+                  className="px-4 py-2 bg-red-600 hover:bg-red-700 disabled:bg-gray-600 text-white rounded-lg transition-colors"
+                >
+                  {submittingReport ? 'Submitting...' : 'Submit Report'}
+                </button>
               </div>
             </div>
           </div>

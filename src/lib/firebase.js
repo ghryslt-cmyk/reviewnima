@@ -355,4 +355,120 @@ export const deleteAnimeEpisode = async (animeId, episodeId) => {
   }
 };
 
+// Anime comment functions
+export const addAnimeComment = async (animeId, commentData) => {
+  try {
+    const commentsRef = collection(db, 'anime', animeId, 'comments');
+    const docRef = await addDoc(commentsRef, {
+      ...commentData,
+      createdAt: serverTimestamp()
+    });
+    return docRef.id;
+  } catch (error) {
+    console.error('Error adding anime comment:', error);
+    throw new Error('Failed to add comment. Please try again.');
+  }
+};
+
+export const getAnimeComments = async (animeId) => {
+  try {
+    const commentsRef = collection(db, 'anime', animeId, 'comments');
+    const querySnapshot = await getDocs(query(commentsRef, orderBy('createdAt', 'desc')));
+    const comments = [];
+    querySnapshot.forEach((doc) => {
+      comments.push({ id: doc.id, ...doc.data() });
+    });
+    return comments;
+  } catch (error) {
+    console.error('Error getting anime comments:', error);
+    throw new Error('Failed to fetch comments. Please try again.');
+  }
+};
+
+// Save anime to user profile
+export const saveAnimeToProfile = async (userId, animeData) => {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    const userDoc = await getDoc(userDocRef);
+    
+    if (userDoc.exists()) {
+      const userData = userDoc.data();
+      const savedAnime = userData.savedAnime || [];
+      
+      // Check if anime is already saved
+      if (!savedAnime.some(anime => anime.id === animeData.id)) {
+        savedAnime.push({
+          id: animeData.id,
+          title: animeData.title,
+          coverImage: animeData.coverImage,
+          savedAt: new Date().toISOString()
+        });
+        await updateDoc(userDocRef, { savedAnime });
+      }
+    } else {
+      // Create user document if it doesn't exist
+      await addDoc(collection(db, 'users'), {
+        userId,
+        savedAnime: [{
+          id: animeData.id,
+          title: animeData.title,
+          coverImage: animeData.coverImage,
+          savedAt: new Date().toISOString()
+        }]
+      });
+    }
+  } catch (error) {
+    console.error('Error saving anime to profile:', error);
+    throw new Error('Failed to save anime. Please try again.');
+  }
+};
+
+export const removeAnimeFromProfile = async (userId, animeId) => {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    const userDoc = await getDoc(userDocRef);
+    
+    if (userDoc.exists()) {
+      const userData = userDoc.data();
+      const savedAnime = userData.savedAnime || [];
+      const updatedSavedAnime = savedAnime.filter(anime => anime.id !== animeId);
+      await updateDoc(userDocRef, { savedAnime: updatedSavedAnime });
+    }
+  } catch (error) {
+    console.error('Error removing anime from profile:', error);
+    throw new Error('Failed to remove anime. Please try again.');
+  }
+};
+
+export const getSavedAnime = async (userId) => {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    const userDoc = await getDoc(userDocRef);
+    
+    if (userDoc.exists()) {
+      const userData = userDoc.data();
+      return userData.savedAnime || [];
+    }
+    return [];
+  } catch (error) {
+    console.error('Error getting saved anime:', error);
+    throw new Error('Failed to fetch saved anime. Please try again.');
+  }
+};
+
+// Report anime function (stores in Firestore, email integration requires backend service)
+export const reportAnime = async (reportData) => {
+  try {
+    const docRef = await addDoc(collection(db, 'reports'), {
+      ...reportData,
+      createdAt: serverTimestamp(),
+      status: 'pending'
+    });
+    return docRef.id;
+  } catch (error) {
+    console.error('Error reporting anime:', error);
+    throw new Error('Failed to submit report. Please try again.');
+  }
+};
+
 export { auth, db };
