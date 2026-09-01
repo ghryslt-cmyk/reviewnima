@@ -189,6 +189,18 @@ export const updateUserProfile = async (userId, profileData) => {
   }
 };
 
+export const updateUserRank = async (userId, rank) => {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    console.log('updateUserRank - Updating rank for userId:', userId, 'to rank:', rank);
+    await updateDoc(userDocRef, { rank });
+    console.log('updateUserRank - Successfully updated rank for userId:', userId);
+  } catch (error) {
+    console.error('updateUserRank - Error updating user rank:', error);
+    throw new Error('Failed to update user rank. Please try again.');
+  }
+};
+
 export const deleteReview = async (reviewId) => {
   try {
     const docRef = doc(db, 'reviews', reviewId);
@@ -644,13 +656,19 @@ export const getUserByEmail = async (email) => {
     const q = query(usersRef, where('email', '==', email));
     const querySnapshot = await getDocs(q);
     
+    console.log('getUserByEmail - Searching for email:', email);
+    console.log('getUserByEmail - Found documents:', querySnapshot.size);
+    
     if (!querySnapshot.empty) {
       const userDoc = querySnapshot.docs[0];
-      return { id: userDoc.id, ...userDoc.data() };
+      const userData = { id: userDoc.id, ...userDoc.data() };
+      console.log('getUserByEmail - Found user:', userData);
+      return userData;
     }
+    console.log('getUserByEmail - No user found for email:', email);
     return null;
   } catch (error) {
-    console.error('Error getting user by email:', error);
+    console.error('getUserByEmail - Error getting user by email:', error);
     return null;
   }
 };
