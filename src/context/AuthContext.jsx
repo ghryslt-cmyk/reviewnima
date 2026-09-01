@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
-import { onAuthChange, signInWithGoogle, logoutUser, isAdmin } from '../lib/firebase';
+import { onAuthChange, signInWithGoogle, logoutUser, isAdmin, auth } from '../lib/firebase';
 
 const AuthContext = createContext();
 
@@ -49,14 +49,21 @@ export const AuthProvider = ({ children }) => {
     return isAdmin(user);
   }, [user]);
 
+  const refreshUser = useCallback(async () => {
+    if (auth.currentUser) {
+      setUser(auth.currentUser);
+    }
+  }, []);
+
   const value = useMemo(() => ({
     user,
     loading,
     login,
     logout,
     checkAdmin,
+    refreshUser,
     isAuthenticated: !!user
-  }), [user, loading, login, logout, checkAdmin]);
+  }), [user, loading, login, logout, checkAdmin, refreshUser]);
 
   return (
     <AuthContext.Provider value={value}>

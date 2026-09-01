@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../components/Layout';
-import { getReviewById, getComments, addComment, deleteComment, addCommentReply, getCommentReplies } from '../lib/firebase';
+import { getReviewById, getComments, addComment, deleteComment, addCommentReply, getCommentReplies, getUserRankByEmail } from '../lib/firebase';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { Star, Calendar, Clock, User, MessageSquare, Send, ExternalLink, Trash2, Reply } from 'lucide-react';
+import { Star, Calendar, Clock, User, MessageSquare, Send, ExternalLink, Trash2, Reply, Crown, Shield } from 'lucide-react';
 
 const ReviewDetail = () => {
   const { id } = useParams();
@@ -22,6 +22,7 @@ const ReviewDetail = () => {
   const [submittingReply, setSubmittingReply] = useState(false);
   const [commentReplies, setCommentReplies] = useState({});
   const [showReplies, setShowReplies] = useState({});
+  const [commentRanks, setCommentRanks] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,6 +33,18 @@ const ReviewDetail = () => {
         if (reviewData) {
           const commentsData = await getComments(id);
           setComments(commentsData);
+          
+          // Fetch ranks for comment authors
+          const ranks = {};
+          for (const comment of commentsData) {
+            if (comment.authorEmail) {
+              const rank = await getUserRankByEmail(comment.authorEmail);
+              if (rank) {
+                ranks[comment.authorEmail] = rank;
+              }
+            }
+          }
+          setCommentRanks(ranks);
         }
       } catch (error) {
         console.error('Error fetching review:', error);
@@ -348,23 +361,48 @@ const ReviewDetail = () => {
           {/* Comments List */}
           <div className="space-y-6">
             {comments.length > 0 ? (
-              comments.map(comment => (
+              comments.map(comment => {
+                const userRank = commentRanks[comment.authorEmail];
+                const isAdmin = userRank === 'admin';
+                return (
                 <div key={comment.id} className="flex space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  {comment.authorPhotoURL ? (
-                    <img
-                      src={comment.authorPhotoURL}
-                      alt={comment.author}
-                      className="w-10 h-10 rounded-full"
-                    />
-                  ) : (
-                    <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
-                      {comment.author?.charAt(0) || 'U'}
-                    </div>
-                  )}
+                  <div className="relative">
+                    {comment.authorPhotoURL ? (
+                      <div className={isAdmin ? 'relative' : ''}>
+                        <img
+                          src={comment.authorPhotoURL}
+                          alt={comment.author}
+                          className={`w-10 h-10 rounded-full ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-700 dark:ring-offset-gray-700' : ''}`}
+                        />
+                        {isAdmin && (
+                          <div className="absolute -top-1 -right-1 bg-yellow-400 rounded-full p-1">
+                            <Crown className="text-black" size={10} />
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-700 dark:ring-offset-gray-700 bg-yellow-600' : 'bg-purple-600'}`}>
+                        {comment.author?.charAt(0) || 'U'}
+                        {isAdmin && (
+                          <div className="absolute -top-1 -right-1 bg-yellow-400 rounded-full p-1">
+                            <Crown className="text-black" size={10} />
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
                   <div className="flex-grow">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center space-x-2">
-                        <span className="font-bold text-gray-900 dark:text-white">{comment.author}</span>
+                        <span className={`font-bold ${isAdmin ? 'bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400 bg-clip-text text-transparent' : 'text-gray-900 dark:text-white'}`}>
+                          {comment.author}
+                        </span>
+                        {isAdmin && (
+                          <div className="flex items-center space-x-1">
+                            <Shield className="text-yellow-400" size={12} />
+                            <span className="text-yellow-400 text-xs font-bold">ADMIN</span>
+                          </div>
+                        )}
                         <span className="text-sm text-gray-500 dark:text-gray-400">
                           {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}
                         </span>
@@ -461,7 +499,8 @@ const ReviewDetail = () => {
                     )}
                   </div>
                 </div>
-              ))
+                );
+              })
             ) : (
               <div className="text-center py-8 text-gray-500 dark:text-gray-400">
                 {t('reviewDetail.noComments')}

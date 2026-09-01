@@ -552,6 +552,13 @@ export const reportAnime = async (reportData) => {
 // Update user display name and photo URL
 export const updateUserDisplayName = async (userId, displayName) => {
   try {
+    // Update Firebase Auth profile
+    const currentUser = auth.currentUser;
+    if (currentUser) {
+      await currentUser.updateProfile({ displayName });
+    }
+    
+    // Update Firestore document
     const userDocRef = doc(db, 'users', userId);
     const userDoc = await getDoc(userDocRef);
     
@@ -568,6 +575,13 @@ export const updateUserDisplayName = async (userId, displayName) => {
 
 export const updateUserPhotoURL = async (userId, photoURL) => {
   try {
+    // Update Firebase Auth profile
+    const currentUser = auth.currentUser;
+    if (currentUser) {
+      await currentUser.updateProfile({ photoURL });
+    }
+    
+    // Update Firestore document
     const userDocRef = doc(db, 'users', userId);
     const userDoc = await getDoc(userDocRef);
     
@@ -634,6 +648,20 @@ export const getUserByEmail = async (email) => {
     return null;
   } catch (error) {
     console.error('Error getting user by email:', error);
+    return null;
+  }
+};
+
+// Get user rank by email (for comment display)
+export const getUserRankByEmail = async (email) => {
+  try {
+    const user = await getUserByEmail(email);
+    if (user && user.rank) {
+      return user.rank;
+    }
+    return null;
+  } catch (error) {
+    console.error('Error getting user rank by email:', error);
     return null;
   }
 };

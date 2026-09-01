@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback, memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount, updateReview, addAnime, getAllAnime, deleteAnime, addAnimeEpisode, getAnimeEpisodes, updateAnimeEpisode, deleteAnimeEpisode } from '../lib/firebase';
+import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount, updateReview, addAnime, getAllAnime, deleteAnime, addAnimeEpisode, getAnimeEpisodes, updateAnimeEpisode, deleteAnimeEpisode, updateUserRank, getUserByEmail } from '../lib/firebase';
 import { searchAnime, getAnimeById } from '../lib/anilist';
-import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users, Edit, Film, Trash2, Play, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users, Edit, Film, Trash2, Play, ChevronLeft, ChevronRight, Crown } from 'lucide-react';
 
 const Admin = memo(() => {
   const { user, checkAdmin, isAuthenticated } = useAuth();
@@ -32,7 +32,12 @@ const Admin = memo(() => {
   const [visitorCount, setVisitorCount] = useState(0);
   
   // Tab state
-  const [activeTab, setActiveTab] = useState('reviews'); // 'reviews' or 'anime'
+  const [activeTab, setActiveTab] = useState('reviews'); // 'reviews', 'anime', or 'ranks'
+  
+  // Rank management state
+  const [targetUserEmail, setTargetUserEmail] = useState('');
+  const [newRank, setNewRank] = useState('');
+  const [rankMessage, setRankMessage] = useState('');
   
   // Anime management state
   const [animeSearchTerm, setAnimeSearchTerm] = useState('');
@@ -78,6 +83,31 @@ const Admin = memo(() => {
       setLoading(false);
     }
   }, [isAuthenticated, checkAdmin, navigate, location.pathname]);
+
+  const handleAssignRank = async () => {
+    if (!targetUserEmail.trim() || !newRank.trim()) {
+      setRankMessage('Please enter both user email and select a rank');
+      return;
+    }
+    
+    try {
+      const targetUser = await getUserByEmail(targetUserEmail);
+      if (!targetUser) {
+        setRankMessage('User not found with this email. Make sure the user has saved anime or has activity in the app.');
+        return;
+      }
+      
+      await updateUserRank(targetUser.id, newRank);
+      setRankMessage(`Rank ${newRank.toUpperCase()} assigned to ${targetUserEmail}`);
+      setTargetUserEmail('');
+      setNewRank('');
+      
+      setTimeout(() => setRankMessage(''), 3000);
+    } catch (error) {
+      console.error('Error assigning rank:', error);
+      setRankMessage('Failed to assign rank. Please try again.');
+    }
+  };
 
   useEffect(() => {
     checkAdminAccess();
@@ -409,6 +439,17 @@ const Admin = memo(() => {
             }`}
           >
             Anime & Episodes
+          </button>
+          <button
+            onClick={() => setActiveTab('ranks')}
+            className={`px-4 sm:px-6 py-3 font-medium transition-colors ${
+              activeTab === 'ranks'
+                ? 'text-black dark:text-white border-b-2 border-black dark:border-white'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            <Crown className="inline mr-2" size={16} />
+            Rank Management
           </button>
         </div>
 
@@ -1094,6 +1135,58 @@ const Admin = memo(() => {
                 )}
               </div>
             )}
+          </div>
+        )}
+
+        {/* Rank Management Tab */}
+        {activeTab === 'ranks' && (
+          <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 dark:from-yellow-900 dark:to-yellow-800 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border-2 border-yellow-400 dark:border-yellow-600">
+            <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 flex items-center">
+              <Crown className="mr-3 text-yellow-600 dark:text-yellow-400" size={24} />
+              Admin Rank Management
+            </h2>
+            <div className="space-y-4">
+              <div className="flex flex-col sm:flex-row gap-3">
+                <input
+                  type="text"
+                  placeholder="User Email"
+                  value={targetUserEmail}
+                  onChange={(e) => setTargetUserEmail(e.target.value)}
+                  className="flex-1 px-4 py-2 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg bg-white dark:bg-black text-black dark:text-white"
+                />
+                <select
+                  value={newRank}
+                  onChange={(e) => setNewRank(e.target.value)}
+                  className="px-4 py-2 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg bg-white dark:bg-black text-black dark:text-white"
+                >
+                  <option value="">Select Rank</option>
+                  <option value="admin">Admin</option>
+                  <option value="moderator">Moderator</option>
+                  <option value="vip">VIP</option>
+                  <option value="premium">Premium</option>
+                </select>
+                <button
+                  onClick={handleAssignRank}
+                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-2 rounded-lg transition-colors"
+                >
+                  Assign Rank
+                </button>
+              </div>
+              {rankMessage && (
+                <div className={`p-3 rounded-lg ${rankMessage.includes('assigned') ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200' : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'}`}>
+                  {rankMessage}
+                </div>
+              )}
+              <div className="bg-white dark:bg-black rounded-lg p-4 border-2 border-yellow-300 dark:border-yellow-700">
+                <h3 className="font-bold text-black dark:text-white mb-2">Instructions:</h3>
+                <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                  <li>• Enter the user's email address</li>
+                  <li>• Select the rank you want to assign</li>
+                  <li>• Click "Assign Rank" to apply</li>
+                  <li>• User must have saved anime or activity in the app to be found</li>
+                </ul>
+              </div>
+            </div>
           </div>
         )}
       </div>

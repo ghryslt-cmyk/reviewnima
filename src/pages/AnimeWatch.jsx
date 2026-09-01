@@ -1,9 +1,9 @@
 import { useState, useEffect, useCallback, memo, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getAnimeById } from '../lib/anilist';
-import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode, getAnimeComments, addAnimeComment, deleteAnimeComment, addAnimeCommentReply, getAnimeCommentReplies, saveAnimeToProfile, removeAnimeFromProfile, getSavedAnime, reportAnime } from '../lib/firebase';
+import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode, getAnimeComments, addAnimeComment, deleteAnimeComment, addAnimeCommentReply, getAnimeCommentReplies, saveAnimeToProfile, removeAnimeFromProfile, getSavedAnime, reportAnime, getUserRankByEmail } from '../lib/firebase';
 import WatchLayout from '../components/WatchLayout';
-import { Play, ThumbsUp, ThumbsDown, Share, Bookmark, Flag, Loader2, X, AlertCircle, Heart, MessageSquare, Send, User, Trash2, Reply } from 'lucide-react';
+import { Play, ThumbsUp, ThumbsDown, Share, Bookmark, Flag, Loader2, X, AlertCircle, Heart, MessageSquare, Send, User, Trash2, Reply, Crown, Shield } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useAuth } from '../context/AuthContext';
 import { useTranslation } from '../lib/translations';
@@ -28,6 +28,7 @@ const AnimeWatch = memo(() => {
   const [submittingReport, setSubmittingReport] = useState(false);
   const hasFetchedComments = useRef(false);
   const [replyingTo, setReplyingTo] = useState(null);
+  const [commentRanks, setCommentRanks] = useState({});
   const [replyText, setReplyText] = useState('');
   const [submittingReply, setSubmittingReply] = useState(false);
   const [commentReplies, setCommentReplies] = useState({});
@@ -188,6 +189,19 @@ const AnimeWatch = memo(() => {
       try {
         const commentsData = await getAnimeComments(id);
         setComments(commentsData);
+        
+        // Fetch ranks for comment authors
+        const ranks = {};
+        for (const comment of commentsData) {
+          if (comment.authorEmail) {
+            const rank = await getUserRankByEmail(comment.authorEmail);
+            if (rank) {
+              ranks[comment.authorEmail] = rank;
+            }
+          }
+        }
+        setCommentRanks(ranks);
+        
         hasFetchedComments.current = true;
       } catch (error) {
         console.error('Error fetching comments:', error);
@@ -465,23 +479,48 @@ const AnimeWatch = memo(() => {
               {/* Comments List */}
               <div className="space-y-4">
                 {comments.length > 0 ? (
-                  comments.map(comment => (
+                  comments.map(comment => {
+                    const userRank = commentRanks[comment.authorEmail];
+                    const isAdmin = userRank === 'admin';
+                    return (
                     <div key={comment.id} className="flex space-x-4 p-4 bg-gray-800 rounded-lg">
-                      {comment.authorPhotoURL ? (
-                        <img
-                          src={comment.authorPhotoURL}
-                          alt={comment.author}
-                          className="w-10 h-10 rounded-full"
-                        />
-                      ) : (
-                        <div className="w-10 h-10 rounded-full bg-cyan-600 flex items-center justify-center text-white font-bold">
-                          {comment.author?.charAt(0) || 'U'}
-                        </div>
-                      )}
+                      <div className="relative">
+                        {comment.authorPhotoURL ? (
+                          <div className={isAdmin ? 'relative' : ''}>
+                            <img
+                              src={comment.authorPhotoURL}
+                              alt={comment.author}
+                              className={`w-10 h-10 rounded-full ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800' : ''}`}
+                            />
+                            {isAdmin && (
+                              <div className="absolute -top-1 -right-1 bg-yellow-400 rounded-full p-1">
+                                <Crown className="text-black" size={10} />
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800 bg-yellow-600' : 'bg-cyan-600'}`}>
+                            {comment.author?.charAt(0) || 'U'}
+                            {isAdmin && (
+                              <div className="absolute -top-1 -right-1 bg-yellow-400 rounded-full p-1">
+                                <Crown className="text-black" size={10} />
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </div>
                       <div className="flex-grow">
                         <div className="flex items-center justify-between mb-2">
                           <div className="flex items-center space-x-2">
-                            <span className="font-bold text-white">{comment.author}</span>
+                            <span className={`font-bold ${isAdmin ? 'bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400 bg-clip-text text-transparent' : 'text-white'}`}>
+                              {comment.author}
+                            </span>
+                            {isAdmin && (
+                              <div className="flex items-center space-x-1">
+                                <Shield className="text-yellow-400" size={12} />
+                                <span className="text-yellow-400 text-xs font-bold">ADMIN</span>
+                              </div>
+                            )}
                             <span className="text-sm text-gray-400">
                               {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}
                             </span>
@@ -578,7 +617,8 @@ const AnimeWatch = memo(() => {
                         )}
                       </div>
                     </div>
-                  ))
+                    );
+                  })
                 ) : (
                   <div className="text-center py-8 text-gray-400">
                     No comments yet. Be the first to comment!

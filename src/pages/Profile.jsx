@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank, updateUserRank, canAssignRank, getUserByEmail } from '../lib/firebase';
+import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank } from '../lib/firebase';
 import { User, Mail, BookOpen, Star, Play, Trash2, Edit, Camera, Crown, Shield } from 'lucide-react';
 
 const Profile = () => {
-  const { user, isAuthenticated, logout } = useAuth();
+  const { user, isAuthenticated, logout, refreshUser } = useAuth();
   const { language } = useLanguage();
   const { t } = useTranslation(language);
   const [userReviews, setUserReviews] = useState([]);
@@ -17,9 +17,6 @@ const Profile = () => {
   const [editingPhoto, setEditingPhoto] = useState(false);
   const [newName, setNewName] = useState('');
   const [newPhotoUrl, setNewPhotoUrl] = useState('');
-  const [editingRank, setEditingRank] = useState(false);
-  const [newRank, setNewRank] = useState('');
-  const [targetUserEmail, setTargetUserEmail] = useState('');
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -54,8 +51,8 @@ const Profile = () => {
     try {
       await updateUserDisplayName(user.uid, newName);
       setEditingName(false);
-      // Reload page to reflect changes
-      window.location.reload();
+      await refreshUser();
+      setNewName(user?.displayName || '');
     } catch (error) {
       console.error('Error updating name:', error);
       alert('Failed to update name');
@@ -67,40 +64,14 @@ const Profile = () => {
     try {
       await updateUserPhotoURL(user.uid, newPhotoUrl);
       setEditingPhoto(false);
-      // Reload page to reflect changes
-      window.location.reload();
+      await refreshUser();
+      setNewPhotoUrl(user?.photoURL || '');
     } catch (error) {
       console.error('Error updating photo:', error);
       alert('Failed to update photo');
     }
   };
 
-  const handleUpdateRank = async () => {
-    if (!targetUserEmail.trim() || !newRank.trim()) {
-      alert('Please enter both user email and select a rank');
-      return;
-    }
-    try {
-      const targetUser = await getUserByEmail(targetUserEmail);
-      if (!targetUser) {
-        alert('User not found with this email');
-        return;
-      }
-      
-      await updateUserRank(targetUser.id, newRank);
-      setEditingRank(false);
-      setNewRank('');
-      setTargetUserEmail('');
-      alert(`Rank ${newRank} assigned to ${targetUserEmail}`);
-      // Reload page to reflect changes
-      window.location.reload();
-    } catch (error) {
-      console.error('Error updating rank:', error);
-      alert('Failed to update rank');
-    }
-  };
-
-  const isAdminUser = canAssignRank(user?.email);
   const isAdminRank = userRank === 'admin';
 
   if (!isAuthenticated) {
@@ -255,47 +226,6 @@ const Profile = () => {
                   Save
                 </button>
               </div>
-            </div>
-          </div>
-        )}
-
-        {/* Admin Rank Management Section */}
-        {isAdminUser && (
-          <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 dark:from-yellow-900 dark:to-yellow-800 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-yellow-400 dark:border-yellow-600">
-            <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 flex items-center">
-              <Crown className="mr-3 text-yellow-600 dark:text-yellow-400" size={24} />
-              Admin Rank Management
-            </h2>
-            <div className="space-y-4">
-              <div className="flex flex-col sm:flex-row gap-3">
-                <input
-                  type="text"
-                  placeholder="User Email"
-                  value={targetUserEmail}
-                  onChange={(e) => setTargetUserEmail(e.target.value)}
-                  className="flex-1 px-4 py-2 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg bg-white dark:bg-black text-black dark:text-white"
-                />
-                <select
-                  value={newRank}
-                  onChange={(e) => setNewRank(e.target.value)}
-                  className="px-4 py-2 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg bg-white dark:bg-black text-black dark:text-white"
-                >
-                  <option value="">Select Rank</option>
-                  <option value="admin">Admin</option>
-                  <option value="moderator">Moderator</option>
-                  <option value="vip">VIP</option>
-                  <option value="premium">Premium</option>
-                </select>
-                <button
-                  onClick={handleUpdateRank}
-                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-2 rounded-lg transition-colors"
-                >
-                  Assign Rank
-                </button>
-              </div>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
-                Note: Only you (ghryslt@gmail.com) can assign ranks to users.
-              </p>
             </div>
           </div>
         )}
