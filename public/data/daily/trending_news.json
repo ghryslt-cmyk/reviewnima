@@ -1,7 +1,18 @@
 {
-  "version": 1788257634429,
-  "fetchedAt": "2026-09-01T10:13:54.429Z",
+  "version": 1788274705871,
+  "fetchedAt": "2026-09-01T14:58:25.871Z",
   "news": [
+    {
+      "title": "Red River Anime Reveals New Cast Member, Theme Song Artists",
+      "description": "Nana Mizuki voices Ursula, performs new opening song; Ryu Matsuyama performs new ending",
+      "fullDescription": "Nana Mizuki voices Ursula, performs new opening song; Ryu Matsuyama performs new ending",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-01/red-river-anime-reveals-new-cast-member-theme-song-artists/.241190",
+      "pubDate": "Tue, 01 Sep 2026 09:54:25 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241190/red.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241190"
+    },
     {
       "title": "The Summer Hikaru Died Manga to End in 2 Chapters",
       "description": "Last 2 chapters scheduled to publish in October",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241160/takiko-mizuse.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241160"
-    },
-    {
-      "title": "Sony Music Entertainment Japan, GungHo Online Entertainment Form Capital, Business Alliance",
-      "description": "Business alliance to possibly see joint development of games, development of new game projects including utilization of Sony IPs",
-      "fullDescription": "Business alliance to possibly see joint development of games, development of new game projects including utilization of Sony IPs",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-31/sony-music-entertainment-japan-gungho-online-entertainment-form-capital-business-alliance/.241132",
-      "pubDate": "Mon, 31 Aug 2026 10:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.8/227685/gungho.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241132"
     }
   ],
   "total": 15
