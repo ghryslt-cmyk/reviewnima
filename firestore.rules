@@ -41,8 +41,9 @@ service cloud.firestore {
     
     // Reports collection
     match /reports/{reportId} {
-      allow create: if true;
-      allow read, update, delete: if request.auth != null && request.auth.token.email == 'ghryslt@gmail.com';
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null && request.auth.token.email == 'ghryslt@gmail.com';
     }
     
     // Users collection
