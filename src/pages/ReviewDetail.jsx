@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../components/Layout';
-import { getReviewById, getComments, addComment } from '../lib/firebase';
+import { getReviewById, getComments, addComment, deleteComment, addCommentReply, getCommentReplies } from '../lib/firebase';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { Star, Calendar, Clock, User, MessageSquare, Send, ExternalLink } from 'lucide-react';
+import { Star, Calendar, Clock, User, MessageSquare, Send, ExternalLink, Trash2, Reply } from 'lucide-react';
 
 const ReviewDetail = () => {
   const { id } = useParams();
@@ -17,6 +17,11 @@ const ReviewDetail = () => {
   const [loading, setLoading] = useState(true);
   const [commentText, setCommentText] = useState('');
   const [submittingComment, setSubmittingComment] = useState(false);
+  const [replyingTo, setReplyingTo] = useState(null);
+  const [replyText, setReplyText] = useState('');
+  const [submittingReply, setSubmittingReply] = useState(false);
+  const [commentReplies, setCommentReplies] = useState({});
+  const [showReplies, setShowReplies] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,20 +49,94 @@ const ReviewDetail = () => {
 
     setSubmittingComment(true);
     try {
-      await addComment(id, {
+      const commentId = await addComment(id, {
         text: commentText,
         author: user.displayName,
         authorEmail: user.email,
         authorPhotoURL: user.photoURL
       });
       
-      const commentsData = await getComments(id);
-      setComments(commentsData);
+      const newComment = {
+        id: commentId,
+        text: commentText,
+        author: user.displayName,
+        authorEmail: user.email,
+        authorPhotoURL: user.photoURL,
+        createdAt: new Date()
+      };
+      
+      setComments(prev => [newComment, ...prev]);
       setCommentText('');
     } catch (error) {
       console.error('Error adding comment:', error);
+      alert('Failed to add comment. Please try again.');
     } finally {
       setSubmittingComment(false);
+    }
+  };
+
+  const handleDeleteComment = async (commentId) => {
+    if (!isAuthenticated) return;
+    
+    if (!confirm('Are you sure you want to delete this comment?')) return;
+    
+    try {
+      await deleteComment(id, commentId);
+      setComments(prev => prev.filter(c => c.id !== commentId));
+    } catch (error) {
+      console.error('Error deleting comment:', error);
+      alert('Failed to delete comment. Please try again.');
+    }
+  };
+
+  const handleReply = async (commentId) => {
+    if (!replyText.trim() || !isAuthenticated) return;
+
+    setSubmittingReply(true);
+    try {
+      const replyId = await addCommentReply(id, commentId, {
+        text: replyText,
+        author: user.displayName,
+        authorEmail: user.email,
+        authorPhotoURL: user.photoURL
+      });
+      
+      const newReply = {
+        id: replyId,
+        text: replyText,
+        author: user.displayName,
+        authorEmail: user.email,
+        authorPhotoURL: user.photoURL,
+        createdAt: new Date()
+      };
+      
+      setCommentReplies(prev => ({
+        ...prev,
+        [commentId]: [...(prev[commentId] || []), newReply]
+      }));
+      setReplyText('');
+      setReplyingTo(null);
+    } catch (error) {
+      console.error('Error adding reply:', error);
+      alert('Failed to add reply. Please try again.');
+    } finally {
+      setSubmittingReply(false);
+    }
+  };
+
+  const toggleReplies = async (commentId) => {
+    if (showReplies[commentId]) {
+      setShowReplies(prev => ({ ...prev, [commentId]: false }));
+    } else {
+      setShowReplies(prev => ({ ...prev, [commentId]: true }));
+      if (!commentReplies[commentId]) {
+        try {
+          const replies = await getCommentReplies(id, commentId);
+          setCommentReplies(prev => ({ ...prev, [commentId]: replies }));
+        } catch (error) {
+          console.error('Error fetching replies:', error);
+        }
+      }
     }
   };
 
@@ -283,13 +362,103 @@ const ReviewDetail = () => {
                     </div>
                   )}
                   <div className="flex-grow">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <span className="font-bold text-gray-900 dark:text-white">{comment.author}</span>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">
-                        {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}
-                      </span>
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center space-x-2">
+                        <span className="font-bold text-gray-900 dark:text-white">{comment.author}</span>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                          {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}
+                        </span>
+                      </div>
+                      {isAuthenticated && user?.email === comment.authorEmail && (
+                        <button
+                          onClick={() => handleDeleteComment(comment.id)}
+                          className="text-red-400 hover:text-red-300 transition-colors"
+                          title="Delete comment"
+                        >
+                          <Trash2 size={16} />
+                        </button>
+                      )}
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300">{comment.text}</p>
+                    <p className="text-gray-700 dark:text-gray-300 mb-2">{comment.text}</p>
+                    <div className="flex items-center space-x-4">
+                      <button
+                        onClick={() => toggleReplies(comment.id)}
+                        className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
+                      >
+                        {showReplies[comment.id] ? 'Hide replies' : 'Show replies'}
+                      </button>
+                      {isAuthenticated && (
+                        <button
+                          onClick={() => {
+                            setReplyingTo(comment.id);
+                            setReplyText('');
+                          }}
+                          className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors flex items-center space-x-1"
+                        >
+                          <Reply size={14} />
+                          <span>Reply</span>
+                        </button>
+                      )}
+                    </div>
+                    
+                    {replyingTo === comment.id && (
+                      <div className="mt-3">
+                        <textarea
+                          value={replyText}
+                          onChange={(e) => setReplyText(e.target.value)}
+                          placeholder="Write a reply..."
+                          className="w-full p-3 border-2 border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent resize-none"
+                          rows="2"
+                        />
+                        <div className="mt-2 flex justify-end space-x-2">
+                          <button
+                            onClick={() => {
+                              setReplyingTo(null);
+                              setReplyText('');
+                            }}
+                            className="px-3 py-1 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-black dark:text-white rounded-lg transition-colors text-sm"
+                          >
+                            Cancel
+                          </button>
+                          <button
+                            onClick={() => handleReply(comment.id)}
+                            disabled={submittingReply || !replyText.trim()}
+                            className="px-3 py-1 bg-cyan-600 hover:bg-cyan-700 text-white disabled:bg-gray-400 disabled:text-gray-500 rounded-lg transition-colors text-sm"
+                          >
+                            {submittingReply ? 'Sending...' : 'Reply'}
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                    
+                    {showReplies[comment.id] && commentReplies[comment.id] && (
+                      <div className="mt-3 space-y-2 ml-4 border-l-2 border-gray-300 dark:border-gray-600 pl-4">
+                        {commentReplies[comment.id].map(reply => (
+                          <div key={reply.id} className="flex space-x-3">
+                            {reply.authorPhotoURL ? (
+                              <img
+                                src={reply.authorPhotoURL}
+                                alt={reply.author}
+                                className="w-8 h-8 rounded-full"
+                              />
+                            ) : (
+                              <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-sm">
+                                {reply.author?.charAt(0) || 'U'}
+                              </div>
+                            )}
+                            <div className="flex-grow">
+                              <div className="flex items-center space-x-2 mb-1">
+                                <span className="font-bold text-gray-900 dark:text-white text-sm">{reply.author}</span>
+                                <span className="text-xs text-gray-500 dark:text-gray-400">
+                                  {new Date(reply.createdAt?.toDate?.() || reply.createdAt).toLocaleDateString()}
+                                </span>
+                              </div>
+                              <p className="text-gray-700 dark:text-gray-300 text-sm">{reply.text}</p>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               ))

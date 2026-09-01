@@ -126,6 +126,45 @@ export const getComments = async (reviewId) => {
   }
 };
 
+export const deleteComment = async (reviewId, commentId) => {
+  try {
+    const commentRef = doc(db, 'reviews', reviewId, 'comments', commentId);
+    await deleteDoc(commentRef);
+  } catch (error) {
+    console.error('Error deleting comment:', error);
+    throw new Error('Failed to delete comment. Please try again.');
+  }
+};
+
+export const addCommentReply = async (reviewId, commentId, replyData) => {
+  try {
+    const repliesRef = collection(db, 'reviews', reviewId, 'comments', commentId, 'replies');
+    const docRef = await addDoc(repliesRef, {
+      ...replyData,
+      createdAt: serverTimestamp()
+    });
+    return docRef.id;
+  } catch (error) {
+    console.error('Error adding comment reply:', error);
+    throw new Error('Failed to add reply. Please try again.');
+  }
+};
+
+export const getCommentReplies = async (reviewId, commentId) => {
+  try {
+    const repliesRef = collection(db, 'reviews', reviewId, 'comments', commentId, 'replies');
+    const querySnapshot = await getDocs(query(repliesRef, orderBy('createdAt', 'asc')));
+    const replies = [];
+    querySnapshot.forEach((doc) => {
+      replies.push({ id: doc.id, ...doc.data() });
+    });
+    return replies;
+  } catch (error) {
+    console.error('Error getting comment replies:', error);
+    throw new Error('Failed to fetch replies. Please try again.');
+  }
+};
+
 export const getUserProfile = async (userId) => {
   try {
     const docRef = doc(db, 'users', userId);
@@ -382,6 +421,45 @@ export const getAnimeComments = async (animeId) => {
   } catch (error) {
     console.error('Error getting anime comments:', error);
     throw new Error('Failed to fetch comments. Please try again.');
+  }
+};
+
+export const deleteAnimeComment = async (animeId, commentId) => {
+  try {
+    const commentRef = doc(db, 'anime', animeId, 'comments', commentId);
+    await deleteDoc(commentRef);
+  } catch (error) {
+    console.error('Error deleting anime comment:', error);
+    throw new Error('Failed to delete comment. Please try again.');
+  }
+};
+
+export const addAnimeCommentReply = async (animeId, commentId, replyData) => {
+  try {
+    const repliesRef = collection(db, 'anime', animeId, 'comments', commentId, 'replies');
+    const docRef = await addDoc(repliesRef, {
+      ...replyData,
+      createdAt: serverTimestamp()
+    });
+    return docRef.id;
+  } catch (error) {
+    console.error('Error adding anime comment reply:', error);
+    throw new Error('Failed to add reply. Please try again.');
+  }
+};
+
+export const getAnimeCommentReplies = async (animeId, commentId) => {
+  try {
+    const repliesRef = collection(db, 'anime', animeId, 'comments', commentId, 'replies');
+    const querySnapshot = await getDocs(query(repliesRef, orderBy('createdAt', 'asc')));
+    const replies = [];
+    querySnapshot.forEach((doc) => {
+      replies.push({ id: doc.id, ...doc.data() });
+    });
+    return replies;
+  } catch (error) {
+    console.error('Error getting anime comment replies:', error);
+    throw new Error('Failed to fetch replies. Please try again.');
   }
 };
 
