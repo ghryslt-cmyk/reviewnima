@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
 import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages, Film } from 'lucide-react';
 import { useState, useCallback, useEffect, memo } from 'react';
-import { getUserRank } from '../lib/firebase';
+import { getUserRank, getUserRankByEmail } from '../lib/firebase';
 
 const Navbar = () => {
   const { user, logout, checkAdmin, isAuthenticated } = useAuth();
@@ -73,8 +73,15 @@ const Navbar = () => {
     const fetchUserRank = async () => {
       if (isAuthenticated && user?.uid) {
         try {
-          const rank = await getUserRank(user.uid);
-          console.log('Navbar - User rank:', rank, 'for user:', user.uid, 'email:', user.email);
+          let rank = await getUserRank(user.uid);
+          console.log('Navbar - User rank from UID:', rank, 'for user:', user.uid, 'email:', user.email);
+          
+          // Fallback to email-based lookup if rank not found
+          if (!rank && user?.email) {
+            rank = await getUserRankByEmail(user.email);
+            console.log('Navbar - User rank from email fallback:', rank, 'for email:', user.email);
+          }
+          
           setUserRank(rank);
         } catch (error) {
           console.error('Error fetching user rank:', error);

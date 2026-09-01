@@ -635,6 +635,21 @@ export const getUserRank = async (userId) => {
   }
 };
 
+// Get user rank by email (as fallback for email-based documents)
+export const getUserRankByEmail = async (email) => {
+  try {
+    const user = await getUserByEmail(email);
+    if (user && user.rank) {
+      console.log('getUserRankByEmail - Found rank by email:', user.rank, 'for email:', email);
+      return user.rank;
+    }
+    return null;
+  } catch (error) {
+    console.error('getUserRankByEmail - Error getting user rank by email:', error);
+    return null;
+  }
+};
+
 // Check if user can assign ranks (only admin)
 export const canAssignRank = (userEmail) => {
   return userEmail === 'ghryslt@gmail.com';

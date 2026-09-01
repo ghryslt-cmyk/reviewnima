@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank, getUserProfile } from '../lib/firebase';
+import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank, getUserProfile, getUserRankByEmail } from '../lib/firebase';
 import { User, Mail, BookOpen, Star, Play, Trash2, Edit, Camera, Crown, Shield } from 'lucide-react';
 
 const Profile = () => {
@@ -32,8 +32,15 @@ const Profile = () => {
         const savedAnimeData = await getSavedAnime(user.uid);
         setSavedAnime(savedAnimeData);
         
-        const rank = await getUserRank(user.uid);
-        console.log('Profile - User rank:', rank, 'type:', typeof rank, 'for user:', user.uid);
+        let rank = await getUserRank(user.uid);
+        console.log('Profile - User rank from UID:', rank, 'type:', typeof rank, 'for user:', user.uid);
+        
+        // Fallback to email-based lookup if rank not found
+        if (!rank && user?.email) {
+          rank = await getUserRankByEmail(user.email);
+          console.log('Profile - User rank from email fallback:', rank, 'for email:', user.email);
+        }
+        
         console.log('Profile - isAdminRank check:', rank === 'admin');
         setUserRank(rank);
         
