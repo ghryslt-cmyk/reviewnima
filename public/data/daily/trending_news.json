@@ -1,7 +1,51 @@
 {
-  "version": 1788287027823,
-  "fetchedAt": "2026-09-01T18:23:47.823Z",
+  "version": 1788297329405,
+  "fetchedAt": "2026-09-01T21:15:29.405Z",
   "news": [
+    {
+      "title": "Busan Film Festival to Host Japanese Animation Special Program, Screening 13 Films",
+      "description": "The White Snake Enchantress, Belladonna of Sadness, Phoenix 2772, Angel's Egg, Memories, Metropolis, more",
+      "fullDescription": "<cite>The White Snake Enchantress, Belladonna of Sadness, Phoenix 2772, Angel's Egg, Memories, Metropolis</cite>, more",
+      "link": "https://www.animenewsnetwork.com/news/2026-08-31/busan-film-festival-to-host-japanese-animation-special-program-screening-13-films/.241157",
+      "pubDate": "Tue, 01 Sep 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max400x400/encyc/A655-18.1511358683.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241157"
+    },
+    {
+      "title": "One Room Angel Artist Harada Launches First Seinen Manga",
+      "description": "Akuen debuts on September 9",
+      "fullDescription": "<cite>Akuen</cite> debuts on September 9",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-01/one-room-angel-artist-harada-launches-first-seinen-manga/.241168",
+      "pubDate": "Tue, 01 Sep 2026 16:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241168"
+    },
+    {
+      "title": "'Optimus Prime: Awakening' Animated Short Announces Cast, Staff, More Screening Regions",
+      "description": "Late Peter Cullen stars as Optimus Prime in his final performance",
+      "fullDescription": "Late Peter Cullen stars as Optimus Prime in his final performance",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-01/optimus-prime-awakening-animated-short-announces-cast-staff-more-screening-regions/.241202",
+      "pubDate": "Tue, 01 Sep 2026 15:15:14 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241202/transformersthemovie-coda-059-1080x1350-v2.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241202"
+    },
+    {
+      "title": "All-Male Precure Stage Play Returns With Colorful Runway! Production in December",
+      "description": "New fashion-focused play runs in Tokyo from December 5-13, Osaka from December 26-27",
+      "fullDescription": "New fashion-focused play runs in Tokyo from December 5-13, Osaka from December 26-27",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-01/all-male-precure-stage-play-returns-with-colorful-runway-production-in-december/.241197",
+      "pubDate": "Tue, 01 Sep 2026 14:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241197/colorful-runway-precure-the-stage.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241197"
+    },
     {
       "title": "Live-Action Street Fighter Film Unveils New Trailer",
       "description": "Film opens on October 16",
@@ -122,50 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788237859-b42c80c700c655f857b224910054ecb7.jpeg",
       "guid": "https://myanimelist.net/news/74657377?_location=rss"
-    },
-    {
-      "title": "5th Girls und Panzer das Finale Film's 2nd Trailer Preps for Last Battle",
-      "description": "2nd-to-last film to open on October 9",
-      "fullDescription": "2nd-to-last film to open on October 9",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-31/5th-girls-und-panzer-das-finale-film-2nd-trailer-preps-for-last-battle/.241179",
-      "pubDate": "Mon, 31 Aug 2026 23:46:28 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241179/gupfinal5-2ndposterbilling-largef-b2-531x750.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241179"
-    },
-    {
-      "title": "Oha Suta TV Show's Identity V Game-Playing Segment Gets Short Anime",
-      "description": "4-part anime depicts school life of horror game's gardener Emma (Chiwa Saitō), other survivors",
-      "fullDescription": "4-part anime depicts school life of horror game's gardener Emma (Chiwa Saitō), other survivors",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-31/oha-suta-tv-show-identity-v-game-playing-segment-gets-short-anime/.241176",
-      "pubDate": "Mon, 31 Aug 2026 21:34:44 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241176/main-6.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241176"
-    },
-    {
-      "title": "Inukami! Novel Illustrator Kanna Wakatsuki Plans to Sue Publisher WiZH for Alleged Copyright Infringement",
-      "description": "Wakatsuki claims that WiZH used unauthorized artwork for complete edition volumes of Inukami! novels",
-      "fullDescription": "Wakatsuki claims that WiZH used unauthorized artwork for complete edition volumes of <cite>Inukami!</cite> novels",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-31/inukami-novel-illustrator-kanna-wakatsuki-plans-to-sue-publisher-wizh-for-alleged-copyright-/.241161",
-      "pubDate": "Mon, 31 Aug 2026 16:05:46 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241161/wizh-inumaki-vol-1.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241161"
-    },
-    {
-      "title": "Sony Launches Ad-Supported Live TV on PlayStation 5 in U.S.",
-      "description": "Free service includes anime, movies, TV shows, sports, news, more",
-      "fullDescription": "Free service includes anime, movies, TV shows, sports, news, more",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-31/sony-launches-ad-supported-live-tv-on-playstation-5-in-u.s/.241166",
-      "pubDate": "Mon, 31 Aug 2026 14:12:12 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241166"
     }
   ],
   "total": 15
