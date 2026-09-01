@@ -279,19 +279,19 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className="bg-black dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-white border-2 border-purple-900 dark:border-purple-100">
+          <div className="bg-black dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-white border-2 border-gray-700 dark:border-gray-300">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-purple-300 dark:text-purple-700 text-xs sm:text-sm mb-1">Saved Anime</p>
+                <p className="text-gray-300 dark:text-gray-700 text-xs sm:text-sm mb-1">Saved Anime</p>
                 <p className="text-2xl sm:text-3xl font-bold">{savedAnime.length}</p>
               </div>
-              <Play size={24} sm:size={32} className="text-purple-400 dark:text-purple-600" />
+              <Play size={24} sm:size={32} className="text-gray-400 dark:text-gray-600" />
             </div>
           </div>
         </div>
 
         {/* Saved Anime Section */}
-        <div className="bg-black dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-black dark:border-white">
+        <div className="bg-white dark:bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-black dark:border-white">
           <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 sm:mb-6 flex items-center">
             <Play className="mr-3 text-black dark:text-white" size={24} />
             Saved Anime

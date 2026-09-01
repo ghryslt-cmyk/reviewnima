@@ -620,11 +620,14 @@ export const getUserRank = async (userId) => {
     
     if (userDoc.exists()) {
       const userData = userDoc.data();
+      console.log('getUserRank - User data:', userData, 'for userId:', userId);
+      console.log('getUserRank - Rank field:', userData.rank, 'type:', typeof userData.rank);
       return userData.rank || null;
     }
+    console.log('getUserRank - User document does not exist for userId:', userId);
     return null;
   } catch (error) {
-    console.error('Error getting user rank:', error);
+    console.error('getUserRank - Error getting user rank:', error);
     return null;
   }
 };
