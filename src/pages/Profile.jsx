@@ -170,7 +170,7 @@ const Profile = () => {
                   </div>
                 ) : (
                   <>
-                    <h1 className={`text-2xl sm:text-3xl font-bold mb-2 ${isAdminRank ? 'bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400 bg-clip-text text-transparent animate-pulse' : 'text-black dark:text-white'}`}>
+                    <h1 className={`text-2xl sm:text-3xl font-bold mb-2 ${isAdminRank ? 'bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 bg-clip-text text-transparent' : 'text-black dark:text-white'}`}>
                       {user?.displayName || firestoreUserData?.displayName || 'User'}
                     </h1>
                     <button

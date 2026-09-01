@@ -4,6 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
 import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages, Film } from 'lucide-react';
 import { useState, useCallback, useEffect, memo } from 'react';
+import { getUserRank } from '../lib/firebase';
 
 const Navbar = () => {
   const { user, logout, checkAdmin, isAuthenticated } = useAuth();
@@ -14,6 +15,7 @@ const Navbar = () => {
   const [languageDropdownOpen, setLanguageDropdownOpen] = useState(false);
   const [animeDropdownOpen, setAnimeDropdownOpen] = useState(false);
   const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
+  const [userRank, setUserRank] = useState(null);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -65,6 +67,25 @@ const Navbar = () => {
     { code: 'en', name: 'English', flag: '🇬🇧' },
     { code: 'jp', name: '日本語', flag: '🇯🇵' }
   ];
+
+  // Fetch user rank
+  useEffect(() => {
+    const fetchUserRank = async () => {
+      if (isAuthenticated && user?.uid) {
+        try {
+          const rank = await getUserRank(user.uid);
+          setUserRank(rank);
+        } catch (error) {
+          console.error('Error fetching user rank:', error);
+        }
+      } else {
+        setUserRank(null);
+      }
+    };
+    fetchUserRank();
+  }, [isAuthenticated, user]);
+
+  const isAdminRank = userRank === 'admin';
 
   return (
     <nav className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-lg border-b border-gray-200 dark:border-gray-700 transition-all duration-300 relative z-50">
@@ -222,16 +243,22 @@ const Navbar = () => {
             {isAuthenticated ? (
               <>
                 <Link to="/profile" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
-                  {user?.photoURL ? (
-                    <img 
-                      src={user.photoURL} 
-                      alt="Profile" 
-                      className="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-600"
-                    />
-                  ) : (
-                    <User size={20} />
-                  )}
-                  <span className="hidden md:inline">{user?.displayName}</span>
+                  <div className="relative">
+                    {user?.photoURL ? (
+                      <div className={isAdminRank ? 'relative' : ''}>
+                        <img 
+                          src={user.photoURL} 
+                          alt="Profile" 
+                          className={`w-8 h-8 rounded-full border-2 ${isAdminRank ? 'border-yellow-500 ring-2 ring-yellow-400 ring-offset-1 ring-offset-white dark:ring-offset-gray-800' : 'border-gray-300 dark:border-gray-600'}`}
+                        />
+                      </div>
+                    ) : (
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center ${isAdminRank ? 'bg-yellow-600 ring-2 ring-yellow-400 ring-offset-1 ring-offset-white dark:ring-offset-gray-800' : 'bg-gray-300 dark:bg-gray-600'}`}>
+                        <User size={16} className={isAdminRank ? 'text-white' : 'text-gray-700 dark:text-gray-300'} />
+                      </div>
+                    )}
+                  </div>
+                  <span className={`hidden md:inline ${isAdminRank ? 'bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 bg-clip-text text-transparent font-bold' : ''}`}>{user?.displayName}</span>
                 </Link>
                 <button
                   onClick={handleLogout}

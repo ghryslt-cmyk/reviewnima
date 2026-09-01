@@ -394,7 +394,7 @@ const ReviewDetail = () => {
                   <div className="flex-grow">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center space-x-2">
-                        <span className={`font-bold ${isAdmin ? 'bg-gradient-to-r from-yellow-400 via-yellow-200 to-yellow-400 bg-clip-text text-transparent' : 'text-gray-900 dark:text-white'}`}>
+                        <span className={`font-bold ${isAdmin ? 'bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 bg-clip-text text-transparent' : 'text-gray-900 dark:text-white'}`}>
                           {comment.author}
                         </span>
                         {isAdmin && (
