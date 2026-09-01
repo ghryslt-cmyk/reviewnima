@@ -156,13 +156,13 @@ const Profile = () => {
                   {anime.coverImage && (
                     <img
                       src={anime.coverImage}
-                      alt={anime.title}
+                      alt={typeof anime.title === 'object' ? (anime.title.english || anime.title.romaji) : anime.title}
                       className="w-full h-32 sm:h-40 object-cover"
                     />
                   )}
                   <div className="p-2 sm:p-3">
                     <h3 className="font-bold text-black dark:text-white text-xs sm:text-sm truncate">
-                      {anime.title}
+                      {typeof anime.title === 'object' ? (anime.title.english || anime.title.romaji) : anime.title}
                     </h3>
                     <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                       {new Date(anime.savedAt).toLocaleDateString()}

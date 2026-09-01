@@ -85,15 +85,23 @@ const AnimeWatch = memo(() => {
 
     setSubmittingComment(true);
     try {
-      await addAnimeComment(id, {
+      const newComment = await addAnimeComment(id, {
         text: commentText,
         author: user.displayName,
         authorEmail: user.email,
         authorPhotoURL: user.photoURL
       });
       
-      const commentsData = await getAnimeComments(id);
-      setComments(commentsData);
+      // Add the new comment locally with a temporary ID
+      setComments(prev => [{
+        id: newComment || 'temp-' + Date.now(),
+        text: commentText,
+        author: user.displayName,
+        authorEmail: user.email,
+        authorPhotoURL: user.photoURL,
+        createdAt: new Date()
+      }, ...prev]);
+      
       setCommentText('');
     } catch (error) {
       console.error('Error adding comment:', error);
@@ -153,6 +161,11 @@ const AnimeWatch = memo(() => {
   }, [isSaved, isAuthenticated, user, id, anime]);
 
   const handleReport = useCallback(async () => {
+    if (!isAuthenticated) {
+      alert('Please login to report anime');
+      return;
+    }
+
     if (!reportReason.trim()) {
       alert('Please provide a reason for reporting');
       return;
@@ -164,7 +177,7 @@ const AnimeWatch = memo(() => {
         animeId: id,
         animeTitle: anime.title.english || anime.title.romaji,
         reason: reportReason,
-        reportedBy: user?.email || 'anonymous',
+        reportedBy: user?.email,
         reportedAt: new Date().toISOString()
       });
       alert('Report submitted successfully. Thank you for your feedback.');
@@ -176,7 +189,7 @@ const AnimeWatch = memo(() => {
     } finally {
       setSubmittingReport(false);
     }
-  }, [id, anime, reportReason, user]);
+  }, [id, anime, reportReason, user, isAuthenticated]);
 
   if (loading) {
     return (
