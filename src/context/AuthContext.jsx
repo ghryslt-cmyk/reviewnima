@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
-import { onAuthChange, signInWithGoogle, logoutUser, isAdmin, auth } from '../lib/firebase';
+import { onAuthChange, signInWithGoogle, logoutUser, isAdmin, auth, doc, getDoc, setDoc, db } from '../lib/firebase';
 
 const AuthContext = createContext();
 
@@ -16,8 +16,28 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const unsubscribe = onAuthChange((user) => {
+    const unsubscribe = onAuthChange(async (user) => {
       setUser(user);
+      
+      // Create user document in Firestore if it doesn't exist
+      if (user) {
+        try {
+          const userDocRef = doc(db, 'users', user.uid);
+          const userDoc = await getDoc(userDocRef);
+          
+          if (!userDoc.exists()) {
+            await setDoc(userDocRef, {
+              email: user.email,
+              displayName: user.displayName,
+              photoURL: user.photoURL,
+              createdAt: new Date().toISOString()
+            });
+          }
+        } catch (error) {
+          console.error('Error creating user document:', error);
+        }
+      }
+      
       setLoading(false);
     });
 

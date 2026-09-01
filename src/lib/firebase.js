@@ -554,7 +554,7 @@ export const updateUserDisplayName = async (userId, displayName) => {
   try {
     // Update Firebase Auth profile
     const currentUser = auth.currentUser;
-    if (currentUser) {
+    if (currentUser && currentUser.updateProfile) {
       await currentUser.updateProfile({ displayName });
     }
     
@@ -577,7 +577,7 @@ export const updateUserPhotoURL = async (userId, photoURL) => {
   try {
     // Update Firebase Auth profile
     const currentUser = auth.currentUser;
-    if (currentUser) {
+    if (currentUser && currentUser.updateProfile) {
       await currentUser.updateProfile({ photoURL });
     }
     
