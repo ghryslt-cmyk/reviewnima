@@ -189,18 +189,6 @@ export const updateUserProfile = async (userId, profileData) => {
   }
 };
 
-export const updateUserRank = async (userId, rank) => {
-  try {
-    const userDocRef = doc(db, 'users', userId);
-    console.log('updateUserRank - Updating rank for userId:', userId, 'to rank:', rank);
-    await updateDoc(userDocRef, { rank });
-    console.log('updateUserRank - Successfully updated rank for userId:', userId);
-  } catch (error) {
-    console.error('updateUserRank - Error updating user rank:', error);
-    throw new Error('Failed to update user rank. Please try again.');
-  }
-};
-
 export const deleteReview = async (reviewId) => {
   try {
     const docRef = doc(db, 'reviews', reviewId);
@@ -612,15 +600,18 @@ export const updateUserPhotoURL = async (userId, photoURL) => {
 export const updateUserRank = async (userId, rank) => {
   try {
     const userDocRef = doc(db, 'users', userId);
+    console.log('updateUserRank - Updating rank for userId:', userId, 'to rank:', rank);
     const userDoc = await getDoc(userDocRef);
     
     if (userDoc.exists()) {
       await updateDoc(userDocRef, { rank });
+      console.log('updateUserRank - Successfully updated existing user document');
     } else {
       await setDoc(userDocRef, { rank });
+      console.log('updateUserRank - Created new user document with rank');
     }
   } catch (error) {
-    console.error('Error updating user rank:', error);
+    console.error('updateUserRank - Error updating user rank:', error);
     throw new Error('Failed to update rank. Please try again.');
   }
 };
