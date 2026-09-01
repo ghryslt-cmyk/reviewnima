@@ -1,7 +1,71 @@
 {
-  "version": 1788274706218,
-  "fetchedAt": "2026-09-01T14:58:26.218Z",
+  "version": 1788287028320,
+  "fetchedAt": "2026-09-01T18:23:48.320Z",
   "anime": [
+    {
+      "id": 178789,
+      "title": {
+        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
+        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Ecchi",
+        "Fantasy"
+      ],
+      "averageScore": 84,
+      "episodes": 14,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Bind"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Frontier Works"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "GREE Entertainment"
+          },
+          {
+            "name": "EGG FIRM"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
+      }
+    },
     {
       "id": 21,
       "title": {
@@ -77,70 +141,6 @@
       }
     },
     {
-      "id": 178789,
-      "title": {
-        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
-        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
-        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
-      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Ecchi",
-        "Fantasy"
-      ],
-      "averageScore": 84,
-      "episodes": 14,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Bind"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Frontier Works"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "GREE Entertainment"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
-      }
-    },
-    {
       "id": 187260,
       "title": {
         "romaji": "Kimi ga Shinu made Koi wo Shitai",
@@ -210,6 +210,199 @@
       }
     },
     {
+      "id": 177699,
+      "title": {
+        "romaji": "Koukaku Kidoutai: THE GHOST IN THE SHELL",
+        "english": "THE GHOST IN THE SHELL",
+        "native": "攻殻機動隊 THE GHOST IN THE SHELL"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177699-hnzc1CS5ZSM2.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx177699-hnzc1CS5ZSM2.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177699-hnzc1CS5ZSM2.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/177699-5kDbvDBhtSE3.jpg",
+      "description": "The year is 2029. In near-future Japan, where the world has become highly information-intensive, with a vast corporate network covering the planet, electrons and light pulsing through it. But the nation-state and ethnic groups still survive.  <br><br> Motoko Kusanagi, a full-body cyborg, leads an elite combat unit, including Batou. While commanding her team, Kusanagi envisions the creation of a specialized task force to preemptively strike against emerging threats. Meanwhile, Daisuke Aramaki of the Ministry of Internal Affairs, who had been planning to establish a similar unit, recruited Kusanagi and her team. Together, they begin operations as Public Security Section 9—an offensive tactical unit known as “Shell Squad.” As they confront complex cybercrimes and international conspiracies, the existence of a mysterious, unidentified hacker known as The “Puppet Master” emerges on the horizon of their investigation. <br><br> What fate awaits Kusanagi? And what is the Puppet Master’s true objective? A new era of cyberpunk action begins.  <br><br>\n(Source:攻殻機動隊 THE GHOST IN THE SHELL Site)",
+      "genres": [
+        "Action",
+        "Psychological",
+        "Sci-Fi"
+      ],
+      "averageScore": 76,
+      "episodes": 10,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Science SARU"
+          },
+          {
+            "name": "Bandai Namco Filmworks"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "Science SARU"
+          },
+          {
+            "name": "Production I.G"
+          },
+          {
+            "name": "flying DOG"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Kansai TV"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 7
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 198709,
+      "title": {
+        "romaji": "Tefuda ga Oome no Victoria",
+        "english": "Victoria of Many Faces",
+        "native": "手札が多めのビクトリア"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198709-3PFLvU6eqPvf.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198709-3PFLvU6eqPvf.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198709-3PFLvU6eqPvf.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/198709-wyZYzcKM5itk.jpg",
+      "description": "In an age when spies act behind the scenes in every land, Chloe spends her days successfully carrying out even the most difficult missions due to her unparalleled disguise skills and martial arts abilities. After the betrayal of her boss, she suddenly disappears—as Chloe plans to redo her life as the ordinary citizen Victoria in the neighboring kingdom of Ashberry, striving for a “normal” life. However, Victoria's peaceful life is abruptly cut short as she begins to get involved with many people. In this new land, her experiences and abilities from her days as a spy come in far more useful than she ever expected! On the other hand, the second prince--and others--take an interest in Victoria's strength, and the shadows close in on the woman with many faces…\n<br><br>\n(Source: Yen Press)",
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 71,
+      "episodes": 9,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio DEEN"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Docomo Anime Store"
+          },
+          {
+            "name": "Toy's Factory"
+          },
+          {
+            "name": "Studio DEEN"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 2
+      }
+    },
+    {
+      "id": 196219,
+      "title": {
+        "romaji": "Mujikaku Seijo wa Kyou mo Muishiki ni Chikara wo Tare Nagasu",
+        "english": "The Oblivious Saint Can't Contain Her Power",
+        "native": "無自覚聖女は今日も無意識に力を垂れ流す"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196219-imvC0rbk4VzH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196219-imvC0rbk4VzH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196219-imvC0rbk4VzH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/196219-2F64WTRfqRU9.jpg",
+      "description": "Lady Carolina, the overlooked daughter of a powerful duke, has always believed herself to be the black sheep amid her illustrious kin. Her father is the distinguished prime minister; her elder sister, a prodigious mage destined to become their nation’s next Saint. In comparison, Carolina resigns herself to a quiet existence in their shadows until a sudden and unexpected royal decree alters her destiny, thrusting her into a political marriage with the formidable “Bloodthirsty Prince” of the neighboring Empire of Malcosias. Determined to prove her worth, Carolina takes a bold step into a world fraught with both political and mortal peril. As royal obligations intertwine with hints of true love and the stirrings of her own latent power, Carolina moves ever closer to understanding what it truly means to be exceptional.\n<br><br>\n(Source: J-Novel Club)",
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 63,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Earth Star Entertainment"
+          },
+          {
+            "name": "Magic Bus"
+          },
+          {
+            "name": "Picante Circus"
+          },
+          {
+            "name": "HIKE"
+          },
+          {
+            "name": "BookLive"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "MAGNET"
+          },
+          {
+            "name": "Picante Circus"
+          },
+          {
+            "name": "SUPA LOVE"
+          },
+          {
+            "name": "KLOCKWORX"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 6,
+        "day": 30
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 15
+      }
+    },
+    {
       "id": 269,
       "title": {
         "romaji": "BLEACH",
@@ -258,67 +451,6 @@
         "year": 2012,
         "month": 3,
         "day": 27
-      }
-    },
-    {
-      "id": 128757,
-      "title": {
-        "romaji": "Tai-Ari deshita.: Ojou-sama wa Kakutou Game nante Shinai",
-        "english": "Young Ladies Don't Play Fighting Games",
-        "native": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128757-Iqc6hTjEYIz4.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128757-Iqc6hTjEYIz4.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128757-Iqc6hTjEYIz4.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/128757-kBnCRYXdyw58.jpg",
-      "description": "Mitsuki Aya has one goal at the elite Kuromi Girls’ Academy: to become a refined young lady like the school’s flawless “White Lily,” Yorue Mio. But her image of Mio shatters when Aya accidentally catches her...playing fighting games?! Turns out, the elegant Mio is actually a hardcore gamer—and she wants to duel Aya! The battle (and their friendship) begins.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Drama"
-      ],
-      "averageScore": 74,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "diomedéa"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "diomedéa"
-          },
-          {
-            "name": "U-NEXT"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "AT-X"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 7
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 22
       }
     },
     {
@@ -391,24 +523,23 @@
       }
     },
     {
-      "id": 169583,
+      "id": 128757,
       "title": {
-        "romaji": "Tenkousaki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi datta Ken",
-        "english": "Oh Boy, Was I Wrong About Her",
-        "native": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件"
+        "romaji": "Tai-Ari deshita.: Ojou-sama wa Kakutou Game nante Shinai",
+        "english": "Young Ladies Don't Play Fighting Games",
+        "native": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169583-0ZTdBGrKNIbe.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169583-0ZTdBGrKNIbe.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-0ZTdBGrKNIbe.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128757-Iqc6hTjEYIz4.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128757-Iqc6hTjEYIz4.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128757-Iqc6hTjEYIz4.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/169583-wB0yHc7e8Kjk.jpg",
-      "description": "Seven years after making a childhood promise to always be friends, Hayato is reunited with his formerly tomboyish pal Haruki at a city high school–only now, Haruki has transformed into the girl every guy dreams about! While Haruki’s looks may have changed, with Hayato, she’s still the same pal he remembers. Despite years apart, their promise and feelings remain and deepen into something stronger.\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/128757-kBnCRYXdyw58.jpg",
+      "description": "Mitsuki Aya has one goal at the elite Kuromi Girls’ Academy: to become a refined young lady like the school’s flawless “White Lily,” Yorue Mio. But her image of Mio shatters when Aya accidentally catches her...playing fighting games?! Turns out, the elegant Mio is actually a hardcore gamer—and she wants to duel Aya! The battle (and their friendship) begins.\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
-        "Comedy",
-        "Romance"
+        "Drama"
       ],
-      "averageScore": 70,
+      "averageScore": 74,
       "episodes": 12,
       "status": "RELEASING",
       "season": "SUMMER",
@@ -416,105 +547,40 @@
       "studios": {
         "nodes": [
           {
-            "name": "project No.9"
+            "name": "diomedéa"
           },
           {
-            "name": "Asmik Ace"
+            "name": "KADOKAWA"
           },
           {
-            "name": "Pony Canyon"
+            "name": "Mainichi Broadcasting System"
           },
           {
-            "name": "TOKYO MX"
+            "name": "diomedéa"
           },
           {
-            "name": "Movic"
+            "name": "U-NEXT"
           },
           {
-            "name": "Toei"
+            "name": "Pia"
           },
           {
-            "name": "BS Fuji"
-          },
-          {
-            "name": "Bit grooove promotion"
-          },
-          {
-            "name": "KLOCKWORX"
-          },
-          {
-            "name": "Sun Television"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 6
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 202269,
-      "title": {
-        "romaji": "Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.",
-        "english": "Love Unseen Beneath the Clear Night Sky",
-        "native": "透明な夜に駆ける君と、目に見えない恋をした。"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202269-7KNj8s2fSsJJ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202269-7KNj8s2fSsJJ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/202269-u0PTTsiKwrVL.jpg",
-      "description": "Kakeru Sorano, a quiet university freshman who avoids others, meets Koharu Fuyutsuki, a blind girl who faces the world with quiet brightness. When she says, “I want to see fireworks someday,” something in Kakeru shifts. As they grow closer through small moments and shared loneliness, he searches for a way to make her wish come true.<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "averageScore": 79,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Makaria"
-          },
-          {
-            "name": "SB Creative"
-          },
-          {
-            "name": "viviON"
+            "name": "BS Nittele"
           },
           {
             "name": "AT-X"
-          },
-          {
-            "name": "Clare Voice"
-          },
-          {
-            "name": "Makaria"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 7,
-        "day": 6
+        "day": 7
       },
       "endDate": {
         "year": 2026,
         "month": 9,
-        "day": 21
+        "day": 22
       }
     },
     {
@@ -591,24 +657,63 @@
       }
     },
     {
-      "id": 199408,
+      "id": 216272,
       "title": {
-        "romaji": "Buchigire Reijou wa Houfuku wo Chikaimashita.: Madousho no Chikara de Sokoku wo Tataki Tsubushimasu",
-        "english": "A Livid Lady’s Guide to Getting Even: How I Crushed My Homeland with My Mighty Grimoires",
-        "native": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖国を叩き潰します～"
+        "romaji": "Tefuda ga Oome no Victoria 2",
+        "english": null,
+        "native": "手札が多めのビクトリア第２期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199408-ocRWG4pRWl8f.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199408-ocRWG4pRWl8f.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b216272-hop0wqDKXyew.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b216272-hop0wqDKXyew.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b216272-hop0wqDKXyew.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199408-ouNGkjrw0ohT.jpg",
-      "description": "Elizabeth Leiston, daughter of the influential prime minister, is a picture-perfect lady on the path to becoming the future queen of the Kingdom of Haldoria. But her life takes a sudden turn for the worst when her fiancé makes a show of publicly calling off their engagement. Soon after, he throws her in jail and starts spreading nasty rumors about her. The encouragement Elizabeth receives from her loyal waiting maid, Mireille, and her inner fury are all she needs to reconsider her goals. Why should she continue devoting herself to a country that doesn’t respect her when she can trample over it instead? She will get even with those who wronged her and bring down the damned kingdom, even if it’s the last thing she does! Luckily, Elizabeth is no damsel in distress and has seven powerful magic grimoires she won’t hesitate to use. Get ready because this ruthless lady is out for blood!\n<br><br>\n(Source: J-Novel Club)",
+      "bannerImage": null,
+      "description": "Second season of <i>Tefuda ga Oome no Victoria</i>.",
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "NOT_YET_RELEASED",
+      "season": null,
+      "seasonYear": null,
+      "studios": {
+        "nodes": []
+      },
+      "startDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 202269,
+      "title": {
+        "romaji": "Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.",
+        "english": "Love Unseen Beneath the Clear Night Sky",
+        "native": "透明な夜に駆ける君と、目に見えない恋をした。"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202269-7KNj8s2fSsJJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202269-7KNj8s2fSsJJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/202269-u0PTTsiKwrVL.jpg",
+      "description": "Kakeru Sorano, a quiet university freshman who avoids others, meets Koharu Fuyutsuki, a blind girl who faces the world with quiet brightness. When she says, “I want to see fireworks someday,” something in Kakeru shifts. As they grow closer through small moments and shared loneliness, he searches for a way to make her wish come true.<br>\n<br>\n(Source: Crunchyroll)",
       "genres": [
         "Drama",
-        "Fantasy"
+        "Romance"
       ],
-      "averageScore": 67,
+      "averageScore": 79,
       "episodes": 12,
       "status": "RELEASING",
       "season": "SUMMER",
@@ -616,37 +721,25 @@
       "studios": {
         "nodes": [
           {
-            "name": "Studio Comet"
+            "name": "Shouchiku"
           },
           {
-            "name": "MediaNet"
+            "name": "Makaria"
           },
           {
-            "name": "Hobby Japan"
+            "name": "SB Creative"
           },
           {
-            "name": "REMOW"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "Nippon Columbia"
+            "name": "viviON"
           },
           {
             "name": "AT-X"
           },
           {
-            "name": "Studio Comet"
+            "name": "Clare Voice"
           },
           {
-            "name": "Jinnan Studio"
-          },
-          {
-            "name": "AQUA ARIS"
-          },
-          {
-            "name": "KLOCKWORX"
+            "name": "Makaria"
           }
         ]
       },
@@ -656,9 +749,9 @@
         "day": 6
       },
       "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 2026,
+        "month": 9,
+        "day": 21
       }
     },
     {
@@ -706,73 +799,6 @@
       "startDate": {
         "year": 2026,
         "month": 4,
-        "day": 4
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 185542,
-      "title": {
-        "romaji": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
-        "english": "Skeleton Knight in Another World Season 2",
-        "native": "骸骨騎士様、只今異世界へお出掛け中Ⅱ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185542-6a9LCWlLHa0T.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185542-6a9LCWlLHa0T.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-6a9LCWlLHa0T.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185542-v15vqOvUWSF5.jpg",
-      "description": "The second season of <i>Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu</i>.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 66,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Aura Studio"
-          },
-          {
-            "name": "OVERLAP"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "MUSE"
-          },
-          {
-            "name": "Docomo Anime Store"
-          },
-          {
-            "name": "MAGNET"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "CTW"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
         "day": 4
       },
       "endDate": {
@@ -886,83 +912,6 @@
         "year": 2026,
         "month": 7,
         "day": 25
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 169582,
-      "title": {
-        "romaji": "Saikyou Degarashi Ouji no Anyaku Teii Arasoi: Munou wo Enjiru SS Rank Ouji wa Koui Keishou-sen wo Kage kara Shihai suru",
-        "english": "The Insipid Prince's Furtive Grab for the Throne",
-        "native": "最強出涸らし皇子の暗躍帝位争い 無能を演じるSSランク皇子は皇位継承戦を影から支配する"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169582-quL8VMg45fcu.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169582-quL8VMg45fcu.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169582-quL8VMg45fcu.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/169582-D5p5iRI5XqML.jpg",
-      "description": "To the empire, Prince Arnold is one big joke, a completely inept prince outshone by his more talented twin, Leonard. But in secret, Arnold operates as Silver, one of only five magic-wielding SS-rank adventurers on the continent. As the bloody battle for the throne intensifies after the crown prince’s death, Arnold pulls the strings from the shadows to crown his twin emperor to his own advantage.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 58,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Maho Film"
-          },
-          {
-            "name": "Asmik Ace"
-          },
-          {
-            "name": "Maho Film"
-          },
-          {
-            "name": "Bushiroad"
-          },
-          {
-            "name": "AC Create"
-          },
-          {
-            "name": "Avex Pictures"
-          },
-          {
-            "name": "Bit grooove promotion"
-          },
-          {
-            "name": "BS Fuji"
-          },
-          {
-            "name": "AQUA ARIS"
-          },
-          {
-            "name": "Happinet Media Marketing"
-          },
-          {
-            "name": "KLOCKWORX"
-          },
-          {
-            "name": "ADK Marketing Solutions"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 6
       },
       "endDate": {
         "year": null,
