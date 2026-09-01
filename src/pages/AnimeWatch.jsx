@@ -516,10 +516,7 @@ const AnimeWatch = memo(() => {
                               {comment.author}
                             </span>
                             {isAdmin && (
-                              <div className="flex items-center space-x-1">
-                                <Shield className="text-yellow-400" size={12} />
-                                <span className="text-yellow-400 text-xs font-bold">ADMIN</span>
-                              </div>
+                              <span className="text-yellow-400 text-xs font-bold ml-2">ADMIN</span>
                             )}
                             <span className="text-sm text-gray-400">
                               {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}

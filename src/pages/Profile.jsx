@@ -33,7 +33,8 @@ const Profile = () => {
         setSavedAnime(savedAnimeData);
         
         const rank = await getUserRank(user.uid);
-        console.log('Profile - User rank:', rank, 'for user:', user.uid);
+        console.log('Profile - User rank:', rank, 'type:', typeof rank, 'for user:', user.uid);
+        console.log('Profile - isAdminRank check:', rank === 'admin');
         setUserRank(rank);
         
         // Fetch user profile data from Firestore as fallback
@@ -85,6 +86,8 @@ const Profile = () => {
   };
 
   const isAdminRank = userRank === 'admin';
+  
+  console.log('Profile - Render state:', { userRank, isAdminRank, user });
 
   if (!isAuthenticated) {
     return (
@@ -276,7 +279,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className="bg-purple-900 dark:bg-purple-100 rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-black border-2 border-purple-900 dark:border-purple-100">
+          <div className="bg-black dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-white border-2 border-purple-900 dark:border-purple-100">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-purple-300 dark:text-purple-700 text-xs sm:text-sm mb-1">Saved Anime</p>
@@ -288,7 +291,7 @@ const Profile = () => {
         </div>
 
         {/* Saved Anime Section */}
-        <div className="bg-white dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-black dark:border-white">
+        <div className="bg-black dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-black dark:border-white">
           <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 sm:mb-6 flex items-center">
             <Play className="mr-3 text-black dark:text-white" size={24} />
             Saved Anime

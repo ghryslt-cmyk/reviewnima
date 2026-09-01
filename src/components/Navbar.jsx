@@ -87,6 +87,8 @@ const Navbar = () => {
   }, [isAuthenticated, user]);
 
   const isAdminRank = userRank === 'admin';
+  
+  console.log('Navbar - Render state:', { userRank, isAdminRank, user });
 
   return (
     <nav className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-lg border-b border-gray-200 dark:border-gray-700 transition-all duration-300 relative z-50">
