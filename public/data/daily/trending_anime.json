@@ -1,7 +1,71 @@
 {
-  "version": 1788305475177,
-  "fetchedAt": "2026-09-01T23:31:15.177Z",
+  "version": 1788312416324,
+  "fetchedAt": "2026-09-02T01:26:56.324Z",
   "anime": [
+    {
+      "id": 178789,
+      "title": {
+        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
+        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Ecchi",
+        "Fantasy"
+      ],
+      "averageScore": 84,
+      "episodes": 14,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Bind"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Frontier Works"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "GREE Entertainment"
+          },
+          {
+            "name": "EGG FIRM"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
+      }
+    },
     {
       "id": 21,
       "title": {
@@ -74,70 +138,6 @@
         "year": null,
         "month": null,
         "day": null
-      }
-    },
-    {
-      "id": 178789,
-      "title": {
-        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
-        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
-        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
-      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Ecchi",
-        "Fantasy"
-      ],
-      "averageScore": 84,
-      "episodes": 14,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Bind"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Frontier Works"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "GREE Entertainment"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
       }
     },
     {
@@ -273,6 +273,67 @@
       }
     },
     {
+      "id": 128757,
+      "title": {
+        "romaji": "Tai-Ari deshita.: Ojou-sama wa Kakutou Game nante Shinai",
+        "english": "Young Ladies Don't Play Fighting Games",
+        "native": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128757-Iqc6hTjEYIz4.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128757-Iqc6hTjEYIz4.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128757-Iqc6hTjEYIz4.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/128757-kBnCRYXdyw58.jpg",
+      "description": "Mitsuki Aya has one goal at the elite Kuromi Girls’ Academy: to become a refined young lady like the school’s flawless “White Lily,” Yorue Mio. But her image of Mio shatters when Aya accidentally catches her...playing fighting games?! Turns out, the elegant Mio is actually a hardcore gamer—and she wants to duel Aya! The battle (and their friendship) begins.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Drama"
+      ],
+      "averageScore": 74,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "diomedéa"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "diomedéa"
+          },
+          {
+            "name": "U-NEXT"
+          },
+          {
+            "name": "Pia"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "AT-X"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 7
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 22
+      }
+    },
+    {
       "id": 269,
       "title": {
         "romaji": "BLEACH",
@@ -336,7 +397,7 @@
         "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198709-3PFLvU6eqPvf.jpg"
       },
       "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/198709-wyZYzcKM5itk.jpg",
-      "description": "In an age when spies act behind the scenes in every land, Chloe spends her days successfully carrying out even the most difficult missions due to her unparalleled disguise skills and martial arts abilities. After the betrayal of her boss, she suddenly disappears—as Chloe plans to redo her life as the ordinary citizen Victoria in the neighboring kingdom of Ashberry, striving for a “normal” life. However, Victoria's peaceful life is abruptly cut short as she begins to get involved with many people. In this new land, her experiences and abilities from her days as a spy come in far more useful than she ever expected! On the other hand, the second prince--and others--take an interest in Victoria's strength, and the shadows close in on the woman with many faces…\n<br><br>\n(Source: Yen Press)",
+      "description": "Betrayed by her own organization, Chloe flees her life as a spy and starts over under the new identity of Victoria in the Kingdom of Ashberry. Victoria wants a simple civilian life, but the locals have other plans, becoming enmeshed with an abandoned girl and a knight. As the trio bonds and Victoria’s past catches up to her, the skills she perfected as a spy prove useful in her new life.\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
         "Action",
         "Drama",
@@ -451,67 +512,6 @@
         "year": 2026,
         "month": 9,
         "day": 15
-      }
-    },
-    {
-      "id": 128757,
-      "title": {
-        "romaji": "Tai-Ari deshita.: Ojou-sama wa Kakutou Game nante Shinai",
-        "english": "Young Ladies Don't Play Fighting Games",
-        "native": "対ありでした。 ～お嬢さまは格闘ゲームなんてしない～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx128757-Iqc6hTjEYIz4.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128757-Iqc6hTjEYIz4.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128757-Iqc6hTjEYIz4.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/128757-kBnCRYXdyw58.jpg",
-      "description": "Mitsuki Aya has one goal at the elite Kuromi Girls’ Academy: to become a refined young lady like the school’s flawless “White Lily,” Yorue Mio. But her image of Mio shatters when Aya accidentally catches her...playing fighting games?! Turns out, the elegant Mio is actually a hardcore gamer—and she wants to duel Aya! The battle (and their friendship) begins.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Drama"
-      ],
-      "averageScore": 74,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "diomedéa"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "diomedéa"
-          },
-          {
-            "name": "U-NEXT"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "AT-X"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 7
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 22
       }
     },
     {
@@ -641,75 +641,6 @@
       }
     },
     {
-      "id": 199111,
-      "title": {
-        "romaji": "Grand Blue Season 3",
-        "english": "Grand Blue Dreaming Season 3",
-        "native": "ぐらんぶる Season 3"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199111-gBSuBG61ElcW.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199111-gBSuBG61ElcW.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199111-gBSuBG61ElcW.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199111-Z8y9awn2Zb6v.jpg",
-      "description": "The third season of <i>Grand Blue</i>.",
-      "genres": [
-        "Comedy",
-        "Slice of Life",
-        "Sports"
-      ],
-      "averageScore": 82,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "NBCUniversal Entertainment Japan"
-          },
-          {
-            "name": "Zero-G"
-          },
-          {
-            "name": "Saber Works"
-          },
-          {
-            "name": "Avex Pictures"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "Zero-G"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "qooop"
-          },
-          {
-            "name": "Saber Links"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 7
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 210031,
       "title": {
         "romaji": "Seihantai na Kimi to Boku 2nd Season",
@@ -760,73 +691,6 @@
         "year": 2026,
         "month": 7,
         "day": 5
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 185542,
-      "title": {
-        "romaji": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
-        "english": "Skeleton Knight in Another World Season 2",
-        "native": "骸骨騎士様、只今異世界へお出掛け中Ⅱ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185542-6a9LCWlLHa0T.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185542-6a9LCWlLHa0T.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-6a9LCWlLHa0T.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185542-v15vqOvUWSF5.jpg",
-      "description": "The second season of <i>Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu</i>.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 66,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Aura Studio"
-          },
-          {
-            "name": "OVERLAP"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "MUSE"
-          },
-          {
-            "name": "Docomo Anime Store"
-          },
-          {
-            "name": "MAGNET"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "CTW"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
       },
       "endDate": {
         "year": null,
@@ -894,24 +758,25 @@
       }
     },
     {
-      "id": 169583,
+      "id": 196187,
       "title": {
-        "romaji": "Tenkousaki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi datta Ken",
-        "english": "Oh Boy, Was I Wrong About Her",
-        "native": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件"
+        "romaji": "Super no Ura de Yani Suu Futari",
+        "english": "Smoking Behind the Supermarket with You",
+        "native": "スーパーの裏でヤニ吸うふたり"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169583-0ZTdBGrKNIbe.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169583-0ZTdBGrKNIbe.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-0ZTdBGrKNIbe.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196187-0dgFi2CPp3xn.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196187-0dgFi2CPp3xn.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-0dgFi2CPp3xn.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/169583-wB0yHc7e8Kjk.jpg",
-      "description": "Seven years after making a childhood promise to always be friends, Hayato is reunited with his formerly tomboyish pal Haruki at a city high school–only now, Haruki has transformed into the girl every guy dreams about! While Haruki’s looks may have changed, with Hayato, she’s still the same pal he remembers. Despite years apart, their promise and feelings remain and deepen into something stronger.\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/196187-Z9dV6uotmKjM.jpg",
+      "description": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”\n<br><br>\n(Source: Crunchyroll)<br><br>\n\n<i>Note: Episodes 1-6 had an early release by ABEMA and Crunchyroll on June 3rd, 2026 in a mini-episode batch format that splits 6 episodes into 12, ahead of the TV broadcast which started on July 10th, 2026.</i>",
       "genres": [
         "Comedy",
-        "Romance"
+        "Romance",
+        "Slice of Life"
       ],
-      "averageScore": 70,
+      "averageScore": 82,
       "episodes": 12,
       "status": "RELEASING",
       "season": "SUMMER",
@@ -919,41 +784,166 @@
       "studios": {
         "nodes": [
           {
-            "name": "project No.9"
+            "name": "Asahi Production"
+          },
+          {
+            "name": "TBS"
           },
           {
             "name": "Asmik Ace"
           },
           {
-            "name": "Pony Canyon"
+            "name": "Asahi Production"
           },
           {
-            "name": "TOKYO MX"
+            "name": "arma bianca"
           },
           {
-            "name": "Movic"
+            "name": "ADK Marketing Solutions"
           },
           {
-            "name": "Toei"
+            "name": "Nichion"
           },
           {
-            "name": "BS Fuji"
+            "name": "AbemaTV"
           },
           {
-            "name": "Bit grooove promotion"
-          },
-          {
-            "name": "KLOCKWORX"
-          },
-          {
-            "name": "Sun Television"
+            "name": "Square Enix"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 7,
-        "day": 6
+        "day": 10
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 189046,
+      "title": {
+        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "english": "Re:ZERO -Starting Life in Another World- Season 4",
+        "native": "Re:ゼロから始める異世界生活 4th season"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
+      "description": "To save his stricken allies, Subaru faces a deadly desert to find the Sage at Pleiades Watchtower.<br><br>\n\n(Source: Crunchyroll News)\n\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
+      ],
+      "averageScore": 90,
+      "episodes": 19,
+      "status": "RELEASING",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "WHITE FOX"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "DAXEL"
+          },
+          {
+            "name": "Memory-Tech"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 30
+      }
+    },
+    {
+      "id": 185542,
+      "title": {
+        "romaji": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+        "english": "Skeleton Knight in Another World Season 2",
+        "native": "骸骨騎士様、只今異世界へお出掛け中Ⅱ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185542-6a9LCWlLHa0T.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185542-6a9LCWlLHa0T.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-6a9LCWlLHa0T.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185542-v15vqOvUWSF5.jpg",
+      "description": "The second season of <i>Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu</i>.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 66,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Aura Studio"
+          },
+          {
+            "name": "OVERLAP"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "MUSE"
+          },
+          {
+            "name": "Docomo Anime Store"
+          },
+          {
+            "name": "MAGNET"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "CTW"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
       },
       "endDate": {
         "year": null,

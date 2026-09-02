@@ -1,12 +1,34 @@
 {
-  "version": 1788305474755,
-  "fetchedAt": "2026-09-01T23:31:14.755Z",
+  "version": 1788312415952,
+  "fetchedAt": "2026-09-02T01:26:55.952Z",
   "news": [
+    {
+      "title": "&#039;Ao Ashi Season 2&#039; Unveils Additional Staff, First Promo",
+      "description": "The official website for the Ao Ashi television anime series unveiled additional staff, and the first promotional video on Tuesday. The anime sequel adapting Yuugo Kobayashi&#039;s sports manga is scheduled to premiere on October 4 at 5:00 p.m. on NHK-E. Staff Chief Animation Director: Manabu Nakata...",
+      "fullDescription": "The official website for the Ao Ashi television anime series unveiled additional staff, and the first promotional video on Tuesday. The anime sequel adapting Yuugo Kobayashi&#039;s sports manga is scheduled to premiere on October 4 at 5:00 p.m. on NHK-E. Staff Chief Animation Director: Manabu Nakatake (Ao Ashi), Asami Taguchi (Lupin Zero), Junko Yamanaka (Kono Oto Tomare!) Action Animation Director: Tadayoshi Okimura (Blue Lock vs. U-20 Japan), Satoshi Kubo (Ao Ashi) Art Design: Yuuki Shigekawa...",
+      "link": "https://myanimelist.net/news/74659902?_location=rss",
+      "pubDate": "Tue, 01 Sep 2026 17:28:57 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788308807-f0e5772dc92acfa7e4fd81e60313999a.jpeg",
+      "guid": "https://myanimelist.net/news/74659902?_location=rss"
+    },
+    {
+      "title": "'With You, Our Love Will Make it Through' Manga Ends in 13th Volume",
+      "description": "Series debuted in May 2019",
+      "fullDescription": "Series debuted in May 2019",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-01/with-you-our-love-will-make-it-through-manga-ends-in-13th-volume/.241174",
+      "pubDate": "Tue, 01 Sep 2026 20:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241174/81mj2vyvl8l.sl1500.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241174"
+    },
     {
       "title": "Toshiko Machida's Hanako-gari Manga Ends",
       "description": "Series debuted in September 2025",
       "fullDescription": "Series debuted in September 2025",
-      "link": "https://www.animenewsnetwork.com/news/2026-08-31/toshiko-machida-hanako-gari-manga-ends/.241172",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-01/toshiko-machida-hanako-gari-manga-ends/.241172",
       "pubDate": "Tue, 01 Sep 2026 19:00:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.6/204402/71aptv4scxl._sl1500_.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241187"
-    },
-    {
-      "title": "Live-Action It's Strictly Business Series Announces Cast. Staff, November 5 Debut",
-      "description": "Sota Uemura, Rio Takahashi star in BL series",
-      "fullDescription": "Sota Uemura, Rio Takahashi star in BL series",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-01/live-action-its-strictly-business-series-announces-cast-staff-november-5-debut/.241182",
-      "pubDate": "Tue, 01 Sep 2026 02:59:01 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241182/business.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241182"
-    },
-    {
-      "title": "Sirotan TV Anime to Premiere on October 3",
-      "description": "The official website for the Sirotan television anime based on Creative Yoko's seal mascot revealed on Tuesday the anime's main visual and October 3 premiere....",
-      "fullDescription": "The official website for the Sirotan television anime based on Creative Yoko's seal mascot revealed on Tuesday the anime's main visual and October 3 premiere....",
-      "link": "https://www.animenewsnetwork.com/daily-briefs/2026-09-01/sirotan-tv-anime-to-premiere-on-october-3/.241180",
-      "pubDate": "Tue, 01 Sep 2026 01:53:29 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241180/sirotan.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241180"
     }
   ],
   "total": 15
