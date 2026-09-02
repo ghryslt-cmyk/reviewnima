@@ -1,7 +1,29 @@
 {
-  "version": 1788330145421,
-  "fetchedAt": "2026-09-02T06:22:25.421Z",
+  "version": 1788349153366,
+  "fetchedAt": "2026-09-02T11:39:13.366Z",
   "news": [
+    {
+      "title": "From Far Away TV Anime's New Video Reveals More Cast & Staff, Theme Songs",
+      "description": "Kimiko Saitō, Tadashi Miyazawa, Taisuke Nakano, Miku Itō join cast of October 4 series",
+      "fullDescription": "Kimiko Saitō, Tadashi Miyazawa, Taisuke Nakano, Miku Itō join cast of October 4 series",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-02/from-far-away-tv-anime-new-video-reveals-more-cast-and-staff-theme-songs/.241233",
+      "pubDate": "Wed, 02 Sep 2026 05:41:10 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241233/far.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241233"
+    },
+    {
+      "title": "Saint Seiya Creator Masami Kurumada Sues Former Manager, Others for 2.8 Billion Yen",
+      "description": "Defendants allegedly misappropriated total of 4.6 billion yen in 2018-2024",
+      "fullDescription": "Defendants allegedly misappropriated total of 4.6 billion yen in 2018-2024",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-02/saint-seiya-creator-masami-kurumada-sues-former-manager-others-for-2.8-billion-yen/.241225",
+      "pubDate": "Wed, 02 Sep 2026 05:08:29 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max400x400/cms/news/132928/ss.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241225"
+    },
     {
       "title": "Main Staff for &#039;Ikyou no Tsume Nuri Minarai&#039; Announced",
       "description": "Publishing company Shufu to Seikatsusha announced the main staff for the anime adaptation of Murakawa&#039;s Ikyou no Tsume Nuri Minarai (Apprentice Nail Artist in a Foreign Land) manga on Wednesday. Staff Director: Daiji Iwanaga (Ponkotsu Fuuki Iin to Skirt-take ga Futekisetsu na JK no Hanashi) Ser...",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/236466/street-fighter-poster.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241198"
-    },
-    {
-      "title": "&#039;Tefuda ga Oome no Victoria&#039; Second Season in Production",
-      "description": "The 9th and final episode of Tefuda ga Oome no Victoria (Victoria of Many Faces) ended with an announcement on Wednesday that a new special episode and second season are in production. The official website also revealed an announcement visual (pictured). Produced by Studio Deen, the first season pre...",
-      "fullDescription": "The 9th and final episode of Tefuda ga Oome no Victoria (Victoria of Many Faces) ended with an announcement on Wednesday that a new special episode and second season are in production. The official website also revealed an announcement visual (pictured). Produced by Studio Deen, the first season premiered on July 8. Crunchyroll simulcasted the anime with subtitles in multiple languages. Shuu penned the fantasy novel on the Shousetsuka ni Narou website from September to November in 2021, launchin...",
-      "link": "https://myanimelist.net/news/74658587?_location=rss",
-      "pubDate": "Tue, 01 Sep 2026 08:55:06 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788278009-fc625fed48c134bd0c678ec97ce30a9e.jpeg",
-      "guid": "https://myanimelist.net/news/74658587?_location=rss"
-    },
-    {
-      "title": "Victoria of Many Faces Anime Gets 2nd Season, Special Episode",
-      "description": "Anime ended with 9th episode on Tuesday",
-      "fullDescription": "Anime ended with 9th episode on Tuesday",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-01/victoria-of-many-faces-anime-gets-2nd-season-special-episode/.241188",
-      "pubDate": "Tue, 01 Sep 2026 11:30:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241188/victoria.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241188"
     }
   ],
   "total": 15
