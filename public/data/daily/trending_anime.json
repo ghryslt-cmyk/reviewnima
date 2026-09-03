@@ -1,6 +1,6 @@
 {
-  "version": 1788416876841,
-  "fetchedAt": "2026-09-03T06:27:56.841Z",
+  "version": 1788435595958,
+  "fetchedAt": "2026-09-03T11:39:55.958Z",
   "anime": [
     {
       "id": 189046,
@@ -61,6 +61,80 @@
         "year": 2026,
         "month": 9,
         "day": 30
+      }
+    },
+    {
+      "id": 21,
+      "title": {
+        "romaji": "ONE PIECE",
+        "english": "ONE PIECE",
+        "native": "ONE PIECE"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21-ELSYx3yMPcKM.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+      "description": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.<br><br>\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.<br><br>\n<b>*This includes the following special episodes:</b><br>\n- Chopperman to the Rescue! Protect the TV Station by the Shore! (Episode 336)<br>\n- The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (Episode 492)<br>\n- Team Formation! Save Chopper (Episode 542)<br>\n- History's Strongest Collaboration vs. Glutton of the Sea (Episode 590)<br>\n- 20th Anniversary! Special Romance Dawn (Episode 907)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ],
+      "averageScore": 87,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 1999,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Toei Animation"
+          },
+          {
+            "name": "Funimation"
+          },
+          {
+            "name": "Fuji TV"
+          },
+          {
+            "name": "4Kids Entertainment"
+          },
+          {
+            "name": "TAP"
+          },
+          {
+            "name": "Asatsu DK"
+          },
+          {
+            "name": "Magic Bus"
+          },
+          {
+            "name": "Mushi Production"
+          },
+          {
+            "name": "Studio Guts"
+          },
+          {
+            "name": "Asahi Production"
+          },
+          {
+            "name": "Avex Pictures"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 1999,
+        "month": 10,
+        "day": 20
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
       }
     },
     {
@@ -143,47 +217,6 @@
       }
     },
     {
-      "id": 216346,
-      "title": {
-        "romaji": "Nippon Sangoku (Zoku-hen)",
-        "english": null,
-        "native": "日本三國 続編"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b216346-9zpiRGKzziw3.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b216346-9zpiRGKzziw3.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b216346-9zpiRGKzziw3.png"
-      },
-      "bannerImage": null,
-      "description": "Sequel to <i>Nippon Sangoku</i>.",
-      "genres": [],
-      "averageScore": null,
-      "episodes": null,
-      "status": "NOT_YET_RELEASED",
-      "season": null,
-      "seasonYear": null,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Kafka"
-          },
-          {
-            "name": "Twin Engine"
-          }
-        ]
-      },
-      "startDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 159309,
       "title": {
         "romaji": "Otomege Sekai wa Mob ni Kibishii Sekai desu 2",
@@ -239,72 +272,150 @@
       }
     },
     {
-      "id": 21,
+      "id": 269,
       "title": {
-        "romaji": "ONE PIECE",
-        "english": "ONE PIECE",
-        "native": "ONE PIECE"
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21-ELSYx3yMPcKM.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
-      "description": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.<br><br>\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.<br><br>\n<b>*This includes the following special episodes:</b><br>\n- Chopperman to the Rescue! Protect the TV Station by the Shore! (Episode 336)<br>\n- The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (Episode 492)<br>\n- Team Formation! Save Chopper (Episode 542)<br>\n- History's Strongest Collaboration vs. Glutton of the Sea (Episode 590)<br>\n- 20th Anniversary! Special Romance Dawn (Episode 907)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
       "genres": [
         "Action",
         "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy"
+        "Supernatural"
       ],
-      "averageScore": 87,
-      "episodes": null,
-      "status": "RELEASING",
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
       "season": "FALL",
-      "seasonYear": 1999,
+      "seasonYear": 2004,
       "studios": {
         "nodes": [
           {
-            "name": "Toei Animation"
+            "name": "Studio Pierrot"
           },
           {
-            "name": "Funimation"
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Viz Media"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2004,
+        "month": 10,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2012,
+        "month": 3,
+        "day": 27
+      }
+    },
+    {
+      "id": 184356,
+      "title": {
+        "romaji": "Dogul Wang",
+        "english": "Tomb Raider King",
+        "native": "도굴왕"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184356-SlFIstXUXJYP.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx184356-SlFIstXUXJYP.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184356-SlFIstXUXJYP.png"
+      },
+      "bannerImage": null,
+      "description": "Chaos ensues overnight when mysterious tombs suddenly surface, filled with divine relics granting overwhelming power, triggering a global power struggle to claim them for dominion. Among the havoc, a raider, Jooheon Suh, is betrayed and left for dead until a second chance brings him back years before the relics. Fueled by fury and future knowledge, he sets out to raid each tomb before they arise.<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 65,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": null,
+      "seasonYear": null,
+      "studios": {
+        "nodes": [
+          {
+            "name": "STUDIO EEK"
+          },
+          {
+            "name": "bilibili"
+          },
+          {
+            "name": "REDICE STUDIO"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Fuji Creative Corporation"
           },
           {
             "name": "Fuji TV"
           },
           {
-            "name": "4Kids Entertainment"
-          },
-          {
-            "name": "TAP"
-          },
-          {
-            "name": "Asatsu DK"
-          },
-          {
-            "name": "Magic Bus"
-          },
-          {
-            "name": "Mushi Production"
-          },
-          {
-            "name": "Studio Guts"
-          },
-          {
-            "name": "Asahi Production"
-          },
-          {
-            "name": "Avex Pictures"
+            "name": "Kansai TV"
           }
         ]
       },
       "startDate": {
-        "year": 1999,
-        "month": 10,
-        "day": 20
+        "year": 2026,
+        "month": 7,
+        "day": 9
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 216346,
+      "title": {
+        "romaji": "Nippon Sangoku (Zoku-hen)",
+        "english": null,
+        "native": "日本三國 続編"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b216346-9zpiRGKzziw3.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b216346-9zpiRGKzziw3.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b216346-9zpiRGKzziw3.png"
+      },
+      "bannerImage": null,
+      "description": "Sequel to <i>Nippon Sangoku</i>.",
+      "genres": [],
+      "averageScore": null,
+      "episodes": null,
+      "status": "NOT_YET_RELEASED",
+      "season": null,
+      "seasonYear": null,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Kafka"
+          },
+          {
+            "name": "Twin Engine"
+          }
+        ]
+      },
+      "startDate": {
+        "year": null,
+        "month": null,
+        "day": null
       },
       "endDate": {
         "year": null,
@@ -330,7 +441,7 @@
         "Action",
         "Fantasy"
       ],
-      "averageScore": 81,
+      "averageScore": 80,
       "episodes": 12,
       "status": "RELEASING",
       "season": "SUMMER",
@@ -429,66 +540,6 @@
       }
     },
     {
-      "id": 184356,
-      "title": {
-        "romaji": "Dogul Wang",
-        "english": "Tomb Raider King",
-        "native": "도굴왕"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184356-SlFIstXUXJYP.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx184356-SlFIstXUXJYP.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184356-SlFIstXUXJYP.png"
-      },
-      "bannerImage": null,
-      "description": "Chaos ensues overnight when mysterious tombs suddenly surface, filled with divine relics granting overwhelming power, triggering a global power struggle to claim them for dominion. Among the havoc, a raider, Jooheon Suh, is betrayed and left for dead until a second chance brings him back years before the relics. Fueled by fury and future knowledge, he sets out to raid each tomb before they arise.<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 65,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": null,
-      "seasonYear": null,
-      "studios": {
-        "nodes": [
-          {
-            "name": "STUDIO EEK"
-          },
-          {
-            "name": "bilibili"
-          },
-          {
-            "name": "REDICE STUDIO"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Fuji Creative Corporation"
-          },
-          {
-            "name": "Fuji TV"
-          },
-          {
-            "name": "Kansai TV"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 9
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 197715,
       "title": {
         "romaji": "LV999 no Murabito",
@@ -553,57 +604,6 @@
       }
     },
     {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
       "id": 178789,
       "title": {
         "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
@@ -665,129 +665,6 @@
         "year": 2026,
         "month": 9,
         "day": 27
-      }
-    },
-    {
-      "id": 192800,
-      "title": {
-        "romaji": "Heroine? Seijo? Iie, All Works Maid desu (Ko)!",
-        "english": "Heroine? Saint? No, I’m an All-Works Maid (And Proud of It)!",
-        "native": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx192800-r8zlO0VY0jJP.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx192800-r8zlO0VY0jJP.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/192800-1EhTN0zOxQsW.jpg",
-      "description": "“I will become the world’s most wonderful maid!” <br><br>\nWith her skirt fluttering in black and white, the girl shouted. Her name is Melody. A reincarnated former Japanese girl, she now pursues her dream in her new life, working as an all-purpose maid for a poor count’s family in the kingdom of Théolas. When she makes it, even cheap tea turns into a luxury brew, and a dilapidated mansion is quickly restored to new! Cleaning, serving, hunting, DIY—leave it all to her and her powerful magic. Unbeknownst to Melody, this world is actually an otome game, and she is the most powerful and invincible heroine, the saint! Yet, she remains oblivious to this fact. Romance with handsome men? Attacks by the Demon Lord? Work comes first! A fantasy of misunderstood work that unknowingly shatters destiny!<br><br>\n\n(Source: Seven Seas Entertainment)<br><br>\n\n<i>Note: Heroine? Seijo? Iie, All Works Maid desu (Ko)! is streaming a week in advance of the TV broadcast on dAnimeStore and ABEMA beginning June 24th, 2026. Regular broadcasting began on July 1st, 2026.</i>",
-      "genres": [
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 70,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "EMT Squared"
-          },
-          {
-            "name": "TO Books"
-          },
-          {
-            "name": "Yomiuri TV Enterprise"
-          },
-          {
-            "name": "Docomo Anime Store"
-          },
-          {
-            "name": "Bandai Namco Music Live"
-          },
-          {
-            "name": "MAGNET"
-          },
-          {
-            "name": "BS Fuji"
-          },
-          {
-            "name": "EMT Squared"
-          },
-          {
-            "name": "KLOCKWORX"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 6,
-        "day": 24
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 9
-      }
-    },
-    {
-      "id": 210031,
-      "title": {
-        "romaji": "Seihantai na Kimi to Boku 2nd Season",
-        "english": "You and I Are Polar Opposites Season 2",
-        "native": "正反対な君と僕 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210031-TppgcHZh46LY.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210031-TppgcHZh46LY.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210031-TppgcHZh46LY.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210031-M4bt0rAmWk5Q.jpg",
-      "description": "Six months have passed since the polar opposite classmates Miyu Suzuki and Yuusuke Tani started dating. Through spending time together along with their friends from school, the two have been happier than ever. As the year nears its end, the new couple plans to celebrate Christmas and the New Year together, making memories for years to come.<br>\n<br>\nMeanwhile, Miyu and Yuusuke's friends Shuuji Taira and Kentarou Yamada are puzzled by their own situations. Due to his bad experiences in middle school, Taira still overthinks everything around him, especially after his classmate Shino Azuma began giving him more attention. Simultaneously, the usually energetic and outspoken Yamada finds it difficult to find the perfect time to confess his feelings to his shy schoolmate Natsumi Nishi. Despite everyone's differences, they continue enjoying their adolescence together and find their own ways to turn the winter break into a cherished memory.<br>\n<br>\n(Source: MAL Rewrite)",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance",
-        "Slice of Life"
-      ],
-      "averageScore": 82,
-      "episodes": 13,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Lapin Track"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 5
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
       }
     },
     {
@@ -861,6 +738,125 @@
         "year": 2026,
         "month": 9,
         "day": 25
+      }
+    },
+    {
+      "id": 185874,
+      "title": {
+        "romaji": "BLEACH: Sennen Kessen-hen - Kashin-tan",
+        "english": "BLEACH: Thousand-Year Blood War - The Calamity",
+        "native": "BLEACH 千年血戦篇-禍進譚-"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185874-aU3e6tBT6wwA.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185874-aU3e6tBT6wwA.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185874-IdGyh1EBG91I.jpg",
+      "description": "The fourth and final part of <i>BLEACH: Sennen Kessen-hen</i>. <br><br>\n\nDestruction looms at the end of the Thousand-Year Blood War between the Soul Reapers and Quincies… as the death of the Soul King mirrors the collapse of the Three Worlds, distortions and omens of destruction start to appear in all realms. \n<br><br>\nFierce battles erupt throughout the Wahr Welt between the Thirteen Court Guard Squads and the Royal Guard. Ichigo learns about Uryuu's true intentions and renews his determination to protect the world together, as friends who trust each other. Yhwach has surpassed even his own ability, The Almighty...\n<br><br>\nThe fierce battle for the survival of the Three Worlds approaches its end. Beyond the chaos of calamity, what lies in wait—despair or hope?<br><br>\n\n(Source: VIZ Media, edited)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ],
+      "averageScore": 90,
+      "episodes": 10,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "PIERROT FILMS"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 25
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 192800,
+      "title": {
+        "romaji": "Heroine? Seijo? Iie, All Works Maid desu (Ko)!",
+        "english": "Heroine? Saint? No, I’m an All-Works Maid (And Proud of It)!",
+        "native": "ヒロイン？聖女？いいえ、オールワークスメイドです（誇）！"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx192800-r8zlO0VY0jJP.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx192800-r8zlO0VY0jJP.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx192800-r8zlO0VY0jJP.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/192800-1EhTN0zOxQsW.jpg",
+      "description": "“I will become the world’s most wonderful maid!” <br><br>\nWith her skirt fluttering in black and white, the girl shouted. Her name is Melody. A reincarnated former Japanese girl, she now pursues her dream in her new life, working as an all-purpose maid for a poor count’s family in the kingdom of Théolas. When she makes it, even cheap tea turns into a luxury brew, and a dilapidated mansion is quickly restored to new! Cleaning, serving, hunting, DIY—leave it all to her and her powerful magic. Unbeknownst to Melody, this world is actually an otome game, and she is the most powerful and invincible heroine, the saint! Yet, she remains oblivious to this fact. Romance with handsome men? Attacks by the Demon Lord? Work comes first! A fantasy of misunderstood work that unknowingly shatters destiny!<br><br>\n\n(Source: Seven Seas Entertainment)<br><br>\n\n<i>Note: Heroine? Seijo? Iie, All Works Maid desu (Ko)! is streaming a week in advance of the TV broadcast on dAnimeStore and ABEMA beginning June 24th, 2026. Regular broadcasting began on July 1st, 2026.</i>",
+      "genres": [
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 70,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "EMT Squared"
+          },
+          {
+            "name": "TO Books"
+          },
+          {
+            "name": "Yomiuri TV Enterprise"
+          },
+          {
+            "name": "Docomo Anime Store"
+          },
+          {
+            "name": "Bandai Namco Music Live"
+          },
+          {
+            "name": "MAGNET"
+          },
+          {
+            "name": "BS Fuji"
+          },
+          {
+            "name": "EMT Squared"
+          },
+          {
+            "name": "KLOCKWORX"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 6,
+        "day": 24
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 9
       }
     },
     {
