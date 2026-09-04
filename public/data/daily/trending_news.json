@@ -1,7 +1,29 @@
 {
-  "version": 1788555597250,
-  "fetchedAt": "2026-09-04T20:59:57.250Z",
+  "version": 1788562851607,
+  "fetchedAt": "2026-09-04T23:00:51.607Z",
   "news": [
+    {
+      "title": "North American Anime, Manga Releases, August 30-September 5",
+      "description": "Black Butler: Emerald Witch Arc, Is It Wrong to Try to Pick Up Girls in a Dungeon?: Arrow of the Orion anime; How to Grill Our Love, Luna Knight manga ship",
+      "fullDescription": "<cite>Black Butler: Emerald Witch Arc, Is It Wrong to Try to Pick Up Girls in a Dungeon?: Arrow of the Orion</cite> anime; <cite>How to Grill Our Love, Luna Knight</cite> manga ship",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-04/north-american-anime-manga-releases-august-30-september-5/.241170",
+      "pubDate": "Fri, 04 Sep 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241170"
+    },
+    {
+      "title": "The Shy Snow Woman and the Cursed Ring TV Anime Reveals Early Streaming on September 11 on OceanVeil, Promo Video, Opening Theme Song",
+      "description": "NSFW visual unveiled",
+      "fullDescription": "NSFW visual unveiled",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-04/the-shy-snow-woman-and-the-cursed-ring-tv-anime-reveals-early-streaming-on-september-11-on-/.241386",
+      "pubDate": "Fri, 04 Sep 2026 16:57:28 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241386/shy-snow-woman-visual.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241386"
+    },
     {
       "title": "The Grimm Reapress and the Drearytale Monster Game Heads West",
       "description": "Trailer reveals 2027 release for Switch 2, Switch, PS5, PC",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241372/visual-logo.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241372"
-    },
-    {
-      "title": "Hakuhodo Teases New Project in Videos",
-      "description": "Entertainment company Hakuhodo DY Music & Pictures teased in two videos on Friday that it will announce a new project on September 10 at 7:00 p.m. JST....",
-      "fullDescription": "Entertainment company Hakuhodo DY Music & Pictures teased in two videos on Friday that it will announce a new project on September 10 at 7:00 p.m. JST....",
-      "link": "https://www.animenewsnetwork.com/daily-briefs/2026-09-04/hakuhodo-teases-new-project-in-videos/.241371",
-      "pubDate": "Fri, 04 Sep 2026 06:15:52 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241371/hakuhodo-project-1.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241371"
-    },
-    {
-      "title": "&#039;Kanojo no Tomodachi&#039; Reveals Additional Cast, Theme Songs, First Promo",
-      "description": "The official website for the television anime adaptation of Jyura&#039;s Kanojo no Tomodachi (My Girlfriend&#039;s Friend) manga revealed a pair of additional cast, third key visual (pictured), the theme songs, and the first promotional video on Friday. The anime series is scheduled to premiere on O...",
-      "fullDescription": "The official website for the television anime adaptation of Jyura&#039;s Kanojo no Tomodachi (My Girlfriend&#039;s Friend) manga revealed a pair of additional cast, third key visual (pictured), the theme songs, and the first promotional video on Friday. The anime series is scheduled to premiere on October 5 at 1.05 a.m. on Tokyo MX, followed by BS11 on October 8. Voice actresses Riho Sugiyama (Nami yo Kiitekure) and Ryouka Yuzuki (Ao noHako) are joining the cast as Miyuki and Kaori&#039;s Mother...",
-      "link": "https://myanimelist.net/news/74667054?_location=rss",
-      "pubDate": "Fri, 04 Sep 2026 03:07:41 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788516382-2aa1a99481aaf70d5f95d3a44a6aa09b.jpeg",
-      "guid": "https://myanimelist.net/news/74667054?_location=rss"
     }
   ],
   "total": 15
