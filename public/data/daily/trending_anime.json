@@ -1,6 +1,6 @@
 {
-  "version": 1788562851979,
-  "fetchedAt": "2026-09-04T23:00:51.979Z",
+  "version": 1788570037899,
+  "fetchedAt": "2026-09-05T01:00:37.899Z",
   "anime": [
     {
       "id": 182205,
@@ -142,6 +142,72 @@
       }
     },
     {
+      "id": 196187,
+      "title": {
+        "romaji": "Super no Ura de Yani Suu Futari",
+        "english": "Smoking Behind the Supermarket with You",
+        "native": "スーパーの裏でヤニ吸うふたり"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196187-0dgFi2CPp3xn.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196187-0dgFi2CPp3xn.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-0dgFi2CPp3xn.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/196187-Z9dV6uotmKjM.jpg",
+      "description": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”\n<br><br>\n(Source: Crunchyroll)<br><br>\n\n<i>Note: Episodes 1-6 had an early release by ABEMA and Crunchyroll on June 3rd, 2026 in a mini-episode batch format that splits 6 episodes into 12, ahead of the TV broadcast which started on July 10th, 2026.</i>",
+      "genres": [
+        "Comedy",
+        "Romance",
+        "Slice of Life"
+      ],
+      "averageScore": 82,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Asahi Production"
+          },
+          {
+            "name": "TBS"
+          },
+          {
+            "name": "Asmik Ace"
+          },
+          {
+            "name": "Asahi Production"
+          },
+          {
+            "name": "arma bianca"
+          },
+          {
+            "name": "ADK Marketing Solutions"
+          },
+          {
+            "name": "Nichion"
+          },
+          {
+            "name": "AbemaTV"
+          },
+          {
+            "name": "Square Enix"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 10
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 196218,
       "title": {
         "romaji": "Ryoumin 0-Nin Start no Henkyou Ryoushu-sama",
@@ -220,133 +286,6 @@
       }
     },
     {
-      "id": 196187,
-      "title": {
-        "romaji": "Super no Ura de Yani Suu Futari",
-        "english": "Smoking Behind the Supermarket with You",
-        "native": "スーパーの裏でヤニ吸うふたり"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196187-0dgFi2CPp3xn.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196187-0dgFi2CPp3xn.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-0dgFi2CPp3xn.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/196187-Z9dV6uotmKjM.jpg",
-      "description": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”\n<br><br>\n(Source: Crunchyroll)<br><br>\n\n<i>Note: Episodes 1-6 had an early release by ABEMA and Crunchyroll on June 3rd, 2026 in a mini-episode batch format that splits 6 episodes into 12, ahead of the TV broadcast which started on July 10th, 2026.</i>",
-      "genres": [
-        "Comedy",
-        "Romance",
-        "Slice of Life"
-      ],
-      "averageScore": 82,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Asahi Production"
-          },
-          {
-            "name": "TBS"
-          },
-          {
-            "name": "Asmik Ace"
-          },
-          {
-            "name": "Asahi Production"
-          },
-          {
-            "name": "arma bianca"
-          },
-          {
-            "name": "ADK Marketing Solutions"
-          },
-          {
-            "name": "Nichion"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "Square Enix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 10
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 189046,
-      "title": {
-        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-        "english": "Re:ZERO -Starting Life in Another World- Season 4",
-        "native": "Re:ゼロから始める異世界生活 4th season"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
-      "description": "To save his stricken allies, Subaru faces a deadly desert to find the Sage at Pleiades Watchtower.<br><br>\n\n(Source: Crunchyroll News)\n\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy",
-        "Psychological",
-        "Romance",
-        "Thriller"
-      ],
-      "averageScore": 90,
-      "episodes": 19,
-      "status": "RELEASING",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "WHITE FOX"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "DAXEL"
-          },
-          {
-            "name": "Memory-Tech"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 8
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 30
-      }
-    },
-    {
       "id": 21,
       "title": {
         "romaji": "ONE PIECE",
@@ -418,6 +357,126 @@
         "year": null,
         "month": null,
         "day": null
+      }
+    },
+    {
+      "id": 180136,
+      "title": {
+        "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
+        "english": "The Exiled Heavy Knight Knows How to Game the System",
+        "native": "追放された転生重騎士はゲーム知識で無双する"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg"
+      },
+      "bannerImage": null,
+      "description": "Born into a prestigious family of master swordsmen, Elymas Edvaughn’s future shatters when he awakens the so-called “defective” Heavy Knight class. Disowned and cast out, he regains memories of another life—and realizes this world mirrors a VR game he once mastered. Armed with knowledge no one else possesses, he sets out to rewrite his fate and prove the strength of the “weakest” class.<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "averageScore": 66,
+      "episodes": 26,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "GoHands"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "MUSE"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "GoHands"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 12,
+        "day": 25
+      }
+    },
+    {
+      "id": 189046,
+      "title": {
+        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "english": "Re:ZERO -Starting Life in Another World- Season 4",
+        "native": "Re:ゼロから始める異世界生活 4th season"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
+      "description": "To save his stricken allies, Subaru faces a deadly desert to find the Sage at Pleiades Watchtower.<br><br>\n\n(Source: Crunchyroll News)\n\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
+      ],
+      "averageScore": 90,
+      "episodes": 19,
+      "status": "RELEASING",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "WHITE FOX"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "DAXEL"
+          },
+          {
+            "name": "Memory-Tech"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 30
       }
     },
     {
@@ -523,178 +582,6 @@
       }
     },
     {
-      "id": 207141,
-      "title": {
-        "romaji": "Yani Neko",
-        "english": "Chainsmoker Cat",
-        "native": "ヤニねこ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207141-h5q5KJPd6vaX.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207141-h5q5KJPd6vaX.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207141-MvHAS2YVfJzL.jpg",
-      "description": "Yani is a catgirl with a seriously bad smoking habit. She smokes so much that her apartment smells like ash and is littered with cigarette butts—and plenty of other trash! Every time she tries to quit, she becomes weak to the cravings and gives in almost instantly. Will she ever get her life together, or is she doomed to live as a chainsmoking slob forever? \n<BR><BR>\n(Source: Seven Seas Entertainment)",
-      "genres": [
-        "Comedy",
-        "Ecchi",
-        "Slice of Life"
-      ],
-      "averageScore": 67,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Bibury Animation Studios"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "NBCUniversal Entertainment Japan"
-          },
-          {
-            "name": "TOKYO MX"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 3
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 180136,
-      "title": {
-        "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
-        "english": "The Exiled Heavy Knight Knows How to Game the System",
-        "native": "追放された転生重騎士はゲーム知識で無双する"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg"
-      },
-      "bannerImage": null,
-      "description": "Born into a prestigious family of master swordsmen, Elymas Edvaughn’s future shatters when he awakens the so-called “defective” Heavy Knight class. Disowned and cast out, he regains memories of another life—and realizes this world mirrors a VR game he once mastered. Armed with knowledge no one else possesses, he sets out to rewrite his fate and prove the strength of the “weakest” class.<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Fantasy"
-      ],
-      "averageScore": 66,
-      "episodes": 26,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "GoHands"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "MUSE"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "GoHands"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 25
-      }
-    },
-    {
-      "id": 182616,
-      "title": {
-        "romaji": "Nige Jouzu no Wakagimi 2nd Season",
-        "english": "The Elusive Samurai Season 2",
-        "native": "逃げ上手の若君 第二期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx182616-ZOCgArw9cgqI.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx182616-ZOCgArw9cgqI.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182616-ZOCgArw9cgqI.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/182616-kmIqMEUsLYrO.jpg",
-      "description": "The second season of <i>Nige Jouzu no Wakagimi</i>.",
-      "genres": [
-        "Action",
-        "Adventure"
-      ],
-      "averageScore": 76,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "CloverWorks"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "Fuji TV"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "CloverWorks"
-          },
-          {
-            "name": "Dentsu"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 17
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 208044,
       "title": {
         "romaji": "Rakudai Kenja no Gakuin Musou: Nidome no Tensei, S-Rank Cheat Majutsushi Bouken-roku",
@@ -770,6 +657,68 @@
       }
     },
     {
+      "id": 182616,
+      "title": {
+        "romaji": "Nige Jouzu no Wakagimi 2nd Season",
+        "english": "The Elusive Samurai Season 2",
+        "native": "逃げ上手の若君 第二期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx182616-ZOCgArw9cgqI.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx182616-ZOCgArw9cgqI.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182616-ZOCgArw9cgqI.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/182616-kmIqMEUsLYrO.jpg",
+      "description": "The second season of <i>Nige Jouzu no Wakagimi</i>.",
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "averageScore": 76,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "CloverWorks"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "Fuji TV"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "CloverWorks"
+          },
+          {
+            "name": "Dentsu"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 17
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 178789,
       "title": {
         "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
@@ -834,50 +783,42 @@
       }
     },
     {
-      "id": 188525,
+      "id": 207141,
       "title": {
-        "romaji": "Kore Kaite Shine",
-        "english": "Draw This, Then Die!",
-        "native": "これ描いて死ね"
+        "romaji": "Yani Neko",
+        "english": "Chainsmoker Cat",
+        "native": "ヤニねこ"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188525-uWhw4rQcqOyF.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx188525-uWhw4rQcqOyF.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188525-uWhw4rQcqOyF.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207141-h5q5KJPd6vaX.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207141-h5q5KJPd6vaX.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/188525-Vnei12N4wZsM.jpg",
-      "description": "First-year high school student Ai Yasumi lives on the island of Izu Oshima and loves reading manga. But after a certain turning point, she sets her sights on creating stories of her own! As she dives into the world of manga-making, Ai faces challenges, growth, and the excitement of chasing her creative dreams. Where will her creative journey take her?<br>\n<br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207141-MvHAS2YVfJzL.jpg",
+      "description": "Yani is a catgirl with a seriously bad smoking habit. She smokes so much that her apartment smells like ash and is littered with cigarette butts—and plenty of other trash! Every time she tries to quit, she becomes weak to the cravings and gives in almost instantly. Will she ever get her life together, or is she doomed to live as a chainsmoking slob forever? \n<BR><BR>\n(Source: Seven Seas Entertainment)",
       "genres": [
         "Comedy",
+        "Ecchi",
         "Slice of Life"
       ],
-      "averageScore": 77,
-      "episodes": 12,
+      "averageScore": 67,
+      "episodes": null,
       "status": "RELEASING",
       "season": "SUMMER",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Shin-Ei Animation"
+            "name": "Bibury Animation Studios"
           },
           {
-            "name": "Nippon Television Network"
+            "name": "Kodansha"
           },
           {
-            "name": "Shin-Ei Animation"
+            "name": "NBCUniversal Entertainment Japan"
           },
           {
-            "name": "Shogakukan"
-          },
-          {
-            "name": "VAP"
-          },
-          {
-            "name": "Shogakukan-Shueisha Productions"
-          },
-          {
-            "name": "Frontier Works"
+            "name": "TOKYO MX"
           }
         ]
       },
@@ -887,30 +828,31 @@
         "day": 3
       },
       "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 25
+        "year": null,
+        "month": null,
+        "day": null
       }
     },
     {
-      "id": 135865,
+      "id": 204466,
       "title": {
-        "romaji": "Youjo Senki II",
-        "english": "Saga of Tanya the Evil Season 2",
-        "native": "幼女戦記Ⅱ"
+        "romaji": "Otome Kaijuu Caraméliser",
+        "english": "KAIJU GIRL CARAMELISE",
+        "native": "乙女怪獣キャラメリゼ"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx135865-T7XIPMAbqcxN.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135865-T7XIPMAbqcxN.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx135865-T7XIPMAbqcxN.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204466-vXMvIs4VOoQd.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204466-vXMvIs4VOoQd.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204466-vXMvIs4VOoQd.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/135865-Ws3e7BhBkFxd.jpg",
-      "description": "The second season of <i>Youjo Senki</i>.",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/204466-cpbNGN9qHrGP.jpg",
+      "description": "Kuroe Akaishi just wants a normal high school life—but that’s impossible with a rare condition that turns her into a giant kaiju whenever her emotions spike! Things get even worse when she falls for Arata Minami, the most popular boy in class. Now every blush, heartbeat, and crush could trigger a monster transformation. Can Kuroe survive high school love before it destroys everything around her?!<br>\n<br>\n(Source: Crunchyroll)",
       "genres": [
-        "Action",
-        "Fantasy"
+        "Comedy",
+        "Romance",
+        "Supernatural"
       ],
-      "averageScore": 80,
+      "averageScore": 74,
       "episodes": 12,
       "status": "RELEASING",
       "season": "SUMMER",
@@ -918,26 +860,92 @@
       "studios": {
         "nodes": [
           {
-            "name": "NUT"
+            "name": "LIDENFILMS"
+          },
+          {
+            "name": "TBS"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "Good Smile Film"
           },
           {
             "name": "KADOKAWA"
           },
           {
-            "name": "Sammy"
+            "name": "BS11"
           },
           {
-            "name": "AT-X"
+            "name": "SANKYO"
           },
           {
-            "name": "Sony Music Solutions"
+            "name": "KLOCKWORX"
+          },
+          {
+            "name": "Contents Seed"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 7,
-        "day": 8
+        "day": 3
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 185874,
+      "title": {
+        "romaji": "BLEACH: Sennen Kessen-hen - Kashin-tan",
+        "english": "BLEACH: Thousand-Year Blood War - The Calamity",
+        "native": "BLEACH 千年血戦篇-禍進譚-"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185874-aU3e6tBT6wwA.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185874-aU3e6tBT6wwA.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185874-IdGyh1EBG91I.jpg",
+      "description": "The fourth and final part of <i>BLEACH: Sennen Kessen-hen</i>. <br><br>\n\nDestruction looms at the end of the Thousand-Year Blood War between the Soul Reapers and Quincies… as the death of the Soul King mirrors the collapse of the Three Worlds, distortions and omens of destruction start to appear in all realms. \n<br><br>\nFierce battles erupt throughout the Wahr Welt between the Thirteen Court Guard Squads and the Royal Guard. Ichigo learns about Uryuu's true intentions and renews his determination to protect the world together, as friends who trust each other. Yhwach has surpassed even his own ability, The Almighty...\n<br><br>\nThe fierce battle for the survival of the Three Worlds approaches its end. Beyond the chaos of calamity, what lies in wait—despair or hope?<br><br>\n\n(Source: VIZ Media, edited)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ],
+      "averageScore": 90,
+      "episodes": 10,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "PIERROT FILMS"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 25
       },
       "endDate": {
         "year": null,
