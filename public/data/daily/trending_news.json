@@ -1,7 +1,18 @@
 {
-  "version": 1788587275377,
-  "fetchedAt": "2026-09-05T05:47:55.377Z",
+  "version": 1788603953646,
+  "fetchedAt": "2026-09-05T10:25:53.646Z",
   "news": [
+    {
+      "title": "Webtoon-Based Short-Form Live-Action Series My Father's Table Set for September 9 Theatrical Release",
+      "description": "Series follows family whose dynamics shift after mother is no longer able to cook",
+      "fullDescription": "Series follows family whose dynamics shift after mother is no longer able to cook",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-05/webtoon-based-short-form-live-action-series-my-father-table-set-for-september-9-theatrical-release/.241363",
+      "pubDate": "Sat, 05 Sep 2026 05:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241363/hqehkqzbeaaafzn.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241363"
+    },
     {
       "title": "Romelia War Chronicle TV Anime Reveals 14 More Cast Members",
       "description": "Hiromichi Tezuka, Tomohiro Yamaguchi, more join cast for October anime",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241353/rpr20260902000500353-02-i-p4.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241353"
-    },
-    {
-      "title": "Webtoon-Based Animated Film Guardians of the Video Game to Open in October in Korea",
-      "description": "Film follows ace agent responsible for setting up worlds inside video games",
-      "fullDescription": "Film follows ace agent responsible for setting up worlds inside video games",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-04/webtoon-based-animated-film-guardians-of-the-video-game-to-open-in-october-in-korea/.241357",
-      "pubDate": "Fri, 04 Sep 2026 08:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241357/hqfnvg7auaasml6.jfif.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241357"
     }
   ],
   "total": 15
