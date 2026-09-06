@@ -1,7 +1,18 @@
 {
-  "version": 1788669852686,
-  "fetchedAt": "2026-09-06T04:44:12.686Z",
+  "version": 1788685130537,
+  "fetchedAt": "2026-09-06T08:58:50.537Z",
   "news": [
+    {
+      "title": "Kuji Furumiya's Unnamed Memory -after the end- Sequel Light Novel Series Ends in December",
+      "description": "Sequel novel series launched in 2022",
+      "fullDescription": "Sequel novel series launched in 2022",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-06/kuji-furumiya-unnamed-memory-after-the-end-sequel-light-novel-series-ends-in-december/.241425",
+      "pubDate": "Sun, 06 Sep 2026 00:52:50 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241425/unnamed-memory-after-the-end-1.webp",
+      "guid": "https://www.animenewsnetwork.com/cms/.241425"
+    },
     {
       "title": "Medabots S Smartphone Game to Get Global Launch",
       "description": "Game's App Store page lists January 21, 2027 release date",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241170"
-    },
-    {
-      "title": "The Shy Snow Woman and the Cursed Ring TV Anime Reveals Early Streaming on September 11 on OceanVeil, Promo Video, Opening Theme Song",
-      "description": "NSFW visual unveiled",
-      "fullDescription": "NSFW visual unveiled",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-04/the-shy-snow-woman-and-the-cursed-ring-tv-anime-reveals-early-streaming-on-september-11-on-/.241386",
-      "pubDate": "Fri, 04 Sep 2026 16:57:28 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241386/shy-snow-woman-visual.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241386"
     }
   ],
   "total": 15
