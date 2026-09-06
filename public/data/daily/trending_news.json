@@ -1,7 +1,29 @@
 {
-  "version": 1788685130537,
-  "fetchedAt": "2026-09-06T08:58:50.537Z",
+  "version": 1788699045605,
+  "fetchedAt": "2026-09-06T12:50:45.605Z",
   "news": [
+    {
+      "title": "Wandance Gets Stage Play in March 2027",
+      "description": "The Jet Boy Bangerz member Taki stars as Kaboku",
+      "fullDescription": "The Jet Boy Bangerz member Taki stars as Kaboku",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-06/wandance-gets-stage-play-in-march-2027/.241437",
+      "pubDate": "Sun, 06 Sep 2026 08:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241437/wandance.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241437"
+    },
+    {
+      "title": "Light Novel &#039;Unnamed Memory: After the End&#039; Concludes with Eighth Volume",
+      "description": "The official X of Kadokawa&#039;s Dengeki no Shinbungei label announced on August 27 that Kuji Furumiya and chibi&#039;s Unnamed Memory: After the End light novel series will end with its eighth volume on December 17. Furumiya began penning the sequel fantasy romance light novel under Dengeki no Shi...",
+      "fullDescription": "The official X of Kadokawa&#039;s Dengeki no Shinbungei label announced on August 27 that Kuji Furumiya and chibi&#039;s Unnamed Memory: After the End light novel series will end with its eighth volume on December 17. Furumiya began penning the sequel fantasy romance light novel under Dengeki no Shinbungei imprint in February 2022, with illustrations by chibi (Tensei shita Daiseijo wa, Seijo de Aru Koto wo Hitakakusu). Kadokawa published the sixth volume in May 2025, with the seventh volume sch...",
+      "link": "https://myanimelist.net/news/74676481?_location=rss",
+      "pubDate": "Sun, 06 Sep 2026 04:54:23 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788695348-39235e8ba9cc812374c44e385e9bcfad.jpeg",
+      "guid": "https://myanimelist.net/news/74676481?_location=rss"
+    },
     {
       "title": "Kuji Furumiya's Unnamed Memory -after the end- Sequel Light Novel Series Ends in December",
       "description": "Sequel novel series launched in 2022",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241412/shin-kochikame-kv.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241412"
-    },
-    {
-      "title": "&#039;Shin Kochira Katsushikaku Kameari Kouenmae Hashutsujo&#039; Reveals Main Cast, Staff, Character Promo, 2027 Debut",
-      "description": "The special livestream presentation for the new television anime adaptation of Osamu Akimoto&#039;s Kochira Katsushikaku Kameari Kouenmae Hashutsujo (KochiKame) manga revealed the main cast, staff, a key visual (pictured right), and character promotional video on Saturday. The anime series will prem...",
-      "fullDescription": "The special livestream presentation for the new television anime adaptation of Osamu Akimoto&#039;s Kochira Katsushikaku Kameari Kouenmae Hashutsujo (KochiKame) manga revealed the main cast, staff, a key visual (pictured right), and character promotional video on Saturday. The anime series will premiere on Fuji TV in 2027. Cast Kankichi Ryotsu: Fukushi Ochiai (Hai to Gensou no Grimgar) Keiichi Nakagawa: Shouta Aoi (Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...)...",
-      "link": "https://myanimelist.net/news/74669928?_location=rss",
-      "pubDate": "Fri, 04 Sep 2026 20:26:23 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788578806-de6af6ea0615498003c9e13d9e84fec5.png",
-      "guid": "https://myanimelist.net/news/74669928?_location=rss"
-    },
-    {
-      "title": "North American Anime, Manga Releases, August 30-September 5",
-      "description": "Black Butler: Emerald Witch Arc, Is It Wrong to Try to Pick Up Girls in a Dungeon?: Arrow of the Orion anime; How to Grill Our Love, Luna Knight manga ship",
-      "fullDescription": "<cite>Black Butler: Emerald Witch Arc, Is It Wrong to Try to Pick Up Girls in a Dungeon?: Arrow of the Orion</cite> anime; <cite>How to Grill Our Love, Luna Knight</cite> manga ship",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-04/north-american-anime-manga-releases-august-30-september-5/.241170",
-      "pubDate": "Fri, 04 Sep 2026 17:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241170"
     }
   ],
   "total": 15
