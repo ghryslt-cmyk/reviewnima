@@ -1,7 +1,40 @@
 {
-  "version": 1788653426287,
-  "fetchedAt": "2026-09-06T00:10:26.287Z",
+  "version": 1788669852686,
+  "fetchedAt": "2026-09-06T04:44:12.686Z",
   "news": [
+    {
+      "title": "Medabots S Smartphone Game to Get Global Launch",
+      "description": "Game's App Store page lists January 21, 2027 release date",
+      "fullDescription": "Game's App Store page lists January 21, 2027 release date",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-05/medabots-s-smartphone-game-to-get-global-launch/.241429",
+      "pubDate": "Sat, 05 Sep 2026 21:05:41 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241429"
+    },
+    {
+      "title": "Kana Delays Inio Asano's Before Dawn and the End of the World Manga to March 4",
+      "description": "Abrams ComicArts' imprint previously scheduled short story collection for November",
+      "fullDescription": "Abrams ComicArts' imprint previously scheduled short story collection for November",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-05/kana-delays-inio-asano-before-dawn-and-the-end-of-the-world-manga-to-march-4/.241445",
+      "pubDate": "Sat, 05 Sep 2026 20:55:52 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241445"
+    },
+    {
+      "title": "Star Detective Precure! Film Posts Miracle Light Trailer, Teases More Precures' Future Forms",
+      "description": "Cure Mystique, Cure Eclair, Cure Arcana's future forms previewed",
+      "fullDescription": "Cure Mystique, Cure Eclair, Cure Arcana's future forms previewed",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-05/star-detective-precure-film-posts-miracle-light-trailer-teases-more-precures-future-forms/.241447",
+      "pubDate": "Sat, 05 Sep 2026 20:45:56 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241447/2048x1606.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241447"
+    },
     {
       "title": "Grow Up Show: Sunflower Circus Anime Streams Video for Circus Collection Arc",
       "description": "Anime entered arc with episode 10 on Saturday",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241386/shy-snow-woman-visual.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241386"
-    },
-    {
-      "title": "The Grimm Reapress and the Drearytale Monster Game Heads West",
-      "description": "Trailer reveals 2027 release for Switch 2, Switch, PS5, PC",
-      "fullDescription": "Trailer reveals 2027 release for Switch 2, Switch, PS5, PC",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-04/the-grimm-reapress-and-the-drearytale-monster-game-heads-west/.241381",
-      "pubDate": "Fri, 04 Sep 2026 12:37:46 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241381"
-    },
-    {
-      "title": "Tokyo Anime Award Festival Ends",
-      "description": "TAAF 2026 took place from March 13-16",
-      "fullDescription": "TAAF 2026 took place from March 13-16",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-04/tokyo-anime-award-festival-ends/.241377",
-      "pubDate": "Fri, 04 Sep 2026 12:12:32 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241377/home-logo2026.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241377"
-    },
-    {
-      "title": "New Votoms Anime Films Reveal Cast",
-      "description": "Films cast Shinichirō Miki, Yūki Kaji, Yūichi Nakamura, Satoshi Tsuruoka, Tomokazu Sugita, more",
-      "fullDescription": "Films cast Shinichirō Miki, Yūki Kaji, Yūichi Nakamura, Satoshi Tsuruoka, Tomokazu Sugita, more",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-04/new-votoms-anime-films-reveal-cast/.241379",
-      "pubDate": "Fri, 04 Sep 2026 11:45:40 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/images/cms/news.9/241379/votoms-alix.png",
-      "guid": "https://www.animenewsnetwork.com/cms/.241379"
     }
   ],
   "total": 15
