@@ -1,7 +1,18 @@
 {
-  "version": 1788625050013,
-  "fetchedAt": "2026-09-05T16:17:30.013Z",
+  "version": 1788653426287,
+  "fetchedAt": "2026-09-06T00:10:26.287Z",
   "news": [
+    {
+      "title": "Grow Up Show: Sunflower Circus Anime Streams Video for Circus Collection Arc",
+      "description": "Anime entered arc with episode 10 on Saturday",
+      "fullDescription": "Anime entered arc with episode 10 on Saturday",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-05/grow-up-show-sunflower-circus-anime-streams-video-for-circus-collection-arc/.241438",
+      "pubDate": "Sat, 05 Sep 2026 12:06:01 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241438/w673.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241438"
+    },
     {
       "title": "Boichi's The Marshal King Manga Resumes",
       "description": "Manga went on hiatus in December",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/images/cms/news.9/241379/votoms-alix.png",
       "guid": "https://www.animenewsnetwork.com/cms/.241379"
-    },
-    {
-      "title": "Additional Cast for &#039;Romelia Senki&#039; Announced",
-      "description": "The official website for the Romelia Senki (Romelia War Chronicle) television anime announced 14 additional cast on Friday. The anime series adapting Ryou Ariyama&#039;s action fantasy light novel will air for two cours on Tokyo MX, BS11, Sun TV, and KBS Kyoto in October 2026. Cast Hans: Hiromichi T...",
-      "fullDescription": "The official website for the Romelia Senki (Romelia War Chronicle) television anime announced 14 additional cast on Friday. The anime series adapting Ryou Ariyama&#039;s action fantasy light novel will air for two cours on Tokyo MX, BS11, Sun TV, and KBS Kyoto in October 2026. Cast Hans: Hiromichi Tezuka (Kill Ao) Grain: Tomohiro Yamaguchi (Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?) Jini: Ryuuichi Hirose (Kingdom 3rd Season) Tarth: Kenta Hosoda (Re:Monster) Sei: Tasuku Kaito (The Fabl...",
-      "link": "https://myanimelist.net/news/74667443?_location=rss",
-      "pubDate": "Fri, 04 Sep 2026 06:22:44 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1788528098-d0bcc2c6b134dd8f7a1b6f26d96c20dd.jpeg",
-      "guid": "https://myanimelist.net/news/74667443?_location=rss"
     }
   ],
   "total": 15
