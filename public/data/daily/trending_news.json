@@ -1,7 +1,29 @@
 {
-  "version": 1788865804307,
-  "fetchedAt": "2026-09-08T11:10:04.307Z",
+  "version": 1788880171863,
+  "fetchedAt": "2026-09-08T15:09:31.863Z",
   "news": [
+    {
+      "title": "Nia Liston: The Merciless Maiden Anime's 2nd Video Unveils More Cast, Half-Year Run",
+      "description": "Kōichi Sakaguchi, Junichi Suwabe, Maaya Uchida, Kazuyuki Okitsu join cast of October 6 series",
+      "fullDescription": "Kōichi Sakaguchi, Junichi Suwabe, Maaya Uchida, Kazuyuki Okitsu join cast of October 6 series",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-08/nia-liston-the-merciless-maiden-anime-2nd-video-unveils-more-cast-half-year-run/.241514",
+      "pubDate": "Tue, 08 Sep 2026 06:20:10 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241514/liston1.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241514"
+    },
+    {
+      "title": "Magic Repo Man Anime's 2nd English-Subtitled Trailer Reveals More Cast, Theme Songs",
+      "description": "Daisuke Namikawa joins cast of October 4 series",
+      "fullDescription": "Daisuke Namikawa joins cast of October 4 series",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-08/magic-repo-man-anime-2nd-english-subtitled-trailer-reveals-more-cast-theme-songs/.241512",
+      "pubDate": "Tue, 08 Sep 2026 06:03:13 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241512/reporoger.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241512"
+    },
     {
       "title": "&#039;Kyouran Reijou Nia Liston&#039; Reveals Additional Cast, Second Promo, Two Consecutive Cours",
       "description": "The official website for the television anime adaptation of Umikaze Minamino&#039;s Kyouran Reijou Nia Liston: Byoujaku Reijou ni Tensei shita Kamigoroshi no Bujin no Karei naru Musouroku (Nia Liston: The Merciless Maiden) light novel revealed additional cast and the second promotional video on Tues...",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241458"
-    },
-    {
-      "title": "Hololive VTuber Agency Launch 1st TV Anime Project From Studio Kai",
-      "description": "\"Odeholo\" project is part of hololive's 10th anniversary celebration",
-      "fullDescription": "\"Odeholo\" project is part of hololive's 10th anniversary celebration",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-07/hololive-vtuber-agency-launch-1st-tv-anime-project-from-studio-kai/.241493",
-      "pubDate": "Mon, 07 Sep 2026 08:42:28 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241493/odeholo-image-20260907.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241493"
-    },
-    {
-      "title": "Chiikawa Film Earns Total of 13.9 Billion Yen, Currently Biggest Film of 2026 in Japan",
-      "description": "Film surpassed Detective Conan: Highway no Datenshi film's 13.7 billion yen cumulative earning",
-      "fullDescription": "Film surpassed <cite>Detective Conan: Highway no Datenshi</cite> film's 13.7 billion yen cumulative earning",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-07/chiikawa-film-earns-total-of-13.9-billion-yen-currently-biggest-film-of-2026-in-japan/.241488",
-      "pubDate": "Mon, 07 Sep 2026 08:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/231350/chiikawa.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.241488"
     }
   ],
   "total": 15
