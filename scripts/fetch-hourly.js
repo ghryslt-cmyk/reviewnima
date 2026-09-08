@@ -28,22 +28,37 @@ const main = async () => {
   console.log('Starting hourly fetch for news and trending anime...');
   console.log('---');
 
+  let newsSuccess = false;
+  let animeSuccess = false;
+
+  // Fetch trending news
   try {
-    // Fetch trending news
     console.log('Fetching trending news...');
     await runScript('fetch-trending-news.js');
     console.log('✓ Trending news fetched successfully');
+    newsSuccess = true;
+  } catch (error) {
+    console.error('✗ Error fetching trending news:', error.message);
+  }
 
-    // Fetch trending anime
+  // Fetch trending anime
+  try {
     console.log('---');
     console.log('Fetching trending anime...');
     await runScript('fetch-trending-anime.js');
     console.log('✓ Trending anime fetched successfully');
-
-    console.log('---');
-    console.log('✓ All hourly fetches completed successfully!');
+    animeSuccess = true;
   } catch (error) {
-    console.error('✗ Error during hourly fetch:', error);
+    console.error('✗ Error fetching trending anime:', error.message);
+  }
+
+  console.log('---');
+  if (newsSuccess && animeSuccess) {
+    console.log('✓ All hourly fetches completed successfully!');
+  } else if (newsSuccess || animeSuccess) {
+    console.log('⚠ Partial success: Some fetches completed, others failed');
+  } else {
+    console.error('✗ All hourly fetches failed');
     process.exit(1);
   }
 };

@@ -36,7 +36,7 @@ const getCurrentSeason = () => {
 };
 
 /**
- * Fetch seasonal anime from AniList API
+ * Fetch seasonal anime from AniList API with retry logic
  * @param {string} season - Season name (WINTER, SPRING, SUMMER, FALL)
  * @param {number} year - Year
  * @returns {Promise<Array>} Array of anime data
@@ -75,15 +75,39 @@ const fetchSeasonalAnime = async (season, year) => {
     }
   `;
 
-  try {
-    const response = await axios.post(ANILIST_API_URL, {
-      query,
-      variables: { season, year }
-    });
-    return response.data.data.Page.media;
-  } catch (error) {
-    console.error('Error fetching seasonal anime:', error);
-    return [];
+  const headers = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+  };
+
+  const maxRetries = 3;
+  const retryDelay = 2000; // 2 seconds
+
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await axios.post(ANILIST_API_URL, {
+        query,
+        variables: { season, year }
+      }, { 
+        headers,
+        timeout: 10000
+      });
+      return response.data.data.Page.media;
+    } catch (error) {
+      console.error(`Attempt ${attempt}/${maxRetries} failed:`, error.message);
+      
+      if (error.response?.status === 403) {
+        console.log('Rate limited or blocked, waiting before retry...');
+      }
+      
+      if (attempt < maxRetries) {
+        await new Promise(resolve => setTimeout(resolve, retryDelay * attempt));
+      } else {
+        console.error('Max retries reached for AniList API');
+        return [];
+      }
+    }
   }
 };
 

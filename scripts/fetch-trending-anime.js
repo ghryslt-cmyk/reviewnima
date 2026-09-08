@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 const ANILIST_API_URL = 'https://graphql.anilist.co';
 
 /**
- * Fetch trending anime from AniList API
+ * Fetch trending anime from AniList API with retry logic
  * @returns {Promise<Array>} Array of trending anime data
  */
 const fetchTrendingAnime = async () => {
@@ -56,12 +56,36 @@ const fetchTrendingAnime = async () => {
     }
   `;
 
-  try {
-    const response = await axios.post(ANILIST_API_URL, { query });
-    return response.data.data.Page.media;
-  } catch (error) {
-    console.error('Error fetching trending anime:', error);
-    return [];
+  const headers = {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+  };
+
+  const maxRetries = 3;
+  const retryDelay = 2000; // 2 seconds
+
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await axios.post(ANILIST_API_URL, { query }, { 
+        headers,
+        timeout: 10000
+      });
+      return response.data.data.Page.media;
+    } catch (error) {
+      console.error(`Attempt ${attempt}/${maxRetries} failed:`, error.message);
+      
+      if (error.response?.status === 403) {
+        console.log('Rate limited or blocked, waiting before retry...');
+      }
+      
+      if (attempt < maxRetries) {
+        await new Promise(resolve => setTimeout(resolve, retryDelay * attempt));
+      } else {
+        console.error('Max retries reached for AniList API');
+        return [];
+      }
+    }
   }
 };
 

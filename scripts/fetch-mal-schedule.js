@@ -23,16 +23,37 @@ const getCurrentSeason = () => {
 };
 
 const fetchMALSeasonalAnime = async (season, year, clientId) => {
-  try {
-    const fields = 'id,title,main_picture,broadcast';
-    const response = await axios.get(`${MAL_API_URL}/anime/season/${year}/${season}`, {
-      params: { limit: 50, fields },
-      headers: { 'X-MAL-CLIENT-ID': clientId }
-    });
-    return response.data.data || [];
-  } catch (error) {
-    console.error(`Error fetching MAL seasonal anime:`, error.message);
-    return [];
+  const headers = {
+    'X-MAL-CLIENT-ID': clientId,
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+  };
+
+  const maxRetries = 3;
+  const retryDelay = 2000; // 2 seconds
+
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const fields = 'id,title,main_picture,broadcast';
+      const response = await axios.get(`${MAL_API_URL}/anime/season/${year}/${season}`, {
+        params: { limit: 50, fields },
+        headers,
+        timeout: 10000
+      });
+      return response.data.data || [];
+    } catch (error) {
+      console.error(`Attempt ${attempt}/${maxRetries} failed:`, error.message);
+      
+      if (error.response?.status === 403 || error.response?.status === 429) {
+        console.log('Rate limited or blocked, waiting before retry...');
+      }
+      
+      if (attempt < maxRetries) {
+        await new Promise(resolve => setTimeout(resolve, retryDelay * attempt));
+      } else {
+        console.error('Max retries reached for MAL API');
+        return [];
+      }
+    }
   }
 };
 
