@@ -144,6 +144,7 @@ const saveScheduleData = (scheduleData) => {
   const totalAnime = Object.values(scheduleData).reduce((sum, arr) => sum + arr.length, 0);
 
   fs.writeFileSync(filePath, JSON.stringify({
+    version: Date.now(),
     fetchedAt: new Date().toISOString(),
     schedule: scheduleData
   }, null, 2));
