@@ -15,7 +15,7 @@ const Layout = memo(({ children }) => {
       }}
     >
       {/* Left Gutter */}
-      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed left-0 bottom-0 w-[310px] h-[900px] z-0 hidden lg:block">
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed left-0 bottom-0 w-[170px] h-[700px] z-0 hidden lg:block">
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
@@ -29,7 +29,7 @@ const Layout = memo(({ children }) => {
       </a>
 
       {/* Right Gutter */}
-      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed right-0 bottom-0 w-[310px] h-[900px] z-0 hidden lg:block">
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed right-0 bottom-0 w-[170px] h-[700px] z-0 hidden lg:block">
         <div 
           className="w-full h-full bg-cover bg-center"
           style={{ 
@@ -43,7 +43,7 @@ const Layout = memo(({ children }) => {
       </a>
 
       {/* Canvas */}
-      <div id="canvas" className="mx-auto max-w-[1300px] relative z-10">
+      <div id="canvas" className="mx-auto max-w-[1500px] relative z-10">
         {/* Top Gutter */}
         <TopGutter />
         

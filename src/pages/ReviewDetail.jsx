@@ -202,7 +202,7 @@ const ReviewDetail = () => {
         </div>
       )}
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row gap-8 mb-12">
           {coverImage && (

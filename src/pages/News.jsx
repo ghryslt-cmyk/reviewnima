@@ -264,7 +264,7 @@ const News = () => {
         )}
         
         {/* Header Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-[1500px] mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div>
               <div className="flex items-center space-x-3 mb-4">

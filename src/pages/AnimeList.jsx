@@ -77,7 +77,7 @@ const AnimeList = memo(() => {
       {/* Hero Section */}
       <div className="relative min-h-[300px] bg-gradient-to-b from-gray-200 to-gray-100 overflow-hidden">
         <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-          <div className="max-w-7xl mx-auto text-center">
+          <div className="max-w-[1500px] mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 animate-fade-in-up">
               {t('animeList.title')}
             </h1>
@@ -103,7 +103,7 @@ const AnimeList = memo(() => {
 
       {/* Filters */}
       <div className="px-4 sm:px-6 lg:px-8 py-6 bg-white border-b border-gray-300">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1500px] mx-auto">
           <div className="flex flex-wrap gap-2">
             {allGenres.map((genre) => (
               <button
@@ -124,7 +124,7 @@ const AnimeList = memo(() => {
 
       {/* Anime Grid */}
       <div className="px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1500px] mx-auto">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 flex items-center">
               <Film className="mr-2 text-gray-600" size={28} />

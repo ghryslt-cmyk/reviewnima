@@ -67,15 +67,18 @@ public/data/
 
 ### Seasonal Data Workflow (`.github/workflows/fetch-seasonal-data.yml`)
 
-- **Schedule**: Runs on the 1st of January, April, July, and October at 00:00 UTC
+- **Schedule**: Runs on the 1st of January, April, July, and October at 00:00 UTC (the standard seasonal change of Japanese anime)
 - **Trigger**: Can also be triggered manually via workflow_dispatch
-- **Action**: Fetches seasonal anime from AniList and commits to `public/data/seasonal/`
+- **Action**:
+  - Fetches seasonal anime from AniList and commits to `public/data/seasonal/`
+  - Fetches the full airing schedule from the **official MAL API** (`GET /anime/schedule`, the same data as https://myanimelist.net/anime/season/schedule) and commits to `public/data/daily/anime_schedule.json`
+- **Note**: The MAL schedule is intentionally **NOT** part of the daily/hourly fetch — it only updates at each Japanese anime season, mirroring MAL's own season/schedule page.
 
 ### Daily Data Workflow (`.github/workflows/fetch-daily-data.yml`)
 
-- **Schedule**: Runs daily at 23:00 UTC
+- **Schedule**: Runs every 15 minutes
 - **Trigger**: Can also be triggered manually via workflow_dispatch
-- **Action**: Fetches trending anime from AniList and anime schedule from MAL API, commits to `public/data/daily/`
+- **Action**: Fetches trending anime (AniList) and trending news only. Commits to `public/data/daily/`. Does **not** touch the MAL schedule.
 
 ## Frontend Integration
 
@@ -96,7 +99,9 @@ This ensures the app works even if the automated fetching hasn't run yet.
 
 ## Notes
 
-- The MAL schedule fetch runs at 23:00 UTC to get data for the next day
+- The MAL schedule is fetched from the official MAL API (`/anime/schedule`) on each season change (Jan 1, Apr 1, Jul 1, Oct 1) and mirrors https://myanimelist.net/anime/season/schedule
+- The MAL schedule is **not** included in the daily/hourly fetch — it updates at the standard Japanese anime season
+- The schedule fetch requires the `MAL_CLIENT_ID` GitHub secret (set once; no key is hardcoded in the repo)
 - All data is committed to the repository automatically by GitHub Actions
 - The frontend reads from the committed JSON files, avoiding API rate limits
 - If local data is missing, the frontend falls back to direct API calls

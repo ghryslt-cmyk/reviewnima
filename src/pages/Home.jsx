@@ -224,7 +224,7 @@ const Home = memo(() => {
 
           {/* About Section */}
           <div className="bg-white dark:bg-gray-800 py-8 xs:py-10 sm:py-12 md:py-20 border-t border-gray-200 dark:border-gray-700">
-            <div className="max-w-7xl mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
+            <div className="max-w-[1500px] mx-auto px-4 xs:px-6 sm:px-6 lg:px-8">
               <div className="text-center mb-8 xs:mb-10 sm:mb-12">
                 <h2 className="text-2xl xs:text-3xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                   {t('home.aboutTitle')}
