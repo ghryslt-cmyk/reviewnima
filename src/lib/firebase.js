@@ -26,6 +26,21 @@ const googleProvider = new GoogleAuthProvider();
 // Admin email - only this email can access admin panel
 const ADMIN_EMAIL = import.meta.env.VITE_ADMIN_EMAIL || 'your-admin-email@gmail.com';
 
+// Hardcoded fallback matching the admin address enforced in `firestore.rules`
+// and `canAssignRank`. Kept as a dedicated constant so admin detection keeps
+// working even when VITE_ADMIN_EMAIL is not injected at build time.
+const FALLBACK_ADMIN_EMAIL = 'ghryslt@gmail.com';
+
+// Returns true when the given email belongs to the admin account.
+// This check does NOT hit Firestore, so it works for guests and non-owners
+// (the `users` collection is only readable by the account owner or the admin).
+export const isAdminEmail = (email) => {
+  if (!email) return false;
+  const normalized = String(email).trim().toLowerCase();
+  return normalized === String(ADMIN_EMAIL).trim().toLowerCase()
+    || normalized === FALLBACK_ADMIN_EMAIL;
+};
+
 // Authentication functions
 export const signInWithGoogle = async () => {
   try {
@@ -51,7 +66,7 @@ export const onAuthChange = (callback) => {
 };
 
 export const isAdmin = (user) => {
-  return user && user.email === ADMIN_EMAIL;
+  return user && isAdminEmail(user.email);
 };
 
 // Firestore functions
@@ -638,6 +653,14 @@ export const getUserRank = async (userId) => {
 // Get user rank by email (as fallback for email-based documents)
 export const getUserRankByEmail = async (email) => {
   try {
+    // The admin always resolves to rank 'admin'. This must be checked before
+    // hitting Firestore because regular visitors cannot read the `users`
+    // collection (firestore.rules only allows an owner to read their own doc).
+    // This is what makes the admin badge/crown show for everyone on PC & mobile.
+    if (isAdminEmail(email)) {
+      return 'admin';
+    }
+
     const user = await getUserByEmail(email);
     if (user && user.rank) {
       console.log('getUserRankByEmail - Found rank by email:', user.rank, 'for email:', email);

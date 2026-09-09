@@ -3,7 +3,8 @@ import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
 import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank, getUserProfile, getUserRankByEmail } from '../lib/firebase';
-import { User, Mail, BookOpen, Star, Play, Trash2, Edit, Camera, Crown, Shield } from 'lucide-react';
+import { User, Mail, BookOpen, Star, Play, Trash2, Edit, Camera, Crown } from 'lucide-react';
+import { CrownMedallion, adminNameClass, AdminLabel } from '../components/AdminBadge';
 
 const Profile = () => {
   const { user, isAuthenticated, logout, refreshUser } = useAuth();
@@ -123,25 +124,21 @@ const Profile = () => {
           <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 sm:md:space-x-8">
             <div className="flex-shrink-0 relative">
               {(user?.photoURL || firestoreUserData?.photoURL) ? (
-                <div className={`relative rounded-full ${isAdminRank ? 'ring-4 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white' : ''}`}>
+                <div className={`relative rounded-full ${isAdminRank ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white shadow-[0_0_0_2px_rgba(250,204,21,0.45),0_0_20px_rgba(250,204,21,0.5)]' : ''}`}>
                   <img
                     src={user?.photoURL || firestoreUserData?.photoURL}
                     alt={user?.displayName || firestoreUserData?.displayName}
-                    className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-black dark:border-white shadow-xl"
+                    className={`w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover shadow-xl ${isAdminRank ? 'border-2 border-yellow-400' : 'border-4 border-black dark:border-white'}`}
                   />
                   {isAdminRank && (
-                    <div className="absolute -top-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg animate-pulse">
-                      <Crown className="text-black" size={20} />
-                    </div>
+                    <CrownMedallion badgeClass="w-8 h-8 sm:w-9 sm:h-9" iconSize={17} stroke={2.5} animate="animate-pulse" />
                   )}
                 </div>
               ) : (
-                <div className={`w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black text-3xl sm:text-4xl font-bold shadow-xl ${isAdminRank ? 'ring-4 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white' : ''}`}>
+                <div className={`w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-black dark:bg-white flex items-center justify-center text-white dark:text-black text-3xl sm:text-4xl font-bold shadow-xl ${isAdminRank ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-black dark:ring-offset-white shadow-[0_0_0_2px_rgba(250,204,21,0.45),0_0_20px_rgba(250,204,21,0.5)]' : ''}`}>
                   {(user?.displayName || firestoreUserData?.displayName)?.charAt(0) || 'U'}
                   {isAdminRank && (
-                    <div className="absolute -top-2 -right-2 bg-yellow-400 rounded-full p-2 shadow-lg animate-pulse">
-                      <Crown className="text-black" size={20} />
-                    </div>
+                    <CrownMedallion badgeClass="w-8 h-8 sm:w-9 sm:h-9" iconSize={17} stroke={2.5} animate="animate-pulse" />
                   )}
                 </div>
               )}
@@ -181,7 +178,8 @@ const Profile = () => {
                   </div>
                 ) : (
                   <>
-                    <h1 className={`text-2xl sm:text-3xl font-bold mb-2 ${isAdminRank ? 'bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 bg-clip-text text-transparent animate-pulse' : 'text-black dark:text-white'}`}>
+                    <h1 className={`text-2xl sm:text-3xl font-bold mb-2 flex items-center space-x-2 ${isAdminRank ? adminNameClass : 'text-black dark:text-white'}`}>
+                      {isAdminRank && <Crown className="text-amber-500 shrink-0" size={22} strokeWidth={2.5} />}
                       {user?.displayName || firestoreUserData?.displayName || 'User'}
                     </h1>
                     <button
@@ -194,9 +192,8 @@ const Profile = () => {
                 )}
               </div>
               {isAdminRank && (
-                <div className="flex items-center justify-center md:justify-start space-x-2 mt-2">
-                  <Shield className="text-yellow-400" size={16} />
-                  <span className="text-yellow-400 font-bold text-sm">ADMIN</span>
+                <div className="flex items-center justify-center md:justify-start mt-2">
+                  <AdminLabel />
                 </div>
               )}
               <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4 sm:md:space-x-6 text-gray-700 dark:text-gray-300 text-sm sm:text-base mt-2">

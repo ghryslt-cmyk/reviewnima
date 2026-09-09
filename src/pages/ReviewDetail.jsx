@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../components/Layout';
-import { getReviewById, getComments, addComment, deleteComment, addCommentReply, getCommentReplies, getUserRankByEmail } from '../lib/firebase';
+import { getReviewById, getComments, addComment, deleteComment, addCommentReply, getCommentReplies, getUserRankByEmail, isAdminEmail } from '../lib/firebase';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { Star, Calendar, Clock, User, MessageSquare, Send, ExternalLink, Trash2, Reply, Crown, Shield } from 'lucide-react';
+import { Star, Calendar, Clock, User, MessageSquare, Send, ExternalLink, Trash2, Reply, Shield } from 'lucide-react';
+import { CrownMedallion, adminNameClass, AdminLabel } from '../components/AdminBadge';
 
 const ReviewDetail = () => {
   const { id } = useParams();
@@ -375,18 +376,14 @@ const ReviewDetail = () => {
                           className={`w-10 h-10 rounded-full ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-700 dark:ring-offset-gray-700' : ''}`}
                         />
                         {isAdmin && (
-                          <div className="absolute -top-1 -right-1 bg-yellow-400 rounded-full p-1">
-                            <Crown className="text-black" size={10} />
-                          </div>
+                          <CrownMedallion badgeClass="w-4 h-4" iconSize={8} stroke={3} />
                         )}
                       </div>
                     ) : (
                       <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-700 dark:ring-offset-gray-700 bg-yellow-600' : 'bg-purple-600'}`}>
                         {comment.author?.charAt(0) || 'U'}
                         {isAdmin && (
-                          <div className="absolute -top-1 -right-1 bg-yellow-400 rounded-full p-1">
-                            <Crown className="text-black" size={10} />
-                          </div>
+                          <CrownMedallion badgeClass="w-4 h-4" iconSize={8} stroke={3} />
                         )}
                       </div>
                     )}
@@ -394,11 +391,11 @@ const ReviewDetail = () => {
                   <div className="flex-grow">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center space-x-2">
-                        <span className={`font-bold ${isAdmin ? 'bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 bg-clip-text text-transparent' : 'text-gray-900 dark:text-white'}`}>
+                        <span className={`font-bold ${isAdmin ? adminNameClass : 'text-gray-900 dark:text-white'}`}>
                           {comment.author}
                         </span>
                         {isAdmin && (
-                          <span className="text-yellow-400 text-xs font-bold ml-2">ADMIN</span>
+                          <AdminLabel />
                         )}
                         <span className="text-sm text-gray-500 dark:text-gray-400">
                           {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}
@@ -468,30 +465,42 @@ const ReviewDetail = () => {
                     
                     {showReplies[comment.id] && commentReplies[comment.id] && (
                       <div className="mt-3 space-y-2 ml-4 border-l-2 border-gray-300 dark:border-gray-600 pl-4">
-                        {commentReplies[comment.id].map(reply => (
-                          <div key={reply.id} className="flex space-x-3">
-                            {reply.authorPhotoURL ? (
-                              <img
-                                src={reply.authorPhotoURL}
-                                alt={reply.author}
-                                className="w-8 h-8 rounded-full"
-                              />
-                            ) : (
-                              <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-sm">
-                                {reply.author?.charAt(0) || 'U'}
+                        {commentReplies[comment.id].map(reply => {
+                          const replyIsAdmin = isAdminEmail(reply.authorEmail);
+                          return (
+                            <div key={reply.id} className="flex space-x-3">
+                              {reply.authorPhotoURL ? (
+                                <div className={replyIsAdmin ? 'relative' : ''}>
+                                  <img
+                                    src={reply.authorPhotoURL}
+                                    alt={reply.author}
+                                    className={`w-8 h-8 rounded-full ${replyIsAdmin ? 'ring-2 ring-yellow-400 ring-offset-1 ring-offset-gray-700 dark:ring-offset-gray-700' : ''}`}
+                                  />
+                                  {replyIsAdmin && (
+                                    <CrownMedallion badgeClass="w-3 h-3" iconSize={6} stroke={3} />
+                                  )}
+                                </div>
+                              ) : (
+                                <div className={`w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm ${replyIsAdmin ? 'ring-2 ring-yellow-400 ring-offset-1 ring-offset-gray-700 dark:ring-offset-gray-700 bg-amber-500' : 'bg-purple-600'}`}>
+                                  {reply.author?.charAt(0) || 'U'}
+                                  {replyIsAdmin && (
+                                    <CrownMedallion badgeClass="w-3 h-3" iconSize={6} stroke={3} />
+                                  )}
+                                </div>
+                              )}
+                              <div className="flex-grow">
+                                <div className="flex items-center space-x-2 mb-1">
+                                  <span className={`font-bold text-sm ${replyIsAdmin ? adminNameClass : 'text-gray-900 dark:text-white'}`}>{reply.author}</span>
+                                  {replyIsAdmin && <AdminLabel />}
+                                  <span className="text-xs text-gray-500 dark:text-gray-400">
+                                    {new Date(reply.createdAt?.toDate?.() || reply.createdAt).toLocaleDateString()}
+                                  </span>
+                                </div>
+                                <p className="text-gray-700 dark:text-gray-300 text-sm">{reply.text}</p>
                               </div>
-                            )}
-                            <div className="flex-grow">
-                              <div className="flex items-center space-x-2 mb-1">
-                                <span className="font-bold text-gray-900 dark:text-white text-sm">{reply.author}</span>
-                                <span className="text-xs text-gray-500 dark:text-gray-400">
-                                  {new Date(reply.createdAt?.toDate?.() || reply.createdAt).toLocaleDateString()}
-                                </span>
-                              </div>
-                              <p className="text-gray-700 dark:text-gray-300 text-sm">{reply.text}</p>
                             </div>
-                          </div>
-                        ))}
+                          );
+                        })}
                       </div>
                     )}
                   </div>

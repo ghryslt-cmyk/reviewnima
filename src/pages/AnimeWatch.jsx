@@ -1,9 +1,10 @@
 import { useState, useEffect, useCallback, memo, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getAnimeById } from '../lib/anilist';
-import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode, getAnimeComments, addAnimeComment, deleteAnimeComment, addAnimeCommentReply, getAnimeCommentReplies, saveAnimeToProfile, removeAnimeFromProfile, getSavedAnime, reportAnime, getUserRankByEmail } from '../lib/firebase';
+import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode, getAnimeComments, addAnimeComment, deleteAnimeComment, addAnimeCommentReply, getAnimeCommentReplies, saveAnimeToProfile, removeAnimeFromProfile, getSavedAnime, reportAnime, getUserRankByEmail, isAdminEmail } from '../lib/firebase';
 import WatchLayout from '../components/WatchLayout';
-import { Play, ThumbsUp, ThumbsDown, Share, Bookmark, Flag, Loader2, X, AlertCircle, Heart, MessageSquare, Send, User, Trash2, Reply, Crown, Shield } from 'lucide-react';
+import { Play, ThumbsUp, ThumbsDown, Share, Bookmark, Flag, Loader2, X, AlertCircle, Heart, MessageSquare, Send, User, Trash2, Reply, Shield } from 'lucide-react';
+import { CrownMedallion, adminNameClass, AdminLabel } from '../components/AdminBadge';
 import { useLanguage } from '../context/LanguageContext';
 import { useAuth } from '../context/AuthContext';
 import { useTranslation } from '../lib/translations';
@@ -493,18 +494,14 @@ const AnimeWatch = memo(() => {
                               className={`w-10 h-10 rounded-full ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800' : ''}`}
                             />
                             {isAdmin && (
-                              <div className="absolute -top-1 -right-1 bg-yellow-400 rounded-full p-1">
-                                <Crown className="text-black" size={10} />
-                              </div>
+                              <CrownMedallion badgeClass="w-4 h-4" iconSize={8} stroke={3} />
                             )}
                           </div>
                         ) : (
                           <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800 bg-yellow-600' : 'bg-cyan-600'}`}>
                             {comment.author?.charAt(0) || 'U'}
                             {isAdmin && (
-                              <div className="absolute -top-1 -right-1 bg-yellow-400 rounded-full p-1">
-                                <Crown className="text-black" size={10} />
-                              </div>
+                              <CrownMedallion badgeClass="w-4 h-4" iconSize={8} stroke={3} />
                             )}
                           </div>
                         )}
@@ -512,11 +509,11 @@ const AnimeWatch = memo(() => {
                       <div className="flex-grow">
                         <div className="flex items-center justify-between mb-2">
                           <div className="flex items-center space-x-2">
-                            <span className={`font-bold ${isAdmin ? 'bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 bg-clip-text text-transparent' : 'text-white'}`}>
+                            <span className={`font-bold ${isAdmin ? adminNameClass : 'text-white'}`}>
                               {comment.author}
                             </span>
                             {isAdmin && (
-                              <span className="text-yellow-400 text-xs font-bold ml-2">ADMIN</span>
+                              <AdminLabel />
                             )}
                             <span className="text-sm text-gray-400">
                               {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}
@@ -586,30 +583,42 @@ const AnimeWatch = memo(() => {
                         
                         {showReplies[comment.id] && commentReplies[comment.id] && (
                           <div className="mt-3 space-y-2 ml-4 border-l-2 border-gray-700 pl-4">
-                            {commentReplies[comment.id].map(reply => (
-                              <div key={reply.id} className="flex space-x-3">
-                                {reply.authorPhotoURL ? (
-                                  <img
-                                    src={reply.authorPhotoURL}
-                                    alt={reply.author}
-                                    className="w-8 h-8 rounded-full"
-                                  />
-                                ) : (
-                                  <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-sm">
-                                    {reply.author?.charAt(0) || 'U'}
+                            {commentReplies[comment.id].map(reply => {
+                              const replyIsAdmin = isAdminEmail(reply.authorEmail);
+                              return (
+                                <div key={reply.id} className="flex space-x-3">
+                                  {reply.authorPhotoURL ? (
+                                    <div className={replyIsAdmin ? 'relative' : ''}>
+                                      <img
+                                        src={reply.authorPhotoURL}
+                                        alt={reply.author}
+                                        className={`w-8 h-8 rounded-full ${replyIsAdmin ? 'ring-2 ring-yellow-400 ring-offset-1 ring-offset-gray-800' : ''}`}
+                                      />
+                                      {replyIsAdmin && (
+                                        <CrownMedallion badgeClass="w-3 h-3" iconSize={6} stroke={3} />
+                                      )}
+                                    </div>
+                                  ) : (
+                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm ${replyIsAdmin ? 'ring-2 ring-yellow-400 ring-offset-1 ring-offset-gray-800 bg-amber-500' : 'bg-purple-600'}`}>
+                                      {reply.author?.charAt(0) || 'U'}
+                                      {replyIsAdmin && (
+                                        <CrownMedallion badgeClass="w-3 h-3" iconSize={6} stroke={3} />
+                                      )}
+                                    </div>
+                                  )}
+                                  <div className="flex-grow">
+                                    <div className="flex items-center space-x-2 mb-1">
+                                      <span className={`font-bold text-white text-sm ${replyIsAdmin ? adminNameClass : ''}`}>{reply.author}</span>
+                                      {replyIsAdmin && <AdminLabel />}
+                                      <span className="text-xs text-gray-400">
+                                        {new Date(reply.createdAt?.toDate?.() || reply.createdAt).toLocaleDateString()}
+                                      </span>
+                                    </div>
+                                    <p className="text-gray-300 text-sm">{reply.text}</p>
                                   </div>
-                                )}
-                                <div className="flex-grow">
-                                  <div className="flex items-center space-x-2 mb-1">
-                                    <span className="font-bold text-white text-sm">{reply.author}</span>
-                                    <span className="text-xs text-gray-400">
-                                      {new Date(reply.createdAt?.toDate?.() || reply.createdAt).toLocaleDateString()}
-                                    </span>
-                                  </div>
-                                  <p className="text-gray-300 text-sm">{reply.text}</p>
                                 </div>
-                              </div>
-                            ))}
+                              );
+                            })}
                           </div>
                         )}
                       </div>
