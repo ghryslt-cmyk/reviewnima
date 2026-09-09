@@ -74,11 +74,22 @@ const fetchLocalTrendingData = async () => {
 };
 
 /**
- * Fetch MAL schedule data from local JSON file
+ * Fetch MAL schedule data from local JSON file with cache-busting
  * @returns {Promise<Object|null>} MAL schedule data or null
  */
 const fetchLocalScheduleData = async () => {
-  const data = await fetchLocalData('/data/daily/anime_schedule.json');
+  let version = '';
+  try {
+    const versionResponse = await fetch(`/data/daily/version.json?${Date.now()}`);
+    if (versionResponse.ok) {
+      const versionData = await versionResponse.json();
+      version = versionData.anime_schedule || '';
+    }
+  } catch (e) {
+    console.log('Could not load version file for schedule');
+  }
+  
+  const data = await fetchLocalData(`/data/daily/anime_schedule.json?v=${version}`);
   return data;
 };
 
