@@ -69,10 +69,8 @@ public/data/
 
 - **Schedule**: Runs on the 1st of January, April, July, and October at 00:00 UTC (the standard seasonal change of Japanese anime)
 - **Trigger**: Can also be triggered manually via workflow_dispatch
-- **Action**:
-  - Fetches seasonal anime from AniList and commits to `public/data/seasonal/`
-  - Fetches the full airing schedule from the **official MAL API** (`GET /anime/schedule`, the same data as https://myanimelist.net/anime/season/schedule) and commits to `public/data/daily/anime_schedule.json`
-- **Note**: The MAL schedule is intentionally **NOT** part of the daily/hourly fetch — it only updates at each Japanese anime season, mirroring MAL's own season/schedule page.
+- **Action**: Fetches the full airing schedule from the **official MAL API** (`GET /anime/schedule`, the same data as https://myanimelist.net/anime/season/schedule) and commits to `public/data/daily/anime_schedule.json`
+- **Note**: This workflow only uses the official MAL API. The MAL schedule is intentionally **NOT** part of the daily/hourly fetch — it only updates at each Japanese anime season, mirroring MAL's own season/schedule page.
 
 ### Daily Data Workflow (`.github/workflows/fetch-daily-data.yml`)
 

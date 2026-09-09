@@ -32,10 +32,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
-      - name: Fetch seasonal anime data
-        run: node scripts/fetch-seasonal-anime.js
-      
-      - name: Fetch MAL schedule data
+      - name: Fetch airing schedule data (official MAL API)
+        continue-on-error: true
         env:
           MAL_CLIENT_ID: ${{ secrets.MAL_CLIENT_ID }}
         run: node scripts/fetch-mal-schedule.js
@@ -44,7 +42,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add -f public/data/seasonal/ public/data/daily/anime_schedule.json
+          git add -f public/data/daily/anime_schedule.json
           git diff --quiet && git diff --staged --quiet || git commit -m "Update seasonal anime data [automated]"
           git push
       
