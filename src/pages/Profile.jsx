@@ -3,8 +3,8 @@ import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
 import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank, getUserProfile, getUserRankByEmail } from '../lib/firebase';
-import { User, Mail, BookOpen, Star, Play, Trash2, Edit, Camera, Crown } from 'lucide-react';
-import { CrownMedallion, adminNameClass, AdminLabel } from '../components/AdminBadge';
+import { User, BookOpen, Star, Play, Trash2, Edit, Camera, Crown, Fingerprint, Copy, Check } from 'lucide-react';
+import { CrownMedallion, adminNameClass, AdminLabel, rankNameClass, RankLabel } from '../components/AdminBadge';
 
 const Profile = () => {
   const { user, isAuthenticated, logout, refreshUser } = useAuth();
@@ -19,6 +19,18 @@ const Profile = () => {
   const [newName, setNewName] = useState('');
   const [newPhotoUrl, setNewPhotoUrl] = useState('');
   const [firestoreUserData, setFirestoreUserData] = useState(null);
+  const [copiedUid, setCopiedUid] = useState(false);
+
+  const handleCopyUid = async () => {
+    if (!user?.uid) return;
+    try {
+      await navigator.clipboard.writeText(user.uid);
+      setCopiedUid(true);
+      setTimeout(() => setCopiedUid(false), 2000);
+    } catch (error) {
+      console.error('Failed to copy UID:', error);
+    }
+  };
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -178,8 +190,8 @@ const Profile = () => {
                   </div>
                 ) : (
                   <>
-                    <h1 className={`text-2xl sm:text-3xl font-bold mb-2 flex items-center space-x-2 ${isAdminRank ? adminNameClass : 'text-black dark:text-white'}`}>
-                      {isAdminRank && <Crown className="text-amber-500 shrink-0" size={22} strokeWidth={2.5} />}
+                    <h1 className={`text-2xl sm:text-3xl font-bold mb-2 flex items-center space-x-2 ${userRank ? rankNameClass(userRank) : 'text-black dark:text-white'}`}>
+                      {userRank && <Crown className="shrink-0 text-amber-500" size={22} strokeWidth={2.5} />}
                       {user?.displayName || firestoreUserData?.displayName || 'User'}
                     </h1>
                     <button
@@ -191,16 +203,28 @@ const Profile = () => {
                   </>
                 )}
               </div>
-              {isAdminRank && (
+              {userRank && (
                 <div className="flex items-center justify-center md:justify-start mt-2">
-                  <AdminLabel />
+                  <RankLabel rank={userRank} />
                 </div>
               )}
-              <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4 sm:md:space-x-6 text-gray-700 dark:text-gray-300 text-sm sm:text-base mt-2">
-                <div className="flex items-center justify-center md:justify-start space-x-2">
-                  <Mail size={14} sm:size={18} />
-                  <span>{user?.email}</span>
-                </div>
+              <div className="mt-3 flex flex-col items-center gap-2 md:items-start">
+                <button
+                  onClick={handleCopyUid}
+                  title="Copy User UID"
+                  className="group inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs text-gray-600 transition-colors hover:border-brand-300 hover:bg-brand-50 hover:text-brand-600 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-brand-500/40 dark:hover:bg-brand-500/10 dark:hover:text-brand-300"
+                >
+                  <Fingerprint size={14} className="text-brand-500 dark:text-brand-400" />
+                  <span className="font-mono max-w-[180px] truncate sm:max-w-[280px]">{user?.uid || '—'}</span>
+                  {copiedUid ? (
+                    <Check size={14} className="text-emerald-500" />
+                  ) : (
+                    <Copy size={14} className="opacity-60 transition-opacity group-hover:opacity-100" />
+                  )}
+                </button>
+                {copiedUid && (
+                  <span className="text-[11px] font-medium text-emerald-500">UID copied to clipboard!</span>
+                )}
               </div>
             </div>
           </div>

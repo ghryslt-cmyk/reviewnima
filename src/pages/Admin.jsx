@@ -1,9 +1,10 @@
 import { useState, useEffect, useCallback, memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount, updateReview, addAnime, getAllAnime, deleteAnime, addAnimeEpisode, getAnimeEpisodes, updateAnimeEpisode, deleteAnimeEpisode, updateUserRank, getUserByEmail, setDoc, doc, db } from '../lib/firebase';
+import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount, updateReview, addAnime, getAllAnime, deleteAnime, addAnimeEpisode, getAnimeEpisodes, updateAnimeEpisode, deleteAnimeEpisode, updateUserRank, getUserByEmail, getUserByUid, getAllUsersWithRanks, removeUserRank, addAnnouncement, getAnnouncements, deleteAnnouncement, setDoc, doc, db } from '../lib/firebase';
 import { searchAnime, getAnimeById } from '../lib/anilist';
-import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users, Edit, Film, Trash2, Play, ChevronLeft, ChevronRight, Crown } from 'lucide-react';
+import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users, Edit, Film, Trash2, Play, ChevronLeft, ChevronRight, Crown, Megaphone, Fingerprint, Mail } from 'lucide-react';
+import { rankConfig } from '../components/AdminBadge';
 
 const Admin = memo(() => {
   const { user, checkAdmin, isAuthenticated } = useAuth();
@@ -35,9 +36,18 @@ const Admin = memo(() => {
   const [activeTab, setActiveTab] = useState('reviews'); // 'reviews', 'anime', or 'ranks'
   
   // Rank management state
-  const [targetUserEmail, setTargetUserEmail] = useState('');
+  const [rankTargetType, setRankTargetType] = useState('email'); // 'email' or 'uid'
+  const [rankTarget, setRankTarget] = useState('');
   const [newRank, setNewRank] = useState('');
   const [rankMessage, setRankMessage] = useState('');
+  const [rankedUsers, setRankedUsers] = useState([]);
+
+  // Announcement management state
+  const [announcements, setAnnouncements] = useState([]);
+  const [announcementTitle, setAnnouncementTitle] = useState('');
+  const [announcementMessage, setAnnouncementMessage] = useState('');
+  const [announcementExpiresAt, setAnnouncementExpiresAt] = useState('');
+  const [announcementMessageState, setAnnouncementMessageState] = useState('');
   
   // Anime management state
   const [animeSearchTerm, setAnimeSearchTerm] = useState('');
@@ -69,14 +79,18 @@ const Admin = memo(() => {
     }
     
     try {
-      const [reviews, count, animeList] = await Promise.all([
+      const [reviews, count, animeList, announcementList, rankedList] = await Promise.all([
         getReviews(),
         getVisitorCount(),
-        getAllAnime()
+        getAllAnime(),
+        getAnnouncements(),
+        getAllUsersWithRanks(),
       ]);
       setExistingReviews(reviews);
       setVisitorCount(count);
       setAllAnimeList(animeList);
+      setAnnouncements(announcementList);
+      setRankedUsers(rankedList);
     } catch (error) {
       console.error('Error loading admin data:', error);
     } finally {
@@ -85,31 +99,95 @@ const Admin = memo(() => {
   }, [isAuthenticated, checkAdmin, navigate, location.pathname]);
 
   const handleAssignRank = async () => {
-    if (!targetUserEmail.trim() || !newRank.trim()) {
-      setRankMessage('Please enter both user email and select a rank');
+    if (!rankTarget.trim() || !newRank.trim()) {
+      setRankMessage('Please enter a user email/UID and select a rank');
       return;
     }
-    
+
     try {
-      const targetUser = await getUserByEmail(targetUserEmail);
-      console.log('Admin - Found user:', targetUser, 'for email:', targetUserEmail);
-      
-      if (!targetUser) {
-        setRankMessage('User not found. The user must be logged in or have activity in the app to be found.');
-        return;
+      let targetUser;
+      if (rankTargetType === 'uid') {
+        targetUser = await getUserByUid(rankTarget.trim());
+        if (!targetUser) {
+          setRankMessage('User not found by UID. Make sure the UID is correct.');
+          return;
+        }
+      } else {
+        targetUser = await getUserByEmail(rankTarget.trim());
+        if (!targetUser) {
+          setRankMessage('User not found by email. The user must have logged in at least once.');
+          return;
+        }
       }
-      
+
       await updateUserRank(targetUser.id, newRank);
-      console.log('Admin - Rank assigned:', newRank, 'to user ID:', targetUser.id);
-      setRankMessage(`Rank ${newRank.toUpperCase()} assigned to ${targetUserEmail}`);
-      
-      setTargetUserEmail('');
-      setNewRank('');
-      
+      setRankMessage(`Rank ${newRank.toUpperCase()} assigned to ${targetUser.email || targetUser.id}`);
+      setRankTarget('');
+
+      const rankedList = await getAllUsersWithRanks();
+      setRankedUsers(rankedList);
+
       setTimeout(() => setRankMessage(''), 3000);
     } catch (error) {
       console.error('Error assigning rank:', error);
       setRankMessage('Failed to assign rank. Please try again.');
+    }
+  };
+
+  const handleRemoveRank = async (userId) => {
+    if (!confirm("Remove this user's rank?")) return;
+    try {
+      await removeUserRank(userId);
+      const rankedList = await getAllUsersWithRanks();
+      setRankedUsers(rankedList);
+      setRankMessage('Rank removed successfully.');
+      setTimeout(() => setRankMessage(''), 3000);
+    } catch (error) {
+      console.error('Error removing rank:', error);
+      setRankMessage('Failed to remove rank. Please try again.');
+    }
+  };
+
+  const handleAddAnnouncement = async (e) => {
+    e.preventDefault();
+    if (!announcementMessage.trim()) {
+      setAnnouncementMessageState('Please enter an announcement message.');
+      return;
+    }
+
+    try {
+      const payload = {
+        title: announcementTitle.trim() || 'Announcement',
+        message: announcementMessage.trim(),
+      };
+      if (announcementExpiresAt) {
+        payload.expiresAt = new Date(announcementExpiresAt);
+      }
+
+      await addAnnouncement(payload);
+      setAnnouncementTitle('');
+      setAnnouncementMessage('');
+      setAnnouncementExpiresAt('');
+      setAnnouncementMessageState('Announcement published!');
+
+      const list = await getAnnouncements();
+      setAnnouncements(list);
+
+      setTimeout(() => setAnnouncementMessageState(''), 3000);
+    } catch (error) {
+      console.error('Error adding announcement:', error);
+      setAnnouncementMessageState('Failed to publish announcement. Please try again.');
+    }
+  };
+
+  const handleDeleteAnnouncement = async (id) => {
+    if (!confirm('Delete this announcement?')) return;
+    try {
+      await deleteAnnouncement(id);
+      const list = await getAnnouncements();
+      setAnnouncements(list);
+    } catch (error) {
+      console.error('Error deleting announcement:', error);
     }
   };
 
@@ -454,6 +532,17 @@ const Admin = memo(() => {
           >
             <Crown className="inline mr-2" size={16} />
             Rank Management
+          </button>
+          <button
+            onClick={() => setActiveTab('announcements')}
+            className={`px-4 sm:px-6 py-3 font-medium transition-colors ${
+              activeTab === 'announcements'
+                ? 'text-black dark:text-white border-b-2 border-black dark:border-white'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            <Megaphone className="inline mr-2" size={16} />
+            Announcements
           </button>
         </div>
 
@@ -1144,55 +1233,160 @@ const Admin = memo(() => {
 
         {/* Rank Management Tab */}
         {activeTab === 'ranks' && (
-          <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 dark:from-yellow-900 dark:to-yellow-800 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border-2 border-yellow-400 dark:border-yellow-600">
-            <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 flex items-center">
-              <Crown className="mr-3 text-yellow-600 dark:text-yellow-400" size={24} />
-              Admin Rank Management
+          <div className="rounded-2xl border border-amber-200/60 bg-gradient-to-br from-amber-50 via-white to-sky-50 p-4 shadow-card sm:p-6 lg:p-8 dark:border-amber-500/20 dark:from-amber-500/10 dark:via-transparent dark:to-sky-500/10">
+            <h2 className="mb-6 flex items-center gap-3 text-xl font-bold sm:text-2xl">
+              <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-yellow-400 to-amber-500 text-amber-950 shadow">
+                <Crown size={20} />
+              </span>
+              Rank Management
             </h2>
-            <div className="space-y-4">
-              <div className="flex flex-col sm:flex-row gap-3">
-                <input
-                  type="text"
-                  placeholder="User Email"
-                  value={targetUserEmail}
-                  onChange={(e) => setTargetUserEmail(e.target.value)}
-                  className="flex-1 px-4 py-2 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg bg-white dark:bg-black text-black dark:text-white"
-                />
-                <select
-                  value={newRank}
-                  onChange={(e) => setNewRank(e.target.value)}
-                  className="px-4 py-2 border-2 border-yellow-400 dark:border-yellow-600 rounded-lg bg-white dark:bg-black text-black dark:text-white"
-                >
-                  <option value="">Select Rank</option>
-                  <option value="admin">Admin</option>
-                  <option value="moderator">Moderator</option>
-                  <option value="vip">VIP</option>
-                  <option value="premium">Premium</option>
-                </select>
-                <button
-                  onClick={handleAssignRank}
-                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-6 py-2 rounded-lg transition-colors"
-                >
-                  Assign Rank
-                </button>
-              </div>
-              {rankMessage && (
-                <div className={`p-3 rounded-lg ${rankMessage.includes('assigned') ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200' : 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'}`}>
-                  {rankMessage}
+
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+              {/* Assign form */}
+              <div className="rounded-2xl border border-gray-200/70 bg-white p-5 dark:border-gray-800 dark:bg-gray-900">
+                <h3 className="mb-4 font-display text-lg font-bold">Assign Rank</h3>
+                <div className="space-y-3">
+                  <div className="flex gap-2">
+                    <button onClick={() => setRankTargetType('email')} className={`flex-1 rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${rankTargetType === 'email' ? 'bg-black text-white dark:bg-white dark:text-black' : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300'}`}>
+                      <Mail size={14} className="mr-1 inline" /> By Email
+                    </button>
+                    <button onClick={() => setRankTargetType('uid')} className={`flex-1 rounded-lg px-3 py-2 text-sm font-semibold transition-colors ${rankTargetType === 'uid' ? 'bg-black text-white dark:bg-white dark:text-black' : 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300'}`}>
+                      <Fingerprint size={14} className="mr-1 inline" /> By UID
+                    </button>
+                  </div>
+                  <input type="text" placeholder={rankTargetType === 'uid' ? 'User UID (from profile page)' : 'User Email'} value={rankTarget} onChange={(e) => setRankTarget(e.target.value)} className="w-full rounded-lg border-2 border-gray-300 bg-white px-4 py-2.5 text-black focus:border-transparent focus:ring-2 focus:ring-brand-500 dark:border-gray-700 dark:bg-black dark:text-white" />
+                  <select value={newRank} onChange={(e) => setNewRank(e.target.value)} className="w-full rounded-lg border-2 border-gray-300 bg-white px-4 py-2.5 text-black focus:border-transparent focus:ring-2 focus:ring-brand-500 dark:border-gray-700 dark:bg-black dark:text-white">
+                    <option value="">Select Rank</option>
+                    {Object.entries(rankConfig).map(([key, cfg]) => (
+                      <option key={key} value={key}>{cfg.label}</option>
+                    ))}
+                  </select>
+                  <button onClick={handleAssignRank} className="w-full rounded-lg bg-gradient-to-r from-violet-600 to-fuchsia-500 px-6 py-2.5 font-bold text-white shadow-glow transition-transform hover:scale-[1.02]">
+                    Assign Rank
+                  </button>
+                  {rankMessage && (
+                    <div className={`rounded-lg p-3 text-sm ${rankMessage.toLowerCase().includes('fail') || rankMessage.toLowerCase().includes('not found') || rankMessage.toLowerCase().includes('enter') ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-200' : 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200'}`}>
+                      {rankMessage}
+                    </div>
+                  )}
+                  <div className="rounded-lg bg-gray-50 p-3 text-xs text-gray-500 dark:bg-gray-800/50 dark:text-gray-400">
+                    Assign ranks by <b>email</b> or by <b>Google account UID</b> (visible on the user's profile page). Available ranks: Admin (gold), Donatur (blue), Donatur++ (green), Moderator, VIP, and Premium.
+                  </div>
                 </div>
-              )}
-              <div className="bg-white dark:bg-black rounded-lg p-4 border-2 border-yellow-300 dark:border-yellow-700">
-                <h3 className="font-bold text-black dark:text-white mb-2">Instructions:</h3>
-                <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
-                  <li>• Enter the user's email address</li>
-                  <li>• Select the rank you want to assign</li>
-                  <li>• Click "Assign Rank" to apply</li>
-                  <li>• User must have saved anime or activity in the app to be found</li>
-                </ul>
+              </div>
+
+              {/* Ranked users list */}
+              <div className="rounded-2xl border border-gray-200/70 bg-white p-5 dark:border-gray-800 dark:bg-gray-900">
+                <h3 className="mb-4 flex items-center justify-between font-display text-lg font-bold">
+                  Users with Ranks
+                  <span className="rounded-full bg-brand-100 px-2.5 py-0.5 text-xs font-bold text-brand-700 dark:bg-brand-500/20 dark:text-brand-300">{rankedUsers.length}</span>
+                </h3>
+                {rankedUsers.length > 0 ? (
+                  <ul className="space-y-2">
+                    {rankedUsers.map((u) => (
+                      <li key={u.id} className="flex items-center justify-between gap-3 rounded-xl border border-gray-100 bg-gray-50 px-3 py-2 dark:border-gray-800 dark:bg-gray-800/50">
+                        <div className="min-w-0">
+                          <div className="flex items-center gap-2">
+                            {u.photoURL ? (
+                              <img src={u.photoURL} alt="" className="h-7 w-7 rounded-full object-cover" />
+                            ) : (
+                              <span className={`grid h-7 w-7 place-items-center rounded-full text-xs font-bold text-black ${rankConfig[u.rank]?.avatarBgClass || 'bg-gray-300'}`}>
+                                {(u.displayName || u.email || 'U').charAt(0).toUpperCase()}
+                              </span>
+                            )}
+                            <span className="truncate text-sm font-semibold text-gray-900 dark:text-white">
+                              {u.displayName || u.email || u.id}
+                            </span>
+                          </div>
+                          <p className="mt-0.5 truncate pl-9 font-mono text-[11px] text-gray-400">{u.email || u.id}</p>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span className={`rounded-md bg-gradient-to-r px-2 py-0.5 text-[10px] font-extrabold uppercase ${rankConfig[u.rank]?.pillClass || 'from-gray-400 to-gray-500 text-gray-950'}`}>
+                            {rankConfig[u.rank]?.label || u.rank}
+                          </span>
+                          <button
+                            onClick={() => handleRemoveRank(u.id)}
+                            className="grid h-8 w-8 place-items-center rounded-lg text-red-500 transition-colors hover:bg-red-50 dark:hover:bg-red-500/10"
+                            title="Remove rank"
+                          >
+                            <Trash2 size={16} />
+                          </button>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="py-8 text-center text-sm text-gray-400">No users have been assigned a rank yet.</p>
+                )}
               </div>
             </div>
           </div>
         )}
+
+        {/* Announcements Tab */}
+        {activeTab === 'announcements' && (
+          <div className="rounded-2xl border border-gray-200/70 bg-white p-4 shadow-card sm:p-6 lg:p-8 dark:border-gray-800 dark:bg-gray-900">
+            <h2 className="mb-6 flex items-center gap-3 text-xl font-bold sm:text-2xl">
+              <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 text-amber-950 shadow">
+                <Megaphone size={20} />
+              </span>
+              Announcements
+            </h2>
+
+            <form onSubmit={handleAddAnnouncement} className="mb-8 grid grid-cols-1 gap-4 rounded-2xl border border-gray-200/70 bg-gray-50 p-5 dark:border-gray-800 dark:bg-gray-800/50 lg:grid-cols-2">
+              <div className="lg:col-span-2">
+                <label className="mb-1.5 block text-sm font-semibold">Title (optional)</label>
+                <input type="text" value={announcementTitle} onChange={(e) => setAnnouncementTitle(e.target.value)} placeholder="e.g. Pemeliharaan Website" className="w-full rounded-lg border-2 border-gray-300 bg-white px-4 py-2.5 text-black focus:border-transparent focus:ring-2 focus:ring-brand-500 dark:border-gray-700 dark:bg-black dark:text-white" />
+              </div>
+              <div className="lg:col-span-2">
+                <label className="mb-1.5 block text-sm font-semibold">Message *</label>
+                <textarea value={announcementMessage} onChange={(e) => setAnnouncementMessage(e.target.value)} rows={3} placeholder="Tulis pengumuman untuk pengunjung website…" className="w-full rounded-lg border-2 border-gray-300 bg-white px-4 py-2.5 text-black focus:border-transparent focus:ring-2 focus:ring-brand-500 dark:border-gray-700 dark:bg-black dark:text-white" />
+              </div>
+              <div>
+                <label className="mb-1.5 block text-sm font-semibold">Expires At (optional)</label>
+                <input type="datetime-local" value={announcementExpiresAt} onChange={(e) => setAnnouncementExpiresAt(e.target.value)} className="w-full rounded-lg border-2 border-gray-300 bg-white px-4 py-2.5 text-black focus:border-transparent focus:ring-2 focus:ring-brand-500 dark:border-gray-700 dark:bg-black dark:text-white" />
+                <p className="mt-1 text-xs text-gray-400">Announcement disappears automatically after this time.</p>
+              </div>
+              <div className="flex items-end">
+                <button type="submit" className="w-full rounded-lg bg-gradient-to-r from-violet-600 to-fuchsia-500 px-6 py-2.5 font-bold text-white shadow-glow transition-transform hover:scale-[1.02]">
+                  Publish Announcement
+                </button>
+              </div>
+              {announcementMessageState && (
+                <div className={`lg:col-span-2 rounded-lg p-3 text-sm ${announcementMessageState.toLowerCase().includes('fail') || announcementMessageState.toLowerCase().includes('enter') ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-200' : 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200'}`}>
+                  {announcementMessageState}
+                </div>
+              )}
+            </form>
+
+            <h3 className="mb-3 font-display text-lg font-bold">Active Announcements ({announcements.length})</h3>
+            {announcements.length > 0 ? (
+              <ul className="space-y-2">
+                {announcements.map((a) => (
+                  <li key={a.id} className="flex items-start justify-between gap-3 rounded-xl border border-amber-200/60 bg-gradient-to-r from-amber-50 to-orange-50 p-4 dark:border-amber-500/20 dark:from-amber-500/10 dark:to-orange-500/10">
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="font-display text-sm font-bold uppercase tracking-wide text-amber-700 dark:text-amber-300">{a.title}</span>
+                        {a.expiresAt && (
+                          <span className="text-xs text-amber-600/80 dark:text-amber-300/70">
+                            until {new Date(a.expiresAt?.toDate?.() || a.expiresAt).toLocaleString()}
+                          </span>
+                        )}
+                      </div>
+                      <p className="mt-1 text-sm text-amber-900/80 dark:text-amber-100/80">{a.message}</p>
+                    </div>
+                    <button onClick={() => handleDeleteAnnouncement(a.id)} className="grid h-8 w-8 shrink-0 place-items-center rounded-lg text-red-500 transition-colors hover:bg-red-50 dark:hover:bg-red-500/10" title="Delete announcement">
+                      <Trash2 size={16} />
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="py-8 text-center text-sm text-gray-400">No announcements yet. Publish one above to show it on the homepage.</p>
+            )}
+          </div>
+        )}
+
       </div>
     </div>
   );

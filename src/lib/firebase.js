@@ -289,6 +289,47 @@ export const incrementVisitorCount = async () => {
   }
 };
 
+// Announcement management functions
+export const addAnnouncement = async (announcementData) => {
+  try {
+    const docRef = await addDoc(collection(db, 'announcements'), {
+      ...announcementData,
+      createdAt: serverTimestamp(),
+      updatedAt: serverTimestamp()
+    });
+    return docRef.id;
+  } catch (error) {
+    console.error('Error adding announcement:', error);
+    throw new Error('Failed to add announcement. Please try again.');
+  }
+};
+
+export const getAnnouncements = async () => {
+  try {
+    const querySnapshot = await getDocs(
+      query(collection(db, 'announcements'), orderBy('createdAt', 'desc'))
+    );
+    const announcements = [];
+    querySnapshot.forEach((doc) => {
+      announcements.push({ id: doc.id, ...doc.data() });
+    });
+    return announcements;
+  } catch (error) {
+    console.error('Error getting announcements:', error);
+    return [];
+  }
+};
+
+export const deleteAnnouncement = async (announcementId) => {
+  try {
+    const docRef = doc(db, 'announcements', announcementId);
+    await deleteDoc(docRef);
+  } catch (error) {
+    console.error('Error deleting announcement:', error);
+    throw new Error('Failed to delete announcement. Please try again.');
+  }
+};
+
 // Anime management functions
 export const addAnime = async (animeData) => {
   try {
@@ -699,6 +740,51 @@ export const getUserByEmail = async (email) => {
   } catch (error) {
     console.error('getUserByEmail - Error getting user by email:', error);
     return null;
+  }
+};
+
+// Get user by Firebase Auth UID (document id in the `users` collection).
+export const getUserByUid = async (uid) => {
+  try {
+    const userDocRef = doc(db, 'users', uid);
+    const userDoc = await getDoc(userDocRef);
+    if (userDoc.exists()) {
+      return { id: userDoc.id, ...userDoc.data() };
+    }
+    return null;
+  } catch (error) {
+    console.error('getUserByUid - Error getting user by UID:', error);
+    return null;
+  }
+};
+
+// Remove the rank from a user (admin only).
+export const removeUserRank = async (userId) => {
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    await updateDoc(userDocRef, { rank: null, updatedAt: serverTimestamp() });
+    return true;
+  } catch (error) {
+    console.error('removeUserRank - Error removing rank:', error);
+    throw new Error('Failed to remove rank. Please try again.');
+  }
+};
+
+// List every user that currently has a rank (admin only).
+export const getAllUsersWithRanks = async () => {
+  try {
+    const querySnapshot = await getDocs(collection(db, 'users'));
+    const rankedUsers = [];
+    querySnapshot.forEach((docSnap) => {
+      const data = docSnap.data();
+      if (data.rank) {
+        rankedUsers.push({ id: docSnap.id, ...data });
+      }
+    });
+    return rankedUsers;
+  } catch (error) {
+    console.error('getAllUsersWithRanks - Error listing ranked users:', error);
+    return [];
   }
 };
 

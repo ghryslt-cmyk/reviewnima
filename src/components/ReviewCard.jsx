@@ -1,54 +1,59 @@
 import { Link } from 'react-router-dom';
-import { Star, Calendar } from 'lucide-react';
+import { Star, Calendar, ArrowUpRight } from 'lucide-react';
 import { memo } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
-const ReviewCard = memo(({ review }) => {
+const ReviewCard = memo(({ review, compact = false }) => {
   const { language } = useLanguage();
   const animeTitle = review.animeData?.title?.english || review.animeData?.title?.romaji || 'Unknown';
-  // Use highest quality image available: extraLarge > large > medium
   const coverImage = review.animeData?.coverImage?.extraLarge || review.animeData?.coverImage?.large || review.animeData?.coverImage?.medium;
   const rating = review.rating || 0;
   const createdAt = review.createdAt?.toDate?.() || review.createdAt;
 
-  // Get language-specific review text
   const getReviewText = () => {
     if (language === 'id' && review.reviewTextId) return review.reviewTextId;
     if (language === 'en' && review.reviewTextEn) return review.reviewTextEn;
     if (language === 'jp' && review.reviewTextJp) return review.reviewTextJp;
-    // Fallback to Indonesian or original reviewText
-    return review.reviewTextId || review.reviewText || 'No review text available';
+    return review.reviewTextId || review.reviewText || '';
   };
 
   return (
-    <Link to={`/review/${review.id}`} className="block">
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 dark:border-gray-700">
-        <div className="relative">
-          {coverImage && (
+    <Link to={`/review/${review.id}`} className="group block h-full">
+      <div className="card-hover h-full flex flex-col rounded-2xl bg-white dark:bg-gray-900 border border-gray-200/70 dark:border-gray-800 overflow-hidden">
+        <div className="relative overflow-hidden">
+          {coverImage ? (
             <img
               src={coverImage}
               alt={animeTitle}
-              className="w-full h-40 sm:h-48 md:h-56 lg:h-64 object-cover"
+              loading="lazy"
+              className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${compact ? 'h-36 sm:h-40' : 'h-44 sm:h-52 md:h-56'}`}
             />
+          ) : (
+            <div className={`w-full bg-gradient-to-br from-violet-500 to-cyan-400 ${compact ? 'h-36 sm:h-40' : 'h-44 sm:h-52 md:h-56'}`} />
           )}
-          <div className="absolute top-2 right-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-2 py-1 rounded-full flex items-center space-x-1 text-xs border border-gray-700 dark:border-gray-300">
-            <Star size={12} fill="currentColor" />
-            <span className="font-bold">{rating}/10</span>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute top-2 right-2 inline-flex items-center gap-1 rounded-full bg-black/70 backdrop-blur px-2 py-0.5 text-[11px] font-bold text-amber-300">
+            <Star size={11} fill="currentColor" />
+            {rating}/10
           </div>
         </div>
-        <div className="p-3 sm:p-4 flex flex-col h-32 sm:h-36 md:h-40">
-          <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-900 dark:text-white mb-2 line-clamp-2">
+        <div className={`flex flex-col flex-1 ${compact ? 'p-3' : 'p-4'}`}>
+          <h3 className={`font-display font-semibold text-gray-900 dark:text-white line-clamp-2 leading-snug ${compact ? 'text-sm' : 'text-base md:text-lg'}`}>
             {animeTitle}
           </h3>
-          <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-xs md:text-sm line-clamp-1 mb-3 flex-grow">
-            {getReviewText()}
-          </p>
-          <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
-            <div className="flex items-center space-x-1">
-              <Calendar size={10} />
-              <span className="text-[10px] sm:text-xs">{new Date(createdAt).toLocaleDateString()}</span>
-            </div>
-            <span className="text-gray-900 dark:text-white font-medium text-xs">Read Review →</span>
+          {!compact && (
+            <p className="mt-1.5 text-xs text-gray-500 dark:text-gray-400 line-clamp-2 flex-1">
+              {getReviewText() || '—'}
+            </p>
+          )}
+          <div className={`mt-2 flex items-center justify-between text-[11px] text-gray-500 dark:text-gray-400 ${compact ? '' : 'mt-auto pt-2'}`}>
+            <span className="inline-flex items-center gap-1">
+              <Calendar size={11} />
+              {new Date(createdAt).toLocaleDateString()}
+            </span>
+            <span className="inline-flex items-center gap-0.5 font-semibold text-violet-600 dark:text-violet-400 opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+              {compact ? '' : 'Read'} <ArrowUpRight size={13} />
+            </span>
           </div>
         </div>
       </div>

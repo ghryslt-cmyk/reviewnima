@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages, Film } from 'lucide-react';
+import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages, Film, Sparkles } from 'lucide-react';
 import { useState, useCallback, useEffect, memo } from 'react';
 import { getUserRank, getUserRankByEmail } from '../lib/firebase';
-import { CrownMedallion, adminNameClass } from './AdminBadge';
+import { RankMedallion, rankNameClass, rankGlowClass, rankAvatarBgClass } from './AdminBadge';
 
 const Navbar = () => {
   const { user, logout, checkAdmin, isAuthenticated } = useAuth();
@@ -99,12 +99,17 @@ const Navbar = () => {
   console.log('Navbar - Render state:', { userRank, isAdminRank, user });
 
   return (
-    <nav className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white shadow-lg border-b border-gray-200 dark:border-gray-700 transition-all duration-300 relative z-50">
-      <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-4 sm:space-x-8">
-            <Link to="/" className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white hover:scale-105 transition-transform duration-300">
-              ReviewNima
+    <nav className="glass sticky top-0 z-50 border-b border-gray-200/70 text-gray-900 shadow-sm dark:border-gray-800/70 dark:text-white">
+      <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          <div className="flex items-center space-x-2 sm:space-x-6">
+            <Link to="/" className="group flex items-center gap-2 text-xl font-bold sm:text-2xl">
+              <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-gradient text-white shadow-glow transition-transform group-hover:scale-105">
+                <Sparkles size={18} />
+              </span>
+              <span className="font-display">
+                Review<span className="text-gradient-static">Nima</span>
+              </span>
             </Link>
             <div className="hidden md:flex space-x-4">
               <Link to="/" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
@@ -253,22 +258,22 @@ const Navbar = () => {
 
             {isAuthenticated ? (
               <>
-                <Link to="/profile" className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300">
+                <Link to="/profile" className="flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-300 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800">
                   <div className="relative">
                     {user?.photoURL ? (
                       <img 
                         src={user.photoURL} 
                         alt="Profile" 
-                        className={`w-8 h-8 rounded-full border-2 ${isAdminRank ? 'border-yellow-500 ring-2 ring-yellow-400 ring-offset-1 ring-offset-white dark:ring-offset-gray-800 shadow-[0_0_0_2px_rgba(250,204,21,0.5),0_0_10px_rgba(250,204,21,0.4)]' : 'border-gray-300 dark:border-gray-600'}`}
+                        className={`w-8 h-8 rounded-full border-2 ${userRank ? rankGlowClass(userRank) : 'border-gray-300 dark:border-gray-600'}`}
                       />
                     ) : (
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center ${isAdminRank ? 'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500 ring-2 ring-yellow-400 ring-offset-1 ring-offset-white dark:ring-offset-gray-800 shadow-[0_0_0_2px_rgba(250,204,21,0.5),0_0_10px_rgba(250,204,21,0.4)]' : 'bg-gray-300 dark:bg-gray-600'}`}>
-                        <User size={16} className={isAdminRank ? 'text-black' : 'text-gray-700 dark:text-gray-300'} />
+                      <div className={`flex h-8 w-8 items-center justify-center rounded-full ${userRank ? rankAvatarBgClass(userRank) : 'bg-gray-300 dark:bg-gray-600'} ${userRank ? rankGlowClass(userRank) : ''}`}>
+                        <User size={16} className={userRank ? 'text-black' : 'text-gray-700 dark:text-gray-300'} />
                       </div>
                     )}
-                    {isAdminRank && <CrownMedallion badgeClass="w-3.5 h-3.5" iconSize={7} stroke={3} animate="animate-pulse" />}
+                    {userRank && <RankMedallion rank={userRank} badgeClass="w-3.5 h-3.5" iconSize={7} stroke={3} animate="animate-pulse" />}
                   </div>
-                  <span className={`hidden md:inline font-bold ${isAdminRank ? adminNameClass : ''}`}>{user?.displayName}</span>
+                  <span className={`hidden md:inline font-bold ${userRank ? rankNameClass(userRank) : ''}`}>{user?.displayName}</span>
                 </Link>
                 <button
                   onClick={handleLogout}

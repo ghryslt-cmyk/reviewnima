@@ -58,6 +58,12 @@ service cloud.firestore {
       allow update, delete: if request.auth != null && request.auth.token.email == 'ghryslt@gmail.com';
     }
     
+    // Announcements collection
+    match /announcements/{announcementId} {
+      allow read: if true;
+      allow create, update, delete: if request.auth != null && request.auth.token.email == 'ghryslt@gmail.com';
+    }
+    
     // Users collection
     match /users/{userId} {
       allow read: if request.auth != null && (request.auth.uid == userId || request.auth.token.email == 'ghryslt@gmail.com');

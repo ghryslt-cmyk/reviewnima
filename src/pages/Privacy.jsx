@@ -11,8 +11,14 @@ const Privacy = () => {
     <Layout>
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">{t('privacy.title')}</h1>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
+          <span className="inline-flex items-center gap-2 rounded-full bg-brand-gradient px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-white shadow-glow">
+            <Shield size={14} />
+            {t('privacy.title')}
+          </span>
+          <h1 className="font-display mt-4 text-4xl font-bold sm:text-5xl">
+            <span className="text-gradient-static">{t('privacy.title')}</span>
+          </h1>
+          <p className="mt-3 text-gray-600 dark:text-gray-400 text-lg">
             {t('privacy.lastUpdated')}
           </p>
         </div>

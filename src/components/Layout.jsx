@@ -6,37 +6,35 @@ const Layout = memo(({ children }) => {
     <div 
       className="min-h-screen transition-all duration-300 relative"
       style={{
-        backgroundColor: '#fff',
-        backgroundImage: "url('/main-skin.png')",
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        backgroundSize: 'cover'
+        background: 'linear-gradient(180deg, #f4f2ff 0%, #f6f6fb 35%, #eef3ff 100%)'
       }}
     >
+      {/* Ambient background glow */}
+      <div className="pointer-events-none fixed inset-0 z-0 hidden lg:block" style={{
+        background: 'radial-gradient(ellipse at 18% 20%, rgba(124,58,237,0.08), transparent 55%), radial-gradient(ellipse at 82% 30%, rgba(34,211,238,0.08), transparent 55%)'
+      }} />
+
       {/* Left Gutter */}
-      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed left-0 bottom-0 w-[170px] h-[700px] z-0 hidden lg:block">
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed left-0 bottom-0 w-[150px] h-[640px] z-0 hidden lg:block opacity-90 transition-opacity hover:opacity-100">
         <div 
-          className="w-full h-full bg-cover bg-center"
+          className="w-full h-full bg-cover bg-center drop-shadow-[0_0_30px_rgba(124,58,237,0.18)]"
           style={{ 
             backgroundImage: "url('/left-gutter.png')",
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center bottom',
-            mixBlendMode: 'multiply',
             backgroundSize: 'contain'
           }}
         ></div>
       </a>
 
       {/* Right Gutter */}
-      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed right-0 bottom-0 w-[170px] h-[700px] z-0 hidden lg:block">
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed right-0 bottom-0 w-[150px] h-[640px] z-0 hidden lg:block opacity-90 transition-opacity hover:opacity-100">
         <div 
-          className="w-full h-full bg-cover bg-center"
+          className="w-full h-full bg-cover bg-center drop-shadow-[0_0_30px_rgba(34,211,238,0.18)]"
           style={{ 
             backgroundImage: "url('/right-gutter.png')",
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center bottom',
-            mixBlendMode: 'multiply',
             backgroundSize: 'contain'
           }}
         ></div>
@@ -48,7 +46,7 @@ const Layout = memo(({ children }) => {
         <TopGutter />
         
         {/* Middle Area - Main Content */}
-        <div className="bg-white dark:bg-gray-900">
+        <div className="bg-white shadow-soft dark:bg-gray-900">
           {children}
         </div>
       </div>

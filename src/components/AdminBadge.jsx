@@ -1,35 +1,132 @@
-import { Crown } from 'lucide-react';
+import { Crown, Heart, Gem } from 'lucide-react';
 
 // ---------------------------------------------------------------------------
-// Shared "admin" visual primitives.
-// Used across Navbar, Profile, ReviewDetail and AnimeWatch so the admin rank
-// looks consistent (golden crown medallion, golden name, ADMIN pill) on every
-// page that renders an account.
+// Shared "rank" visual primitives.
+// Used across Navbar, Profile, ReviewDetail and AnimeWatch so every rank
+// (admin, donatur, donatur++, moderator, vip, premium) looks consistent on
+// every page that renders an account.
 // ---------------------------------------------------------------------------
 
-// Deep golden glow + a crisp golden ring used around admin avatar photos.
-export const adminGlowClass =
-  'ring-2 ring-yellow-400 ring-offset-2 ' +
-  'shadow-[0_0_0_2px_rgba(250,204,21,0.5),0_0_16px_rgba(250,204,21,0.45)]';
+// Rank display configuration. Each rank has a distinct, high-contrast identity.
+export const rankConfig = {
+  admin: {
+    label: 'ADMIN',
+    nameClass:
+      'bg-gradient-to-r from-yellow-400 via-amber-300 to-yellow-400 bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(120,53,15,0.55)]',
+    avatarBgClass: 'bg-gradient-to-br from-yellow-400 via-amber-500 to-orange-500',
+    pillClass: 'from-yellow-400 via-amber-400 to-orange-400 text-amber-950',
+    glowClass:
+      'ring-2 ring-yellow-400 ring-offset-2 shadow-[0_0_0_2px_rgba(250,204,21,0.5),0_0_16px_rgba(250,204,21,0.45)]',
+    Icon: Crown,
+  },
+  donatur: {
+    label: 'DONATUR',
+    nameClass:
+      'bg-gradient-to-r from-sky-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(12,74,110,0.55)]',
+    avatarBgClass: 'bg-gradient-to-br from-sky-400 via-blue-500 to-cyan-500',
+    pillClass: 'from-sky-400 via-blue-400 to-cyan-400 text-blue-950',
+    glowClass:
+      'ring-2 ring-sky-400 ring-offset-2 shadow-[0_0_0_2px_rgba(56,189,248,0.5),0_0_16px_rgba(56,189,248,0.45)]',
+    Icon: Heart,
+  },
+  'donatur++': {
+    label: 'DONATUR++',
+    nameClass:
+      'bg-gradient-to-r from-emerald-400 via-green-400 to-teal-300 bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(6,78,59,0.55)]',
+    avatarBgClass: 'bg-gradient-to-br from-emerald-400 via-green-500 to-teal-400',
+    pillClass: 'from-emerald-400 via-green-400 to-teal-400 text-emerald-950',
+    glowClass:
+      'ring-2 ring-emerald-400 ring-offset-2 shadow-[0_0_0_2px_rgba(52,211,153,0.5),0_0_16px_rgba(52,211,153,0.45)]',
+    Icon: Gem,
+  },
+  moderator: {
+    label: 'MODERATOR',
+    nameClass:
+      'bg-gradient-to-r from-violet-500 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(76,29,149,0.55)]',
+    avatarBgClass: 'bg-gradient-to-br from-violet-500 via-purple-500 to-fuchsia-500',
+    pillClass: 'from-violet-500 via-purple-400 to-fuchsia-400 text-purple-950',
+    glowClass:
+      'ring-2 ring-violet-400 ring-offset-2 shadow-[0_0_0_2px_rgba(167,139,250,0.5),0_0_16px_rgba(167,139,250,0.45)]',
+    Icon: Crown,
+  },
+  vip: {
+    label: 'VIP',
+    nameClass:
+      'bg-gradient-to-r from-pink-500 via-rose-400 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(131,24,67,0.55)]',
+    avatarBgClass: 'bg-gradient-to-br from-pink-500 via-rose-500 to-fuchsia-500',
+    pillClass: 'from-pink-500 via-rose-400 to-fuchsia-400 text-pink-950',
+    glowClass:
+      'ring-2 ring-pink-400 ring-offset-2 shadow-[0_0_0_2px_rgba(244,114,182,0.5),0_0_16px_rgba(244,114,182,0.45)]',
+    Icon: Gem,
+  },
+  premium: {
+    label: 'PREMIUM',
+    nameClass:
+      'bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-300 bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(124,45,18,0.55)]',
+    avatarBgClass: 'bg-gradient-to-br from-orange-400 via-amber-500 to-yellow-400',
+    pillClass: 'from-orange-400 via-amber-400 to-yellow-300 text-orange-950',
+    glowClass:
+      'ring-2 ring-orange-400 ring-offset-2 shadow-[0_0_0_2px_rgba(251,146,60,0.5),0_0_16px_rgba(251,146,60,0.45)]',
+    Icon: Crown,
+  },
+};
 
-// Golden gradient text used for admin display names.
-export const adminNameClass =
-  'bg-gradient-to-r from-yellow-500 via-amber-400 to-yellow-500 ' +
-  'bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(120,53,15,0.55)]';
+const fallbackRank = {
+  label: 'MEMBER',
+  nameClass: '',
+  avatarBgClass: 'bg-gradient-to-br from-gray-400 to-gray-500',
+  pillClass: 'from-gray-400 to-gray-500 text-gray-950',
+  glowClass: '',
+  Icon: Heart,
+};
+
+export const getRankConfig = (rank) =>
+  rank && rankConfig[rank] ? rankConfig[rank] : fallbackRank;
+
+// Golden gradient text used for admin display names (kept for backwards compat).
+export const adminNameClass = rankConfig.admin.nameClass;
 
 // Golden gradient background used for admin "initials" / icon avatars.
-export const adminAvatarBgClass =
-  'bg-gradient-to-br from-yellow-400 via-yellow-500 to-amber-500';
+export const adminAvatarBgClass = rankConfig.admin.avatarBgClass;
 
-// Compact golden "ADMIN" pill badge.
-export const AdminLabel = ({ className = '' }) => (
-  <span
-    className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 text-black text-[10px] font-extrabold uppercase tracking-wide shadow-sm ${className}`}
-  >
-    <Crown size={11} strokeWidth={2.5} />
-    ADMIN
-  </span>
-);
+// Deep golden glow used around admin avatar photos.
+export const adminGlowClass = rankConfig.admin.glowClass;
+
+// Rank-specific glow class (falls back to an empty string for regular members).
+export const rankGlowClass = (rank) => getRankConfig(rank).glowClass;
+
+// Rank-specific name color class.
+export const rankNameClass = (rank) => getRankConfig(rank).nameClass;
+
+// Rank-specific avatar background.
+export const rankAvatarBgClass = (rank) => getRankConfig(rank).avatarBgClass;
+
+// Compact colored pill badge for any rank. Defaults to a subtle member badge.
+export const RankLabel = ({ rank, className = '' }) => {
+  const config = getRankConfig(rank);
+  const Icon = config.Icon;
+  if (!config.nameClass) {
+    return (
+      <span
+        className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-[10px] font-extrabold uppercase tracking-wide shadow-sm ${className}`}
+      >
+        <Icon size={11} strokeWidth={2.5} />
+        {config.label}
+      </span>
+    );
+  }
+  return (
+    <span
+      className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-gradient-to-r ${config.pillClass} text-[10px] font-extrabold uppercase tracking-wide shadow-sm ${className}`}
+    >
+      <Icon size={11} strokeWidth={2.5} />
+      {config.label}
+    </span>
+  );
+};
+
+// Golden "ADMIN" pill badge (kept for backwards compat).
+export const AdminLabel = ({ className = '' }) => <RankLabel rank="admin" className={className} />;
 
 // Golden crown medallion overlaid on the top-right corner of an avatar.
 // `badgeClass` takes literal Tailwind sizing classes (e.g. "w-4 h-4").
@@ -47,3 +144,23 @@ export const CrownMedallion = ({
     <Crown size={iconSize} strokeWidth={stroke} />
   </div>
 );
+
+// Generic rank medallion overlaid on the top-right corner of an avatar.
+export const RankMedallion = ({
+  rank,
+  badgeClass = 'w-4 h-4',
+  iconSize = 8,
+  stroke = 3,
+  animate = '',
+  className = '',
+}) => {
+  const config = getRankConfig(rank);
+  const Icon = config.Icon;
+  return (
+    <div
+      className={`absolute -top-1.5 -right-1.5 grid place-items-center ${badgeClass} ${config.avatarBgClass} text-black rounded-full border border-white shadow-md ${animate} ${className}`}
+    >
+      <Icon size={iconSize} strokeWidth={stroke} />
+    </div>
+  );
+};
