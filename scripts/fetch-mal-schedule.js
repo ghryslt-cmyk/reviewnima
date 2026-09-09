@@ -10,6 +10,11 @@ const MAL_API_URL = 'https://api.myanimelist.net/v2';
 // Days used by the News page schedule bar (Sunday first, matching MAL's season/schedule page)
 const SCHEDULE_DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
 
+// Ordered list of seasons (+ how to step to the previous one)
+const SEASONS = ['winter', 'spring', 'summer', 'fall'];
+
+const getSeasonIndex = (name) => SEASONS.indexOf(name);
+
 const getCurrentSeason = () => {
   const now = new Date();
   const month = now.getMonth() + 1;
@@ -25,27 +30,36 @@ const getCurrentSeason = () => {
   return { season, year };
 };
 
+const getPreviousSeason = ({ season, year }) => {
+  const index = getSeasonIndex(season);
+  if (index === 0) {
+    return { season: SEASONS[3], year: year - 1 }; // winter -> fall (previous year)
+  }
+  return { season: SEASONS[index - 1], year };
+};
+
 /**
- * Fetch the full anime airing schedule from the OFFICIAL MAL API.
- * Endpoint: GET /anime/schedule  ->  same data as https://myanimelist.net/anime/season/schedule
- * (all currently airing anime grouped by day of the week), paginated with `offset`.
+ * Fetch seasonal anime from the OFFICIAL MAL API.
+ * NOTE: The MAL v2 API does NOT expose an /anime/schedule endpoint. The only
+ * official endpoint that returns `broadcast` (day_of_the_week + start_time)
+ * per anime is GET /anime/season/{year}/{season}. We fetch the current season
+ * plus the previous season (to catch continuing titles still airing), then
+ * group by broadcast day — replicating myanimelist.net/anime/season/schedule.
  */
-const fetchMALSchedule = async (clientId) => {
+const fetchSeasonalAnime = async (clientId, season, year) => {
   const headers = {
     'X-MAL-CLIENT-ID': clientId,
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
   };
 
-  // Fields needed by the News page schedule card and by animeNews.js conversion
   const fields = 'id,title,main_picture,broadcast,synopsis,studios,genres,status,media_type';
-
   const maxRetries = 3;
   const retryDelay = 2000; // 2 seconds
   const pageLimit = 100;
-  const maxPages = 5; // ~500 anime max (matches MAL schedule page capacity)
+  const maxPages = 5;
 
-  // Keyed by day name -> array of flattened anime nodes
-  const allByDay = Object.fromEntries(SCHEDULE_DAYS.map(day => [day, []]));
+  const collected = [];
+  const seenIds = new Set();
 
   for (let page = 0; page < maxPages; page++) {
     const offset = page * pageLimit;
@@ -53,14 +67,14 @@ const fetchMALSchedule = async (clientId) => {
 
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
       try {
-        response = await axios.get(`${MAL_API_URL}/anime/schedule`, {
+        response = await axios.get(`${MAL_API_URL}/anime/season/${year}/${season}`, {
           params: { limit: pageLimit, offset, fields },
           headers,
           timeout: 15000
         });
         break;
       } catch (error) {
-        console.error(`Page offset=${offset} attempt ${attempt}/${maxRetries} failed:`, error.message);
+        console.error(`${season} ${year} offset=${offset} attempt ${attempt}/${maxRetries} failed:`, error.message);
         if (error.response?.status === 403 || error.response?.status === 429) {
           console.log('Rate limited or blocked, waiting before retry...');
         }
@@ -71,46 +85,50 @@ const fetchMALSchedule = async (clientId) => {
     }
 
     if (!response) {
-      console.error('Max retries reached for MAL schedule API, continuing with data fetched so far...');
+      console.error(`Max retries reached for ${season} ${year}, continuing with data fetched so far...`);
       break;
     }
 
-    // /anime/schedule returns data as an object: { other: [...], sunday: [...], ... }
-    const data = response.data?.data || {};
-    let pageFetched = 0;
-
-    for (const [dayKey, entries] of Object.entries(data)) {
-      if (!Array.isArray(entries)) continue;
-      for (const entry of entries) {
-        const node = entry?.node || entry;
-        // Use the anime's own broadcast day, falling back to the endpoint's day key
-        const broadcastDay = (node.broadcast?.day_of_the_week || '').toLowerCase();
-        const targetDay = SCHEDULE_DAYS.includes(broadcastDay)
-          ? broadcastDay
-          : (SCHEDULE_DAYS.includes(dayKey) ? dayKey : null);
-
-        if (targetDay) {
-          allByDay[targetDay].push(node);
-          pageFetched++;
-        }
-      }
+    const entries = response.data?.data || [];
+    for (const entry of entries) {
+      const node = entry?.node || entry;
+      if (!node?.id || seenIds.has(node.id)) continue;
+      seenIds.add(node.id);
+      collected.push(node);
     }
 
-    if (pageFetched < pageLimit) break; // no more pages
+    // Pagination: stop if there is no next page or fewer items than the limit
+    const paging = response.data?.paging;
+    const fetched = entries.length;
+    if (!paging?.next || fetched < pageLimit) break;
   }
 
-  // De-duplicate (some anime can appear in multiple day keys / pages)
+  console.log(`Fetched ${collected.length} anime for ${season} ${year}`);
+  return collected;
+};
+
+const groupAnimeByAiringDay = (animeList) => {
+  const allByDay = Object.fromEntries(SCHEDULE_DAYS.map(day => [day, []]));
+
+  for (const anime of animeList) {
+    // Only include currently-airing titles (these are what MAL's schedule page shows)
+    if (anime.status && anime.status !== 'currently_airing') continue;
+
+    const broadcastDay = (anime.broadcast?.day_of_the_week || '').toLowerCase();
+    if (SCHEDULE_DAYS.includes(broadcastDay)) {
+      allByDay[broadcastDay].push(anime);
+    }
+  }
+
+  // De-duplicate then sort each day by broadcast start time
   for (const day of SCHEDULE_DAYS) {
     const seen = new Set();
     allByDay[day] = allByDay[day].filter(anime => {
-      if (!anime.id || seen.has(anime.id)) return false;
+      if (seen.has(anime.id)) return false;
       seen.add(anime.id);
       return true;
     });
-  }
 
-  // Sort anime by broadcast start time within each day
-  for (const day of SCHEDULE_DAYS) {
     allByDay[day].sort((a, b) => {
       const timeA = a.broadcast?.start_time || '99:99';
       const timeB = b.broadcast?.start_time || '99:99';
@@ -141,10 +159,23 @@ const main = async () => {
     process.exit(1);
   }
 
-  const { season, year } = getCurrentSeason();
-  console.log(`Fetching ${season} ${year} daily schedule from official MAL API...`);
+  const current = getCurrentSeason();
+  const previous = getPreviousSeason(current);
+  console.log(`Fetching ${current.season} ${current.year} (current) and ${previous.season} ${previous.year} (prev) from official MAL seasonal API...`);
 
-  const scheduleData = await fetchMALSchedule(clientId);
+  const currentAnime = await fetchSeasonalAnime(clientId, current.season, current.year);
+
+  // Fetch previous season to catch continuing titles; failure here is not fatal
+  let previousAnime = [];
+  try {
+    previousAnime = await fetchSeasonalAnime(clientId, previous.season, previous.year);
+  } catch (error) {
+    console.error('Failed fetching previous season (continuing from it anyway):', error.message);
+  }
+
+  const allAnime = [...currentAnime, ...previousAnime];
+  const scheduleData = groupAnimeByAiringDay(allAnime);
+
   const totalAnime = Object.values(scheduleData).reduce((sum, arr) => sum + arr.length, 0);
   if (totalAnime === 0) {
     console.error('No anime schedule data fetched!');
