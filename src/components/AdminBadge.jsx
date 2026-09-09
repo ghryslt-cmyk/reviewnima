@@ -42,21 +42,21 @@ export const rankConfig = {
   moderator: {
     label: 'MODERATOR',
     nameClass:
-      'bg-gradient-to-r from-violet-500 via-purple-400 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(76,29,149,0.55)]',
-    avatarBgClass: 'bg-gradient-to-br from-violet-500 via-purple-500 to-fuchsia-500',
-    pillClass: 'from-violet-500 via-purple-400 to-fuchsia-400 text-purple-950',
+      'bg-gradient-to-r from-indigo-500 via-blue-400 to-sky-400 bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(30,64,175,0.55)]',
+    avatarBgClass: 'bg-gradient-to-br from-indigo-500 via-blue-500 to-sky-500',
+    pillClass: 'from-indigo-500 via-blue-400 to-sky-400 text-indigo-950',
     glowClass:
-      'ring-2 ring-violet-400 ring-offset-2 shadow-[0_0_0_2px_rgba(167,139,250,0.5),0_0_16px_rgba(167,139,250,0.45)]',
+      'ring-2 ring-blue-400 ring-offset-2 shadow-[0_0_0_2px_rgba(96,165,250,0.5),0_0_16px_rgba(96,165,250,0.45)]',
     Icon: Crown,
   },
   vip: {
     label: 'VIP',
     nameClass:
-      'bg-gradient-to-r from-pink-500 via-rose-400 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(131,24,67,0.55)]',
-    avatarBgClass: 'bg-gradient-to-br from-pink-500 via-rose-500 to-fuchsia-500',
-    pillClass: 'from-pink-500 via-rose-400 to-fuchsia-400 text-pink-950',
+      'bg-gradient-to-r from-cyan-500 via-teal-400 to-sky-400 bg-clip-text text-transparent drop-shadow-[0_1px_2px_rgba(8,51,68,0.55)]',
+    avatarBgClass: 'bg-gradient-to-br from-cyan-500 via-teal-500 to-sky-500',
+    pillClass: 'from-cyan-500 via-teal-400 to-sky-400 text-cyan-950',
     glowClass:
-      'ring-2 ring-pink-400 ring-offset-2 shadow-[0_0_0_2px_rgba(244,114,182,0.5),0_0_16px_rgba(244,114,182,0.45)]',
+      'ring-2 ring-cyan-400 ring-offset-2 shadow-[0_0_0_2px_rgba(34,211,238,0.5),0_0_16px_rgba(34,211,238,0.45)]',
     Icon: Gem,
   },
   premium: {

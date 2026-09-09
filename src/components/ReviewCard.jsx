@@ -29,7 +29,7 @@ const ReviewCard = memo(({ review, compact = false }) => {
               className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${compact ? 'h-36 sm:h-40' : 'h-44 sm:h-52 md:h-56'}`}
             />
           ) : (
-            <div className={`w-full bg-gradient-to-br from-violet-500 to-cyan-400 ${compact ? 'h-36 sm:h-40' : 'h-44 sm:h-52 md:h-56'}`} />
+            <div className={`w-full bg-gradient-to-br from-blue-600 to-cyan-400 ${compact ? 'h-36 sm:h-40' : 'h-44 sm:h-52 md:h-56'}`} />
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           <div className="absolute top-2 right-2 inline-flex items-center gap-1 rounded-full bg-black/70 backdrop-blur px-2 py-0.5 text-[11px] font-bold text-amber-300">
@@ -51,7 +51,7 @@ const ReviewCard = memo(({ review, compact = false }) => {
               <Calendar size={11} />
               {new Date(createdAt).toLocaleDateString()}
             </span>
-            <span className="inline-flex items-center gap-0.5 font-semibold text-violet-600 dark:text-violet-400 opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+            <span className="inline-flex items-center gap-0.5 font-semibold text-brand-600 dark:text-brand-400 opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
               {compact ? '' : 'Read'} <ArrowUpRight size={13} />
             </span>
           </div>

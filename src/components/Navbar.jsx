@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages, Film, Sparkles } from 'lucide-react';
+import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages, Clapperboard } from 'lucide-react';
 import { useState, useCallback, useEffect, memo } from 'react';
 import { getUserRank, getUserRankByEmail } from '../lib/firebase';
 import { RankMedallion, rankNameClass, rankGlowClass, rankAvatarBgClass } from './AdminBadge';
@@ -104,9 +104,11 @@ const Navbar = () => {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-2 sm:space-x-6">
             <Link to="/" className="group flex items-center gap-2 text-xl font-bold sm:text-2xl">
-              <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-gradient text-white shadow-glow transition-transform group-hover:scale-105">
-                <Sparkles size={18} />
-              </span>
+              <img
+                src="/logo.png"
+                alt="ReviewNima"
+                className="h-9 w-9 rounded-xl object-contain shadow-glow transition-transform group-hover:scale-105"
+              />
               <span className="font-display">
                 Review<span className="text-gradient-static">Nima</span>
               </span>
@@ -123,7 +125,7 @@ const Navbar = () => {
                   onClick={() => setAnimeDropdownOpen(!animeDropdownOpen)}
                   className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
                 >
-                  <Film size={20} />
+                  <Clapperboard size={20} />
                   <span>{t('nav.anime')}</span>
                 </button>
                 
@@ -142,7 +144,7 @@ const Navbar = () => {
                       className="flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors text-gray-900 dark:text-white"
                       onClick={() => setAnimeDropdownOpen(false)}
                     >
-                      <Film size={18} />
+                      <Clapperboard size={18} />
                       <span>{t('nav.anime')}</span>
                     </Link>
                     <Link
@@ -342,7 +344,7 @@ const Navbar = () => {
             {/* Anime Section for Mobile */}
             <div className="px-3 py-2">
               <div className="flex items-center space-x-2 text-gray-900 dark:text-white mb-2">
-                <Film size={20} />
+                <Clapperboard size={20} />
                 <span className="font-medium">{t('nav.anime')}</span>
               </div>
               <div className="pl-4 space-y-1">
@@ -359,7 +361,7 @@ const Navbar = () => {
                   className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
                   onClick={handleMobileMenuToggle}
                 >
-                  <Film size={18} />
+                  <Clapperboard size={18} />
                   <span>{t('nav.anime')}</span>
                 </Link>
                 <Link 

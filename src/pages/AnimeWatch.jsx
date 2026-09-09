@@ -599,7 +599,7 @@ const AnimeWatch = memo(() => {
                                       )}
                                     </div>
                                   ) : (
-                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm ${replyIsAdmin ? 'ring-2 ring-yellow-400 ring-offset-1 ring-offset-gray-800 bg-amber-500' : 'bg-purple-600'}`}>
+                                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm ${replyIsAdmin ? 'ring-2 ring-yellow-400 ring-offset-1 ring-offset-gray-800 bg-amber-500' : 'bg-blue-600'}`}>
                                       {reply.author?.charAt(0) || 'U'}
                                       {replyIsAdmin && (
                                         <CrownMedallion badgeClass="w-3 h-3" iconSize={6} stroke={3} />

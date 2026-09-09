@@ -5,7 +5,7 @@ import ReviewCard from '../components/ReviewCard';
 import Layout from '../components/Layout';
 import { fetchAnimeNews } from '../lib/animeNews';
 import {
-  Sparkles, Star, Newspaper, Play, ArrowRight, Megaphone, Clock, Film,
+  Sparkles, Star, Newspaper, Play, ArrowRight, Megaphone, Clock, Film, Clapperboard,
   CalendarDays, Info, Mail, Shield, FileText, BookOpen, Heart, ChevronRight,
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -175,28 +175,31 @@ const Home = memo(() => {
       {/* ANNOUNCEMENTS */}
       {announcements.length > 0 && (
         <section className="px-4 pt-8 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-[1500px] space-y-3">
+          <div className="mx-auto max-w-[1500px] space-y-4">
             {announcements.map((a) => (
               <div
                 key={a.id}
-                className="flex items-start gap-3 rounded-2xl border border-amber-200/70 bg-gradient-to-r from-amber-50 to-orange-50 p-4 shadow-sm dark:border-amber-500/20 dark:from-amber-500/10 dark:to-orange-500/10"
+                className="relative overflow-hidden rounded-2xl bg-brand-gradient p-[1.5px] shadow-glow"
               >
-                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-amber-400 text-amber-950 shadow">
-                  <Megaphone size={18} />
-                </span>
-                <div className="min-w-0 flex-1">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-display text-sm font-bold uppercase tracking-wide text-amber-700 dark:text-amber-300">
-                      {a.title || 'Announcement'}
-                    </span>
-                    {a.expiresAt && (
-                      <span className="inline-flex items-center gap-1 text-xs text-amber-600/80 dark:text-amber-300/70">
-                        <Clock size={12} />
-                        {new Date(a.expiresAt?.toDate?.() || a.expiresAt).toLocaleDateString()}
+                <div className="relative flex items-start gap-4 rounded-2xl bg-gradient-to-r from-[#0b2a6b] via-[#1343a8] to-[#0e7ab8] p-4 sm:p-5">
+                  <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-white/15 text-white ring-1 ring-white/30 backdrop-blur-md">
+                    <Megaphone size={22} />
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="inline-flex animate-pulse-glow items-center gap-1.5 rounded-full bg-white/15 px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-widest text-white ring-1 ring-white/30">
+                        <span className="h-1.5 w-1.5 rounded-full bg-cyan-300" />
+                        {a.title || 'Announcement'}
                       </span>
-                    )}
+                      {a.expiresAt && (
+                        <span className="inline-flex items-center gap-1 text-xs font-medium text-white/80">
+                          <Clock size={13} />
+                          {new Date(a.expiresAt?.toDate?.() || a.expiresAt).toLocaleDateString()}
+                        </span>
+                      )}
+                    </div>
+                    <p className="mt-2 text-sm font-medium leading-relaxed text-white sm:text-base">{a.message}</p>
                   </div>
-                  <p className="mt-1 text-sm text-amber-900/80 dark:text-amber-100/80">{a.message}</p>
                 </div>
               </div>
             ))}
@@ -207,7 +210,7 @@ const Home = memo(() => {
       {/* LATEST ANIME (featured) */}
       <section className="px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-[1500px]">
-          <SectionHeading icon={Film} title={t('home.latestAnime') || 'Anime Terbaru'} />
+          <SectionHeading icon={Clapperboard} title={t('home.latestAnime') || 'Anime Terbaru'} />
           {latestAnime ? (
             <Link to={`/anime/${latestAnime.anilistId}`} className="group block">
               <div className="card-hover relative overflow-hidden rounded-3xl border border-gray-200/70 dark:border-gray-800 shadow-soft">
@@ -215,7 +218,7 @@ const Home = memo(() => {
                   {animeBanner ? (
                     <img src={animeBanner} alt={animeTitle} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   ) : (
-                    <div className="h-full w-full bg-gradient-to-br from-violet-600 via-fuchsia-500 to-cyan-400" />
+                    <div className="h-full w-full bg-gradient-to-br from-blue-700 via-blue-500 to-cyan-400" />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-transparent" />
@@ -318,7 +321,7 @@ const Home = memo(() => {
                   { to: '/', icon: Info, label: t('home.homePage') },
                   { to: '/reviews', icon: BookOpen, label: t('home.reviewsPage') },
                   { to: '/top-favorites', icon: Heart, label: t('home.topFavoritesPage') },
-                  { to: '/anime', icon: Film, label: t('nav.anime') },
+                  { to: '/anime', icon: Clapperboard, label: t('nav.anime') },
                   { to: '/news', icon: Newspaper, label: t('nav.news') },
                 ].map(({ to, icon: Icon, label }) => (
                   <li key={to}>
@@ -353,7 +356,7 @@ const Home = memo(() => {
           <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-gray-200 pt-6 text-xs text-gray-500 dark:border-gray-800 dark:text-gray-500 sm:flex-row">
             <p>© {new Date().getFullYear()} ReviewNima. {t('home.rights') || 'All rights reserved.'}</p>
             <p className="flex items-center gap-1.5">
-              {t('home.madeWith') || 'Dibuat dengan'} <Heart size={13} className="text-fuchsia-500" fill="currentColor" /> {t('home.forAnimeFans') || 'untuk pecinta anime'}
+              {t('home.madeWith') || 'Dibuat dengan'} <Heart size={13} className="text-sky-500" fill="currentColor" /> {t('home.forAnimeFans') || 'untuk pecinta anime'}
             </p>
           </div>
         </div>

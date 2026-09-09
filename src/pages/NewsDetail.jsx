@@ -102,7 +102,7 @@ const NewsDetail = () => {
         <div className="text-center">
           <Newspaper size={64} className="mx-auto text-gray-400 mb-4" />
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{t('newsDetail.newsNotFound')}</h2>
-          <Link to="/news" className="text-purple-600 dark:text-purple-400 hover:underline">
+          <Link to="/news" className="text-brand-600 dark:text-brand-400 hover:underline">
             {t('newsDetail.backToNews')}
           </Link>
         </div>
@@ -132,7 +132,7 @@ const NewsDetail = () => {
           <div className="lg:col-span-2">
             <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700">
               {/* Hero Image */}
-              <div className="relative aspect-[16/9] xs:aspect-[2/1] sm:aspect-[21/9] overflow-hidden bg-gradient-to-br from-purple-100 to-blue-100 dark:from-gray-700 dark:to-gray-600">
+              <div className="relative aspect-[16/9] xs:aspect-[2/1] sm:aspect-[21/9] overflow-hidden bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-gray-700 dark:to-gray-600">
                 <img
                   src={newsItem.thumbnail}
                   alt={newsItem.title}

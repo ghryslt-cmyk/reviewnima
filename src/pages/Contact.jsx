@@ -10,7 +10,7 @@ const Contact = () => {
   const cards = [
     {
       icon: Mail,
-      gradient: 'from-violet-500 to-fuchsia-500',
+      gradient: 'from-blue-600 to-cyan-500',
       title: t('contact.email'),
       value: 'morvissenter@gmail.com',
       href: 'mailto:morvissenter@gmail.com',
@@ -18,7 +18,7 @@ const Contact = () => {
     },
     {
       icon: Play,
-      gradient: 'from-red-500 to-rose-500',
+      gradient: 'from-red-500 to-red-600',
       title: t('contact.socialMedia'),
       value: 'Morviss',
       href: 'https://www.youtube.com/@Morviss09',
@@ -67,7 +67,7 @@ const Contact = () => {
 
           <div className="mt-10 rounded-2xl border border-dashed border-brand-200 bg-brand-50/50 p-6 text-center dark:border-brand-500/20 dark:bg-brand-500/5">
             <p className="inline-flex items-center justify-center gap-2 text-sm text-gray-600 dark:text-gray-300">
-              <Heart size={16} className="text-fuchsia-500" fill="currentColor" />
+              <Heart size={16} className="text-sky-500" fill="currentColor" />
               {t('contact.footerNote') || 'Terima kasih sudah mendukung ReviewNima. Setiap masukan sangat berarti untuk membuat website ini lebih baik.'}
             </p>
           </div>

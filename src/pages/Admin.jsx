@@ -478,7 +478,7 @@ const Admin = memo(() => {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <Loader2 className="animate-spin text-purple-600" size={48} />
+        <Loader2 className="animate-spin text-brand-600" size={48} />
       </div>
     );
   }
@@ -547,14 +547,14 @@ const Admin = memo(() => {
         </div>
 
         {/* Visitor Count Card */}
-        <div className="bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-900 dark:to-blue-900 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-purple-400 dark:border-purple-700">
+        <div className="bg-gradient-to-r from-blue-700 to-cyan-600 dark:from-blue-900 dark:to-cyan-900 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-blue-400 dark:border-blue-700">
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 flex items-center">
                 <Users className="mr-2" size={24} sm:size={28} />
                 Total Visitors
               </h2>
-              <p className="text-purple-100 dark:text-purple-200 text-sm sm:text-base">
+              <p className="text-blue-100 dark:text-blue-200 text-sm sm:text-base">
                 Live visitor count
               </p>
             </div>
@@ -1261,7 +1261,7 @@ const Admin = memo(() => {
                       <option key={key} value={key}>{cfg.label}</option>
                     ))}
                   </select>
-                  <button onClick={handleAssignRank} className="w-full rounded-lg bg-gradient-to-r from-violet-600 to-fuchsia-500 px-6 py-2.5 font-bold text-white shadow-glow transition-transform hover:scale-[1.02]">
+                  <button onClick={handleAssignRank} className="w-full rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 px-6 py-2.5 font-bold text-white shadow-glow transition-transform hover:scale-[1.02]">
                     Assign Rank
                   </button>
                   {rankMessage && (
@@ -1348,7 +1348,7 @@ const Admin = memo(() => {
                 <p className="mt-1 text-xs text-gray-400">Announcement disappears automatically after this time.</p>
               </div>
               <div className="flex items-end">
-                <button type="submit" className="w-full rounded-lg bg-gradient-to-r from-violet-600 to-fuchsia-500 px-6 py-2.5 font-bold text-white shadow-glow transition-transform hover:scale-[1.02]">
+                <button type="submit" className="w-full rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 px-6 py-2.5 font-bold text-white shadow-glow transition-transform hover:scale-[1.02]">
                   Publish Announcement
                 </button>
               </div>

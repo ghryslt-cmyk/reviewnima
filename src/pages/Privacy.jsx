@@ -57,7 +57,7 @@ const Privacy = () => {
 
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
             <div className="flex items-center space-x-3 mb-4">
-              <Eye className="text-purple-500" size={24} />
+              <Eye className="text-sky-500" size={24} />
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">{t('privacy.informationSharing')}</h2>
             </div>
             <div className="text-gray-600 dark:text-gray-400 space-y-3">
@@ -102,7 +102,7 @@ const Privacy = () => {
 
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
             <div className="flex items-center space-x-3 mb-4">
-              <CreditCard className="text-purple-500" size={24} />
+              <CreditCard className="text-sky-500" size={24} />
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">{t('privacy.assetCredits')}</h2>
             </div>
             <div className="text-gray-600 dark:text-gray-400 space-y-3">
