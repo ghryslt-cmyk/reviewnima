@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, memo, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getAnimeById } from '../lib/anilist';
 import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode, getAnimeComments, addAnimeComment, deleteAnimeComment, addAnimeCommentReply, getAnimeCommentReplies, saveAnimeToProfile, removeAnimeFromProfile, getSavedAnime, reportAnime, getUserRankByEmail, isAdminEmail } from '../lib/firebase';
+import { fetchRanksByEmail } from '../lib/donation';
 import WatchLayout from '../components/WatchLayout';
 import { Play, ThumbsUp, ThumbsDown, Share, Bookmark, Flag, Loader2, X, AlertCircle, Heart, MessageSquare, Send, User, Trash2, Reply, Shield } from 'lucide-react';
 import { CrownMedallion, adminNameClass, AdminLabel, RankMedallion, RankLabel, rankNameClass, rankAvatarBgClass, rankGlowClass } from '../components/AdminBadge';
@@ -111,6 +112,12 @@ const AnimeWatch = memo(() => {
       
       setComments(prev => [newComment, ...prev]);
       setCommentText('');
+
+      // Tampilkan badge rank untuk komentar yang baru dikirim tanpa reload.
+      const myEmail = (user.email || '').toLowerCase();
+      const myRanks = await fetchRanksByEmail([myEmail]);
+      const myRank = myRanks[myEmail] || (isAdminEmail(myEmail) ? 'admin' : null);
+      if (myRank) setCommentRanks(prev => ({ ...prev, [myEmail]: myRank }));
     } catch (error) {
       console.error('Error adding comment:', error);
       alert('Failed to add comment: ' + error.message);
@@ -191,16 +198,29 @@ const AnimeWatch = memo(() => {
         const commentsData = await getAnimeComments(id);
         setComments(commentsData);
         
-        // Fetch ranks for comment authors
-        const ranks = {};
+        // Fetch ranks for comment authors.
+        // Jalur utama lewat Cloudflare Worker (/ranks) karena firestore.rules
+        // melarang pengunjung membaca dokumen user lain - itulah sebabnya badge
+        // rank sebelumnya tidak muncul di komentar.
+        const ranks = await fetchRanksByEmail(commentsData.map((c) => c.authorEmail));
+
+        // Admin selalu tampil sebagai admin (rank-nya tidak disimpan di Firestore).
         for (const comment of commentsData) {
-          if (comment.authorEmail) {
-            const rank = await getUserRankByEmail(comment.authorEmail);
-            if (rank) {
-              ranks[comment.authorEmail] = rank;
+          if (comment.authorEmail && isAdminEmail(comment.authorEmail)) {
+            ranks[comment.authorEmail.toLowerCase()] = 'admin';
+          }
+        }
+
+        // Cadangan: kalau worker belum dikonfigurasi, coba baca Firestore.
+        if (Object.keys(ranks).length === 0) {
+          for (const comment of commentsData) {
+            if (comment.authorEmail) {
+              const rank = await getUserRankByEmail(comment.authorEmail);
+              if (rank) ranks[comment.authorEmail.toLowerCase()] = rank;
             }
           }
         }
+
         setCommentRanks(ranks);
         
         hasFetchedComments.current = true;
@@ -483,7 +503,7 @@ const AnimeWatch = memo(() => {
               <div className="space-y-4">
                 {comments.length > 0 ? (
                   comments.map(comment => {
-                    const userRank = commentRanks[comment.authorEmail];
+                    const userRank = commentRanks[(comment.authorEmail || '').toLowerCase()];
                     const hasRank = Boolean(userRank);
                     return (
                     <div key={comment.id} className="flex space-x-4 p-4 bg-gray-800 rounded-lg">

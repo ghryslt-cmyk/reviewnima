@@ -20,9 +20,9 @@ const Layout = memo(({ children }) => {
       }} />
 
       {/* Left Gutter */}
-      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed left-0 bottom-0 z-0 hidden h-[820px] w-[230px] lg:block xl:h-[900px] xl:w-[270px] 2xl:h-[1020px] 2xl:w-[330px]">
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed left-0 bottom-0 w-[200px] h-[720px] z-0 hidden lg:block">
         <div 
-          className="w-full h-full bg-cover bg-center drop-shadow-[0_0_36px_rgba(49,130,255,0.22)]"
+          className="w-full h-full bg-cover bg-center drop-shadow-[0_0_30px_rgba(49,130,255,0.18)]"
           style={{ 
             backgroundImage: "url('/left-gutter.png')",
             backgroundRepeat: 'no-repeat',
@@ -33,9 +33,9 @@ const Layout = memo(({ children }) => {
       </a>
 
       {/* Right Gutter */}
-      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed right-0 bottom-0 z-0 hidden h-[820px] w-[230px] lg:block xl:h-[900px] xl:w-[270px] 2xl:h-[1020px] 2xl:w-[330px]">
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed right-0 bottom-0 w-[200px] h-[720px] z-0 hidden lg:block">
         <div 
-          className="w-full h-full bg-cover bg-center drop-shadow-[0_0_36px_rgba(34,211,238,0.22)]"
+          className="w-full h-full bg-cover bg-center drop-shadow-[0_0_30px_rgba(34,211,238,0.18)]"
           style={{ 
             backgroundImage: "url('/right-gutter.png')",
             backgroundRepeat: 'no-repeat',

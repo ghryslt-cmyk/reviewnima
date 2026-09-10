@@ -23,7 +23,7 @@ const FIRESTORE_SCOPE = 'https://www.googleapis.com/auth/datastore';
 
 // Naikkan angka ini setiap kali kode worker berubah, supaya mudah memastikan
 // versi yang sudah ter-deploy lewat endpoint /health.
-const WORKER_VERSION = '1.3.3';
+const WORKER_VERSION = '1.4.0';
 
 const RANK_LEVELS = {
   donatur: 1,
@@ -246,6 +246,45 @@ async function fsListDocuments(env, collection, pageSize = 50) {
   }
   const data = await res.json();
   return (data.documents || []).map((doc) => fromFirestoreFields(doc.fields || {}));
+}
+
+// Cari beberapa user sekaligus berdasarkan email (maks 30) memakai Firestore
+// runQuery dengan filter IN. Dipakai endpoint publik /ranks supaya badge rank
+// di komentar bisa dilihat SEMUA pengunjung (rules Firestore hanya
+// memperbolehkan pemilik/admin membaca koleksi users, tapi service account
+// worker melewati rules).
+async function fsFindUsersByEmails(env, emails) {
+  const values = emails
+    .slice(0, 30)
+    .map((email) => ({ stringValue: String(email).trim().toLowerCase() }));
+
+  if (values.length === 0) return [];
+
+  const res = await fsFetch(env, ':runQuery', {
+    method: 'POST',
+    body: JSON.stringify({
+      structuredQuery: {
+        from: [{ collectionId: 'users' }],
+        where: {
+          fieldFilter: {
+            field: { fieldPath: 'email' },
+            op: 'IN',
+            value: { arrayValue: { values } },
+          },
+        },
+      },
+    }),
+  });
+
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`Firestore query failed (${res.status}): ${body.slice(0, 300)}`);
+  }
+
+  const rows = await res.json();
+  return rows
+    .filter((row) => row && row.document)
+    .map((row) => fromFirestoreFields(row.document.fields || {}));
 }
 
 // ---------------------------------------------------------------------------
@@ -691,6 +730,35 @@ async function handleRecent(request, env) {
   }
 }
 
+// GET /ranks?emails=a@x.com,b@y.com
+// Mengembalikan { ranks: { "email": "donatur" } }. Dipakai halaman review/watch
+// supaya badge rank di komentar tampil untuk semua pengunjung (bukan hanya
+// admin/pemilik akun). Email tidak pernah dikembalikan, hanya rank-nya.
+async function handleRanks(request, env) {
+  const url = new URL(request.url);
+  const requested = (url.searchParams.get('emails') || '')
+    .split(',')
+    .map((email) => email.trim().toLowerCase())
+    .filter(Boolean);
+
+  if (requested.length === 0) return json({ ranks: {} });
+
+  const unique = [...new Set(requested)].slice(0, 30);
+
+  try {
+    const users = await fsFindUsersByEmails(env, unique);
+    const ranks = {};
+    for (const user of users) {
+      const email = String(user.email || '').trim().toLowerCase();
+      if (email && user.rank) ranks[email] = user.rank;
+    }
+    return json({ ranks, checked: unique.length });
+  } catch (error) {
+    logError('handleRanks gagal:', String(error?.message || error));
+    return json({ ranks: {}, error: String(error?.message || error) }, 200);
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Self diagnosis
 //   Buka di browser:  /diagnose?token=<TRAKTEER_WEBHOOK_TOKEN>
@@ -851,6 +919,9 @@ export default {
       if (url.pathname === '/recent') {
         return await handleRecent(request, env);
       }
+      if (url.pathname === '/ranks') {
+        return await handleRanks(request, env);
+      }
       if (url.pathname === '/diagnose' || url.pathname === '/diag') {
         return await handleDiagnose(request, env);
       }
@@ -863,6 +934,7 @@ export default {
             webhook: 'POST /trakteer-webhook?token=...',
             status: 'GET /status?uid=...',
             recent: 'GET /recent?limit=8',
+            ranks: 'GET /ranks?emails=a@x.com,b@y.com',
             diagnose: 'GET /diagnose?token=...&write=1',
           },
           time: new Date().toISOString(),

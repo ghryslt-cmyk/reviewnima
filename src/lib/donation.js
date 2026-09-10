@@ -138,3 +138,34 @@ export const fetchRecentDonations = async (limit = 8) => {
     return [];
   }
 };
+
+// Resolve ranks for several emails at once through the Cloudflare Worker.
+//
+// Why not read Firestore directly? `firestore.rules` only lets the owner (or the
+// admin) read the `users` collection, so a visitor's query for another user's
+// document is rejected - which is why comment badges never appeared. The worker
+// uses a service account, so it can look them up for everyone.
+//
+// Returns an object keyed by LOWERCASE email: { "user@gmail.com": "donatur" }.
+export const fetchRanksByEmail = async (emails) => {
+  const unique = [
+    ...new Set(
+      (emails || [])
+        .map((email) => String(email || '').trim().toLowerCase())
+        .filter(Boolean),
+    ),
+  ].slice(0, 30);
+
+  if (!DONATION_WORKER_URL || unique.length === 0) return {};
+
+  try {
+    const res = await fetch(
+      `${DONATION_WORKER_URL}/ranks?emails=${encodeURIComponent(unique.join(','))}`,
+    );
+    if (!res.ok) return {};
+    const data = await res.json();
+    return data?.ranks && typeof data.ranks === 'object' ? data.ranks : {};
+  } catch {
+    return {};
+  }
+};

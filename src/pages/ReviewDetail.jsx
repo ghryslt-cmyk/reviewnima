@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { getReviewById, getComments, addComment, deleteComment, addCommentReply, getCommentReplies, getUserRankByEmail, isAdminEmail } from '../lib/firebase';
+import { fetchRanksByEmail } from '../lib/donation';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
@@ -35,16 +36,31 @@ const ReviewDetail = () => {
           const commentsData = await getComments(id);
           setComments(commentsData);
           
-          // Fetch ranks for comment authors
-          const ranks = {};
+          // Fetch ranks for comment authors.
+          // Jalur utama lewat Cloudflare Worker (/ranks) karena firestore.rules
+          // melarang pengunjung membaca dokumen user lain - itulah sebabnya
+          // badge rank sebelumnya tidak muncul di komentar.
+          const ranks = await fetchRanksByEmail(commentsData.map((c) => c.authorEmail));
+
+          // Admin tidak menyimpan rank di Firestore (selalu dihitung), jadi
+          // tandai langsung supaya badge-nya tetap tampil.
           for (const comment of commentsData) {
-            if (comment.authorEmail) {
-              const rank = await getUserRankByEmail(comment.authorEmail);
-              if (rank) {
-                ranks[comment.authorEmail] = rank;
+            if (comment.authorEmail && isAdminEmail(comment.authorEmail)) {
+              ranks[comment.authorEmail.toLowerCase()] = 'admin';
+            }
+          }
+
+          // Cadangan: kalau worker belum dikonfigurasi, coba baca Firestore
+          // (hanya berhasil untuk admin/pemilik akun).
+          if (Object.keys(ranks).length === 0) {
+            for (const comment of commentsData) {
+              if (comment.authorEmail) {
+                const rank = await getUserRankByEmail(comment.authorEmail);
+                if (rank) ranks[comment.authorEmail.toLowerCase()] = rank;
               }
             }
           }
+
           setCommentRanks(ranks);
         }
       } catch (error) {
@@ -81,6 +97,12 @@ const ReviewDetail = () => {
       
       setComments(prev => [newComment, ...prev]);
       setCommentText('');
+
+      // Tampilkan badge rank untuk komentar yang baru dikirim tanpa reload.
+      const myEmail = (user.email || '').toLowerCase();
+      const myRanks = await fetchRanksByEmail([myEmail]);
+      const myRank = myRanks[myEmail] || (isAdminEmail(myEmail) ? 'admin' : null);
+      if (myRank) setCommentRanks(prev => ({ ...prev, [myEmail]: myRank }));
     } catch (error) {
       console.error('Error adding comment:', error);
       alert('Failed to add comment. Please try again.');
@@ -363,7 +385,7 @@ const ReviewDetail = () => {
           <div className="space-y-6">
             {comments.length > 0 ? (
               comments.map(comment => {
-                const userRank = commentRanks[comment.authorEmail];
+                const userRank = commentRanks[(comment.authorEmail || '').toLowerCase()];
                 const hasRank = Boolean(userRank);
                 return (
                 <div key={comment.id} className="flex space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
