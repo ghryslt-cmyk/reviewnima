@@ -1,7 +1,18 @@
 {
-  "version": 1788991106979,
-  "fetchedAt": "2026-09-09T21:58:26.979Z",
+  "version": 1788998810094,
+  "fetchedAt": "2026-09-10T00:06:50.094Z",
   "news": [
+    {
+      "title": "Shueisha Games Reveals Hoshin Engi Roguelite Game",
+      "description": "HOSHiN ENGi Re:surrection game launches for Switch 2, PS5, PC via Steam in 2027",
+      "fullDescription": "<cite>HOSHiN ENGi Re:surrection</cite> game launches for Switch 2, PS5, PC via Steam in 2027",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-09/shueisha-games-reveals-hoshin-engi-roguelite-game/.241588",
+      "pubDate": "Wed, 09 Sep 2026 19:41:47 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241588/unnamed.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241588"
+    },
     {
       "title": "Square Enix Unveils Final Fantasy VII Revelation Game's Trailer, Crisis Core: Final Fantasy VII Reunion Remaster's Switch 2 Version",
       "description": "Crisis Core: Final Fantasy VII Reunion launches on same day as announcement on Wednesday",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241567"
-    },
-    {
-      "title": "Professor Layton and The New World of Steam Game's Trailer Reveals December 10 Release",
-      "description": "Game launches worldwide for Switch 2, Switch, PS5, PC",
-      "fullDescription": "Game launches worldwide for Switch 2, Switch, PS5, PC",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-09/professor-layton-and-the-new-world-of-steam-game-trailer-reveals-december-10-release/.241569",
-      "pubDate": "Wed, 09 Sep 2026 11:11:15 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241569"
     }
   ],
   "total": 15
