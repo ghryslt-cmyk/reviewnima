@@ -11,9 +11,12 @@ permissions:
   pages: write
   id-token: write
 
+# PENTING: pakai concurrency group yang sama dengan deploy.yml ("pages").
+# Kalau beda, workflow ini dan deploy.yml bisa deploy ke GitHub Pages
+# bersamaan -> status deployment nyangkut di "updating_pages" lalu gagal/cancel.
 concurrency:
-  group: fetch-daily-data
-  cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   fetch-daily-data:
