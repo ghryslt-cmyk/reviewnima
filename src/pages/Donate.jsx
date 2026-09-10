@@ -148,6 +148,14 @@ const Donate = () => {
     [],
   );
 
+  // Beri tahu Navbar (dan komponen lain) supaya badge rank langsung di-refresh
+  // begitu rank aktif, tanpa perlu reload halaman.
+  useEffect(() => {
+    if (flowStatus === 'active' && currentRank) {
+      window.dispatchEvent(new Event('nima-rank-updated'));
+    }
+  }, [flowStatus, currentRank]);
+
   const copyText = async (text, field) => {
     if (!text) return;
     try {
@@ -520,7 +528,7 @@ const Donate = () => {
 
           {/* --------------------------------------------- Right: summary + notes */}
           <aside className="space-y-6">
-            <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-card dark:border-gray-800 dark:bg-gray-900 lg:sticky lg:top-20">
+            <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-card dark:border-gray-800 dark:bg-gray-900">
               <h3 className="mb-4 flex items-center gap-2 font-display text-base font-bold text-gray-900 dark:text-white">
                 <Crown size={18} className="text-brand-500" /> {t('donate.summaryTitle')}
               </h3>

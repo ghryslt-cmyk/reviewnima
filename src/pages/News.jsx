@@ -268,7 +268,7 @@ const News = () => {
           <div className="flex items-center justify-between">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <Newspaper className="text-white dark:text-gray-900" size={32} xs:size={36} sm:size={40} />
+                <Newspaper className="text-white dark:text-gray-900" size={32} xs:size={36} />
                 <h1 className="text-3xl xs:text-4xl sm:text-5xl font-bold text-white dark:text-gray-900">
                   {t('news.title')}
                 </h1>
@@ -574,7 +574,7 @@ const News = () => {
                     <span>{new Date(selectedNewsItem.pubDate).toLocaleDateString()}</span>
                   </div>
                 )}
-                <span className="text-gray-400">•</span>
+                <span className="text-gray-400">â€¢</span>
                 <span>{selectedNewsItem.category}</span>
               </div>
 

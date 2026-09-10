@@ -4,7 +4,7 @@ import { getAnimeById } from '../lib/anilist';
 import { getAnimeEpisodes, addAnimeEpisode, updateAnimeEpisode, deleteAnimeEpisode, getAnimeComments, addAnimeComment, deleteAnimeComment, addAnimeCommentReply, getAnimeCommentReplies, saveAnimeToProfile, removeAnimeFromProfile, getSavedAnime, reportAnime, getUserRankByEmail, isAdminEmail } from '../lib/firebase';
 import WatchLayout from '../components/WatchLayout';
 import { Play, ThumbsUp, ThumbsDown, Share, Bookmark, Flag, Loader2, X, AlertCircle, Heart, MessageSquare, Send, User, Trash2, Reply, Shield } from 'lucide-react';
-import { CrownMedallion, adminNameClass, AdminLabel } from '../components/AdminBadge';
+import { CrownMedallion, adminNameClass, AdminLabel, RankMedallion, RankLabel, rankNameClass, rankAvatarBgClass, rankGlowClass } from '../components/AdminBadge';
 import { useLanguage } from '../context/LanguageContext';
 import { useAuth } from '../context/AuthContext';
 import { useTranslation } from '../lib/translations';
@@ -122,7 +122,7 @@ const AnimeWatch = memo(() => {
   const handleDeleteComment = useCallback(async (commentId) => {
     if (!isAuthenticated) return;
     
-    if (!confirm('Are you sure you want to delete this comment?')) return;
+    if (!confirm(t('comments.confirmDelete'))) return;
     
     try {
       await deleteAnimeComment(id, commentId);
@@ -355,21 +355,21 @@ const AnimeWatch = memo(() => {
                 className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors"
               >
                 <Share size={18} />
-                <span>Share</span>
+                <span>{t('animeWatch.share')}</span>
               </button>
               <button
                 onClick={handleSave}
                 className={`flex items-center gap-2 px-4 py-2 ${isSaved ? 'bg-cyan-600 hover:bg-cyan-700' : 'bg-gray-800 hover:bg-gray-700'} text-white rounded-lg transition-colors`}
               >
                 <Bookmark size={18} />
-                <span>{isSaved ? 'Saved' : 'Save'}</span>
+                <span>{isSaved ? t('animeWatch.saved') : t('profile.save')}</span>
               </button>
               <button
                 onClick={() => setShowReportModal(true)}
                 className="flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors"
               >
                 <Flag size={18} />
-                <span>Report</span>
+                <span>{t('animeWatch.report')}</span>
               </button>
             </div>
 
@@ -452,7 +452,7 @@ const AnimeWatch = memo(() => {
                       <textarea
                         value={commentText}
                         onChange={(e) => setCommentText(e.target.value)}
-                        placeholder="Add a comment..."
+                        placeholder={t('comments.placeholder')}
                         className="w-full p-4 border-2 border-gray-700 rounded-lg bg-gray-900 text-white focus:ring-2 focus:ring-gray-500 focus:border-transparent resize-none"
                         rows="3"
                       />
@@ -463,7 +463,7 @@ const AnimeWatch = memo(() => {
                           className="flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 text-white disabled:bg-gray-800 disabled:text-gray-500 px-6 py-2 rounded-lg transition-colors"
                         >
                           <Send size={18} />
-                          <span>{submittingComment ? 'Sending...' : 'Send Comment'}</span>
+                          <span>{submittingComment ? t('comments.sending') : t('reviewDetail.sendComment')}</span>
                         </button>
                       </div>
                     </div>
@@ -472,7 +472,9 @@ const AnimeWatch = memo(() => {
               ) : (
                 <div className="mb-6 p-4 bg-gray-800 rounded-lg text-center border-2 border-gray-700">
                   <p className="text-white">
-                    Please <Link to="/login" className="text-cyan-400 hover:text-cyan-300 underline">login</Link> to leave a comment.
+                    {t('comments.loginPrefix')}{' '}
+                    <Link to="/login" className="text-cyan-400 hover:text-cyan-300 underline">{t('comments.loginWord')}</Link>{' '}
+                    {t('comments.loginSuffix')}
                   </p>
                 </div>
               )}
@@ -482,26 +484,26 @@ const AnimeWatch = memo(() => {
                 {comments.length > 0 ? (
                   comments.map(comment => {
                     const userRank = commentRanks[comment.authorEmail];
-                    const isAdmin = userRank === 'admin';
+                    const hasRank = Boolean(userRank);
                     return (
                     <div key={comment.id} className="flex space-x-4 p-4 bg-gray-800 rounded-lg">
                       <div className="relative">
                         {comment.authorPhotoURL ? (
-                          <div className={isAdmin ? 'relative' : ''}>
+                          <div className={hasRank ? 'relative' : ''}>
                             <img
                               src={comment.authorPhotoURL}
                               alt={comment.author}
-                              className={`w-10 h-10 rounded-full ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800' : ''}`}
+                              className={`w-10 h-10 rounded-full ${hasRank ? rankGlowClass(userRank) : ''}`}
                             />
-                            {isAdmin && (
-                              <CrownMedallion badgeClass="w-4 h-4" iconSize={8} stroke={3} />
+                            {hasRank && (
+                              <RankMedallion rank={userRank} badgeClass="w-4 h-4" iconSize={8} stroke={3} />
                             )}
                           </div>
                         ) : (
-                          <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-800 bg-yellow-600' : 'bg-cyan-600'}`}>
+                          <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${hasRank ? `${rankAvatarBgClass(userRank)} ${rankGlowClass(userRank)}` : 'bg-cyan-600'}`}>
                             {comment.author?.charAt(0) || 'U'}
-                            {isAdmin && (
-                              <CrownMedallion badgeClass="w-4 h-4" iconSize={8} stroke={3} />
+                            {hasRank && (
+                              <RankMedallion rank={userRank} badgeClass="w-4 h-4" iconSize={8} stroke={3} />
                             )}
                           </div>
                         )}
@@ -509,11 +511,11 @@ const AnimeWatch = memo(() => {
                       <div className="flex-grow">
                         <div className="flex items-center justify-between mb-2">
                           <div className="flex items-center space-x-2">
-                            <span className={`font-bold ${isAdmin ? adminNameClass : 'text-white'}`}>
+                            <span className={`font-bold ${hasRank ? rankNameClass(userRank) : 'text-white'}`}>
                               {comment.author}
                             </span>
-                            {isAdmin && (
-                              <AdminLabel />
+                            {hasRank && (
+                              <RankLabel rank={userRank} />
                             )}
                             <span className="text-sm text-gray-400">
                               {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}
@@ -523,7 +525,7 @@ const AnimeWatch = memo(() => {
                             <button
                               onClick={() => handleDeleteComment(comment.id)}
                               className="text-red-400 hover:text-red-300 transition-colors"
-                              title="Delete comment"
+                              title={t('comments.deleteComment')}
                             >
                               <Trash2 size={16} />
                             </button>
@@ -535,7 +537,7 @@ const AnimeWatch = memo(() => {
                             onClick={() => toggleReplies(comment.id)}
                             className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
                           >
-                            {showReplies[comment.id] ? 'Hide replies' : 'Show replies'}
+                            {showReplies[comment.id] ? t('comments.hideReplies') : t('comments.showReplies')}
                           </button>
                           {isAuthenticated && (
                             <button
@@ -546,7 +548,7 @@ const AnimeWatch = memo(() => {
                               className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors flex items-center space-x-1"
                             >
                               <Reply size={14} />
-                              <span>Reply</span>
+                              <span>{t('comments.reply')}</span>
                             </button>
                           )}
                         </div>
@@ -556,7 +558,7 @@ const AnimeWatch = memo(() => {
                             <textarea
                               value={replyText}
                               onChange={(e) => setReplyText(e.target.value)}
-                              placeholder="Write a reply..."
+                              placeholder={t('comments.replyPlaceholder')}
                               className="w-full p-3 border-2 border-gray-700 rounded-lg bg-gray-900 text-white focus:ring-2 focus:ring-gray-500 focus:border-transparent resize-none"
                               rows="2"
                             />
@@ -568,14 +570,14 @@ const AnimeWatch = memo(() => {
                                 }}
                                 className="px-3 py-1 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors text-sm"
                               >
-                                Cancel
+                                {t('comments.cancel')}
                               </button>
                               <button
                                 onClick={() => handleReply(comment.id)}
                                 disabled={submittingReply || !replyText.trim()}
                                 className="px-3 py-1 bg-cyan-600 hover:bg-cyan-700 text-white disabled:bg-gray-800 disabled:text-gray-500 rounded-lg transition-colors text-sm"
                               >
-                                {submittingReply ? 'Sending...' : 'Reply'}
+                                {submittingReply ? t('comments.sending') : t('comments.reply')}
                               </button>
                             </div>
                           </div>
@@ -627,7 +629,7 @@ const AnimeWatch = memo(() => {
                   })
                 ) : (
                   <div className="text-center py-8 text-gray-400">
-                    No comments yet. Be the first to comment!
+                    {t('comments.noComments')}
                   </div>
                 )}
               </div>
@@ -641,8 +643,8 @@ const AnimeWatch = memo(() => {
               <div className="flex items-start gap-4">
                 <AlertCircle className="text-yellow-500 flex-shrink-0 mt-1" size={32} />
                 <div>
-                  <h4 className="text-white font-bold text-lg mb-2">Important Notice</h4>
-                  <p className="text-gray-300 text-base leading-relaxed">Jika video eps anime yang kalian tonton tidak bisa berjalan maka limit Bandwidth sudah penuh, saya memakai free cloud storage jadi akan ada limit Bandwidth harian. Jika kalian ingin website ini bisa streaming semua anime tanpa limit Bandwidth harian, kalian bisa donasi di bawah ini....</p>
+                  <h4 className="text-white font-bold text-lg mb-2">{t('animeWatch.importantNotice')}</h4>
+                  <p className="text-gray-300 text-base leading-relaxed">{t('animeWatch.bandwidthNotice')}</p>
                 </div>
               </div>
             </div>
@@ -651,11 +653,11 @@ const AnimeWatch = memo(() => {
             <div className="bg-gradient-to-r from-cyan-600 to-teal-600 rounded-lg p-4 mb-4">
               <div className="flex items-center gap-3 mb-2">
                 <Heart className="text-white" size={20} />
-                <h4 className="text-white font-semibold">Dukung Kami</h4>
+                <h4 className="text-white font-semibold">{t('animeWatch.supportTitle')}</h4>
               </div>
-              <p className="text-gray-100 text-sm mb-3">Bantu website ini tetap hidup dengan donasi ikhlas. Dapatkan rank Donatur sebagai tanda terima kasih.</p>
+              <p className="text-gray-100 text-sm mb-3">{t('animeWatch.supportDesc')}</p>
               <Link to="/donate" className="block w-full px-4 py-2 bg-white text-center text-cyan-700 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Donasi Sekarang
+                {t('animeWatch.donateNow')}
               </Link>
             </div>
 
@@ -725,7 +727,7 @@ const AnimeWatch = memo(() => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
           <div className="bg-gray-800 rounded-2xl p-6 max-w-md w-full shadow-2xl animate-scale-in">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-xl font-bold text-white">Report Anime</h3>
+              <h3 className="text-xl font-bold text-white">{t('animeWatch.reportTitle')}</h3>
               <button
                 onClick={() => setShowReportModal(false)}
                 className="text-gray-400 hover:text-white"
@@ -736,12 +738,12 @@ const AnimeWatch = memo(() => {
             <div className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-2">
-                  Reason for reporting
+                  {t('animeWatch.reasonLabel')}
                 </label>
                 <textarea
                   value={reportReason}
                   onChange={(e) => setReportReason(e.target.value)}
-                  placeholder="Please describe the issue..."
+                  placeholder={t('animeWatch.reportPlaceholder')}
                   className="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-700 text-white resize-none"
                   rows="4"
                 />
@@ -751,14 +753,14 @@ const AnimeWatch = memo(() => {
                   onClick={() => setShowReportModal(false)}
                   className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-lg transition-colors"
                 >
-                  Cancel
+                  {t('comments.cancel')}
                 </button>
                 <button
                   onClick={handleReport}
                   disabled={submittingReport || !reportReason.trim()}
                   className="px-4 py-2 bg-red-600 hover:bg-red-700 disabled:bg-gray-600 text-white rounded-lg transition-colors"
                 >
-                  {submittingReport ? 'Submitting...' : 'Submit Report'}
+                  {submittingReport ? t('comments.sending') : t('animeWatch.sendReport')}
                 </button>
               </div>
             </div>

@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages, Clapperboard } from 'lucide-react';
+import { Home, BookOpen, User, LogOut, Shield, Menu, X, Heart, Newspaper, Globe, Languages, Clapperboard, Mail } from 'lucide-react';
 import { useState, useCallback, useEffect, memo } from 'react';
 import { getUserRank, getUserRankByEmail } from '../lib/firebase';
 import { RankMedallion, rankNameClass, rankGlowClass, rankAvatarBgClass } from './AdminBadge';
@@ -17,6 +17,7 @@ const Navbar = () => {
   const [animeDropdownOpen, setAnimeDropdownOpen] = useState(false);
   const [blogDropdownOpen, setBlogDropdownOpen] = useState(false);
   const [userRank, setUserRank] = useState(null);
+  const location = useLocation();
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -45,7 +46,6 @@ const Navbar = () => {
   }, [languageDropdownOpen, animeDropdownOpen, blogDropdownOpen]);
 
   const handleLanguageChange = useCallback((lang) => {
-    console.log('Navbar handleLanguageChange called with:', lang);
     changeLanguage(lang);
     setLanguageDropdownOpen(false);
   }, [changeLanguage]);
@@ -69,34 +69,45 @@ const Navbar = () => {
     { code: 'jp', name: '日本語', flag: '🇯🇵' }
   ];
 
-  // Fetch user rank
+  // Kelas bersama untuk item menu mobile supaya rapi dan konsisten.
+  const mobileLinkClass =
+    'flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800';
+
+  // Fetch user rank. Dijalankan ulang setiap kali halaman berpindah, saat window
+  // kembali fokus, dan saat event 'nima-rank-updated' dikirim (dikirim halaman
+  // /donate begitu rank baru aktif) - supaya badge rank langsung muncul tanpa
+  // perlu reload.
   useEffect(() => {
+    let alive = true;
+
     const fetchUserRank = async () => {
-      if (isAuthenticated && user?.uid) {
-        try {
-          let rank = await getUserRank(user.uid);
-          console.log('Navbar - User rank from UID:', rank, 'for user:', user.uid, 'email:', user.email);
-          
-          // Fallback to email-based lookup if rank not found
-          if (!rank && user?.email) {
-            rank = await getUserRankByEmail(user.email);
-            console.log('Navbar - User rank from email fallback:', rank, 'for email:', user.email);
-          }
-          
-          setUserRank(rank);
-        } catch (error) {
-          console.error('Error fetching user rank:', error);
+      if (!isAuthenticated || !user?.uid) {
+        if (alive) setUserRank(null);
+        return;
+      }
+      try {
+        let rank = await getUserRank(user.uid);
+
+        // Fallback to email-based lookup if rank not found
+        if (!rank && user?.email) {
+          rank = await getUserRankByEmail(user.email);
         }
-      } else {
-        setUserRank(null);
+
+        if (alive) setUserRank(rank);
+      } catch (error) {
+        console.error('Error fetching user rank:', error);
       }
     };
-    fetchUserRank();
-  }, [isAuthenticated, user]);
 
-  const isAdminRank = userRank === 'admin';
-  
-  console.log('Navbar - Render state:', { userRank, isAdminRank, user });
+    fetchUserRank();
+    window.addEventListener('nima-rank-updated', fetchUserRank);
+    window.addEventListener('focus', fetchUserRank);
+    return () => {
+      alive = false;
+      window.removeEventListener('nima-rank-updated', fetchUserRank);
+      window.removeEventListener('focus', fetchUserRank);
+    };
+  }, [isAuthenticated, user, location.pathname]);
 
   return (
     <nav className="glass relative z-50 border-b border-gray-200/70 text-gray-900 shadow-sm dark:border-gray-800/70 dark:text-white">
@@ -216,7 +227,7 @@ const Navbar = () => {
 
               <Link
                 to="/donate"
-                className="flex items-center space-x-2 rounded-lg bg-gradient-to-r from-rose-500 to-brand-600 px-3 py-2 font-semibold text-white shadow-sm transition-all duration-300 hover:scale-105"
+                className="flex items-center space-x-2 rounded-lg bg-brand-600 px-3 py-2 font-semibold text-white transition-all duration-300 hover:bg-brand-700"
               >
                 <Heart size={20} />
                 <span>{t('nav.donate')}</span>
@@ -228,10 +239,7 @@ const Navbar = () => {
             {/* Language Selector */}
             <div className="relative language-selector-container">
               <button
-                onClick={() => {
-                  console.log('Toggle dropdown, current:', languageDropdownOpen, 'new:', !languageDropdownOpen);
-                  setLanguageDropdownOpen(!languageDropdownOpen);
-                }}
+                onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
                 className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
               >
                 <Globe size={20} />
@@ -248,7 +256,6 @@ const Navbar = () => {
                       onClick={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
-                        console.log('Selected language:', lang.code, 'current language:', language);
                         handleLanguageChange(lang.code);
                       }}
                       className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
@@ -312,147 +319,69 @@ const Navbar = () => {
         
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
-            {/* Language Selector for Mobile */}
-            <div className="px-3 py-2">
-              <div className="flex items-center space-x-2 text-gray-900 dark:text-white mb-2">
-                <Globe size={20} />
-                <span className="font-medium">{t('nav.language')}</span>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {languages.map((lang) => (
-                  <button
-                    key={lang.code}
-                    onClick={() => {
-                      console.log('Mobile: Changing language to', lang.code);
-                      changeLanguage(lang.code);
-                    }}
-                    className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-300 ${
-                      language === lang.code
-                        ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900'
-                        : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white'
-                    }`}
-                  >
-                    <span>{lang.flag}</span>
-                    <span className="text-sm">{lang.code.toUpperCase()}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
+          <div className="md:hidden max-h-[calc(100dvh-4.5rem)] overflow-y-auto overscroll-contain border-t border-gray-200/80 pb-4 dark:border-gray-800">
+            <nav className="space-y-0.5 px-2 pt-3">
+              <Link to="/" onClick={handleMobileMenuToggle} className={mobileLinkClass}>
+                <Home size={18} />
+                <span>{t('nav.home')}</span>
+              </Link>
+              <Link to="/anime" onClick={handleMobileMenuToggle} className={mobileLinkClass}>
+                <Clapperboard size={18} />
+                <span>{t('nav.anime')}</span>
+              </Link>
+              <Link to="/news" onClick={handleMobileMenuToggle} className={mobileLinkClass}>
+                <Newspaper size={18} />
+                <span>{t('nav.news')}</span>
+              </Link>
+              <Link to="/reviews" onClick={handleMobileMenuToggle} className={mobileLinkClass}>
+                <BookOpen size={18} />
+                <span>{t('nav.reviews')}</span>
+              </Link>
+              <Link to="/top-favorites" onClick={handleMobileMenuToggle} className={mobileLinkClass}>
+                <Heart size={18} />
+                <span>{t('nav.favorites')}</span>
+              </Link>
+            </nav>
+
+            <div className="my-2.5 border-t border-dashed border-gray-200 dark:border-gray-800" />
             
-            <Link 
-              to="/" 
-              className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-              onClick={handleMobileMenuToggle}
-            >
-              <Home size={20} />
-              <span>{t('nav.home')}</span>
-            </Link>
-            
-            {/* Anime Section for Mobile */}
-            <div className="px-3 py-2">
-              <div className="flex items-center space-x-2 text-gray-900 dark:text-white mb-2">
-                <Clapperboard size={20} />
-                <span className="font-medium">{t('nav.anime')}</span>
-              </div>
-              <div className="pl-4 space-y-1">
-                <Link 
-                  to="/news" 
-                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                  onClick={handleMobileMenuToggle}
-                >
-                  <Newspaper size={18} />
-                  <span>{t('nav.news')}</span>
-                </Link>
-                <Link 
-                  to="/anime" 
-                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                  onClick={handleMobileMenuToggle}
-                >
-                  <Clapperboard size={18} />
-                  <span>{t('nav.anime')}</span>
-                </Link>
-                <Link 
-                  to="/reviews" 
-                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                  onClick={handleMobileMenuToggle}
-                >
-                  <BookOpen size={18} />
-                  <span>{t('nav.reviews')}</span>
-                </Link>
-                <Link 
-                  to="/top-favorites" 
-                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                  onClick={handleMobileMenuToggle}
-                >
-                  <Heart size={18} />
-                  <span>{t('nav.favorites')}</span>
-                </Link>
-              </div>
-            </div>
-            
-            {/* My Blog Section for Mobile */}
-            <div className="px-3 py-2">
-              <div className="flex items-center space-x-2 text-gray-900 dark:text-white mb-2">
-                <User size={20} />
-                <span className="font-medium">{t('nav.myBlog')}</span>
-              </div>
-              <div className="pl-4 space-y-1">
-                <Link 
-                  to="/contact" 
-                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                  onClick={handleMobileMenuToggle}
-                >
-                  <User size={18} />
-                  <span>{t('home.contactUs')}</span>
-                </Link>
-                <Link 
-                  to="/privacy" 
-                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                  onClick={handleMobileMenuToggle}
-                >
+            <nav className="space-y-0.5 px-2">
+              <Link to="/contact" onClick={handleMobileMenuToggle} className={mobileLinkClass}>
+                <Mail size={18} />
+                <span>{t('home.contactUs')}</span>
+              </Link>
+              <Link to="/privacy" onClick={handleMobileMenuToggle} className={mobileLinkClass}>
+                <Shield size={18} />
+                <span>{t('home.privacyPolicy')}</span>
+              </Link>
+              <Link to="/terms" onClick={handleMobileMenuToggle} className={mobileLinkClass}>
+                <BookOpen size={18} />
+                <span>{t('home.termsOfService')}</span>
+              </Link>
+              {isAdminUser && (
+                <Link to="/admin" onClick={handleMobileMenuToggle} className={mobileLinkClass}>
                   <Shield size={18} />
-                  <span>{t('home.privacyPolicy')}</span>
+                  <span>{t('nav.adminPanel')}</span>
                 </Link>
-                <Link 
-                  to="/terms" 
-                  className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                  onClick={handleMobileMenuToggle}
-                >
-                  <BookOpen size={18} />
-                  <span>{t('home.termsOfService')}</span>
+              )}
+              {isAuthenticated && (
+                <Link to="/profile" onClick={handleMobileMenuToggle} className={mobileLinkClass}>
+                  <User size={18} />
+                  <span>{t('nav.profile')}</span>
                 </Link>
-              </div>
+              )}
+            </nav>
+
+            <div className="mt-3 px-3">
+              <Link
+                to="/donate"
+                onClick={handleMobileMenuToggle}
+                className="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-700"
+              >
+                <Heart size={18} />
+                <span>{t('nav.donate')}</span>
+              </Link>
             </div>
-            
-            {isAdminUser && (
-              <Link 
-                to="/admin" 
-                className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                onClick={handleMobileMenuToggle}
-              >
-                <Shield size={20} />
-                <span>{t('nav.adminPanel')}</span>
-              </Link>
-            )}
-            {isAuthenticated && (
-              <Link 
-                to="/profile" 
-                className="flex items-center space-x-2 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-lg transition-all duration-300"
-                onClick={handleMobileMenuToggle}
-              >
-                <User size={20} />
-                <span>{t('nav.profile')}</span>
-              </Link>
-            )}
-            <Link
-              to="/donate"
-              className="flex items-center space-x-2 rounded-lg bg-gradient-to-r from-rose-500 to-brand-600 px-3 py-2 font-semibold text-white transition-all duration-300"
-              onClick={handleMobileMenuToggle}
-            >
-              <Heart size={20} />
-              <span>{t('nav.donate')}</span>
-            </Link>
           </div>
         )}
       </div>

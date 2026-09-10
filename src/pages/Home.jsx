@@ -168,13 +168,6 @@ const Home = memo(() => {
               <div className="px-4 py-3 text-sm text-gray-500">{t('home.noNews') || 'Loading news…'}</div>
             )}
           </div>
-          <Link
-            to="/news"
-            className="hidden shrink-0 items-center gap-1.5 bg-brand-gradient px-4 text-sm font-bold uppercase tracking-wide text-white transition-opacity hover:opacity-90 sm:flex sm:px-6"
-          >
-            <span className="hidden lg:inline">{t('nav.news')}</span>
-            <ChevronRight size={16} />
-          </Link>
         </div>
       </section>
 

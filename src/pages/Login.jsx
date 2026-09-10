@@ -43,7 +43,7 @@ const Login = () => {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-white dark:bg-black">
-        <Loader2 className="animate-spin text-gray-900 dark:text-white" size={40} sm:size={48} />
+        <Loader2 className="animate-spin text-gray-900 dark:text-white" size={40} />
       </div>
     );
   }
@@ -73,7 +73,7 @@ const Login = () => {
         >
           {isLoggingIn ? (
             <>
-              <Loader2 className="animate-spin" size={18} sm:size={20} />
+              <Loader2 className="animate-spin" size={18} />
               <span>{t('login.signingIn')}</span>
             </>
           ) : (

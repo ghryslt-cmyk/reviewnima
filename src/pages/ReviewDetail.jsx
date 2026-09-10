@@ -6,7 +6,7 @@ import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
 import { Star, Calendar, Clock, User, MessageSquare, Send, ExternalLink, Trash2, Reply, Shield } from 'lucide-react';
-import { CrownMedallion, adminNameClass, AdminLabel } from '../components/AdminBadge';
+import { CrownMedallion, adminNameClass, AdminLabel, RankMedallion, RankLabel, rankNameClass, rankAvatarBgClass, rankGlowClass } from '../components/AdminBadge';
 
 const ReviewDetail = () => {
   const { id } = useParams();
@@ -92,7 +92,7 @@ const ReviewDetail = () => {
   const handleDeleteComment = async (commentId) => {
     if (!isAuthenticated) return;
     
-    if (!confirm('Are you sure you want to delete this comment?')) return;
+    if (!confirm(t('comments.confirmDelete'))) return;
     
     try {
       await deleteComment(id, commentId);
@@ -364,26 +364,26 @@ const ReviewDetail = () => {
             {comments.length > 0 ? (
               comments.map(comment => {
                 const userRank = commentRanks[comment.authorEmail];
-                const isAdmin = userRank === 'admin';
+                const hasRank = Boolean(userRank);
                 return (
                 <div key={comment.id} className="flex space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                   <div className="relative">
                     {comment.authorPhotoURL ? (
-                      <div className={isAdmin ? 'relative' : ''}>
+                      <div className={hasRank ? 'relative' : ''}>
                         <img
                           src={comment.authorPhotoURL}
                           alt={comment.author}
-                          className={`w-10 h-10 rounded-full ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-700 dark:ring-offset-gray-700' : ''}`}
+                          className={`w-10 h-10 rounded-full ${hasRank ? rankGlowClass(userRank) : ''}`}
                         />
-                        {isAdmin && (
-                          <CrownMedallion badgeClass="w-4 h-4" iconSize={8} stroke={3} />
+                        {hasRank && (
+                          <RankMedallion rank={userRank} badgeClass="w-4 h-4" iconSize={8} stroke={3} />
                         )}
                       </div>
                     ) : (
-                      <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${isAdmin ? 'ring-2 ring-yellow-400 ring-offset-2 ring-offset-gray-700 dark:ring-offset-gray-700 bg-yellow-600' : 'bg-blue-600'}`}>
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold ${hasRank ? `${rankAvatarBgClass(userRank)} ${rankGlowClass(userRank)}` : 'bg-blue-600'}`}>
                         {comment.author?.charAt(0) || 'U'}
-                        {isAdmin && (
-                          <CrownMedallion badgeClass="w-4 h-4" iconSize={8} stroke={3} />
+                        {hasRank && (
+                          <RankMedallion rank={userRank} badgeClass="w-4 h-4" iconSize={8} stroke={3} />
                         )}
                       </div>
                     )}
@@ -391,11 +391,11 @@ const ReviewDetail = () => {
                   <div className="flex-grow">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center space-x-2">
-                        <span className={`font-bold ${isAdmin ? adminNameClass : 'text-gray-900 dark:text-white'}`}>
+                        <span className={`font-bold ${hasRank ? rankNameClass(userRank) : 'text-gray-900 dark:text-white'}`}>
                           {comment.author}
                         </span>
-                        {isAdmin && (
-                          <AdminLabel />
+                        {hasRank && (
+                          <RankLabel rank={userRank} />
                         )}
                         <span className="text-sm text-gray-500 dark:text-gray-400">
                           {new Date(comment.createdAt?.toDate?.() || comment.createdAt).toLocaleDateString()}
@@ -405,7 +405,7 @@ const ReviewDetail = () => {
                         <button
                           onClick={() => handleDeleteComment(comment.id)}
                           className="text-red-400 hover:text-red-300 transition-colors"
-                          title="Delete comment"
+                          title={t('comments.deleteComment')}
                         >
                           <Trash2 size={16} />
                         </button>
@@ -417,7 +417,7 @@ const ReviewDetail = () => {
                         onClick={() => toggleReplies(comment.id)}
                         className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors"
                       >
-                        {showReplies[comment.id] ? 'Hide replies' : 'Show replies'}
+                        {showReplies[comment.id] ? t('comments.hideReplies') : t('comments.showReplies')}
                       </button>
                       {isAuthenticated && (
                         <button
@@ -428,7 +428,7 @@ const ReviewDetail = () => {
                           className="text-sm text-cyan-400 hover:text-cyan-300 transition-colors flex items-center space-x-1"
                         >
                           <Reply size={14} />
-                          <span>Reply</span>
+                          <span>{t('comments.reply')}</span>
                         </button>
                       )}
                     </div>
@@ -438,7 +438,7 @@ const ReviewDetail = () => {
                         <textarea
                           value={replyText}
                           onChange={(e) => setReplyText(e.target.value)}
-                          placeholder="Write a reply..."
+                          placeholder={t('comments.replyPlaceholder')}
                           className="w-full p-3 border-2 border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent resize-none"
                           rows="2"
                         />
@@ -457,7 +457,7 @@ const ReviewDetail = () => {
                             disabled={submittingReply || !replyText.trim()}
                             className="px-3 py-1 bg-cyan-600 hover:bg-cyan-700 text-white disabled:bg-gray-400 disabled:text-gray-500 rounded-lg transition-colors text-sm"
                           >
-                            {submittingReply ? 'Sending...' : 'Reply'}
+                            {submittingReply ? t('comments.sending') : t('comments.reply')}
                           </button>
                         </div>
                       </div>

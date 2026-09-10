@@ -84,7 +84,7 @@ const Reviews = memo(() => {
         <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8 sm:mb-12">
             <h1 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-4 flex items-center justify-center">
-              <BookOpen className="mr-3 text-black dark:text-white" size={32} sm:size={40} />
+              <BookOpen className="mr-3 text-black dark:text-white" size={32} />
               {t('reviews.title')}
             </h1>
             <p className="text-gray-700 dark:text-gray-300 text-base sm:text-lg">
@@ -95,7 +95,7 @@ const Reviews = memo(() => {
         {/* Search Bar */}
         <div className="mb-6 sm:mb-8">
           <div className="relative max-w-md mx-auto">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400" size={18} sm:size={20} />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400" size={18} />
             <input
               type="text"
               placeholder={t('reviews.searchPlaceholder')}
@@ -132,7 +132,7 @@ const Reviews = memo(() => {
           </div>
         ) : (
           <div className="text-center py-12 sm:py-16 bg-white dark:bg-black rounded-xl shadow-lg border-2 border-black dark:border-white">
-            <BookOpen size={48} sm:size={64} className="mx-auto text-gray-500 dark:text-gray-400 mb-4" />
+            <BookOpen size={48} className="mx-auto text-gray-500 dark:text-gray-400 mb-4" />
             <p className="text-black dark:text-white text-base sm:text-lg">
               {t('reviews.noReviewsFound')}
             </p>

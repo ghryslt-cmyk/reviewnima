@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback, memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { useLanguage } from '../context/LanguageContext';
+import { useTranslation } from '../lib/translations';
 import { addReview, getReviews, deleteReview, toggleFavorite, getVisitorCount, updateReview, addAnime, getAllAnime, deleteAnime, addAnimeEpisode, getAnimeEpisodes, updateAnimeEpisode, deleteAnimeEpisode, updateUserRank, getUserByEmail, getUserByUid, getAllUsersWithRanks, removeUserRank, addAnnouncement, getAnnouncements, deleteAnnouncement, setDoc, doc, db } from '../lib/firebase';
 import { searchAnime, getAnimeById } from '../lib/anilist';
 import { Shield, Search, Plus, Star, X, Loader2, Save, Heart, Users, Edit, Film, Trash2, Play, ChevronLeft, ChevronRight, Crown, Megaphone, Fingerprint, Mail } from 'lucide-react';
@@ -8,6 +10,8 @@ import { rankConfig } from '../components/AdminBadge';
 
 const Admin = memo(() => {
   const { user, checkAdmin, isAuthenticated } = useAuth();
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
   const navigate = useNavigate();
   const location = useLocation();
   const [isAdminUser, setIsAdminUser] = useState(false);
@@ -135,7 +139,7 @@ const Admin = memo(() => {
   };
 
   const handleRemoveRank = async (userId) => {
-    if (!confirm("Remove this user's rank?")) return;
+    if (!confirm(t('admin.confirmRemoveRank'))) return;
     try {
       await removeUserRank(userId);
       const rankedList = await getAllUsersWithRanks();
@@ -181,7 +185,7 @@ const Admin = memo(() => {
   };
 
   const handleDeleteAnnouncement = async (id) => {
-    if (!confirm('Delete this announcement?')) return;
+    if (!confirm(t('admin.confirmDeleteAnnouncement'))) return;
     try {
       await deleteAnnouncement(id);
       const list = await getAnnouncements();
@@ -339,7 +343,7 @@ const Admin = memo(() => {
   }, []);
 
   const handleDeleteEpisode = useCallback(async (episodeId) => {
-    if (!window.confirm('Are you sure you want to delete this episode?')) return;
+    if (!window.confirm(t('admin.confirmDeleteEpisode'))) return;
     
     try {
       await deleteAnimeEpisode(selectedAnimeForManagement.id.toString(), episodeId);
@@ -356,7 +360,7 @@ const Admin = memo(() => {
   }, [selectedAnimeForManagement]);
 
   const handleDeleteAnime = useCallback(async (animeId) => {
-    if (!window.confirm('Are you sure you want to delete this anime and all its episodes?')) return;
+    if (!window.confirm(t('admin.confirmDeleteAnime'))) return;
     
     try {
       await deleteAnime(animeId);
@@ -439,7 +443,7 @@ const Admin = memo(() => {
   }, [selectedAnime, rating, reviewTextId, reviewTextEn, reviewTextJp, user?.email, editingReview]);
 
   const handleDeleteReview = useCallback(async (reviewId) => {
-    if (!window.confirm('Are you sure you want to delete this review?')) return;
+    if (!window.confirm(t('admin.confirmDeleteReview'))) return;
     
     try {
       await deleteReview(reviewId);
@@ -492,7 +496,7 @@ const Admin = memo(() => {
       <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-2 flex items-center">
-            <Shield className="mr-2 sm:mr-3 text-black dark:text-white" size={32} sm:size={40} />
+            <Shield className="mr-2 sm:mr-3 text-black dark:text-white" size={32} />
             Admin Panel
           </h1>
           <p className="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
@@ -551,7 +555,7 @@ const Admin = memo(() => {
           <div className="flex items-center justify-between">
             <div>
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 flex items-center">
-                <Users className="mr-2" size={24} sm:size={28} />
+                <Users className="mr-2" size={24} />
                 Total Visitors
               </h2>
               <p className="text-blue-100 dark:text-blue-200 text-sm sm:text-base">
@@ -572,7 +576,7 @@ const Admin = memo(() => {
             {/* Add Review Form */}
             <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-gray-200 dark:border-gray-800">
           <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 sm:mb-6 flex items-center">
-            <Plus className="mr-2 text-black dark:text-white" size={20} sm:size={24} />
+            <Plus className="mr-2 text-black dark:text-white" size={20} />
             {editingReview ? 'Edit Review' : 'Add New Review'}
           </h2>
 
@@ -593,7 +597,7 @@ const Admin = memo(() => {
             <form onSubmit={handleSearch} className="mb-4 sm:mb-6">
               <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
                 <div className="flex-grow relative">
-                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400" size={18} sm:size={20} />
+                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400" size={18} />
                   <input
                     type="text"
                     value={searchTerm}
@@ -639,7 +643,7 @@ const Admin = memo(() => {
                           </span>
                           {anime.episodes && (
                             <span className="text-sm text-gray-600 dark:text-gray-400">
-                              • {anime.episodes} eps
+                              â€¢ {anime.episodes} eps
                             </span>
                           )}
                         </div>
@@ -740,7 +744,7 @@ const Admin = memo(() => {
                 <textarea
                   value={reviewTextJp}
                   onChange={(e) => setReviewTextJp(e.target.value)}
-                  placeholder="ここに詳細なレビューを書いてください..."
+                  placeholder="ã“ã“ã«è©³ç´°ãªãƒ¬ãƒ“ãƒ¥ãƒ¼ã‚’æ›¸ã„ã¦ãã ã•ã„..."
                   className="w-full p-4 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent resize-none"
                   rows="6"
                 />
@@ -778,7 +782,7 @@ const Admin = memo(() => {
                   className="ml-4 flex items-center space-x-2 bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300"
                 >
                   <X size={20} />
-                  <span>Cancel Edit</span>
+                  <span>{t('admin.cancelEdit')}</span>
                 </button>
               )}
             </form>
@@ -859,14 +863,14 @@ const Admin = memo(() => {
             {/* Add Anime Sub-tab */}
             <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border-2 border-gray-200 dark:border-gray-800">
               <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 sm:mb-6 flex items-center">
-                <Search className="mr-2 text-black dark:text-white" size={20} sm:size={24} />
+                <Search className="mr-2 text-black dark:text-white" size={20} />
                 Search Anime from AniList
               </h2>
 
               <form onSubmit={handleAnimeSearch} className="mb-4 sm:mb-6">
                 <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
                   <div className="flex-grow relative">
-                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400" size={18} sm:size={20} />
+                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400" size={18} />
                     <input
                       type="text"
                       value={animeSearchTerm}
@@ -911,7 +915,7 @@ const Admin = memo(() => {
                             </span>
                             {anime.episodes && (
                               <span className="text-sm text-gray-600 dark:text-gray-400">
-                                • {anime.episodes} eps
+                                â€¢ {anime.episodes} eps
                               </span>
                             )}
                           </div>
@@ -928,7 +932,7 @@ const Admin = memo(() => {
               <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border-2 border-gray-200 dark:border-gray-800">
                 <div className="flex items-start justify-between mb-6">
                   <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white flex items-center">
-                    <Film className="mr-2 text-black dark:text-white" size={20} sm:size={24} />
+                    <Film className="mr-2 text-black dark:text-white" size={20} />
                     Manage Episodes
                   </h2>
                   <button
@@ -995,7 +999,7 @@ const Admin = memo(() => {
                         type="text"
                         value={episodeTitle}
                         onChange={(e) => setEpisodeTitle(e.target.value)}
-                        placeholder="Episode title"
+                        placeholder={t('admin.episodeTitle')}
                         className="w-full px-4 py-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent"
                       />
                     </div>
@@ -1009,7 +1013,7 @@ const Admin = memo(() => {
                       type="text"
                       value={videoUrl}
                       onChange={(e) => setVideoUrl(e.target.value)}
-                      placeholder="https://www.youtube.com/embed/... or any video embed URL"
+                      placeholder={t('admin.videoUrlPlaceholder')}
                       className="w-full px-4 py-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent"
                       required
                     />
@@ -1025,7 +1029,7 @@ const Admin = memo(() => {
                     <textarea
                       value={episodeReview}
                       onChange={(e) => setEpisodeReview(e.target.value)}
-                      placeholder="Write your review for this episode..."
+                      placeholder={t('admin.episodeReviewPlaceholder')}
                       className="w-full px-4 py-2 border-2 border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-black text-black dark:text-white focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent resize-none"
                       rows="4"
                     />
@@ -1130,7 +1134,7 @@ const Admin = memo(() => {
             {/* Manage Anime */}
             <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border-2 border-gray-200 dark:border-gray-800">
               <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 sm:mb-6 flex items-center">
-                <Film className="mr-2 text-black dark:text-white" size={20} sm:size={24} />
+                <Film className="mr-2 text-black dark:text-white" size={20} />
                 All Anime ({allAnimeList.length})
               </h2>
               
@@ -1185,7 +1189,7 @@ const Admin = memo(() => {
               <div className="bg-gray-50 dark:bg-gray-900 rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border-2 border-gray-200 dark:border-gray-800">
                 <div className="flex items-center justify-between mb-6">
                   <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white flex items-center">
-                    <Film className="mr-2 text-black dark:text-white" size={20} sm:size={24} />
+                    <Film className="mr-2 text-black dark:text-white" size={20} />
                     Episodes for {selectedManageAnime.animeData?.title?.english || selectedManageAnime.animeData?.title?.romaji}
                   </h2>
                 </div>
@@ -1340,7 +1344,7 @@ const Admin = memo(() => {
               </div>
               <div className="lg:col-span-2">
                 <label className="mb-1.5 block text-sm font-semibold">Message *</label>
-                <textarea value={announcementMessage} onChange={(e) => setAnnouncementMessage(e.target.value)} rows={3} placeholder="Tulis pengumuman untuk pengunjung website…" className="w-full rounded-lg border-2 border-gray-300 bg-white px-4 py-2.5 text-black focus:border-transparent focus:ring-2 focus:ring-brand-500 dark:border-gray-700 dark:bg-black dark:text-white" />
+                <textarea value={announcementMessage} onChange={(e) => setAnnouncementMessage(e.target.value)} rows={3} placeholder="Tulis pengumuman untuk pengunjung websiteâ€¦" className="w-full rounded-lg border-2 border-gray-300 bg-white px-4 py-2.5 text-black focus:border-transparent focus:ring-2 focus:ring-brand-500 dark:border-gray-700 dark:bg-black dark:text-white" />
               </div>
               <div>
                 <label className="mb-1.5 block text-sm font-semibold">Expires At (optional)</label>

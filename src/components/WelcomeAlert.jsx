@@ -73,6 +73,17 @@ const PrivacyContent = ({ language }) => {
         </div>
 
         <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('privacy.donationsTitle')}</h2>
+          <p className="text-gray-700 mb-3">{t('privacy.donationsDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>{t('privacy.donationsUid')}</li>
+            <li>{t('privacy.donationsData')}</li>
+            <li>{t('privacy.donationsHistory')}</li>
+          </ul>
+          <p className="text-gray-700 mt-3">{t('privacy.donationsUidNote')}</p>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
           <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('privacy.assetCredits')}</h2>
           <p className="text-gray-700 mb-3">{t('privacy.assetCreditsDesc')}</p>
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
@@ -187,6 +198,17 @@ const TermsContent = ({ language }) => {
         </div>
 
         <div className="bg-gray-50 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.donationsTitle')}</h2>
+          <p className="text-gray-700 mb-3">{t('terms.donationsDesc')}</p>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>{t('terms.donationsNoPerks')}</li>
+            <li>{t('terms.donationsRefund')}</li>
+            <li>{t('terms.donationsUidResponsibility')}</li>
+            <li>{t('terms.donationsChanges')}</li>
+          </ul>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
           <h2 className="text-xl font-semibold text-gray-900 mb-3">{t('terms.contactUs')}</h2>
           <p className="text-gray-700">{t('terms.contactUsDesc')}</p>
         </div>
@@ -209,7 +231,7 @@ const WelcomeAlert = memo(() => {
       subtitle: 'Website ini adalah ciptaan Morviss',
       description: 'Website ini menyediakan tambahan informasi dari konten yang Morviss lakukan dan tambahan informasi mengenai dunia anime.',
       credits: 'Kredit dan Informasi',
-      creditsText: 'Silakan baca halaman Kebijakan Privasi dan Syarat & Ketentuan untuk informasi lengkap mengenai kredit aset dan penggunaan website ini.',
+      creditsText: 'Silakan baca halaman Kebijakan Privasi dan Syarat & Ketentuan untuk informasi lengkap mengenai kredit aset, donasi sukarela (Trakteer), rank Donatur, dan penggunaan website ini.',
       loginPrompt: 'Login untuk Pengalaman Lengkap',
       loginText: 'Silakan login dengan akun Google Anda untuk meninggalkan komentar dan berinteraksi dengan komunitas.',
       privacyRead: 'Saya telah membaca Kebijakan Privasi',
@@ -217,14 +239,15 @@ const WelcomeAlert = memo(() => {
       continueBtn: 'Lanjut ke Website',
       closeDisabled: 'Harap baca Kebijakan Privasi dan Syarat & Ketentuan terlebih dahulu',
       viewPrivacy: 'Lihat Kebijakan Privasi',
-      viewTerms: 'Lihat Syarat & Ketentuan'
+      viewTerms: 'Lihat Syarat & Ketentuan',
+      loginBtn: 'Login'
     },
     en: {
       title: 'Welcome to ReviewNima!',
       subtitle: 'This website is created by Morviss',
       description: 'This website provides additional information from the content Morviss creates and additional information about the anime world.',
       credits: 'Credits and Information',
-      creditsText: 'Please read the Privacy Policy and Terms & Conditions pages for complete information about asset credits and website usage.',
+      creditsText: 'Please read the Privacy Policy and Terms & Conditions pages for complete information about asset credits, voluntary donations (Trakteer), the Donatur rank, and website usage.',
       loginPrompt: 'Login for Full Experience',
       loginText: 'Please login with your Google account to leave comments and interact with the community.',
       privacyRead: 'I have read the Privacy Policy',
@@ -232,14 +255,15 @@ const WelcomeAlert = memo(() => {
       continueBtn: 'Continue to Website',
       closeDisabled: 'Please read the Privacy Policy and Terms & Conditions first',
       viewPrivacy: 'View Privacy Policy',
-      viewTerms: 'View Terms & Conditions'
+      viewTerms: 'View Terms & Conditions',
+      loginBtn: 'Login'
     },
     jp: {
       title: 'ReviewNimaへようこそ！',
       subtitle: 'このウェブサイトはMorvissによって作成されました',
       description: 'このウェブサイトは、Morvissが作成するコンテンツからの追加情報とアニメの世界に関する追加情報を提供します。',
       credits: 'クレジットと情報',
-      creditsText: 'アセットクレジットとウェブサイトの使用に関する完全な情報については、プライバシーポリシーと利用規約のページをお読みください。',
+      creditsText: 'アセットクレジット、任意の寄付（Trakteer）、Donaturランク、ウェブサイトの使用に関する完全な情報については、プライバシーポリシーと利用規約のページをお読みください。',
       loginPrompt: '完全なエクスペリエンスのためにログイン',
       loginText: 'コメントを残してコミュニティと対話するには、Googleアカウントでログインしてください。',
       privacyRead: 'プライバシーポリシーを読みました',
@@ -247,7 +271,8 @@ const WelcomeAlert = memo(() => {
       continueBtn: 'ウェブサイトに続く',
       closeDisabled: '最初にプライバシーポリシーと利用規約をお読みください',
       viewPrivacy: 'プライバシーポリシーを表示',
-      viewTerms: '利用規約を表示'
+      viewTerms: '利用規約を表示',
+      loginBtn: 'ログイン'
     }
   };
 
@@ -384,7 +409,7 @@ const WelcomeAlert = memo(() => {
               className="inline-flex items-center px-4 py-2 bg-gray-700 hover:bg-gray-800 text-white rounded-lg transition-colors text-sm font-medium"
             >
               <User className="w-4 h-4 mr-2" />
-              Login
+              {t.loginBtn}
             </Link>
           </div>
 

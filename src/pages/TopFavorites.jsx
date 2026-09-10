@@ -41,9 +41,9 @@ const TopFavorites = () => {
       <div className="bg-black dark:bg-white text-white dark:text-black py-12 sm:py-20 border-b-4 border-black dark:border-white">
         <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-4">
-            <Sparkles size={24} sm:size={32} className="text-white dark:text-black animate-spin-slow" />
-            <Star size={24} sm:size={32} className="text-white dark:text-black animate-pulse" />
-            <Sparkles size={24} sm:size={32} className="text-white dark:text-black animate-spin-slow" />
+            <Sparkles size={24} className="text-white dark:text-black animate-spin-slow" />
+            <Star size={24} className="text-white dark:text-black animate-pulse" />
+            <Sparkles size={24} className="text-white dark:text-black animate-spin-slow" />
           </div>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white dark:text-black animate-fade-in">
             {t('topFavorites.title')}

@@ -163,7 +163,7 @@ const Profile = () => {
               )}
               <button
                 onClick={() => setEditingPhoto(true)}
-                className="absolute bottom-0 right-0 bg-black dark:bg-white text-white dark:text-black p-2 rounded-full shadow-lg hover:scale-110 transition-transform"
+                className="absolute bottom-0 right-0 bg-brand-gradient text-white p-2 rounded-full shadow-glow hover:scale-110 transition-transform"
               >
                 <Camera size={16} />
               </button>
@@ -181,9 +181,9 @@ const Profile = () => {
                     />
                     <button
                       onClick={handleUpdateName}
-                      className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600"
+                      className="bg-brand-gradient text-white px-3 py-1 rounded hover:opacity-90 transition-opacity"
                     >
-                      Save
+                      {t('profile.save')}
                     </button>
                     <button
                       onClick={() => {
@@ -192,7 +192,7 @@ const Profile = () => {
                       }}
                       className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
                     >
-                      Cancel
+                      {t('profile.cancel')}
                     </button>
                   </div>
                 ) : (
@@ -218,11 +218,11 @@ const Profile = () => {
               <div className="mt-3 flex flex-col items-center gap-2 md:items-start">
                 <button
                   onClick={handleCopyUid}
-                  title="Copy User UID"
+                  title={t('profile.copyUidTitle')}
                   className="group inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs text-gray-600 transition-colors hover:border-brand-300 hover:bg-brand-50 hover:text-brand-600 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-brand-500/40 dark:hover:bg-brand-500/10 dark:hover:text-brand-300"
                 >
                   <Fingerprint size={14} className="text-brand-500 dark:text-brand-400" />
-                  <span className="font-mono max-w-[180px] truncate sm:max-w-[280px]">{user?.uid || '—'}</span>
+                  <span className="font-mono max-w-[180px] truncate sm:max-w-[280px]">{user?.uid || 'â€”'}</span>
                   {copiedUid ? (
                     <Check size={14} className="text-emerald-500" />
                   ) : (
@@ -230,7 +230,7 @@ const Profile = () => {
                   )}
                 </button>
                 {copiedUid && (
-                  <span className="text-[11px] font-medium text-emerald-500">UID copied to clipboard!</span>
+                  <span className="text-[11px] font-medium text-emerald-500">{t('profile.uidCopied')}</span>
                 )}
               </div>
             </div>
@@ -241,7 +241,7 @@ const Profile = () => {
         <div className="mb-6 overflow-hidden rounded-xl border-2 border-brand-200 bg-gradient-to-r from-brand-50 to-cyan-50 p-4 dark:border-brand-900/60 dark:from-brand-500/10 dark:to-cyan-500/10 sm:mb-8 sm:p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
             <div className="flex items-center gap-3">
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-rose-500 to-brand-600 text-white shadow-glow">
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-brand-gradient text-white shadow-glow">
                 <Heart size={22} />
               </span>
               <div>
@@ -253,11 +253,11 @@ const Profile = () => {
               <div className="text-xs text-gray-600 dark:text-gray-400">
                 {t('profile.donatedTotal')}:{' '}
                 <b className="text-gray-900 dark:text-white">{formatRupiah(donationSummary.total)}</b>
-                {donationSummary.count > 0 ? ` · ${donationSummary.count}x` : ''}
+                {donationSummary.count > 0 ? ` Â· ${donationSummary.count}x` : ''}
               </div>
               <Link
                 to="/donate"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-rose-500 to-brand-600 px-4 py-2.5 text-sm font-bold text-white transition-transform hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-brand-gradient px-4 py-2.5 text-sm font-bold text-white transition-transform hover:scale-105"
               >
                 <Gem size={16} /> {t('profile.supportCta')}
               </Link>
@@ -270,12 +270,12 @@ const Profile = () => {
         {editingPhoto && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
             <div className="bg-white dark:bg-black rounded-xl p-6 sm:p-8 max-w-md w-full border-2 border-black dark:border-white">
-              <h3 className="text-xl font-bold text-black dark:text-white mb-4">Update Profile Photo</h3>
+              <h3 className="text-xl font-bold text-black dark:text-white mb-4">{t('profile.updatePhoto')}</h3>
               <input
                 type="text"
                 value={newPhotoUrl}
                 onChange={(e) => setNewPhotoUrl(e.target.value)}
-                placeholder="Enter image URL"
+                placeholder={t('profile.imageUrlPlaceholder')}
                 className="w-full px-4 py-2 border-2 border-black dark:border-white rounded-lg bg-white dark:bg-black text-black dark:text-white mb-4"
               />
               {newPhotoUrl && (
@@ -296,13 +296,13 @@ const Profile = () => {
                   }}
                   className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600"
                 >
-                  Cancel
+                  {t('profile.cancel')}
                 </button>
                 <button
                   onClick={handleUpdatePhoto}
-                  className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+                  className="px-4 py-2 bg-brand-gradient text-white rounded-lg hover:opacity-90 transition-opacity"
                 >
-                  Save
+                  {t('profile.save')}
                 </button>
               </div>
             </div>
@@ -317,7 +317,7 @@ const Profile = () => {
                 <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">{t('profile.reviewsRead')}</p>
                 <p className="text-2xl sm:text-3xl font-bold">{userReviews.length}</p>
               </div>
-              <BookOpen size={24} sm:size={32} className="text-gray-500 dark:text-gray-500" />
+              <BookOpen size={24} className="text-gray-500 dark:text-gray-500" />
             </div>
           </div>
           
@@ -327,29 +327,29 @@ const Profile = () => {
                 <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">{t('profile.accountStatus')}</p>
                 <p className="text-2xl sm:text-3xl font-bold">{t('profile.active')}</p>
               </div>
-              <User size={24} sm:size={32} className="text-gray-500 dark:text-gray-500" />
+              <User size={24} className="text-gray-500 dark:text-gray-500" />
             </div>
           </div>
           
           <div className="bg-gray-800 dark:bg-gray-200 rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-black border-2 border-gray-800 dark:border-gray-200">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">Rank</p>
+                <p className="text-gray-400 dark:text-gray-600 text-xs sm:text-sm mb-1">{t('profile.rank')}</p>
                 <p className="text-lg sm:text-xl font-bold">
-                  {userRank ? userRank.toUpperCase() : 'None'}
+                  {userRank ? userRank.toUpperCase() : t('profile.none')}
                 </p>
               </div>
-              <Crown size={24} sm:size={32} className="text-gray-500 dark:text-gray-500" />
+              <Crown size={24} className="text-gray-500 dark:text-gray-500" />
             </div>
           </div>
 
           <div className="bg-black dark:bg-black rounded-xl shadow-lg p-4 sm:p-6 text-white dark:text-white border-2 border-gray-700 dark:border-gray-300">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-gray-300 dark:text-gray-700 text-xs sm:text-sm mb-1">Saved Anime</p>
+                <p className="text-gray-300 dark:text-gray-700 text-xs sm:text-sm mb-1">{t('profile.savedAnime')}</p>
                 <p className="text-2xl sm:text-3xl font-bold">{savedAnime.length}</p>
               </div>
-              <Play size={24} sm:size={32} className="text-gray-400 dark:text-gray-600" />
+              <Play size={24} className="text-gray-400 dark:text-gray-600" />
             </div>
           </div>
         </div>
@@ -358,7 +358,7 @@ const Profile = () => {
         <div className="bg-white dark:bg-white rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 border-2 border-black dark:border-white">
           <h2 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 sm:mb-6 flex items-center">
             <Play className="mr-3 text-black dark:text-white" size={24} />
-            Saved Anime
+            {t('profile.savedAnime')}
           </h2>
           
           {savedAnime.length > 0 ? (
@@ -391,8 +391,8 @@ const Profile = () => {
             </div>
           ) : (
             <div className="text-center py-6 sm:py-8 text-gray-500 dark:text-gray-400">
-              <Play size={32} sm:size={48} className="mx-auto mb-4 text-gray-400" />
-              <p className="text-sm sm:text-base">No saved anime yet</p>
+              <Play size={32} className="mx-auto mb-4 text-gray-400" />
+              <p className="text-sm sm:text-base">{t('profile.noSavedAnime')}</p>
             </div>
           )}
         </div>
@@ -422,7 +422,7 @@ const Profile = () => {
                       {review.animeData?.title?.english || review.animeData.title?.romaji}
                     </h3>
                     <div className="flex items-center space-x-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                      <Star size={12} sm:size={16} className="text-black dark:text-white" fill="currentColor" />
+                      <Star size={12} className="text-black dark:text-white" fill="currentColor" />
                       <span>{review.rating}/10</span>
                     </div>
                   </div>
@@ -434,7 +434,7 @@ const Profile = () => {
             </div>
           ) : (
             <div className="text-center py-6 sm:py-8 text-gray-500 dark:text-gray-400">
-              <BookOpen size={32} sm:size={48} className="mx-auto mb-4 text-gray-400" />
+              <BookOpen size={32} className="mx-auto mb-4 text-gray-400" />
               <p className="text-sm sm:text-base">{t('profile.noReviewsViewed')}</p>
             </div>
           )}

@@ -141,6 +141,19 @@ const Terms = () => {
           </div>
 
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
+            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">{t('terms.donationsTitle')}</h2>
+            <div className="text-gray-600 dark:text-gray-400 space-y-3">
+              <p>{t('terms.donationsDesc')}</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>{t('terms.donationsNoPerks')}</li>
+                <li>{t('terms.donationsRefund')}</li>
+                <li>{t('terms.donationsUidResponsibility')}</li>
+                <li>{t('terms.donationsChanges')}</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
             <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">{t('terms.contactUs')}</h2>
             <p className="text-gray-600 dark:text-gray-400">
               {t('terms.contactUsDesc')}
