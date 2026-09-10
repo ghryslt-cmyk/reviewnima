@@ -1,0 +1,18 @@
+name = "nimarank-worker"
+main = "index.js"
+compatibility_date = "2024-11-01"
+workers_dev = true
+
+# Public thresholds for the donation tiers (in IDR). Keep these in sync with
+# the frontend env values (VITE_DONATUR_MIN / VITE_DONATUR_PLUS_MIN).
+[vars]
+DONATUR_MIN = "5000"
+DONATUR_PLUS_MIN = "10000"
+
+# ---------------------------------------------------------------------------
+# Secrets - DO NOT put these in this file. Set them with:
+#   npx wrangler secret put FIREBASE_PROJECT_ID
+#   npx wrangler secret put FIREBASE_CLIENT_EMAIL
+#   npx wrangler secret put FIREBASE_PRIVATE_KEY
+#   npx wrangler secret put TRAKTEER_WEBHOOK_TOKEN
+# ---------------------------------------------------------------------------

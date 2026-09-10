@@ -70,5 +70,13 @@ service cloud.firestore {
       allow create: if request.auth != null && (request.auth.uid == userId || request.auth.token.email == 'ghryslt@gmail.com');
       allow update: if request.auth != null && (request.auth.uid == userId || request.auth.token.email == 'ghryslt@gmail.com');
     }
+
+    // Donations ledger - documents are created by the Cloudflare Worker through
+    // a service account (which bypasses these rules). Only the admin may read
+    // them from the client; regular users see their own summary via the worker.
+    match /donations/{donationId} {
+      allow read: if request.auth != null && request.auth.token.email == 'ghryslt@gmail.com';
+      allow write: if false;
+    }
   }
 }

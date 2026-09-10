@@ -651,12 +651,12 @@ const AnimeWatch = memo(() => {
             <div className="bg-gradient-to-r from-cyan-600 to-teal-600 rounded-lg p-4 mb-4">
               <div className="flex items-center gap-3 mb-2">
                 <Heart className="text-white" size={20} />
-                <h4 className="text-white font-semibold">Support Us</h4>
+                <h4 className="text-white font-semibold">Dukung Kami</h4>
               </div>
-              <p className="text-gray-100 text-sm mb-3">Help keep this site running by donating.</p>
-              <button className="w-full px-4 py-2 bg-white text-cyan-700 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Donate Now
-              </button>
+              <p className="text-gray-100 text-sm mb-3">Bantu website ini tetap hidup dengan donasi ikhlas. Dapatkan rank Donatur sebagai tanda terima kasih.</p>
+              <Link to="/donate" className="block w-full px-4 py-2 bg-white text-center text-cyan-700 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Donasi Sekarang
+              </Link>
             </div>
 
             {/* Episode List - Text Only */}

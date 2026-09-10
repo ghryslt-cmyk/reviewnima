@@ -1,0 +1,55 @@
+name: Deploy Cloudflare Worker
+
+# Sengaja HANYA bisa dijalankan manual supaya tidak pernah bentrok dengan
+# deploy GitHub Pages. Cara pakai: GitHub -> tab "Actions" -> pilih
+# "Deploy Cloudflare Worker" -> "Run workflow".
+#
+# Secret yang dibutuhkan (Settings -> Secrets and variables -> Actions):
+#   CLOUDFLARE_API_TOKEN       (buat di Cloudflare My Profile -> API Tokens,
+#                               template "Edit Cloudflare Workers")
+#   CLOUDFLARE_ACCOUNT_ID      (Cloudflare dashboard -> Workers & Pages,
+#                               ada di sidebar kanan)
+#   FIREBASE_PROJECT_ID
+#   FIREBASE_CLIENT_EMAIL
+#   FIREBASE_PRIVATE_KEY
+#   TRAKTEER_WEBHOOK_TOKEN
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-worker:
+    name: Deploy NimaRank Worker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install worker dependencies
+        working-directory: ./worker
+        run: npm install --no-audit --no-fund
+
+      - name: Deploy to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: worker
+          secrets: |
+            FIREBASE_PROJECT_ID
+            FIREBASE_CLIENT_EMAIL
+            FIREBASE_PRIVATE_KEY
+            TRAKTEER_WEBHOOK_TOKEN
+        env:
+          FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+          FIREBASE_CLIENT_EMAIL: ${{ secrets.FIREBASE_CLIENT_EMAIL }}
+          FIREBASE_PRIVATE_KEY: ${{ secrets.FIREBASE_PRIVATE_KEY }}
+          TRAKTEER_WEBHOOK_TOKEN: ${{ secrets.TRAKTEER_WEBHOOK_TOKEN }}

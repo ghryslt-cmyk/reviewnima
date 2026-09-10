@@ -9,6 +9,7 @@ import ReviewDetail from './pages/ReviewDetail';
 import Login from './pages/Login';
 import Admin from './pages/Admin';
 import Profile from './pages/Profile';
+import Donate from './pages/Donate';
 import TopFavorites from './pages/TopFavorites';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
@@ -44,6 +45,7 @@ function AppContent() {
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/donate" element={<Donate />} />
           <Route path="/top-favorites" element={<TopFavorites />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />

@@ -691,6 +691,28 @@ export const getUserRank = async (userId) => {
   }
 };
 
+// Donation summary for a user. These fields are written by the Cloudflare
+// Worker when a Trakteer donation is verified (see `donationTotal`,
+// `donationCount`, `lastDonationAt`, `lastDonationRank`).
+export const getUserDonationSummary = async (userId) => {
+  const empty = { total: 0, count: 0, lastDonationAt: null, lastDonationRank: null };
+  try {
+    const userDocRef = doc(db, 'users', userId);
+    const userDoc = await getDoc(userDocRef);
+    if (!userDoc.exists()) return empty;
+    const data = userDoc.data();
+    return {
+      total: Number(data.donationTotal) || 0,
+      count: Number(data.donationCount) || 0,
+      lastDonationAt: data.lastDonationAt || null,
+      lastDonationRank: data.lastDonationRank || null,
+    };
+  } catch (error) {
+    console.error('getUserDonationSummary - Error getting donation summary:', error);
+    return empty;
+  }
+};
+
 // Get user rank by email (as fallback for email-based documents)
 export const getUserRankByEmail = async (email) => {
   try {

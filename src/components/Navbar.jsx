@@ -213,6 +213,14 @@ const Navbar = () => {
                   <span>{t('nav.adminPanel')}</span>
                 </Link>
               )}
+
+              <Link
+                to="/donate"
+                className="flex items-center space-x-2 rounded-lg bg-gradient-to-r from-rose-500 to-brand-600 px-3 py-2 font-semibold text-white shadow-sm transition-all duration-300 hover:scale-105"
+              >
+                <Heart size={20} />
+                <span>{t('nav.donate')}</span>
+              </Link>
             </div>
           </div>
           
@@ -437,6 +445,14 @@ const Navbar = () => {
                 <span>{t('nav.profile')}</span>
               </Link>
             )}
+            <Link
+              to="/donate"
+              className="flex items-center space-x-2 rounded-lg bg-gradient-to-r from-rose-500 to-brand-600 px-3 py-2 font-semibold text-white transition-all duration-300"
+              onClick={handleMobileMenuToggle}
+            >
+              <Heart size={20} />
+              <span>{t('nav.donate')}</span>
+            </Link>
           </div>
         )}
       </div>

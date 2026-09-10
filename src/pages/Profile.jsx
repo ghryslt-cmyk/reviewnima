@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from '../lib/translations';
-import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank, getUserProfile, getUserRankByEmail } from '../lib/firebase';
-import { User, BookOpen, Star, Play, Trash2, Edit, Camera, Crown, Fingerprint, Copy, Check } from 'lucide-react';
+import { getReviews, getSavedAnime, updateUserDisplayName, updateUserPhotoURL, getUserRank, getUserProfile, getUserRankByEmail, getUserDonationSummary } from '../lib/firebase';
+import { formatRupiah } from '../lib/donation';
+import { User, BookOpen, Star, Play, Trash2, Edit, Camera, Crown, Fingerprint, Copy, Check, Heart, Gem } from 'lucide-react';
 import { CrownMedallion, adminNameClass, AdminLabel, rankNameClass, RankLabel } from '../components/AdminBadge';
 
 const Profile = () => {
@@ -20,6 +22,7 @@ const Profile = () => {
   const [newPhotoUrl, setNewPhotoUrl] = useState('');
   const [firestoreUserData, setFirestoreUserData] = useState(null);
   const [copiedUid, setCopiedUid] = useState(false);
+  const [donationSummary, setDonationSummary] = useState({ total: 0, count: 0, lastDonationAt: null, lastDonationRank: null });
 
   const handleCopyUid = async () => {
     if (!user?.uid) return;
@@ -60,6 +63,10 @@ const Profile = () => {
         // Fetch user profile data from Firestore as fallback
         const profileData = await getUserProfile(user.uid);
         setFirestoreUserData(profileData);
+
+        // Donation totals written by the Cloudflare Worker
+        const summary = await getUserDonationSummary(user.uid);
+        setDonationSummary(summary);
         
         setNewName(user?.displayName || profileData?.displayName || '');
         setNewPhotoUrl(user?.photoURL || profileData?.photoURL || '');
@@ -230,6 +237,35 @@ const Profile = () => {
           </div>
         </div>
 
+        {/* Donation / rank CTA */}
+        <div className="mb-6 overflow-hidden rounded-xl border-2 border-brand-200 bg-gradient-to-r from-brand-50 to-cyan-50 p-4 dark:border-brand-900/60 dark:from-brand-500/10 dark:to-cyan-500/10 sm:mb-8 sm:p-6">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <div className="flex items-center gap-3">
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-rose-500 to-brand-600 text-white shadow-glow">
+                <Heart size={22} />
+              </span>
+              <div>
+                <h2 className="font-display text-lg font-bold text-gray-900 dark:text-white">{t('profile.supportTitle')}</h2>
+                <p className="text-sm text-gray-600 dark:text-gray-400">{t('profile.supportDesc')}</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-stretch gap-2 sm:ml-auto sm:items-end">
+              <div className="text-xs text-gray-600 dark:text-gray-400">
+                {t('profile.donatedTotal')}:{' '}
+                <b className="text-gray-900 dark:text-white">{formatRupiah(donationSummary.total)}</b>
+                {donationSummary.count > 0 ? ` · ${donationSummary.count}x` : ''}
+              </div>
+              <Link
+                to="/donate"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-rose-500 to-brand-600 px-4 py-2.5 text-sm font-bold text-white transition-transform hover:scale-105"
+              >
+                <Gem size={16} /> {t('profile.supportCta')}
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Photo Edit Modal */}
         {/* Photo Edit Modal */}
         {editingPhoto && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
