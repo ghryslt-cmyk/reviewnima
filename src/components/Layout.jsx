@@ -20,7 +20,7 @@ const Layout = memo(({ children }) => {
       }} />
 
       {/* Left Gutter */}
-      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed left-0 bottom-0 w-[150px] h-[640px] z-0 hidden lg:block opacity-90 transition-opacity hover:opacity-100">
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed left-0 bottom-0 w-[200px] h-[720px] z-0 hidden lg:block">
         <div 
           className="w-full h-full bg-cover bg-center drop-shadow-[0_0_30px_rgba(49,130,255,0.18)]"
           style={{ 
@@ -33,7 +33,7 @@ const Layout = memo(({ children }) => {
       </a>
 
       {/* Right Gutter */}
-      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed right-0 bottom-0 w-[150px] h-[640px] z-0 hidden lg:block opacity-90 transition-opacity hover:opacity-100">
+      <a href="https://www.netflix.com" target="_blank" rel="noopener noreferrer" className="fixed right-0 bottom-0 w-[200px] h-[720px] z-0 hidden lg:block">
         <div 
           className="w-full h-full bg-cover bg-center drop-shadow-[0_0_30px_rgba(34,211,238,0.18)]"
           style={{ 

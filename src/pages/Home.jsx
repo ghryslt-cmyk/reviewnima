@@ -140,15 +140,15 @@ const Home = memo(() => {
       </section>
 
       {/* NEWS TICKER */}
-      <section className="relative z-10 border-y border-black/5 bg-white/80 backdrop-blur-md dark:bg-white/5">
-        <div className="mx-auto flex max-w-[1500px] items-center">
-          <div className="flex shrink-0 items-center gap-2 border-r border-black/10 bg-brand-gradient px-4 py-3 text-sm font-bold uppercase tracking-wide text-white sm:px-6">
+      <section className="relative z-10 border-y border-black/5 bg-white dark:bg-gray-900">
+        <div className="mx-auto flex max-w-[1500px] items-stretch">
+          <div className="flex shrink-0 items-center gap-2 bg-brand-gradient px-4 text-sm font-bold uppercase tracking-wide text-white sm:px-6">
             <Newspaper size={16} />
             <span className="hidden sm:inline">{t('news.title') || 'News'}</span>
           </div>
-          <div className="relative flex-1 overflow-hidden">
+          <div className="relative flex min-w-0 flex-1 items-center overflow-hidden">
             {news.length > 0 ? (
-              <div className="flex animate-ticker whitespace-nowrap py-3" style={{ width: 'max-content' }}>
+              <div className="flex animate-ticker items-center whitespace-nowrap py-3" style={{ width: 'max-content' }}>
                 {[0, 1].map((dup) => (
                   <div key={dup} className="flex items-center">
                     {news.map((item) => (
@@ -157,7 +157,7 @@ const Home = memo(() => {
                         to={`/news/${item.id}`}
                         className="mx-4 inline-flex items-center gap-2 text-sm text-gray-700 transition-colors hover:text-brand-600 dark:text-gray-200"
                       >
-                        <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
+                        <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
                         {item.title}
                       </Link>
                     ))}
@@ -165,9 +165,16 @@ const Home = memo(() => {
                 ))}
               </div>
             ) : (
-              <div className="py-3 px-4 text-sm text-gray-500">{t('home.noNews') || 'Loading news…'}</div>
+              <div className="px-4 py-3 text-sm text-gray-500">{t('home.noNews') || 'Loading news…'}</div>
             )}
           </div>
+          <Link
+            to="/news"
+            className="hidden shrink-0 items-center gap-1.5 bg-brand-gradient px-4 text-sm font-bold uppercase tracking-wide text-white transition-opacity hover:opacity-90 sm:flex sm:px-6"
+          >
+            <span className="hidden lg:inline">{t('nav.news')}</span>
+            <ChevronRight size={16} />
+          </Link>
         </div>
       </section>
 

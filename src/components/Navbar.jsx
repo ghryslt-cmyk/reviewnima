@@ -99,7 +99,7 @@ const Navbar = () => {
   console.log('Navbar - Render state:', { userRank, isAdminRank, user });
 
   return (
-    <nav className="glass sticky top-0 z-50 border-b border-gray-200/70 text-gray-900 shadow-sm dark:border-gray-800/70 dark:text-white">
+    <nav className="glass relative z-50 border-b border-gray-200/70 text-gray-900 shadow-sm dark:border-gray-800/70 dark:text-white">
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-2 sm:space-x-6">
