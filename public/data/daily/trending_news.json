@@ -1,7 +1,95 @@
 {
-  "version": 1789048327981,
-  "fetchedAt": "2026-09-10T13:52:07.981Z",
+  "version": 1789061876706,
+  "fetchedAt": "2026-09-10T17:37:56.706Z",
   "news": [
+    {
+      "title": "Voice Actor Mike McFarland Dies at 56",
+      "description": "McFarland had brain tumor removed in January 2025, was diagnosed with glioblastoma in August 2025",
+      "fullDescription": "McFarland had brain tumor removed in January 2025, was diagnosed with glioblastoma in August 2025",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-10/voice-actor-mike-mcfarland-dies-at-56/.241616",
+      "pubDate": "Thu, 10 Sep 2026 13:12:35 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.8/219980/mikemcfarland.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241616"
+    },
+    {
+      "title": "Level 5's Holy Horror Mansion Game's Trailer Reveals 2027 Release for Switch 2, PS5, PC",
+      "description": "RPG features ghostly mechanics based on real-life performers",
+      "fullDescription": "RPG features ghostly mechanics based on real-life performers",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-10/level-5-holy-horror-mansion-game-trailer-reveals-2027-release-for-switch-2-ps5-pc/.241630",
+      "pubDate": "Thu, 10 Sep 2026 12:33:48 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241630"
+    },
+    {
+      "title": "Compile Heart's Villion:Code Game Heads West in 2027",
+      "description": "School RPG launches for Switch 2, Switch, PS5, PS4, PC",
+      "fullDescription": "School RPG launches for Switch 2, Switch, PS5, PS4, PC",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-10/compile-heart-villion-code-game-heads-west-in-2027/.241631",
+      "pubDate": "Thu, 10 Sep 2026 11:41:40 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/233591/villioncode-vertical.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241631"
+    },
+    {
+      "title": "Straight Edge Launches Horizontal Manga Label",
+      "description": "Straight Edge Comic label searches for original authors, manga artists, freelance editors",
+      "fullDescription": "Straight Edge Comic label searches for original authors, manga artists, freelance editors",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-10/straight-edge-launches-horizontal-manga-label/.241560",
+      "pubDate": "Thu, 10 Sep 2026 11:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241560/edge.webp",
+      "guid": "https://www.animenewsnetwork.com/cms/.241560"
+    },
+    {
+      "title": "Yo-kai Watch 2: Haunted Domain Game's Extended Trailer Reveals PS5, PC Releases",
+      "description": "Updated version of Yo-kai Watch 2 3DS game also launches for Switch 2",
+      "fullDescription": "Updated version of Yo-kai Watch 2 3DS game also launches for Switch 2",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-10/yo-kai-watch-2-haunted-domain-game-extended-trailer-reveals-ps5-pc-releases/.241629",
+      "pubDate": "Thu, 10 Sep 2026 10:51:32 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241629"
+    },
+    {
+      "title": "Professor Layton and the Curious Village Game Gets Remake",
+      "description": "Also: Professor Layton and The New World of Steam streams new trailer, behind-the-scenes video",
+      "fullDescription": "Also: <cite>Professor Layton and The New World of Steam</cite> streams new trailer, behind-the-scenes video",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-10/professor-layton-and-the-curious-village-game-gets-remake/.241627",
+      "pubDate": "Thu, 10 Sep 2026 10:31:17 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241627"
+    },
+    {
+      "title": "Chiikawa Anime Film Rises Back to #1, Sekiro: No Defeat Opens at #9 in Japan",
+      "description": "Madoka Magica -Walpurgisnacht: Rising- drops to #3, 33rd Shin-chan film to #7",
+      "fullDescription": "<cite>Madoka Magica -Walpurgisnacht: Rising-</cite> drops to #3, 33rd <cite>Shin-chan</cite> film to #7",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-10/chiikawa-anime-film-rises-back-to-no.1-sekiro-no-defeat-opens-at-no.9-in-japan/.241518",
+      "pubDate": "Thu, 10 Sep 2026 10:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/231350/chiikawa.webp",
+      "guid": "https://www.animenewsnetwork.com/cms/.241518"
+    },
+    {
+      "title": "Witch on the Holy Night Film Screens in U.S., Canada on January 29",
+      "description": "Crunchyroll, Sony Pictures Entertainment to screen film subbed/dubbed",
+      "fullDescription": "Crunchyroll, Sony Pictures Entertainment to screen film subbed/dubbed",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-10/witch-on-the-holy-night-film-screens-in-u.s-canada-on-january-29/.241626",
+      "pubDate": "Thu, 10 Sep 2026 10:05:14 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235565/mahoyo-kv.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241626"
+    },
     {
       "title": "Korean Culture Center to Host K-Comics Origin Exhibition in Los Angeles",
       "description": "Dong-geun Joo, creator of All of Us Are Dead, will attend the exhibition's opening on September 11",
@@ -78,94 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789035971-7cae2d2d541ae20aaca752986b5d4978.jpeg",
       "guid": "https://myanimelist.net/news/74696633?_location=rss"
-    },
-    {
-      "title": "Akihito Yoshitomi's Eat-Man Manga Gets New Anime Project",
-      "description": "Masashi Ebara returns from previous anime adaptations as Bolt Crank",
-      "fullDescription": "Masashi Ebara returns from previous anime adaptations as Bolt Crank",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/akihito-yoshitomi-eat-man-manga-gets-new-anime-project/.241611",
-      "pubDate": "Thu, 10 Sep 2026 06:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241611/eat1.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241611"
-    },
-    {
-      "title": "Metal Slug Ultimate Collection Game Launches in 2027",
-      "description": "Game to launch for Switch, Switch 2, PS5, Xbox Series X|S, PC via Steam",
-      "fullDescription": "Game to launch for Switch, Switch 2, PS5, Xbox Series X|S, PC via Steam",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/metal-slug-ultimate-collection-game-launches-in-2027/.241618",
-      "pubDate": "Thu, 10 Sep 2026 05:46:42 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241618"
-    },
-    {
-      "title": "&#039;Hyouken no Majutsushi ga Sekai wo Suberu II&#039; Unveils Supporting Cast, Main Promo",
-      "description": "The official website for the television anime adaptation of Nana Mikoshiba&#039;s Hyouken no Majutsushi ga Sekai wo Suberu (The Iceblade Sorcerer Shall Rule the World) light novel unveiled supporting cast and the main promotional video for its second season on Thursday. The new season is scheduled t...",
-      "fullDescription": "The official website for the television anime adaptation of Nana Mikoshiba&#039;s Hyouken no Majutsushi ga Sekai wo Suberu (The Iceblade Sorcerer Shall Rule the World) light novel unveiled supporting cast and the main promotional video for its second season on Thursday. The new season is scheduled to premiere on TBS on October 9 at 1.28 a.m., followed by BS11 at 11.00 p.m. at the same day. Cast Lucas Forst: Souichirou Hoshi (Mattaku Saikin no Tantei to Kitara) Lieselotte Eden: Haruka Shiraishi...",
-      "link": "https://myanimelist.net/news/74696432?_location=rss",
-      "pubDate": "Thu, 10 Sep 2026 02:36:04 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789032775-0d4d7f1568df1047a8a20d57ebd2f383.jpeg",
-      "guid": "https://myanimelist.net/news/74696432?_location=rss"
-    },
-    {
-      "title": "Saga of Tanya the Evil II Anime Gets English Dub",
-      "description": "Monica Rial, Jason Douglas, J. Michael Tatum, others star in English dub",
-      "fullDescription": "Monica Rial, Jason Douglas, J. Michael Tatum, others star in English dub",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/saga-of-tanya-the-evil-ii-anime-gets-english-dub/.241592",
-      "pubDate": "Thu, 10 Sep 2026 05:03:41 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238213/tanya.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241592"
-    },
-    {
-      "title": "Millennium Family TV Anime Casts Ryōta Suzuki",
-      "description": "Suzuki voices second son of Benfield family, Hugo",
-      "fullDescription": "Suzuki voices second son of Benfield family, Hugo",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/millennium-family-tv-anime-casts-ryota-suzuki/.241608",
-      "pubDate": "Thu, 10 Sep 2026 05:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241608/family.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241608"
-    },
-    {
-      "title": "Resident Evil 2, 3, 4 Remake Games Get Switch 2 Digital Release on October 16",
-      "description": "Physical versions coming on January 29",
-      "fullDescription": "Physical versions coming on January 29",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/resident-evil-2-3-4-remake-games-get-switch-2-digital-release-on-october-16/.241617",
-      "pubDate": "Thu, 10 Sep 2026 04:57:39 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241617"
-    },
-    {
-      "title": "Xenoblade Chronicles 3 Game's Switch 2 Edition Highlights New Character, New Mode in Video",
-      "description": "Heroes' Vault mode adds roguelite gameplay for game launching on December 3",
-      "fullDescription": "Heroes' Vault mode adds roguelite gameplay for game launching on December 3",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/xenoblade-chronicles-3-game-switch-2-edition-highlights-new-character-new-mode-in-video/.241597",
-      "pubDate": "Thu, 10 Sep 2026 04:49:15 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241597"
-    },
-    {
-      "title": "Mari Okazaki's Will I Be Single Forever? Manga Gets 2nd Live-Action Film",
-      "description": "Film debuts on Amazon Prime Video on October 23, features original story with new cast, staff",
-      "fullDescription": "Film debuts on Amazon Prime Video on October 23, features original story with new cast, staff",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/mari-okazaki-will-i-be-single-forever-manga-gets-2nd-live-action-film/.241609",
-      "pubDate": "Thu, 10 Sep 2026 03:30:21 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241609/zuttodokushin-amazon.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241609"
     }
   ],
   "total": 15
