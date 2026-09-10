@@ -1,7 +1,40 @@
 {
-  "version": 1789070683241,
-  "fetchedAt": "2026-09-10T20:04:43.241Z",
+  "version": 1789079869197,
+  "fetchedAt": "2026-09-10T22:37:49.197Z",
   "news": [
+    {
+      "title": "Snack World Reloaded Remake Game's Trailer Reveals 2027 Release",
+      "description": "Remake of Snack World: The Dungeon Crawl - Gold launches for Switch 2, PS5, PC",
+      "fullDescription": "Remake of <cite>Snack World: The Dungeon Crawl - Gold</cite> launches for Switch 2, PS5, PC",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-10/snack-world-reloaded-remake-game-trailer-reveals-2027-release/.241625",
+      "pubDate": "Thu, 10 Sep 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241625"
+    },
+    {
+      "title": "Decapolice Game's Trailer Reveals Another Delay to 2027",
+      "description": "Game was originally scheduled for release in 2023",
+      "fullDescription": "Game was originally scheduled for release in 2023",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-10/decapolice-game-trailer-reveals-another-delay-to-2027/.241635",
+      "pubDate": "Thu, 10 Sep 2026 16:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241635"
+    },
+    {
+      "title": "&#039;Shuiro no Kamen&#039; Reveals Additional Cast, Staff, Theme Songs, Second Promo",
+      "description": "The official website for the Shuiro no Kamen (The Vermilion Mask) television anime adaptation revealed additional cast, staff, second key visual (pictured), theme songs, and a second promotional video on Friday. The anime adapting Dr.Poro and Nabana Naba&#039;s action fantasy manga is scheduled to p...",
+      "fullDescription": "The official website for the Shuiro no Kamen (The Vermilion Mask) television anime adaptation revealed additional cast, staff, second key visual (pictured), theme songs, and a second promotional video on Friday. The anime adapting Dr.Poro and Nabana Naba&#039;s action fantasy manga is scheduled to premiere on October 10 at 5:30 p.m. on Yoimiuri TV and Nippon TV. Cast Hien: Kenji Nojima (Banana Fish) Lasgarl: Aoi Koga (Kaguya-sama wa Kokurasetai) Clown: Yuuki Shin (Gachiakuta) Rinne: Akihisa Waka...",
+      "link": "https://myanimelist.net/news/74699348?_location=rss",
+      "pubDate": "Thu, 10 Sep 2026 12:59:36 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789070319-3215c558c7ef19b6ab52071cdb132fb4.jpeg",
+      "guid": "https://myanimelist.net/news/74699348?_location=rss"
+    },
     {
       "title": "The Vermilion Mask Anime's 2nd Main Trailer Reveals Theme Songs, More Cast, October 10 Premiere",
       "description": "Video previews opening theme song by MAN WITH A MISSION, ending theme by yutori",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241612/hrrrcnobwaambsa.jfif.jpeg",
       "guid": "https://www.animenewsnetwork.com/cms/.241612"
-    },
-    {
-      "title": "Pokémon Pokopia Game Introduces Accessories Included in Expansion Pass DLC Part 2",
-      "description": "DLC part 2 includes sunglasses, ribbon, bow tie accessories",
-      "fullDescription": "DLC part 2 includes sunglasses, ribbon, bow tie accessories",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/pokemon-pokopia-game-introduces-accessories-included-in-expansion-pass-dlc-part-2/.241622",
-      "pubDate": "Thu, 10 Sep 2026 07:42:04 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241622"
-    },
-    {
-      "title": "Nintendo Reveals New Trailer, October 22 Launch for Nintendo Switch Sports Resort Game",
-      "description": "Successor game to Wii Sports Resort launches for Switch 2",
-      "fullDescription": "Successor game to <cite>Wii Sports Resort</cite> launches for Switch 2",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/nintendo-reveals-new-trailer-october-22-launch-for-nintendo-switch-sports-resort-game/.241623",
-      "pubDate": "Thu, 10 Sep 2026 07:12:03 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241623"
-    },
-    {
-      "title": "Mega Man Dual Override Game Announces Spring 2027 Launch",
-      "description": "Game launches for Switch, Switch 2, Xbox Series XS, Steam, Epic Games Store",
-      "fullDescription": "Game launches for Switch, Switch 2, Xbox Series XS, Steam, Epic Games Store",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/mega-man-dual-override-game-announces-spring-2027-launch/.241619",
-      "pubDate": "Thu, 10 Sep 2026 07:01:13 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235155/g9runs1buaal4pe.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241619"
     }
   ],
   "total": 15
