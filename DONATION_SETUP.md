@@ -283,11 +283,24 @@ curl -X POST "https://<worker>/trakteer-webhook?token=<TOKEN>" \
 
 | Gejala | Penyebab umum |
 | ------ | ------------- |
-| API 401 Unauthorized | `token` webhook salah/kosong |
-| `uid_not_found` di response | pesan donasi tidak memuat `NMRUID:<uid>` |
-| `below_threshold` | nominal < `DONATUR_MIN` |
-| Worker error 500 `Google auth failed` | `FIREBASE_PRIVATE_KEY` kurang/berubah baris |
-| Rank tidak muncul di Navbar | cache halaman; refresh, atau cek field `rank` di Firestore |
+> **Alat utama:** buka
+> `https://<worker>/diagnose?token=<TRAKTEER_WEBHOOK_TOKEN>&write=1`
+> di browser. Endpoint ini memeriksa secret, private key, login Google, dan
+> baca/tulis Firestore, lalu menampilkan `diagnosis` kalau ada yang gagal.
+
+| Gejala di log / response | Penyebab & solusi |
+| ------------------------ | ----------------- |
+| `401 Unauthorized` | `token` webhook salah. Pastikan tanpa tanda `< >` dan tanpa spasi. |
+| `{"reason":"uid_not_found"}` | Pesan donasi tidak memuat `NMRUID:<uid>`. |
+| `{"reason":"below_threshold"}` | Nominal di bawah `DONATUR_MIN` (5000). |
+| `Google auth failed: Invalid grant: account not found` | **Paling sering terjadi.** Google tidak mengenali `client_email`. Penyebab: `FIREBASE_CLIENT_EMAIL` dan `FIREBASE_PRIVATE_KEY` diambil dari **file JSON berbeda**, service account sudah dihapus, atau ada spasi/newline nyasar. Solusi: *Firebase Console → Project settings → Service accounts → Generate new private key*, lalu ambil `project_id`, `client_email`, `private_key` dari **satu** file baru itu dan update **ketiga** secret sekaligus. |
+| `Invalid JWT Signature` | `private_key` bukan pasangan dari `client_email`. Ambil ulang dari satu file JSON. |
+| `Invalid keyData` (di `/diagnose`) | `FIREBASE_PRIVATE_KEY` rusak / baris barunya hilang. Pakai output satu baris dari `worker/print-secrets.ps1`. |
+| `Firestore write failed (403)` | Service account beda project, atau tidak punya akses Firestore. |
+| `Firestore write failed (404)` | `FIREBASE_PROJECT_ID` salah. |
+| `amount: 0` di koleksi `donations` | Payload tidak punya `price`/`total`; rank masih bisa didapat dari **nama unit**. |
+| Rank tidak muncul di Navbar | Cache halaman; refresh. Cek field `rank` di `users/{uid}`. |
+| Semua `ok` di `/diagnose` tapi `donations` kosong | Webhook Trakteer tidak sampai ke worker — cek URL webhook & status pengiriman di dashboard Trakteer. |
 
 ## Catatan
 

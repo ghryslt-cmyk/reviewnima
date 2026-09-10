@@ -21,6 +21,10 @@
 const TOKEN_ENDPOINT = 'https://oauth2.googleapis.com/token';
 const FIRESTORE_SCOPE = 'https://www.googleapis.com/auth/datastore';
 
+// Naikkan angka ini setiap kali kode worker berubah, supaya mudah memastikan
+// versi yang sudah ter-deploy lewat endpoint /health.
+const WORKER_VERSION = '1.3.3';
+
 const RANK_LEVELS = {
   donatur: 1,
   'donatur++': 2,
@@ -32,6 +36,10 @@ const RANK_LEVELS = {
 
 // Ranks that were granted manually and must never be overwritten by a donation.
 const PROTECTED_RANKS = ['moderator', 'vip', 'premium', 'admin'];
+
+// Header JWT untuk OAuth2 Google. Nilai `alg` WAJIB nama algoritma JWS
+// (RFC 7515) = "RS256", bukan nama algoritma WebCrypto.
+const JWT_HEADER = { alg: 'RS256', typ: 'JWT' };
 
 // Access tokens are cached per isolate until ~1 minute before expiry.
 let cachedToken = { value: null, expiresAt: 0 };
@@ -99,14 +107,16 @@ async function importPrivateKey(pem) {
   );
 }
 
-async function getAccessToken(env) {
+async function getAccessToken(env, forceRefresh = false) {
   const now = Math.floor(Date.now() / 1000);
-  if (cachedToken.value && cachedToken.expiresAt > now + 60) return cachedToken.value;
+  if (!forceRefresh && cachedToken.value && cachedToken.expiresAt > now + 60) return cachedToken.value;
 
   const key = await importPrivateKey(env.FIREBASE_PRIVATE_KEY);
-  const header = { alg: 'RSASSA-PKCS1-v1_5', typ: 'JWT' };
+  const header = JWT_HEADER;
   const claims = {
-    iss: env.FIREBASE_CLIENT_EMAIL,
+    // trim() penting: karakter spasi/newline nyasar di akhir secret bikin Google
+    // membalas "Invalid grant: account not found".
+    iss: String(env.FIREBASE_CLIENT_EMAIL || '').trim(),
     scope: FIRESTORE_SCOPE,
     aud: TOKEN_ENDPOINT,
     iat: now,
@@ -141,7 +151,7 @@ async function getAccessToken(env) {
 // ---------------------------------------------------------------------------
 
 const firestoreBase = (env) =>
-  `https://firestore.googleapis.com/v1/projects/${env.FIREBASE_PROJECT_ID}/databases/(default)/documents`;
+  `https://firestore.googleapis.com/v1/projects/${String(env.FIREBASE_PROJECT_ID || '').trim()}/databases/(default)/documents`;
 
 async function fsFetch(env, path, init = {}) {
   const token = await getAccessToken(env);
@@ -230,7 +240,10 @@ async function fsCreateDocument(env, collection, fields) {
 
 async function fsListDocuments(env, collection, pageSize = 50) {
   const res = await fsFetch(env, `/${collection}?pageSize=${encodeURIComponent(pageSize)}`);
-  if (!res.ok) return [];
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`Firestore list failed (${res.status}): ${body.slice(0, 300)}`);
+  }
   const data = await res.json();
   return (data.documents || []).map((doc) => fromFirestoreFields(doc.fields || {}));
 }
@@ -238,6 +251,28 @@ async function fsListDocuments(env, collection, pageSize = 50) {
 // ---------------------------------------------------------------------------
 // Trakteer payload parsing
 // ---------------------------------------------------------------------------
+
+// Bentuk payload yang SUDAH TERBUKTI dari webhook Trakteer sungguhan
+// (hasil donasi unit "DONATUR" Rp5.000, terlihat di Cloudflare Workers Logs):
+//
+// {
+//   "created_at": "2026-09-10T19:46:54+07:00",
+//   "transaction_id": "b7070d92-fd82-5e9a-bf91-05ed001a6088",
+//   "type": "tip",
+//   "supporter_name": "test",
+//   "supporter_avatar": "https://edge-cdn.trakteer.id/...",
+//   "supporter_message": "NMRUID:JVHHbq3AMaTRH9AXs35EwUZNWXm2",
+//   "media": null,
+//   "unit": "DONATUR",
+//   "unit_icon": "https://mirror-uploads.trakteer.id/...",
+//   "quantity": "1",          <-- STRING, bukan number
+//   "price": 5000,            <-- harga satuan yang DIBAYAR donor
+//   "net_amount": 4711        <-- setelah dipotong fee; JANGAN dipakai untuk rank
+// }
+//
+// Catatan: `net_amount` sengaja TIDAK dipakai karena sudah dipotong biaya
+// Trakteer (5.000 -> 4.711), yang bisa membuat nominal jatuh di bawah threshold.
+// Nilai `price` x `quantity` adalah yang benar.
 
 // Trakteer has sent slightly different payload shapes over time, so we look up
 // a set of candidate keys and use whichever the payload actually contains.
@@ -339,6 +374,14 @@ function resolveUnitPrice(payload) {
   return toNumber(pick(payload, UNIT_PRICE_KEYS));
 }
 
+// Firestore document id tidak boleh mengandung "/" dan dibatasi panjangnya.
+// Dipakai untuk membuat id donasi yang stabil dari transaction_id Trakteer,
+// sehingga webhook yang diulang (retry) tidak dihitung dua kali.
+function sanitizeDocId(value) {
+  const cleaned = String(value || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 200);
+  return cleaned || `t${Date.now()}`;
+}
+
 // Extract the Firebase UID from the free-text support message. The donate page
 // always embeds it as `NMRUID:<uid>`; we also accept a plain `UID:<uid>` in
 // case a supporter writes it by hand.
@@ -402,7 +445,8 @@ async function applyDonation(env, rawPayload) {
   const grantedRank = higherRank(rankByName, rankByAmount);
 
   const nowIso = new Date().toISOString();
-  const externalId = String(pick(payload, ID_KEYS) || `${Date.now()}`);
+  const externalId = String(pick(payload, ID_KEYS) || `local-${Date.now()}`);
+  const donationDocId = `trakteer_${sanitizeDocId(externalId)}`;
   const limits = thresholds(env);
   const status = !uid ? 'unmatched' : (grantedRank ? 'processed' : 'below_threshold');
 
@@ -421,11 +465,36 @@ async function applyDonation(env, rawPayload) {
     donaturPlusMin: limits['donatur++'],
   });
 
+  // Idempotensi: Trakteer mengirim ULANG webhook kalau balasan bukan 2xx (itu
+  // terlihat di log kamu: transaction_id yang sama dicoba 3x). Kalau donasi
+  // dengan transaction_id ini sudah selesai diproses, jangan dihitung dua kali
+  // - kalau tidak, donationTotal bisa dobel dan rank naik tanpa sebab.
+  let previousDonation = null;
+  try {
+    previousDonation = await fsGetDocument(env, 'donations', donationDocId);
+  } catch (error) {
+    logError('gagal membaca donation record sebelumnya:', String(error?.message || error));
+  }
+
+  if (previousDonation && previousDonation.rankApplied === true) {
+    log('donasi duplikat dilewati', { donationDocId, externalId });
+    return {
+      ok: true,
+      processed: true,
+      duplicate: true,
+      uid: previousDonation.uid || uid || null,
+      rank: previousDonation.rank || null,
+      amount: previousDonation.amount || amount,
+      note: 'Donasi ini sudah pernah diproses; tidak dihitung ulang.',
+    };
+  }
+
   // The donation record always gets written (even if it cannot be matched) so
   // you can inspect every webhook that arrives. `rawPayload` is kept for
-  // troubleshooting and can be deleted later.
+  // troubleshooting and can be deleted later. Id dokumen dibuat stabil dari
+  // transaction_id supaya retry menimpa dokumen yang sama, bukan menambah baru.
   try {
-    await fsCreateDocument(env, 'donations', {
+    await fsPatchDocument(env, 'donations', donationDocId, {
       uid: uid || null,
       supporterName,
       message,
@@ -437,6 +506,7 @@ async function applyDonation(env, rawPayload) {
       source: 'trakteer',
       externalId,
       createdAt: nowIso,
+      rankApplied: false,
       rawPayload: rawPayload && typeof rawPayload === 'object' ? rawPayload : { value: rawPayload },
     });
   } catch (error) {
@@ -491,6 +561,18 @@ async function applyDonation(env, rawPayload) {
   }
 
   await fsPatchDocument(env, 'users', uid, fields);
+
+  // Tandai donasi ini sudah selesai diproses. Retry setelah titik ini akan
+  // dilewati (idempotensi), jadi donationTotal tidak akan dobel.
+  try {
+    await fsPatchDocument(env, 'donations', donationDocId, {
+      rankApplied: true,
+      rankAppliedAt: nowIso,
+      userDocId: uid,
+    });
+  } catch (error) {
+    logError('gagal menandai donation record sebagai selesai:', String(error?.message || error));
+  }
 
   return {
     ok: true,
@@ -609,10 +691,151 @@ async function handleRecent(request, env) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Self diagnosis
+//   Buka di browser:  /diagnose?token=<TRAKTEER_WEBHOOK_TOKEN>
+//   Plus tes tulis:   /diagnose?token=<TOKEN>&write=1
+// Melaporkan apakah secret lengkap, private key bisa diparse, login Google
+// berhasil, dan Firestore bisa dibaca/ditulis. Nilai secret TIDAK pernah
+// ditampilkan - hanya boolean/status.
+// ---------------------------------------------------------------------------
+async function handleDiagnose(request, env) {
+  const url = new URL(request.url);
+
+  if (!env.TRAKTEER_WEBHOOK_TOKEN) {
+    return json(
+      {
+        ok: false,
+        error: 'Secret TRAKTEER_WEBHOOK_TOKEN belum di-set',
+        hint: 'Set dulu di Cloudflare (Settings > Variables and Secrets), lalu deploy ulang worker.',
+      },
+      500,
+    );
+  }
+
+  if (!verifyWebhookToken(request, env)) {
+    return json(
+      {
+        ok: false,
+        error: 'Unauthorized',
+        hint: 'Token di URL tidak sama dengan secret TRAKTEER_WEBHOOK_TOKEN. Pastikan tanpa tanda < > dan tanpa spasi.',
+      },
+      401,
+    );
+  }
+
+  const limits = thresholds(env);
+  const privateKey = String(env.FIREBASE_PRIVATE_KEY || '');
+
+  const report = {
+    ok: true,
+    time: new Date().toISOString(),
+    config: {
+      TRAKTEER_WEBHOOK_TOKEN_diisi: Boolean(env.TRAKTEER_WEBHOOK_TOKEN),
+      FIREBASE_PROJECT_ID: env.FIREBASE_PROJECT_ID || '(KOSONG)',
+      FIREBASE_PROJECT_ID_ada_spasi_nyasar:
+        Boolean(env.FIREBASE_PROJECT_ID) &&
+        env.FIREBASE_PROJECT_ID !== String(env.FIREBASE_PROJECT_ID).trim(),
+      FIREBASE_CLIENT_EMAIL: env.FIREBASE_CLIENT_EMAIL || '(KOSONG)',
+      FIREBASE_CLIENT_EMAIL_panjang: String(env.FIREBASE_CLIENT_EMAIL || '').length,
+      FIREBASE_CLIENT_EMAIL_ada_spasi_nyasar:
+        Boolean(env.FIREBASE_CLIENT_EMAIL) &&
+        env.FIREBASE_CLIENT_EMAIL !== String(env.FIREBASE_CLIENT_EMAIL).trim(),
+      FIREBASE_CLIENT_EMAIL_cocok_project: (() => {
+        const email = String(env.FIREBASE_CLIENT_EMAIL || '').trim().toLowerCase();
+        const project = String(env.FIREBASE_PROJECT_ID || '').trim().toLowerCase();
+        if (!email || !project) return false;
+        return email.endsWith(`@${project}.iam.gserviceaccount.com`);
+      })(),
+      FIREBASE_PRIVATE_KEY_diisi: Boolean(privateKey),
+      FIREBASE_PRIVATE_KEY_ada_header: privateKey.includes('BEGIN PRIVATE KEY'),
+      FIREBASE_PRIVATE_KEY_ada_newline: /\\n|\n/.test(privateKey),
+      FIREBASE_PRIVATE_KEY_panjang: privateKey.length,
+      jwtHeaderAlg: JWT_HEADER.alg,
+      DONATUR_MIN: limits.donatur,
+      DONATUR_PLUS_MIN: limits['donatur++'],
+    },
+    checks: {},
+  };
+
+  try {
+    await importPrivateKey(privateKey);
+    report.checks.privateKeyParse = 'ok';
+  } catch (error) {
+    report.checks.privateKeyParse = `GAGAL: ${String(error?.message || error)}`;
+  }
+
+  try {
+    await getAccessToken(env, true);
+    report.checks.googleAuth = 'ok';
+  } catch (error) {
+    report.checks.googleAuth = `GAGAL: ${String(error?.message || error)}`;
+  }
+
+  try {
+    const docs = await fsListDocuments(env, 'donations', 5);
+    report.checks.firestoreRead = `ok (${docs.length} dokumen di koleksi donations)`;
+  } catch (error) {
+    report.checks.firestoreRead = `GAGAL: ${String(error?.message || error)}`;
+  }
+
+  if (url.searchParams.get('write') === '1') {
+    try {
+      await fsCreateDocument(env, 'donations', {
+        status: 'diagnostic-test',
+        source: 'diagnose-endpoint',
+        message: 'tes tulis dari endpoint /diagnose',
+        supporterName: 'Diagnostic',
+        amount: 0,
+        rank: null,
+        createdAt: new Date().toISOString(),
+      });
+      report.checks.firestoreWrite = 'ok (dokumen tes dibuat di koleksi donations)';
+    } catch (error) {
+      report.checks.firestoreWrite = `GAGAL: ${String(error?.message || error)}`;
+    }
+  }
+
+  report.ok = Object.values(report.checks).every((value) => String(value).startsWith('ok'));
+  if (!report.ok) {
+    const authCheck = String(report.checks.googleAuth || '');
+    const keyCheck = String(report.checks.privateKeyParse || '');
+
+    if (authCheck.includes('account not found')) {
+      report.diagnosis =
+        'Google tidak mengenali client_email (service account tidak ada). Penyebab paling umum: '
+        + '(1) FIREBASE_CLIENT_EMAIL dan FIREBASE_PRIVATE_KEY diambil dari file JSON yang BERBEDA, '
+        + '(2) service account-nya sudah dihapus dari project, '
+        + '(3) ada spasi/newline nyasar di nilai secret. '
+        + 'Solusi: Firebase Console -> Project settings -> Service accounts -> Generate new private key, '
+        + 'lalu ambil project_id, client_email, dan private_key dari SATU file baru itu, dan update ketiga secret sekaligus.';
+    } else if (authCheck.includes('Invalid JWT Signature')) {
+      report.diagnosis =
+        'client_email SUDAH BENAR (service account-nya ada), tapi FIREBASE_PRIVATE_KEY bukan pasangan dari akun itu. '
+        + 'Kemungkinan: (1) private key diambil dari file JSON lain milik service account berbeda, '
+        + '(2) private key itu sudah DIHAPUS/di-revoke di Google Cloud Console sehingga tanda tangannya tidak valid lagi. '
+        + 'Solusi: Firebase Console -> Project settings -> Service accounts -> Generate new private key (pastikan akun yang tertera di halaman itu = '
+        + report.config.FIREBASE_CLIENT_EMAIL
+        + '), lalu ambil project_id, client_email, DAN private_key dari file JSON BARU itu dan update ketiganya sekaligus. '
+        + 'Kalau masih gagal, buka Google Cloud Console -> IAM & Admin -> Service Accounts -> akun tersebut -> tab Keys, hapus semua key lama lalu buat ulang.';
+    } else if (authCheck.includes('invalid_grant') || authCheck.includes('Invalid grant')) {
+      report.diagnosis =
+        'Pertukaran token ke Google gagal. Cek private_key dan client_email masih pasangan dari file yang sama, dan service account belum dihapus.';
+    } else if (!keyCheck.startsWith('ok')) {
+      report.diagnosis =
+        'FIREBASE_PRIVATE_KEY tidak bisa dibaca (kemungkinan baris barunya hilang). Pakai versi satu baris berisi literal \\n dari worker/print-secrets.ps1.';
+    } else {
+      report.diagnosis = 'Lihat entri yang diawali "GAGAL" pada bagian checks.';
+    }
+  }
+
+  return json(report, report.ok ? 200 : 500);
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    log(`${request.method} ${url.pathname}${url.search ? '?…' : ''}`);
+    log(`${request.method} ${url.pathname}${url.search ? '?...' : ''}`);
 
     if (request.method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: corsHeaders() });
@@ -628,14 +851,19 @@ export default {
       if (url.pathname === '/recent') {
         return await handleRecent(request, env);
       }
+      if (url.pathname === '/diagnose' || url.pathname === '/diag') {
+        return await handleDiagnose(request, env);
+      }
       if (url.pathname === '/health' || url.pathname === '/') {
         return json({
           ok: true,
           service: 'nimarank-worker',
+          version: WORKER_VERSION,
           endpoints: {
             webhook: 'POST /trakteer-webhook?token=...',
             status: 'GET /status?uid=...',
             recent: 'GET /recent?limit=8',
+            diagnose: 'GET /diagnose?token=...&write=1',
           },
           time: new Date().toISOString(),
         });
