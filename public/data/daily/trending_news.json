@@ -1,7 +1,18 @@
 {
-  "version": 1789103947745,
-  "fetchedAt": "2026-09-11T05:19:07.745Z",
+  "version": 1789120674001,
+  "fetchedAt": "2026-09-11T09:57:54.001Z",
   "news": [
+    {
+      "title": "&#039;Psyren&#039; Reveals Additional Cast, Staff, Opening Theme, Main Promo",
+      "description": "The official website for the television anime adaptation of Toshiaki Iwashiro&#039;s Psyren manga revealed additional cast, staff, opening theme, key visual (pictured), and the main promotional video on Friday. The anime is scheduled to premiere on October 5 at 11.00 p.m. on Tokyo MX, followed by BS...",
+      "fullDescription": "The official website for the television anime adaptation of Toshiaki Iwashiro&#039;s Psyren manga revealed additional cast, staff, opening theme, key visual (pictured), and the main promotional video on Friday. The anime is scheduled to premiere on October 5 at 11.00 p.m. on Tokyo MX, followed by BS11 and Sun TV. Voice actors Yuuko Kaida (Spy x Family) and Nobuyuki Hiyama (Gachiakuta) are joining the cast as Matsuri Yagumo and Dholaki, respectively. Staff Creature Design: Yoshitaka Taniguchi (Se...",
+      "link": "https://myanimelist.net/news/74702197?_location=rss",
+      "pubDate": "Fri, 11 Sep 2026 02:21:31 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789118472-d6a3d2e0f03c8fcb73768d53a189c9b3.jpeg",
+      "guid": "https://myanimelist.net/news/74702197?_location=rss"
+    },
     {
       "title": "Live-Action Ao to Midori BL Series Unveils Theme Song Artists, Visual",
       "description": "ONE N' ONLY performs opening theme song \"Crush On You\"",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241630"
-    },
-    {
-      "title": "Compile Heart's Villion:Code Game Heads West in 2027",
-      "description": "School RPG launches for Switch 2, Switch, PS5, PS4, PC",
-      "fullDescription": "School RPG launches for Switch 2, Switch, PS5, PS4, PC",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-10/compile-heart-villion-code-game-heads-west-in-2027/.241631",
-      "pubDate": "Thu, 10 Sep 2026 11:41:40 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/233591/villioncode-vertical.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241631"
     }
   ],
   "total": 15
