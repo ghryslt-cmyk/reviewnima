@@ -1,7 +1,18 @@
 {
-  "version": 1789149074780,
-  "fetchedAt": "2026-09-11T17:51:14.780Z",
+  "version": 1789159887332,
+  "fetchedAt": "2026-09-11T20:51:27.332Z",
   "news": [
+    {
+      "title": "'Harem Camp!' Anime's English Dub Releases on September 18",
+      "description": "AnimeFesta anime based on Yuuki HB's manga premiered in October 2022",
+      "fullDescription": "AnimeFesta anime based on Yuuki HB's manga premiered in October 2022",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-11/harem-camp-anime-english-dub-releases-on-september-18/.241668",
+      "pubDate": "Fri, 11 Sep 2026 14:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241668/image4.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241668"
+    },
     {
       "title": "Madoka Magica -Walpurgisnacht: Rising- Anime Film Reveals Maaya Sakamoto's Role",
       "description": "Sakamoto plays unnamed upperclassman in film",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789118472-d6a3d2e0f03c8fcb73768d53a189c9b3.jpeg",
       "guid": "https://myanimelist.net/news/74702197?_location=rss"
-    },
-    {
-      "title": "Psyren TV Anime Reveals More Cast, Opening Theme Artist, October 5 Debut in Video",
-      "description": "CLAN QUEEN performs opening; Yūko Kaida, Nobuyuki Hiyama join cast",
-      "fullDescription": "CLAN QUEEN performs opening; Yūko Kaida, Nobuyuki Hiyama join cast",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-11/psyren-tv-anime-reveals-more-cast-opening-theme-artist-october-5-debut-in-video/.241661",
-      "pubDate": "Fri, 11 Sep 2026 05:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241661/psyren-kv-rgb-fix.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241661"
     }
   ],
   "total": 15
