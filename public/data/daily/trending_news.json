@@ -1,7 +1,18 @@
 {
-  "version": 1789159887332,
-  "fetchedAt": "2026-09-11T20:51:27.332Z",
+  "version": 1789168191754,
+  "fetchedAt": "2026-09-11T23:09:51.754Z",
   "news": [
+    {
+      "title": "North American Anime, Manga Releases, September 6-12",
+      "description": "My Hero Academia: Vigilantes, Kaiju No. 8: Mission Recon anime; The Amazing Digital Circus, Say Hello to Mr. Wallaby! manga ship",
+      "fullDescription": "<cite>My Hero Academia: Vigilantes, Kaiju No. 8: Mission Recon</cite> anime; <cite>The Amazing Digital Circus, Say Hello to Mr. Wallaby!</cite> manga ship",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-11/north-american-anime-manga-releases-september-6-12/.241539",
+      "pubDate": "Fri, 11 Sep 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241539"
+    },
     {
       "title": "'Harem Camp!' Anime's English Dub Releases on September 18",
       "description": "AnimeFesta anime based on Yuuki HB's manga premiered in October 2022",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max500x500/cms/news.9/241664/leon.jfif.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241664"
-    },
-    {
-      "title": "&#039;Psyren&#039; Reveals Additional Cast, Staff, Opening Theme, Main Promo",
-      "description": "The official website for the television anime adaptation of Toshiaki Iwashiro&#039;s Psyren manga revealed additional cast, staff, opening theme, key visual (pictured), and the main promotional video on Friday. The anime is scheduled to premiere on October 5 at 11.00 p.m. on Tokyo MX, followed by BS...",
-      "fullDescription": "The official website for the television anime adaptation of Toshiaki Iwashiro&#039;s Psyren manga revealed additional cast, staff, opening theme, key visual (pictured), and the main promotional video on Friday. The anime is scheduled to premiere on October 5 at 11.00 p.m. on Tokyo MX, followed by BS11 and Sun TV. Voice actors Yuuko Kaida (Spy x Family) and Nobuyuki Hiyama (Gachiakuta) are joining the cast as Matsuri Yagumo and Dholaki, respectively. Staff Creature Design: Yoshitaka Taniguchi (Se...",
-      "link": "https://myanimelist.net/news/74702197?_location=rss",
-      "pubDate": "Fri, 11 Sep 2026 02:21:31 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789118472-d6a3d2e0f03c8fcb73768d53a189c9b3.jpeg",
-      "guid": "https://myanimelist.net/news/74702197?_location=rss"
     }
   ],
   "total": 15
