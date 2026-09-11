@@ -1,7 +1,29 @@
 {
-  "version": 1789136381842,
-  "fetchedAt": "2026-09-11T14:19:41.842Z",
+  "version": 1789149074780,
+  "fetchedAt": "2026-09-11T17:51:14.780Z",
   "news": [
+    {
+      "title": "Madoka Magica -Walpurgisnacht: Rising- Anime Film Reveals Maaya Sakamoto's Role",
+      "description": "Sakamoto plays unnamed upperclassman in film",
+      "fullDescription": "Sakamoto plays unnamed upperclassman in film",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-11/madoka-magica-walpurgisnacht-rising-anime-film-reveals-maaya-sakamoto-role/.241675",
+      "pubDate": "Fri, 11 Sep 2026 12:20:15 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241675/madoka-magica-wasu.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241675"
+    },
+    {
+      "title": "'Sound! Euphonium, The Final Movie Part 2' Streams Video Featuring New Footage",
+      "description": "Film opened on Friday",
+      "fullDescription": "Film opened on Friday",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-11/sound-euphonium-the-final-movie-part-2-streams-video-featuring-new-footage/.241674",
+      "pubDate": "Fri, 11 Sep 2026 10:56:58 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241674/sound-euphonium-commemorative-visual.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241674"
+    },
     {
       "title": "Web Novel-Based Live-Action Series Take Charge of My Heart Sets October 9 Debut on Netflix",
       "description": "Series follows 3rd-generation chaebol executive whose artificial heart battery is running out",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241661/psyren-kv-rgb-fix.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241661"
-    },
-    {
-      "title": "Live-Action Ao to Midori BL Series Unveils Theme Song Artists, Visual",
-      "description": "ONE N' ONLY performs opening theme song \"Crush On You\"",
-      "fullDescription": "ONE N' ONLY performs opening theme song \"Crush On You\"",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-11/live-action-ao-to-midori-bl-series-unveils-theme-song-artists-visual/.241648",
-      "pubDate": "Fri, 11 Sep 2026 00:06:56 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241648/aotomidori.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241648"
-    },
-    {
-      "title": "&#039;Doukyo Shiteiru Kensei no Onna Shishou ga Kawaisugite Mainichi Shiawase desu&#039; Announces Production Staff",
-      "description": "WWWave Corporation&#039;s Deregula animation label opened an official website for the television anime adaptation of Kennoji and R_ringo&#039;s Doukyo Shiteiru Kensei no Onna Shishou ga Kawaisugite Mainichi Shiawase desu (My Sword Saint Master Is Too Cute to Live With!) manga revealed the production...",
-      "fullDescription": "WWWave Corporation&#039;s Deregula animation label opened an official website for the television anime adaptation of Kennoji and R_ringo&#039;s Doukyo Shiteiru Kensei no Onna Shishou ga Kawaisugite Mainichi Shiawase desu (My Sword Saint Master Is Too Cute to Live With!) manga revealed the production staff and a key visual (pictured). Staff Director: Masayoshi Nishita (Kakushite! Makina-san!!) Series Director: Tokihiro Sasaki (Nobunaga-sensei no Osanazuma director) Series Composition: Youhei Kash...",
-      "link": "https://myanimelist.net/news/74701299?_location=rss",
-      "pubDate": "Thu, 10 Sep 2026 21:02:35 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789099265-b32ea5c720056dfaecaa20cf904758c4.jpeg",
-      "guid": "https://myanimelist.net/news/74701299?_location=rss"
     }
   ],
   "total": 15
