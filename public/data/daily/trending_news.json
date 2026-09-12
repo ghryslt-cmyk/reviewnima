@@ -1,7 +1,29 @@
 {
-  "version": 1789175423376,
-  "fetchedAt": "2026-09-12T01:10:23.376Z",
+  "version": 1789192315554,
+  "fetchedAt": "2026-09-12T05:51:55.554Z",
   "news": [
+    {
+      "title": "Melty Blood:Twi-Lumina 2D Fighter Game's Trailer Reveals April 22 Release, White Len",
+      "description": "Game launches for PS5, PS4, Switch 2, Switch, Xbox One, PC",
+      "fullDescription": "Game launches for PS5, PS4, Switch 2, Switch, Xbox One, PC",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-11/melty-blood-twi-lumina-2d-fighter-game-trailer-reveals-april-22-release-white-len/.241677",
+      "pubDate": "Fri, 11 Sep 2026 23:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241677"
+    },
+    {
+      "title": "Rilakkuma Short Anime Gets 3rd Season",
+      "description": "Rilakkuma: Ki Mama ni Manpuku Biyori announced after episode 24",
+      "fullDescription": "<i>Rilakkuma: Ki Mama ni Manpuku Biyori</i> announced after episode 24",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-11/rilakkuma-short-anime-gets-3rd-season/.241683",
+      "pubDate": "Fri, 11 Sep 2026 21:09:51 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241683/kv-4.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241683"
+    },
     {
       "title": "Ryō Kurashina, Issaku Wake's Jotei Manga Gets New Live-Action TV Series",
       "description": "Live-action Oshi no Ko's Nagisa Saitō stars as woman striving to be \"Empress of Ginza\"",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238175/black-torch-kv.jpeg",
       "guid": "https://www.animenewsnetwork.com/cms/.241665"
-    },
-    {
-      "title": "Chitose Is in the Ramune Bottle Anime's 2nd Part Reveals October 13 Debut in Promo Video",
-      "description": "Cider Girl, aruma perform theme songs",
-      "fullDescription": "Cider Girl, aruma perform theme songs",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-11/chitose-is-in-the-ramune-bottle-anime-2nd-part-reveals-october-13-debut-in-promo-video/.241662",
-      "pubDate": "Fri, 11 Sep 2026 06:02:30 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.8/224160/ramune2.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241662"
-    },
-    {
-      "title": "&#039;Yasei no Last Boss ga Arawareta! 2nd Season&#039; Unveils Additional Cast, Ending Theme, Second Promo",
-      "description": "The official website for the television anime adaptation of Firehead&#039;s Yasei no Last Boss ga Arawareta! (A Wild Last Boss Appeared!) light novel unveiled additional cast, the ending theme, and second promotional video for the second season on Friday. The new season is scheduled to premiere on O...",
-      "fullDescription": "The official website for the television anime adaptation of Firehead&#039;s Yasei no Last Boss ga Arawareta! (A Wild Last Boss Appeared!) light novel unveiled additional cast, the ending theme, and second promotional video for the second season on Friday. The new season is scheduled to premiere on October 3 at 10:30 p.m. on Tokyo MX, followed by BS Asahi, and Kansai TV. Cast Sagittarius: Atsushi Miyauchi (Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou) Leon: Akio Ootsuka (Fate/Zero) M...",
-      "link": "https://myanimelist.net/news/74702269?_location=rss",
-      "pubDate": "Fri, 11 Sep 2026 02:57:13 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789120570-d7b8034a8dc3fe85aa4c6eb500583a0d.jpeg",
-      "guid": "https://myanimelist.net/news/74702269?_location=rss"
     }
   ],
   "total": 15
