@@ -1,6 +1,6 @@
 {
-  "version": 1789248479307,
-  "fetchedAt": "2026-09-12T21:27:59.307Z",
+  "version": 1789254897261,
+  "fetchedAt": "2026-09-12T23:14:57.261Z",
   "anime": [
     {
       "id": 185874,
@@ -107,6 +107,65 @@
         "year": null,
         "month": null,
         "day": null
+      }
+    },
+    {
+      "id": 190569,
+      "title": {
+        "romaji": "Tenmaku no Jaadugar",
+        "english": "Jaadugar: A Witch in Mongolia",
+        "native": "天幕のジャードゥーガル"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx190569-KnCQLI3Z8hPX.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx190569-KnCQLI3Z8hPX.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-KnCQLI3Z8hPX.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/190569-fQrApHKs9PIz.jpg",
+      "description": "After losing her mother and her homeland, Sitara’s despair transforms into determination with the power of knowledge. New possibilities unfold when a family of scholars takes her in, deepening her education. Meanwhile, Genghis Khan’s Mongol Empire conquers nation after nation, nearing Sitara’s new home. After the Fourth Prince of the empire takes her captive, a flame of revenge is ignited.<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Adventure",
+        "Drama"
+      ],
+      "averageScore": 82,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Science SARU"
+          },
+          {
+            "name": "TV Asahi"
+          },
+          {
+            "name": "Science SARU"
+          },
+          {
+            "name": "CyberAgent"
+          },
+          {
+            "name": "Akita Shoten"
+          },
+          {
+            "name": "TV Asahi Music"
+          },
+          {
+            "name": "BS Asahi"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 12
       }
     },
     {
@@ -239,65 +298,6 @@
         "year": 2026,
         "month": 9,
         "day": 20
-      }
-    },
-    {
-      "id": 190569,
-      "title": {
-        "romaji": "Tenmaku no Jaadugar",
-        "english": "Jaadugar: A Witch in Mongolia",
-        "native": "天幕のジャードゥーガル"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx190569-KnCQLI3Z8hPX.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx190569-KnCQLI3Z8hPX.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190569-KnCQLI3Z8hPX.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/190569-fQrApHKs9PIz.jpg",
-      "description": "After losing her mother and her homeland, Sitara’s despair transforms into determination with the power of knowledge. New possibilities unfold when a family of scholars takes her in, deepening her education. Meanwhile, Genghis Khan’s Mongol Empire conquers nation after nation, nearing Sitara’s new home. After the Fourth Prince of the empire takes her captive, a flame of revenge is ignited.<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Adventure",
-        "Drama"
-      ],
-      "averageScore": 82,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Science SARU"
-          },
-          {
-            "name": "TV Asahi"
-          },
-          {
-            "name": "Science SARU"
-          },
-          {
-            "name": "CyberAgent"
-          },
-          {
-            "name": "Akita Shoten"
-          },
-          {
-            "name": "TV Asahi Music"
-          },
-          {
-            "name": "BS Asahi"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 12
       }
     },
     {
@@ -557,200 +557,64 @@
       }
     },
     {
-      "id": 186863,
+      "id": 189046,
       "title": {
-        "romaji": "Neko to Ryuu",
-        "english": "The Cat and the Dragon",
-        "native": "猫と竜"
+        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "english": "Re:ZERO -Starting Life in Another World- Season 4",
+        "native": "Re:ゼロから始める異世界生活 4th season"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186863-AO4efoB8HuzA.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186863-AO4efoB8HuzA.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186863-AO4efoB8HuzA.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/186863-hRsC2yxvILTx.jpg",
-      "description": "The story follows a fire-breathing, human-hating dragon raised by a mother cat in a forest. The dragon, known affectionately as \"Uncle Wing,\" watches over the many curious cats — such as one that goes on an adventure with a human prince, and another that lives in the city and people-watches as a hobby — and gradually warms up to humans along the way.<br><br>\n\n(Source: Crunchyroll News)<br><br>\n<i>Note: Each episode streamed 1 week early on ABEMA and dAnimeStore. The original TV broadcast started on July 4, 2026.</i>",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
+      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
       "genres": [
+        "Action",
         "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 78,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "OLM"
-          },
-          {
-            "name": "Docomo Anime Store"
-          },
-          {
-            "name": "Yomiuri TV"
-          },
-          {
-            "name": "MAGNET"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "HIKE"
-          },
-          {
-            "name": "NTV Music"
-          },
-          {
-            "name": "Bushiroad Move"
-          },
-          {
-            "name": "KLOCKWORX"
-          },
-          {
-            "name": "Takarajimasha"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 6,
-        "day": 27
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 12
-      }
-    },
-    {
-      "id": 199066,
-      "title": {
-        "romaji": "Hanaori-san wa Tensei Shite mo Kenka ga Shitai",
-        "english": "Hanaori-san Still Wants to Fight in the Next Life",
-        "native": "花織さんは転生しても喧嘩がしたい"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199066-YXDVsguvFZMm.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199066-YXDVsguvFZMm.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-YXDVsguvFZMm.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199066-nmAYnI6uChse.jpg",
-      "description": "Once the Demon King, now a shut-in NEET—Ryuusei Narukami’s second life is anything but peaceful! When Meteor Hanaori, the Hero who once defeated him, suddenly returns as a normal high school girl, his world is thrown into chaos. Determined to change, Ryuusei reenters society as a teacher and ends up teaching at her school! Their explosive reunion reignites the past—and sparks an unexpected love!<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Comedy",
-        "Romance",
-        "Supernatural"
-      ],
-      "averageScore": 69,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "LIDENFILMS"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Bandai Namco Filmworks"
-          },
-          {
-            "name": "ABC Animation"
-          },
-          {
-            "name": "BS Nittele"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 12
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
-      }
-    },
-    {
-      "id": 171110,
-      "title": {
-        "romaji": "Honzuki no Gekokujou: Ryoushu no Youjo",
-        "english": "Ascendance of a Bookworm: Adopted Daughter of an Archduke",
-        "native": "本好きの下剋上 領主の養女"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171110-7zOdInS6DQNL.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx171110-7zOdInS6DQNL.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171110-7zOdInS6DQNL.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/171110-lgtmKokpevUM.jpg",
-      "description": "Following a disastrous encounter with a noble, Myne finally resolves to say goodbye to her family and friends in the lower city, changing her name to “Rozemyne” and beginning her new life as the adopted daughter of Ehrenfest’s archduke. However, her days as an archnoble in noble society are brutal, as she is put through rigorous etiquette and magic training on top of her duties as High Bishop and forewoman. It all proves too much for a weak little seven-year-old girl... Or it would have, had the High Priest not offered her the keys to the temple’s book room as a reward. If she could get her hands on those, she’d be able to read all sorts of precious books! Her name may have changed, but Rozemyne’s passion for books remains the same as she charges into a whole new world! The detailed setting expands as the printing industry grows in size. Here begins Part 3 of this biblio-fantasy for book lovers everywhere!<br>\n<br>\n(Source: J-Novel Club)",
-      "genres": [
         "Drama",
         "Fantasy",
-        "Slice of Life"
+        "Psychological",
+        "Romance",
+        "Thriller"
       ],
-      "averageScore": 76,
-      "episodes": 24,
+      "averageScore": 90,
+      "episodes": 19,
       "status": "RELEASING",
       "season": "SPRING",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "WIT STUDIO"
+            "name": "KADOKAWA"
           },
           {
-            "name": "TO Books"
+            "name": "WHITE FOX"
           },
           {
-            "name": "Yomiuri TV"
+            "name": "Hakuhodo DY Music & Pictures"
           },
           {
-            "name": "WIT STUDIO"
+            "name": "AT-X"
           },
           {
-            "name": "Movic"
+            "name": "DAXEL"
           },
           {
-            "name": "Yomiuri TV Enterprise"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "flying DOG"
-          },
-          {
-            "name": "KLOCKWORX"
+            "name": "Memory-Tech"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 4,
-        "day": 4
+        "day": 8
       },
       "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 2026,
+        "month": 9,
+        "day": 30
       }
     },
     {
@@ -847,64 +711,200 @@
       }
     },
     {
-      "id": 189046,
+      "id": 171110,
       "title": {
-        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-        "english": "Re:ZERO -Starting Life in Another World- Season 4",
-        "native": "Re:ゼロから始める異世界生活 4th season"
+        "romaji": "Honzuki no Gekokujou: Ryoushu no Youjo",
+        "english": "Ascendance of a Bookworm: Adopted Daughter of an Archduke",
+        "native": "本好きの下剋上 領主の養女"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171110-7zOdInS6DQNL.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx171110-7zOdInS6DQNL.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171110-7zOdInS6DQNL.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
-      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/171110-lgtmKokpevUM.jpg",
+      "description": "Following a disastrous encounter with a noble, Myne finally resolves to say goodbye to her family and friends in the lower city, changing her name to “Rozemyne” and beginning her new life as the adopted daughter of Ehrenfest’s archduke. However, her days as an archnoble in noble society are brutal, as she is put through rigorous etiquette and magic training on top of her duties as High Bishop and forewoman. It all proves too much for a weak little seven-year-old girl... Or it would have, had the High Priest not offered her the keys to the temple’s book room as a reward. If she could get her hands on those, she’d be able to read all sorts of precious books! Her name may have changed, but Rozemyne’s passion for books remains the same as she charges into a whole new world! The detailed setting expands as the printing industry grows in size. Here begins Part 3 of this biblio-fantasy for book lovers everywhere!<br>\n<br>\n(Source: J-Novel Club)",
       "genres": [
-        "Action",
-        "Adventure",
         "Drama",
         "Fantasy",
-        "Psychological",
-        "Romance",
-        "Thriller"
+        "Slice of Life"
       ],
-      "averageScore": 90,
-      "episodes": 19,
+      "averageScore": 76,
+      "episodes": 24,
       "status": "RELEASING",
       "season": "SPRING",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "KADOKAWA"
+            "name": "WIT STUDIO"
           },
           {
-            "name": "WHITE FOX"
+            "name": "TO Books"
           },
           {
-            "name": "Hakuhodo DY Music & Pictures"
+            "name": "Yomiuri TV"
           },
           {
-            "name": "AT-X"
+            "name": "WIT STUDIO"
           },
           {
-            "name": "DAXEL"
+            "name": "Movic"
           },
           {
-            "name": "Memory-Tech"
+            "name": "Yomiuri TV Enterprise"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "flying DOG"
+          },
+          {
+            "name": "KLOCKWORX"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 4,
-        "day": 8
+        "day": 4
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 199066,
+      "title": {
+        "romaji": "Hanaori-san wa Tensei Shite mo Kenka ga Shitai",
+        "english": "Hanaori-san Still Wants to Fight in the Next Life",
+        "native": "花織さんは転生しても喧嘩がしたい"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199066-YXDVsguvFZMm.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199066-YXDVsguvFZMm.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199066-YXDVsguvFZMm.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199066-nmAYnI6uChse.jpg",
+      "description": "Once the Demon King, now a shut-in NEET—Ryuusei Narukami’s second life is anything but peaceful! When Meteor Hanaori, the Hero who once defeated him, suddenly returns as a normal high school girl, his world is thrown into chaos. Determined to change, Ryuusei reenters society as a teacher and ends up teaching at her school! Their explosive reunion reignites the past—and sparks an unexpected love!<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Comedy",
+        "Romance",
+        "Supernatural"
+      ],
+      "averageScore": 69,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "LIDENFILMS"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Bandai Namco Filmworks"
+          },
+          {
+            "name": "ABC Animation"
+          },
+          {
+            "name": "BS Nittele"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 12
       },
       "endDate": {
         "year": 2026,
         "month": 9,
-        "day": 30
+        "day": 27
+      }
+    },
+    {
+      "id": 186863,
+      "title": {
+        "romaji": "Neko to Ryuu",
+        "english": "The Cat and the Dragon",
+        "native": "猫と竜"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186863-AO4efoB8HuzA.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186863-AO4efoB8HuzA.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186863-AO4efoB8HuzA.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/186863-hRsC2yxvILTx.jpg",
+      "description": "The story follows a fire-breathing, human-hating dragon raised by a mother cat in a forest. The dragon, known affectionately as \"Uncle Wing,\" watches over the many curious cats — such as one that goes on an adventure with a human prince, and another that lives in the city and people-watches as a hobby — and gradually warms up to humans along the way.<br><br>\n\n(Source: Crunchyroll News)<br><br>\n<i>Note: Each episode streamed 1 week early on ABEMA and dAnimeStore. The original TV broadcast started on July 4, 2026.</i>",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 78,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "OLM"
+          },
+          {
+            "name": "Docomo Anime Store"
+          },
+          {
+            "name": "Yomiuri TV"
+          },
+          {
+            "name": "MAGNET"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "Pia"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "HIKE"
+          },
+          {
+            "name": "NTV Music"
+          },
+          {
+            "name": "Bushiroad Move"
+          },
+          {
+            "name": "KLOCKWORX"
+          },
+          {
+            "name": "Takarajimasha"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 6,
+        "day": 27
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 12
       }
     }
   ]
