@@ -1,7 +1,40 @@
 {
-  "version": 1789220782619,
-  "fetchedAt": "2026-09-12T13:46:22.619Z",
+  "version": 1789232080817,
+  "fetchedAt": "2026-09-12T16:54:40.817Z",
   "news": [
+    {
+      "title": "Japanese Animation TV Ranking, August 31-September 6",
+      "description": "From Old Country Bumpkin to Master Swordsman season 2 earns 2.4% rating",
+      "fullDescription": "<cite>From Old Country Bumpkin to Master Swordsman</cite> season 2 earns 2.4% rating",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-12/japanese-animation-tv-ranking-august-31-september-6/.241659",
+      "pubDate": "Sat, 12 Sep 2026 12:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241659"
+    },
+    {
+      "title": "Bleach: Thousand-Year Blood War - The Calamity Anime Episodes 49, 50 Delayed to October 19, 26",
+      "description": "Episodes 7, 28, 46, 48 to re-air in weeks before episodes 49, 50",
+      "fullDescription": "Episodes 7, 28, 46, 48 to re-air in weeks before episodes 49, 50",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-12/bleach-thousand-year-blood-war-the-calamity-anime-episodes-49-50-delayed-to-october-19-26/.241707",
+      "pubDate": "Sat, 12 Sep 2026 11:13:17 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241707/w707-10.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241707"
+    },
+    {
+      "title": "Netflix Announces Cast for Webtoon-Based Live-Action Series Outback",
+      "description": "Series based on G'day webtoon follows man who travels to Australia after his older sister's sudden death",
+      "fullDescription": "Series based on <cite>G'day</cite> webtoon follows man who travels to Australia after his older sister's sudden death",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-12/netflix-announces-cast-for-webtoon-based-live-action-series-outback/.241650",
+      "pubDate": "Sat, 12 Sep 2026 10:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241650/hr5iywww8acx8ic.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241650"
+    },
     {
       "title": "CloverWorks' Omnibus Anime Film Grotesqqque Streams Trailer Highlighting \"Yoroshiku★Girl\" Segment",
       "description": "Film opens on November 6 in Japan",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241687/vertex-force.jfif.jpeg",
       "guid": "https://www.animenewsnetwork.com/cms/.241687"
-    },
-    {
-      "title": "Ascendance of a Bookworm Part 3 Anime Casts Kaede Hondo, Reveals Climax Promo Video",
-      "description": "Kaede Hondo joins cast as character Charlotte",
-      "fullDescription": "Kaede Hondo joins cast as character Charlotte",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-12/ascendance-of-a-bookworm-part-3-anime-casts-kaede-hondo-reveals-climax-promo-video/.241696",
-      "pubDate": "Sat, 12 Sep 2026 06:09:56 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/233207/bookworm.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241696"
-    },
-    {
-      "title": "Fate/EXTRA Record Game Streams Character Video for Archer",
-      "description": "Junichi Suwabe voices character in game launching on January 28",
-      "fullDescription": "Junichi Suwabe voices character in game launching on January 28",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-12/fate-extra-record-game-streams-character-video-for-archer/.241699",
-      "pubDate": "Sat, 12 Sep 2026 06:05:41 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241555/fatekv.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241699"
-    },
-    {
-      "title": "Inherit the Winds Anime's New Video Highlights 5 Characters",
-      "description": "Anime debuts 1st in theaters on November 13 before airing starting in January 2027",
-      "fullDescription": "Anime debuts 1st in theaters on November 13 before airing starting in January 2027",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-12/inherit-the-winds-anime-new-video-highlights-5-characters/.241686",
-      "pubDate": "Sat, 12 Sep 2026 05:53:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241686/new-cast.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241686"
     }
   ],
   "total": 15
