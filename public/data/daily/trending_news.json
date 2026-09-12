@@ -1,7 +1,29 @@
 {
-  "version": 1789232080817,
-  "fetchedAt": "2026-09-12T16:54:40.817Z",
+  "version": 1789240055018,
+  "fetchedAt": "2026-09-12T19:07:35.018Z",
   "news": [
+    {
+      "title": "Japan's Video Game Rankings, August 31-September 6",
+      "description": "Onimusha: Way of the Sword PS5 version debuts at #1, Switch 2 version at #3",
+      "fullDescription": "<cite>Onimusha: Way of the Sword</cite> PS5 version debuts at #1, Switch 2 version at #3",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-11/japan-video-game-rankings-august-31-september-6/.241658",
+      "pubDate": "Sat, 12 Sep 2026 14:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241658"
+    },
+    {
+      "title": "&#039;Grotesqqque&#039; Reveals Supporting Cast, Trailer for \"Yoroshiku★Shoujo\" Segment",
+      "description": "The Aniplex One Focus 2026 event revealed supporting cast for the Grotesqqque original anime movie and a trailer for its Yoroshiku★Shoujo segment on Saturday. The three-story omnibus movie will premiere in Japanese theaters on November 6. Cast Mitoge: Youko Hikasa (Kaoru Hana wa Rin to Saku) Mimosa:...",
+      "fullDescription": "The Aniplex One Focus 2026 event revealed supporting cast for the Grotesqqque original anime movie and a trailer for its Yoroshiku★Shoujo segment on Saturday. The three-story omnibus movie will premiere in Japanese theaters on November 6. Cast Mitoge: Youko Hikasa (Kaoru Hana wa Rin to Saku) Mimosa: Riho Sugiyama (Amagami-san Chi no Enmusubi) Kava: Ayaka Ohashi (Akame ga Kill!) Shouta Horie (Shiunji-ke no Kodomotachi), Yuyoyuppe (Mob Psycho 100), Ayato Shinozaki (Kage no Jitsuryokusha ni Naritak...",
+      "link": "https://myanimelist.net/news/74709373?_location=rss",
+      "pubDate": "Sat, 12 Sep 2026 10:55:08 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789235488-103e5404e86b5454912844ba6bb973a2.jpeg",
+      "guid": "https://myanimelist.net/news/74709373?_location=rss"
+    },
     {
       "title": "Japanese Animation TV Ranking, August 31-September 6",
       "description": "From Old Country Bumpkin to Master Swordsman season 2 earns 2.4% rating",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789209950-061b769380aab771d2c6a07baf00a04f.jpeg",
       "guid": "https://myanimelist.net/news/74707563?_location=rss"
-    },
-    {
-      "title": "Please Excuse My Younger Brothers TV Anime Reveals New Opening Theme Artist, Special Promo Video",
-      "description": "Neguse performs new opening theme song for show's 2nd part",
-      "fullDescription": "Neguse performs new opening theme song for show's 2nd part",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-12/please-excuse-my-younger-brothers-tv-anime-reveals-new-opening-theme-artist-special-promo-video/.241690",
-      "pubDate": "Sat, 12 Sep 2026 06:30:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235860/ototo.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241690"
-    },
-    {
-      "title": "Vertex Force Original Anime Reveals Theme Song Artists, More Cast in 2nd Promo Video",
-      "description": "Kazuki Ura, Nana Mizuki join cast; ClariS, Hashimero perform themes",
-      "fullDescription": "Kazuki Ura, Nana Mizuki join cast; ClariS, Hashimero perform themes",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-12/vertex-force-original-anime-reveals-theme-song-artists-more-cast-in-2nd-promo-video/.241687",
-      "pubDate": "Sat, 12 Sep 2026 06:10:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241687/vertex-force.jfif.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241687"
     }
   ],
   "total": 15
