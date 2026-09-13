@@ -1,11 +1,22 @@
 {
-  "version": 1789301090645,
-  "fetchedAt": "2026-09-13T12:04:50.645Z",
+  "version": 1789316542360,
+  "fetchedAt": "2026-09-13T16:22:22.360Z",
   "news": [
+    {
+      "title": "The Idolm@ster SideM Franchise Gets Film, 1st Console Game",
+      "description": "Film to open on November 20, D3 Publisher & Bandai Namco plan game for Switch/Switch 2",
+      "fullDescription": "Film to open on November 20, D3 Publisher & Bandai Namco plan game for Switch/Switch 2",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-13/the-idolm@ster-sidem-franchise-gets-film-1st-console-game/.241733",
+      "pubDate": "Sun, 13 Sep 2026 11:08:52 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241733"
+    },
     {
       "title": "&#039;#Zombie Sagashitemasu&#039; Unveils Additional Cast, Staff, Theme Songs, First Promo",
       "description": "The special livestream presentation for the television anime adaptation of Katsuwo&#039;s #Zombie Sagashitemasu (#I&#039;m Looking for Zombie) manga unveiled additional cast, staff, a key visual (pictured right), the theme songs, and first promotional video on Sunday. The anime series is scheduled t...",
-      "fullDescription": "The special livestream presentation for the television anime adaptation of Katsuwo&#039;s #Zombie Sagashitemasu (#I&#039;m Looking for Zombie) manga unveiled additional cast, staff, a key visual (pictured right), the theme songs, and first promotional video on Sunday. The anime series is scheduled to premiere on October 3 at 11:30 p.m. on TV Asahi&#039;s IMAnimation programming block, followed by BS Asahi and AT-X Cast: Mikazuki: Youko Hikasa (High School DxD) Touka: Makoto Koichi (Tensei shita...",
+      "fullDescription": "The special livestream presentation for the television anime adaptation of Katsuwo&#039;s #Zombie Sagashitemasu (#I&#039;m Looking for Zombie) manga unveiled additional cast, staff, a key visual (pictured right), the theme songs, and first promotional video on Sunday. The anime series is scheduled to premiere on October 3 at 11:30 p.m. on TV Asahi&#039;s IMAnimation programming block, followed by BS Asahi and AT-X. Cast: Mikazuki: Youko Hikasa (High School DxD) Touka: Makoto Koichi (Tensei shit...",
       "link": "https://myanimelist.net/news/74713683?_location=rss",
       "pubDate": "Sun, 13 Sep 2026 04:43:56 -0700",
       "source": "MyAnimeList",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241658"
-    },
-    {
-      "title": "&#039;Grotesqqque&#039; Reveals Supporting Cast, Trailer for \"Yoroshiku★Shoujo\" Segment",
-      "description": "The Aniplex One Focus 2026 event revealed supporting cast for the Grotesqqque original anime movie and a trailer for its Yoroshiku★Shoujo segment on Saturday. The three-story omnibus movie will premiere in Japanese theaters on November 6. Cast Mitoge: Youko Hikasa (Kaoru Hana wa Rin to Saku) Mimosa:...",
-      "fullDescription": "The Aniplex One Focus 2026 event revealed supporting cast for the Grotesqqque original anime movie and a trailer for its Yoroshiku★Shoujo segment on Saturday. The three-story omnibus movie will premiere in Japanese theaters on November 6. Cast Mitoge: Youko Hikasa (Kaoru Hana wa Rin to Saku) Mimosa: Riho Sugiyama (Amagami-san Chi no Enmusubi) Kava: Ayaka Ohashi (Akame ga Kill!) Shouta Horie (Shiunji-ke no Kodomotachi), Yuyoyuppe (Mob Psycho 100), Ayato Shinozaki (Kage no Jitsuryokusha ni Naritak...",
-      "link": "https://myanimelist.net/news/74709373?_location=rss",
-      "pubDate": "Sat, 12 Sep 2026 10:55:08 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789235488-103e5404e86b5454912844ba6bb973a2.jpeg",
-      "guid": "https://myanimelist.net/news/74709373?_location=rss"
     }
   ],
   "total": 15

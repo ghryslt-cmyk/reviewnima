@@ -1,7 +1,71 @@
 {
-  "version": 1789301090956,
-  "fetchedAt": "2026-09-13T12:04:50.956Z",
+  "version": 1789316542701,
+  "fetchedAt": "2026-09-13T16:22:22.701Z",
   "anime": [
+    {
+      "id": 178789,
+      "title": {
+        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
+        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Ecchi",
+        "Fantasy"
+      ],
+      "averageScore": 84,
+      "episodes": 14,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Bind"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Frontier Works"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "GREE Entertainment"
+          },
+          {
+            "name": "EGG FIRM"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
+      }
+    },
     {
       "id": 210031,
       "title": {
@@ -61,57 +125,63 @@
       }
     },
     {
-      "id": 185874,
+      "id": 200637,
       "title": {
-        "romaji": "BLEACH: Sennen Kessen-hen - Kashin-tan",
-        "english": "BLEACH: Thousand-Year Blood War - The Calamity",
-        "native": "BLEACH 千年血戦篇-禍進譚-"
+        "romaji": "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 3rd Season",
+        "english": "The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You Season 3",
+        "native": "君のことが大大大大大好きな100人の彼女 第3期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185874-aU3e6tBT6wwA.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185874-aU3e6tBT6wwA.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx200637-QLR5uv9SbQ69.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx200637-QLR5uv9SbQ69.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200637-QLR5uv9SbQ69.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185874-IdGyh1EBG91I.jpg",
-      "description": "Destruction looms at the end of the Thousand-Year Blood War between the Soul Reapers and Quincies… as the death of the Soul King mirrors the collapse of the Three Worlds, distortions and omens of destruction start to appear in all realms. \n<br><br>\nFierce battles erupt throughout the Wahr Welt between the Thirteen Court Guard Squads and the Royal Guard. Ichigo learns about Uryuu's true intentions and renews his determination to protect the world together, as friends who trust each other. Yhwach has surpassed even his own ability, The Almighty...\n<br><br>\nThe fierce battle for the survival of the Three Worlds approaches its end. Beyond the chaos of calamity, what lies in wait—despair or hope?\n<br><br>\n(Source: VIZ Media, edited)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/200637-q9mehOFbbCgT.jpg",
+      "description": "The third season of <i>Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo.</i>",
       "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
+        "Comedy",
+        "Ecchi",
+        "Romance"
       ],
-      "averageScore": 90,
-      "episodes": 10,
+      "averageScore": 79,
+      "episodes": 12,
       "status": "RELEASING",
       "season": "SUMMER",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Studio Pierrot"
+            "name": "Bandai Namco Filmworks"
+          },
+          {
+            "name": "Bibury Animation Studios"
           },
           {
             "name": "Shueisha"
           },
           {
-            "name": "TV Tokyo"
+            "name": "Bandai Namco Music Live"
           },
           {
-            "name": "Dentsu"
+            "name": "Bushiroad"
           },
           {
-            "name": "PIERROT FILMS"
+            "name": "Movic"
+          },
+          {
+            "name": "TOKYO MX"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 7,
-        "day": 25
+        "day": 5
       },
       "endDate": {
         "year": 2026,
-        "month": 10,
-        "day": 26
+        "month": 9,
+        "day": 20
       }
     },
     {
@@ -165,6 +235,60 @@
         "year": null,
         "month": null,
         "day": null
+      }
+    },
+    {
+      "id": 185874,
+      "title": {
+        "romaji": "BLEACH: Sennen Kessen-hen - Kashin-tan",
+        "english": "BLEACH: Thousand-Year Blood War - The Calamity",
+        "native": "BLEACH 千年血戦篇-禍進譚-"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185874-aU3e6tBT6wwA.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185874-aU3e6tBT6wwA.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185874-IdGyh1EBG91I.jpg",
+      "description": "Destruction looms at the end of the Thousand-Year Blood War between the Soul Reapers and Quincies… as the death of the Soul King mirrors the collapse of the Three Worlds, distortions and omens of destruction start to appear in all realms. \n<br><br>\nFierce battles erupt throughout the Wahr Welt between the Thirteen Court Guard Squads and the Royal Guard. Ichigo learns about Uryuu's true intentions and renews his determination to protect the world together, as friends who trust each other. Yhwach has surpassed even his own ability, The Almighty...\n<br><br>\nThe fierce battle for the survival of the Three Worlds approaches its end. Beyond the chaos of calamity, what lies in wait—despair or hope?\n<br><br>\n(Source: VIZ Media, edited)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ],
+      "averageScore": 90,
+      "episodes": 10,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "PIERROT FILMS"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 25
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 26
       }
     },
     {
@@ -238,6 +362,66 @@
         "year": 2026,
         "month": 9,
         "day": 25
+      }
+    },
+    {
+      "id": 103303,
+      "title": {
+        "romaji": "Nijusseiki Denki Mokuroku: Eureka Evrika",
+        "english": "Sparks of Tomorrow",
+        "native": "二十世紀電氣目録-ユーレカ・エヴリカ-"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx103303-IF43hFJPPv2Y.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx103303-IF43hFJPPv2Y.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx103303-IF43hFJPPv2Y.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/103303-K73aVOqkCPqL.jpg",
+      "description": "The novel takes place in the summer of 1907, the 40th year of the Meiji era. 15-year-old Inako Momokawa lives in the Fushimi area of Kyoto, and is the second daughter of a sake brewer. Nothing she does ever comes out right, and she receives a scolding from her father every day. Her only relief is the trust she places in her prayers to the gods. One day while at Fushimi Inari shrine, she meets a freewheeling young man named Kihachi Sakamoto. He rejects the gods, and boasts of the incoming age of electricity. <br><br>\n\nThe topic of marriage suddenly comes up in Inako's household. Her father is one-sidedly making all the decisions for her, and Inako is about to give up hope. It is then that Kihachi draws out Inako's true feelings of wanting to run away from her family. The only way to stop her marriage is to find an unusual book called the \"Electricity Catalog.\" The book is a prediction book about electricity that Kihachi wrote when he was a child, but his older brother Seiroku took the book, and its current whereabouts are unknown. Inako and Kihachi together go in search of the book across Kyoto and Shiga prefectures.<br><br>\n\n(Source: Anime News Network)",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Romance"
+      ],
+      "averageScore": 76,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Kyoto Animation"
+          },
+          {
+            "name": "Kyoto Animation"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "ABC Animation"
+          },
+          {
+            "name": "Bandai Namco Music Live"
+          },
+          {
+            "name": "Rakuonsha"
+          },
+          {
+            "name": "Heart Company"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
       }
     },
     {
@@ -315,24 +499,78 @@
       }
     },
     {
-      "id": 201514,
+      "id": 188139,
       "title": {
-        "romaji": "Saijo no Osewa: Takane no Hanadarake na Meimonkou de, Gakuin Ichi no Ojou-sama (Seikatsu Nouryoku Kaimu) wo Kagenagara Osewa suru Koto ni Narimashita",
-        "english": "Rich Girl Caretaker: I'm Secretly the Caregiver of the Most Popular Girl in This Rich Kid School",
-        "native": "才女のお世話 高嶺の花だらけな名門校で、学院一のお嬢様(生活能力皆無)を陰ながらお世話することになりました"
+        "romaji": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den",
+        "english": "Though I Am an Inept Villainess",
+        "native": "ふつつかな悪女ではございますが ~雛宮蝶鼠とりかえ伝~"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx201514-BHAeWhSbcBrT.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx201514-BHAeWhSbcBrT.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx201514-BHAeWhSbcBrT.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188139-1qIJfWxym8FX.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx188139-1qIJfWxym8FX.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188139-1qIJfWxym8FX.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/201514-8dAOB0Xw124G.jpg",
-      "description": "Hinako Konohana is the perfect young lady—graceful, elegant, and flawless… or so everyone thinks. Behind closed doors, she’s a total disaster who can’t handle basic chores! When ordinary student Itsuki Tomonari becomes her caretaker, he’s thrown into 24/7 damage control, maintaining her “perfect” image. It’s awkward, nonstop chaos—but it starts softening into something that feels like love…\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/188139-PU5JsGJiiUnR.jpg",
+      "description": "As maidens from the Five Clans battle for the Crown Prince’s heart, jealous Keigetsu uses forbidden magic to swap bodies with the beloved Reirin. Switching places does not guarantee happiness for Keigetsu with her new body's ill health leaving her hanging on the verge of death. Meanwhile, Reirin, now wearing the face of a scorned outcast, must answer for Keigetsu’s crimes in a dangerous trial.\n<br><br>\nThe unlikely pair become increasingly entangled in each other’s lives and they will need to work together to survive after discovering the dark conspiracies brewing beneath the palace's genial surface. To confront the deadly threats lurking in the shadows, Reirin must embrace her new identity and defy their expectations of the court's inept villainess.<br><br>\n(Source: Crunchyroll)",
       "genres": [
-        "Comedy",
+        "Drama",
         "Romance"
       ],
-      "averageScore": 69,
+      "averageScore": 78,
+      "episodes": 11,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Doga Kobo"
+          },
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Ichijinsha"
+          },
+          {
+            "name": "Doga Kobo"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 12
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 198409,
+      "title": {
+        "romaji": "Sekai Saikyou no Kouei: Meikyuukoku no Shinjin Tansakusha",
+        "english": "The World's Strongest Rearguard",
+        "native": "世界最強の後衛 ～迷宮国の新人探索者～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198409-EiWJXfYnvfu4.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198409-EiWJXfYnvfu4.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png"
+      },
+      "bannerImage": null,
+      "description": "After a fatal accident, overworked office worker Arihito Atobe is reborn in the Labyrinth Country as a Seeker with the rare Rearguard class—an all-purpose support role that excels in attack, defense, and healing. Joined by a fierce demi-human mercenary and his former boss, Arihito dives into deadly dungeons and rises through the ranks. The adventure of the strongest support class begins!\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 55,
       "episodes": 12,
       "status": "RELEASING",
       "season": "SUMMER",
@@ -340,25 +578,25 @@
       "studios": {
         "nodes": [
           {
-            "name": "Brain's Base"
+            "name": "Maho Film"
           },
           {
-            "name": "Mainichi Broadcasting System"
+            "name": "Yomiuri TV Enterprise"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Maho Film"
           },
           {
             "name": "King Records"
           },
           {
-            "name": "MediaNet"
+            "name": "MUSE"
           },
           {
-            "name": "Hobby Japan"
-          },
-          {
-            "name": "MAGNET"
-          },
-          {
-            "name": "BS Asahi"
+            "name": "KLOCKWORX"
           }
         ]
       },
@@ -368,9 +606,9 @@
         "day": 5
       },
       "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 20
+        "year": null,
+        "month": null,
+        "day": null
       }
     },
     {
@@ -433,54 +671,62 @@
       }
     },
     {
-      "id": 269,
+      "id": 201514,
       "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
+        "romaji": "Saijo no Osewa: Takane no Hanadarake na Meimonkou de, Gakuin Ichi no Ojou-sama (Seikatsu Nouryoku Kaimu) wo Kagenagara Osewa suru Koto ni Narimashita",
+        "english": "Rich Girl Caretaker: I'm Secretly the Caregiver of the Most Popular Girl in This Rich Kid School",
+        "native": "才女のお世話 高嶺の花だらけな名門校で、学院一のお嬢様(生活能力皆無)を陰ながらお世話することになりました"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx201514-BHAeWhSbcBrT.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx201514-BHAeWhSbcBrT.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx201514-BHAeWhSbcBrT.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/201514-8dAOB0Xw124G.jpg",
+      "description": "Hinako Konohana is the perfect young lady—graceful, elegant, and flawless… or so everyone thinks. Behind closed doors, she’s a total disaster who can’t handle basic chores! When ordinary student Itsuki Tomonari becomes her caretaker, he’s thrown into 24/7 damage control, maintaining her “perfect” image. It’s awkward, nonstop chaos—but it starts softening into something that feels like love…\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
+        "Comedy",
+        "Romance"
       ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
+      "averageScore": 69,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Studio Pierrot"
+            "name": "Brain's Base"
           },
           {
-            "name": "TV Tokyo"
+            "name": "Mainichi Broadcasting System"
           },
           {
-            "name": "Dentsu"
+            "name": "King Records"
           },
           {
-            "name": "Viz Media"
+            "name": "MediaNet"
+          },
+          {
+            "name": "Hobby Japan"
+          },
+          {
+            "name": "MAGNET"
+          },
+          {
+            "name": "BS Asahi"
           }
         ]
       },
       "startDate": {
-        "year": 2004,
-        "month": 10,
+        "year": 2026,
+        "month": 7,
         "day": 5
       },
       "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
+        "year": 2026,
+        "month": 9,
+        "day": 20
       }
     },
     {
@@ -540,199 +786,54 @@
       }
     },
     {
-      "id": 189046,
+      "id": 269,
       "title": {
-        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-        "english": "Re:ZERO -Starting Life in Another World- Season 4",
-        "native": "Re:ゼロから始める異世界生活 4th season"
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
-      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
       "genres": [
         "Action",
         "Adventure",
-        "Drama",
-        "Fantasy",
-        "Psychological",
-        "Romance",
-        "Thriller"
+        "Supernatural"
       ],
-      "averageScore": 90,
-      "episodes": 19,
-      "status": "RELEASING",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "WHITE FOX"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "DAXEL"
-          },
-          {
-            "name": "Memory-Tech"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 8
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 30
-      }
-    },
-    {
-      "id": 208044,
-      "title": {
-        "romaji": "Rakudai Kenja no Gakuin Musou: Nidome no Tensei, S-Rank Cheat Majutsushi Bouken-roku",
-        "english": "From Overshadowed to Overpowered: Second Reincarnation of a Talentless Sage",
-        "native": "落第賢者の学院無双～二度目の転生、Sランクチート魔術師冒険録～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx208044-Pm2UhvApQFUh.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx208044-Pm2UhvApQFUh.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208044-Pm2UhvApQFUh.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/208044-JtlSTlmp5SmP.jpg",
-      "description": "The great sage Ephtal dies in despair after failing to reach the peak of magic—but 400 years later, he’s reborn with all his memories and power intact! In a world where magic has decayed and ancient spells are treated as miracles, Ephtal storms into a prestigious magic academy to reclaim the true art of sorcery. As his power shakes the world, long-forgotten legends begin to awaken!<br><br>\n\n(Source: Crunchyroll)<br><br>\n\n<i>Note: Rakudai Kenja no Gakuin Musou: Nidome no Tensei, S-Rank Cheat Majutsushi Bouken-roku is streaming a week in advance of the TV broadcast on dAnimeStore, ABEMA, U-NEXT, and Anime Hodai beginning June 26th, 2026. Regular broadcasting began on July 2nd, 2026.</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 62,
-      "episodes": 12,
+      "averageScore": 79,
+      "episodes": 366,
       "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
+      "season": "FALL",
+      "seasonYear": 2004,
       "studios": {
         "nodes": [
           {
-            "name": "EMT Squared"
+            "name": "Studio Pierrot"
           },
           {
-            "name": "ABC Animation"
+            "name": "TV Tokyo"
           },
           {
-            "name": "NBCUniversal Entertainment Japan"
+            "name": "Dentsu"
           },
           {
-            "name": "D-techno"
-          },
-          {
-            "name": "Square Enix"
-          },
-          {
-            "name": "arma bianca"
-          },
-          {
-            "name": "WOWOW"
-          },
-          {
-            "name": "Bit grooove promotion"
-          },
-          {
-            "name": "BS Fuji"
-          },
-          {
-            "name": "EMT Squared"
-          },
-          {
-            "name": "jeux d'eau"
-          },
-          {
-            "name": "KLOCKWORX"
+            "name": "Viz Media"
           }
         ]
       },
       "startDate": {
-        "year": 2026,
-        "month": 6,
-        "day": 26
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 11
-      }
-    },
-    {
-      "id": 194219,
-      "title": {
-        "romaji": "Oni no Hanayome",
-        "english": "The Ogre's Bride",
-        "native": "鬼の花嫁"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b194219-56EhyK775lga.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b194219-56EhyK775lga.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b194219-56EhyK775lga.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/194219-t8ID9kSIpXxf.jpg",
-      "description": "A Japanese-style ayakashi Cinderella story! <i>\"You're the bride I've been searching for all this time.\"</i> The ayakashi and humans coexist in harmony. The ayakashi, having superior abilities and beautiful appearances, sometimes find their partner among human women, making them their \"bride\". The bride, in exchange for bringing prosperity, receives absolute love from the ayakashi. Yuzu is constantly compared to her sister, a bride of a demon fox, and is resented by her family every day. One day, when Yuzu just couldn't take things anymore, a man appears before her on a bridge. This man is the most beautiful man Yuzu has ever seen... and he's calling her his wife?! <i>\"Just be quiet and let me hold you.\"</i> The most powerful, \"cold-hearted\" ayakashi is pouring his heart out for Yuzu?!<br><br>\n(Source: MangaPlaza)",
-      "genres": [
-        "Drama",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 68,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Colored Pencil Animation Japan"
-          },
-          {
-            "name": "Starts Publishing Corp"
-          },
-          {
-            "name": "NTT Solmare"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "Contents Seed"
-          },
-          {
-            "name": "Nippon Shuppan Hanbai (Nippan) K.K."
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
+        "year": 2004,
+        "month": 10,
         "day": 5
       },
       "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 20
+        "year": 2012,
+        "month": 3,
+        "day": 27
       }
     },
     {
@@ -794,123 +895,6 @@
         "year": 2026,
         "month": 7,
         "day": 10
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 178789,
-      "title": {
-        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
-        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
-        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
-      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Ecchi",
-        "Fantasy"
-      ],
-      "averageScore": 84,
-      "episodes": 14,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Bind"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Frontier Works"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "GREE Entertainment"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
-      }
-    },
-    {
-      "id": 188139,
-      "title": {
-        "romaji": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den",
-        "english": "Though I Am an Inept Villainess",
-        "native": "ふつつかな悪女ではございますが ~雛宮蝶鼠とりかえ伝~"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188139-1qIJfWxym8FX.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx188139-1qIJfWxym8FX.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188139-1qIJfWxym8FX.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/188139-PU5JsGJiiUnR.jpg",
-      "description": "As maidens from the Five Clans battle for the Crown Prince’s heart, jealous Keigetsu uses forbidden magic to swap bodies with the beloved Reirin. Switching places does not guarantee happiness for Keigetsu with her new body's ill health leaving her hanging on the verge of death. Meanwhile, Reirin, now wearing the face of a scorned outcast, must answer for Keigetsu’s crimes in a dangerous trial.\n<br><br>\nThe unlikely pair become increasingly entangled in each other’s lives and they will need to work together to survive after discovering the dark conspiracies brewing beneath the palace's genial surface. To confront the deadly threats lurking in the shadows, Reirin must embrace her new identity and defy their expectations of the court's inept villainess.<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "averageScore": 78,
-      "episodes": 11,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Doga Kobo"
-          },
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Ichijinsha"
-          },
-          {
-            "name": "Doga Kobo"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 12
       },
       "endDate": {
         "year": null,
