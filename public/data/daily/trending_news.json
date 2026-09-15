@@ -1,7 +1,40 @@
 {
-  "version": 1789425305016,
-  "fetchedAt": "2026-09-14T22:35:05.016Z",
+  "version": 1789433865978,
+  "fetchedAt": "2026-09-15T00:57:45.978Z",
   "news": [
+    {
+      "title": "Silent Hill f Game Gets Manga Based on Fox Mask Character",
+      "description": "Manga tells character's origin story",
+      "fullDescription": "Manga tells character's origin story",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-14/silent-hill-f-game-gets-manga-based-on-fox-mask-character/.241785",
+      "pubDate": "Mon, 14 Sep 2026 20:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241785/hrw1gq3buaa976m.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241785"
+    },
+    {
+      "title": "Arata Aki Launches New Enma Note Demon Idol Manga",
+      "description": "Enma Note: Jigoku Idol Project debuts on September 15",
+      "fullDescription": "<cite>Enma Note: Jigoku Idol Project</cite> debuts on September 15",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-14/arata-aki-launches-new-enma-note-demon-idol-manga/.241782",
+      "pubDate": "Mon, 14 Sep 2026 19:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241782/hsklqfmbgaayhlc.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241782"
+    },
+    {
+      "title": "2027 Doraemon Film's Teaser Unveils March 5 Opening in Japan",
+      "description": "Eiga Doraemon: Nobita no Jōki Jikansha film set in 19th century Victorian London",
+      "fullDescription": "<cite>Eiga Doraemon: Nobita no Jōki Jikansha</cite> film set in 19th century Victorian London",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-14/2027-doraemon-film-teaser-unveils-march-5-opening-in-japan/.241749",
+      "pubDate": "Mon, 14 Sep 2026 18:51:01 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241749/doraemonss.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241749"
+    },
     {
       "title": "Atsushi Kaneko Launches New MISH/MASH Manga",
       "description": "MISH/MASH debuts on September 28",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241767/crayon-shin-chan-film-commemorative.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241767"
-    },
-    {
-      "title": "Hidari Yokoyama Launches Ayaru's Brush with Romance Manga",
-      "description": "Manga available in English on Manga Plus",
-      "fullDescription": "Manga available in English on Manga Plus",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-14/hidari-yokoyama-launches-ayaru-brush-with-romance-manga/.241738",
-      "pubDate": "Mon, 14 Sep 2026 10:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241738/ippitsuayaru.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241738"
-    },
-    {
-      "title": "NYCC Hosts Voice Actor Hikaru Midorikawa, Shonen Jump+ EIC Yuta Momiyama, More Guests, Events, Anime Premieres",
-      "description": "New York Comic Con 2026 is taking place at the Javits Center on October 8-11",
-      "fullDescription": "New York Comic Con 2026 is taking place at the Javits Center on October 8-11",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-14/nycc-hosts-voice-actor-hikaru-midorikawa-shonen-jump-eic-yuta-momiyama-more-guests-events-anime-/.241730",
-      "pubDate": "Mon, 14 Sep 2026 09:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/233451/sk001-en.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241730"
-    },
-    {
-      "title": "Pokémon Developer Game Freak Announces Ame nochi Hare Onna Mobile Game",
-      "description": "Game integrated with real-time weather forecasts slated for release this winter",
-      "fullDescription": "Game integrated with real-time weather forecasts slated for release this winter",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-14/pokemon-developer-game-freak-announces-ame-nochi-hare-onna-mobile-game/.241755",
-      "pubDate": "Mon, 14 Sep 2026 07:50:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241755/harekey.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241755"
     }
   ],
   "total": 15

@@ -1,6 +1,6 @@
 {
-  "version": 1789425305441,
-  "fetchedAt": "2026-09-14T22:35:05.441Z",
+  "version": 1789433866261,
+  "fetchedAt": "2026-09-15T00:57:46.261Z",
   "anime": [
     {
       "id": 178789,
@@ -67,25 +67,24 @@
       }
     },
     {
-      "id": 199111,
+      "id": 202269,
       "title": {
-        "romaji": "Grand Blue Season 3",
-        "english": "Grand Blue Dreaming Season 3",
-        "native": "ぐらんぶる Season 3"
+        "romaji": "Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.",
+        "english": "Love Unseen Beneath the Clear Night Sky",
+        "native": "透明な夜に駆ける君と、目に見えない恋をした。"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199111-gBSuBG61ElcW.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199111-gBSuBG61ElcW.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199111-gBSuBG61ElcW.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202269-7KNj8s2fSsJJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202269-7KNj8s2fSsJJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199111-Z8y9awn2Zb6v.jpg",
-      "description": "Iori's college shenanigans head overseas! Just as he's finally starting to get the hang of university life, crashing at his uncle's dive shop while balancing the booze-fueled antics of his diving club, Iori's cousin enlists him to help run a new dive shop in Palau. Between crystal-clear dives and his diving group that can't resist partying it up and stripping down, Iori's in for a wild summer.\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/202269-u0PTTsiKwrVL.jpg",
+      "description": "Kakeru Sorano, a quiet university freshman who avoids others, meets Koharu Fuyutsuki, a blind girl who faces the world with quiet brightness. When she says, “I want to see fireworks someday,” something in Kakeru shifts. As they grow closer through small moments and shared loneliness, he searches for a way to make her wish come true.<br>\n<br>\n(Source: Crunchyroll)",
       "genres": [
-        "Comedy",
-        "Slice of Life",
-        "Sports"
+        "Drama",
+        "Romance"
       ],
-      "averageScore": 82,
+      "averageScore": 79,
       "episodes": 12,
       "status": "RELEASING",
       "season": "SUMMER",
@@ -93,46 +92,37 @@
       "studios": {
         "nodes": [
           {
-            "name": "NBCUniversal Entertainment Japan"
+            "name": "Shouchiku"
           },
           {
-            "name": "Zero-G"
+            "name": "Makaria"
           },
           {
-            "name": "Saber Works"
+            "name": "SB Creative"
           },
           {
-            "name": "Avex Pictures"
+            "name": "viviON"
           },
           {
-            "name": "Kodansha"
+            "name": "AT-X"
           },
           {
-            "name": "JR Higashi Nihon Kikaku"
+            "name": "Clare Voice"
           },
           {
-            "name": "Zero-G"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "qooop"
-          },
-          {
-            "name": "Saber Links"
+            "name": "Makaria"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 7,
-        "day": 7
+        "day": 6
       },
       "endDate": {
         "year": 2026,
         "month": 9,
-        "day": 22
+        "day": 21
       }
     },
     {
@@ -210,24 +200,25 @@
       }
     },
     {
-      "id": 202269,
+      "id": 199111,
       "title": {
-        "romaji": "Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.",
-        "english": "Love Unseen Beneath the Clear Night Sky",
-        "native": "透明な夜に駆ける君と、目に見えない恋をした。"
+        "romaji": "Grand Blue Season 3",
+        "english": "Grand Blue Dreaming Season 3",
+        "native": "ぐらんぶる Season 3"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202269-7KNj8s2fSsJJ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202269-7KNj8s2fSsJJ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199111-gBSuBG61ElcW.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199111-gBSuBG61ElcW.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199111-gBSuBG61ElcW.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/202269-u0PTTsiKwrVL.jpg",
-      "description": "Kakeru Sorano, a quiet university freshman who avoids others, meets Koharu Fuyutsuki, a blind girl who faces the world with quiet brightness. When she says, “I want to see fireworks someday,” something in Kakeru shifts. As they grow closer through small moments and shared loneliness, he searches for a way to make her wish come true.<br>\n<br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199111-Z8y9awn2Zb6v.jpg",
+      "description": "Iori's college shenanigans head overseas! Just as he's finally starting to get the hang of university life, crashing at his uncle's dive shop while balancing the booze-fueled antics of his diving club, Iori's cousin enlists him to help run a new dive shop in Palau. Between crystal-clear dives and his diving group that can't resist partying it up and stripping down, Iori's in for a wild summer.\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
-        "Drama",
-        "Romance"
+        "Comedy",
+        "Slice of Life",
+        "Sports"
       ],
-      "averageScore": 79,
+      "averageScore": 82,
       "episodes": 12,
       "status": "RELEASING",
       "season": "SUMMER",
@@ -235,37 +226,46 @@
       "studios": {
         "nodes": [
           {
-            "name": "Shouchiku"
+            "name": "NBCUniversal Entertainment Japan"
           },
           {
-            "name": "Makaria"
+            "name": "Zero-G"
           },
           {
-            "name": "SB Creative"
+            "name": "Saber Works"
           },
           {
-            "name": "viviON"
+            "name": "Avex Pictures"
           },
           {
-            "name": "AT-X"
+            "name": "Kodansha"
           },
           {
-            "name": "Clare Voice"
+            "name": "JR Higashi Nihon Kikaku"
           },
           {
-            "name": "Makaria"
+            "name": "Zero-G"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "qooop"
+          },
+          {
+            "name": "Saber Links"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 7,
-        "day": 6
+        "day": 7
       },
       "endDate": {
         "year": 2026,
         "month": 9,
-        "day": 21
+        "day": 22
       }
     },
     {
@@ -528,64 +528,6 @@
       }
     },
     {
-      "id": 210031,
-      "title": {
-        "romaji": "Seihantai na Kimi to Boku 2nd Season",
-        "english": "You and I Are Polar Opposites Season 2",
-        "native": "正反対な君と僕 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210031-TppgcHZh46LY.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210031-TppgcHZh46LY.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210031-TppgcHZh46LY.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210031-M4bt0rAmWk5Q.jpg",
-      "description": "Six months have passed since the polar opposite classmates Miyu Suzuki and Yuusuke Tani started dating. Through spending time together along with their friends from school, the two have been happier than ever. As the year nears its end, the new couple plans to celebrate Christmas and the New Year together, making memories for years to come.<br>\n<br>\nMeanwhile, Miyu and Yuusuke's friends Shuuji Taira and Kentarou Yamada are puzzled by their own situations. Due to his bad experiences in middle school, Taira still overthinks everything around him, especially after his classmate Shino Azuma began giving him more attention. Simultaneously, the usually energetic and outspoken Yamada finds it difficult to find the perfect time to confess his feelings to his shy schoolmate Natsumi Nishi. Despite everyone's differences, they continue enjoying their adolescence together and find their own ways to turn the winter break into a cherished memory.<br>\n<br>\n(Source: MAL Rewrite)",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance",
-        "Slice of Life"
-      ],
-      "averageScore": 82,
-      "episodes": 13,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Lapin Track"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 4
-      }
-    },
-    {
       "id": 169582,
       "title": {
         "romaji": "Saikyou Degarashi Ouji no Anyaku Teii Arasoi: Munou wo Enjiru SS Rank Ouji wa Koui Keishou-sen wo Kage kara Shihai suru",
@@ -660,6 +602,64 @@
         "year": 2026,
         "month": 9,
         "day": 21
+      }
+    },
+    {
+      "id": 210031,
+      "title": {
+        "romaji": "Seihantai na Kimi to Boku 2nd Season",
+        "english": "You and I Are Polar Opposites Season 2",
+        "native": "正反対な君と僕 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210031-TppgcHZh46LY.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210031-TppgcHZh46LY.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210031-TppgcHZh46LY.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210031-M4bt0rAmWk5Q.jpg",
+      "description": "Six months have passed since the polar opposite classmates Miyu Suzuki and Yuusuke Tani started dating. Through spending time together along with their friends from school, the two have been happier than ever. As the year nears its end, the new couple plans to celebrate Christmas and the New Year together, making memories for years to come.<br>\n<br>\nMeanwhile, Miyu and Yuusuke's friends Shuuji Taira and Kentarou Yamada are puzzled by their own situations. Due to his bad experiences in middle school, Taira still overthinks everything around him, especially after his classmate Shino Azuma began giving him more attention. Simultaneously, the usually energetic and outspoken Yamada finds it difficult to find the perfect time to confess his feelings to his shy schoolmate Natsumi Nishi. Despite everyone's differences, they continue enjoying their adolescence together and find their own ways to turn the winter break into a cherished memory.<br>\n<br>\n(Source: MAL Rewrite)",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Slice of Life"
+      ],
+      "averageScore": 82,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Lapin Track"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "AbemaTV"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 4
       }
     },
     {
@@ -885,69 +885,56 @@
       }
     },
     {
-      "id": 196187,
+      "id": 188139,
       "title": {
-        "romaji": "Super no Ura de Yani Suu Futari",
-        "english": "Smoking Behind the Supermarket with You",
-        "native": "スーパーの裏でヤニ吸うふたり"
+        "romaji": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den",
+        "english": "Though I Am an Inept Villainess",
+        "native": "ふつつかな悪女ではございますが ~雛宮蝶鼠とりかえ伝~"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196187-0dgFi2CPp3xn.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196187-0dgFi2CPp3xn.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-0dgFi2CPp3xn.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188139-1qIJfWxym8FX.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx188139-1qIJfWxym8FX.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188139-1qIJfWxym8FX.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/196187-Z9dV6uotmKjM.jpg",
-      "description": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”\n<br><br>\n(Source: Crunchyroll)<br><br>\n\n<i>Note: Episodes 1-6 had an early release by ABEMA and Crunchyroll on June 3rd, 2026 in a mini-episode batch format that splits 6 episodes into 12, ahead of the TV broadcast which started on July 10th, 2026.</i>",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/188139-PU5JsGJiiUnR.jpg",
+      "description": "As maidens from the Five Clans battle for the Crown Prince’s heart, jealous Keigetsu uses forbidden magic to swap bodies with the beloved Reirin. Switching places does not guarantee happiness for Keigetsu with her new body's ill health leaving her hanging on the verge of death. Meanwhile, Reirin, now wearing the face of a scorned outcast, must answer for Keigetsu’s crimes in a dangerous trial.\n<br><br>\nThe unlikely pair become increasingly entangled in each other’s lives and they will need to work together to survive after discovering the dark conspiracies brewing beneath the palace's genial surface. To confront the deadly threats lurking in the shadows, Reirin must embrace her new identity and defy their expectations of the court's inept villainess.<br><br>\n(Source: Crunchyroll)",
       "genres": [
-        "Comedy",
-        "Romance",
-        "Slice of Life"
+        "Drama",
+        "Romance"
       ],
-      "averageScore": 82,
-      "episodes": 12,
+      "averageScore": 78,
+      "episodes": 11,
       "status": "RELEASING",
       "season": "SUMMER",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Asahi Production"
+            "name": "Doga Kobo"
           },
           {
-            "name": "TBS"
+            "name": "Toho"
           },
           {
-            "name": "Asmik Ace"
+            "name": "TV Tokyo"
           },
           {
-            "name": "Asahi Production"
+            "name": "Ichijinsha"
           },
           {
-            "name": "arma bianca"
-          },
-          {
-            "name": "ADK Marketing Solutions"
-          },
-          {
-            "name": "Nichion"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "Square Enix"
+            "name": "Doga Kobo"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 7,
-        "day": 10
+        "day": 12
       },
       "endDate": {
         "year": 2026,
         "month": 9,
-        "day": 24
+        "day": 20
       }
     }
   ]
