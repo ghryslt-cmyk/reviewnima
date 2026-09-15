@@ -1,7 +1,40 @@
 {
-  "version": 1789502804394,
-  "fetchedAt": "2026-09-15T20:06:44.394Z",
+  "version": 1789512938668,
+  "fetchedAt": "2026-09-15T22:55:38.668Z",
   "news": [
+    {
+      "title": "Yuna Anisaki Launches Kōkyū Gohi no Kuroshiro na Oshigoto Manga on September 18",
+      "description": "Manga adapts Kazuki Karasawa's fantasy novel",
+      "fullDescription": "Manga adapts Kazuki Karasawa's fantasy novel",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-15/yuna-anisaki-launches-kokyu-gohi-no-kuroshiro-na-oshigoto-manga-on-september-18/.241789",
+      "pubDate": "Tue, 15 Sep 2026 18:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241789/kokyugohi.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241789"
+    },
+    {
+      "title": "BookWalker Expands Catalog with Mahjong Pros Publishing Titles",
+      "description": "136 Ready-to-Use Mahjong Strategies and Tactics, Reform with No Wasted Draws - The Legend of Koizumi, more",
+      "fullDescription": "<cite>136 Ready-to-Use Mahjong Strategies and Tactics</cite>, <cite>Reform with No Wasted Draws - The Legend of Koizumi</cite>, more",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-15/bookwalker-expands-catalog-with-mahjong-pros-publishing-titles/.241818",
+      "pubDate": "Tue, 15 Sep 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241818/unnamed-1.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241818"
+    },
+    {
+      "title": "Jujutsu Kaisen, Kagurabachi, More Manga Rank on NYT September Bestseller List",
+      "description": "The first volume of Gege Akutami's Jujutsu Kaisen manga ranked at #7 on The New York Times' monthly Graphic Books and Manga bestseller list released in...",
+      "fullDescription": "The first volume of Gege Akutami's Jujutsu Kaisen manga ranked at #7 on The New York Times' monthly Graphic Books and Manga bestseller list released in...",
+      "link": "https://www.animenewsnetwork.com/daily-briefs/2026-09-15/jujutsu-kaisen-kagurabachi-more-manga-rank-on-nyt-september-bestseller-list/.241802",
+      "pubDate": "Tue, 15 Sep 2026 16:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/233176/81tmhlrlejl._sl1500_.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241802"
+    },
     {
       "title": "Jujutsu Kaisen Ranks #2 on Bookscan's August Adult Graphic Novel List in U.S.",
       "description": "16 manga volumes including Kagurabachi, The Summer Hikaru Died, Gachiakuta, Dandadan make list",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241799/nia.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241799"
-    },
-    {
-      "title": "Ace of Diamond Act II Second Season's 2nd Part Unveils Theme Songs in New Video",
-      "description": "GLAY performs \"NEVER SAY NEVER AGAIN\" opening, OxT performs ending song \"ROAD TO BE BLUE\"",
-      "fullDescription": "GLAY performs \"NEVER SAY NEVER AGAIN\" opening, OxT performs ending song \"ROAD TO BE BLUE\"",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-15/ace-of-diamond-act-ii-second-season-2nd-part-unveils-theme-songs-in-new-video/.241798",
-      "pubDate": "Tue, 15 Sep 2026 06:09:41 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241517/ace.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241798"
-    },
-    {
-      "title": "Jujutsu Kaisen Rumble: Survivaton Game Delayed to 2027",
-      "description": "Game initially slated for this year",
-      "fullDescription": "Game initially slated for this year",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-15/jujutsu-kaisen-rumble-survivaton-game-delayed-to-2027/.241796",
-      "pubDate": "Tue, 15 Sep 2026 05:00:09 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241796"
-    },
-    {
-      "title": "Yuka Ōshima's 'Haru to Gen ~70-sai, Hajimete Kosodate~' Manga Gets Short TV Anime",
-      "description": "Kōdai Satō directs anime about 70-year-old man raising his young granddaughter at Imagica Infos/Imageworks Studio",
-      "fullDescription": "Kōdai Satō directs anime about 70-year-old man raising his young granddaughter at Imagica Infos/Imageworks Studio",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-15/yuka-oshima-haru-to-gen-~70-sai-hajimete-kosodate~-manga-gets-short-tv-anime/.241794",
-      "pubDate": "Tue, 15 Sep 2026 03:57:26 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241794/harugen.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241794"
     }
   ],
   "total": 15
