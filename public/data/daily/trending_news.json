@@ -1,7 +1,29 @@
 {
-  "version": 1789433865978,
-  "fetchedAt": "2026-09-15T00:57:45.978Z",
+  "version": 1789452276093,
+  "fetchedAt": "2026-09-15T06:04:36.093Z",
   "news": [
+    {
+      "title": "Spin-off Manga &#039;Puchimas!: Petit iDOLM@STER&#039; Concludes 18-Year Serialization",
+      "description": "The official X (formerly Twitter) account of the Dengeki Maoh magazine announced on Monday that the Puchimas!: Petit iDOLM@STER spin-off manga will end with its 200th and final chapter in the issue releasing on December 25. Akane began serializing the four-panel comedy manga, based on Bandai-Namco&#...",
+      "fullDescription": "The official X (formerly Twitter) account of the Dengeki Maoh magazine announced on Monday that the Puchimas!: Petit iDOLM@STER spin-off manga will end with its 200th and final chapter in the issue releasing on December 25. Akane began serializing the four-panel comedy manga, based on Bandai-Namco&#039;s The iDOLM@STER franchise, in Dengeki Maoh in July 2008. Kadokawa published the 15th volume in December 2024, with the 16th and final volume scheduled for a February 2027 release. A 64-episode ne...",
+      "link": "https://myanimelist.net/news/74721441?_location=rss",
+      "pubDate": "Mon, 14 Sep 2026 21:07:50 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789445209-d23a2ab939e0bd1425f7e786ce038611.jpeg",
+      "guid": "https://myanimelist.net/news/74721441?_location=rss"
+    },
+    {
+      "title": "We Are Aliens Film's New Trailer Highlights Heroine Konatsu",
+      "description": "Film opens in Japan on September 25",
+      "fullDescription": "Film opens in Japan on September 25",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-14/we-are-aliens-film-new-trailer-highlights-heroine-konatsu/.241788",
+      "pubDate": "Mon, 14 Sep 2026 22:11:32 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241788/konatsuvisual.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241788"
+    },
     {
       "title": "Silent Hill f Game Gets Manga Based on Fox Mask Character",
       "description": "Manga tells character's origin story",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/236027/the-fable-season-2.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241771"
-    },
-    {
-      "title": "Ushijima the Loan Shark Gets New 1-Shot Set 10 Years After Manga's End",
-      "description": "1-shot will be on display at manga's exhibition in Tokyo from September 19 - October 4",
-      "fullDescription": "1-shot will be on display at manga's exhibition in Tokyo from September 19 - October 4",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-14/ushijima-the-loan-shark-gets-new-1-shot-set-10-years-after-manga-end/.241756",
-      "pubDate": "Mon, 14 Sep 2026 11:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241756"
-    },
-    {
-      "title": "Latest Crayon Shin-chan Film Becomes Highest-Grossing in Franchise",
-      "description": "Franchise's 2026 film has earned over 2.7 billion yen",
-      "fullDescription": "Franchise's 2026 film has earned over 2.7 billion yen",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-14/latest-crayon-shin-chan-film-becomes-highest-grossing-in-franchise/.241767",
-      "pubDate": "Mon, 14 Sep 2026 10:45:35 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241767/crayon-shin-chan-film-commemorative.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241767"
     }
   ],
   "total": 15
