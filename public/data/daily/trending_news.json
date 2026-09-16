@@ -1,12 +1,34 @@
 {
-  "version": 1789589462302,
-  "fetchedAt": "2026-09-16T20:11:02.302Z",
+  "version": 1789599599163,
+  "fetchedAt": "2026-09-16T22:59:59.163Z",
   "news": [
+    {
+      "title": "Voice Actress Sumire Uesaka Cancels KyoMAF Appearances After Receiving Email Threats",
+      "description": "Uesaka was slated for 4 appearances at event this weekend",
+      "fullDescription": "Uesaka was slated for 4 appearances at event this weekend",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-16/voice-actress-sumire-uesaka-cancels-kyomaf-appearances-after-receiving-email-threats/.241855",
+      "pubDate": "Wed, 16 Sep 2026 18:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241855/sumire.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241855"
+    },
+    {
+      "title": "Chiikawa Anime Film Stays at #1, Live-Action Look Back Opens at #5",
+      "description": "Sound! Euphonium, The Final Movie Part 2 opened at #7",
+      "fullDescription": "<cite>Sound! Euphonium, The Final Movie Part 2</cite> opened at #7",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-16/chiikawa-anime-film-stays-at-no.1-live-action-look-back-opens-at-no.5/.241804",
+      "pubDate": "Wed, 16 Sep 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/231350/chiikawa.webp",
+      "guid": "https://www.animenewsnetwork.com/cms/.241804"
+    },
     {
       "title": "Mimu Oyamada Ends Lovestruck Prince! I'll Fight the Heroine for My Villainess Fiancée! Manga",
       "description": "Manga launched in January 2021",
       "fullDescription": "Manga launched in January 2021",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-15/mimu-oyamada-ends-lovestruck-prince-ill-fight-the-heroine-for-my-villainess-fiancee-manga/.241828",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-16/mimu-oyamada-ends-lovestruck-prince-ill-fight-the-heroine-for-my-villainess-fiancee-manga/.241828",
       "pubDate": "Wed, 16 Sep 2026 16:00:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241464/image-8.jpeg",
       "guid": "https://www.animenewsnetwork.com/cms/.241827"
-    },
-    {
-      "title": "Sword Art Online Author Reki Kawahara's Devils' Crest Anime Casts 4 Classmates",
-      "description": "Yūsuke Kobayashi, Maaya Uchida, Rie Murakawa, Sora Amamiya join cast in November 6 anime",
-      "fullDescription": "Yūsuke Kobayashi, Maaya Uchida, Rie Murakawa, Sora Amamiya join cast in November 6 anime",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-16/sword-art-online-author-reki-kawahara-devils-crest-anime-casts-4-classmates/.241850",
-      "pubDate": "Wed, 16 Sep 2026 07:06:22 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241850/crest1.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241850"
-    },
-    {
-      "title": "Shangri-La Frontier Season 3 Announces January 10 Debut, Half-Year Run",
-      "description": "3rd season to run for 6 months without break",
-      "fullDescription": "3rd season to run for 6 months without break",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-16/shangri-la-frontier-season-3-announces-january-10-debut-half-year-run/.241849",
-      "pubDate": "Wed, 16 Sep 2026 06:10:12 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241849/shang.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241849"
     }
   ],
   "total": 15
