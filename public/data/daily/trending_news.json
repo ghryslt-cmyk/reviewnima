@@ -1,7 +1,73 @@
 {
-  "version": 1789607981741,
-  "fetchedAt": "2026-09-17T01:19:41.741Z",
+  "version": 1789626890527,
+  "fetchedAt": "2026-09-17T06:34:50.527Z",
   "news": [
+    {
+      "title": "Dragon Quest Monsters: The Withered World Game Posts Gameplay Trailer",
+      "description": "Game launches on December 3",
+      "fullDescription": "Game launches on December 3",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-16/dragon-quest-monsters-the-withered-world-game-posts-gameplay-trailer/.241884",
+      "pubDate": "Wed, 16 Sep 2026 23:59:09 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241884"
+    },
+    {
+      "title": "FuRyu Streams Crymelight Game's Opening Video",
+      "description": "Video reveals November 5 game's theme song \"Love and Guilt by Hitomi Sekine",
+      "fullDescription": "Video reveals November 5 game's theme song \"Love and Guilt by Hitomi Sekine",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-16/furyu-streams-crymelight-game-opening-video/.241883",
+      "pubDate": "Wed, 16 Sep 2026 23:56:34 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/236778/crymelight-key-art.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241883"
+    },
+    {
+      "title": "Un:Me Game's Trailer Reveals 2027 Delay, Yumiri Hanamori Casting",
+      "description": "Game previously slated for this year on Switch 2, PS5, PC",
+      "fullDescription": "Game previously slated for this year on Switch 2, PS5, PC",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-16/un-me-game-trailer-reveals-2027-delay-yumiri-hanamori-casting/.241882",
+      "pubDate": "Wed, 16 Sep 2026 23:52:33 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241882"
+    },
+    {
+      "title": "Wo Long 2: Wings of Ember Game Launches on March 4",
+      "description": "Playable demo available now",
+      "fullDescription": "Playable demo available now",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-16/wo-long-2-wings-of-ember-game-launches-on-march-4/.241875",
+      "pubDate": "Wed, 16 Sep 2026 23:48:06 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241875"
+    },
+    {
+      "title": "Final Fantasy Resonance Game's TGS Trailer Previews Theme Song",
+      "description": "WurtS performs theme song \"Inside\" for October 22 game",
+      "fullDescription": "WurtS performs theme song \"Inside\" for October 22 game",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-16/final-fantasy-resonance-game-tgs-trailer-previews-theme-song/.241881",
+      "pubDate": "Wed, 16 Sep 2026 23:18:02 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241881/ffresonance.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241881"
+    },
+    {
+      "title": "Tank Chair Anime Reveals 2nd Main Promo Video, Megumi Ogata as Sensei",
+      "description": "Anime premieres on October 4",
+      "fullDescription": "Anime premieres on October 4",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-16/tank-chair-anime-reveals-2nd-main-promo-video-megumi-ogata-as-sensei/.241870",
+      "pubDate": "Wed, 16 Sep 2026 23:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/240474/tankchair-characterkv-sensei.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241870"
+    },
     {
       "title": "Pan Dorobō Anime's 2nd Video Reveals More Cast",
       "description": "Atsumi Tanezaki, Kana Hanazawa join cast of October 2 anime",
@@ -100,72 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241867"
-    },
-    {
-      "title": "Decapolice Game's Trailers Preview Story, Mysteries, Combat",
-      "description": "Game launches for Switch 2, PS5, PC in 2027 following delays",
-      "fullDescription": "Game launches for Switch 2, PS5, PC in 2027 following delays",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-16/decapolice-game-trailers-preview-story-mysteries-combat/.241865",
-      "pubDate": "Wed, 16 Sep 2026 13:03:41 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241865"
-    },
-    {
-      "title": "Stranger Than Heaven Game's Video Previews Opening, Showbiz, Combat",
-      "description": "Game's theme song by Snoop Dogg, Satoshi Fujihara, Ado, Tori Kelly gets release this year",
-      "fullDescription": "Game's theme song by Snoop Dogg, Satoshi Fujihara, Ado, Tori Kelly gets release this year",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-16/stranger-than-heaven-game-video-previews-opening-showbiz-combat/.241858",
-      "pubDate": "Wed, 16 Sep 2026 12:52:29 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/237134/strangerthanheaven.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241858"
-    },
-    {
-      "title": "Terranigma RPG's Trailer Reveals January 14 Release",
-      "description": "Video previews new easy-view status window, aspect ratio selection, adjusted difficulty",
-      "fullDescription": "Video previews new easy-view status window, aspect ratio selection, adjusted difficulty",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-16/terranigma-rpg-trailer-reveals-january-14-release/.241857",
-      "pubDate": "Wed, 16 Sep 2026 12:26:18 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241857"
-    },
-    {
-      "title": "Mega Man: Dual Override Game's Video Previews Dual Protagonists, Custom Chips, Special Weapons, Override, Pragmata DLC",
-      "description": "DLC adding Mega Man/Roll suits for Pragmata game launches on Thursday",
-      "fullDescription": "DLC adding Mega Man/Roll suits for <cite>Pragmata</cite> game launches on Thursday",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-16/mega-man-dual-override-game-video-previews-dual-protagonists-custom-chips-special-weapons-override-/.241863",
-      "pubDate": "Wed, 16 Sep 2026 12:06:09 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235155/g9runs1buaal4pe.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241863"
-    },
-    {
-      "title": "Dragon's Dogma 2 Game's Trailer Previews 'Dark Arisen' Expansion",
-      "description": "Dragon's Dogma 2: Dark Arisen launches on October 9 for Switch 2, PS5, Xbox X|S, PC",
-      "fullDescription": "<cite>Dragon's Dogma 2: Dark Arisen</cite> launches on October 9 for Switch 2, PS5, Xbox X|S, PC",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-16/dragon-dogma-2-game-trailer-previews-dark-arisen-expansion/.241859",
-      "pubDate": "Wed, 16 Sep 2026 11:22:38 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241859"
-    },
-    {
-      "title": "Monster Hunter Wilds: Ascendance Game Expansion's Trailer Reveals Teostra, Previews Boost Drivers",
-      "description": "Video also confirms crossplay for upcoming Switch 2 release, previews new features",
-      "fullDescription": "Video also confirms crossplay for upcoming Switch 2 release, previews new features",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-16/monster-hunter-wilds-ascendance-game-expansion-trailer-reveals-teostra-previews-boost-drivers/.241860",
-      "pubDate": "Wed, 16 Sep 2026 11:14:05 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241860"
     }
   ],
   "total": 15
