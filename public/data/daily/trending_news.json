@@ -1,7 +1,29 @@
 {
-  "version": 1789664617396,
-  "fetchedAt": "2026-09-17T17:03:37.396Z",
+  "version": 1789676501086,
+  "fetchedAt": "2026-09-17T20:21:41.086Z",
   "news": [
+    {
+      "title": "Gorō Kanbe's Golian no Junjō na Junai Manga Ends",
+      "description": "Manga launched on April 21",
+      "fullDescription": "Manga launched on April 21",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-17/goro-kanbe-golian-no-junjo-na-junai-manga-ends/.241878",
+      "pubDate": "Thu, 17 Sep 2026 14:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/236383/20260319191009.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241878"
+    },
+    {
+      "title": "Live-Action Can You Kiss Me First? Series' Teaser Reveals October 19 TV Debut",
+      "description": "Series stars Jin Suzuki, Gaku Oshida",
+      "fullDescription": "Series stars Jin Suzuki, Gaku Oshida",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-17/live-action-can-you-kiss-me-first-series-teaser-reveals-october-19-tv-debut/.241886",
+      "pubDate": "Thu, 17 Sep 2026 13:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240498/canyoukissmefirst-kv.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241886"
+    },
     {
       "title": "The Failure at God School Manga Gets TV Anime",
       "description": "The Apothecary Diaries' Hyuganatsu, Modomu Akagawara debuted manga in August 2021",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241900"
-    },
-    {
-      "title": "Solo Leveling: Karma Game Unveils Gameplay Overview, Cinematic Story Trailer",
-      "description": "Game launches this year",
-      "fullDescription": "Game launches this year",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/solo-leveling-karma-game-unveils-gameplay-overview-cinematic-story-trailer/.241897",
-      "pubDate": "Thu, 17 Sep 2026 04:47:17 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241897"
-    },
-    {
-      "title": "New Lollipop Chainsaw Game Announced for 2027 Release on PS5",
-      "description": "Final Fantasy XV's Hajime Tabata directs new Lollipop Chainsaw 2 Back2Back game",
-      "fullDescription": "<cite>Final Fantasy XV's</cite> Hajime Tabata directs new <cite>Lollipop Chainsaw 2 Back2Back</cite> game",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/new-lollipop-chainsaw-game-announced-for-2027-release-on-ps5/.241894",
-      "pubDate": "Thu, 17 Sep 2026 04:37:23 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241894/lollipopchainsaw.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241894"
     }
   ],
   "total": 15
