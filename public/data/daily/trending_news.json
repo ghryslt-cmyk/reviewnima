@@ -1,7 +1,18 @@
 {
-  "version": 1789676501086,
-  "fetchedAt": "2026-09-17T20:21:41.086Z",
+  "version": 1789686035307,
+  "fetchedAt": "2026-09-17T23:00:35.307Z",
   "news": [
+    {
+      "title": "7th Be Forever Yamato: Rebel 3199 Film Unveils Main Trailer",
+      "description": "7th, final film opens in Japan on October 30",
+      "fullDescription": "7th, final film opens in Japan on October 30",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-17/7th-be-forever-yamato-rebel-3199-film-unveils-main-trailer/.241890",
+      "pubDate": "Thu, 17 Sep 2026 18:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241890/yamato.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241890"
+    },
     {
       "title": "Gorō Kanbe's Golian no Junjō na Junai Manga Ends",
       "description": "Manga launched on April 21",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241902"
-    },
-    {
-      "title": "Crazy Taxi: World Tour Game Introduces Japan Map in New Video",
-      "description": "Game launches for Xbox Series X|S, PS5, Switch 2, Steam, Microsoft Store in 2027",
-      "fullDescription": "Game launches for Xbox Series X|S, PS5, Switch 2, Steam, Microsoft Store in 2027",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/crazy-taxi-world-tour-game-introduces-japan-map-in-new-video/.241900",
-      "pubDate": "Thu, 17 Sep 2026 06:41:58 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241900"
     }
   ],
   "total": 15
