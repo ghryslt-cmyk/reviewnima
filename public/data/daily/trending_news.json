@@ -1,7 +1,95 @@
 {
-  "version": 1789694303984,
-  "fetchedAt": "2026-09-18T01:18:23.984Z",
+  "version": 1789713038658,
+  "fetchedAt": "2026-09-18T06:30:38.658Z",
   "news": [
+    {
+      "title": "&#039;Silent Witch&#039; Author and &#039;Mushoku Tensei&#039; Artist Begin New Light Novel",
+      "description": "Silent Witch: Chinmoku no Majo no Kakushigoto (Secrets of the Silent Witch) author Matsuri Isora and Mushoku Tensei: Isekai Ittara Honki Dasu (Mushoku Tensei: Jobless Reincarnation) illustrator Sirotaka will begin a new light novel titled Boukyaku no Curse Knight (The Curse Knight of Oblivion), the ...",
+      "fullDescription": "Silent Witch: Chinmoku no Majo no Kakushigoto (Secrets of the Silent Witch) author Matsuri Isora and Mushoku Tensei: Isekai Ittara Honki Dasu (Mushoku Tensei: Jobless Reincarnation) illustrator Sirotaka will begin a new light novel titled Boukyaku no Curse Knight (The Curse Knight of Oblivion), the official X account of the series announced on Thursday. Earth Star Entertainment will publish the first volume under its Earth Star Novel imprint on November 13. Isora began penning the Silent Witch l...",
+      "link": "https://myanimelist.net/news/74732075?_location=rss",
+      "pubDate": "Thu, 17 Sep 2026 22:15:11 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789708234-92cf0fad5ca9ec3d6e85e85175765865.jpeg",
+      "guid": "https://myanimelist.net/news/74732075?_location=rss"
+    },
+    {
+      "title": "&#039;Kyoufu Collector&#039; Reveals Main Cast, Staff, Teaser Promo",
+      "description": "The official website for the television anime adaptation of Midori Satou&#039;s Kyoufu Collector (Horror Collector) novel revealed the main cast, staff, a key visual (pictured), and teaser promotional video on Friday. The anime series is scheduled to premiere on October 10 at 11:45 p.m. on NHK-G. Ca...",
+      "fullDescription": "The official website for the television anime adaptation of Midori Satou&#039;s Kyoufu Collector (Horror Collector) novel revealed the main cast, staff, a key visual (pictured), and teaser promotional video on Friday. The anime series is scheduled to premiere on October 10 at 11:45 p.m. on NHK-G. Cast Fushigi Senno: Hiiro Ishibashi (Tenmaku no Jaadugar) Jimmy: Jun Fukuyama (Nippon Sangoku) Himitsu: Saori Hayami (Bad Girl) Blue Umbrella Man: Nobuhiko Okamoto (Dead Account) Staff Director, Series...",
+      "link": "https://myanimelist.net/news/74732013?_location=rss",
+      "pubDate": "Thu, 17 Sep 2026 21:48:10 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789706881-ac3cc382480c1a97500b65357639e31f.jpeg",
+      "guid": "https://myanimelist.net/news/74732013?_location=rss"
+    },
+    {
+      "title": "Butt Detective TV Anime Gets New Episodes Starting on October 3",
+      "description": "Previous batch of new episodes debuted on April 4",
+      "fullDescription": "Previous batch of new episodes debuted on April 4",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-18/butt-detective-tv-anime-gets-new-episodes-starting-on-october-3/.241932",
+      "pubDate": "Fri, 18 Sep 2026 00:02:56 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241932"
+    },
+    {
+      "title": "Suikoden Anime's New Video Reveals Ending Song, October 3 TV Debut",
+      "description": "Koji Nakamura performs ending song \"closed eye sun\" featuring Honoka Takahashi",
+      "fullDescription": "Koji Nakamura performs ending song \"closed eye sun\" featuring Honoka Takahashi",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-17/suikoden-anime-new-video-reveals-ending-song-october-3-tv-debut/.241930",
+      "pubDate": "Thu, 17 Sep 2026 23:35:41 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235911/hejminuaiaas0pb.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241930"
+    },
+    {
+      "title": "Dark Machine the Animation Series Reveals 3rd Promo Video, Ending Theme Song, Manga Adaptation",
+      "description": "Sandaime J Soul Brothers perform ending theme song \"Galaxy Mode\" for October 13 anime",
+      "fullDescription": "Sandaime J Soul Brothers perform ending theme song \"Galaxy Mode\" for October 13 anime",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-17/dark-machine-the-animation-series-reveals-3rd-promo-video-ending-theme-song-manga-adaptation/.241918",
+      "pubDate": "Thu, 17 Sep 2026 23:30:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/231314/darkmachine.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241918"
+    },
+    {
+      "title": "Edia Re-Releases Falcom's Dragon Slayer: The Legend of Heroes I & II Games",
+      "description": "Edia will re-release PC-98 versions of games",
+      "fullDescription": "Edia will re-release PC-98 versions of games",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-17/edia-re-releases-falcom-dragon-slayer-the-legend-of-heroes-i-and-ii-games/.241926",
+      "pubDate": "Thu, 17 Sep 2026 23:24:35 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241926/legendofheroes.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241926"
+    },
+    {
+      "title": "The Diary of a Middle-Aged Sage's Carefree Life in Another World Anime's Teaser Unveils Tomokazu Sugita in Cast, January Debut",
+      "description": "Sugita plays protagonist Zelos Merlin",
+      "fullDescription": "Sugita plays protagonist Zelos Merlin",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-17/the-diary-of-a-middle-aged-sage-carefree-life-in-another-world-anime-teaser-unveils-tomokazu-sugita-/.241928",
+      "pubDate": "Thu, 17 Sep 2026 23:17:56 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241928/zelos.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241928"
+    },
+    {
+      "title": "AnimeJapan Opens Entry Submissions for 'New Creator Awards 2027' on October 1",
+      "description": "Deadline of entries until February 6, 2027; winners to be announced at AnimeJapan 2027 event",
+      "fullDescription": "Deadline of entries until February 6, 2027; winners to be announced at AnimeJapan 2027 event",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-17/animejapan-opens-entry-submissions-for-new-creator-awards-2027-on-october-1/.241898",
+      "pubDate": "Thu, 17 Sep 2026 23:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241898/aj.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241898"
+    },
     {
       "title": "&#039;Hotaru no Yomeiri&#039; Reveals Additional Staff, Opening Theme, First Promo",
       "description": "The official website for the television anime adaptation of Oreco Tachibana&#039;s Hotaru no Yomeiri (Firefly Wedding) web manga revealed additional staff, the opening theme, and first promotional video on Friday. The anime series is scheduled to premiere on October 9 at 11.30 p.m. on Fuji TV noitam...",
@@ -70,102 +158,14 @@
     },
     {
       "title": "Manga &#039;Kamisama Gakkou no Ochikobore&#039; Gets TV Anime",
-      "description": "Production company Bandai Namco Filmworks opened an official website for a television anime adaptation of Natsu Hyuuga&#039;s Kamisama Gakkou no Ochikobore (The Failure at God School) manga on Friday, revealing a teaser visual (pictured). Hyuuga and Modomu Akagawara began serializing the shoujo mang...",
-      "fullDescription": "Production company Bandai Namco Filmworks opened an official website for a television anime adaptation of Natsu Hyuuga&#039;s Kamisama Gakkou no Ochikobore (The Failure at God School) manga on Friday, revealing a teaser visual (pictured). Hyuuga and Modomu Akagawara began serializing the shoujo manga in Hana to Yume magazine in August 2021. Hakusensha published the 14th volume on May 20, with the 15th volume scheduled for September 18. The series has over 1.7 million copies of its volumes in cir...",
+      "description": "Production company Bandai Namco Filmworks opened an official website for a television anime adaptation of Natsu Hyuuga and Modomu Akagawara&#039;s Kamisama Gakkou no Ochikobore (The Failure at God School) manga on Friday, revealing a teaser visual (pictured). Hyuuga and Akagawara began serializing t...",
+      "fullDescription": "Production company Bandai Namco Filmworks opened an official website for a television anime adaptation of Natsu Hyuuga and Modomu Akagawara&#039;s Kamisama Gakkou no Ochikobore (The Failure at God School) manga on Friday, revealing a teaser visual (pictured). Hyuuga and Akagawara began serializing the fantasy shoujo manga in Hana to Yume magazine in August 2021. Hakusensha published the 14th volume on May 20, with the 15th volume scheduled for a September 18 release. The manga has a cumulative 1...",
       "link": "https://myanimelist.net/news/74730180?_location=rss",
       "pubDate": "Thu, 17 Sep 2026 08:10:16 -0700",
       "source": "MyAnimeList",
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789657771-2d5d86caabe6b5644448f0dc9197591f.jpeg",
       "guid": "https://myanimelist.net/news/74730180?_location=rss"
-    },
-    {
-      "title": "Discotek to Release Digimon Tamers, Digimon Frontier, Lupin the IIIrd: Zenigata and the Two Lupins, More Titles on Blu-ray Disc",
-      "description": "Discotek announces final Deep Dives titles",
-      "fullDescription": "Discotek announces final Deep Dives titles",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/discotek-to-release-digimon-tamers-digimon-frontier-lupin-the-iiird-zenigata-and-the-two-lupins-/.241874",
-      "pubDate": "Thu, 17 Sep 2026 11:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241874/bafkreig32ijtibtohzfapmgscegipwwndsagnkqmcvsily4avtfbt2onpm.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.241874"
-    },
-    {
-      "title": "Takeshobo to Release 3 BL Manga Titles Digitally in English",
-      "description": "Publisher releases Emi Mitsuki's A Man Who Never Says No manga, its spinoff A Golden Someday, complete 2 volumes of Unohana's Enveloped by the Fever of Guilt",
-      "fullDescription": "Publisher releases Emi Mitsuki's <cite>A Man Who Never Says No</cite> manga, its spinoff <cite>A Golden Someday</cite>, complete 2 volumes of Unohana's <cite>Enveloped by the Fever of Guilt</cite>",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/takeshobo-to-release-3-bl-manga-titles-digitally-in-english/.241893",
-      "pubDate": "Thu, 17 Sep 2026 11:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241893/takeno.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241893"
-    },
-    {
-      "title": "A Mark Against Thee Webtoon Gets Stage Musical Adaptation",
-      "description": "Full-length reading showcase scheduled for October 5 at Seoul's Sowol Art Hall",
-      "fullDescription": "Full-length reading showcase scheduled for October 5 at Seoul's Sowol Art Hall",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/a-mark-against-thee-webtoon-gets-stage-musical-adaptation/.241887",
-      "pubDate": "Thu, 17 Sep 2026 09:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241887/news-1789432491771-1690423-m-1.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241887"
-    },
-    {
-      "title": "Nobuhiko Okamoto Joins Bless Anime's Cast",
-      "description": "Okamoto voices Ginga Yoyogi in anime debuting in January 2027",
-      "fullDescription": "Okamoto voices Ginga Yoyogi in anime debuting in January 2027",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/nobuhiko-okamoto-joins-bless-anime-cast/.241908",
-      "pubDate": "Thu, 17 Sep 2026 08:52:50 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241697/bless-kv.jfif.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241908"
-    },
-    {
-      "title": "Netmarble Reveals Bloomwalker Game is Part of Ni no Kuni Universe in New Trailer",
-      "description": "\"Cozy crafting adventure\" game to launch for Xbox Series X|S, PS5, Switch, Switch 2, PC via Steam",
-      "fullDescription": "\"Cozy crafting adventure\" game to launch for Xbox Series X|S, PS5, Switch, Switch 2, PC via Steam",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/netmarble-reveals-bloomwalker-game-is-part-of-ni-no-kuni-universe-in-new-trailer/.241907",
-      "pubDate": "Thu, 17 Sep 2026 08:42:49 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241907"
-    },
-    {
-      "title": "Atelier Karia Game Streams Character Video for Rutger, Lenja",
-      "description": "Atelier Yumia characters return for game launching on February 25",
-      "fullDescription": "<cite>Atelier Yumia</cite> characters return for game launching on February 25",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/atelier-karia-game-streams-character-video-for-rutger-lenja/.241905",
-      "pubDate": "Thu, 17 Sep 2026 08:01:52 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241905"
-    },
-    {
-      "title": "Bloodstained: The Scarlet Engagement Game's New Gameplay Trailer Streamed",
-      "description": "Game to launch in 2027 for PC, PS5, Xbox Series X|S after delay",
-      "fullDescription": "Game to launch in 2027 for PC, PS5, Xbox Series X|S after delay",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/bloodstained-the-scarlet-engagement-game-new-gameplay-trailer-streamed/.241904",
-      "pubDate": "Thu, 17 Sep 2026 07:47:52 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241904"
-    },
-    {
-      "title": "Gachiakuta Game Streams Gameplay Trailer, Reveals Official Title",
-      "description": "GACHIAKUTA: BREAKOUT slated for 2027 release for PS5, Xbox Series X|S, Steam",
-      "fullDescription": "<cite>GACHIAKUTA: BREAKOUT</cite> slated for 2027 release for PS5, Xbox Series X|S, Steam",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/gachiakuta-game-streams-gameplay-trailer-reveals-official-title/.241903",
-      "pubDate": "Thu, 17 Sep 2026 07:40:49 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241903"
     }
   ],
   "total": 15
