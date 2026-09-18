@@ -1,7 +1,29 @@
 {
-  "version": 1789686035307,
-  "fetchedAt": "2026-09-17T23:00:35.307Z",
+  "version": 1789694303984,
+  "fetchedAt": "2026-09-18T01:18:23.984Z",
   "news": [
+    {
+      "title": "&#039;Hotaru no Yomeiri&#039; Reveals Additional Staff, Opening Theme, First Promo",
+      "description": "The official website for the television anime adaptation of Oreco Tachibana&#039;s Hotaru no Yomeiri (Firefly Wedding) web manga revealed additional staff, the opening theme, and first promotional video on Friday. The anime series is scheduled to premiere on October 9 at 11.30 p.m. on Fuji TV noitam...",
+      "fullDescription": "The official website for the television anime adaptation of Oreco Tachibana&#039;s Hotaru no Yomeiri (Firefly Wedding) web manga revealed additional staff, the opening theme, and first promotional video on Friday. The anime series is scheduled to premiere on October 9 at 11.30 p.m. on Fuji TV noitaminA. Staff Concept Art: Yasufumi Soejima (JoJo no Kimyou na Bouken (TV) art design) Sub-Character Design: Mikio (Mayonaka Heart Tune) Prop Design: Ryou Hirata (Marriagetoxin), Tsuyama Kyohiko, Yutaka...",
+      "link": "https://myanimelist.net/news/74731610?_location=rss",
+      "pubDate": "Thu, 17 Sep 2026 17:49:53 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789692549-47ba36342e571a42237b11f56b2effa4.jpeg",
+      "guid": "https://myanimelist.net/news/74731610?_location=rss"
+    },
+    {
+      "title": "Firefly Wedding TV Anime's Promo Video Reveals Iri's Opening Theme Song",
+      "description": "Iri performs \"Period\" for anime debuting on October 9",
+      "fullDescription": "Iri performs \"Period\" for anime debuting on October 9",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-17/firefly-wedding-tv-anime-promo-video-reveals-iri-opening-theme-song/.241915",
+      "pubDate": "Thu, 17 Sep 2026 20:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235719/hotaru.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241915"
+    },
     {
       "title": "7th Be Forever Yamato: Rebel 3199 Film Unveils Main Trailer",
       "description": "7th, final film opens in Japan on October 30",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.241903"
-    },
-    {
-      "title": "Persona 4 Revival Game Streams Naoto Shirogane Trailer",
-      "description": "Video reveals character's English voice cast Amber Lee Connors",
-      "fullDescription": "Video reveals character's English voice cast Amber Lee Connors",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/persona-4-revival-game-streams-naoto-shirogane-trailer/.241901",
-      "pubDate": "Thu, 17 Sep 2026 07:05:51 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241901"
-    },
-    {
-      "title": "Kojima Productions' Physint Game Casts Bill Skarsgård in Lead Role",
-      "description": "Hideo Kojima gives production updates on both OD KNOCK horror game, PHYSINT action espionage game",
-      "fullDescription": "Hideo Kojima gives production updates on both <cite>OD KNOCK</cite> horror game, <cite>PHYSINT</cite> action espionage game",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-17/kojima-productions-physint-game-casts-bill-skarsgard-in-lead-role/.241902",
-      "pubDate": "Thu, 17 Sep 2026 06:59:48 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241902"
     }
   ],
   "total": 15
