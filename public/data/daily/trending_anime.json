@@ -1,6 +1,6 @@
 {
-  "version": 1789817844731,
-  "fetchedAt": "2026-09-19T11:37:24.731Z",
+  "version": 1789829414747,
+  "fetchedAt": "2026-09-19T14:50:14.747Z",
   "anime": [
     {
       "id": 182205,
@@ -73,6 +73,104 @@
         "year": 2026,
         "month": 9,
         "day": 25
+      }
+    },
+    {
+      "id": 187538,
+      "title": {
+        "romaji": "BLACK TORCH",
+        "english": "BLACK TORCH",
+        "native": "BLACK TORCH"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187538-fXVXKYUA3VV6.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx187538-fXVXKYUA3VV6.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187538-fXVXKYUA3VV6.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/187538-287evzCezNl0.jpg",
+      "description": "Jirou Azuma is no average high schooler. A descendant of ninjas and trained in the ancient warrior art of the shinobi, Jirou is also able to talk with animals. After a mysterious encounter with an injured cat named Ragou, Jirou discovers the feline is actually the legendary Black Star of Doom! Joined by the Bureau of Espionage, they fight off swarms of mononoke lying in wait to exploit Ragou’s powers.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Sci-Fi",
+        "Supernatural"
+      ],
+      "averageScore": 70,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "100studio"
+          },
+          {
+            "name": "Shogakukan-Shueisha Productions"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "VIZ Media Japan"
+          },
+          {
+            "name": "HIKE"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 19
+      }
+    },
+    {
+      "id": 184492,
+      "title": {
+        "romaji": "Mairimashita! Iruma-kun 4",
+        "english": "Welcome to Demon School! Iruma-kun Season 4",
+        "native": "魔入りました！入間くん 第4シリーズ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184492-KUVFGieuMaOx.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx184492-KUVFGieuMaOx.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184492-KUVFGieuMaOx.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/184492-JsZazzn4Acqf.jpg",
+      "description": "Suzuki Iruma and all thirteen students of the Misfit Class must perform to reach Rank 4 at the Music Festival.\n<br><br>\n(Source: Crunchyroll News)",
+      "genres": [
+        "Comedy",
+        "Fantasy",
+        "Supernatural"
+      ],
+      "averageScore": 80,
+      "episodes": 24,
+      "status": "RELEASING",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Bandai Namco Pictures"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 26
       }
     },
     {
@@ -150,72 +248,6 @@
       }
     },
     {
-      "id": 209983,
-      "title": {
-        "romaji": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru 2nd Season",
-        "english": "HELL MODE: The Hardcore Gamer Dominates in Another World with Garbage Balancing Season 2",
-        "native": "ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～ 2nd Season"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209983-sFOcKyqMufxb.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209983-sFOcKyqMufxb.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209983-sFOcKyqMufxb.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209983-fJysbFB72IM9.jpg",
-      "description": "The second season of <i>Hell Mode</i>.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 71,
-      "episodes": 13,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Yokohama Animation Lab"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "ANICI"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "Earth Star Entertainment"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "FuRyu Pictures"
-          },
-          {
-            "name": "TOKYO MX"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 26
-      }
-    },
-    {
       "id": 171110,
       "title": {
         "romaji": "Honzuki no Gekokujou: Ryoushu no Youjo",
@@ -282,6 +314,113 @@
       }
     },
     {
+      "id": 217011,
+      "title": {
+        "romaji": "Neko to Ryuu 2nd Season",
+        "english": null,
+        "native": "猫と竜 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx217011-6mO4XKPf42rM.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx217011-6mO4XKPf42rM.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217011-6mO4XKPf42rM.jpg"
+      },
+      "bannerImage": null,
+      "description": "The second season of <i>Neko to Ryuu</i>.",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "NOT_YET_RELEASED",
+      "season": null,
+      "seasonYear": null,
+      "studios": {
+        "nodes": [
+          {
+            "name": "OLM"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2027,
+        "month": null,
+        "day": null
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 209983,
+      "title": {
+        "romaji": "Hell Mode: Yarikomi-zuki no Gamer wa Haisettei no Isekai de Musou Suru 2nd Season",
+        "english": "HELL MODE: The Hardcore Gamer Dominates in Another World with Garbage Balancing Season 2",
+        "native": "ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～ 2nd Season"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209983-sFOcKyqMufxb.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209983-sFOcKyqMufxb.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209983-sFOcKyqMufxb.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209983-fJysbFB72IM9.jpg",
+      "description": "The second season of <i>Hell Mode</i>.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 71,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Yokohama Animation Lab"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "ANICI"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "Earth Star Entertainment"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "FuRyu Pictures"
+          },
+          {
+            "name": "TOKYO MX"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 26
+      }
+    },
+    {
       "id": 196187,
       "title": {
         "romaji": "Super no Ura de Yani Suu Futari",
@@ -345,6 +484,65 @@
         "year": 2026,
         "month": 9,
         "day": 24
+      }
+    },
+    {
+      "id": 180136,
+      "title": {
+        "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
+        "english": "The Exiled Heavy Knight Knows How to Game the System",
+        "native": "追放された転生重騎士はゲーム知識で無双する"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg"
+      },
+      "bannerImage": null,
+      "description": "Born into a prestigious family of master swordsmen, Elymas Edvaughn’s future shatters when he awakens the so-called “defective” Heavy Knight class. Disowned and cast out, he regains memories of another life—and realizes this world mirrors a VR game he once mastered. Armed with knowledge no one else possesses, he sets out to rewrite his fate and prove the strength of the “weakest” class.<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "averageScore": 67,
+      "episodes": 26,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "GoHands"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "MUSE"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "GoHands"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 12,
+        "day": 25
       }
     },
     {
@@ -460,57 +658,6 @@
       }
     },
     {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
       "id": 196218,
       "title": {
         "romaji": "Ryoumin 0-Nin Start no Henkyou Ryoushu-sama",
@@ -589,50 +736,93 @@
       }
     },
     {
-      "id": 180136,
+      "id": 269,
       "title": {
-        "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
-        "english": "The Exiled Heavy Knight Knows How to Game the System",
-        "native": "追放された転生重騎士はゲーム知識で無双する"
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
       },
-      "bannerImage": null,
-      "description": "Born into a prestigious family of master swordsmen, Elymas Edvaughn’s future shatters when he awakens the so-called “defective” Heavy Knight class. Disowned and cast out, he regains memories of another life—and realizes this world mirrors a VR game he once mastered. Armed with knowledge no one else possesses, he sets out to rewrite his fate and prove the strength of the “weakest” class.<br>\n<br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
       "genres": [
         "Action",
-        "Fantasy"
+        "Adventure",
+        "Supernatural"
+      ],
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2004,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Viz Media"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2004,
+        "month": 10,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2012,
+        "month": 3,
+        "day": 27
+      }
+    },
+    {
+      "id": 207141,
+      "title": {
+        "romaji": "Yani Neko",
+        "english": "Chainsmoker Cat",
+        "native": "ヤニねこ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207141-h5q5KJPd6vaX.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207141-h5q5KJPd6vaX.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207141-MvHAS2YVfJzL.jpg",
+      "description": "Yani is a catgirl with a seriously bad smoking habit. She smokes so much that her apartment smells like ash and is littered with cigarette butts—and plenty of other trash! Every time she tries to quit, she becomes weak to the cravings and gives in almost instantly. Will she ever get her life together, or is she doomed to live as a chainsmoking slob forever? \n<BR><BR>\n(Source: Seven Seas Entertainment)",
+      "genres": [
+        "Comedy",
+        "Ecchi",
+        "Slice of Life"
       ],
       "averageScore": 67,
-      "episodes": 26,
+      "episodes": 12,
       "status": "RELEASING",
       "season": "SUMMER",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "GoHands"
-          },
-          {
-            "name": "Shouchiku"
+            "name": "Bibury Animation Studios"
           },
           {
             "name": "Kodansha"
           },
           {
-            "name": "MUSE"
+            "name": "NBCUniversal Entertainment Japan"
           },
           {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "GoHands"
+            "name": "TOKYO MX"
           }
         ]
       },
@@ -643,7 +833,7 @@
       },
       "endDate": {
         "year": 2026,
-        "month": 12,
+        "month": 9,
         "day": 25
       }
     },
@@ -709,238 +899,6 @@
         "year": 2026,
         "month": 9,
         "day": 27
-      }
-    },
-    {
-      "id": 207141,
-      "title": {
-        "romaji": "Yani Neko",
-        "english": "Chainsmoker Cat",
-        "native": "ヤニねこ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207141-h5q5KJPd6vaX.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207141-h5q5KJPd6vaX.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207141-MvHAS2YVfJzL.jpg",
-      "description": "Yani is a catgirl with a seriously bad smoking habit. She smokes so much that her apartment smells like ash and is littered with cigarette butts—and plenty of other trash! Every time she tries to quit, she becomes weak to the cravings and gives in almost instantly. Will she ever get her life together, or is she doomed to live as a chainsmoking slob forever? \n<BR><BR>\n(Source: Seven Seas Entertainment)",
-      "genres": [
-        "Comedy",
-        "Ecchi",
-        "Slice of Life"
-      ],
-      "averageScore": 67,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Bibury Animation Studios"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "NBCUniversal Entertainment Japan"
-          },
-          {
-            "name": "TOKYO MX"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 25
-      }
-    },
-    {
-      "id": 195600,
-      "title": {
-        "romaji": "Yomi no Tsugai",
-        "english": "Daemons of the Shadow Realm",
-        "native": "黄泉のツガイ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
-      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy",
-        "Supernatural"
-      ],
-      "averageScore": 78,
-      "episodes": 24,
-      "status": "RELEASING",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "bones film"
-          },
-          {
-            "name": "bones"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Square Enix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 19
-      }
-    },
-    {
-      "id": 204466,
-      "title": {
-        "romaji": "Otome Kaijuu Caraméliser",
-        "english": "KAIJU GIRL CARAMELISE",
-        "native": "乙女怪獣キャラメリゼ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204466-vXMvIs4VOoQd.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204466-vXMvIs4VOoQd.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204466-vXMvIs4VOoQd.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/204466-cpbNGN9qHrGP.jpg",
-      "description": "Kuroe Akaishi just wants a normal high school life—but that’s impossible with a rare condition that turns her into a giant kaiju whenever her emotions spike! Things get even worse when she falls for Arata Minami, the most popular boy in class. Now every blush, heartbeat, and crush could trigger a monster transformation. Can Kuroe survive high school love before it destroys everything around her?!<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Comedy",
-        "Romance",
-        "Supernatural"
-      ],
-      "averageScore": 75,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "LIDENFILMS"
-          },
-          {
-            "name": "TBS"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "Good Smile Film"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "KLOCKWORX"
-          },
-          {
-            "name": "Contents Seed"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 18
-      }
-    },
-    {
-      "id": 182616,
-      "title": {
-        "romaji": "Nige Jouzu no Wakagimi 2nd Season",
-        "english": "The Elusive Samurai Season 2",
-        "native": "逃げ上手の若君 第二期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx182616-DymJCBpkR4qs.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx182616-DymJCBpkR4qs.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182616-DymJCBpkR4qs.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/182616-kmIqMEUsLYrO.jpg",
-      "description": "The second season of <i>Nige Jouzu no Wakagimi</i>.",
-      "genres": [
-        "Action",
-        "Adventure"
-      ],
-      "averageScore": 76,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "CloverWorks"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "Fuji TV"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "CloverWorks"
-          },
-          {
-            "name": "Dentsu"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 17
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 2
       }
     }
   ]
