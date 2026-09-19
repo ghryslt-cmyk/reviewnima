@@ -1,7 +1,95 @@
 {
-  "version": 1789800085528,
-  "fetchedAt": "2026-09-19T06:41:25.528Z",
+  "version": 1789817844277,
+  "fetchedAt": "2026-09-19T11:37:24.277Z",
   "news": [
+    {
+      "title": "Sanrio's Fragaria Memories: Color of Wishes Smartphone Game Gets Worldwide Release in Fall 2027",
+      "description": "New promo video streamed",
+      "fullDescription": "New promo video streamed",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-19/sanrio-fragaria-memories-color-of-wishes-smartphone-game-gets-worldwide-release-in-fall-2027/.241978",
+      "pubDate": "Sat, 19 Sep 2026 07:17:33 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/interest.2/203695/f-dgtmjwwaa4xdr.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241978"
+    },
+    {
+      "title": "ATASHIn'CHI Next Net Anime Gets New Episodes",
+      "description": "Chainsmoker Cat director Taku Kimura will direct new episodes",
+      "fullDescription": "Chainsmoker Cat director Taku Kimura will direct new episodes",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-19/atashinchi-next-net-anime-gets-new-episodes/.241973",
+      "pubDate": "Sat, 19 Sep 2026 06:59:26 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/230264/atashinchinext_kv2.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241973"
+    },
+    {
+      "title": "&#039;Tougen Anki: Nikko Kegon no Taki-hen&#039; Reveals Additional Cast, Theme Songs, First Promo, Split Cours",
+      "description": "The official website for the Tougen Anki: Nikko Kegon no Taki-hen (Tougen Anki: Nikko Kegon Falls Arc) television anime revealed additional cast members, a key visual (pictured), the theme songs, and first promotional video on Saturday. The second season adapting Yura Urushibara&#039;s action fantas...",
+      "fullDescription": "The official website for the Tougen Anki: Nikko Kegon no Taki-hen (Tougen Anki: Nikko Kegon Falls Arc) television anime revealed additional cast members, a key visual (pictured), the theme songs, and first promotional video on Saturday. The second season adapting Yura Urushibara&#039;s action fantasy manga will air in split cours, with the first part debuting on October 2 at 11:30 p.m. on Nippon Television&#039;s Friday Anime Night programming block, followed by BS Nippon Television on October 5...",
+      "link": "https://myanimelist.net/news/74735385?_location=rss",
+      "pubDate": "Sat, 19 Sep 2026 01:35:58 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789806830-c6f7bdc0127d91bd1fd42961ba03338b.jpeg",
+      "guid": "https://myanimelist.net/news/74735385?_location=rss"
+    },
+    {
+      "title": "Tokyo Game Show 2026 Cancels Final Day on Monday Due to Approaching Typhoon",
+      "description": "Event was planned for 5 days for 1st time",
+      "fullDescription": "Event was planned for 5 days for 1st time",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-19/tokyo-game-show-2026-cancels-final-day-on-monday-due-to-approaching-typhoon/.241974",
+      "pubDate": "Sat, 19 Sep 2026 03:29:36 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241974/0a6a3619.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241974"
+    },
+    {
+      "title": "Tougen Anki: Nikko Kegon Falls Arc Anime Reveals More Cast, October 2 Debut",
+      "description": "New English trailer, theme song artists, streaming platforms also revealed",
+      "fullDescription": "New English trailer, theme song artists, streaming platforms also revealed",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-19/tougen-anki-nikko-kegon-falls-arc-anime-reveals-more-cast-october-2-debut/.241963",
+      "pubDate": "Sat, 19 Sep 2026 03:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241963/tougen-anki-kv-en-sm.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.241963"
+    },
+    {
+      "title": "'With Vengeance, Sincerely, Your Broken Saintess' Season 2 Light Anime Reveals Theme Song in 3rd Teaser Video",
+      "description": "Juice=Juice performs theme for new season debuting on October 1",
+      "fullDescription": "Juice=Juice performs theme for new season debuting on October 1",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-19/with-vengeance-sincerely-your-broken-saintess-season-2-light-anime-reveals-theme-song-in-3rd-teaser-/.241972",
+      "pubDate": "Sat, 19 Sep 2026 02:57:56 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238832/vengeance.webp",
+      "guid": "https://www.animenewsnetwork.com/cms/.241972"
+    },
+    {
+      "title": "&#039;Shin Oishinbo&#039; New TV Anime Announced",
+      "description": "A new television anime adaptation of Tetsu Kariya&#039;s Oshinbo manga, titled Shin Oishinbo was announced at the Shin-Ei Animation 50th Anniversary special stage at ABEMA Anime Festival 2026 on Saturday, revealing the announcement promotional video. Kariya began writing Oishinbo in Shogakukan&#039;...",
+      "fullDescription": "A new television anime adaptation of Tetsu Kariya&#039;s Oshinbo manga, titled Shin Oishinbo was announced at the Shin-Ei Animation 50th Anniversary special stage at ABEMA Anime Festival 2026 on Saturday, revealing the announcement promotional video. Kariya began writing Oishinbo in Shogakukan&#039;s Big Comic Spirits magazine in 1983, featuring art by Akira Hanazaki. Shogakukan published the 111th and latest volume in December 2014. The manga has been on hiatus since May 2014. VIZ Media licens...",
+      "link": "https://myanimelist.net/news/74735216?_location=rss",
+      "pubDate": "Fri, 18 Sep 2026 23:48:04 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789799958-e828371782d37de11bdde9c4c92eb5a7.jpeg",
+      "guid": "https://myanimelist.net/news/74735216?_location=rss"
+    },
+    {
+      "title": "Oishinbo Gourmet Manga Gets New TV Anime",
+      "description": "Manga previously inspired TV anime from 1988-1992",
+      "fullDescription": "Manga previously inspired TV anime from 1988-1992",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-19/oishinbo-gourmet-manga-gets-new-tv-anime/.241971",
+      "pubDate": "Sat, 19 Sep 2026 02:32:44 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241971"
+    },
     {
       "title": "Inherit the Winds Anime Reveals Theatrical Screening Trailer, Theme Songs, Additional Cast",
       "description": "Quruli, Hitsujibungaku collaborate for theme songs",
@@ -78,94 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241809/beyblade-x-bey-kingdom-arc.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241954"
-    },
-    {
-      "title": "Titan Manga Licenses Break Blade Manga",
-      "description": "Special anniversary edition launches in English on December 15",
-      "fullDescription": "Special anniversary edition launches in English on December 15",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-18/titan-manga-licenses-break-blade-manga/.241952",
-      "pubDate": "Fri, 18 Sep 2026 16:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241952/break-blade.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241952"
-    },
-    {
-      "title": "OceanVeil Streams Kamui: He's Behind You Anime's English Dub",
-      "description": "Diana Garnet, Jesse Inocalla, more star in dub",
-      "fullDescription": "Diana Garnet, Jesse Inocalla, more star in dub",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-18/oceanveil-streams-kamui-he-behind-you-anime-english-dub/.241951",
-      "pubDate": "Fri, 18 Sep 2026 15:30:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/236874/kamui.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241951"
-    },
-    {
-      "title": "Viz Media, Japan Society Screen World Premiere of Hirayasumi Anime on October 7",
-      "description": "Anime's 1st episode screens in NYC ahead of January 2027 premiere",
-      "fullDescription": "Anime's 1st episode screens in NYC ahead of January 2027 premiere",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-18/viz-media-japan-society-screen-world-premiere-of-hirayasumi-anime-on-october-7/.241950",
-      "pubDate": "Fri, 18 Sep 2026 14:45:58 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235378/embargo-3-16-4pm-hirayasumi-kv.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241950"
-    },
-    {
-      "title": "Earth Defense Force 6.2 Invaders From Another World Game Launches on March 18",
-      "description": "Updated game to launch for PS5, to include newly added enhancements for console",
-      "fullDescription": "Updated game to launch for PS5, to include newly added enhancements for console",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-18/earth-defense-force-6.2-invaders-from-another-world-game-launches-on-march-18/.241942",
-      "pubDate": "Fri, 18 Sep 2026 08:17:05 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.241942"
-    },
-    {
-      "title": "Even the Student Council Has its Holes! TV Anime Reveals Ending Theme in 2nd Main Promo Video",
-      "description": "Akari Nanawo performs ending theme for series debuting on October 3",
-      "fullDescription": "Akari Nanawo performs ending theme for series debuting on October 3",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-18/even-the-student-council-has-its-holes-tv-anime-reveals-ending-theme-in-2nd-main-promo-video/.241945",
-      "pubDate": "Fri, 18 Sep 2026 08:01:55 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239985/class.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241945"
-    },
-    {
-      "title": "The Salty Koharu Has a Soft Spot for Me TV Anime Reveals October 6 Debut in Video",
-      "description": "Masayoshi Ōishi, HoneyWorks feat. Hoshikawa Sara perform theme songs",
-      "fullDescription": "Masayoshi Ōishi, HoneyWorks feat. Hoshikawa Sara perform theme songs",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-18/the-salty-koharu-has-a-soft-spot-for-me-tv-anime-reveals-october-6-debut-in-video/.241944",
-      "pubDate": "Fri, 18 Sep 2026 07:56:41 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241944/soft-spot-kv-2.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241944"
-    },
-    {
-      "title": "'Are You a Landmine, Chihara-san?' TV Anime's Teaser Trailer Streamed",
-      "description": "Anime debuts in January 2027 following delayu",
-      "fullDescription": "Anime debuts in January 2027 following delayu",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-18/are-you-a-landmine-chihara-san-tv-anime-teaser-trailer-streamed/.241943",
-      "pubDate": "Fri, 18 Sep 2026 07:05:29 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/232502/chihara-visual.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.241943"
-    },
-    {
-      "title": "Psikyo Arcade Shooters Get Psikyo Memories Collection Release",
-      "description": "Edia to develop collection set to launch for PS5, Switch 2 in 2027",
-      "fullDescription": "Edia to develop collection set to launch for PS5, Switch 2 in 2027",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-18/psikyo-arcade-shooters-get-psikyo-memories-collection-release/.241927",
-      "pubDate": "Fri, 18 Sep 2026 04:58:11 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241927/psikyomemories.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241927"
     }
   ],
   "total": 15
