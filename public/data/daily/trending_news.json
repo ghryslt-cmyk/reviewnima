@@ -1,7 +1,18 @@
 {
-  "version": 1789925856801,
-  "fetchedAt": "2026-09-20T17:37:36.801Z",
+  "version": 1789933691076,
+  "fetchedAt": "2026-09-20T19:48:11.076Z",
   "news": [
+    {
+      "title": "Japan's Video Game Rankings, September 7-13",
+      "description": "Onimusha: Way of the Sword PS5 game ranks at #2 in 2nd week",
+      "fullDescription": "<cite>Onimusha: Way of the Sword</cite> PS5 game ranks at #2 in 2nd week",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-20/japan-video-game-rankings-september-7-13/.241937",
+      "pubDate": "Sun, 20 Sep 2026 14:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.241937"
+    },
     {
       "title": "Japanese Animation TV Ranking, September 7-13",
       "description": "Ascendance of a Bookworm Part 3: Adopted Daughter of an Archduke earns 3.1% rating",
@@ -26,8 +37,8 @@
     },
     {
       "title": "&#039;Futsutsuka na Akujo dewa Gozaimasu ga&#039; Second Part Announced for Winter 2027",
-      "description": "The 11th and final episode of Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den (Though I Am an Inept Villainess) ended with an announcement on Monday that a second part, titled Hajimete no Gaiyuu-hen, is in production. The official website also revealed three additional cast members ...",
-      "fullDescription": "The 11th and final episode of Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den (Though I Am an Inept Villainess) ended with an announcement on Monday that a second part, titled Hajimete no Gaiyuu-hen, is in production. The official website also revealed three additional cast members and a key visual (pictured). The anime series will premiere in January 2027. Cast Keikou: Yuuichi Nakamura (Jujutsu Kaisen) Keishou: Shunichi Toki (Tokyo Revengers) Unran: Chiaki Kobayashi (Sousou no...",
+      "description": "The 11th and final episode of Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den (Though I Am an Inept Villainess) ended with an announcement on Monday that its second part, titled Hajimete no Gaiyuu-hen, will premiere in January 2027. The official website also revealed three additiona...",
+      "fullDescription": "The 11th and final episode of Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den (Though I Am an Inept Villainess) ended with an announcement on Monday that its second part, titled Hajimete no Gaiyuu-hen, will premiere in January 2027. The official website also revealed three additional cast members and a key visual (pictured). Cast Keikou: Yuuichi Nakamura (Jujutsu Kaisen) Keishou: Shunichi Toki (Tokyo Revengers) Unran: Chiaki Kobayashi (Sousou no Frieren) Produced by Doga Kobo, t...",
       "link": "https://myanimelist.net/news/74739206?_location=rss",
       "pubDate": "Sun, 20 Sep 2026 08:44:02 -0700",
       "source": "MyAnimeList",
@@ -135,7 +146,7 @@
       "guid": "https://www.animenewsnetwork.com/cms/.242011"
     },
     {
-      "title": "New &#039;Magic Knight Rayearth&#039; Unveils Additional Cast, Theme Songs, Second Promo, 2 Consecutive Cours",
+      "title": "New &#039;Magic Knight Rayearth&#039; TV Anime Unveils Additional Cast, Theme Songs, Second Promo, 2 Consecutive Cours",
       "description": "The stage event for the new television anime adaptation of CLAMP&#039;s Magic Knight Rayearth at the Kyoto International Manga Anime Fair 2026 unveiled additional cast, the theme songs, and a second promotional video on Sunday. The new anime series will run for two consecutive cours beginning on Oct...",
       "fullDescription": "The stage event for the new television anime adaptation of CLAMP&#039;s Magic Knight Rayearth at the Kyoto International Manga Anime Fair 2026 unveiled additional cast, the theme songs, and a second promotional video on Sunday. The new anime series will run for two consecutive cours beginning on October 7 at 11.45 p.m. on TV Asahi&#039;s &quot;IMAnimation W&quot; programming block. Cast Alcyone: Mamiko Noto (Kimi ni Todoke) Ascot: Ayumu Murase (Chainsaw Man) Caldina: Hitomi Ueda (Kekkon Yubiwa...",
       "link": "https://myanimelist.net/news/74738043?_location=rss",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235843/alyas2-teaservisual.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242003"
-    },
-    {
-      "title": "Tokyo Int'l Film Fest to Screen Cherry and Virgin, ghost – end of night, More Anime",
-      "description": "Grotesqqque, We Are Aliens to also play at October 26-November 4 festival",
-      "fullDescription": "<i>Grotesqqque, We Are Aliens</i> to also play at October 26-November 4 festival",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-19/tokyo-intl-film-fest-to-screen-cherry-and-virgin-ghost-end-of-night-more-anime/.241946",
-      "pubDate": "Sat, 19 Sep 2026 21:12:37 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235427/cherryandvirgin.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241946"
     }
   ],
   "total": 15
