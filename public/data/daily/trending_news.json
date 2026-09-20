@@ -1,7 +1,40 @@
 {
-  "version": 1789898530554,
-  "fetchedAt": "2026-09-20T10:02:10.554Z",
+  "version": 1789913732549,
+  "fetchedAt": "2026-09-20T14:15:32.549Z",
   "news": [
+    {
+      "title": "2026 World Webtoon Awards Announces 20 Finalists, Opens Global Reader Vote",
+      "description": "Now in their 3rd year, awards will accept online votes from readers worldwide from September 17 to October 19",
+      "fullDescription": "Now in their 3rd year, awards will accept online votes from readers worldwide from September 17 to October 19",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-20/2026-world-webtoon-awards-announces-20-finalists-opens-global-reader-vote/.242010",
+      "pubDate": "Sun, 20 Sep 2026 09:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242010/3.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242010"
+    },
+    {
+      "title": "Persona 4 Revival Game Recasts Ryōtarō Dōjima",
+      "description": "Ryōtarō Okiayu replaces Unshō Ishizuka, who died in 2018",
+      "fullDescription": "Ryōtarō Okiayu replaces Unshō Ishizuka, who died in 2018",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-20/persona-4-revival-game-recasts-ryotaro-dojima/.242017",
+      "pubDate": "Sun, 20 Sep 2026 07:53:50 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242017/persona.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242017"
+    },
+    {
+      "title": "The Reincarnated Elf Left on a Journey to Master His Magic Anime Unveils 1st 2 Minutes, January Debut",
+      "description": "Daiki Yamashita, Hana Hishikawa star in upcoming series",
+      "fullDescription": "Daiki Yamashita, Hana Hishikawa star in upcoming series",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-20/the-reincarnated-elf-left-on-a-journey-to-master-his-magic-anime-unveils-1st-2-minutes-january-debut/.242016",
+      "pubDate": "Sun, 20 Sep 2026 05:02:16 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238602/elfteaser.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242016"
+    },
     {
       "title": "&#039;Tensei Goblin dakedo Shitsumon Aru?&#039; Announces Supporting Cast",
       "description": "The official website for the television anime adaptation of Nazuna Miki&#039;s Tensei Goblin dakedo Shitsumon Aru? (So What&#039;s Wrong with Getting Reborn as a Goblin?) manga announced supporting cast on Sunday. The anime series is scheduled to premiere on October 5 at 10.00 p.m. on Tokyo MX, foll...",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1789823619-dfed4dcdfdba32063c757b403de1f5ab.jpeg",
       "guid": "https://myanimelist.net/news/74735782?_location=rss"
-    },
-    {
-      "title": "The Cat and the Dragon Anime Gets 2nd Season in 2027",
-      "description": "Announced after first season ended on Saturday",
-      "fullDescription": "Announced after first season ended on Saturday",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-19/the-cat-and-the-dragon-anime-gets-2nd-season-in-2027/.241986",
-      "pubDate": "Sat, 19 Sep 2026 09:08:17 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/241986/hslfxdvbiaa1tyu.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241986"
-    },
-    {
-      "title": "Sanrio's Fragaria Memories: Color of Wishes Smartphone Game Gets Worldwide Release in Fall 2027",
-      "description": "New promo video streamed",
-      "fullDescription": "New promo video streamed",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-19/sanrio-fragaria-memories-color-of-wishes-smartphone-game-gets-worldwide-release-in-fall-2027/.241978",
-      "pubDate": "Sat, 19 Sep 2026 07:17:33 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/interest.2/203695/f-dgtmjwwaa4xdr.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241978"
-    },
-    {
-      "title": "ATASHIn'CHI Next Net Anime Gets New Episodes",
-      "description": "Chainsmoker Cat director Taku Kimura will direct new episodes",
-      "fullDescription": "Chainsmoker Cat director Taku Kimura will direct new episodes",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-19/atashinchi-next-net-anime-gets-new-episodes/.241973",
-      "pubDate": "Sat, 19 Sep 2026 06:59:26 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/230264/atashinchinext_kv2.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241973"
     }
   ],
   "total": 15
