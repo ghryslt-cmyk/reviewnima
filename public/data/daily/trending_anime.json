@@ -1,6 +1,6 @@
 {
-  "version": 1789933691574,
-  "fetchedAt": "2026-09-20T19:48:11.574Z",
+  "version": 1789942843430,
+  "fetchedAt": "2026-09-20T22:20:43.430Z",
   "anime": [
     {
       "id": 178789,
@@ -194,69 +194,56 @@
       }
     },
     {
-      "id": 177637,
+      "id": 195600,
       "title": {
-        "romaji": "Sayonara Lara",
-        "english": "Goodbye, Lara",
-        "native": "さよならララ"
+        "romaji": "Yomi no Tsugai",
+        "english": "Daemons of the Shadow Realm",
+        "native": "黄泉のツガイ"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-8onaQWqKW1C3.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx177637-8onaQWqKW1C3.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177637-8onaQWqKW1C3.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/177637-2Ok4Pq0SpvHp.jpg",
-      "description": "Once upon a time, a mermaid princess named Lara fell in love with a human prince. To be with him, she used a witch’s potion to become human—but the magic came at a cost: If she failed to find true love, she would vanish into sea foam forever. Now, 200 years later, Lara awakens in Lake Biwa with one final chance at life and love.<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
+      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
       "genres": [
-        "Drama",
+        "Action",
+        "Adventure",
+        "Comedy",
         "Fantasy",
-        "Romance"
+        "Supernatural"
       ],
-      "averageScore": 76,
-      "episodes": 12,
+      "averageScore": 78,
+      "episodes": 24,
       "status": "FINISHED",
-      "season": "SUMMER",
+      "season": "SPRING",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Kinema Citrus"
+            "name": "bones film"
           },
           {
-            "name": "KADOKAWA"
+            "name": "bones"
           },
           {
-            "name": "Yomiuri TV"
+            "name": "Aniplex"
           },
           {
-            "name": "Sammy"
-          },
-          {
-            "name": "arma bianca"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "BS Asahi"
-          },
-          {
-            "name": "Kinema Citrus"
-          },
-          {
-            "name": "JR Nishi Nihon Communications"
+            "name": "Square Enix"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 7,
-        "day": 6
+        "month": 4,
+        "day": 4
       },
       "endDate": {
         "year": 2026,
         "month": 9,
-        "day": 21
+        "day": 19
       }
     },
     {
@@ -320,93 +307,69 @@
       }
     },
     {
-      "id": 195600,
+      "id": 177637,
       "title": {
-        "romaji": "Yomi no Tsugai",
-        "english": "Daemons of the Shadow Realm",
-        "native": "黄泉のツガイ"
+        "romaji": "Sayonara Lara",
+        "english": "Goodbye, Lara",
+        "native": "さよならララ"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-8onaQWqKW1C3.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx177637-8onaQWqKW1C3.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177637-8onaQWqKW1C3.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
-      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/177637-2Ok4Pq0SpvHp.jpg",
+      "description": "Once upon a time, a mermaid princess named Lara fell in love with a human prince. To be with him, she used a witch’s potion to become human—but the magic came at a cost: If she failed to find true love, she would vanish into sea foam forever. Now, 200 years later, Lara awakens in Lake Biwa with one final chance at life and love.<br><br>\n(Source: Crunchyroll)",
       "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
+        "Drama",
         "Fantasy",
-        "Supernatural"
+        "Romance"
       ],
-      "averageScore": 78,
-      "episodes": 24,
+      "averageScore": 76,
+      "episodes": 12,
       "status": "FINISHED",
-      "season": "SPRING",
+      "season": "SUMMER",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "bones film"
+            "name": "Kinema Citrus"
           },
           {
-            "name": "bones"
+            "name": "KADOKAWA"
           },
           {
-            "name": "Aniplex"
+            "name": "Yomiuri TV"
           },
           {
-            "name": "Square Enix"
+            "name": "Sammy"
+          },
+          {
+            "name": "arma bianca"
+          },
+          {
+            "name": "Pia"
+          },
+          {
+            "name": "BS Asahi"
+          },
+          {
+            "name": "Kinema Citrus"
+          },
+          {
+            "name": "JR Nishi Nihon Communications"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 4,
-        "day": 4
+        "month": 7,
+        "day": 6
       },
       "endDate": {
         "year": 2026,
         "month": 9,
-        "day": 19
-      }
-    },
-    {
-      "id": 217070,
-      "title": {
-        "romaji": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den Part 2",
-        "english": null,
-        "native": "ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～ 第二幕"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx217070-Muh7Kjw4RQsi.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx217070-Muh7Kjw4RQsi.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217070-Muh7Kjw4RQsi.jpg"
-      },
-      "bannerImage": null,
-      "description": "The second cour of <i>Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den</i>.<br>\n<br>\nThrough the actions of Reirin and Keigetsu, the series of disturbances caused by a curse in the inner court have settled down.<br>\nThrough their swap, Reirin and Keigetsu learned of each other’s character, and a friendship was budding between the two of them.<br>\n<br>\nSeasons pass, and we are now at early autumn. The location of the ritual where the Crown Prince and the Maidens wish for a bountiful harvest (the Harvest Festival) has been set within the southern lands ruled by the Shu clan. With no consort as guardian, Keigetsu arduously continues with preparations despite feeling the pressure as the host of the Harvest Festival. Meanwhile, Reirin is wholeheartedly supporting Keigetsu while being thrilled about her first royal outing.<br>\n<br>\nHowever, right upon arrival, an unforeseen accident occurs and the ritual is interrupted. An agitated Keigetsu’s spell runs out of control, and she once again swaps bodies with Reirin. On top of that, among all the confusion, the post-swap Reirin is abducted...!?<br>\n<br>\nReirin’s two overprotective brothers Kou Keikou and Kou Keishou get involved and the situation heads in an unexpected direction.<br>\nWho is the new mastermind who is sneaking up in order to frame Keigetsu...?<br>\n<br>\nThe gratifying tale of switched fates brought to you by two girls who are polar opposites—the curtain rises on the second act, \"The First Royal Outing\" Arc!<br>\n<br>\n(Source: Official Site)",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "averageScore": null,
-      "episodes": null,
-      "status": "NOT_YET_RELEASED",
-      "season": "WINTER",
-      "seasonYear": 2027,
-      "studios": {
-        "nodes": []
-      },
-      "startDate": {
-        "year": 2027,
-        "month": 1,
-        "day": null
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "day": 21
       }
     },
     {
@@ -543,6 +506,43 @@
       }
     },
     {
+      "id": 217070,
+      "title": {
+        "romaji": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den Part 2",
+        "english": null,
+        "native": "ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～ 第二幕"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx217070-Muh7Kjw4RQsi.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx217070-Muh7Kjw4RQsi.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217070-Muh7Kjw4RQsi.jpg"
+      },
+      "bannerImage": null,
+      "description": "The second cour of <i>Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den</i>.<br>\n<br>\nThrough the actions of Reirin and Keigetsu, the series of disturbances caused by a curse in the inner court have settled down.<br>\nThrough their swap, Reirin and Keigetsu learned of each other’s character, and a friendship was budding between the two of them.<br>\n<br>\nSeasons pass, and we are now at early autumn. The location of the ritual where the Crown Prince and the Maidens wish for a bountiful harvest (the Harvest Festival) has been set within the southern lands ruled by the Shu clan. With no consort as guardian, Keigetsu arduously continues with preparations despite feeling the pressure as the host of the Harvest Festival. Meanwhile, Reirin is wholeheartedly supporting Keigetsu while being thrilled about her first royal outing.<br>\n<br>\nHowever, right upon arrival, an unforeseen accident occurs and the ritual is interrupted. An agitated Keigetsu’s spell runs out of control, and she once again swaps bodies with Reirin. On top of that, among all the confusion, the post-swap Reirin is abducted...!?<br>\n<br>\nReirin’s two overprotective brothers Kou Keikou and Kou Keishou get involved and the situation heads in an unexpected direction.<br>\nWho is the new mastermind who is sneaking up in order to frame Keigetsu...?<br>\n<br>\nThe gratifying tale of switched fates brought to you by two girls who are polar opposites—the curtain rises on the second act, \"The First Royal Outing\" Arc!<br>\n<br>\n(Source: Official Site)",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "NOT_YET_RELEASED",
+      "season": "WINTER",
+      "seasonYear": 2027,
+      "studios": {
+        "nodes": []
+      },
+      "startDate": {
+        "year": 2027,
+        "month": 1,
+        "day": null
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 198409,
       "title": {
         "romaji": "Sekai Saikyou no Kouei: Meikyuukoku no Shinjin Tansakusha",
@@ -600,62 +600,6 @@
         "year": 2026,
         "month": 9,
         "day": 20
-      }
-    },
-    {
-      "id": 187538,
-      "title": {
-        "romaji": "BLACK TORCH",
-        "english": "BLACK TORCH",
-        "native": "BLACK TORCH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187538-fXVXKYUA3VV6.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx187538-fXVXKYUA3VV6.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187538-fXVXKYUA3VV6.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/187538-287evzCezNl0.jpg",
-      "description": "Jirou Azuma is no average high schooler. A descendant of ninjas and trained in the ancient warrior art of the shinobi, Jirou is also able to talk with animals. After a mysterious encounter with an injured cat named Ragou, Jirou discovers the feline is actually the legendary Black Star of Doom! Joined by the Bureau of Espionage, they fight off swarms of mononoke lying in wait to exploit Ragou’s powers.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy",
-        "Sci-Fi",
-        "Supernatural"
-      ],
-      "averageScore": 69,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "100studio"
-          },
-          {
-            "name": "Shogakukan-Shueisha Productions"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "VIZ Media Japan"
-          },
-          {
-            "name": "HIKE"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 19
       }
     },
     {
@@ -717,65 +661,6 @@
         "year": 2026,
         "month": 9,
         "day": 30
-      }
-    },
-    {
-      "id": 201514,
-      "title": {
-        "romaji": "Saijo no Osewa: Takane no Hanadarake na Meimonkou de, Gakuin Ichi no Ojou-sama (Seikatsu Nouryoku Kaimu) wo Kagenagara Osewa suru Koto ni Narimashita",
-        "english": "Rich Girl Caretaker: I'm Secretly the Caregiver of the Most Popular Girl in This Rich Kid School",
-        "native": "才女のお世話 高嶺の花だらけな名門校で、学院一のお嬢様(生活能力皆無)を陰ながらお世話することになりました"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx201514-BHAeWhSbcBrT.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx201514-BHAeWhSbcBrT.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx201514-BHAeWhSbcBrT.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/201514-8dAOB0Xw124G.jpg",
-      "description": "Hinako Konohana is the perfect young lady—graceful, elegant, and flawless… or so everyone thinks. Behind closed doors, she’s a total disaster who can’t handle basic chores! When ordinary student Itsuki Tomonari becomes her caretaker, he’s thrown into 24/7 damage control, maintaining her “perfect” image. It’s awkward, nonstop chaos—but it starts softening into something that feels like love…\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Comedy",
-        "Romance"
-      ],
-      "averageScore": 69,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Brain's Base"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "King Records"
-          },
-          {
-            "name": "MediaNet"
-          },
-          {
-            "name": "Hobby Japan"
-          },
-          {
-            "name": "MAGNET"
-          },
-          {
-            "name": "BS Asahi"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 20
       }
     },
     {
@@ -842,6 +727,121 @@
         "year": 2026,
         "month": 9,
         "day": 24
+      }
+    },
+    {
+      "id": 187538,
+      "title": {
+        "romaji": "BLACK TORCH",
+        "english": "BLACK TORCH",
+        "native": "BLACK TORCH"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187538-fXVXKYUA3VV6.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx187538-fXVXKYUA3VV6.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187538-fXVXKYUA3VV6.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/187538-287evzCezNl0.jpg",
+      "description": "Jirou Azuma is no average high schooler. A descendant of ninjas and trained in the ancient warrior art of the shinobi, Jirou is also able to talk with animals. After a mysterious encounter with an injured cat named Ragou, Jirou discovers the feline is actually the legendary Black Star of Doom! Joined by the Bureau of Espionage, they fight off swarms of mononoke lying in wait to exploit Ragou’s powers.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Sci-Fi",
+        "Supernatural"
+      ],
+      "averageScore": 69,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "100studio"
+          },
+          {
+            "name": "Shogakukan-Shueisha Productions"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "VIZ Media Japan"
+          },
+          {
+            "name": "HIKE"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 19
+      }
+    },
+    {
+      "id": 201514,
+      "title": {
+        "romaji": "Saijo no Osewa: Takane no Hanadarake na Meimonkou de, Gakuin Ichi no Ojou-sama (Seikatsu Nouryoku Kaimu) wo Kagenagara Osewa suru Koto ni Narimashita",
+        "english": "Rich Girl Caretaker: I'm Secretly the Caregiver of the Most Popular Girl in This Rich Kid School",
+        "native": "才女のお世話 高嶺の花だらけな名門校で、学院一のお嬢様(生活能力皆無)を陰ながらお世話することになりました"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx201514-BHAeWhSbcBrT.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx201514-BHAeWhSbcBrT.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx201514-BHAeWhSbcBrT.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/201514-8dAOB0Xw124G.jpg",
+      "description": "Hinako Konohana is the perfect young lady—graceful, elegant, and flawless… or so everyone thinks. Behind closed doors, she’s a total disaster who can’t handle basic chores! When ordinary student Itsuki Tomonari becomes her caretaker, he’s thrown into 24/7 damage control, maintaining her “perfect” image. It’s awkward, nonstop chaos—but it starts softening into something that feels like love…\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "averageScore": 69,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Brain's Base"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "King Records"
+          },
+          {
+            "name": "MediaNet"
+          },
+          {
+            "name": "Hobby Japan"
+          },
+          {
+            "name": "MAGNET"
+          },
+          {
+            "name": "BS Asahi"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 20
       }
     },
     {
