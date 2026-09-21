@@ -1,7 +1,45 @@
 {
-  "version": 1789988473910,
-  "fetchedAt": "2026-09-21T11:01:13.910Z",
+  "version": 1790010336210,
+  "fetchedAt": "2026-09-21T17:05:36.210Z",
   "anime": [
+    {
+      "id": 217136,
+      "title": {
+        "romaji": "Grand Blue Season 4",
+        "english": null,
+        "native": "ぐらんぶる Season 4"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx217136-lBViwfZpOCLv.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx217136-lBViwfZpOCLv.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217136-lBViwfZpOCLv.png"
+      },
+      "bannerImage": null,
+      "description": "The fourth season of <i>Grand Blue</i>.",
+      "genres": [
+        "Comedy",
+        "Slice of Life",
+        "Sports"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "NOT_YET_RELEASED",
+      "season": null,
+      "seasonYear": null,
+      "studios": {
+        "nodes": []
+      },
+      "startDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
     {
       "id": 178789,
       "title": {
@@ -64,6 +102,340 @@
         "year": 2026,
         "month": 9,
         "day": 27
+      }
+    },
+    {
+      "id": 202269,
+      "title": {
+        "romaji": "Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.",
+        "english": "Love Unseen Beneath the Clear Night Sky",
+        "native": "透明な夜に駆ける君と、目に見えない恋をした。"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202269-7KNj8s2fSsJJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202269-7KNj8s2fSsJJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/202269-u0PTTsiKwrVL.jpg",
+      "description": "Kakeru Sorano, a quiet university freshman who avoids others, meets Koharu Fuyutsuki, a blind girl who faces the world with quiet brightness. When she says, “I want to see fireworks someday,” something in Kakeru shifts. As they grow closer through small moments and shared loneliness, he searches for a way to make her wish come true.<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "averageScore": 79,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Makaria"
+          },
+          {
+            "name": "SB Creative"
+          },
+          {
+            "name": "viviON"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "Clare Voice"
+          },
+          {
+            "name": "Makaria"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 6
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 21
+      }
+    },
+    {
+      "id": 199111,
+      "title": {
+        "romaji": "Grand Blue Season 3",
+        "english": "Grand Blue Dreaming Season 3",
+        "native": "ぐらんぶる Season 3"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199111-gBSuBG61ElcW.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199111-gBSuBG61ElcW.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199111-gBSuBG61ElcW.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199111-Z8y9awn2Zb6v.jpg",
+      "description": "Iori's college shenanigans head overseas! Just as he's finally starting to get the hang of university life, crashing at his uncle's dive shop while balancing the booze-fueled antics of his diving club, Iori's cousin enlists him to help run a new dive shop in Palau. Between crystal-clear dives and his diving group that can't resist partying it up and stripping down, Iori's in for a wild summer.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Comedy",
+        "Slice of Life",
+        "Sports"
+      ],
+      "averageScore": 82,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "Zero-G"
+          },
+          {
+            "name": "Saber Works"
+          },
+          {
+            "name": "Avex Pictures"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Zero-G"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "qooop"
+          },
+          {
+            "name": "Saber Links"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 7
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 22
+      }
+    },
+    {
+      "id": 169583,
+      "title": {
+        "romaji": "Tenkousaki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi datta Ken",
+        "english": "Oh Boy, Was I Wrong About Her",
+        "native": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169583-0ZTdBGrKNIbe.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169583-0ZTdBGrKNIbe.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-0ZTdBGrKNIbe.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/169583-wB0yHc7e8Kjk.jpg",
+      "description": "Seven years after making a childhood promise to always be friends, Hayato is reunited with his formerly tomboyish pal Haruki at a city high school–only now, Haruki has transformed into the girl every guy dreams about! While Haruki’s looks may have changed, with Hayato, she’s still the same pal he remembers. Despite years apart, their promise and feelings remain and deepen into something stronger.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "averageScore": 69,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "project No.9"
+          },
+          {
+            "name": "Asmik Ace"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "Toei"
+          },
+          {
+            "name": "BS Fuji"
+          },
+          {
+            "name": "Bit grooove promotion"
+          },
+          {
+            "name": "KLOCKWORX"
+          },
+          {
+            "name": "Sun Television"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 6
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 21
+      }
+    },
+    {
+      "id": 199408,
+      "title": {
+        "romaji": "Buchigire Reijou wa Houfuku wo Chikaimashita.: Madousho no Chikara de Sokoku wo Tataki Tsubushimasu",
+        "english": "A Livid Lady’s Guide to Getting Even: How I Crushed My Homeland with My Mighty Grimoires",
+        "native": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖国を叩き潰します～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199408-ocRWG4pRWl8f.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199408-ocRWG4pRWl8f.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199408-ouNGkjrw0ohT.jpg",
+      "description": "Elizabeth Leiston, daughter of the influential prime minister, is a picture-perfect lady on the path to becoming the future queen of the Kingdom of Haldoria. But her life takes a sudden turn for the worst when her fiancé makes a show of publicly calling off their engagement. Soon after, he throws her in jail and starts spreading nasty rumors about her. The encouragement Elizabeth receives from her loyal waiting maid, Mireille, and her inner fury are all she needs to reconsider her goals. Why should she continue devoting herself to a country that doesn’t respect her when she can trample over it instead? She will get even with those who wronged her and bring down the damned kingdom, even if it’s the last thing she does! Luckily, Elizabeth is no damsel in distress and has seven powerful magic grimoires she won’t hesitate to use. Get ready because this ruthless lady is out for blood!\n<br><br>\n(Source: J-Novel Club)",
+      "genres": [
+        "Drama",
+        "Fantasy"
+      ],
+      "averageScore": 67,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Comet"
+          },
+          {
+            "name": "MediaNet"
+          },
+          {
+            "name": "Hobby Japan"
+          },
+          {
+            "name": "REMOW"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "Nippon Columbia"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "Studio Comet"
+          },
+          {
+            "name": "Jinnan Studio"
+          },
+          {
+            "name": "AQUA ARIS"
+          },
+          {
+            "name": "KLOCKWORX"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 6
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 21
+      }
+    },
+    {
+      "id": 185542,
+      "title": {
+        "romaji": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+        "english": "Skeleton Knight in Another World Season 2",
+        "native": "骸骨騎士様、只今異世界へお出掛け中Ⅱ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185542-6a9LCWlLHa0T.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185542-6a9LCWlLHa0T.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-6a9LCWlLHa0T.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185542-v15vqOvUWSF5.jpg",
+      "description": "Arc returns! After waking to find he's become a Skeleton Knight in his favorite fantasy video game, Arc, Ariane, Chiyome, and Ponta band together to take on evil. Before Arc's search for a cure to his skeletal condition continues, he must face a dogmatic leader, Count Hilk, to free oppressed elves and beasts. A new chapter begins as the Skeleton Knight fights to make his new world a better place.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 65,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Aura Studio"
+          },
+          {
+            "name": "OVERLAP"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "MUSE"
+          },
+          {
+            "name": "Docomo Anime Store"
+          },
+          {
+            "name": "MAGNET"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "CTW"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 21
       }
     },
     {
@@ -138,6 +510,136 @@
         "year": null,
         "month": null,
         "day": null
+      }
+    },
+    {
+      "id": 169582,
+      "title": {
+        "romaji": "Saikyou Degarashi Ouji no Anyaku Teii Arasoi: Munou wo Enjiru SS Rank Ouji wa Koui Keishou-sen wo Kage kara Shihai suru",
+        "english": "The Insipid Prince's Furtive Grab for the Throne",
+        "native": "最強出涸らし皇子の暗躍帝位争い 無能を演じるSSランク皇子は皇位継承戦を影から支配する"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169582-quL8VMg45fcu.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169582-quL8VMg45fcu.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169582-quL8VMg45fcu.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/169582-D5p5iRI5XqML.jpg",
+      "description": "To the empire, Prince Arnold is one big joke, a completely inept prince outshone by his more talented twin, Leonard. But in secret, Arnold operates as Silver, one of only five magic-wielding SS-rank adventurers on the continent. As the bloody battle for the throne intensifies after the crown prince’s death, Arnold pulls the strings from the shadows to crown his twin emperor to his own advantage.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 58,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Maho Film"
+          },
+          {
+            "name": "Asmik Ace"
+          },
+          {
+            "name": "Maho Film"
+          },
+          {
+            "name": "Bushiroad"
+          },
+          {
+            "name": "AC Create"
+          },
+          {
+            "name": "Avex Pictures"
+          },
+          {
+            "name": "Bit grooove promotion"
+          },
+          {
+            "name": "BS Fuji"
+          },
+          {
+            "name": "AQUA ARIS"
+          },
+          {
+            "name": "Happinet Media Marketing"
+          },
+          {
+            "name": "KLOCKWORX"
+          },
+          {
+            "name": "ADK Marketing Solutions"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 6
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 21
+      }
+    },
+    {
+      "id": 195600,
+      "title": {
+        "romaji": "Yomi no Tsugai",
+        "english": "Daemons of the Shadow Realm",
+        "native": "黄泉のツガイ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
+      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy",
+        "Supernatural"
+      ],
+      "averageScore": 78,
+      "episodes": 24,
+      "status": "FINISHED",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "bones film"
+          },
+          {
+            "name": "bones"
+          },
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "Square Enix"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 19
       }
     },
     {
@@ -268,230 +770,6 @@
       }
     },
     {
-      "id": 195600,
-      "title": {
-        "romaji": "Yomi no Tsugai",
-        "english": "Daemons of the Shadow Realm",
-        "native": "黄泉のツガイ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
-      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy",
-        "Supernatural"
-      ],
-      "averageScore": 78,
-      "episodes": 24,
-      "status": "FINISHED",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "bones film"
-          },
-          {
-            "name": "bones"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Square Enix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 19
-      }
-    },
-    {
-      "id": 103303,
-      "title": {
-        "romaji": "Nijusseiki Denki Mokuroku: Eureka Evrika",
-        "english": "Sparks of Tomorrow",
-        "native": "二十世紀電氣目録-ユーレカ・エヴリカ-"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx103303-IF43hFJPPv2Y.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx103303-IF43hFJPPv2Y.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx103303-IF43hFJPPv2Y.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/103303-K73aVOqkCPqL.jpg",
-      "description": "The novel takes place in the summer of 1907, the 40th year of the Meiji era. 15-year-old Inako Momokawa lives in the Fushimi area of Kyoto, and is the second daughter of a sake brewer. Nothing she does ever comes out right, and she receives a scolding from her father every day. Her only relief is the trust she places in her prayers to the gods. One day while at Fushimi Inari shrine, she meets a freewheeling young man named Kihachi Sakamoto. He rejects the gods, and boasts of the incoming age of electricity. <br><br>\n\nThe topic of marriage suddenly comes up in Inako's household. Her father is one-sidedly making all the decisions for her, and Inako is about to give up hope. It is then that Kihachi draws out Inako's true feelings of wanting to run away from her family. The only way to stop her marriage is to find an unusual book called the \"Electricity Catalog.\" The book is a prediction book about electricity that Kihachi wrote when he was a child, but his older brother Seiroku took the book, and its current whereabouts are unknown. Inako and Kihachi together go in search of the book across Kyoto and Shiga prefectures.<br><br>\n\n(Source: Anime News Network)",
-      "genres": [
-        "Adventure",
-        "Comedy",
-        "Romance"
-      ],
-      "averageScore": 76,
-      "episodes": 13,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Kyoto Animation"
-          },
-          {
-            "name": "Kyoto Animation"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "ABC Animation"
-          },
-          {
-            "name": "Bandai Namco Music Live"
-          },
-          {
-            "name": "Rakuonsha"
-          },
-          {
-            "name": "Heart Company"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
-      }
-    },
-    {
-      "id": 200637,
-      "title": {
-        "romaji": "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 3rd Season",
-        "english": "The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You Season 3",
-        "native": "君のことが大大大大大好きな100人の彼女 第3期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx200637-QLR5uv9SbQ69.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx200637-QLR5uv9SbQ69.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200637-QLR5uv9SbQ69.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/200637-q9mehOFbbCgT.jpg",
-      "description": "The third season of <i>Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo.</i>",
-      "genres": [
-        "Comedy",
-        "Ecchi",
-        "Romance"
-      ],
-      "averageScore": 80,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Bandai Namco Filmworks"
-          },
-          {
-            "name": "Bibury Animation Studios"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "Bandai Namco Music Live"
-          },
-          {
-            "name": "Bushiroad"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "TOKYO MX"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 20
-      }
-    },
-    {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
       "id": 187538,
       "title": {
         "romaji": "BLACK TORCH",
@@ -548,25 +826,90 @@
       }
     },
     {
-      "id": 177637,
+      "id": 206521,
       "title": {
-        "romaji": "Sayonara Lara",
-        "english": "Goodbye, Lara",
-        "native": "さよならララ"
+        "romaji": "World Is Dancing",
+        "english": "The World Is Dancing",
+        "native": "ワールド イズ ダンシング"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-8onaQWqKW1C3.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx177637-8onaQWqKW1C3.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177637-8onaQWqKW1C3.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206521-ecJuDgjth84C.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206521-ecJuDgjth84C.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206521-ecJuDgjth84C.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/177637-2Ok4Pq0SpvHp.jpg",
-      "description": "Once upon a time, a mermaid princess named Lara fell in love with a human prince. To be with him, she used a witch’s potion to become human—but the magic came at a cost: If she failed to find true love, she would vanish into sea foam forever. Now, 200 years later, Lara awakens in Lake Biwa with one final chance at life and love.<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206521-zCIAGsiIkh6G.jpg",
+      "description": "Born into a life of acting and dance with a traveling theater troupe in 14th-century Japan, 12-year old Oniyasha has one problem—he doesn't know what the point of any of it is. \"Why must I step with the left foot here instead of the right? Why is one performance good and another, bad? Why do people dance at all?\" It all seems perfectly arbitrary, until a chance encounter in a run-down shack sets him down a path to revolutionizing the art form and influencing much of Japanese culture to come. A fictionalized account of the early life of Zeami Motokiyo (Oniyasha), the founder of modern Noh theater—the world's oldest surviving theater art—this coming-of-age artist's journey vividly brings to life a man far ahead of his time during one of Japan's most culturally and socially vibrant eras.<br><br>\n\n(Source: Kodansha Comics)<br><br>\n\n<i>Note: World Is Dancing is streaming 3 days in advance of the TV broadcast on Prime Video and HIDIVE beginning June 29th, 2026. Regular broadcasting began on July 2nd, 2026.</i>",
       "genres": [
-        "Drama",
-        "Fantasy",
-        "Romance"
+        "Drama"
       ],
-      "averageScore": 77,
+      "averageScore": 71,
+      "episodes": 13,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Cypic"
+          },
+          {
+            "name": "CyberAgent"
+          },
+          {
+            "name": "Cygames"
+          },
+          {
+            "name": "Toy's Factory"
+          },
+          {
+            "name": "arma bianca"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "BS Asahi"
+          },
+          {
+            "name": "Happinet Media Marketing"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 6,
+        "day": 29
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 21
+      }
+    },
+    {
+      "id": 209504,
+      "title": {
+        "romaji": "Suterare Seijo no Isekai Gohantabi: Kakure Skill de Camping Car wo Shoukan Shimashita",
+        "english": "The Forsaken Saintess and Her Foodie Roadtrip in Another World",
+        "native": "捨てられ聖女の異世界ごはん旅 隠れスキルでキャンピングカーを召喚しました"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209504-yRxHWxKuNGtg.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209504-yRxHWxKuNGtg.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209504-yRxHWxKuNGtg.jpg"
+      },
+      "bannerImage": null,
+      "description": "Rin Takanashi, a caregiver in her thirties, was unceremoniously discarded as \"trash\" despite being summoned as a saint.\n<br><br>\nHowever, as a lover of the great outdoors and all things camping, she was blessed with a special skill, \"Survival,\" as well as another unique skill! Thus, a riveting tale begins: one of sweat, tears, and insatiable hunger as Rin, together with companions she picked up along the way, leisurely explores this parallel world and savours gourmet cuisine to her heart's content...\n<br><br>\nOr so the story should have gone, but it looks like their road is going in an unexpected direction...?",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 61,
       "episodes": 12,
       "status": "FINISHED",
       "season": "SUMMER",
@@ -574,31 +917,40 @@
       "studios": {
         "nodes": [
           {
-            "name": "Kinema Citrus"
+            "name": "EMT Squared"
           },
           {
-            "name": "KADOKAWA"
+            "name": "Happinet Media Marketing"
           },
           {
-            "name": "Yomiuri TV"
+            "name": "Asmik Ace"
           },
           {
-            "name": "Sammy"
+            "name": "CBC TV"
+          },
+          {
+            "name": "Bandai Namco Music Live"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "Sumiseki"
+          },
+          {
+            "name": "Bit grooove promotion"
           },
           {
             "name": "arma bianca"
           },
           {
-            "name": "Pia"
+            "name": "KLOCKWORX"
           },
           {
-            "name": "BS Asahi"
-          },
-          {
-            "name": "Kinema Citrus"
-          },
-          {
-            "name": "JR Nishi Nihon Communications"
+            "name": "EMT Squared"
           }
         ]
       },
@@ -611,290 +963,6 @@
         "year": 2026,
         "month": 9,
         "day": 21
-      }
-    },
-    {
-      "id": 198409,
-      "title": {
-        "romaji": "Sekai Saikyou no Kouei: Meikyuukoku no Shinjin Tansakusha",
-        "english": "The World's Strongest Rearguard",
-        "native": "世界最強の後衛 ～迷宮国の新人探索者～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198409-EiWJXfYnvfu4.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198409-EiWJXfYnvfu4.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198409-EiWJXfYnvfu4.png"
-      },
-      "bannerImage": null,
-      "description": "After a fatal accident, overworked office worker Arihito Atobe is reborn in the Labyrinth Country as a Seeker with the rare Rearguard class—an all-purpose support role that excels in attack, defense, and healing. Joined by a fierce demi-human mercenary and his former boss, Arihito dives into deadly dungeons and rises through the ranks. The adventure of the strongest support class begins!\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 56,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Maho Film"
-          },
-          {
-            "name": "Yomiuri TV Enterprise"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Maho Film"
-          },
-          {
-            "name": "King Records"
-          },
-          {
-            "name": "MUSE"
-          },
-          {
-            "name": "KLOCKWORX"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 20
-      }
-    },
-    {
-      "id": 196187,
-      "title": {
-        "romaji": "Super no Ura de Yani Suu Futari",
-        "english": "Smoking Behind the Supermarket with You",
-        "native": "スーパーの裏でヤニ吸うふたり"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196187-0dgFi2CPp3xn.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196187-0dgFi2CPp3xn.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-0dgFi2CPp3xn.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/196187-Z9dV6uotmKjM.jpg",
-      "description": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”\n<br><br>\n(Source: Crunchyroll)<br><br>\n\n<i>Note: Episodes 1-6 had an early release by ABEMA and Crunchyroll on June 3rd, 2026 in a mini-episode batch format that splits 6 episodes into 12, ahead of the TV broadcast which started on July 10th, 2026.</i>",
-      "genres": [
-        "Comedy",
-        "Romance",
-        "Slice of Life"
-      ],
-      "averageScore": 82,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Asahi Production"
-          },
-          {
-            "name": "TBS"
-          },
-          {
-            "name": "Asmik Ace"
-          },
-          {
-            "name": "Asahi Production"
-          },
-          {
-            "name": "arma bianca"
-          },
-          {
-            "name": "ADK Marketing Solutions"
-          },
-          {
-            "name": "Nichion"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "Square Enix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 10
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 24
-      }
-    },
-    {
-      "id": 201514,
-      "title": {
-        "romaji": "Saijo no Osewa: Takane no Hanadarake na Meimonkou de, Gakuin Ichi no Ojou-sama (Seikatsu Nouryoku Kaimu) wo Kagenagara Osewa suru Koto ni Narimashita",
-        "english": "Rich Girl Caretaker: I'm Secretly the Caregiver of the Most Popular Girl in This Rich Kid School",
-        "native": "才女のお世話 高嶺の花だらけな名門校で、学院一のお嬢様(生活能力皆無)を陰ながらお世話することになりました"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx201514-BHAeWhSbcBrT.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx201514-BHAeWhSbcBrT.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx201514-BHAeWhSbcBrT.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/201514-8dAOB0Xw124G.jpg",
-      "description": "Hinako Konohana is the perfect young lady—graceful, elegant, and flawless… or so everyone thinks. Behind closed doors, she’s a total disaster who can’t handle basic chores! When ordinary student Itsuki Tomonari becomes her caretaker, he’s thrown into 24/7 damage control, maintaining her “perfect” image. It’s awkward, nonstop chaos—but it starts softening into something that feels like love…\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Comedy",
-        "Romance"
-      ],
-      "averageScore": 69,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Brain's Base"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "King Records"
-          },
-          {
-            "name": "MediaNet"
-          },
-          {
-            "name": "Hobby Japan"
-          },
-          {
-            "name": "MAGNET"
-          },
-          {
-            "name": "BS Asahi"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 20
-      }
-    },
-    {
-      "id": 189046,
-      "title": {
-        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-        "english": "Re:ZERO -Starting Life in Another World- Season 4",
-        "native": "Re:ゼロから始める異世界生活 4th season"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
-      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy",
-        "Psychological",
-        "Romance",
-        "Thriller"
-      ],
-      "averageScore": 90,
-      "episodes": 19,
-      "status": "RELEASING",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "WHITE FOX"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "DAXEL"
-          },
-          {
-            "name": "Memory-Tech"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 8
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 30
-      }
-    },
-    {
-      "id": 217070,
-      "title": {
-        "romaji": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den Part 2",
-        "english": null,
-        "native": "ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～ 第二幕"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx217070-Muh7Kjw4RQsi.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx217070-Muh7Kjw4RQsi.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217070-Muh7Kjw4RQsi.jpg"
-      },
-      "bannerImage": null,
-      "description": "The second cour of <i>Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den</i>.<br>\n<br>\nThrough the actions of Reirin and Keigetsu, the series of disturbances caused by a curse in the inner court have settled down.<br>\nThrough their swap, Reirin and Keigetsu learned of each other’s character, and a friendship was budding between the two of them.<br>\n<br>\nSeasons pass, and we are now at early autumn. The location of the ritual where the Crown Prince and the Maidens wish for a bountiful harvest (the Harvest Festival) has been set within the southern lands ruled by the Shu clan. With no consort as guardian, Keigetsu arduously continues with preparations despite feeling the pressure as the host of the Harvest Festival. Meanwhile, Reirin is wholeheartedly supporting Keigetsu while being thrilled about her first royal outing.<br>\n<br>\nHowever, right upon arrival, an unforeseen accident occurs and the ritual is interrupted. An agitated Keigetsu’s spell runs out of control, and she once again swaps bodies with Reirin. On top of that, among all the confusion, the post-swap Reirin is abducted...!?<br>\n<br>\nReirin’s two overprotective brothers Kou Keikou and Kou Keishou get involved and the situation heads in an unexpected direction.<br>\nWho is the new mastermind who is sneaking up in order to frame Keigetsu...?<br>\n<br>\nThe gratifying tale of switched fates brought to you by two girls who are polar opposites—the curtain rises on the second act, \"The First Royal Outing\" Arc!<br>\n<br>\n(Source: Official Site)",
-      "genres": [
-        "Drama",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": null,
-      "episodes": null,
-      "status": "NOT_YET_RELEASED",
-      "season": "WINTER",
-      "seasonYear": 2027,
-      "studios": {
-        "nodes": []
-      },
-      "startDate": {
-        "year": 2027,
-        "month": 1,
-        "day": null
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
       }
     }
   ]
