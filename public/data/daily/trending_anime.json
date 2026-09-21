@@ -1,6 +1,6 @@
 {
-  "version": 1789950380268,
-  "fetchedAt": "2026-09-21T00:26:20.268Z",
+  "version": 1789968103814,
+  "fetchedAt": "2026-09-21T05:21:43.814Z",
   "anime": [
     {
       "id": 178789,
@@ -195,72 +195,6 @@
       }
     },
     {
-      "id": 177637,
-      "title": {
-        "romaji": "Sayonara Lara",
-        "english": "Goodbye, Lara",
-        "native": "さよならララ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-8onaQWqKW1C3.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx177637-8onaQWqKW1C3.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177637-8onaQWqKW1C3.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/177637-2Ok4Pq0SpvHp.jpg",
-      "description": "Once upon a time, a mermaid princess named Lara fell in love with a human prince. To be with him, she used a witch’s potion to become human—but the magic came at a cost: If she failed to find true love, she would vanish into sea foam forever. Now, 200 years later, Lara awakens in Lake Biwa with one final chance at life and love.<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Drama",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 76,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Kinema Citrus"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Yomiuri TV"
-          },
-          {
-            "name": "Sammy"
-          },
-          {
-            "name": "arma bianca"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "BS Asahi"
-          },
-          {
-            "name": "Kinema Citrus"
-          },
-          {
-            "name": "JR Nishi Nihon Communications"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 6
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 21
-      }
-    },
-    {
       "id": 200637,
       "title": {
         "romaji": "Kimi no Koto ga Dai Dai Dai Dai Daisuki na 100-nin no Kanojo 3rd Season",
@@ -444,6 +378,72 @@
         "year": 2026,
         "month": 9,
         "day": 25
+      }
+    },
+    {
+      "id": 177637,
+      "title": {
+        "romaji": "Sayonara Lara",
+        "english": "Goodbye, Lara",
+        "native": "さよならララ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177637-8onaQWqKW1C3.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx177637-8onaQWqKW1C3.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177637-8onaQWqKW1C3.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/177637-2Ok4Pq0SpvHp.jpg",
+      "description": "Once upon a time, a mermaid princess named Lara fell in love with a human prince. To be with him, she used a witch’s potion to become human—but the magic came at a cost: If she failed to find true love, she would vanish into sea foam forever. Now, 200 years later, Lara awakens in Lake Biwa with one final chance at life and love.<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 76,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Kinema Citrus"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Yomiuri TV"
+          },
+          {
+            "name": "Sammy"
+          },
+          {
+            "name": "arma bianca"
+          },
+          {
+            "name": "Pia"
+          },
+          {
+            "name": "BS Asahi"
+          },
+          {
+            "name": "Kinema Citrus"
+          },
+          {
+            "name": "JR Nishi Nihon Communications"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 6
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 21
       }
     },
     {
@@ -689,105 +689,6 @@
       }
     },
     {
-      "id": 189046,
-      "title": {
-        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-        "english": "Re:ZERO -Starting Life in Another World- Season 4",
-        "native": "Re:ゼロから始める異世界生活 4th season"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
-      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy",
-        "Psychological",
-        "Romance",
-        "Thriller"
-      ],
-      "averageScore": 90,
-      "episodes": 19,
-      "status": "RELEASING",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "WHITE FOX"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "DAXEL"
-          },
-          {
-            "name": "Memory-Tech"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 8
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 30
-      }
-    },
-    {
-      "id": 217070,
-      "title": {
-        "romaji": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den Part 2",
-        "english": null,
-        "native": "ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～ 第二幕"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx217070-Muh7Kjw4RQsi.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx217070-Muh7Kjw4RQsi.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217070-Muh7Kjw4RQsi.jpg"
-      },
-      "bannerImage": null,
-      "description": "The second cour of <i>Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den</i>.<br>\n<br>\nThrough the actions of Reirin and Keigetsu, the series of disturbances caused by a curse in the inner court have settled down.<br>\nThrough their swap, Reirin and Keigetsu learned of each other’s character, and a friendship was budding between the two of them.<br>\n<br>\nSeasons pass, and we are now at early autumn. The location of the ritual where the Crown Prince and the Maidens wish for a bountiful harvest (the Harvest Festival) has been set within the southern lands ruled by the Shu clan. With no consort as guardian, Keigetsu arduously continues with preparations despite feeling the pressure as the host of the Harvest Festival. Meanwhile, Reirin is wholeheartedly supporting Keigetsu while being thrilled about her first royal outing.<br>\n<br>\nHowever, right upon arrival, an unforeseen accident occurs and the ritual is interrupted. An agitated Keigetsu’s spell runs out of control, and she once again swaps bodies with Reirin. On top of that, among all the confusion, the post-swap Reirin is abducted...!?<br>\n<br>\nReirin’s two overprotective brothers Kou Keikou and Kou Keishou get involved and the situation heads in an unexpected direction.<br>\nWho is the new mastermind who is sneaking up in order to frame Keigetsu...?<br>\n<br>\nThe gratifying tale of switched fates brought to you by two girls who are polar opposites—the curtain rises on the second act, \"The First Royal Outing\" Arc!<br>\n<br>\n(Source: Official Site)",
-      "genres": [
-        "Drama",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": null,
-      "episodes": null,
-      "status": "NOT_YET_RELEASED",
-      "season": "WINTER",
-      "seasonYear": 2027,
-      "studios": {
-        "nodes": []
-      },
-      "startDate": {
-        "year": 2027,
-        "month": 1,
-        "day": null
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 269,
       "title": {
         "romaji": "BLEACH",
@@ -895,6 +796,105 @@
         "year": 2026,
         "month": 9,
         "day": 20
+      }
+    },
+    {
+      "id": 189046,
+      "title": {
+        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "english": "Re:ZERO -Starting Life in Another World- Season 4",
+        "native": "Re:ゼロから始める異世界生活 4th season"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
+      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
+      ],
+      "averageScore": 90,
+      "episodes": 19,
+      "status": "RELEASING",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "WHITE FOX"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "DAXEL"
+          },
+          {
+            "name": "Memory-Tech"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 30
+      }
+    },
+    {
+      "id": 217070,
+      "title": {
+        "romaji": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den Part 2",
+        "english": null,
+        "native": "ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～ 第二幕"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx217070-Muh7Kjw4RQsi.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx217070-Muh7Kjw4RQsi.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217070-Muh7Kjw4RQsi.jpg"
+      },
+      "bannerImage": null,
+      "description": "The second cour of <i>Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den</i>.<br>\n<br>\nThrough the actions of Reirin and Keigetsu, the series of disturbances caused by a curse in the inner court have settled down.<br>\nThrough their swap, Reirin and Keigetsu learned of each other’s character, and a friendship was budding between the two of them.<br>\n<br>\nSeasons pass, and we are now at early autumn. The location of the ritual where the Crown Prince and the Maidens wish for a bountiful harvest (the Harvest Festival) has been set within the southern lands ruled by the Shu clan. With no consort as guardian, Keigetsu arduously continues with preparations despite feeling the pressure as the host of the Harvest Festival. Meanwhile, Reirin is wholeheartedly supporting Keigetsu while being thrilled about her first royal outing.<br>\n<br>\nHowever, right upon arrival, an unforeseen accident occurs and the ritual is interrupted. An agitated Keigetsu’s spell runs out of control, and she once again swaps bodies with Reirin. On top of that, among all the confusion, the post-swap Reirin is abducted...!?<br>\n<br>\nReirin’s two overprotective brothers Kou Keikou and Kou Keishou get involved and the situation heads in an unexpected direction.<br>\nWho is the new mastermind who is sneaking up in order to frame Keigetsu...?<br>\n<br>\nThe gratifying tale of switched fates brought to you by two girls who are polar opposites—the curtain rises on the second act, \"The First Royal Outing\" Arc!<br>\n<br>\n(Source: Official Site)",
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "NOT_YET_RELEASED",
+      "season": "WINTER",
+      "seasonYear": 2027,
+      "studios": {
+        "nodes": []
+      },
+      "startDate": {
+        "year": 2027,
+        "month": 1,
+        "day": null
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
       }
     }
   ]
