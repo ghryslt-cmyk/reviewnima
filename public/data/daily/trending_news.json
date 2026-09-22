@@ -1,7 +1,40 @@
 {
-  "version": 1790089116401,
-  "fetchedAt": "2026-09-22T14:58:36.402Z",
+  "version": 1790102820549,
+  "fetchedAt": "2026-09-22T18:47:00.549Z",
   "news": [
+    {
+      "title": "Singer, Composer Duncan Sheik Dies",
+      "description": "Sheik wrote music/lyrics for upcoming American stage musical of Memoirs of Amorous Gentlemen manga",
+      "fullDescription": "Sheik wrote music/lyrics for upcoming American stage musical of <cite>Memoirs of Amorous Gentlemen</cite> manga",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-22/singer-composer-duncan-sheik-dies/.242085",
+      "pubDate": "Tue, 22 Sep 2026 13:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/242085/duncan-sheik.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242085"
+    },
+    {
+      "title": "Super Psychic Policeman Chojo Anime's 2nd Promo Video Reveals Theme Songs",
+      "description": "M!LK, Shifuku Poncho perform theme songs for October 6 anime",
+      "fullDescription": "M!LK, Shifuku Poncho perform theme songs for October 6 anime",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-22/super-psychic-policeman-chojo-anime-2nd-promo-video-reveals-theme-songs/.242088",
+      "pubDate": "Tue, 22 Sep 2026 11:55:08 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238639/chojo.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242088"
+    },
+    {
+      "title": "Tokyopop's Public Stock Shares Offer Ends on September 24",
+      "description": "Publisher revealed plans for public stock shares originated 20 years ago",
+      "fullDescription": "Publisher revealed plans for public stock shares originated 20 years ago",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-22/tokyopop-public-stock-shares-offer-ends-on-september-24/.242086",
+      "pubDate": "Tue, 22 Sep 2026 11:01:20 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max400x400/cms/news.6/195610/tp-logo.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242086"
+    },
     {
       "title": "Silent Witch Author Matsuri Isora Announces New Fantasy Novel",
       "description": "1st Bōkyaku no Curse Knight \"knight fantasy\" volume ships on November 13",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242062/danmachi.png.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242062"
-    },
-    {
-      "title": "K Manga Adds No-Clipping My Way to Supremacy Manga",
-      "description": "Hata launched manga adaptation in July 2022",
-      "fullDescription": "Hata launched manga adaptation in July 2022",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-21/k-manga-adds-no-clipping-my-way-to-supremacy-manga/.242026",
-      "pubDate": "Mon, 21 Sep 2026 15:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242026/hsqvtczakaasxbp.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242026"
-    },
-    {
-      "title": "Comikey Adds Tea Princes, Moon Child, More Manga",
-      "description": "Also: VTuber Shigemi Kusamura: I'm my Oshi's Favorite, Trapped as the Villain in My Favorite Dating SIM: But I Know How to Win over All the Heroines!",
-      "fullDescription": "Also: <cite>VTuber Shigemi Kusamura: I'm my Oshi's Favorite</cite>, <cite>Trapped as the Villain in My Favorite Dating SIM: But I Know How to Win over All the Heroines!</cite>",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-21/comikey-adds-tea-princes-moon-child-more-manga/.242028",
-      "pubDate": "Mon, 21 Sep 2026 14:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/242028/tea-princess.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242028"
-    },
-    {
-      "title": "Sanrio Kawaii Me Live! Rhythm Game Launches for Smartphones in January 2027",
-      "description": "Concept promotional video streamed for Sanrio Games' 1st smartphone game",
-      "fullDescription": "Concept promotional video streamed for Sanrio Games' 1st smartphone game",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-21/sanrio-kawaii-me-live-rhythm-game-launches-for-smartphones-in-january-2027/.242053",
-      "pubDate": "Mon, 21 Sep 2026 13:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242053/sanrio-kawaii-me-live.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242053"
     }
   ],
   "total": 15

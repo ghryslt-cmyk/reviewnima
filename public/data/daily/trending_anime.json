@@ -1,6 +1,6 @@
 {
-  "version": 1790089116983,
-  "fetchedAt": "2026-09-22T14:58:36.983Z",
+  "version": 1790102821366,
+  "fetchedAt": "2026-09-22T18:47:01.366Z",
   "anime": [
     {
       "id": 178789,
@@ -466,74 +466,6 @@
       }
     },
     {
-      "id": 169583,
-      "title": {
-        "romaji": "Tenkousaki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi datta Ken",
-        "english": "Oh Boy, Was I Wrong About Her",
-        "native": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169583-0ZTdBGrKNIbe.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169583-0ZTdBGrKNIbe.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-0ZTdBGrKNIbe.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/169583-wB0yHc7e8Kjk.jpg",
-      "description": "Seven years after making a childhood promise to always be friends, Hayato is reunited with his formerly tomboyish pal Haruki at a city high school–only now, Haruki has transformed into the girl every guy dreams about! While Haruki’s looks may have changed, with Hayato, she’s still the same pal he remembers. Despite years apart, their promise and feelings remain and deepen into something stronger.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Comedy",
-        "Romance"
-      ],
-      "averageScore": 69,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "project No.9"
-          },
-          {
-            "name": "Asmik Ace"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "Toei"
-          },
-          {
-            "name": "BS Fuji"
-          },
-          {
-            "name": "Bit grooove promotion"
-          },
-          {
-            "name": "KLOCKWORX"
-          },
-          {
-            "name": "Sun Television"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 6
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 21
-      }
-    },
-    {
       "id": 195600,
       "title": {
         "romaji": "Yomi no Tsugai",
@@ -584,128 +516,6 @@
         "year": 2026,
         "month": 9,
         "day": 19
-      }
-    },
-    {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
-      "id": 199408,
-      "title": {
-        "romaji": "Buchigire Reijou wa Houfuku wo Chikaimashita.: Madousho no Chikara de Sokoku wo Tataki Tsubushimasu",
-        "english": "A Livid Lady’s Guide to Getting Even: How I Crushed My Homeland with My Mighty Grimoires",
-        "native": "ブチ切れ令嬢は報復を誓いました。　～魔導書の力で祖国を叩き潰します～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199408-ocRWG4pRWl8f.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199408-ocRWG4pRWl8f.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199408-ocRWG4pRWl8f.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199408-ouNGkjrw0ohT.jpg",
-      "description": "Elizabeth Leiston, daughter of the influential prime minister, is a picture-perfect lady on the path to becoming the future queen of the Kingdom of Haldoria. But her life takes a sudden turn for the worst when her fiancé makes a show of publicly calling off their engagement. Soon after, he throws her in jail and starts spreading nasty rumors about her. The encouragement Elizabeth receives from her loyal waiting maid, Mireille, and her inner fury are all she needs to reconsider her goals. Why should she continue devoting herself to a country that doesn’t respect her when she can trample over it instead? She will get even with those who wronged her and bring down the damned kingdom, even if it’s the last thing she does! Luckily, Elizabeth is no damsel in distress and has seven powerful magic grimoires she won’t hesitate to use. Get ready because this ruthless lady is out for blood!\n<br><br>\n(Source: J-Novel Club)",
-      "genres": [
-        "Drama",
-        "Fantasy"
-      ],
-      "averageScore": 68,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Comet"
-          },
-          {
-            "name": "MediaNet"
-          },
-          {
-            "name": "Hobby Japan"
-          },
-          {
-            "name": "REMOW"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "Nippon Columbia"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "Studio Comet"
-          },
-          {
-            "name": "Jinnan Studio"
-          },
-          {
-            "name": "AQUA ARIS"
-          },
-          {
-            "name": "KLOCKWORX"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 6
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 21
       }
     },
     {
@@ -779,6 +589,186 @@
         "year": 2026,
         "month": 9,
         "day": 25
+      }
+    },
+    {
+      "id": 169583,
+      "title": {
+        "romaji": "Tenkousaki no Seiso Karen na Bishoujo ga, Mukashi Danshi to Omotte Issho ni Asonda Osananajimi datta Ken",
+        "english": "Oh Boy, Was I Wrong About Her",
+        "native": "転校先の清楚可憐な美少女が、昔男子と思って一緒に遊んだ幼馴染だった件"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169583-0ZTdBGrKNIbe.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169583-0ZTdBGrKNIbe.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169583-0ZTdBGrKNIbe.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/169583-wB0yHc7e8Kjk.jpg",
+      "description": "Seven years after making a childhood promise to always be friends, Hayato is reunited with his formerly tomboyish pal Haruki at a city high school–only now, Haruki has transformed into the girl every guy dreams about! While Haruki’s looks may have changed, with Hayato, she’s still the same pal he remembers. Despite years apart, their promise and feelings remain and deepen into something stronger.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "averageScore": 69,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "project No.9"
+          },
+          {
+            "name": "Asmik Ace"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "Toei"
+          },
+          {
+            "name": "BS Fuji"
+          },
+          {
+            "name": "Bit grooove promotion"
+          },
+          {
+            "name": "KLOCKWORX"
+          },
+          {
+            "name": "Sun Television"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 6
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 21
+      }
+    },
+    {
+      "id": 269,
+      "title": {
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ],
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2004,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Viz Media"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2004,
+        "month": 10,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2012,
+        "month": 3,
+        "day": 27
+      }
+    },
+    {
+      "id": 189046,
+      "title": {
+        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "english": "Re:ZERO -Starting Life in Another World- Season 4",
+        "native": "Re:ゼロから始める異世界生活 4th season"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
+      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
+      ],
+      "averageScore": 90,
+      "episodes": 19,
+      "status": "RELEASING",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "WHITE FOX"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "DAXEL"
+          },
+          {
+            "name": "Memory-Tech"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 30
       }
     },
     {
@@ -913,41 +903,59 @@
       }
     },
     {
-      "id": 217136,
+      "id": 187538,
       "title": {
-        "romaji": "Grand Blue Season 4",
-        "english": null,
-        "native": "ぐらんぶる Season 4"
+        "romaji": "BLACK TORCH",
+        "english": "BLACK TORCH",
+        "native": "BLACK TORCH"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx217136-lBViwfZpOCLv.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx217136-lBViwfZpOCLv.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217136-lBViwfZpOCLv.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187538-fXVXKYUA3VV6.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx187538-fXVXKYUA3VV6.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187538-fXVXKYUA3VV6.jpg"
       },
-      "bannerImage": null,
-      "description": "The fourth season of <i>Grand Blue</i>.",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/187538-287evzCezNl0.jpg",
+      "description": "Jirou Azuma is no average high schooler. A descendant of ninjas and trained in the ancient warrior art of the shinobi, Jirou is also able to talk with animals. After a mysterious encounter with an injured cat named Ragou, Jirou discovers the feline is actually the legendary Black Star of Doom! Joined by the Bureau of Espionage, they fight off swarms of mononoke lying in wait to exploit Ragou’s powers.\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
-        "Comedy",
-        "Slice of Life",
-        "Sports"
+        "Action",
+        "Adventure",
+        "Fantasy",
+        "Sci-Fi",
+        "Supernatural"
       ],
-      "averageScore": null,
-      "episodes": null,
-      "status": "NOT_YET_RELEASED",
-      "season": null,
-      "seasonYear": null,
+      "averageScore": 69,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
       "studios": {
-        "nodes": []
+        "nodes": [
+          {
+            "name": "100studio"
+          },
+          {
+            "name": "Shogakukan-Shueisha Productions"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "VIZ Media Japan"
+          },
+          {
+            "name": "HIKE"
+          }
+        ]
       },
       "startDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 2026,
+        "month": 7,
+        "day": 4
       },
       "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 2026,
+        "month": 9,
+        "day": 19
       }
     }
   ]
