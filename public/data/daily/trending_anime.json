@@ -1,6 +1,6 @@
 {
-  "version": 1790024802823,
-  "fetchedAt": "2026-09-21T21:06:42.823Z",
+  "version": 1790035773024,
+  "fetchedAt": "2026-09-22T00:09:33.024Z",
   "anime": [
     {
       "id": 178789,
@@ -337,6 +337,73 @@
       }
     },
     {
+      "id": 185542,
+      "title": {
+        "romaji": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
+        "english": "Skeleton Knight in Another World Season 2",
+        "native": "骸骨騎士様、只今異世界へお出掛け中Ⅱ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185542-6a9LCWlLHa0T.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185542-6a9LCWlLHa0T.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-6a9LCWlLHa0T.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185542-v15vqOvUWSF5.jpg",
+      "description": "Arc returns! After waking to find he's become a Skeleton Knight in his favorite fantasy video game, Arc, Ariane, Chiyome, and Ponta band together to take on evil. Before Arc's search for a cure to his skeletal condition continues, he must face a dogmatic leader, Count Hilk, to free oppressed elves and beasts. A new chapter begins as the Skeleton Knight fights to make his new world a better place.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 65,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Aura Studio"
+          },
+          {
+            "name": "OVERLAP"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "MUSE"
+          },
+          {
+            "name": "Docomo Anime Store"
+          },
+          {
+            "name": "MAGNET"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "CTW"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 21
+      }
+    },
+    {
       "id": 199408,
       "title": {
         "romaji": "Buchigire Reijou wa Houfuku wo Chikaimashita.: Madousho no Chikara de Sokoku wo Tataki Tsubushimasu",
@@ -408,70 +475,56 @@
       }
     },
     {
-      "id": 185542,
+      "id": 195600,
       "title": {
-        "romaji": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
-        "english": "Skeleton Knight in Another World Season 2",
-        "native": "骸骨騎士様、只今異世界へお出掛け中Ⅱ"
+        "romaji": "Yomi no Tsugai",
+        "english": "Daemons of the Shadow Realm",
+        "native": "黄泉のツガイ"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185542-6a9LCWlLHa0T.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185542-6a9LCWlLHa0T.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-6a9LCWlLHa0T.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185542-v15vqOvUWSF5.jpg",
-      "description": "Arc returns! After waking to find he's become a Skeleton Knight in his favorite fantasy video game, Arc, Ariane, Chiyome, and Ponta band together to take on evil. Before Arc's search for a cure to his skeletal condition continues, he must face a dogmatic leader, Count Hilk, to free oppressed elves and beasts. A new chapter begins as the Skeleton Knight fights to make his new world a better place.\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
+      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
       "genres": [
         "Action",
         "Adventure",
         "Comedy",
-        "Fantasy"
+        "Fantasy",
+        "Supernatural"
       ],
-      "averageScore": 65,
-      "episodes": 12,
+      "averageScore": 78,
+      "episodes": 24,
       "status": "FINISHED",
-      "season": "SUMMER",
+      "season": "SPRING",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Aura Studio"
+            "name": "bones film"
           },
           {
-            "name": "OVERLAP"
+            "name": "bones"
           },
           {
-            "name": "Crunchyroll"
+            "name": "Aniplex"
           },
           {
-            "name": "MUSE"
-          },
-          {
-            "name": "Docomo Anime Store"
-          },
-          {
-            "name": "MAGNET"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "CTW"
+            "name": "Square Enix"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 7,
+        "month": 4,
         "day": 4
       },
       "endDate": {
         "year": 2026,
         "month": 9,
-        "day": 21
+        "day": 19
       }
     },
     {
@@ -590,56 +643,57 @@
       }
     },
     {
-      "id": 195600,
+      "id": 188139,
       "title": {
-        "romaji": "Yomi no Tsugai",
-        "english": "Daemons of the Shadow Realm",
-        "native": "黄泉のツガイ"
+        "romaji": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den",
+        "english": "Though I Am an Inept Villainess",
+        "native": "ふつつかな悪女ではございますが ~雛宮蝶鼠とりかえ伝~"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188139-1qIJfWxym8FX.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx188139-1qIJfWxym8FX.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188139-1qIJfWxym8FX.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
-      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/188139-PU5JsGJiiUnR.jpg",
+      "description": "As maidens from the Five Clans battle for the Crown Prince’s heart, jealous Keigetsu uses forbidden magic to swap bodies with the beloved Reirin. Switching places does not guarantee happiness for Keigetsu with her new body's ill health leaving her hanging on the verge of death. Meanwhile, Reirin, now wearing the face of a scorned outcast, must answer for Keigetsu’s crimes in a dangerous trial.\n<br><br>\nThe unlikely pair become increasingly entangled in each other’s lives and they will need to work together to survive after discovering the dark conspiracies brewing beneath the palace's genial surface. To confront the deadly threats lurking in the shadows, Reirin must embrace her new identity and defy their expectations of the court's inept villainess.<br><br>\n(Source: Crunchyroll)",
       "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
+        "Drama",
         "Fantasy",
-        "Supernatural"
+        "Romance"
       ],
-      "averageScore": 78,
-      "episodes": 24,
+      "averageScore": 80,
+      "episodes": 11,
       "status": "FINISHED",
-      "season": "SPRING",
+      "season": "SUMMER",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "bones film"
+            "name": "Doga Kobo"
           },
           {
-            "name": "bones"
+            "name": "Toho"
           },
           {
-            "name": "Aniplex"
+            "name": "TV Tokyo"
           },
           {
-            "name": "Square Enix"
+            "name": "Ichijinsha"
+          },
+          {
+            "name": "Doga Kobo"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 4,
-        "day": 4
+        "month": 7,
+        "day": 12
       },
       "endDate": {
         "year": 2026,
         "month": 9,
-        "day": 19
+        "day": 20
       }
     },
     {
@@ -757,60 +811,6 @@
         "year": 2026,
         "month": 9,
         "day": 29
-      }
-    },
-    {
-      "id": 188139,
-      "title": {
-        "romaji": "Futsutsuka na Akujo de wa Gozaimasu ga: Suuguu Chouso Torikae Den",
-        "english": "Though I Am an Inept Villainess",
-        "native": "ふつつかな悪女ではございますが ~雛宮蝶鼠とりかえ伝~"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx188139-1qIJfWxym8FX.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx188139-1qIJfWxym8FX.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx188139-1qIJfWxym8FX.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/188139-PU5JsGJiiUnR.jpg",
-      "description": "As maidens from the Five Clans battle for the Crown Prince’s heart, jealous Keigetsu uses forbidden magic to swap bodies with the beloved Reirin. Switching places does not guarantee happiness for Keigetsu with her new body's ill health leaving her hanging on the verge of death. Meanwhile, Reirin, now wearing the face of a scorned outcast, must answer for Keigetsu’s crimes in a dangerous trial.\n<br><br>\nThe unlikely pair become increasingly entangled in each other’s lives and they will need to work together to survive after discovering the dark conspiracies brewing beneath the palace's genial surface. To confront the deadly threats lurking in the shadows, Reirin must embrace her new identity and defy their expectations of the court's inept villainess.<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Drama",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 80,
-      "episodes": 11,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Doga Kobo"
-          },
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Ichijinsha"
-          },
-          {
-            "name": "Doga Kobo"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 12
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 20
       }
     },
     {
