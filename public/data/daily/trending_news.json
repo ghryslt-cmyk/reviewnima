@@ -1,12 +1,34 @@
 {
-  "version": 1790035771768,
-  "fetchedAt": "2026-09-22T00:09:31.768Z",
+  "version": 1790053369960,
+  "fetchedAt": "2026-09-22T05:02:49.960Z",
   "news": [
+    {
+      "title": "New Ahare! Meisaku-kun Anime Gets More Episodes Next January",
+      "description": "Most recent season in comedy about school for fictional characters debuted on July 5",
+      "fullDescription": "Most recent season in comedy about school for fictional characters debuted on July 5",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-21/new-ahare-meisaku-kun-anime-gets-more-episodes-next-january/.242070",
+      "pubDate": "Mon, 21 Sep 2026 22:26:48 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238709/hlkwbx1aeaaookn.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242070"
+    },
+    {
+      "title": "Netflix's Live-Action Quiztopia Series Unveils More Cast, December 17 Debut",
+      "description": "Masahiro Takashima, Eiko Koike, Riko Ishida, more join Takayuki Yamada in dystopian drama",
+      "fullDescription": "Masahiro Takashima, Eiko Koike, Riko Ishida, more join Takayuki Yamada in dystopian drama",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-21/netflix-live-action-quiztopia-series-unveils-more-cast-december-17-debut/.242067",
+      "pubDate": "Mon, 21 Sep 2026 22:14:56 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242067/hswuzfow0aepoev.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242067"
+    },
     {
       "title": "Akira Failing in Love Manga Tops 1 Million in Circulation Globally",
       "description": "Love comedy manga launched in 2024",
       "fullDescription": "Love comedy manga launched in 2024",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-20/akira-failing-in-love-manga-tops-1-million-in-circulation-globally/.241837",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-21/akira-failing-in-love-manga-tops-1-million-in-circulation-globally/.241837",
       "pubDate": "Mon, 21 Sep 2026 20:00:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242050/grand-blue-dreaming-season-4.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242050"
-    },
-    {
-      "title": "&#039;Grand Blue&#039; Fourth Season in Production",
-      "description": "The 12th and final episode of Grand Blue Season 3 (Grand Blue Dreaming Season 3) ended with an announcement on Tuesday that a fourth season is in production. The official website also revealed an announcement visual (pictured). Produced by Zero-G, the first season aired in 12 episodes in Summer 2018...",
-      "fullDescription": "The 12th and final episode of Grand Blue Season 3 (Grand Blue Dreaming Season 3) ended with an announcement on Tuesday that a fourth season is in production. The official website also revealed an announcement visual (pictured). Produced by Zero-G, the first season aired in 12 episodes in Summer 2018. The second season aired in Summer 2025. A third season produced by Zero-G and Saber Works premiered on July 7. Amazon Prime Video streamed the first season, with Crunchyroll simulcasted the second a...",
-      "link": "https://myanimelist.net/news/74743342?_location=rss",
-      "pubDate": "Mon, 21 Sep 2026 08:39:14 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1790004825-fa1f472440aec539007984f0964ef1a7.jpeg",
-      "guid": "https://myanimelist.net/news/74743342?_location=rss"
-    },
-    {
-      "title": "1st 2 Lufia SNES RPGs Get Collection in 2027",
-      "description": "Lufia 1 and 2 The Sinistrals Saga includes 1993 original, 1995 prequel",
-      "fullDescription": "<cite>Lufia 1 and 2 The Sinistrals Saga</cite> includes 1993 original, 1995 prequel",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-21/1st-2-lufia-snes-rpgs-get-collection-in-2027/.242046",
-      "pubDate": "Mon, 21 Sep 2026 11:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.242046"
     }
   ],
   "total": 15
