@@ -1,7 +1,29 @@
 {
-  "version": 1790122732739,
-  "fetchedAt": "2026-09-23T00:18:52.739Z",
+  "version": 1790139834050,
+  "fetchedAt": "2026-09-23T05:03:54.050Z",
   "news": [
+    {
+      "title": "L.A.'s Animation is Film Fest Screens Cherry and Virgin, ghost – end of night",
+      "description": "October 16-19 festival also screens Vampire Hunter D: Bloodlust",
+      "fullDescription": "October 16-19 festival also screens <cite>Vampire Hunter D: Bloodlust</cite>",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-22/l.a.s-animation-is-film-fest-screens-cherry-and-virgin-ghost-end-of-night/.242093",
+      "pubDate": "Tue, 22 Sep 2026 21:41:46 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235427/cherryandvirgin.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242093"
+    },
+    {
+      "title": "Cyberpunk Edgerunners 2 Anime's New Video Teases Escape from Arasaka",
+      "description": "Anime debuts on Netflix on October 20",
+      "fullDescription": "Anime debuts on Netflix on October 20",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-22/cyberpunk-edgerunners-2-anime-new-video-teases-escape-from-arasaka/.242094",
+      "pubDate": "Tue, 22 Sep 2026 21:18:36 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239075/edgerunners2.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242094"
+    },
     {
       "title": "Persona 4 Revival Game Reveals English Cast for Supporting Characters",
       "description": "Judy Alice Lee, Courtney Shaw, Ray Chase, Johnny Yong Bosch join cast of February 18 game",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238709/hlkwbx1aeaaookn.jpeg",
       "guid": "https://www.animenewsnetwork.com/cms/.242070"
-    },
-    {
-      "title": "Netflix's Live-Action Quiztopia Series Unveils More Cast, December 17 Debut",
-      "description": "Masahiro Takashima, Eiko Koike, Riko Ishida, more join Takayuki Yamada in dystopian drama",
-      "fullDescription": "Masahiro Takashima, Eiko Koike, Riko Ishida, more join Takayuki Yamada in dystopian drama",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-21/netflix-live-action-quiztopia-series-unveils-more-cast-december-17-debut/.242067",
-      "pubDate": "Mon, 21 Sep 2026 22:14:56 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242067/hswuzfow0aepoev.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242067"
-    },
-    {
-      "title": "Akira Failing in Love Manga Tops 1 Million in Circulation Globally",
-      "description": "Love comedy manga launched in 2024",
-      "fullDescription": "Love comedy manga launched in 2024",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-21/akira-failing-in-love-manga-tops-1-million-in-circulation-globally/.241837",
-      "pubDate": "Mon, 21 Sep 2026 20:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241837/akira.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.241837"
     }
   ],
   "total": 15
