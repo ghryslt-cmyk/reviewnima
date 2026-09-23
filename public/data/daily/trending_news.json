@@ -1,7 +1,40 @@
 {
-  "version": 1790114243188,
-  "fetchedAt": "2026-09-22T21:57:23.188Z",
+  "version": 1790122732739,
+  "fetchedAt": "2026-09-23T00:18:52.739Z",
   "news": [
+    {
+      "title": "Persona 4 Revival Game Reveals English Cast for Supporting Characters",
+      "description": "Judy Alice Lee, Courtney Shaw, Ray Chase, Johnny Yong Bosch join cast of February 18 game",
+      "fullDescription": "Judy Alice Lee, Courtney Shaw, Ray Chase, Johnny Yong Bosch join cast of February 18 game",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-22/persona-4-revival-game-reveals-english-cast-for-supporting-characters/.242091",
+      "pubDate": "Tue, 22 Sep 2026 20:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242091"
+    },
+    {
+      "title": "Manga Plus Adds KAKAKAKA, The Ura Files, Noisering, 1 More Title",
+      "description": "Also: Morino-san Just Won't Leave Me Be",
+      "fullDescription": "Also: <cite>Morino-san Just Won't Leave Me Be</cite>",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-22/manga-plus-adds-kakakaka-the-ura-files-noisering-1-more-title/.242092",
+      "pubDate": "Tue, 22 Sep 2026 19:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/242092/614351.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242092"
+    },
+    {
+      "title": "Yu Hibari's Watashi de Dōtei Suteta Kuse ni Novels Get Manga",
+      "description": "Shūsei Kirisaki draws manga launching on September 29",
+      "fullDescription": "Shūsei Kirisaki draws manga launching on September 29",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-22/yu-hibari-watashi-de-dotei-suteta-kuse-ni-novels-get-manga/.242083",
+      "pubDate": "Tue, 22 Sep 2026 18:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242083/dotei.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242083"
+    },
     {
       "title": "Emma and the Eyes that Bid Farewell's Higure Sakino Launches New Manga",
       "description": "Manga of Akane Yuzuki's Elina Sky wa Mō Machigaenai novel launches on September 28",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241837/akira.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.241837"
-    },
-    {
-      "title": "Writer Tadashi Agi, Artist Jun Nakanishi's Foodies Manga Ends",
-      "description": "Manga about \"foodie hunters\" launched in August 2025",
-      "fullDescription": "Manga about \"foodie hunters\" launched in August 2025",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-21/writer-tadashi-agi-artist-jun-nakanishi-foodies-manga-ends/.242040",
-      "pubDate": "Mon, 21 Sep 2026 19:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/242040/foodies.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242040"
-    },
-    {
-      "title": "Shūichi Shigeno's Subaru and Subaru Manga Goes on Break Until October 26",
-      "description": "Manga launched in July 2025",
-      "fullDescription": "Manga launched in July 2025",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-21/shuichi-shigeno-subaru-and-subaru-manga-goes-on-break-until-october-26/.242035",
-      "pubDate": "Mon, 21 Sep 2026 18:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239922/subaruandsubaru.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242035"
-    },
-    {
-      "title": "Persona 4 Revival Game Adds Aika Nakamura as New Social Link Character",
-      "description": "Aika originally appeared in Persona 4 anime",
-      "fullDescription": "Aika originally appeared in <cite>Persona 4</cite> anime",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-21/persona-4-revival-game-adds-aika-nakamura-as-new-social-link-character/.242056",
-      "pubDate": "Mon, 21 Sep 2026 17:30:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242056/p4r-aika-nakamura-character-art.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242056"
     }
   ],
   "total": 15
