@@ -1,7 +1,40 @@
 {
-  "version": 1790190337137,
-  "fetchedAt": "2026-09-23T19:05:37.137Z",
+  "version": 1790202005885,
+  "fetchedAt": "2026-09-23T22:20:05.885Z",
   "news": [
+    {
+      "title": "Zombie Police: Midsummer Unhappy New Year Game Launches for PC via Steam on November 22",
+      "description": "Game gets Switch release at later date",
+      "fullDescription": "Game gets Switch release at later date",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-23/zombie-police-midsummer-unhappy-new-year-game-launches-for-pc-via-steam-on-november-22/.242113",
+      "pubDate": "Wed, 23 Sep 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/242113/key-art-ja.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242113"
+    },
+    {
+      "title": "K Manga Adds Oh My Panda! Manga",
+      "description": "Chihiro Kanisawa debuted series in November 2025",
+      "fullDescription": "Chihiro Kanisawa debuted series in November 2025",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-23/k-manga-adds-oh-my-panda-manga/.242116",
+      "pubDate": "Wed, 23 Sep 2026 16:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242116/hs6wvzdb0aar-l.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242116"
+    },
+    {
+      "title": "Saga of Tanya the Evil Anime Gets Film Concert for 10th Anniversary",
+      "description": "Film concert runs at Ota Civic Hall Aprico in Tokyo on March 20",
+      "fullDescription": "Film concert runs at Ota Civic Hall Aprico in Tokyo on March 20",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-23/saga-of-tanya-the-evil-anime-gets-film-concert-for-10th-anniversary/.242111",
+      "pubDate": "Wed, 23 Sep 2026 15:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242111/tanya-logo.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242111"
+    },
     {
       "title": "Chiikawa Film Earns 15.84 Billion Yen; TV Anime Streams English Dub on YouTube on October 1",
       "description": "Chiikawa anime film is top movie in Japan for 2026",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235427/cherryandvirgin.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242093"
-    },
-    {
-      "title": "Cyberpunk Edgerunners 2 Anime's New Video Teases Escape from Arasaka",
-      "description": "Anime debuts on Netflix on October 20",
-      "fullDescription": "Anime debuts on Netflix on October 20",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-22/cyberpunk-edgerunners-2-anime-new-video-teases-escape-from-arasaka/.242094",
-      "pubDate": "Tue, 22 Sep 2026 21:18:36 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239075/edgerunners2.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242094"
-    },
-    {
-      "title": "Persona 4 Revival Game Reveals English Cast for Supporting Characters",
-      "description": "Judy Alice Lee, Courtney Shaw, Ray Chase, Johnny Yong Bosch join cast of February 18 game",
-      "fullDescription": "Judy Alice Lee, Courtney Shaw, Ray Chase, Johnny Yong Bosch join cast of February 18 game",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-22/persona-4-revival-game-reveals-english-cast-for-supporting-characters/.242091",
-      "pubDate": "Tue, 22 Sep 2026 20:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.242091"
-    },
-    {
-      "title": "Manga Plus Adds KAKAKAKA, The Ura Files, Noisering, 1 More Title",
-      "description": "Also: Morino-san Just Won't Leave Me Be",
-      "fullDescription": "Also: <cite>Morino-san Just Won't Leave Me Be</cite>",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-22/manga-plus-adds-kakakaka-the-ura-files-noisering-1-more-title/.242092",
-      "pubDate": "Tue, 22 Sep 2026 19:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/242092/614351.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242092"
     }
   ],
   "total": 15

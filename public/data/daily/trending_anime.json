@@ -1,6 +1,6 @@
 {
-  "version": 1790190337711,
-  "fetchedAt": "2026-09-23T19:05:37.711Z",
+  "version": 1790202006905,
+  "fetchedAt": "2026-09-23T22:20:06.905Z",
   "anime": [
     {
       "id": 189046,
@@ -117,61 +117,6 @@
       }
     },
     {
-      "id": 159309,
-      "title": {
-        "romaji": "Otomege Sekai wa Mob ni Kibishii Sekai desu 2",
-        "english": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs Season 2",
-        "native": "乙女ゲー世界はモブに厳しい世界です2"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159309-wRfh9O1odrDJ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159309-wRfh9O1odrDJ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-wRfh9O1odrDJ.jpg"
-      },
-      "bannerImage": null,
-      "description": "Office worker Leon has just been thrust into an otome game where women hold all the power. His only tool for survival is the knowledge gained from playing this game in his past life. But after befriending the heroine and villainess, and making a name for himself, his choices begin to warp the story beyond what he knows. Now, Leon is dragged into a conspiracy that could shake the entire kingdom.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Fantasy",
-        "Mecha",
-        "Romance"
-      ],
-      "averageScore": 68,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "ENGI"
-          },
-          {
-            "name": "Sammy"
-          },
-          {
-            "name": "Micro Magazine Sha"
-          },
-          {
-            "name": "AT-X"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 8
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 23
-      }
-    },
-    {
       "id": 194829,
       "title": {
         "romaji": "Katainaka no Ossan, Kensei ni Naru II",
@@ -251,6 +196,61 @@
       }
     },
     {
+      "id": 159309,
+      "title": {
+        "romaji": "Otomege Sekai wa Mob ni Kibishii Sekai desu 2",
+        "english": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs Season 2",
+        "native": "乙女ゲー世界はモブに厳しい世界です2"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159309-wRfh9O1odrDJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159309-wRfh9O1odrDJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-wRfh9O1odrDJ.jpg"
+      },
+      "bannerImage": null,
+      "description": "Office worker Leon has just been thrust into an otome game where women hold all the power. His only tool for survival is the knowledge gained from playing this game in his past life. But after befriending the heroine and villainess, and making a name for himself, his choices begin to warp the story beyond what he knows. Now, Leon is dragged into a conspiracy that could shake the entire kingdom.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Mecha",
+        "Romance"
+      ],
+      "averageScore": 68,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "ENGI"
+          },
+          {
+            "name": "Sammy"
+          },
+          {
+            "name": "Micro Magazine Sha"
+          },
+          {
+            "name": "AT-X"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 23
+      }
+    },
+    {
       "id": 198946,
       "title": {
         "romaji": "Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou",
@@ -311,6 +311,70 @@
         "year": 2026,
         "month": 9,
         "day": 30
+      }
+    },
+    {
+      "id": 178789,
+      "title": {
+        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
+        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Ecchi",
+        "Fantasy"
+      ],
+      "averageScore": 85,
+      "episodes": 14,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Bind"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Frontier Works"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "GREE Entertainment"
+          },
+          {
+            "name": "EGG FIRM"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
       }
     },
     {
@@ -385,70 +449,6 @@
         "year": null,
         "month": null,
         "day": null
-      }
-    },
-    {
-      "id": 178789,
-      "title": {
-        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
-        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
-        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
-      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Ecchi",
-        "Fantasy"
-      ],
-      "averageScore": 85,
-      "episodes": 14,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Bind"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Frontier Works"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "GREE Entertainment"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
       }
     },
     {
@@ -547,59 +547,6 @@
         "year": 2026,
         "month": 9,
         "day": 21
-      }
-    },
-    {
-      "id": 195600,
-      "title": {
-        "romaji": "Yomi no Tsugai",
-        "english": "Daemons of the Shadow Realm",
-        "native": "黄泉のツガイ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
-      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy",
-        "Supernatural"
-      ],
-      "averageScore": 78,
-      "episodes": 24,
-      "status": "FINISHED",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "bones film"
-          },
-          {
-            "name": "bones"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Square Enix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 19
       }
     },
     {
@@ -714,6 +661,59 @@
       }
     },
     {
+      "id": 195600,
+      "title": {
+        "romaji": "Yomi no Tsugai",
+        "english": "Daemons of the Shadow Realm",
+        "native": "黄泉のツガイ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
+      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy",
+        "Supernatural"
+      ],
+      "averageScore": 78,
+      "episodes": 24,
+      "status": "FINISHED",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "bones film"
+          },
+          {
+            "name": "bones"
+          },
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "Square Enix"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 19
+      }
+    },
+    {
       "id": 182205,
       "title": {
         "romaji": "Tensei Shitara Slime Datta Ken 4th Season",
@@ -787,73 +787,6 @@
       }
     },
     {
-      "id": 185542,
-      "title": {
-        "romaji": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
-        "english": "Skeleton Knight in Another World Season 2",
-        "native": "骸骨騎士様、只今異世界へお出掛け中Ⅱ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185542-6a9LCWlLHa0T.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185542-6a9LCWlLHa0T.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-6a9LCWlLHa0T.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185542-v15vqOvUWSF5.jpg",
-      "description": "Arc returns! After waking to find he's become a Skeleton Knight in his favorite fantasy video game, Arc, Ariane, Chiyome, and Ponta band together to take on evil. Before Arc's search for a cure to his skeletal condition continues, he must face a dogmatic leader, Count Hilk, to free oppressed elves and beasts. A new chapter begins as the Skeleton Knight fights to make his new world a better place.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 65,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Aura Studio"
-          },
-          {
-            "name": "OVERLAP"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "MUSE"
-          },
-          {
-            "name": "Docomo Anime Store"
-          },
-          {
-            "name": "MAGNET"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "CTW"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 21
-      }
-    },
-    {
       "id": 199111,
       "title": {
         "romaji": "Grand Blue Season 3",
@@ -920,6 +853,75 @@
         "year": 2026,
         "month": 9,
         "day": 22
+      }
+    },
+    {
+      "id": 187260,
+      "title": {
+        "romaji": "Kimi ga Shinu made Koi wo Shitai",
+        "english": "I Want to Love You Till Your Dying Day",
+        "native": "きみが死ぬまで恋をしたい"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187260-WW5RBa5NINRP.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx187260-WW5RBa5NINRP.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187260-WW5RBa5NINRP.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/187260-HMkLPy3ZvzW1.jpg",
+      "description": "At the mysterious orphanage where Sheena lives, death is nothing new to its residents—girls who no longer have families of their own, who are raised as weapons of war, taught to kill and take the lives of others without batting an eye. Everyone, that is, except Sheena, who wishes for nothing more than the growing conflict around her to end. On the night of her roommate's death, Sheena meets a strange girl covered in blood, who smiles despite the turmoil surrounding them. The next day, the girl appears as a new student in Sheena's class and introduces herself as Mimi. Initially thought to be a school myth, there are now whispers in the orphanage's halls that Mimi is their secret weapon—an immortal who cannot die. When Mimi is later assigned as Sheena's new roommate, Sheena's world grows even more complicated when she begins living with someone who loves and welcomes death, when all Sheena wants to do is stop it…\n<br><br>\n(Source: Kodansha USA)",
+      "genres": [
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 74,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "ROLL2"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "infinite"
+          },
+          {
+            "name": "Ichijinsha"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "newgin"
+          },
+          {
+            "name": "WOWOW"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "Kadokawa Media House"
+          },
+          {
+            "name": "EVOLROAR"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 7
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 29
       }
     }
   ]
