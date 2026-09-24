@@ -1,7 +1,18 @@
 {
-  "version": 1790281445527,
-  "fetchedAt": "2026-09-24T20:24:05.527Z",
+  "version": 1790292115234,
+  "fetchedAt": "2026-09-24T23:21:55.234Z",
   "news": [
+    {
+      "title": "Fatal Fury City of the Wolves Game's New Animated Trailer by Masami Ōbari Highlights Kim Kaphwan",
+      "description": "Kim joins game on Thursday",
+      "fullDescription": "Kim joins game on Thursday",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-24/fatal-fury-city-of-the-wolves-game-new-animated-trailer-by-masami-obari-highlights-kim-kaphwan/.242154",
+      "pubDate": "Thu, 24 Sep 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.6/196713/bogard.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242154"
+    },
     {
       "title": "Disney+, Hulu Raise Monthly Pricing on Streaming Plans in U.S. Again",
       "description": "Standalone subscription prices rise to US$12.49 with ads, US$21.49 without ads following last year's increase",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242139/ice.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242139"
-    },
-    {
-      "title": "Isshiki-san Wants to Know About Love TV Anime Reveals New Visual, 4 More Cast Members",
-      "description": "Haruki Ishiya, Takuma Nagatsuka, more join cast for anime debuting in January 2027",
-      "fullDescription": "Haruki Ishiya, Takuma Nagatsuka, more join cast for anime debuting in January 2027",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-24/isshiki-san-wants-to-know-about-love-tv-anime-reveals-new-visual-4-more-cast-members/.242138",
-      "pubDate": "Thu, 24 Sep 2026 07:40:23 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242138/animeisshikib2kv02-sho-b280.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242138"
     }
   ],
   "total": 15
