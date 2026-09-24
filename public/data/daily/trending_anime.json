@@ -1,6 +1,6 @@
 {
-  "version": 1790250715456,
-  "fetchedAt": "2026-09-24T11:51:55.456Z",
+  "version": 1790269161056,
+  "fetchedAt": "2026-09-24T16:59:21.056Z",
   "anime": [
     {
       "id": 189046,
@@ -61,61 +61,6 @@
         "year": 2026,
         "month": 9,
         "day": 30
-      }
-    },
-    {
-      "id": 159309,
-      "title": {
-        "romaji": "Otomege Sekai wa Mob ni Kibishii Sekai desu 2",
-        "english": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs Season 2",
-        "native": "乙女ゲー世界はモブに厳しい世界です2"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159309-wRfh9O1odrDJ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159309-wRfh9O1odrDJ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-wRfh9O1odrDJ.jpg"
-      },
-      "bannerImage": null,
-      "description": "Office worker Leon has just been thrust into an otome game where women hold all the power. His only tool for survival is the knowledge gained from playing this game in his past life. But after befriending the heroine and villainess, and making a name for himself, his choices begin to warp the story beyond what he knows. Now, Leon is dragged into a conspiracy that could shake the entire kingdom.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Fantasy",
-        "Mecha",
-        "Romance"
-      ],
-      "averageScore": 69,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "ENGI"
-          },
-          {
-            "name": "Sammy"
-          },
-          {
-            "name": "Micro Magazine Sha"
-          },
-          {
-            "name": "AT-X"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 8
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 23
       }
     },
     {
@@ -272,6 +217,61 @@
       }
     },
     {
+      "id": 159309,
+      "title": {
+        "romaji": "Otomege Sekai wa Mob ni Kibishii Sekai desu 2",
+        "english": "Trapped in a Dating Sim: The World of Otome Games is Tough for Mobs Season 2",
+        "native": "乙女ゲー世界はモブに厳しい世界です2"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159309-wRfh9O1odrDJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159309-wRfh9O1odrDJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159309-wRfh9O1odrDJ.jpg"
+      },
+      "bannerImage": null,
+      "description": "Office worker Leon has just been thrust into an otome game where women hold all the power. His only tool for survival is the knowledge gained from playing this game in his past life. But after befriending the heroine and villainess, and making a name for himself, his choices begin to warp the story beyond what he knows. Now, Leon is dragged into a conspiracy that could shake the entire kingdom.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Fantasy",
+        "Mecha",
+        "Romance"
+      ],
+      "averageScore": 69,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "ENGI"
+          },
+          {
+            "name": "Sammy"
+          },
+          {
+            "name": "Micro Magazine Sha"
+          },
+          {
+            "name": "AT-X"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 23
+      }
+    },
+    {
       "id": 135865,
       "title": {
         "romaji": "Youjo Senki II",
@@ -325,66 +325,135 @@
       }
     },
     {
-      "id": 198946,
+      "id": 196187,
       "title": {
-        "romaji": "Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou",
-        "english": "Clevatess Season 2",
-        "native": "クレバテスⅡ-魔獣の王と偽りの勇者伝承-"
+        "romaji": "Super no Ura de Yani Suu Futari",
+        "english": "Smoking Behind the Supermarket with You",
+        "native": "スーパーの裏でヤニ吸うふたり"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198946-IGXmbqBEYRYD.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198946-IGXmbqBEYRYD.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-IGXmbqBEYRYD.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196187-0dgFi2CPp3xn.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196187-0dgFi2CPp3xn.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-0dgFi2CPp3xn.jpg"
       },
-      "bannerImage": null,
-      "description": "The war is over, but General Drel's secrets remain. As visitors from Hiden, Boelate, and Eslinn converge on Solsein, Boelate's divine academy, the search for Drel's hidden room begins. Among those drawn into the mystery is Klen, now serving as Luna's magic teacher. But what truth lies at the heart of Drel's secret?\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/196187-Z9dV6uotmKjM.jpg",
+      "description": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”\n<br><br>\n(Source: Crunchyroll)<br><br>\n\n<i>Note: Episodes 1-6 had an early release by ABEMA and Crunchyroll on June 3rd, 2026 in a mini-episode batch format that splits 6 episodes into 12, ahead of the TV broadcast which started on July 10th, 2026.</i>",
       "genres": [
-        "Action",
-        "Drama",
-        "Fantasy"
+        "Comedy",
+        "Romance",
+        "Slice of Life"
       ],
-      "averageScore": 76,
-      "episodes": 13,
-      "status": "RELEASING",
+      "averageScore": 81,
+      "episodes": 12,
+      "status": "FINISHED",
       "season": "SUMMER",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "KADOKAWA"
+            "name": "Asahi Production"
           },
           {
-            "name": "Lay-duce"
+            "name": "TBS"
           },
           {
-            "name": "Sammy"
+            "name": "Asmik Ace"
           },
           {
-            "name": "Crunchyroll"
+            "name": "Asahi Production"
           },
           {
-            "name": "BS Nittele"
+            "name": "arma bianca"
           },
           {
-            "name": "Lay-duce"
+            "name": "ADK Marketing Solutions"
           },
           {
-            "name": "LINE Digital Frontier"
+            "name": "Nichion"
           },
           {
-            "name": "AT-X"
+            "name": "AbemaTV"
+          },
+          {
+            "name": "Square Enix"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 7,
-        "day": 8
+        "day": 10
       },
       "endDate": {
         "year": 2026,
         "month": 9,
-        "day": 30
+        "day": 24
+      }
+    },
+    {
+      "id": 203880,
+      "title": {
+        "romaji": "Reiwa no Dara-san",
+        "english": "Dara-san of the Reiwa Era",
+        "native": "令和のダラさん"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx203880-lnruKftb27Nr.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx203880-lnruKftb27Nr.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx203880-lnruKftb27Nr.png"
+      },
+      "bannerImage": null,
+      "description": "After venturing into a restricted, treacherous mountain forest, siblings Hinata and Kaoru meet a terrifying serpent god and become besties! Despite her initially scary appearance, the self-named “god of misfortune” is awkward, lonely, and surprisingly easy to talk to. This is the tale of an unexpected friendship, and the many comedic, heartfelt adventures that ensue.<br><br>\n\n(Source: Crunchyroll)",
+      "genres": [
+        "Comedy",
+        "Horror",
+        "Supernatural"
+      ],
+      "averageScore": 66,
+      "episodes": 13,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Asahi Production"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Docomo Anime Store"
+          },
+          {
+            "name": "Asahi Production"
+          },
+          {
+            "name": "Kansai TV"
+          },
+          {
+            "name": "Bandai Namco Music Live"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "INSPION EDGE"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 2
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 24
       }
     },
     {
@@ -452,6 +521,69 @@
       }
     },
     {
+      "id": 198946,
+      "title": {
+        "romaji": "Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou",
+        "english": "Clevatess Season 2",
+        "native": "クレバテスⅡ-魔獣の王と偽りの勇者伝承-"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198946-IGXmbqBEYRYD.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198946-IGXmbqBEYRYD.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198946-IGXmbqBEYRYD.jpg"
+      },
+      "bannerImage": null,
+      "description": "The war is over, but General Drel's secrets remain. As visitors from Hiden, Boelate, and Eslinn converge on Solsein, Boelate's divine academy, the search for Drel's hidden room begins. Among those drawn into the mystery is Klen, now serving as Luna's magic teacher. But what truth lies at the heart of Drel's secret?\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Drama",
+        "Fantasy"
+      ],
+      "averageScore": 76,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Lay-duce"
+          },
+          {
+            "name": "Sammy"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "Lay-duce"
+          },
+          {
+            "name": "LINE Digital Frontier"
+          },
+          {
+            "name": "AT-X"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 30
+      }
+    },
+    {
       "id": 269,
       "title": {
         "romaji": "BLEACH",
@@ -500,168 +632,6 @@
         "year": 2012,
         "month": 3,
         "day": 27
-      }
-    },
-    {
-      "id": 202269,
-      "title": {
-        "romaji": "Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.",
-        "english": "Love Unseen Beneath the Clear Night Sky",
-        "native": "透明な夜に駆ける君と、目に見えない恋をした。"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202269-7KNj8s2fSsJJ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202269-7KNj8s2fSsJJ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/202269-u0PTTsiKwrVL.jpg",
-      "description": "Kakeru Sorano, a quiet university freshman who avoids others, meets Koharu Fuyutsuki, a blind girl who faces the world with quiet brightness. When she says, “I want to see fireworks someday,” something in Kakeru shifts. As they grow closer through small moments and shared loneliness, he searches for a way to make her wish come true.<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "averageScore": 83,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Makaria"
-          },
-          {
-            "name": "SB Creative"
-          },
-          {
-            "name": "viviON"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "Clare Voice"
-          },
-          {
-            "name": "Makaria"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 6
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 21
-      }
-    },
-    {
-      "id": 217283,
-      "title": {
-        "romaji": "Phantom Busters",
-        "english": null,
-        "native": "ファントムバスターズ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx217283-hMHG9O1EPutg.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx217283-hMHG9O1EPutg.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx217283-hMHG9O1EPutg.jpg"
-      },
-      "bannerImage": null,
-      "description": "In search of a fourth member for the club, Mogari, Eugene, and new recruit Kaoru Kanzaki set their sights on Kotaro Tamon, a classmate who seems to be able to talk to ghosts. Unfortunately, Kotaro's got some major problems communicating with living humans! Will Kotaro be able to overcome his anxiety and join the Phantom Busters?<br><br>\n\n(Source: VIZ Media)",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Slice of Life",
-        "Supernatural"
-      ],
-      "averageScore": null,
-      "episodes": null,
-      "status": "NOT_YET_RELEASED",
-      "season": null,
-      "seasonYear": null,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Toho"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2027,
-        "month": null,
-        "day": null
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 184356,
-      "title": {
-        "romaji": "Dogul Wang",
-        "english": "Tomb Raider King",
-        "native": "도굴왕"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184356-SlFIstXUXJYP.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx184356-SlFIstXUXJYP.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184356-SlFIstXUXJYP.png"
-      },
-      "bannerImage": null,
-      "description": "Chaos ensues overnight when mysterious tombs suddenly surface, filled with divine relics granting overwhelming power, triggering a global power struggle to claim them for dominion. Among the havoc, a raider, Jooheon Suh, is betrayed and left for dead until a second chance brings him back years before the relics. Fueled by fury and future knowledge, he sets out to raid each tomb before they arise.<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 66,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": null,
-      "seasonYear": null,
-      "studios": {
-        "nodes": [
-          {
-            "name": "STUDIO EEK"
-          },
-          {
-            "name": "bilibili"
-          },
-          {
-            "name": "REDICE STUDIO"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Fuji Creative Corporation"
-          },
-          {
-            "name": "Fuji TV"
-          },
-          {
-            "name": "Kansai TV"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 9
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 1
       }
     },
     {
@@ -715,139 +685,6 @@
         "year": 2026,
         "month": 9,
         "day": 19
-      }
-    },
-    {
-      "id": 185542,
-      "title": {
-        "romaji": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu II",
-        "english": "Skeleton Knight in Another World Season 2",
-        "native": "骸骨騎士様、只今異世界へお出掛け中Ⅱ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185542-6a9LCWlLHa0T.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185542-6a9LCWlLHa0T.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185542-6a9LCWlLHa0T.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185542-v15vqOvUWSF5.jpg",
-      "description": "Arc returns! After waking to find he's become a Skeleton Knight in his favorite fantasy video game, Arc, Ariane, Chiyome, and Ponta band together to take on evil. Before Arc's search for a cure to his skeletal condition continues, he must face a dogmatic leader, Count Hilk, to free oppressed elves and beasts. A new chapter begins as the Skeleton Knight fights to make his new world a better place.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 65,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Aura Studio"
-          },
-          {
-            "name": "OVERLAP"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "MUSE"
-          },
-          {
-            "name": "Docomo Anime Store"
-          },
-          {
-            "name": "MAGNET"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "CTW"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 21
-      }
-    },
-    {
-      "id": 196187,
-      "title": {
-        "romaji": "Super no Ura de Yani Suu Futari",
-        "english": "Smoking Behind the Supermarket with You",
-        "native": "スーパーの裏でヤニ吸うふたり"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196187-0dgFi2CPp3xn.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196187-0dgFi2CPp3xn.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-0dgFi2CPp3xn.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/196187-Z9dV6uotmKjM.jpg",
-      "description": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”\n<br><br>\n(Source: Crunchyroll)<br><br>\n\n<i>Note: Episodes 1-6 had an early release by ABEMA and Crunchyroll on June 3rd, 2026 in a mini-episode batch format that splits 6 episodes into 12, ahead of the TV broadcast which started on July 10th, 2026.</i>",
-      "genres": [
-        "Comedy",
-        "Romance",
-        "Slice of Life"
-      ],
-      "averageScore": 81,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Asahi Production"
-          },
-          {
-            "name": "TBS"
-          },
-          {
-            "name": "Asmik Ace"
-          },
-          {
-            "name": "Asahi Production"
-          },
-          {
-            "name": "arma bianca"
-          },
-          {
-            "name": "ADK Marketing Solutions"
-          },
-          {
-            "name": "Nichion"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "Square Enix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 10
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 24
       }
     },
     {
@@ -921,6 +758,185 @@
         "year": 2026,
         "month": 9,
         "day": 25
+      }
+    },
+    {
+      "id": 202269,
+      "title": {
+        "romaji": "Toumei na Yoru ni Kakeru Kimi to, Me ni Mienai Koi wo Shita.",
+        "english": "Love Unseen Beneath the Clear Night Sky",
+        "native": "透明な夜に駆ける君と、目に見えない恋をした。"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202269-7KNj8s2fSsJJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202269-7KNj8s2fSsJJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202269-7KNj8s2fSsJJ.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/202269-u0PTTsiKwrVL.jpg",
+      "description": "Kakeru Sorano, a quiet university freshman who avoids others, meets Koharu Fuyutsuki, a blind girl who faces the world with quiet brightness. When she says, “I want to see fireworks someday,” something in Kakeru shifts. As they grow closer through small moments and shared loneliness, he searches for a way to make her wish come true.<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "averageScore": 83,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Makaria"
+          },
+          {
+            "name": "SB Creative"
+          },
+          {
+            "name": "viviON"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "Clare Voice"
+          },
+          {
+            "name": "Makaria"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 6
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 21
+      }
+    },
+    {
+      "id": 207141,
+      "title": {
+        "romaji": "Yani Neko",
+        "english": "Chainsmoker Cat",
+        "native": "ヤニねこ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207141-h5q5KJPd6vaX.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207141-h5q5KJPd6vaX.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207141-MvHAS2YVfJzL.jpg",
+      "description": "Yani is a catgirl with a seriously bad smoking habit. She smokes so much that her apartment smells like ash and is littered with cigarette butts—and plenty of other trash! Every time she tries to quit, she becomes weak to the cravings and gives in almost instantly. Will she ever get her life together, or is she doomed to live as a chainsmoking slob forever? \n<BR><BR>\n(Source: Seven Seas Entertainment)",
+      "genres": [
+        "Comedy",
+        "Ecchi",
+        "Slice of Life"
+      ],
+      "averageScore": 67,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Bibury Animation Studios"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "TOKYO MX"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 25
+      }
+    },
+    {
+      "id": 199111,
+      "title": {
+        "romaji": "Grand Blue Season 3",
+        "english": "Grand Blue Dreaming Season 3",
+        "native": "ぐらんぶる Season 3"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx199111-gBSuBG61ElcW.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx199111-gBSuBG61ElcW.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199111-gBSuBG61ElcW.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/199111-Z8y9awn2Zb6v.jpg",
+      "description": "Iori's college shenanigans head overseas! Just as he's finally starting to get the hang of university life, crashing at his uncle's dive shop while balancing the booze-fueled antics of his diving club, Iori's cousin enlists him to help run a new dive shop in Palau. Between crystal-clear dives and his diving group that can't resist partying it up and stripping down, Iori's in for a wild summer.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Comedy",
+        "Slice of Life",
+        "Sports"
+      ],
+      "averageScore": 82,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "Zero-G"
+          },
+          {
+            "name": "Saber Works"
+          },
+          {
+            "name": "Avex Pictures"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Zero-G"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "qooop"
+          },
+          {
+            "name": "Saber Links"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 7
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 22
       }
     }
   ]
