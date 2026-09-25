@@ -1,7 +1,84 @@
 {
-  "version": 1790359112763,
-  "fetchedAt": "2026-09-25T17:58:32.763Z",
+  "version": 1790371716117,
+  "fetchedAt": "2026-09-25T21:28:36.117Z",
   "news": [
+    {
+      "title": "North American Anime, Manga Releases, September 20-26",
+      "description": "ChaO anime; Cells at Work! Cat, Mage of Leda, Servant Beasts manga ship",
+      "fullDescription": "<cite>ChaO</cite> anime; <cite>Cells at Work! Cat, Mage of Leda, Servant Beasts</cite> manga ship",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-21/north-american-anime-manga-releases-september-20-26/.242064",
+      "pubDate": "Fri, 25 Sep 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242064"
+    },
+    {
+      "title": "Ace Combat 8: Wings of Theve Game Streams Opening Cinematic",
+      "description": "Game launches on October 2 with Deluxe Edition debuting early on September 29",
+      "fullDescription": "Game launches on October 2 with Deluxe Edition debuting early on September 29",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-25/ace-combat-8-wings-of-theve-game-streams-opening-cinematic/.242182",
+      "pubDate": "Fri, 25 Sep 2026 16:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242182"
+    },
+    {
+      "title": "New Code Geass Star Chaser Aspal Anime Reveals Teaser Trailer, 2027 Premiere",
+      "description": "Kazuya Nomura directs new anime for Code Geass' 20th anniversary",
+      "fullDescription": "Kazuya Nomura directs new anime for <cite>Code Geass'</cite> 20th anniversary",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-25/new-code-geass-star-chaser-aspal-anime-reveals-teaser-trailer-2027-premiere/.242201",
+      "pubDate": "Fri, 25 Sep 2026 15:35:03 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/231788/geassnewanime.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242201"
+    },
+    {
+      "title": "&#039;Tensei shitara Slime Datta Ken 4th Season&#039; Part 2 Announced for Summer 2027, &#039;Clayman Revenge&#039; Spin-off Gets TV Anime for Spring 2027",
+      "description": "The 24th and final episode of the Tensei shitara Slime Datta Ken 4th Season (That Time I Got Reincarnated as a Slime Season 4) television anime announced on Friday that its second part will premiere in July 2027. The official website simultaneously announced a television anime adaptation of Wataru K...",
+      "fullDescription": "The 24th and final episode of the Tensei shitara Slime Datta Ken 4th Season (That Time I Got Reincarnated as a Slime Season 4) television anime announced on Friday that its second part will premiere in July 2027. The official website simultaneously announced a television anime adaptation of Wataru Kajika&#039;s spin-off manga Tensei shitara Slime Datta Ken: Clayman Revenge (That Time I Got Reincarnated as a Slime: Clayman&#039;s Revenge), revealing the main staff, teaser visual (pictured right)...",
+      "link": "https://myanimelist.net/news/74759618?_location=rss",
+      "pubDate": "Fri, 25 Sep 2026 12:11:03 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1790362735-cfbb17b92e9789d80c672b5afec81cac.jpeg",
+      "guid": "https://myanimelist.net/news/74759618?_location=rss"
+    },
+    {
+      "title": "Sweet Shop Comics Platform Hosts Glacier Bay Books Manga Titles",
+      "description": "Sweet Shop adds Pandora, Dream Another Dream, Mothers, Red Riding Hood's Wolf Apprentice, more manga",
+      "fullDescription": "Sweet Shop adds <cite>Pandora, Dream Another Dream, Mothers, Red Riding Hood's Wolf Apprentice</cite>, more manga",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-25/sweet-shop-comics-platform-hosts-glacier-bay-books-manga-titles/.242183",
+      "pubDate": "Fri, 25 Sep 2026 15:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.4/173368/unnamed-23-.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242183"
+    },
+    {
+      "title": "Hell Mode Anime Gets 3rd Season for 'S-Rank Dungeon Conquest Arc'",
+      "description": "Anime's 2nd season ended on Friday",
+      "fullDescription": "Anime's 2nd season ended on Friday",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-25/hell-mode-anime-gets-3rd-season-for-s-rank-dungeon-conquest-arc/.242198",
+      "pubDate": "Fri, 25 Sep 2026 14:21:14 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242198/hell-mode-s3.webp",
+      "guid": "https://www.animenewsnetwork.com/cms/.242198"
+    },
+    {
+      "title": "Dentsu Enters Partnership with Kodansha",
+      "description": "Partnership makes Dentsu central point of contact for brand marketers looking to work with IPs",
+      "fullDescription": "Partnership makes Dentsu central point of contact for brand marketers looking to work with IPs",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-25/dentsu-enters-partnership-with-kodansha/.242186",
+      "pubDate": "Fri, 25 Sep 2026 14:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.7/211172/ogp.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242186"
+    },
     {
       "title": "Yen Press Licenses Kafka's Journey, Lilies in Love for 101 Days, Lord Hades's Vernal Honeymoon, More Manga/Novels",
       "description": "Also: Oh Boy, Was I Wrong About Her, The Returned Tyrant Princess Rewrites Her Dark Past, more",
@@ -89,83 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.242176"
-    },
-    {
-      "title": "The Apothecary Diaries Season 3 Anime's 2nd Trailer Reveals Eve's Ending Theme",
-      "description": "New season debuts on October 2",
-      "fullDescription": "New season debuts on October 2",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-25/the-apothecary-diaries-season-3-anime-2nd-trailer-reveals-eve-ending-theme/.242175",
-      "pubDate": "Fri, 25 Sep 2026 07:08:13 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240600/hpwnmzta4aajc53.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242175"
-    },
-    {
-      "title": "&#039;Yozakura-san Chi no Daisakusen 2nd Season Part 2&#039; Announces Additional Cast, Character Promo",
-      "description": "The official website of the Yozakura-san Chi no Daisakusen (Mission: Yozakura Family) television anime announced additional cast members for its second part of second season on Friday. The second part is scheduled to premiere on October 11 at 5.00 p.m. on MBS/TBS Network, followed by BS Nippon Telev...",
-      "fullDescription": "The official website of the Yozakura-san Chi no Daisakusen (Mission: Yozakura Family) television anime announced additional cast members for its second part of second season on Friday. The second part is scheduled to premiere on October 11 at 5.00 p.m. on MBS/TBS Network, followed by BS Nippon Television and AT-X on October 21. Cast Alexandre: Houchuu Ootsuka (Sakamoto Days) Shura: Miku Itou (Nekopara) Cyber Demon King &quot;G&quot;: Yumiri Hanamori (Gachiakuta) Dr. Mozu: Sumire Uesaka (Overlord...",
-      "link": "https://myanimelist.net/news/74757874?_location=rss",
-      "pubDate": "Fri, 25 Sep 2026 03:08:52 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1790330458-f089ab7a51af1cf495b36cd2169812b7.jpeg",
-      "guid": "https://myanimelist.net/news/74757874?_location=rss"
-    },
-    {
-      "title": "Duel Masters Lost: Danzai no Shōnen Anime Reveals More Cast, Ending Theme in Main Promo Video",
-      "description": "4-episode series debuts on October 9",
-      "fullDescription": "4-episode series debuts on October 9",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-25/duel-masters-lost-danzai-no-shonen-anime-reveals-more-cast-ending-theme-in-main-promo-video/.242179",
-      "pubDate": "Fri, 25 Sep 2026 05:40:32 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242179/murasaki.jfif.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242179"
-    },
-    {
-      "title": "Mission: Yozakura Family Season 2 Part 2's Video Reveals 5 Cast Members",
-      "description": "Hōchū Ōtsuka, Miku Itō, Yumiri Hanamori, Sumire Uesaka, Naomi Shindoh join cast",
-      "fullDescription": "Hōchū Ōtsuka, Miku Itō, Yumiri Hanamori, Sumire Uesaka, Naomi Shindoh join cast",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-25/mission-yozakura-family-season-2-part-2-video-reveals-5-cast-members/.242171",
-      "pubDate": "Fri, 25 Sep 2026 05:02:32 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242171/alexandryu.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242171"
-    },
-    {
-      "title": "Chizuna Nakajima's Where is the Elf Teacher's Toilet? Manga Gets TV Anime",
-      "description": "\"Toilet fantasy comedy\" manga from Angel Drop manga creator launched in January 2024",
-      "fullDescription": "\"Toilet fantasy comedy\" manga from <cite>Angel Drop</cite> manga creator launched in January 2024",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-25/chizuna-nakajima-where-is-the-elf-teacher-toilet-manga-gets-tv-anime/.242170",
-      "pubDate": "Fri, 25 Sep 2026 02:28:23 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.242170"
-    },
-    {
-      "title": "Manga &#039;Elf-sensei no Toilet wa Doko desu ka?&#039; Receives TV Anime Adaptation",
-      "description": "WWWave Corporation&#039;s Deregula animation label announced a television anime adaptation of Chizuna Nakajima&#039;s Elf-sensei no Toilet wa Doko desu ka? (Where Is the Elf Teacher&#039;s Toilet?) on Friday, revealing a pair of commemorative illustrations by the original creator (pictured above and...",
-      "fullDescription": "WWWave Corporation&#039;s Deregula animation label announced a television anime adaptation of Chizuna Nakajima&#039;s Elf-sensei no Toilet wa Doko desu ka? (Where Is the Elf Teacher&#039;s Toilet?) on Friday, revealing a pair of commemorative illustrations by the original creator (pictured above and right). Nakajima began serializing the comedy ecchi series in Comic Cune in January 2024. The series entered hiatus in January 2025 and is scheduled to return on September 26. Kadokawa published the...",
-      "link": "https://myanimelist.net/news/74757191?_location=rss",
-      "pubDate": "Thu, 24 Sep 2026 21:44:47 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1790311309-81af7a3e02edf7520960d5a4ef533962.jpeg",
-      "guid": "https://myanimelist.net/news/74757191?_location=rss"
-    },
-    {
-      "title": "The Fake Alchemist Anime's Teaser Unveils Cast, Staff",
-      "description": "Yōhei Matsuoka, Miyari Nemoto stars as Paracelsus, Nora",
-      "fullDescription": "Yōhei Matsuoka, Miyari Nemoto stars as Paracelsus, Nora",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-24/the-fake-alchemist-anime-teaser-unveils-cast-staff/.242165",
-      "pubDate": "Thu, 24 Sep 2026 23:46:55 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238660/fake.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242165"
     }
   ],
   "total": 15
