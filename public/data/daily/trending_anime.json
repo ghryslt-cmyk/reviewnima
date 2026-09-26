@@ -1,6 +1,6 @@
 {
-  "version": 1790456452865,
-  "fetchedAt": "2026-09-26T21:00:52.865Z",
+  "version": 1790465962787,
+  "fetchedAt": "2026-09-26T23:39:22.787Z",
   "anime": [
     {
       "id": 182205,
@@ -142,48 +142,6 @@
       }
     },
     {
-      "id": 184492,
-      "title": {
-        "romaji": "Mairimashita! Iruma-kun 4",
-        "english": "Welcome to Demon School! Iruma-kun Season 4",
-        "native": "魔入りました！入間くん 第4シリーズ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184492-KUVFGieuMaOx.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx184492-KUVFGieuMaOx.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184492-KUVFGieuMaOx.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/184492-JsZazzn4Acqf.jpg",
-      "description": "Suzuki Iruma and all thirteen students of the Misfit Class must perform to reach Rank 4 at the Music Festival.\n<br><br>\n(Source: Crunchyroll News)",
-      "genres": [
-        "Comedy",
-        "Fantasy",
-        "Supernatural"
-      ],
-      "averageScore": 80,
-      "episodes": 24,
-      "status": "FINISHED",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Bandai Namco Pictures"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 26
-      }
-    },
-    {
       "id": 199066,
       "title": {
         "romaji": "Hanaori-san wa Tensei Shite mo Kenka ga Shitai",
@@ -238,6 +196,99 @@
         "year": 2026,
         "month": 9,
         "day": 27
+      }
+    },
+    {
+      "id": 207141,
+      "title": {
+        "romaji": "Yani Neko",
+        "english": "Chainsmoker Cat",
+        "native": "ヤニねこ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207141-h5q5KJPd6vaX.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207141-h5q5KJPd6vaX.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207141-MvHAS2YVfJzL.jpg",
+      "description": "Yani is a catgirl with a seriously bad smoking habit. She smokes so much that her apartment smells like ash and is littered with cigarette butts—and plenty of other trash! Every time she tries to quit, she becomes weak to the cravings and gives in almost instantly. Will she ever get her life together, or is she doomed to live as a chainsmoking slob forever? \n<BR><BR>\n(Source: Seven Seas Entertainment)",
+      "genres": [
+        "Comedy",
+        "Ecchi",
+        "Slice of Life"
+      ],
+      "averageScore": 69,
+      "episodes": 12,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Bibury Animation Studios"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "TOKYO MX"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 25
+      }
+    },
+    {
+      "id": 184492,
+      "title": {
+        "romaji": "Mairimashita! Iruma-kun 4",
+        "english": "Welcome to Demon School! Iruma-kun Season 4",
+        "native": "魔入りました！入間くん 第4シリーズ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184492-KUVFGieuMaOx.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx184492-KUVFGieuMaOx.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184492-KUVFGieuMaOx.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/184492-JsZazzn4Acqf.jpg",
+      "description": "Suzuki Iruma and all thirteen students of the Misfit Class must perform to reach Rank 4 at the Music Festival.\n<br><br>\n(Source: Crunchyroll News)",
+      "genres": [
+        "Comedy",
+        "Fantasy",
+        "Supernatural"
+      ],
+      "averageScore": 80,
+      "episodes": 24,
+      "status": "FINISHED",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Bandai Namco Pictures"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 26
       }
     },
     {
@@ -304,293 +355,6 @@
         "year": 2026,
         "month": 9,
         "day": 26
-      }
-    },
-    {
-      "id": 189046,
-      "title": {
-        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-        "english": "Re:ZERO -Starting Life in Another World- Season 4",
-        "native": "Re:ゼロから始める異世界生活 4th season"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
-      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy",
-        "Psychological",
-        "Romance",
-        "Thriller"
-      ],
-      "averageScore": 90,
-      "episodes": 19,
-      "status": "RELEASING",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "WHITE FOX"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "DAXEL"
-          },
-          {
-            "name": "Memory-Tech"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 8
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 30
-      }
-    },
-    {
-      "id": 178789,
-      "title": {
-        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
-        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
-        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
-      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Ecchi",
-        "Fantasy"
-      ],
-      "averageScore": 85,
-      "episodes": 14,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Bind"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Frontier Works"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "GREE Entertainment"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
-      }
-    },
-    {
-      "id": 204389,
-      "title": {
-        "romaji": "Yasei no Last Boss ga Arawareta! 2nd Season",
-        "english": "A Wild Last Boss Appeared! Season 2",
-        "native": "野生のラスボスが現れた！ 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204389-jCoFCeTthDMy.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204389-jCoFCeTthDMy.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204389-jCoFCeTthDMy.jpg"
-      },
-      "bannerImage": null,
-      "description": "The second season of <i>Yasei no Last Boss ga Arawareta!</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": null,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "NBCUniversal Entertainment Japan"
-          },
-          {
-            "name": "WAO World"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 26
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 207141,
-      "title": {
-        "romaji": "Yani Neko",
-        "english": "Chainsmoker Cat",
-        "native": "ヤニねこ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207141-h5q5KJPd6vaX.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207141-h5q5KJPd6vaX.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207141-h5q5KJPd6vaX.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207141-MvHAS2YVfJzL.jpg",
-      "description": "Yani is a catgirl with a seriously bad smoking habit. She smokes so much that her apartment smells like ash and is littered with cigarette butts—and plenty of other trash! Every time she tries to quit, she becomes weak to the cravings and gives in almost instantly. Will she ever get her life together, or is she doomed to live as a chainsmoking slob forever? \n<BR><BR>\n(Source: Seven Seas Entertainment)",
-      "genres": [
-        "Comedy",
-        "Ecchi",
-        "Slice of Life"
-      ],
-      "averageScore": 69,
-      "episodes": 12,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Bibury Animation Studios"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "NBCUniversal Entertainment Japan"
-          },
-          {
-            "name": "TOKYO MX"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 25
-      }
-    },
-    {
-      "id": 171110,
-      "title": {
-        "romaji": "Honzuki no Gekokujou: Ryoushu no Youjo",
-        "english": "Ascendance of a Bookworm: Adopted Daughter of an Archduke",
-        "native": "本好きの下剋上 領主の養女"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171110-7zOdInS6DQNL.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx171110-7zOdInS6DQNL.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171110-7zOdInS6DQNL.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/171110-lgtmKokpevUM.jpg",
-      "description": "Following a disastrous encounter with a noble, Myne finally resolves to say goodbye to her family and friends in the lower city, changing her name to “Rozemyne” and beginning her new life as the adopted daughter of Ehrenfest’s archduke. However, her days as an archnoble in noble society are brutal, as she is put through rigorous etiquette and magic training on top of her duties as High Bishop and forewoman. It all proves too much for a weak little seven-year-old girl... Or it would have, had the High Priest not offered her the keys to the temple’s book room as a reward. If she could get her hands on those, she’d be able to read all sorts of precious books! Her name may have changed, but Rozemyne’s passion for books remains the same as she charges into a whole new world! The detailed setting expands as the printing industry grows in size. Here begins Part 3 of this biblio-fantasy for book lovers everywhere!<br>\n<br>\n(Source: J-Novel Club)",
-      "genres": [
-        "Drama",
-        "Fantasy",
-        "Slice of Life"
-      ],
-      "averageScore": 76,
-      "episodes": 24,
-      "status": "RELEASING",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "WIT STUDIO"
-          },
-          {
-            "name": "TO Books"
-          },
-          {
-            "name": "Yomiuri TV"
-          },
-          {
-            "name": "WIT STUDIO"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "Yomiuri TV Enterprise"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "flying DOG"
-          },
-          {
-            "name": "KLOCKWORX"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 3
       }
     },
     {
@@ -668,6 +432,223 @@
       }
     },
     {
+      "id": 178789,
+      "title": {
+        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
+        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Ecchi",
+        "Fantasy"
+      ],
+      "averageScore": 85,
+      "episodes": 14,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Bind"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Frontier Works"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "GREE Entertainment"
+          },
+          {
+            "name": "EGG FIRM"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
+      }
+    },
+    {
+      "id": 189046,
+      "title": {
+        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "english": "Re:ZERO -Starting Life in Another World- Season 4",
+        "native": "Re:ゼロから始める異世界生活 4th season"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
+      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
+      ],
+      "averageScore": 90,
+      "episodes": 19,
+      "status": "RELEASING",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "WHITE FOX"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "DAXEL"
+          },
+          {
+            "name": "Memory-Tech"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 30
+      }
+    },
+    {
+      "id": 204389,
+      "title": {
+        "romaji": "Yasei no Last Boss ga Arawareta! 2nd Season",
+        "english": "A Wild Last Boss Appeared! Season 2",
+        "native": "野生のラスボスが現れた！ 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204389-jCoFCeTthDMy.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204389-jCoFCeTthDMy.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204389-jCoFCeTthDMy.jpg"
+      },
+      "bannerImage": null,
+      "description": "The second season of <i>Yasei no Last Boss ga Arawareta!</i>",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "WAO World"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 26
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 210482,
+      "title": {
+        "romaji": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE",
+        "english": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+        "native": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210482-P1VNKbqdJ6Zj.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg"
+      },
+      "bannerImage": null,
+      "description": "The second and third race stage of <i>JoJo no Kimyou na Bouken: Steel Ball Run</i>.<br><br>\n\nIn the 2nd STAGE, a desert crossing spanning roughly 750 miles- the land that Johnny Joestar and Gyro Zeppeli must challenge, is home to the area that is feared as the \"Devil's Palm.\" In 1875, a threat lurking in said desert wiped out a cavalry of 26 people, eliciting fear from the local native people. As ominous incidents begin to unfold, they are forced to realize that this race is far more than a mere competition. The two press forward, where countless hidden motives collide.. <br><br>\n\n(Source: Warner Bros. Japan Anime, Netflix Anime, edited)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Mystery",
+        "Supernatural"
+      ],
+      "averageScore": 85,
+      "episodes": 11,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "david production"
+          },
+          {
+            "name": "Warner Bros. Japan"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 25
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 195600,
       "title": {
         "romaji": "Yomi no Tsugai",
@@ -721,50 +702,69 @@
       }
     },
     {
-      "id": 210482,
+      "id": 171110,
       "title": {
-        "romaji": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE",
-        "english": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
-        "native": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE"
+        "romaji": "Honzuki no Gekokujou: Ryoushu no Youjo",
+        "english": "Ascendance of a Bookworm: Adopted Daughter of an Archduke",
+        "native": "本好きの下剋上 領主の養女"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210482-P1VNKbqdJ6Zj.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx171110-7zOdInS6DQNL.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx171110-7zOdInS6DQNL.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171110-7zOdInS6DQNL.jpg"
       },
-      "bannerImage": null,
-      "description": "The second and third race stage of <i>JoJo no Kimyou na Bouken: Steel Ball Run</i>.<br><br>\n\nIn the 2nd STAGE, a desert crossing spanning roughly 750 miles- the land that Johnny Joestar and Gyro Zeppeli must challenge, is home to the area that is feared as the \"Devil's Palm.\" In 1875, a threat lurking in said desert wiped out a cavalry of 26 people, eliciting fear from the local native people. As ominous incidents begin to unfold, they are forced to realize that this race is far more than a mere competition. The two press forward, where countless hidden motives collide.. <br><br>\n\n(Source: Warner Bros. Japan Anime, Netflix Anime, edited)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/171110-lgtmKokpevUM.jpg",
+      "description": "Following a disastrous encounter with a noble, Myne finally resolves to say goodbye to her family and friends in the lower city, changing her name to “Rozemyne” and beginning her new life as the adopted daughter of Ehrenfest’s archduke. However, her days as an archnoble in noble society are brutal, as she is put through rigorous etiquette and magic training on top of her duties as High Bishop and forewoman. It all proves too much for a weak little seven-year-old girl... Or it would have, had the High Priest not offered her the keys to the temple’s book room as a reward. If she could get her hands on those, she’d be able to read all sorts of precious books! Her name may have changed, but Rozemyne’s passion for books remains the same as she charges into a whole new world! The detailed setting expands as the printing industry grows in size. Here begins Part 3 of this biblio-fantasy for book lovers everywhere!<br>\n<br>\n(Source: J-Novel Club)",
       "genres": [
-        "Action",
-        "Adventure",
         "Drama",
-        "Mystery",
-        "Supernatural"
+        "Fantasy",
+        "Slice of Life"
       ],
-      "averageScore": 85,
-      "episodes": 11,
+      "averageScore": 76,
+      "episodes": 24,
       "status": "RELEASING",
-      "season": "FALL",
+      "season": "SPRING",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "david production"
+            "name": "WIT STUDIO"
           },
           {
-            "name": "Warner Bros. Japan"
+            "name": "TO Books"
+          },
+          {
+            "name": "Yomiuri TV"
+          },
+          {
+            "name": "WIT STUDIO"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "Yomiuri TV Enterprise"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "flying DOG"
+          },
+          {
+            "name": "KLOCKWORX"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 9,
-        "day": 25
+        "month": 4,
+        "day": 4
       },
       "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 2026,
+        "month": 10,
+        "day": 3
       }
     },
     {
