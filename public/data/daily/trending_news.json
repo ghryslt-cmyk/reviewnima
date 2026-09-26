@@ -1,7 +1,18 @@
 {
-  "version": 1790399069318,
-  "fetchedAt": "2026-09-26T05:04:29.318Z",
+  "version": 1790416522686,
+  "fetchedAt": "2026-09-26T09:55:22.686Z",
   "news": [
+    {
+      "title": "Future GPX Cyber Formula's New Anime Short Reveals Cast, Staff, Screening on February 19",
+      "description": "Short will screen alongside new HD remastered \"movie edition\" of Future GPX Cyber Formula: Early Days Renewal compilation OVA",
+      "fullDescription": "Short will screen alongside new HD remastered \"movie edition\" of <cite>Future GPX Cyber Formula: Early Days Renewal</cite> compilation OVA",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-26/future-gpx-cyber-formula-new-anime-short-reveals-cast-staff-screening-on-february-19/.242205",
+      "pubDate": "Sat, 26 Sep 2026 01:37:39 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242205/cf-02-movie-b2poster-web.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242205"
+    },
     {
       "title": "North American Anime, Manga Releases, September 20-26",
       "description": "ChaO anime; Cells at Work! Cat, Mage of Leda, Servant Beasts manga ship",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242181/revenge-visual-sm.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242181"
-    },
-    {
-      "title": "Monochrome, Good Smile Unveil Ignisphere Mixed Media Project, Along With Project's Dawngazer Action RPG",
-      "description": "Unicorn Overlord director, character designer Takafumi Noma helms Dawngazer 2028 game",
-      "fullDescription": "<cite>Unicorn Overlord</cite> director, character designer Takafumi Noma helms <cite>Dawngazer</cite> 2028 game",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-25/monochrome-good-smile-unveil-ignisphere-mixed-media-project-along-with-project-dawngazer-action-rpg/.242176",
-      "pubDate": "Fri, 25 Sep 2026 09:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.242176"
     }
   ],
   "total": 15
