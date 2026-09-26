@@ -1,7 +1,18 @@
 {
-  "version": 1790416522686,
-  "fetchedAt": "2026-09-26T09:55:22.686Z",
+  "version": 1790432334358,
+  "fetchedAt": "2026-09-26T14:18:54.358Z",
   "news": [
+    {
+      "title": "Chizu Kamikō's Seijo Mellia to Sennen Ōkoku no Kishi Manga Ends",
+      "description": "Series about girl who cannot use magic debuted in 2021",
+      "fullDescription": "Series about girl who cannot use magic debuted in 2021",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-26/chizu-kamiko-seijo-mellia-to-sennen-okoku-no-kishi-manga-ends/.240200",
+      "pubDate": "Sat, 26 Sep 2026 09:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240200/saint-mellia.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.240200"
+    },
     {
       "title": "Future GPX Cyber Formula's New Anime Short Reveals Cast, Staff, Screening on February 19",
       "description": "Short will screen alongside new HD remastered \"movie edition\" of Future GPX Cyber Formula: Early Days Renewal compilation OVA",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.8/228352/fujimoto.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242190"
-    },
-    {
-      "title": "That Time I Got Reincarnated as a Slime Season 4 Anime Returns for 3rd Part in July 2027, Clayman's Revenge Spinoff Anime Debuts in April",
-      "description": "Wataru Kajika's spinoff manga about Clayman debuted in April 2022",
-      "fullDescription": "Wataru Kajika's spinoff manga about Clayman debuted in April 2022",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-25/that-time-i-got-reincarnated-as-a-slime-season-4-anime-returns-for-3rd-part-in-july-2027-clayman-/.242181",
-      "pubDate": "Fri, 25 Sep 2026 10:30:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242181/revenge-visual-sm.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242181"
     }
   ],
   "total": 15
