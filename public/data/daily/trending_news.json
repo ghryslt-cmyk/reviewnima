@@ -1,7 +1,18 @@
 {
-  "version": 1790532878073,
-  "fetchedAt": "2026-09-27T18:14:38.073Z",
+  "version": 1790544438973,
+  "fetchedAt": "2026-09-27T21:27:18.973Z",
   "news": [
+    {
+      "title": "'Destroy All Humans. They Can't Be Regenerated. A Magic: The Gathering Manga' Gets Miniseries in October",
+      "description": "Original series based on card game ended in April 2025",
+      "fullDescription": "Original series based on card game ended in April 2025",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-27/destroy-all-humans-they-cant-be-regenerated-a-magic-the-gathering-manga-gets-miniseries-in-october/.242220",
+      "pubDate": "Sun, 27 Sep 2026 14:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.9/242220/hteijnhbgaa0ln6.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242220"
+    },
     {
       "title": "Akaza Samamiya's Mr. Mallow Blue Side Story Manga Ends in Next Chapter",
       "description": "Side story debuted in January",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241725/overgeared.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242208"
-    },
-    {
-      "title": "Chizu Kamikō's Seijo Mellia to Sennen Ōkoku no Kishi Manga Ends",
-      "description": "Series about girl who cannot use magic debuted in 2021",
-      "fullDescription": "Series about girl who cannot use magic debuted in 2021",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-26/chizu-kamiko-seijo-mellia-to-sennen-okoku-no-kishi-manga-ends/.240200",
-      "pubDate": "Sat, 26 Sep 2026 09:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240200/saint-mellia.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.240200"
     }
   ],
   "total": 15
