@@ -1,7 +1,18 @@
 {
-  "version": 1790473906803,
-  "fetchedAt": "2026-09-27T01:51:46.803Z",
+  "version": 1790495879608,
+  "fetchedAt": "2026-09-27T07:57:59.608Z",
   "news": [
+    {
+      "title": "Space Battleship Yamato Film Director Toshio Masuda Dies at 98",
+      "description": "Be Forever Yamato co-director, scriptwriter also co-directed Japanese side of Tora! Tora! Tora! war film",
+      "fullDescription": "<cite>Be Forever Yamato</cite> co-director, scriptwriter also co-directed Japanese side of <cite>Tora! Tora! Tora!</cite> war film",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-27/space-battleship-yamato-film-director-toshio-masuda-dies-at-98/.242231",
+      "pubDate": "Sun, 27 Sep 2026 02:08:50 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242231"
+    },
     {
       "title": "Gantz Creator Hiroya Oku Confirms He Drew Thunder 3 Manga Under Pen Name Yuki Ikeda",
       "description": "Series ended on June 5",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1790356815-a71a1ec15759b985b7b5b73f2b1ab349.jpeg",
       "guid": "https://myanimelist.net/news/74759332?_location=rss"
-    },
-    {
-      "title": "&#039;Kore Kaite Shine&#039; Gets Second Season",
-      "description": "The 12th and final episode of Kore Kaite Shine (Draw This, Then Die!) ended with an announcement on Saturday that a second season is in production. The official website also revealed an announcement visual (pictured right). Produced by Shin-Ei Animation, the television anime adapting Minoru Toyoda&#...",
-      "fullDescription": "The 12th and final episode of Kore Kaite Shine (Draw This, Then Die!) ended with an announcement on Saturday that a second season is in production. The official website also revealed an announcement visual (pictured right). Produced by Shin-Ei Animation, the television anime adapting Minoru Toyoda&#039;s comedy drama manga began airing on July 3. Crunchyroll simulcasted the anime in English subtitles and dubs. Toyoda began serializing the manga in Gessan magazine in November 2021. Shogakukan pub...",
-      "link": "https://myanimelist.net/news/74759213?_location=rss",
-      "pubDate": "Fri, 25 Sep 2026 09:47:16 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1790354366-394098f17d9a001428c3df5afa73b276.jpeg",
-      "guid": "https://myanimelist.net/news/74759213?_location=rss"
     }
   ],
   "total": 15
