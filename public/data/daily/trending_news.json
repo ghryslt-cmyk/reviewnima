@@ -1,7 +1,29 @@
 {
-  "version": 1790681504839,
-  "fetchedAt": "2026-09-29T11:31:44.839Z",
+  "version": 1790701362238,
+  "fetchedAt": "2026-09-29T17:02:42.238Z",
   "news": [
+    {
+      "title": "The Shy Snow Woman And The Cursed Ring Anime Gets English Dub",
+      "description": "OceanVeil debuts dub starring Jordan Woollen, Leah Booth, CottontailVA on October 4",
+      "fullDescription": "OceanVeil debuts dub starring Jordan Woollen, Leah Booth, CottontailVA on October 4",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-29/the-shy-snow-woman-and-the-cursed-ring-anime-gets-english-dub/.242311",
+      "pubDate": "Tue, 29 Sep 2026 12:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241386/shy-snow-woman-visual.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242311"
+    },
+    {
+      "title": "A/V Post-Production Company Salami Studios Closes",
+      "description": "Salami Studios worked on recording for Cyberpunk 2077: Edgerunners 2 anime",
+      "fullDescription": "Salami Studios worked on recording for <cite>Cyberpunk 2077: Edgerunners 2</cite> anime",
+      "link": "https://www.animenewsnetwork.com/news/2026-09-29/a-v-post-production-company-salami-studios-closes/.242310",
+      "pubDate": "Tue, 29 Sep 2026 11:01:07 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242310/salami-studios.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242310"
+    },
     {
       "title": "Nia Liston: The Merciless Maiden Anime Adds 4 More Cast Members",
       "description": "Saeko Kamijō, Hitomi Ueda, Azusa Tadokoro, Ayaka Ōhashi join cast of October 6 series",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242279/cells-at-work.png.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242279"
-    },
-    {
-      "title": "Captain Tsubasa: Rising Sun Finals Manga Resumes Serialization in October",
-      "description": "Series entered hiatus after 100th chapter in May",
-      "fullDescription": "Series entered hiatus after 100th chapter in May",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-28/captain-tsubasa-rising-sun-finals-manga-resumes-serialization-in-october/.242277",
-      "pubDate": "Mon, 28 Sep 2026 15:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/237806/hjjo7csawaajhv.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242277"
-    },
-    {
-      "title": "Live-Action Street Fighter Film Previews Ken vs. Ryu Rivalry in New Trailer",
-      "description": "Film opens on October 16",
-      "fullDescription": "Film opens on October 16",
-      "link": "https://www.animenewsnetwork.com/news/2026-09-28/live-action-street-fighter-film-previews-ken-vs-ryu-rivalry-in-new-trailer/.242276",
-      "pubDate": "Mon, 28 Sep 2026 14:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/236466/street-fighter-poster.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242276"
     }
   ],
   "total": 15
