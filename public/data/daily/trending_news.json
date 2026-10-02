@@ -1,7 +1,29 @@
 {
-  "version": 1790885850985,
-  "fetchedAt": "2026-10-01T20:17:30.985Z",
+  "version": 1790899581587,
+  "fetchedAt": "2026-10-02T00:06:21.587Z",
   "news": [
+    {
+      "title": "Tapas to End Service in March 2027, Leaving Readers Without Access to Purchased Content",
+      "description": "Starting on October 1, users can no longer acquire additional Ink through app",
+      "fullDescription": "Starting on October 1, users can no longer acquire additional Ink through app",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-01/tapas-to-end-service-in-march-2027-leaving-readers-without-access-to-purchased-content/.242384",
+      "pubDate": "Thu, 01 Oct 2026 17:03:37 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242384/tapas.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242384"
+    },
+    {
+      "title": "'More Than a Married Couple, But Not Lovers' Manga Resumes from Hiatus",
+      "description": "Manga went on hiatus in March 2025",
+      "fullDescription": "Manga went on hiatus in March 2025",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-01/more-than-a-married-couple-but-not-lovers-manga-resumes-from-hiatus/.242391",
+      "pubDate": "Thu, 01 Oct 2026 16:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242391/more-than-a-married-couple-but-not-lovers-resumes.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242391"
+    },
     {
       "title": "Topo Gigio's Voice Actor Peppino Mazzullo Dies",
       "description": "Mazzullo voiced mouse character Topo Gigio in puppet appearances, 1988 anime",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242374/friend.png.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242374"
-    },
-    {
-      "title": "Shin Oishinbo TV Anime Streams Teaser Video",
-      "description": "New anime starring Yōhei Azakami as protagonist Shirō Yamaoka debuts next year",
-      "fullDescription": "New anime starring Yōhei Azakami as protagonist Shirō Yamaoka debuts next year",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-01/shin-oishinbo-tv-anime-streams-teaser-video/.242377",
-      "pubDate": "Thu, 01 Oct 2026 05:57:19 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/242137/oishinbo.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242377"
-    },
-    {
-      "title": "Netflix to Stream Dragon Ball Super: Beerus Anime",
-      "description": "Anime starts streaming in U.S. on October 17, in selected areas on October 14",
-      "fullDescription": "Anime starts streaming in U.S. on October 17, in selected areas on October 14",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-01/netflix-to-stream-dragon-ball-super-beerus-anime/.242369",
-      "pubDate": "Thu, 01 Oct 2026 05:17:05 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241278/dbsbe-surgekv-en.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242369"
     }
   ],
   "total": 15
