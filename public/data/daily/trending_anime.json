@@ -1,6 +1,6 @@
 {
-  "version": 1791226325344,
-  "fetchedAt": "2026-10-05T18:52:05.344Z",
+  "version": 1791247454310,
+  "fetchedAt": "2026-10-06T00:44:14.310Z",
   "anime": [
     {
       "id": 209219,
@@ -59,7 +59,7 @@
         "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b207191-MV0uJNxN7LNY.jpg",
         "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207191-MV0uJNxN7LNY.jpg"
       },
-      "bannerImage": null,
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207191-xYgpkCDnXc5m.jpg",
       "description": "<b>“Make me a love potion.”</b>\n<br><br>\nAnd with that single sentence, the Good Witch of the Lake’s secret crush on the dashing Sir Harij ends in heartbreak. Still, when he promises to help her gather the ingredients, Rose is thrilled at the chance to gaze upon a man she’d normally never get to interact with. She learns to brace her pounding heart for their usual stilted conversations…but what is she to do when he inexplicably shows up at her doorstep with bread and a jar of apple butter?\n<br><br>\n(Source: Yen Press)",
       "genres": [
         "Fantasy",
@@ -74,51 +74,6 @@
         "nodes": [
           {
             "name": "diomedéa"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 204011,
-      "title": {
-        "romaji": "PSYЯEN",
-        "english": "PSYREN",
-        "native": "PSYREN -サイレン-"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204011-j45RZoqYbdZK.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204011-j45RZoqYbdZK.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204011-j45RZoqYbdZK.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/204011-hBOwte9MzykA.jpg",
-      "description": "One day, high schooler Ageha Yoshina picks up a mysterious “red phone card” left behind in a public telephone booth.\nA few days later, his childhood friend and classmate, Sakurako Amamiya—who possessed the same card—suddenly vanishes without a trace. In search of her, Ageha finds himself drawn into the rumors surrounding a nationwide string of mysterious disappearances, said to be the work of a secret organization known only as “Psyren.”<br><br>\nWhen he accesses the group, a deadly game begins—one that will change his fate forever.\n<br><br>\n(Source: PSYЯEN Official Site)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Sci-Fi"
-      ],
-      "averageScore": null,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Satelight"
-          },
-          {
-            "name": "REMOW"
           }
         ]
       },
@@ -189,6 +144,51 @@
         "year": 2026,
         "month": 10,
         "day": 4
+      }
+    },
+    {
+      "id": 204011,
+      "title": {
+        "romaji": "PSYЯEN",
+        "english": "PSYREN",
+        "native": "PSYREN -サイレン-"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204011-j45RZoqYbdZK.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204011-j45RZoqYbdZK.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204011-j45RZoqYbdZK.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/204011-hBOwte9MzykA.jpg",
+      "description": "One day, high schooler Ageha Yoshina picks up a mysterious “red phone card” left behind in a public telephone booth.\nA few days later, his childhood friend and classmate, Sakurako Amamiya—who possessed the same card—suddenly vanishes without a trace. In search of her, Ageha finds himself drawn into the rumors surrounding a nationwide string of mysterious disappearances, said to be the work of a secret organization known only as “Psyren.”<br><br>\nWhen he accesses the group, a deadly game begins—one that will change his fate forever.\n<br><br>\n(Source: PSYЯEN Official Site)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Satelight"
+          },
+          {
+            "name": "REMOW"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 5
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
       }
     },
     {
@@ -266,6 +266,122 @@
       }
     },
     {
+      "id": 189046,
+      "title": {
+        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "english": "Re:ZERO -Starting Life in Another World- Season 4",
+        "native": "Re:ゼロから始める異世界生活 4th season"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
+      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
+      ],
+      "averageScore": 90,
+      "episodes": 19,
+      "status": "FINISHED",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "WHITE FOX"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "DAXEL"
+          },
+          {
+            "name": "Memory-Tech"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 30
+      }
+    },
+    {
+      "id": 97940,
+      "title": {
+        "romaji": "Black Clover",
+        "english": "Black Clover",
+        "native": "ブラッククローバー"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
+      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 79,
+      "episodes": 170,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2017,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Funimation"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Shueisha"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2017,
+        "month": 10,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2021,
+        "month": 3,
+        "day": 30
+      }
+    },
+    {
       "id": 212888,
       "title": {
         "romaji": "Tempal: Item no Chikara",
@@ -324,104 +440,6 @@
         "year": null,
         "month": null,
         "day": null
-      }
-    },
-    {
-      "id": 195604,
-      "title": {
-        "romaji": "Black Clover 2nd Season",
-        "english": "Black Clover Season 2",
-        "native": "ブラッククローバー 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
-      },
-      "bannerImage": null,
-      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 87,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 97940,
-      "title": {
-        "romaji": "Black Clover",
-        "english": "Black Clover",
-        "native": "ブラッククローバー"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
-      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 79,
-      "episodes": 170,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2017,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Funimation"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Shueisha"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2017,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2021,
-        "month": 3,
-        "day": 30
       }
     },
     {
@@ -489,87 +507,26 @@
       }
     },
     {
-      "id": 189046,
+      "id": 195604,
       "title": {
-        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-        "english": "Re:ZERO -Starting Life in Another World- Season 4",
-        "native": "Re:ゼロから始める異世界生活 4th season"
+        "romaji": "Black Clover 2nd Season",
+        "english": "Black Clover Season 2",
+        "native": "ブラッククローバー 第2期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
-      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "bannerImage": null,
+      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
         "Action",
         "Adventure",
-        "Drama",
-        "Fantasy",
-        "Psychological",
-        "Romance",
-        "Thriller"
-      ],
-      "averageScore": 90,
-      "episodes": 19,
-      "status": "FINISHED",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "WHITE FOX"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "DAXEL"
-          },
-          {
-            "name": "Memory-Tech"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 8
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 30
-      }
-    },
-    {
-      "id": 208025,
-      "title": {
-        "romaji": "Dark Summoner to Dekiteiru",
-        "english": "I'm Dating a Dark Summoner",
-        "native": "ダークサモナーとデキている"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx208025-JKvqWNr8rz8l.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx208025-JKvqWNr8rz8l.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208025-JKvqWNr8rz8l.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/208025-s7hcRQO7kwmH.jpg",
-      "description": "Amona’s a dark summoner with demonic powers. Roni’s a devout priest who’s way too uptight. By all rights, they should hate each other. Instead, they end up fast-tracking their enemies-to-lovers arc with a one-night stand that somehow insists on becoming a recurring event. Now they must hide their situationship from the rest of the party while denying their growing attraction to one another, all while dealing with an imp who’s far too invested in their love life.\n<br><br>\n(Source: HIDIVE)",
-      "genres": [
         "Comedy",
-        "Ecchi",
-        "Fantasy",
-        "Romance"
+        "Fantasy"
       ],
-      "averageScore": 66,
+      "averageScore": 87,
       "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
@@ -577,20 +534,14 @@
       "studios": {
         "nodes": [
           {
-            "name": "WWWave"
-          },
-          {
-            "name": "AtoriE"
-          },
-          {
-            "name": "Nyan Pollution-ω-"
+            "name": "Studio Pierrot"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 5
+        "day": 3
       },
       "endDate": {
         "year": null,
@@ -653,25 +604,24 @@
       }
     },
     {
-      "id": 189123,
+      "id": 195516,
       "title": {
-        "romaji": "Ao no Hako Season 2",
-        "english": "Blue Box Season 2",
-        "native": "アオのハコ Season２"
+        "romaji": "Kusuriya no Hitorigoto 3rd Season",
+        "english": "The Apothecary Diaries Season 3",
+        "native": "薬屋のひとりごと 第3期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189123-0secXELIhkIW.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189123-0secXELIhkIW.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189123-0secXELIhkIW.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189123-s2oirY2r1Svy.jpg",
-      "description": "The second season of <i>Ao no Hako</i>.\n",
+      "bannerImage": null,
+      "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n<br><br>\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n<br><br>\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n<br><br>\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n<br><br>\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n<br><br>\n(Source: Crunchyroll News)",
       "genres": [
-        "Romance",
-        "Slice of Life",
-        "Sports"
+        "Drama",
+        "Mystery"
       ],
-      "averageScore": 80,
+      "averageScore": 85,
       "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
@@ -679,17 +629,66 @@
       "studios": {
         "nodes": [
           {
-            "name": "UNLIMITED PRODUCE by TMS"
+            "name": "Toho"
           },
           {
-            "name": "Electric Circus"
+            "name": "OLM"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 4
+        "day": 2
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 208025,
+      "title": {
+        "romaji": "Dark Summoner to Dekiteiru",
+        "english": "I'm Dating a Dark Summoner",
+        "native": "ダークサモナーとデキている"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx208025-JKvqWNr8rz8l.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx208025-JKvqWNr8rz8l.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208025-JKvqWNr8rz8l.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/208025-s7hcRQO7kwmH.jpg",
+      "description": "Amona’s a dark summoner with demonic powers. Roni’s a devout priest who’s way too uptight. By all rights, they should hate each other. Instead, they end up fast-tracking their enemies-to-lovers arc with a one-night stand that somehow insists on becoming a recurring event. Now they must hide their situationship from the rest of the party while denying their growing attraction to one another, all while dealing with an imp who’s far too invested in their love life.\n<br><br>\n(Source: HIDIVE)",
+      "genres": [
+        "Comedy",
+        "Ecchi",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 66,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "WWWave"
+          },
+          {
+            "name": "AtoriE"
+          },
+          {
+            "name": "Nyan Pollution-ω-"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 5
       },
       "endDate": {
         "year": null,
@@ -771,24 +770,25 @@
       }
     },
     {
-      "id": 195516,
+      "id": 189123,
       "title": {
-        "romaji": "Kusuriya no Hitorigoto 3rd Season",
-        "english": "The Apothecary Diaries Season 3",
-        "native": "薬屋のひとりごと 第3期"
+        "romaji": "Ao no Hako Season 2",
+        "english": "Blue Box Season 2",
+        "native": "アオのハコ Season２"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189123-0secXELIhkIW.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189123-0secXELIhkIW.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189123-0secXELIhkIW.jpg"
       },
-      "bannerImage": null,
-      "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n<br><br>\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n<br><br>\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n<br><br>\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n<br><br>\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n<br><br>\n(Source: Crunchyroll News)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189123-s2oirY2r1Svy.jpg",
+      "description": "The second season of <i>Ao no Hako</i>.\n",
       "genres": [
-        "Drama",
-        "Mystery"
+        "Romance",
+        "Slice of Life",
+        "Sports"
       ],
-      "averageScore": 85,
+      "averageScore": 80,
       "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
@@ -796,17 +796,17 @@
       "studios": {
         "nodes": [
           {
-            "name": "Toho"
+            "name": "UNLIMITED PRODUCE by TMS"
           },
           {
-            "name": "OLM"
+            "name": "Electric Circus"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 2
+        "day": 4
       },
       "endDate": {
         "year": null,

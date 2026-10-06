@@ -1,7 +1,73 @@
 {
-  "version": 1791226324841,
-  "fetchedAt": "2026-10-05T18:52:04.841Z",
+  "version": 1791247451147,
+  "fetchedAt": "2026-10-06T00:44:11.147Z",
   "news": [
+    {
+      "title": "Hideaki Anno, Yutaka Izubuchi Co-Direct Yamato √2199 Film at I.G, Khara",
+      "description": "Production I.G founder Mitsuhisa Ishikawa also credited with planning with Anno",
+      "fullDescription": "Production I.G founder Mitsuhisa Ishikawa also credited with planning with Anno",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-05/hideaki-anno-yutaka-izubuchi-co-direct-yamato-2199-film-at-i.g-khara/.242524",
+      "pubDate": "Mon, 05 Oct 2026 19:51:08 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242524/hero-1600.webp",
+      "guid": "https://www.animenewsnetwork.com/cms/.242524"
+    },
+    {
+      "title": "The New Denpa Men Game Ends Service on December 7",
+      "description": "Free-to-play game launched in July 2024",
+      "fullDescription": "Free-to-play game launched in July 2024",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-05/the-new-denpa-men-game-ends-service-on-december-7/.242516",
+      "pubDate": "Mon, 05 Oct 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242516/new-denpa-men.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242516"
+    },
+    {
+      "title": "Hunter X Hunter Manga Creator Yoshihiro Togashi to Limit Work Due to Physical/Mental Health Issues",
+      "description": "Togashi to decline future work requests with deadlines in order to focus on his own manuscripts",
+      "fullDescription": "Togashi to decline future work requests with deadlines in order to focus on his own manuscripts",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-05/hunter-x-hunter-manga-creator-yoshihiro-togashi-to-limit-work-due-to-physical-mental-health-issues/.242517",
+      "pubDate": "Mon, 05 Oct 2026 16:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239123/hunter.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242517"
+    },
+    {
+      "title": "North American Anime & Manga Releases for October",
+      "description": "Here are the North American anime, manga, and light novel releases for October. Week 1: October 6 - 12 Anime Releases Devil Survivor 2 The Animation Blu-ray Manga Releases Boku ga Watashi ni Naru Tame ni (My Journey to Her) Boruto: Two Blue Vortex Vol.6 Dandadan Vol.21 Dekiru Neko wa Kyou mo Yuuutsu...",
+      "fullDescription": "Here are the North American anime, manga, and light novel releases for October. Week 1: October 6 - 12 Anime Releases Devil Survivor 2 The Animation Blu-ray Manga Releases Boku ga Watashi ni Naru Tame ni (My Journey to Her) Boruto: Two Blue Vortex Vol.6 Dandadan Vol.21 Dekiru Neko wa Kyou mo Yuuutsu (The Masterful Cat Is Depressed Again Today) Vol.12 Dororo to Hyakkimaru Den (The Legend of Dororo and Hyakkimaru) Vol.12 Endan Yobanashi (Grim Night Tales) Vol.3 Fushigi Yuugi: Byakko Senki (Fushigi...",
+      "link": "https://myanimelist.net/news/74794281?_location=rss",
+      "pubDate": "Mon, 05 Oct 2026 12:41:35 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791228470-cac25ed644e5415d259ec43e47b70c9e.jpeg",
+      "guid": "https://myanimelist.net/news/74794281?_location=rss"
+    },
+    {
+      "title": "OceanVeil Streams Magical Girl Raising Project restart Anime",
+      "description": "Series debuted on Monday",
+      "fullDescription": "Series debuted on Monday",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-05/oceanveil-streams-magical-girl-raising-project-restart-anime/.242518",
+      "pubDate": "Mon, 05 Oct 2026 15:33:06 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/230125/restart.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242518"
+    },
+    {
+      "title": "Young Magazine USA Special Gets 2nd Issue",
+      "description": "2nd issue looks for more Japanese creators who want their story published overseas",
+      "fullDescription": "2nd issue looks for more Japanese creators who want their story published overseas",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-05/young-magazine-usa-special-gets-2nd-issue/.242512",
+      "pubDate": "Mon, 05 Oct 2026 15:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/231244/young-magazine-magazine-front-cover.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242512"
+    },
     {
       "title": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life Anime Gets Same-Day English Dub",
       "description": "Justin Briner, Hollis Beck, Lacey Deline, more star in dub on Tuesday",
@@ -100,72 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242504/psikyo.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242504"
-    },
-    {
-      "title": "Macross 7, Synduality: Noir Animator Kenichirō Katsura Dies at 59",
-      "description": "Katsura died on September 30 while recovering from an illness",
-      "fullDescription": "Katsura died on September 30 while recovering from an illness",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-05/macross-7-synduality-noir-animator-kenichiro-katsura-dies-at-59/.242495",
-      "pubDate": "Mon, 05 Oct 2026 04:37:20 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/232292/gintama.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242495"
-    },
-    {
-      "title": "Manga &#039;Hirayasumi&#039; Ends in Two Chapters",
-      "description": "The official X (formerly Twitter) account for author Keigo Shinzou announced on Monday that the Hirayasumi manga will end in two more chapters. Shinzou began drawing the manga in Big Comic Spirits in April 2021. Shogakukan published the tenth volume on April 30. VIZ Media licensed the manga in Engli...",
-      "fullDescription": "The official X (formerly Twitter) account for author Keigo Shinzou announced on Monday that the Hirayasumi manga will end in two more chapters. Shinzou began drawing the manga in Big Comic Spirits in April 2021. Shogakukan published the tenth volume on April 30. VIZ Media licensed the manga in English in October 2023, with the latest ninth volume released on May 19. Hirayasumi was nominated for the 15th and 17th Manga Taisho. The manga also placed among the top 20 titles in the male readers cate...",
-      "link": "https://myanimelist.net/news/74792787?_location=rss",
-      "pubDate": "Mon, 05 Oct 2026 00:17:43 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791184605-3466c0515f79f06bfc96eec739fff3c0.jpeg",
-      "guid": "https://myanimelist.net/news/74792787?_location=rss"
-    },
-    {
-      "title": "Mikito Chinen's Horror Novel Gets Manga Adaptation",
-      "description": "Etsuran Genkin Ryōki Satsujin-han no Seishin Kantei Hōkoku-sho manga launched on September 25",
-      "fullDescription": "<cite>Etsuran Genkin Ryōki Satsujin-han no Seishin Kantei Hōkoku-sho</cite> manga launched on September 25",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-05/mikito-chinen-horror-novel-gets-manga-adaptation/.242477",
-      "pubDate": "Mon, 05 Oct 2026 02:44:56 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242477/bizarre-murders.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242477"
-    },
-    {
-      "title": "Yuki Kure's Ayame-san Chi no Geshuku-nin Manga Ends in Next Chapter",
-      "description": "Manga launched in June 2025",
-      "fullDescription": "Manga launched in June 2025",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-05/yuki-kure-ayame-san-chi-no-geshuku-nin-manga-ends-in-next-chapter/.242485",
-      "pubDate": "Mon, 05 Oct 2026 02:35:15 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242485/ayamesan.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242485"
-    },
-    {
-      "title": "Chanta Launches Noro-Noro Puku-Puku Manga",
-      "description": "Sachi's Records: Sachi's Book of Revelation creator's comedy of shrine maiden with black cat possessing her head",
-      "fullDescription": "<i>Sachi's Records: Sachi's Book of Revelation</i> creator's comedy of shrine maiden with black cat possessing her head",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-05/chanta-launches-noro-noro-puku-puku-manga/.242483",
-      "pubDate": "Mon, 05 Oct 2026 00:04:17 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242483/noronoro.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242483"
-    },
-    {
-      "title": "Hirayasumi Manga to End in 2 More Chapters",
-      "description": "Manga launched in 2021, inspired live-action series in 2025, upcoming TV anime in January 2027",
-      "fullDescription": "Manga launched in 2021, inspired live-action series in 2025, upcoming TV anime in January 2027",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-04/hirayasumi-manga-to-end-in-2-more-chapters/.242491",
-      "pubDate": "Sun, 04 Oct 2026 23:56:59 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242491/hirayasumi.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242491"
     }
   ],
   "total": 15
