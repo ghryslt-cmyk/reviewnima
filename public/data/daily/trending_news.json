@@ -1,7 +1,40 @@
 {
-  "version": 1791315321015,
-  "fetchedAt": "2026-10-06T19:35:21.015Z",
+  "version": 1791328798834,
+  "fetchedAt": "2026-10-06T23:19:58.834Z",
   "news": [
+    {
+      "title": "Toshiaki Yamada's Tokyo Duel Manga Ends",
+      "description": "Action manga launched in 2020",
+      "fullDescription": "Action manga launched in 2020",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-06/toshiaki-yamada-tokyo-duel-manga-ends/.242534",
+      "pubDate": "Tue, 06 Oct 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242534/tokyo.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242534"
+    },
+    {
+      "title": "Monster Hunter Rise Game Sells 20 Million Copies Worldwide",
+      "description": "Game launched in March 2021",
+      "fullDescription": "Game launched in March 2021",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-06/monster-hunter-rise-game-sells-20-million-copies-worldwide/.242547",
+      "pubDate": "Tue, 06 Oct 2026 16:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242547/monster-hunter-rise-20-mil.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242547"
+    },
+    {
+      "title": "Crunchyroll Streams New Battle Spirits TV Anime",
+      "description": "Anime premiered on Tuesday",
+      "fullDescription": "Anime premiered on Tuesday",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-06/crunchyroll-streams-new-battle-spirits-tv-anime/.242553",
+      "pubDate": "Tue, 06 Oct 2026 15:30:42 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240969/battle-spirits.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242553"
+    },
     {
       "title": "K Manga Adds Sen Sen Senki Manga",
       "description": "A-10, Ryūga Kawasaki debuted dark fantasy manga on June 10",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791250260-dbc9415d1dfb458d66081f1e96b73795.jpeg",
       "guid": "https://myanimelist.net/news/74794971?_location=rss"
-    },
-    {
-      "title": "Hideaki Anno, Yutaka Izubuchi Co-Direct Yamato √2199 Film at I.G, Khara",
-      "description": "Production I.G founder Mitsuhisa Ishikawa also credited with planning with Anno",
-      "fullDescription": "Production I.G founder Mitsuhisa Ishikawa also credited with planning with Anno",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-05/hideaki-anno-yutaka-izubuchi-co-direct-yamato-2199-film-at-i.g-khara/.242524",
-      "pubDate": "Mon, 05 Oct 2026 19:51:08 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242524/hero-1600.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.242524"
-    },
-    {
-      "title": "The New Denpa Men Game Ends Service on December 7",
-      "description": "Free-to-play game launched in July 2024",
-      "fullDescription": "Free-to-play game launched in July 2024",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-05/the-new-denpa-men-game-ends-service-on-december-7/.242516",
-      "pubDate": "Mon, 05 Oct 2026 17:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242516/new-denpa-men.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242516"
-    },
-    {
-      "title": "Hunter X Hunter Manga Creator Yoshihiro Togashi to Limit Work Due to Physical/Mental Health Issues",
-      "description": "Togashi to decline future work requests with deadlines in order to focus on his own manuscripts",
-      "fullDescription": "Togashi to decline future work requests with deadlines in order to focus on his own manuscripts",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-05/hunter-x-hunter-manga-creator-yoshihiro-togashi-to-limit-work-due-to-physical-mental-health-issues/.242517",
-      "pubDate": "Mon, 05 Oct 2026 16:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239123/hunter.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242517"
     }
   ],
   "total": 15
