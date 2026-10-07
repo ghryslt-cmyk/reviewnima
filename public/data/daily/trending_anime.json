@@ -1,24 +1,69 @@
 {
-  "version": 1791391884128,
-  "fetchedAt": "2026-10-07T16:51:24.128Z",
+  "version": 1791410064580,
+  "fetchedAt": "2026-10-07T21:54:24.580Z",
   "anime": [
     {
-      "id": 211778,
+      "id": 159042,
       "title": {
-        "romaji": "Sekai Saikyou no Majo, Hajimemashita",
-        "english": "The World's Strongest Witch",
-        "native": "世界最強の魔女、始めました"
+        "romaji": "Tensei Shitara Ken Deshita 2nd Season",
+        "english": "Reincarnated as a Sword Season 2",
+        "native": "転生したら剣でした 第2期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211778-0MXK5HqVFBYH.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-0MXK5HqVFBYH.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159042-GGFwlDskc5vR.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159042-GGFwlDskc5vR.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159042-GGFwlDskc5vR.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/211778-ZbXEhqfFkj62.jpg",
-      "description": "After using her SSS-Rank skill, Internet, to crush her former family’s ambitions, Lorna is free to travel the world. Her next stop is the port town of Aquas, where she hopes to see the sights and chow down on some fresh seafood. But when she arrives, the place is on the brink of destruction thanks to a certain Weekly Quest… Good thing Lorna has the gods on her side!\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/159042-X0mqyaUFBkms.jpg",
+      "description": "The second season of <i>Tensei Shitara Ken Deshita</i>.<br><br>\n<i>Note: Each episode was streamed one week in advance of the TV broadcast starting on October 1, 2026 on Abema. Regular broadcasting began on October 8, 2026.</i>",
       "genres": [
         "Action",
-        "Comedy",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 74,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "C2C"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 1
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 172192,
+      "title": {
+        "romaji": "Kikansha no Mahou wa Tokubetsu desu 2nd Season",
+        "english": "A Returner's Magic Should be Special Season 2",
+        "native": "帰還者の魔法は特別です 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx172192-W7P5xEUaxF3y.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx172192-W7P5xEUaxF3y.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172192-W7P5xEUaxF3y.jpg"
+      },
+      "bannerImage": null,
+      "description": "In a land dominated by the formidable Shadow Worlds, most of humanity has been destroyed. To rescue their planet from impending doom, six brave heroes fight a perilous battle…and fail. But there’s a glimpse of hope when Desir, one of the last mages, is suddenly sent back in time 13 years! Now armed with knowledge of the grim future, can he alter the course of history and save the world?\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
         "Fantasy"
       ],
       "averageScore": null,
@@ -29,20 +74,17 @@
       "studios": {
         "nodes": [
           {
-            "name": "Bridge"
+            "name": "Aniplex"
           },
           {
-            "name": "Aisle"
-          },
-          {
-            "name": "Pony Canyon"
+            "name": "Arvo Animation"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 7
+        "day": 8
       },
       "endDate": {
         "year": null,
@@ -186,153 +228,6 @@
       }
     },
     {
-      "id": 152677,
-      "title": {
-        "romaji": "Tantei wa mou, Shindeiru. Season 2",
-        "english": "The Detective Is Already Dead Season 2",
-        "native": "探偵はもう、死んでいる。Season2"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx152677-gtJbgjE94lCN.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152677-gtJbgjE94lCN.png"
-      },
-      "bannerImage": null,
-      "description": "The second season of <i>Tantei wa mou, Shindeiru.</i>",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Mystery",
-        "Romance",
-        "Supernatural"
-      ],
-      "averageScore": null,
-      "episodes": 13,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "ENGI"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 7
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 97940,
-      "title": {
-        "romaji": "Black Clover",
-        "english": "Black Clover",
-        "native": "ブラッククローバー"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
-      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 79,
-      "episodes": 170,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2017,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Funimation"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Shueisha"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2017,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2021,
-        "month": 3,
-        "day": 30
-      }
-    },
-    {
-      "id": 176314,
-      "title": {
-        "romaji": "Sasaki to Pii-chan Season 2",
-        "english": "Sasaki and Peeps Season 2",
-        "native": "佐々木とピーちゃん シーズン２"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176314-lpvca6vjmkeO.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176314-lpvca6vjmkeO.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176314-nj2hmqbGQ9HJ.jpg",
-      "description": "The second season of <i>Sasaki to Pii-chan</i>.",
-      "genres": [
-        "Comedy",
-        "Fantasy",
-        "Mahou Shoujo"
-      ],
-      "averageScore": null,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "SILVER LINK."
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 7
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 189046,
       "title": {
         "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
@@ -391,6 +286,109 @@
         "year": 2026,
         "month": 9,
         "day": 30
+      }
+    },
+    {
+      "id": 97940,
+      "title": {
+        "romaji": "Black Clover",
+        "english": "Black Clover",
+        "native": "ブラッククローバー"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
+      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 79,
+      "episodes": 170,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2017,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Funimation"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Shueisha"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2017,
+        "month": 10,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2021,
+        "month": 3,
+        "day": 30
+      }
+    },
+    {
+      "id": 211778,
+      "title": {
+        "romaji": "Sekai Saikyou no Majo, Hajimemashita",
+        "english": "The World's Strongest Witch",
+        "native": "世界最強の魔女、始めました"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211778-0MXK5HqVFBYH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-0MXK5HqVFBYH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/211778-ZbXEhqfFkj62.jpg",
+      "description": "After using her SSS-Rank skill, Internet, to crush her former family’s ambitions, Lorna is free to travel the world. Her next stop is the port town of Aquas, where she hopes to see the sights and chow down on some fresh seafood. But when she arrives, the place is on the brink of destruction thanks to a certain Weekly Quest… Good thing Lorna has the gods on her side!\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Bridge"
+          },
+          {
+            "name": "Aisle"
+          },
+          {
+            "name": "Pony Canyon"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
       }
     },
     {
@@ -472,6 +470,7 @@
       "bannerImage": null,
       "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
       "genres": [
+        "Action",
         "Fantasy"
       ],
       "averageScore": 73,
@@ -520,114 +519,6 @@
         "year": 2026,
         "month": 10,
         "day": 6
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 159042,
-      "title": {
-        "romaji": "Tensei Shitara Ken Deshita 2nd Season",
-        "english": "Reincarnated as a Sword Season 2",
-        "native": "転生したら剣でした 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159042-GGFwlDskc5vR.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159042-GGFwlDskc5vR.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159042-GGFwlDskc5vR.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/159042-X0mqyaUFBkms.jpg",
-      "description": "The second season of <i>Tensei Shitara Ken Deshita</i>.<br><br>\n<i>Note: Each episode was streamed one week in advance of the TV broadcast starting on October 1, 2026 on Abema. Regular broadcasting began on October 8, 2026.</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 74,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "NBCUniversal Entertainment Japan"
-          },
-          {
-            "name": "C2C"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 1
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 209219,
-      "title": {
-        "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
-        "english": "So What's Wrong with Getting Reborn as a Goblin?",
-        "native": "転生ゴブリンだけど質問ある？"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg"
-      },
-      "bannerImage": null,
-      "description": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever!\n<br><br>\n(Source: Yen Press)<br><br>\n\n<i>Note: Tensei Goblin Dakedo Shitsumon Aru? is streaming 1 week in advance of the TV broadcast on ABEMA and Prime Video beginning with episode 2 on October 5th, 2026</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 66,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": " BAKKKA"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "INCS toenter"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "Bushiroad Move"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 5
       },
       "endDate": {
         "year": null,
@@ -760,56 +651,43 @@
       }
     },
     {
-      "id": 195604,
+      "id": 176314,
       "title": {
-        "romaji": "Black Clover 2nd Season",
-        "english": "Black Clover Season 2",
-        "native": "ブラッククローバー 第2期"
+        "romaji": "Sasaki to Pii-chan Season 2",
+        "english": "Sasaki and Peeps Season 2",
+        "native": "佐々木とピーちゃん シーズン２"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176314-lpvca6vjmkeO.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176314-lpvca6vjmkeO.jpg"
       },
-      "bannerImage": null,
-      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176314-nj2hmqbGQ9HJ.jpg",
+      "description": "The second season of <i>Sasaki to Pii-chan</i>.",
       "genres": [
-        "Action",
-        "Adventure",
         "Comedy",
-        "Fantasy"
+        "Fantasy",
+        "Mahou Shoujo"
       ],
-      "averageScore": 87,
-      "episodes": null,
+      "averageScore": null,
+      "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Studio Pierrot"
+            "name": "KADOKAWA"
           },
           {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Avex Pictures"
-          },
-          {
-            "name": "Bandai Namco Entertainment"
+            "name": "SILVER LINK."
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 3
+        "day": 7
       },
       "endDate": {
         "year": null,
@@ -818,64 +696,166 @@
       }
     },
     {
-      "id": 212888,
+      "id": 178868,
       "title": {
-        "romaji": "Tempal: Item no Chikara",
-        "english": "Overgeared",
-        "native": "テムパル～アイテムの力～"
+        "romaji": "Magic Knight Rayearth (2026)",
+        "english": "Magic Knight Rayearth (2026)",
+        "native": "魔法騎士レイアース (2026)"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178868-mfp0HIHNJNAm.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178868-mfp0HIHNJNAm.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178868-mfp0HIHNJNAm.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
-      "description": "Sin Yeong-U (a.k.a. Grid), an unlucky man in life and a low-level player in the popular VR game “Satisfy,” finds a powerful item that earns him a rare legendary class title: “Pagma’s Successor.” He’s now a skilled blacksmith who can forge unique weapons and equip the game’s most powerful gear. Grid resolves to use his new abilities to achieve fame and fortune, but as his very existence begins to stir up trouble in Satisfy, he realizes that life as a legend may be more than he bargained for….<br><br>\n\n(Source: Tapas, edited)<br><br>\n\n<i>Note: Tempal: Item no Chikara is streaming a week in advance of the TV broadcast on Prime Video and Crunchyroll beginning September 27th, 2026. Regular broadcasting began on October 2nd, 2026.</i>",
+      "bannerImage": null,
+      "description": "Hikaru Shidou, Umi Ryuuzaki, and Fuu Hououji aren't from Cephiro. While on a school field trip to the Tokyo Tower, the three girls' minds are on anything but different worlds filled with magic and wonder. That is, until Princess Emeraude, the Pillar of Cephiro, cries out for the Magic Knights to save her world--and that just happens to be those three!\n<br><br>\n\n(Source: Crunchyroll)",
       "genres": [
-        "Action",
         "Adventure",
-        "Comedy",
-        "Fantasy"
+        "Fantasy",
+        "Mahou Shoujo",
+        "Mecha"
       ],
-      "averageScore": 75,
-      "episodes": 12,
+      "averageScore": null,
+      "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "J.C.STAFF"
+            "name": "E&H Production"
           },
           {
-            "name": "Pony Canyon"
+            "name": "Kodansha"
           },
           {
-            "name": "Crunchyroll"
+            "name": "TMS Entertainment"
           },
           {
-            "name": "REDICE STUDIO"
-          },
-          {
-            "name": "Kakao piccoma"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "EGG FIRM"
+            "name": "TV Asahi"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 9,
-        "day": 27
+        "month": 10,
+        "day": 7
       },
       "endDate": {
         "year": null,
         "month": null,
         "day": null
+      }
+    },
+    {
+      "id": 210031,
+      "title": {
+        "romaji": "Seihantai na Kimi to Boku 2nd Season",
+        "english": "You and I Are Polar Opposites Season 2",
+        "native": "正反対な君と僕 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210031-TppgcHZh46LY.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210031-TppgcHZh46LY.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210031-TppgcHZh46LY.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210031-M4bt0rAmWk5Q.jpg",
+      "description": "Six months have passed since the polar opposite classmates Miyu Suzuki and Yuusuke Tani started dating. Through spending time together along with their friends from school, the two have been happier than ever. As the year nears its end, the new couple plans to celebrate Christmas and the New Year together, making memories for years to come.<br>\n<br>\nMeanwhile, Miyu and Yuusuke's friends Shuuji Taira and Kentarou Yamada are puzzled by their own situations. Due to his bad experiences in middle school, Taira still overthinks everything around him, especially after his classmate Shino Azuma began giving him more attention. Simultaneously, the usually energetic and outspoken Yamada finds it difficult to find the perfect time to confess his feelings to his shy schoolmate Natsumi Nishi. Despite everyone's differences, they continue enjoying their adolescence together and find their own ways to turn the winter break into a cherished memory.<br>\n<br>\n(Source: MAL Rewrite)",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Slice of Life"
+      ],
+      "averageScore": 84,
+      "episodes": 13,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Lapin Track"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "AbemaTV"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 4
+      }
+    },
+    {
+      "id": 195600,
+      "title": {
+        "romaji": "Yomi no Tsugai",
+        "english": "Daemons of the Shadow Realm",
+        "native": "黄泉のツガイ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
+      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy",
+        "Supernatural"
+      ],
+      "averageScore": 78,
+      "episodes": 24,
+      "status": "FINISHED",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "bones film"
+          },
+          {
+            "name": "bones"
+          },
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "Square Enix"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 19
       }
     }
   ]
