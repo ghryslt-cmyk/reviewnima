@@ -1,7 +1,55 @@
 {
-  "version": 1791364890456,
-  "fetchedAt": "2026-10-07T09:21:30.456Z",
+  "version": 1791391884128,
+  "fetchedAt": "2026-10-07T16:51:24.128Z",
   "anime": [
+    {
+      "id": 211778,
+      "title": {
+        "romaji": "Sekai Saikyou no Majo, Hajimemashita",
+        "english": "The World's Strongest Witch",
+        "native": "世界最強の魔女、始めました"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211778-0MXK5HqVFBYH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-0MXK5HqVFBYH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/211778-ZbXEhqfFkj62.jpg",
+      "description": "After using her SSS-Rank skill, Internet, to crush her former family’s ambitions, Lorna is free to travel the world. Her next stop is the port town of Aquas, where she hopes to see the sights and chow down on some fresh seafood. But when she arrives, the place is on the brink of destruction thanks to a certain Weekly Quest… Good thing Lorna has the gods on her side!\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Bridge"
+          },
+          {
+            "name": "Aisle"
+          },
+          {
+            "name": "Pony Canyon"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
     {
       "id": 207329,
       "title": {
@@ -138,68 +186,45 @@
       }
     },
     {
-      "id": 206949,
+      "id": 152677,
       "title": {
-        "romaji": "Kyouran Reijou Nia Liston",
-        "english": "Nia Liston: The Merciless Maiden",
-        "native": "凶乱令嬢ニア・リストン"
+        "romaji": "Tantei wa mou, Shindeiru. Season 2",
+        "english": "The Detective Is Already Dead Season 2",
+        "native": "探偵はもう、死んでいる。Season2"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx152677-gtJbgjE94lCN.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152677-gtJbgjE94lCN.png"
       },
       "bannerImage": null,
-      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
+      "description": "The second season of <i>Tantei wa mou, Shindeiru.</i>",
       "genres": [
-        "Fantasy"
+        "Comedy",
+        "Drama",
+        "Mystery",
+        "Romance",
+        "Supernatural"
       ],
-      "averageScore": 73,
-      "episodes": 25,
+      "averageScore": null,
+      "episodes": 13,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "KONAMI animation"
+            "name": "KADOKAWA"
           },
           {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "Konami Digital Entertainment"
-          },
-          {
-            "name": "VAP"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "Hobby Japan"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "TO Books"
+            "name": "ENGI"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 6
+        "day": 7
       },
       "endDate": {
         "year": null,
@@ -263,246 +288,48 @@
       }
     },
     {
-      "id": 209502,
+      "id": 176314,
       "title": {
-        "romaji": "Shiotaiou no Satou-san ga Ore ni dake Amai",
-        "english": "The Cold Sato-san is Only Sweet to Me",
-        "native": "塩対応の佐藤さんが俺にだけ甘い"
+        "romaji": "Sasaki to Pii-chan Season 2",
+        "english": "Sasaki and Peeps Season 2",
+        "native": "佐々木とピーちゃん シーズン２"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209502-C81oN8M4Smlo.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209502-C81oN8M4Smlo.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209502-C81oN8M4Smlo.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176314-lpvca6vjmkeO.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176314-lpvca6vjmkeO.jpg"
       },
-      "bannerImage": null,
-      "description": "Sato-san is the unattainable flower of the class. She is always cold and curt with classmates, but only I know she's actually very cute when she smiles, even if she's not much of a photographer.\n<br><br>\nOshio-kun is friendly and lively, but only I know he works at his family's cafe after school. He does a great job with the cafe's SNS account, and his mischievous smile makes my heart skip a beat!\n<br><br>\nInnocent and sweet, but sometimes frustrating, this is a 120%-pure fluffy story about two people falling in love for the first time.",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176314-nj2hmqbGQ9HJ.jpg",
+      "description": "The second season of <i>Sasaki to Pii-chan</i>.",
       "genres": [
         "Comedy",
-        "Romance"
-      ],
-      "averageScore": 67,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Tezuka Productions"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Good Smile Company"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "arma bianca"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "81 Produce"
-          },
-          {
-            "name": "WOWOW"
-          },
-          {
-            "name": "BS-TBS"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 6
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 212888,
-      "title": {
-        "romaji": "Tempal: Item no Chikara",
-        "english": "Overgeared",
-        "native": "テムパル～アイテムの力～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
-      "description": "Sin Yeong-U (a.k.a. Grid), an unlucky man in life and a low-level player in the popular VR game “Satisfy,” finds a powerful item that earns him a rare legendary class title: “Pagma’s Successor.” He’s now a skilled blacksmith who can forge unique weapons and equip the game’s most powerful gear. Grid resolves to use his new abilities to achieve fame and fortune, but as his very existence begins to stir up trouble in Satisfy, he realizes that life as a legend may be more than he bargained for….<br><br>\n\n(Source: Tapas, edited)<br><br>\n\n<i>Note: Tempal: Item no Chikara is streaming a week in advance of the TV broadcast on Prime Video and Crunchyroll beginning September 27th, 2026. Regular broadcasting began on October 2nd, 2026.</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 75,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "J.C.STAFF"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "REDICE STUDIO"
-          },
-          {
-            "name": "Kakao piccoma"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 209219,
-      "title": {
-        "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
-        "english": "So What's Wrong with Getting Reborn as a Goblin?",
-        "native": "転生ゴブリンだけど質問ある？"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg"
-      },
-      "bannerImage": null,
-      "description": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever!\n<br><br>\n(Source: Yen Press)<br><br>\n\n<i>Note: Tensei Goblin Dakedo Shitsumon Aru? is streaming 1 week in advance of the TV broadcast on ABEMA and Prime Video beginning with episode 2 on October 5th, 2026</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
         "Fantasy",
-        "Romance"
+        "Mahou Shoujo"
       ],
-      "averageScore": 66,
-      "episodes": null,
+      "averageScore": null,
+      "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": " BAKKKA"
+            "name": "KADOKAWA"
           },
           {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "INCS toenter"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "Bushiroad Move"
+            "name": "SILVER LINK."
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 5
+        "day": 7
       },
       "endDate": {
         "year": null,
         "month": null,
         "day": null
-      }
-    },
-    {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
       }
     },
     {
@@ -631,61 +458,181 @@
       }
     },
     {
-      "id": 210031,
+      "id": 206949,
       "title": {
-        "romaji": "Seihantai na Kimi to Boku 2nd Season",
-        "english": "You and I Are Polar Opposites Season 2",
-        "native": "正反対な君と僕 第2期"
+        "romaji": "Kyouran Reijou Nia Liston",
+        "english": "Nia Liston: The Merciless Maiden",
+        "native": "凶乱令嬢ニア・リストン"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210031-TppgcHZh46LY.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210031-TppgcHZh46LY.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210031-TppgcHZh46LY.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210031-M4bt0rAmWk5Q.jpg",
-      "description": "Six months have passed since the polar opposite classmates Miyu Suzuki and Yuusuke Tani started dating. Through spending time together along with their friends from school, the two have been happier than ever. As the year nears its end, the new couple plans to celebrate Christmas and the New Year together, making memories for years to come.<br>\n<br>\nMeanwhile, Miyu and Yuusuke's friends Shuuji Taira and Kentarou Yamada are puzzled by their own situations. Due to his bad experiences in middle school, Taira still overthinks everything around him, especially after his classmate Shino Azuma began giving him more attention. Simultaneously, the usually energetic and outspoken Yamada finds it difficult to find the perfect time to confess his feelings to his shy schoolmate Natsumi Nishi. Despite everyone's differences, they continue enjoying their adolescence together and find their own ways to turn the winter break into a cherished memory.<br>\n<br>\n(Source: MAL Rewrite)",
+      "bannerImage": null,
+      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
       "genres": [
-        "Comedy",
-        "Drama",
-        "Romance",
-        "Slice of Life"
+        "Fantasy"
       ],
-      "averageScore": 84,
-      "episodes": 13,
-      "status": "FINISHED",
-      "season": "SUMMER",
+      "averageScore": 73,
+      "episodes": 25,
+      "status": "RELEASING",
+      "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Lapin Track"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "AbemaTV"
+            "name": "KONAMI animation"
           },
           {
             "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Konami Digital Entertainment"
+          },
+          {
+            "name": "VAP"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "Pia"
+          },
+          {
+            "name": "Hobby Japan"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "TO Books"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 7,
+        "month": 10,
+        "day": 6
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 159042,
+      "title": {
+        "romaji": "Tensei Shitara Ken Deshita 2nd Season",
+        "english": "Reincarnated as a Sword Season 2",
+        "native": "転生したら剣でした 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159042-GGFwlDskc5vR.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159042-GGFwlDskc5vR.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159042-GGFwlDskc5vR.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/159042-X0mqyaUFBkms.jpg",
+      "description": "The second season of <i>Tensei Shitara Ken Deshita</i>.<br><br>\n<i>Note: Each episode was streamed one week in advance of the TV broadcast starting on October 1, 2026 on Abema. Regular broadcasting began on October 8, 2026.</i>",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 74,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "C2C"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 1
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 209219,
+      "title": {
+        "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
+        "english": "So What's Wrong with Getting Reborn as a Goblin?",
+        "native": "転生ゴブリンだけど質問ある？"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg"
+      },
+      "bannerImage": null,
+      "description": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever!\n<br><br>\n(Source: Yen Press)<br><br>\n\n<i>Note: Tensei Goblin Dakedo Shitsumon Aru? is streaming 1 week in advance of the TV broadcast on ABEMA and Prime Video beginning with episode 2 on October 5th, 2026</i>",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 66,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": " BAKKKA"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "INCS toenter"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "AbemaTV"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "Bushiroad Move"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
         "day": 5
       },
       "endDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 4
+        "year": null,
+        "month": null,
+        "day": null
       }
     },
     {
@@ -762,143 +709,135 @@
       }
     },
     {
-      "id": 196187,
+      "id": 269,
       "title": {
-        "romaji": "Super no Ura de Yani Suu Futari",
-        "english": "Smoking Behind the Supermarket with You",
-        "native": "スーパーの裏でヤニ吸うふたり"
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx196187-0dgFi2CPp3xn.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx196187-0dgFi2CPp3xn.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196187-0dgFi2CPp3xn.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/196187-Z9dV6uotmKjM.jpg",
-      "description": "Sasaki is an overworked salaryman drifting through the corporate grind, sustained by cigarettes and the cheerful service and smile of Yamada, the clerk at his favorite supermarket. But one night after a grueling shift, he arrives late to find Yamada nowhere to be seen. With nowhere left to smoke, his spirits sink—until a pierced young woman calls out to him: “You can smoke here.”\n<br><br>\n(Source: Crunchyroll)<br><br>\n\n<i>Note: Episodes 1-6 had an early release by ABEMA and Crunchyroll on June 3rd, 2026 in a mini-episode batch format that splits 6 episodes into 12, ahead of the TV broadcast which started on July 10th, 2026.</i>",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
       "genres": [
-        "Comedy",
-        "Romance",
-        "Slice of Life"
+        "Action",
+        "Adventure",
+        "Supernatural"
       ],
-      "averageScore": 81,
-      "episodes": 12,
+      "averageScore": 79,
+      "episodes": 366,
       "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
+      "season": "FALL",
+      "seasonYear": 2004,
       "studios": {
         "nodes": [
           {
-            "name": "Asahi Production"
+            "name": "Studio Pierrot"
           },
           {
-            "name": "TBS"
+            "name": "TV Tokyo"
           },
           {
-            "name": "Asmik Ace"
+            "name": "Dentsu"
           },
           {
-            "name": "Asahi Production"
-          },
-          {
-            "name": "arma bianca"
-          },
-          {
-            "name": "ADK Marketing Solutions"
-          },
-          {
-            "name": "Nichion"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "Square Enix"
+            "name": "Viz Media"
           }
         ]
       },
       "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 10
+        "year": 2004,
+        "month": 10,
+        "day": 5
       },
       "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 24
+        "year": 2012,
+        "month": 3,
+        "day": 27
       }
     },
     {
-      "id": 195600,
+      "id": 195604,
       "title": {
-        "romaji": "Yomi no Tsugai",
-        "english": "Daemons of the Shadow Realm",
-        "native": "黄泉のツガイ"
+        "romaji": "Black Clover 2nd Season",
+        "english": "Black Clover Season 2",
+        "native": "ブラッククローバー 第2期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
-      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
+      "bannerImage": null,
+      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
         "Action",
         "Adventure",
         "Comedy",
-        "Fantasy",
-        "Supernatural"
+        "Fantasy"
       ],
-      "averageScore": 78,
-      "episodes": 24,
-      "status": "FINISHED",
-      "season": "SPRING",
+      "averageScore": 87,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "bones film"
+            "name": "Studio Pierrot"
           },
           {
-            "name": "bones"
+            "name": "TV Tokyo"
           },
           {
-            "name": "Aniplex"
+            "name": "Shueisha"
           },
           {
-            "name": "Square Enix"
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Avex Pictures"
+          },
+          {
+            "name": "Bandai Namco Entertainment"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 4,
-        "day": 4
+        "month": 10,
+        "day": 3
       },
       "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 19
+        "year": null,
+        "month": null,
+        "day": null
       }
     },
     {
-      "id": 207191,
+      "id": 212888,
       "title": {
-        "romaji": "Doumo, Suki na Hito ni Horegusuri wo Irai Sareta Majo desu.",
-        "english": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
-        "native": "どうも、好きな人に惚れ薬を依頼された魔女です。"
+        "romaji": "Tempal: Item no Chikara",
+        "english": "Overgeared",
+        "native": "テムパル～アイテムの力～"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207191-VgkIzfH92WoZ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207191-VgkIzfH92WoZ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-VgkIzfH92WoZ.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207191-xYgpkCDnXc5m.jpg",
-      "description": "<b>“Make me a love potion.”</b>\n<br><br>\nAnd with that single sentence, the Good Witch of the Lake’s secret crush on the dashing Sir Harij ends in heartbreak. Still, when he promises to help her gather the ingredients, Rose is thrilled at the chance to gaze upon a man she’d normally never get to interact with. She learns to brace her pounding heart for their usual stilted conversations…but what is she to do when he inexplicably shows up at her doorstep with bread and a jar of apple butter?\n<br><br>\n(Source: Yen Press)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
+      "description": "Sin Yeong-U (a.k.a. Grid), an unlucky man in life and a low-level player in the popular VR game “Satisfy,” finds a powerful item that earns him a rare legendary class title: “Pagma’s Successor.” He’s now a skilled blacksmith who can forge unique weapons and equip the game’s most powerful gear. Grid resolves to use his new abilities to achieve fame and fortune, but as his very existence begins to stir up trouble in Satisfy, he realizes that life as a legend may be more than he bargained for….<br><br>\n\n(Source: Tapas, edited)<br><br>\n\n<i>Note: Tempal: Item no Chikara is streaming a week in advance of the TV broadcast on Prime Video and Crunchyroll beginning September 27th, 2026. Regular broadcasting began on October 2nd, 2026.</i>",
       "genres": [
-        "Fantasy",
-        "Romance"
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
       ],
-      "averageScore": 69,
+      "averageScore": 75,
       "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
@@ -906,35 +845,32 @@
       "studios": {
         "nodes": [
           {
-            "name": "diomedéa"
+            "name": "J.C.STAFF"
           },
           {
-            "name": "KADOKAWA"
+            "name": "Pony Canyon"
           },
           {
-            "name": "Futabasha"
+            "name": "Crunchyroll"
           },
           {
-            "name": "diomedéa"
+            "name": "REDICE STUDIO"
           },
           {
-            "name": "Mainichi Broadcasting System"
+            "name": "Kakao piccoma"
           },
           {
-            "name": "AT-X"
+            "name": "Movic"
           },
           {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "SAND B"
+            "name": "EGG FIRM"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 10,
-        "day": 5
+        "month": 9,
+        "day": 27
       },
       "endDate": {
         "year": null,
