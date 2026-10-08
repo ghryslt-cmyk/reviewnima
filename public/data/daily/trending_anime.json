@@ -1,6 +1,6 @@
 {
-  "version": 1791410064580,
-  "fetchedAt": "2026-10-07T21:54:24.580Z",
+  "version": 1791423909767,
+  "fetchedAt": "2026-10-08T01:45:09.767Z",
   "anime": [
     {
       "id": 159042,
@@ -85,6 +85,54 @@
         "year": 2026,
         "month": 10,
         "day": 8
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 211778,
+      "title": {
+        "romaji": "Sekai Saikyou no Majo, Hajimemashita",
+        "english": "The World's Strongest Witch",
+        "native": "世界最強の魔女、始めました"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211778-0MXK5HqVFBYH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-0MXK5HqVFBYH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/211778-ZbXEhqfFkj62.jpg",
+      "description": "After using her SSS-Rank skill, Internet, to crush her former family’s ambitions, Lorna is free to travel the world. Her next stop is the port town of Aquas, where she hopes to see the sights and chow down on some fresh seafood. But when she arrives, the place is on the brink of destruction thanks to a certain Weekly Quest… Good thing Lorna has the gods on her side!\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Bridge"
+          },
+          {
+            "name": "Aisle"
+          },
+          {
+            "name": "Pony Canyon"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
       },
       "endDate": {
         "year": null,
@@ -344,23 +392,24 @@
       }
     },
     {
-      "id": 211778,
+      "id": 178868,
       "title": {
-        "romaji": "Sekai Saikyou no Majo, Hajimemashita",
-        "english": "The World's Strongest Witch",
-        "native": "世界最強の魔女、始めました"
+        "romaji": "Magic Knight Rayearth (2026)",
+        "english": "Magic Knight Rayearth (2026)",
+        "native": "魔法騎士レイアース (2026)"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211778-0MXK5HqVFBYH.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-0MXK5HqVFBYH.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178868-mfp0HIHNJNAm.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178868-mfp0HIHNJNAm.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178868-mfp0HIHNJNAm.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/211778-ZbXEhqfFkj62.jpg",
-      "description": "After using her SSS-Rank skill, Internet, to crush her former family’s ambitions, Lorna is free to travel the world. Her next stop is the port town of Aquas, where she hopes to see the sights and chow down on some fresh seafood. But when she arrives, the place is on the brink of destruction thanks to a certain Weekly Quest… Good thing Lorna has the gods on her side!\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": null,
+      "description": "Hikaru Shidou, Umi Ryuuzaki, and Fuu Hououji aren't from Cephiro. While on a school field trip to the Tokyo Tower, the three girls' minds are on anything but different worlds filled with magic and wonder. That is, until Princess Emeraude, the Pillar of Cephiro, cries out for the Magic Knights to save her world--and that just happens to be those three!\n<br><br>\n\n(Source: Crunchyroll)",
       "genres": [
-        "Action",
-        "Comedy",
-        "Fantasy"
+        "Adventure",
+        "Fantasy",
+        "Mahou Shoujo",
+        "Mecha"
       ],
       "averageScore": null,
       "episodes": null,
@@ -370,13 +419,16 @@
       "studios": {
         "nodes": [
           {
-            "name": "Bridge"
+            "name": "E&H Production"
           },
           {
-            "name": "Aisle"
+            "name": "Kodansha"
           },
           {
-            "name": "Pony Canyon"
+            "name": "TMS Entertainment"
+          },
+          {
+            "name": "TV Asahi"
           }
         ]
       },
@@ -452,6 +504,207 @@
       "endDate": {
         "year": 2026,
         "month": 9,
+        "day": 27
+      }
+    },
+    {
+      "id": 210031,
+      "title": {
+        "romaji": "Seihantai na Kimi to Boku 2nd Season",
+        "english": "You and I Are Polar Opposites Season 2",
+        "native": "正反対な君と僕 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210031-TppgcHZh46LY.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210031-TppgcHZh46LY.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210031-TppgcHZh46LY.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210031-M4bt0rAmWk5Q.jpg",
+      "description": "Six months have passed since the polar opposite classmates Miyu Suzuki and Yuusuke Tani started dating. Through spending time together along with their friends from school, the two have been happier than ever. As the year nears its end, the new couple plans to celebrate Christmas and the New Year together, making memories for years to come.<br>\n<br>\nMeanwhile, Miyu and Yuusuke's friends Shuuji Taira and Kentarou Yamada are puzzled by their own situations. Due to his bad experiences in middle school, Taira still overthinks everything around him, especially after his classmate Shino Azuma began giving him more attention. Simultaneously, the usually energetic and outspoken Yamada finds it difficult to find the perfect time to confess his feelings to his shy schoolmate Natsumi Nishi. Despite everyone's differences, they continue enjoying their adolescence together and find their own ways to turn the winter break into a cherished memory.<br>\n<br>\n(Source: MAL Rewrite)",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Slice of Life"
+      ],
+      "averageScore": 84,
+      "episodes": 13,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Lapin Track"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "AbemaTV"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 4
+      }
+    },
+    {
+      "id": 152677,
+      "title": {
+        "romaji": "Tantei wa mou, Shindeiru. Season 2",
+        "english": "The Detective Is Already Dead Season 2",
+        "native": "探偵はもう、死んでいる。Season2"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx152677-gtJbgjE94lCN.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152677-gtJbgjE94lCN.png"
+      },
+      "bannerImage": null,
+      "description": "After thwarting a hijacking with beautiful, silver-haired detective Siesta, Kimihiko leads a life of globe-trotting and crime-solving—until Siesta dies. A year later, a new case will open old wounds as it threads murder, conspiracy, and his dead partner!\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Mystery",
+        "Romance",
+        "Supernatural"
+      ],
+      "averageScore": null,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "ENGI"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 176314,
+      "title": {
+        "romaji": "Sasaki to Pii-chan Season 2",
+        "english": "Sasaki and Peeps Season 2",
+        "native": "佐々木とピーちゃん シーズン２"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176314-lpvca6vjmkeO.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176314-lpvca6vjmkeO.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176314-nj2hmqbGQ9HJ.jpg",
+      "description": "The second season of <i>Sasaki to Pii-chan</i>.",
+      "genres": [
+        "Comedy",
+        "Fantasy",
+        "Mahou Shoujo"
+      ],
+      "averageScore": null,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "SILVER LINK."
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 269,
+      "title": {
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ],
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2004,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Viz Media"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2004,
+        "month": 10,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2012,
+        "month": 3,
         "day": 27
       }
     },
@@ -597,265 +850,6 @@
         "year": 2026,
         "month": 9,
         "day": 25
-      }
-    },
-    {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
-      "id": 176314,
-      "title": {
-        "romaji": "Sasaki to Pii-chan Season 2",
-        "english": "Sasaki and Peeps Season 2",
-        "native": "佐々木とピーちゃん シーズン２"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176314-lpvca6vjmkeO.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176314-lpvca6vjmkeO.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176314-nj2hmqbGQ9HJ.jpg",
-      "description": "The second season of <i>Sasaki to Pii-chan</i>.",
-      "genres": [
-        "Comedy",
-        "Fantasy",
-        "Mahou Shoujo"
-      ],
-      "averageScore": null,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "SILVER LINK."
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 7
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 178868,
-      "title": {
-        "romaji": "Magic Knight Rayearth (2026)",
-        "english": "Magic Knight Rayearth (2026)",
-        "native": "魔法騎士レイアース (2026)"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178868-mfp0HIHNJNAm.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178868-mfp0HIHNJNAm.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178868-mfp0HIHNJNAm.jpg"
-      },
-      "bannerImage": null,
-      "description": "Hikaru Shidou, Umi Ryuuzaki, and Fuu Hououji aren't from Cephiro. While on a school field trip to the Tokyo Tower, the three girls' minds are on anything but different worlds filled with magic and wonder. That is, until Princess Emeraude, the Pillar of Cephiro, cries out for the Magic Knights to save her world--and that just happens to be those three!\n<br><br>\n\n(Source: Crunchyroll)",
-      "genres": [
-        "Adventure",
-        "Fantasy",
-        "Mahou Shoujo",
-        "Mecha"
-      ],
-      "averageScore": null,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "E&H Production"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "TMS Entertainment"
-          },
-          {
-            "name": "TV Asahi"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 7
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 210031,
-      "title": {
-        "romaji": "Seihantai na Kimi to Boku 2nd Season",
-        "english": "You and I Are Polar Opposites Season 2",
-        "native": "正反対な君と僕 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210031-TppgcHZh46LY.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210031-TppgcHZh46LY.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210031-TppgcHZh46LY.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210031-M4bt0rAmWk5Q.jpg",
-      "description": "Six months have passed since the polar opposite classmates Miyu Suzuki and Yuusuke Tani started dating. Through spending time together along with their friends from school, the two have been happier than ever. As the year nears its end, the new couple plans to celebrate Christmas and the New Year together, making memories for years to come.<br>\n<br>\nMeanwhile, Miyu and Yuusuke's friends Shuuji Taira and Kentarou Yamada are puzzled by their own situations. Due to his bad experiences in middle school, Taira still overthinks everything around him, especially after his classmate Shino Azuma began giving him more attention. Simultaneously, the usually energetic and outspoken Yamada finds it difficult to find the perfect time to confess his feelings to his shy schoolmate Natsumi Nishi. Despite everyone's differences, they continue enjoying their adolescence together and find their own ways to turn the winter break into a cherished memory.<br>\n<br>\n(Source: MAL Rewrite)",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance",
-        "Slice of Life"
-      ],
-      "averageScore": 84,
-      "episodes": 13,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Lapin Track"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 4
-      }
-    },
-    {
-      "id": 195600,
-      "title": {
-        "romaji": "Yomi no Tsugai",
-        "english": "Daemons of the Shadow Realm",
-        "native": "黄泉のツガイ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195600-moI0UFArtOme.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195600-moI0UFArtOme.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195600-moI0UFArtOme.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195600-UxHvDXwzJxlP.jpg",
-      "description": "In a remote mountain village under the watchful eyes of two stone guardians, the young Yuru contentedly lives off the land while staying close to the only family he has left—Asa, his precious twin sister. Asa, meanwhile, carries out a mysterious “duty” on behalf of the village while locked in a cage. Why is Asa a prisoner? And what other secrets does Yuru’s otherwise idyllic home hide?\n<br><br>(Source: Square Enix)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy",
-        "Supernatural"
-      ],
-      "averageScore": 78,
-      "episodes": 24,
-      "status": "FINISHED",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "bones film"
-          },
-          {
-            "name": "bones"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Square Enix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 19
       }
     }
   ]
