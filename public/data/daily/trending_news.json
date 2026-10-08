@@ -1,7 +1,40 @@
 {
-  "version": 1791423907514,
-  "fetchedAt": "2026-10-08T01:45:07.514Z",
+  "version": 1791446572066,
+  "fetchedAt": "2026-10-08T08:02:52.066Z",
   "news": [
+    {
+      "title": "Horror Collector Anime Adds 3 Cast Members",
+      "description": "Sae Hiratsuka, Ryōta Ōsaka, Hana Hishikawa join cast",
+      "fullDescription": "Sae Hiratsuka, Ryōta Ōsaka, Hana Hishikawa join cast",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-08/horror-collector-anime-adds-3-cast-members/.242612",
+      "pubDate": "Thu, 08 Oct 2026 03:09:38 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242612/momo.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242612"
+    },
+    {
+      "title": "Crunchyroll Manga App Expands to U.K., Ireland, South Asia, ANZ",
+      "description": "Crunchyroll also to be \"easily accessible\" in new dedicated anime hub on PS5 launching in spring",
+      "fullDescription": "Crunchyroll also to be \"easily accessible\" in new dedicated anime hub on PS5 launching in spring",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-08/crunchyroll-manga-app-expands-to-u.k-ireland-south-asia-anz/.242608",
+      "pubDate": "Thu, 08 Oct 2026 00:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.7/213365/crunchyroll-logo-stacked.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242608"
+    },
+    {
+      "title": "The Seven Knights of the Marronnier Kingdom Anime Unveils More Cast",
+      "description": "Natsuki Hanae, Mitsuki Saiga, Miyuri Shimabukuro join cast",
+      "fullDescription": "Natsuki Hanae, Mitsuki Saiga, Miyuri Shimabukuro join cast",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-07/the-seven-knights-of-the-marronnier-kingdom-anime-unveils-more-cast/.242611",
+      "pubDate": "Wed, 07 Oct 2026 23:53:37 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242611/justice.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242611"
+    },
     {
       "title": "Seven Seas Licenses Living With My New Cat, Zukyun x Bakyun, More Manga/Novels",
       "description": "Also: 3 new audiobooks",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242581/hokago1.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242581"
-    },
-    {
-      "title": "Code Geass: Lost Stories Game to End Service on December 7",
-      "description": "Smartphone/PC game launched in 2022",
-      "fullDescription": "Smartphone/PC game launched in 2022",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-07/code-geass-lost-stories-game-to-end-service-on-december-7/.242579",
-      "pubDate": "Wed, 07 Oct 2026 06:32:26 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max650x650/cms/news.6/202236/code-geass-lost-stories.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242579"
-    },
-    {
-      "title": "The Moon on a Rainy Night Anime's 1st Video Reveals Cast, More Staff",
-      "description": "Iori Saeki plays Saki Kindaichi, Sora Amamiya plays Kanon Oikawa in 2027 anime",
-      "fullDescription": "Iori Saeki plays Saki Kindaichi, Sora Amamiya plays Kanon Oikawa in 2027 anime",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-07/the-moon-on-a-rainy-night-anime-1st-video-reveals-cast-more-staff/.242577",
-      "pubDate": "Wed, 07 Oct 2026 03:43:05 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242577/sakikindaichi.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242577"
-    },
-    {
-      "title": "Babanba Banban Vampire Manga Listed to Enter 'Final Stage'",
-      "description": "Manga to enter final stage with 15th volume out on December 8",
-      "fullDescription": "Manga to enter final stage with 15th volume out on December 8",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-07/babanba-banban-vampire-manga-listed-to-enter-final-stage/.242566",
-      "pubDate": "Wed, 07 Oct 2026 03:32:55 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235965/babanba-banban-vampire-v1-cover.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242566"
     }
   ],
   "total": 15
