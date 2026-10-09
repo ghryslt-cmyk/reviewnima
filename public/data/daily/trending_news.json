@@ -1,7 +1,18 @@
 {
-  "version": 1791575452943,
-  "fetchedAt": "2026-10-09T19:50:52.943Z",
+  "version": 1791590242250,
+  "fetchedAt": "2026-10-09T23:57:22.250Z",
   "news": [
+    {
+      "title": "North American Anime, Manga Releases, October 4-10",
+      "description": "Devil Survivor 2: The Animation anime; The Apothecary Diaries: Xiaolan's Story, My Journey to Her, Blue Lock Full Color Selection manga ship",
+      "fullDescription": "<cite>Devil Survivor 2: The Animation</cite> anime; <cite>The Apothecary Diaries: Xiaolan's Story, My Journey to Her, Blue Lock Full Color Selection</cite> manga ship",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-09/north-american-anime-manga-releases-october-4-10/.242519",
+      "pubDate": "Fri, 09 Oct 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242519"
+    },
     {
       "title": "Ize Press Announces Print Editions of Regas, Eat Before You Go Webtoons",
       "description": "Regas BL series centers on crown prince whose power comes at the cost of his sanity; Eat Before You Go follows hero who returns to earth after defeating demon lord",
@@ -17,7 +28,7 @@
       "title": "Yen Press Licenses Fate/strange Fake, Kino's Journey, Spice and Wolf Diner: Gourmet Exploration, More Manga/Novels",
       "description": "Also: The Girls Adrift Among the Stars, Dungeon Master: Creating a Hot Spring Dungeon, more",
       "fullDescription": "Also: <cite>The Girls Adrift Among the Stars</cite>, <cite>Dungeon Master: Creating a Hot Spring Dungeon</cite>, more",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-08/yen-press-licenses-fate-strange-fake-kino-journey-spice-and-wolf-diner-gourmet-exploration-more-/.242640",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-09/yen-press-licenses-fate-strange-fake-kino-journey-spice-and-wolf-diner-gourmet-exploration-more-/.242640",
       "pubDate": "Fri, 09 Oct 2026 14:45:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242651/liza-parsandra.png.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242651"
-    },
-    {
-      "title": "&#039;Doukyo Shiteiru Kensei no Onna Shishou ga Kawaisugite Mainichi Shiawase desu&#039; Reveals Main Cast, Teaser Promo for Winter 2027",
-      "description": "The official website for the television anime adaptation of Kennoji and R_ringo&#039;s Doukyo Shiteiru Kensei no Onna Shishou ga Kawaisugite Mainichi Shiawase desu (My Sword Saint Master Is Too Cute to Live With!) manga unveiled the main cast and a teaser promotional video on Friday. The anime serie...",
-      "fullDescription": "The official website for the television anime adaptation of Kennoji and R_ringo&#039;s Doukyo Shiteiru Kensei no Onna Shishou ga Kawaisugite Mainichi Shiawase desu (My Sword Saint Master Is Too Cute to Live With!) manga unveiled the main cast and a teaser promotional video on Friday. The anime series will premiere in 2027 Cast Lisa Balsandra: Ai Kakuma (Mushoku Tensei: Isekai Ittara Honki Dasu) Eugene Dawson: Seena Hoshiki (Super no Ura de Yani Suu Futari) Cordelia Dawson: Hitomi Ueda (Uma Musum...",
-      "link": "https://myanimelist.net/news/74804034?_location=rss",
-      "pubDate": "Thu, 08 Oct 2026 20:36:00 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791516935-1124e9fa281d5ec1376f12ce269cdf19.jpeg",
-      "guid": "https://myanimelist.net/news/74804034?_location=rss"
     }
   ],
   "total": 15
