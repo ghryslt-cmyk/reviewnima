@@ -1,7 +1,29 @@
 {
-  "version": 1791649295770,
-  "fetchedAt": "2026-10-10T16:21:35.770Z",
+  "version": 1791663425756,
+  "fetchedAt": "2026-10-10T20:17:05.756Z",
   "news": [
+    {
+      "title": "Japan's Video Game Rankings, September 21-27",
+      "description": "Derby Stallion 2 debuts at #1",
+      "fullDescription": "<cite>Derby Stallion 2</cite> debuts at #1",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-10/japan-video-game-rankings-september-21-27/.242610",
+      "pubDate": "Sat, 10 Oct 2026 15:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242610"
+    },
+    {
+      "title": "Japan's Video Game Rankings, September 14-20",
+      "description": "Fire Emblem: Fortune's Weave Switch 2 game debuts at #1",
+      "fullDescription": "<cite>Fire Emblem: Fortune's Weave</cite> Switch 2 game debuts at #1",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-10/japan-video-game-rankings-september-14-20/.242539",
+      "pubDate": "Sat, 10 Oct 2026 13:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242539"
+    },
     {
       "title": "Japanese Animation TV Ranking, September 21-27",
       "description": "Detective Conan: The Counterfeit Crime Case of Ultra 30 special earns 8.6% rating",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235719/hotaru.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242676"
-    },
-    {
-      "title": "Casshern R Manga Listed as Ending With 3rd Volume",
-      "description": "Manga launched in 2023",
-      "fullDescription": "Manga launched in 2023",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-09/casshern-r-manga-listed-as-ending-with-3rd-volume/.242564",
-      "pubDate": "Fri, 09 Oct 2026 08:30:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242564/casshern-r.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242564"
-    },
-    {
-      "title": "WEBTOON to Launch New Marvel Comics App in November",
-      "description": "New app comes as Marvel Unlimited shuts down after 19 years in December",
-      "fullDescription": "New app comes as Marvel Unlimited shuts down after 19 years in December",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-09/webtoon-to-launch-new-marvel-comics-app-in-november/.242617",
-      "pubDate": "Fri, 09 Oct 2026 07:23:19 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242617/marvel-comics-app.jfif.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242617"
     }
   ],
   "total": 15
