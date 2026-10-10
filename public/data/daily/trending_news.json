@@ -1,7 +1,18 @@
 {
-  "version": 1791610741879,
-  "fetchedAt": "2026-10-10T05:39:01.879Z",
+  "version": 1791631481346,
+  "fetchedAt": "2026-10-10T11:24:41.346Z",
   "news": [
+    {
+      "title": "Millennium Family TV Anime Casts Taihi Kimura",
+      "description": "Kimura voices 3rd son Noel",
+      "fullDescription": "Kimura voices 3rd son Noel",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-10/millennium-family-tv-anime-casts-taihi-kimura/.242683",
+      "pubDate": "Sat, 10 Oct 2026 05:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242683/noel.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242683"
+    },
     {
       "title": "'I am the only one who is not attacked in the world filled with zombies' TV Anime's Main Promo Video Previews Theme Songs",
       "description": "Rikako Ito, Marie Miyake join cast; RetBear, Itsuka▶ perform theme songs",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791517737-ee34417371d7288d4bf8cadad0ee0e65.jpeg",
       "guid": "https://myanimelist.net/news/74804055?_location=rss"
-    },
-    {
-      "title": "Girls und Panzer Franchise Gets 2 New Games",
-      "description": "GuP: All-Star Tank Carnival releases on Switch in 2027; GuP: Bokosuka Rush releases on smartphones",
-      "fullDescription": "<cite>GuP: All-Star Tank Carnival</cite> releases on Switch in 2027; <cite>GuP: Bokosuka Rush</cite> releases on smartphones",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-09/girls-und-panzer-franchise-gets-2-new-games/.242665",
-      "pubDate": "Fri, 09 Oct 2026 04:46:59 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242665/bokosukarush.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242665"
     }
   ],
   "total": 15
