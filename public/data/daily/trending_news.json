@@ -1,7 +1,106 @@
 {
-  "version": 1791676011069,
-  "fetchedAt": "2026-10-10T23:46:51.069Z",
+  "version": 1791696473317,
+  "fetchedAt": "2026-10-11T05:27:53.317Z",
   "news": [
+    {
+      "title": "Boichi's The Marshal King Manga Ends on October 16",
+      "description": "Manga resumed after 9-month hiatus on September 4",
+      "fullDescription": "Manga resumed after 9-month hiatus on September 4",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-11/boichi-the-marshal-king-manga-ends-on-october-16/.242709",
+      "pubDate": "Sun, 11 Oct 2026 00:24:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/230045/the-marshal-king.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242709"
+    },
+    {
+      "title": "Marvel, Kadokawa Launch 5 New Manga as Part of Partnership",
+      "description": "Manga about Iron Man, Spider-Man, Spider-Gwen, Deadpool, Venom launched on Sunday",
+      "fullDescription": "Manga about Iron Man, Spider-Man, Spider-Gwen, Deadpool, Venom launched on Sunday",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-11/marvel-kadokawa-launch-5-new-manga-as-part-of-partnership/.242704",
+      "pubDate": "Sun, 11 Oct 2026 00:05:18 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242704/iron-man.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242704"
+    },
+    {
+      "title": "The Apothecary Diaries: The Late Lady's Treasure Film Streams Video Highlighting Jinshi, Maomao",
+      "description": "Film to reveal new character videos for next 3 days",
+      "fullDescription": "Film to reveal new character videos for next 3 days",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-10/the-apothecary-diaries-the-late-lady-treasure-film-streams-video-highlighting-jinshi-maomao/.242700",
+      "pubDate": "Sat, 10 Oct 2026 22:52:56 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239226/the-apothecary-diaries-movie.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242700"
+    },
+    {
+      "title": "&#039;Shishite Ikiru SSS-kyuu Hunter&#039; Reveals Additional Cast, Ending Theme, Second Promo",
+      "description": "The official website of the television anime adaptation of Sinnoa and Bill K&#039;s SSS-Class Revival Hunter webtoon revealed additional cast members, ending theme artists, and a second promotional video on Sunday. The anime is scheduled to premiere in January 2027 on Fuji TV&#039;s +Ultra programmi...",
+      "fullDescription": "The official website of the television anime adaptation of Sinnoa and Bill K&#039;s SSS-Class Revival Hunter webtoon revealed additional cast members, ending theme artists, and a second promotional video on Sunday. The anime is scheduled to premiere in January 2027 on Fuji TV&#039;s +Ultra programming block. Cast Flame Emperor: Toshiki Masuda (Shingeki no Kyojin: The Final Season) Black Witch: Megumi Han ([Oshi no Ko]) Paladin: Sayaka Kinoshita (Boku no Hero Academia) Countess: Risa Shimizu (Sh...",
+      "link": "https://myanimelist.net/news/74810180?_location=rss",
+      "pubDate": "Sat, 10 Oct 2026 19:43:49 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791686582-c84ae40025b0662bdba28045cf8bf854.jpeg",
+      "guid": "https://myanimelist.net/news/74810180?_location=rss"
+    },
+    {
+      "title": "SSS-Class Revival Hunter Anime Reveals 8 More Cast, 2nd Promo Video, Ending Theme Artists",
+      "description": "Toshiki Masuda, Megumi Han, Shunsuke Sakuya, more join cast for January series",
+      "fullDescription": "Toshiki Masuda, Megumi Han, Shunsuke Sakuya, more join cast for January series",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-10/sss-class-revival-hunter-anime-reveals-8-more-cast-2nd-promo-video-ending-theme-artists/.242701",
+      "pubDate": "Sat, 10 Oct 2026 22:34:28 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242701/cast-sss.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242701"
+    },
+    {
+      "title": "Dragon Ball Super: Beerus Also Streams on Hulu in U.S. on October 11",
+      "description": "Crunchyroll to stream anime on October 11, Netflix on October 17",
+      "fullDescription": "Crunchyroll to stream anime on October 11, Netflix on October 17",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-10/dragon-ball-super-beerus-also-streams-on-hulu-in-u.s-on-october-11/.242688",
+      "pubDate": "Sat, 10 Oct 2026 21:59:33 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241278/dbsbe-surgekv-en.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242688"
+    },
+    {
+      "title": "Blazblue: CentralFiction Fighting Game Gets Release on PS5",
+      "description": "PS5 version will have rollback netcode, cross-play with PC, 4 new text languages",
+      "fullDescription": "PS5 version will have rollback netcode, cross-play with PC, 4 new text languages",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-10/blazblue-centralfiction-fighting-game-gets-release-on-ps5/.242699",
+      "pubDate": "Sat, 10 Oct 2026 21:46:17 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242699"
+    },
+    {
+      "title": "Japanese Studio Creative Freaks to Lead Production on Sentinel 6 Anime Executive Produced by NBA, NFL Players Michael Carter-Williams, Jamaal Williams",
+      "description": "\"Afro-futurist sci-fi adventure\" series planned to have 11-12 episodes",
+      "fullDescription": "\"Afro-futurist sci-fi adventure\" series planned to have 11-12 episodes",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-10/japanese-studio-creative-freaks-to-lead-production-on-sentinel-6-anime-executive-produced-by-nba-/.242697",
+      "pubDate": "Sat, 10 Oct 2026 21:05:04 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242697"
+    },
+    {
+      "title": "New &#039;Naruto&#039; Manga &#039;Shadow Rising&#039; Announced",
+      "description": "The Naruto: What&#039;s Next? panel at New York Comic Con 2026 announced on Saturday that Masashi Kishimoto will launch a new Naruto manga titled Naruto: Shadow Rising, revealing a super teaser announcement video. The new series is part of Project Rasengan, a three-year timeline of upcoming releases...",
+      "fullDescription": "The Naruto: What&#039;s Next? panel at New York Comic Con 2026 announced on Saturday that Masashi Kishimoto will launch a new Naruto manga titled Naruto: Shadow Rising, revealing a super teaser announcement video. The new series is part of Project Rasengan, a three-year timeline of upcoming releases within the Naruto franchise. Currently announced projects include a crossover anime series, a mobile game, and a card game. More information on the new manga will be revealed at Jump Festa 2027. Kis...",
+      "link": "https://myanimelist.net/news/74809691?_location=rss",
+      "pubDate": "Sat, 10 Oct 2026 17:20:07 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791677791-8328da60ba359484b8c2ee6cd5e69ae8.jpeg",
+      "guid": "https://myanimelist.net/news/74809691?_location=rss"
+    },
     {
       "title": "&#039;Naruto x Ninkuu&#039; Crossover Anime Announced",
       "description": "The &quot;Naruto: What&#039;s Next?&quot; panel at New York Comic Con 2026 announced a brand new four-episode crossover anime based on Masashi Kishimoto&#039;s Naruto manga and Kouji Kiriyama&#039;s Ninkuu manga on Saturday. The Naruto franchise&#039;s official website opened a new page, revealing t...",
@@ -67,105 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.242610"
-    },
-    {
-      "title": "Japan's Video Game Rankings, September 14-20",
-      "description": "Fire Emblem: Fortune's Weave Switch 2 game debuts at #1",
-      "fullDescription": "<cite>Fire Emblem: Fortune's Weave</cite> Switch 2 game debuts at #1",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-10/japan-video-game-rankings-september-14-20/.242539",
-      "pubDate": "Sat, 10 Oct 2026 13:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.242539"
-    },
-    {
-      "title": "Japanese Animation TV Ranking, September 21-27",
-      "description": "Detective Conan: The Counterfeit Crime Case of Ultra 30 special earns 8.6% rating",
-      "fullDescription": "<cite>Detective Conan: The Counterfeit Crime Case of Ultra 30</cite> special earns 8.6% rating",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-10/japanese-animation-tv-ranking-september-21-27/.242684",
-      "pubDate": "Sat, 10 Oct 2026 11:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.242684"
-    },
-    {
-      "title": "Japanese Animation TV Ranking, September 14-20",
-      "description": "That Time I Got Reincarnated as a Slime season 4 earns 3.1% rating",
-      "fullDescription": "<cite>That Time I Got Reincarnated as a Slime</cite> season 4 earns 3.1% rating",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-10/japanese-animation-tv-ranking-september-14-20/.242405",
-      "pubDate": "Sat, 10 Oct 2026 09:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.242405"
-    },
-    {
-      "title": "New &#039;Dr. Stone&#039; Anime Announced",
-      "description": "The Stone Fes.2026 event at Yokohama Buntai announced on Saturday that a sequel anime subtitled Dr. Stone: Terraforming is in production. The official website also revealed a new anime logo (pictured above) and an announcement promo. The character designer, Yuuko Iwasa drew an illustrations to comme...",
-      "fullDescription": "The Stone Fes.2026 event at Yokohama Buntai announced on Saturday that a sequel anime subtitled Dr. Stone: Terraforming is in production. The official website also revealed a new anime logo (pictured above) and an announcement promo. The character designer, Yuuko Iwasa drew an illustrations to commemorate the announcement (pictured right). The new anime will adapt the Terraforming one-shot episode included on volume 27 of the original manga. The story is set after the conclusion of the main ser...",
-      "link": "https://myanimelist.net/news/74808029?_location=rss",
-      "pubDate": "Sat, 10 Oct 2026 06:05:30 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791637455-20c271e328750627d3eb7b4c1d4cb911.jpeg",
-      "guid": "https://myanimelist.net/news/74808029?_location=rss"
-    },
-    {
-      "title": "Dr. Stone TV Anime Gets Terraforming Sequel",
-      "description": "Based on story in 27th manga volume",
-      "fullDescription": "Based on story in 27th manga volume",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-10/dr-stone-tv-anime-gets-terraforming-sequel/.242690",
-      "pubDate": "Sat, 10 Oct 2026 08:57:58 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.242690"
-    },
-    {
-      "title": "Millennium Family TV Anime Casts Taihi Kimura",
-      "description": "Kimura voices 3rd son Noel",
-      "fullDescription": "Kimura voices 3rd son Noel",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-10/millennium-family-tv-anime-casts-taihi-kimura/.242683",
-      "pubDate": "Sat, 10 Oct 2026 05:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242683/noel.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242683"
-    },
-    {
-      "title": "'I am the only one who is not attacked in the world filled with zombies' TV Anime's Main Promo Video Previews Theme Songs",
-      "description": "Rikako Ito, Marie Miyake join cast; RetBear, Itsuka▶ perform theme songs",
-      "fullDescription": "Rikako Ito, Marie Miyake join cast; RetBear, Itsuka▶ perform theme songs",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-10/i-am-the-only-one-who-is-not-attacked-in-the-world-filled-with-zombies-tv-anime-main-promo-video-/.242682",
-      "pubDate": "Sat, 10 Oct 2026 00:09:11 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242682/zombie-kv.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242682"
-    },
-    {
-      "title": "&#039;Zombie no Afureta Sekai de Ore dake ga Osowarenai&#039; Unveils Additional Cast, Staff, Theme Songs, First Promo",
-      "description": "The official website for the television anime adaptation of Rokuro Uraji&#039;s Zombie no Afureta Sekai de Ore dake ga Osowarenai (In a World Full of Zombies I&#039;m the Only One Who Doesn&#039;t Get Attacked) light novel unveiled additional cast, staff, a key visual (pictured), the theme songs, an...",
-      "fullDescription": "The official website for the television anime adaptation of Rokuro Uraji&#039;s Zombie no Afureta Sekai de Ore dake ga Osowarenai (In a World Full of Zombies I&#039;m the Only One Who Doesn&#039;t Get Attacked) light novel unveiled additional cast, staff, a key visual (pictured), the theme songs, and first promotional video on Saturday. The anime series will premiere on AT-X in January 2027. Voice actresses Rikako Itou (Mushoku no Eiyuu) and Marie Miyake (Gin no Saji) are joining the casts as To...",
-      "link": "https://myanimelist.net/news/74807103?_location=rss",
-      "pubDate": "Fri, 09 Oct 2026 21:04:54 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791605055-036817d4b6e996f720ede1436e2502f5.jpeg",
-      "guid": "https://myanimelist.net/news/74807103?_location=rss"
-    },
-    {
-      "title": "Billy Bat Manga Wins Harvey Award",
-      "description": "Series had competed against Land, My Gorilla Family, Miss Ruki, more works for Best Manga award",
-      "fullDescription": "Series had competed against <cite>Land, My Gorilla Family, Miss Ruki</cite>, more works for Best Manga award",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-09/billy-bat-manga-wins-harvey-award/.242681",
-      "pubDate": "Fri, 09 Oct 2026 22:51:40 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/237914/billy-bat-1-cover.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242681"
     }
   ],
   "total": 15
