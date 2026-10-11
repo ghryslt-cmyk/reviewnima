@@ -1,7 +1,18 @@
 {
-  "version": 1791718455647,
-  "fetchedAt": "2026-10-11T11:34:15.647Z",
+  "version": 1791737283789,
+  "fetchedAt": "2026-10-11T16:48:03.789Z",
   "news": [
+    {
+      "title": "Godzilla Minus Zero Film Streams Final Trailer",
+      "description": "Sequel to Godzilla Minus One opens in Japan on November 3, N. America on November 6",
+      "fullDescription": "Sequel to <cite>Godzilla Minus One</cite> opens in Japan on November 3, N. America on November 6",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-11/godzilla-minus-zero-film-streams-final-trailer/.242719",
+      "pubDate": "Sun, 11 Oct 2026 07:55:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239467/bafkreieus7mvngxcunaow4evfcbc7skdfjw4wy5w4mmtqdxj6alchyvpie.webp",
+      "guid": "https://www.animenewsnetwork.com/cms/.242719"
+    },
     {
       "title": "&#039;Noa-senpai wa Tomodachi&#039; Reveals Main Cast, 2027 Debut",
       "description": "The official website for the television anime adaptation of Enma Akiyama&#039;s Noa-senpai wa Tomodachi (Noa Is My Senior, and My Friend) manga revealed the main cast and a key visual (pictured) on Sunday. The anime series will premiere in 2027. Voice actors Rina Kawaguchi (Witch Watch) and Tomoya I...",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791675406-01b0957a6de16edb8c843d07ffc9281d.jpeg",
       "guid": "https://myanimelist.net/news/74809610?_location=rss"
-    },
-    {
-      "title": "One-Punch Man Season 3 Anime's 2nd Part Reveals January 2027 Debut in Video",
-      "description": "JAM Project returns to perform new opening theme",
-      "fullDescription": "JAM Project returns to perform new opening theme",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-10/one-punch-man-season-3-anime-2nd-part-reveals-january-2027-debut-in-video/.242696",
-      "pubDate": "Sat, 10 Oct 2026 19:32:53 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242696/opm-3pt2-kv.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242696"
     }
   ],
   "total": 15
