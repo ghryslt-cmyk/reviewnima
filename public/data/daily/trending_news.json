@@ -1,7 +1,18 @@
 {
-  "version": 1791845619888,
-  "fetchedAt": "2026-10-12T22:53:39.888Z",
+  "version": 1791862115390,
+  "fetchedAt": "2026-10-13T03:28:35.390Z",
   "news": [
+    {
+      "title": "The Apothecary Diaries: The Late Lady's Treasure Film's New Video Unveils Kajadan Pirates' Cast",
+      "description": "Kenshō Ono, Ryōta Takeuchi, Jirō Saitō join cast",
+      "fullDescription": "Kenshō Ono, Ryōta Takeuchi, Jirō Saitō join cast",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-12/the-apothecary-diaries-the-late-lady-treasure-film-new-video-unveils-kajadan-pirates-cast/.242761",
+      "pubDate": "Mon, 12 Oct 2026 22:47:54 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242761/suija.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242761"
+    },
     {
       "title": "Killing Bites Manga Publishes 1st Part of Final Chapter",
       "description": "Kazasa Sumita, Shinya Murata debuted manga in March 2017",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241179/gupfinal5-2ndposterbilling-largef-b2-531x750.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242735"
-    },
-    {
-      "title": "Marvel Tōkon: Fighting Souls Game Reveals Full Roster for Year 1 DLC",
-      "description": "DLC includes Thor (Jane Foster), Venom, Jubilee, previously announced Phoenix Cyclops",
-      "fullDescription": "DLC includes Thor (Jane Foster), Venom, Jubilee, previously announced Phoenix Cyclops",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-12/marvel-tokon-fighting-souls-game-reveals-full-roster-for-year-1-dlc/.242733",
-      "pubDate": "Mon, 12 Oct 2026 03:54:45 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242733/marvel.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242733"
     }
   ],
   "total": 15
