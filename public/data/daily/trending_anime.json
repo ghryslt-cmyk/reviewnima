@@ -1,6 +1,6 @@
 {
-  "version": 1791962855546,
-  "fetchedAt": "2026-10-14T07:27:35.546Z",
+  "version": 1791982953037,
+  "fetchedAt": "2026-10-14T13:02:33.037Z",
   "anime": [
     {
       "id": 207329,
@@ -61,132 +61,6 @@
         "year": null,
         "month": null,
         "day": null
-      }
-    },
-    {
-      "id": 206949,
-      "title": {
-        "romaji": "Kyouran Reijou Nia Liston",
-        "english": "Nia Liston: The Merciless Maiden",
-        "native": "凶乱令嬢ニア・リストン"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
-      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
-      "genres": [
-        "Action",
-        "Fantasy"
-      ],
-      "averageScore": 74,
-      "episodes": 25,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KONAMI animation"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "Konami Digital Entertainment"
-          },
-          {
-            "name": "VAP"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "Hobby Japan"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "TO Books"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 6
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 97940,
-      "title": {
-        "romaji": "Black Clover",
-        "english": "Black Clover",
-        "native": "ブラッククローバー"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
-      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 79,
-      "episodes": 170,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2017,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Funimation"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Shueisha"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2017,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2021,
-        "month": 3,
-        "day": 30
       }
     },
     {
@@ -264,6 +138,61 @@
       }
     },
     {
+      "id": 97940,
+      "title": {
+        "romaji": "Black Clover",
+        "english": "Black Clover",
+        "native": "ブラッククローバー"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
+      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 79,
+      "episodes": 170,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2017,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Funimation"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Shueisha"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2017,
+        "month": 10,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2021,
+        "month": 3,
+        "day": 30
+      }
+    },
+    {
       "id": 209502,
       "title": {
         "romaji": "Shiotaiou no Satou-san ga Ore ni dake Amai",
@@ -329,6 +258,202 @@
         "year": null,
         "month": null,
         "day": null
+      }
+    },
+    {
+      "id": 206949,
+      "title": {
+        "romaji": "Kyouran Reijou Nia Liston",
+        "english": "Nia Liston: The Merciless Maiden",
+        "native": "凶乱令嬢ニア・リストン"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
+      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "averageScore": 75,
+      "episodes": 25,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KONAMI animation"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Konami Digital Entertainment"
+          },
+          {
+            "name": "VAP"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "Pia"
+          },
+          {
+            "name": "Hobby Japan"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "TO Books"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 6
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 212888,
+      "title": {
+        "romaji": "Tempal: Item no Chikara",
+        "english": "Overgeared",
+        "native": "テムパル～アイテムの力～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
+      "description": "Sin Yeong-U (a.k.a. Grid), an unlucky man in life and a low-level player in the popular VR game “Satisfy,” finds a powerful item that earns him a rare legendary class title: “Pagma’s Successor.” He’s now a skilled blacksmith who can forge unique weapons and equip the game’s most powerful gear. Grid resolves to use his new abilities to achieve fame and fortune, but as his very existence begins to stir up trouble in Satisfy, he realizes that life as a legend may be more than he bargained for….<br><br>\n\n(Source: Tapas, edited)<br><br>\n\n<i>Note: Tempal: Item no Chikara is streaming a week in advance of the TV broadcast on Prime Video and Crunchyroll beginning September 27th, 2026. Regular broadcasting began on October 2nd, 2026.</i>",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 75,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "J.C.STAFF"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "REDICE STUDIO"
+          },
+          {
+            "name": "Kakao piccoma"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "EGG FIRM"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 178789,
+      "title": {
+        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
+        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Ecchi",
+        "Fantasy"
+      ],
+      "averageScore": 86,
+      "episodes": 14,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Bind"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Frontier Works"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "GREE Entertainment"
+          },
+          {
+            "name": "EGG FIRM"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
       }
     },
     {
@@ -405,182 +530,6 @@
       }
     },
     {
-      "id": 212888,
-      "title": {
-        "romaji": "Tempal: Item no Chikara",
-        "english": "Overgeared",
-        "native": "テムパル～アイテムの力～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
-      "description": "Sin Yeong-U (a.k.a. Grid), an unlucky man in life and a low-level player in the popular VR game “Satisfy,” finds a powerful item that earns him a rare legendary class title: “Pagma’s Successor.” He’s now a skilled blacksmith who can forge unique weapons and equip the game’s most powerful gear. Grid resolves to use his new abilities to achieve fame and fortune, but as his very existence begins to stir up trouble in Satisfy, he realizes that life as a legend may be more than he bargained for….<br><br>\n\n(Source: Tapas, edited)<br><br>\n\n<i>Note: Tempal: Item no Chikara is streaming a week in advance of the TV broadcast on Prime Video and Crunchyroll beginning September 27th, 2026. Regular broadcasting began on October 2nd, 2026.</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 75,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "J.C.STAFF"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "REDICE STUDIO"
-          },
-          {
-            "name": "Kakao piccoma"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
-      "id": 178789,
-      "title": {
-        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
-        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
-        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
-      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Ecchi",
-        "Fantasy"
-      ],
-      "averageScore": 86,
-      "episodes": 14,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Bind"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Frontier Works"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "GREE Entertainment"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
-      }
-    },
-    {
       "id": 195604,
       "title": {
         "romaji": "Black Clover 2nd Season",
@@ -639,65 +588,54 @@
       }
     },
     {
-      "id": 207191,
+      "id": 269,
       "title": {
-        "romaji": "Doumo, Suki na Hito ni Horegusuri wo Irai Sareta Majo desu.",
-        "english": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
-        "native": "どうも、好きな人に惚れ薬を依頼された魔女です。"
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207191-VgkIzfH92WoZ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207191-VgkIzfH92WoZ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-VgkIzfH92WoZ.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207191-xYgpkCDnXc5m.jpg",
-      "description": "<b>“Make me a love potion.”</b>\n<br><br>\nAnd with that single sentence, the Good Witch of the Lake’s secret crush on the dashing Sir Harij ends in heartbreak. Still, when he promises to help her gather the ingredients, Rose is thrilled at the chance to gaze upon a man she’d normally never get to interact with. She learns to brace her pounding heart for their usual stilted conversations…but what is she to do when he inexplicably shows up at her doorstep with bread and a jar of apple butter?\n<br><br>\n(Source: Yen Press)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
       "genres": [
-        "Fantasy",
-        "Romance"
+        "Action",
+        "Adventure",
+        "Supernatural"
       ],
-      "averageScore": 70,
-      "episodes": 12,
-      "status": "RELEASING",
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
       "season": "FALL",
-      "seasonYear": 2026,
+      "seasonYear": 2004,
       "studios": {
         "nodes": [
           {
-            "name": "diomedéa"
+            "name": "Studio Pierrot"
           },
           {
-            "name": "KADOKAWA"
+            "name": "TV Tokyo"
           },
           {
-            "name": "Futabasha"
+            "name": "Dentsu"
           },
           {
-            "name": "diomedéa"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "SAND B"
+            "name": "Viz Media"
           }
         ]
       },
       "startDate": {
-        "year": 2026,
+        "year": 2004,
         "month": 10,
         "day": 5
       },
       "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 2012,
+        "month": 3,
+        "day": 27
       }
     },
     {
@@ -760,6 +698,67 @@
         "year": null,
         "month": null,
         "day": null
+      }
+    },
+    {
+      "id": 189046,
+      "title": {
+        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "english": "Re:ZERO -Starting Life in Another World- Season 4",
+        "native": "Re:ゼロから始める異世界生活 4th season"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
+      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
+      ],
+      "averageScore": 90,
+      "episodes": 19,
+      "status": "FINISHED",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "WHITE FOX"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "DAXEL"
+          },
+          {
+            "name": "Memory-Tech"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 30
       }
     },
     {
@@ -831,67 +830,6 @@
       }
     },
     {
-      "id": 189046,
-      "title": {
-        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
-        "english": "Re:ZERO -Starting Life in Another World- Season 4",
-        "native": "Re:ゼロから始める異世界生活 4th season"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
-      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy",
-        "Psychological",
-        "Romance",
-        "Thriller"
-      ],
-      "averageScore": 90,
-      "episodes": 19,
-      "status": "FINISHED",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "WHITE FOX"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "DAXEL"
-          },
-          {
-            "name": "Memory-Tech"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 8
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 30
-      }
-    },
-    {
       "id": 198727,
       "title": {
         "romaji": "Chitose-kun wa Ramune Bin no Naka Part 2",
@@ -909,7 +847,7 @@
         "Comedy",
         "Romance"
       ],
-      "averageScore": null,
+      "averageScore": 75,
       "episodes": 11,
       "status": "RELEASING",
       "season": "FALL",
@@ -933,6 +871,60 @@
         "year": 2026,
         "month": 12,
         "day": 22
+      }
+    },
+    {
+      "id": 11061,
+      "title": {
+        "romaji": "HUNTER×HUNTER (2011)",
+        "english": "Hunter x Hunter (2011)",
+        "native": "HUNTER×HUNTER (2011)"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx11061-y5gsT1hoHuHw.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11061-y5gsT1hoHuHw.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11061-y5gsT1hoHuHw.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/11061-8WkkTZ6duKpq.jpg",
+      "description": "A Hunter is one who travels the world doing all sorts of dangerous tasks. From capturing criminals to searching deep within uncharted lands for any lost treasures. Gon is a young boy whose father disappeared long ago, being a Hunter. He believes if he could also follow his father's path, he could one day reunite with him.<br><br>\nAfter becoming 12, Gon leaves his home and takes on the task of entering the Hunter exam, notorious for its low success rate and high probability of death to become an official Hunter. He befriends the revenge-driven Kurapika, the doctor-to-be Leorio and the rebellious ex-assassin Killua in the exam, with their friendship prevailing throughout the many trials and threats they come upon taking on the dangerous career of a Hunter.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 89,
+      "episodes": 148,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2011,
+      "studios": {
+        "nodes": [
+          {
+            "name": "MADHOUSE"
+          },
+          {
+            "name": "VAP"
+          },
+          {
+            "name": "Viz Media"
+          },
+          {
+            "name": "Nippon Television Network"
+          },
+          {
+            "name": "Studio Live"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2011,
+        "month": 10,
+        "day": 2
+      },
+      "endDate": {
+        "year": 2014,
+        "month": 9,
+        "day": 24
       }
     }
   ]

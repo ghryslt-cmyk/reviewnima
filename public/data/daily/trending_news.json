@@ -1,7 +1,29 @@
 {
-  "version": 1791962855127,
-  "fetchedAt": "2026-10-14T07:27:35.127Z",
+  "version": 1791982952448,
+  "fetchedAt": "2026-10-14T13:02:32.448Z",
   "news": [
+    {
+      "title": "Heavily Armed High School Girls Project Gets Smartphone RPG",
+      "description": "NextNinja develops JJK: Jū Heisōgata Joshi Kōsei Wordless Record game for iOS, Android",
+      "fullDescription": "NextNinja develops <cite>JJK: Jū Heisōgata Joshi Kōsei Wordless Record</cite> game for iOS, Android",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-14/heavily-armed-high-school-girls-project-gets-smartphone-rpg/.242807",
+      "pubDate": "Wed, 14 Oct 2026 07:47:28 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242807/heavy.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242807"
+    },
+    {
+      "title": "CloverWorks' Anime Film Grotesqqque to Feature Mika Ichinose Song",
+      "description": "Omnibus film streams music video for \"TERASE\" song, used in \"A(E)liens\" story",
+      "fullDescription": "Omnibus film streams music video for \"TERASE\" song, used in \"A(E)liens\" story",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-14/cloverworks-anime-film-grotesqqque-to-feature-mika-ichinose-song/.242806",
+      "pubDate": "Wed, 14 Oct 2026 05:55:03 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239302/grotesqqque-kv.jfif.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242806"
+    },
     {
       "title": "Kou Sawada's Risque Comedy Manga Yumeneconnect Gets TV Anime",
       "description": "Yūsuke Kobayashi, Yū Sasahara star in anime by Sōta Yokote, Studio Massket",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791900760-f0bfacae90915c1f952a00b8932d661c.jpeg",
       "guid": "https://myanimelist.net/news/74817857?_location=rss"
-    },
-    {
-      "title": "Talent Agency Intention Announces Dissolution on March 31, 2027",
-      "description": "Company to end operation due to owner Kenichi Suzumura's adjustment disorder",
-      "fullDescription": "Company to end operation due to owner Kenichi Suzumura's adjustment disorder",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-13/talent-agency-intention-announces-dissolution-on-march-31-2027/.242785",
-      "pubDate": "Tue, 13 Oct 2026 10:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242785/intention.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242785"
-    },
-    {
-      "title": "The Coppersmith's Bride Manga Ends in 3 Chapters",
-      "description": "namo launched manga in May 2020, published in English by J-Novel Club",
-      "fullDescription": "namo launched manga in May 2020, published in English by J-Novel Club",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-13/the-coppersmith-bride-manga-ends-in-3-chapters/.242760",
-      "pubDate": "Tue, 13 Oct 2026 08:57:08 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max450x450/cms/news.5/190749/the-coppersmith-bride-vol-1-manga.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242760"
     }
   ],
   "total": 15
