@@ -1,12 +1,23 @@
 {
-  "version": 1792014306257,
-  "fetchedAt": "2026-10-14T21:45:06.257Z",
+  "version": 1792022970334,
+  "fetchedAt": "2026-10-15T00:09:30.334Z",
   "news": [
+    {
+      "title": "Croquette!'s Manavu Kishimoto Launches New Manga",
+      "description": "Kishimoto launched Tantei Neko Machida manga on Tuesday",
+      "fullDescription": "Kishimoto launched <cite>Tantei Neko Machida</cite> manga on Tuesday",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-14/croquette-s-manavu-kishimoto-launches-new-manga/.242805",
+      "pubDate": "Wed, 14 Oct 2026 18:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242805/manavu.webp",
+      "guid": "https://www.animenewsnetwork.com/cms/.242805"
+    },
     {
       "title": "North American Anime, Manga Releases, October 11-17",
       "description": "The Rising of the Shield Hero Season 4 anime; Badducks, GalaXic Baseball League, Are You a Landmine, Chihara-san? manga ship",
       "fullDescription": "<cite>The Rising of the Shield Hero Season 4</cite> anime; <cite>Badducks, GalaXic Baseball League, Are You a Landmine, Chihara-san?</cite> manga ship",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-12/north-american-anime-manga-releases-october-11-17/.242757",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-14/north-american-anime-manga-releases-october-11-17/.242757",
       "pubDate": "Wed, 14 Oct 2026 17:00:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1791949417-c857ab3305403612e1bbbc3a502d6e0b.jpeg",
       "guid": "https://myanimelist.net/news/74820023?_location=rss"
-    },
-    {
-      "title": "The Apothecary Diaries Film's New Video Unveils Miyuki Sawashiro, Ai Mikami in Cast",
-      "description": "Sawashiro, Mikami join cast as Ruoqing, Yinshan",
-      "fullDescription": "Sawashiro, Mikami join cast as Ruoqing, Yinshan",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-13/the-apothecary-diaries-film-new-video-unveils-miyuki-sawashiro-ai-mikami-in-cast/.242797",
-      "pubDate": "Tue, 13 Oct 2026 22:21:58 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242797/ruoqing.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242797"
     }
   ],
   "total": 15
