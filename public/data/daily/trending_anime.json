@@ -1,7 +1,113 @@
 {
-  "version": 1792159787148,
-  "fetchedAt": "2026-10-16T14:09:47.148Z",
+  "version": 1792173993586,
+  "fetchedAt": "2026-10-16T18:06:33.586Z",
   "anime": [
+    {
+      "id": 195516,
+      "title": {
+        "romaji": "Kusuriya no Hitorigoto 3rd Season",
+        "english": "The Apothecary Diaries Season 3",
+        "native": "薬屋のひとりごと 第3期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg",
+      "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n<br><br>\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n<br><br>\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n<br><br>\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n<br><br>\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "averageScore": 85,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "OLM"
+          },
+          {
+            "name": "Nippon Television Network"
+          },
+          {
+            "name": "Imagica Infos"
+          },
+          {
+            "name": "OLM"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Shogakukan"
+          },
+          {
+            "name": "Square Enix"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 2
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 205909,
+      "title": {
+        "romaji": "Hotaru no Yomeiri",
+        "english": "Firefly Wedding",
+        "native": "ホタルの嫁入り"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
+      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "averageScore": 75,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "david production"
+          },
+          {
+            "name": "Fuji TV"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 9
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
     {
       "id": 210482,
       "title": {
@@ -109,50 +215,122 @@
       }
     },
     {
-      "id": 213805,
+      "id": 178083,
       "title": {
-        "romaji": "Koori no Jouheki 2nd Season",
-        "english": "The Ramparts of Ice Season 2",
-        "native": "氷の城壁 第2期"
+        "romaji": "Tokyo Revengers: Santen Sensou-hen",
+        "english": "Tokyo Revengers: War of the Three Titans Arc",
+        "native": "東京リベンジャーズ 三天戦争編"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213805-Nokui3uWlIlw.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx213805-Nokui3uWlIlw.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx213805-Nokui3uWlIlw.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178083-bg7pg6TCHwtG.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178083-bg7pg6TCHwtG.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-bg7pg6TCHwtG.jpg"
       },
       "bannerImage": null,
-      "description": "Koyuki, the isolated girl; Miki, the former school idol; Minato, the guy with no concept of personal space; and Youta, the gentle basketball player. Clumsy, frustrating, yet deeply endearing — this coming-of-age ensemble drama of crisscrossing hearts marches on.\n<br><br>\nAs they grow closer, Koyuki and Minato begin to develop feelings for each other that go beyond mere friendship. Meanwhile, Youta finally confesses to Miki the feelings he's harbored for years. Some speak their hearts while others keep their emotions hidden, causing their paths — and their feelings for one another — to continuously cross and pass by… \n<br><br>\n(Source: Netflix)",
+      "description": "Sequel to <i>Tokyo Revengers: Tenjiku-hen</i>.",
       "genres": [
-        "Comedy",
+        "Action",
         "Drama",
         "Romance",
-        "Slice of Life"
+        "Supernatural"
       ],
-      "averageScore": 81,
-      "episodes": null,
+      "averageScore": 76,
+      "episodes": 13,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Studio KAI"
+            "name": "Pony Canyon"
           },
           {
-            "name": "TBS"
+            "name": "LIDENFILMS"
           },
           {
-            "name": "Universal Music"
+            "name": "Kodansha"
           },
           {
-            "name": "ADK Emotions"
+            "name": "Sammy"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "Ultra Super Pictures"
+          },
+          {
+            "name": "Studio Mausu"
+          },
+          {
+            "name": "HI Production"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 1
+        "day": 3
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 204650,
+      "title": {
+        "romaji": "Tougen Anki: Nikko・Kegon no Taki-hen",
+        "english": "TOUGEN ANKI: Nikko Kegon Falls Arc",
+        "native": "桃源暗鬼 日光・華厳の滝編"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204650-cAQOzQ84Lwk8.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204650-cAQOzQ84Lwk8.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204650-cAQOzQ84Lwk8.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/204650-MpownoVlYv69.jpg",
+      "description": "After battling in Kyoto and Nerima, the Rasetsu Academy students have grown stronger. But Yaoroshi leaves the academy to join the Oni Brigade for their \"the total eradication of the Momotaro.\"\n<br><br>\nWhen Shiki realizes that they also target noncombatants, he sets out after Yaoroshi to bring him back. Meanwhile in Nikko, there's a research facility for horrific experiments atop the old Kegon Falls…\n<br><br>\n(Source: REMOW)",
+      "genres": [
+        "Action",
+        "Mystery",
+        "Supernatural"
+      ],
+      "averageScore": 71,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Hibari"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Nippon Television Network"
+          },
+          {
+            "name": "Akita Shoten"
+          },
+          {
+            "name": "Studio Hibari"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 2
       },
       "endDate": {
         "year": null,
@@ -235,6 +413,99 @@
       }
     },
     {
+      "id": 186742,
+      "title": {
+        "romaji": "Toaru Anbu no ITEM",
+        "english": "A Certain Dark Item",
+        "native": "とある暗部の少女共棲"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186742-v7yfbefc8fuO.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186742-v7yfbefc8fuO.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186742-v7yfbefc8fuO.png"
+      },
+      "bannerImage": null,
+      "description": "This is a story of four girls living in the \"Dark Side\" of Academy City.<br>\n<br>\nIn Academy City where \"ESP\" has been recognized as a general science. Behind the peace, there is a Dark Side organization that undertakes missions that cannot be made public.<br>\n<br>\n\"ITEM\" is an elite unit consisting of four girls. Takitsubo Rikou is able to read and track the AIM fields emitted by those with abilities. Frenda Seivelun, who excels in combat using explosives and traps.<br>\n<br>\nKinuhata Saiai, who can manipulate nitrogen at will and plays a defensive role. And one of the 7 Espers that Academy City is proud of: Mugino Shizuri. They live freely in the darkness of the Academy City, and quietly set their sights on their target...!<br>\n<br>\nThis is a story of encounter, friendship, and darkness that eventually leads to a terrible incident!<br>\n<br>\n(Source: Kadokawa, translated)",
+      "genres": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "averageScore": 69,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "J.C.STAFF"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 9
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 213805,
+      "title": {
+        "romaji": "Koori no Jouheki 2nd Season",
+        "english": "The Ramparts of Ice Season 2",
+        "native": "氷の城壁 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213805-Nokui3uWlIlw.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx213805-Nokui3uWlIlw.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx213805-Nokui3uWlIlw.png"
+      },
+      "bannerImage": null,
+      "description": "Koyuki, the isolated girl; Miki, the former school idol; Minato, the guy with no concept of personal space; and Youta, the gentle basketball player. Clumsy, frustrating, yet deeply endearing — this coming-of-age ensemble drama of crisscrossing hearts marches on.\n<br><br>\nAs they grow closer, Koyuki and Minato begin to develop feelings for each other that go beyond mere friendship. Meanwhile, Youta finally confesses to Miki the feelings he's harbored for years. Some speak their hearts while others keep their emotions hidden, causing their paths — and their feelings for one another — to continuously cross and pass by… \n<br><br>\n(Source: Netflix)",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Slice of Life"
+      ],
+      "averageScore": 81,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio KAI"
+          },
+          {
+            "name": "TBS"
+          },
+          {
+            "name": "Universal Music"
+          },
+          {
+            "name": "ADK Emotions"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 1
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 97940,
       "title": {
         "romaji": "Black Clover",
@@ -290,110 +561,67 @@
       }
     },
     {
-      "id": 178083,
+      "id": 203490,
       "title": {
-        "romaji": "Tokyo Revengers: Santen Sensou-hen",
-        "english": "Tokyo Revengers: War of the Three Titans Arc",
-        "native": "東京リベンジャーズ 三天戦争編"
+        "romaji": "Uchi no Otouto-domo ga Sumimasen",
+        "english": "Please Excuse My Younger Brothers",
+        "native": "うちの弟どもがすみません"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178083-bg7pg6TCHwtG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178083-bg7pg6TCHwtG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-bg7pg6TCHwtG.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx203490-YQXiymUiDQNA.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx203490-YQXiymUiDQNA.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx203490-YQXiymUiDQNA.jpg"
       },
       "bannerImage": null,
-      "description": "Sequel to <i>Tokyo Revengers: Tenjiku-hen</i>.",
+      "description": "The manga centers on high school student Ito Hazui. During her spring break at the end of her first year of high school, Ito's mother remarries, and Ito moves to live with her new family, becoming Ito Narita. Upon arriving at her new house, Ito is shocked to learn she now has four younger step-brothers. Ito tries her hardest to get along with all of the new members of her family, but the eldest brother Gen is a bit cold to her. However, under his aloof facade, he occasionally shows his kindness.\n<BR><BR>\n(Source: Anime News Network)",
       "genres": [
-        "Action",
-        "Drama",
+        "Comedy",
         "Romance",
-        "Supernatural"
+        "Slice of Life"
       ],
-      "averageScore": 76,
-      "episodes": 13,
+      "averageScore": 69,
+      "episodes": 24,
       "status": "RELEASING",
-      "season": "FALL",
+      "season": "SUMMER",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Pony Canyon"
+            "name": "Lay-duce"
           },
           {
-            "name": "LIDENFILMS"
+            "name": "Aniplex"
           },
           {
-            "name": "Kodansha"
+            "name": "Shueisha"
           },
           {
-            "name": "Sammy"
+            "name": "ABC Animation"
           },
           {
-            "name": "AT-X"
+            "name": "TOKYO MX"
           },
           {
-            "name": "Mainichi Broadcasting System"
+            "name": "BS11"
           },
           {
-            "name": "Ultra Super Pictures"
+            "name": "Studio Flag"
           },
           {
-            "name": "Studio Mausu"
+            "name": "Movic"
           },
           {
-            "name": "HI Production"
+            "name": "HIKE"
+          },
+          {
+            "name": "whomor"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 212503,
-      "title": {
-        "romaji": "Hyouken no Majutsushi ga Sekai wo Suberu II",
-        "english": "The Iceblade Sorcerer Shall Rule the World II",
-        "native": "冰剣の魔術師が世界を統べるⅡ"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212503-sXBpRZr96c4e.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212503-sXBpRZr96c4e.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212503-sXBpRZr96c4e.jpg"
-      },
-      "bannerImage": null,
-      "description": "Once dismissed as the sole ordinary student at the elite Arnold Academy of Sorcery, Ray White—secretly, the Iceblade Sorcerer—has finally earned his place. With a new school year comes a new challenge: The Magicks War, a grand competition pitting teams from rival schools against each other. But an ominous shadow looms over Ray and his friends as the other grand sorcerers plot their next moves.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 67,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Zero-G"
-          },
-          {
-            "name": "TBS"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 9
+        "month": 7,
+        "day": 4
       },
       "endDate": {
         "year": null,
@@ -450,122 +678,6 @@
         "year": 2012,
         "month": 3,
         "day": 27
-      }
-    },
-    {
-      "id": 182205,
-      "title": {
-        "romaji": "Tensei Shitara Slime Datta Ken 4th Season Part 1 & 2",
-        "english": "That Time I Got Reincarnated as a Slime Season 4",
-        "native": "転生したらスライムだった件 第4期 第1&2クール"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx182205-q2AeO1owuQbO.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx182205-q2AeO1owuQbO.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182205-q2AeO1owuQbO.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/182205-fRUoKv6f2JAq.jpg",
-      "description": "Demon Lord Rimuru's dream of creating an alliance between humans and monsters takes a step closer to being realized. As Tempest continues to prosper, Granville Rozzo and his granddaughter, Maribel Rozzo, clash with Demon Lord Rimuru over their plan to protect mankind by ruling over them. Meanwhile, in El Dorado, Demon Lord Leon works toward goals of his own. The awakening of a new Hero draws near!<br><br>\n\n(Source: Crunchyroll News)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 83,
-      "episodes": 24,
-      "status": "FINISHED",
-      "season": "SPRING",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "8-bit"
-          },
-          {
-            "name": "Bandai Namco Filmworks"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "Micro Magazine Sha"
-          },
-          {
-            "name": "Bandai Namco Music Live"
-          },
-          {
-            "name": "BANDAI SPIRITS"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "ADK Marketing Solutions"
-          },
-          {
-            "name": "Sony Music Solutions"
-          },
-          {
-            "name": "8-bit"
-          },
-          {
-            "name": "Nippon Television Network"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 4,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 25
-      }
-    },
-    {
-      "id": 191832,
-      "title": {
-        "romaji": "Shiguang Dailiren III",
-        "english": "Link Click Season 3",
-        "native": "时光代理人 第三季"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191832-bsnCaLNVjzEw.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191832-bsnCaLNVjzEw.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191832-bsnCaLNVjzEw.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191832-cBWXNPNVhA1s.jpg",
-      "description": "After the Li Tianchen case comes to a close, peace appears to return to Time Photo Studio—until the disappearance of Xia Fei draws everyone back into a web of fate. With Vein's return and Qiao Ling's newfound abilities, Cheng Xiaoshi and Lu Guang begin uncovering the truth behind the mysterious Bahati fire.\n<br><br>\nAs the investigation deepens, hidden connections emerge between the case and Cheng Xiaoshi's parents. Meanwhile, Liu Xiao, a member of a mysterious organization, sets his own plans in motion, while the intervention of Inspector Jae introduces new uncertainties. As secrets buried in the past resurface, the search for truth becomes more dangerous than ever.\n<br><br>\n(Source: bilibili, translated)",
-      "genres": [
-        "Drama",
-        "Mystery",
-        "Supernatural",
-        "Thriller"
-      ],
-      "averageScore": 85,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": null,
-      "seasonYear": null,
-      "studios": {
-        "nodes": [
-          {
-            "name": "bilibili"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 8,
-        "day": 14
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
       }
     },
     {
@@ -630,236 +742,86 @@
       }
     },
     {
-      "id": 178789,
+      "id": 212503,
       "title": {
-        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
-        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
-        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
+        "romaji": "Hyouken no Majutsushi ga Sekai wo Suberu II",
+        "english": "The Iceblade Sorcerer Shall Rule the World II",
+        "native": "冰剣の魔術師が世界を統べるⅡ"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212503-sXBpRZr96c4e.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212503-sXBpRZr96c4e.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212503-sXBpRZr96c4e.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
-      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Ecchi",
-        "Fantasy"
-      ],
-      "averageScore": 86,
-      "episodes": 14,
-      "status": "FINISHED",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Bind"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Frontier Works"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "GREE Entertainment"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
-      }
-    },
-    {
-      "id": 1735,
-      "title": {
-        "romaji": "NARUTO: Shippuuden",
-        "english": "Naruto: Shippuden",
-        "native": "NARUTO -ナルト- 疾風伝"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1735-kGfVm0YqCPcu.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1735-kGfVm0YqCPcu.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1735.jpg",
-      "description": "Naruto: Shippuuden is the continuation of the original animated TV series Naruto. The story revolves around an older and slightly more matured Uzumaki Naruto and his quest to save his friend Uchiha Sasuke from the grips of the snake-like Shinobi, Orochimaru. After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work, though it will not be easy, as he has amassed a few (more dangerous) enemies, in the likes of the shinobi organization; Akatsuki. <br><br>\n(Source: Anime News Network)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Supernatural"
-      ],
-      "averageScore": 82,
-      "episodes": 500,
-      "status": "FINISHED",
-      "season": "WINTER",
-      "seasonYear": 2007,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "KSS"
-          },
-          {
-            "name": "Viz Media"
-          },
-          {
-            "name": "Rakuonsha"
-          },
-          {
-            "name": "TV Tokyo Music"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2007,
-        "month": 2,
-        "day": 15
-      },
-      "endDate": {
-        "year": 2017,
-        "month": 3,
-        "day": 23
-      }
-    },
-    {
-      "id": 20,
-      "title": {
-        "romaji": "NARUTO",
-        "english": "Naruto",
-        "native": "NARUTO -ナルト-"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx20-dE6UHbFFg1A5.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20-dE6UHbFFg1A5.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20-dE6UHbFFg1A5.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/20-HHxhPj5JD13a.jpg",
-      "description": "Naruto Uzumaki, a hyperactive and knuckle-headed ninja, lives in Konohagakure, the Hidden Leaf village. Moments prior to his birth, a huge demon known as the Kyuubi, the Nine-tailed Fox, attacked Konohagakure and wreaked havoc. In order to put an end to the Kyuubi's rampage, the leader of the village, the 4th Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto. <br><br>\nShunned because of the presence of the Kyuubi inside him, Naruto struggles to find his place in the village. He strives to become the Hokage of Konohagakure, and he meets many friends and foes along the way. <br><br>\n(Source: MAL Rewrite)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Supernatural"
-      ],
-      "averageScore": 80,
-      "episodes": 220,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2002,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Viz Media"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "KSS"
-          },
-          {
-            "name": "SME Visual Works"
-          },
-          {
-            "name": "Rakuonsha"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2002,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2007,
-        "month": 2,
-        "day": 8
-      }
-    },
-    {
-      "id": 159042,
-      "title": {
-        "romaji": "Tensei Shitara Ken Deshita 2nd Season",
-        "english": "Reincarnated as a Sword Season 2",
-        "native": "転生したら剣でした 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159042-GGFwlDskc5vR.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159042-GGFwlDskc5vR.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159042-GGFwlDskc5vR.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/159042-X0mqyaUFBkms.jpg",
-      "description": "The second season of <i>Tensei Shitara Ken Deshita</i>.<br><br>\n<i>Note: Each episode was streamed one week in advance of the TV broadcast starting on October 1, 2026 on Abema. Regular broadcasting began on October 8, 2026.</i>",
+      "bannerImage": null,
+      "description": "Once dismissed as the sole ordinary student at the elite Arnold Academy of Sorcery, Ray White—secretly, the Iceblade Sorcerer—has finally earned his place. With a new school year comes a new challenge: The Magicks War, a grand competition pitting teams from rival schools against each other. But an ominous shadow looms over Ray and his friends as the other grand sorcerers plot their next moves.\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
         "Action",
         "Adventure",
         "Fantasy"
       ],
-      "averageScore": 75,
-      "episodes": 12,
+      "averageScore": 67,
+      "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "NBCUniversal Entertainment Japan"
+            "name": "Zero-G"
           },
           {
-            "name": "C2C"
+            "name": "TBS"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 1
+        "day": 9
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 191832,
+      "title": {
+        "romaji": "Shiguang Dailiren III",
+        "english": "Link Click Season 3",
+        "native": "时光代理人 第三季"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191832-bsnCaLNVjzEw.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191832-bsnCaLNVjzEw.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191832-bsnCaLNVjzEw.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191832-cBWXNPNVhA1s.jpg",
+      "description": "After the Li Tianchen case comes to a close, peace appears to return to Time Photo Studio—until the disappearance of Xia Fei draws everyone back into a web of fate. With Vein's return and Qiao Ling's newfound abilities, Cheng Xiaoshi and Lu Guang begin uncovering the truth behind the mysterious Bahati fire.\n<br><br>\nAs the investigation deepens, hidden connections emerge between the case and Cheng Xiaoshi's parents. Meanwhile, Liu Xiao, a member of a mysterious organization, sets his own plans in motion, while the intervention of Inspector Jae introduces new uncertainties. As secrets buried in the past resurface, the search for truth becomes more dangerous than ever.\n<br><br>\n(Source: bilibili, translated)",
+      "genres": [
+        "Drama",
+        "Mystery",
+        "Supernatural",
+        "Thriller"
+      ],
+      "averageScore": 85,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": null,
+      "seasonYear": null,
+      "studios": {
+        "nodes": [
+          {
+            "name": "bilibili"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 8,
+        "day": 14
       },
       "endDate": {
         "year": null,
