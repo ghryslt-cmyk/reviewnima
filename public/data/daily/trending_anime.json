@@ -1,6 +1,6 @@
 {
-  "version": 1792273603278,
-  "fetchedAt": "2026-10-17T21:46:43.278Z",
+  "version": 1792281343388,
+  "fetchedAt": "2026-10-17T23:55:43.388Z",
   "anime": [
     {
       "id": 195604,
@@ -430,69 +430,6 @@
       }
     },
     {
-      "id": 180894,
-      "title": {
-        "romaji": "Romelia Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
-        "english": "Romelia War Chronicle",
-        "native": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180894-o3pz4DWFm3je.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180894-o3pz4DWFm3je.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png"
-      },
-      "bannerImage": null,
-      "description": "Romelia and her party succeed in defeating the Demon King Zelgis, though Prince Henri’s reckless charge forces them into a grueling battle. In the aftermath, Romelia is branded \"dead weight\" for not fighting directly, and the Prince unilaterally breaks off their engagement. Denied a place in the victory celebrations, Romelia returns home, only to be met with cold indifference from her family and society. Yet, she refuses to break. She has already set her sights on the path that lies ahead.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Romelia War Chronicle was streamed 2 days in advance of the TV broadcast on AnimeTimes, U-NEXT, and Netflix beginning October 3, 2026. Regular broadcasting began on October 5, 2026.</i>",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "averageScore": 69,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "Atra"
-          },
-          {
-            "name": "Rakuten"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "Bit grooove promotion"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 187402,
       "title": {
         "romaji": "Tensei shita Dai Seijo wa, Seijo de Aru Koto wo Hita Kakusu",
@@ -550,6 +487,69 @@
           },
           {
             "name": "KLOCKWORX"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 3
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 180894,
+      "title": {
+        "romaji": "Romelia Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
+        "english": "Romelia War Chronicle",
+        "native": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180894-o3pz4DWFm3je.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180894-o3pz4DWFm3je.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png"
+      },
+      "bannerImage": null,
+      "description": "Romelia and her party succeed in defeating the Demon King Zelgis, though Prince Henri’s reckless charge forces them into a grueling battle. In the aftermath, Romelia is branded \"dead weight\" for not fighting directly, and the Prince unilaterally breaks off their engagement. Denied a place in the victory celebrations, Romelia returns home, only to be met with cold indifference from her family and society. Yet, she refuses to break. She has already set her sights on the path that lies ahead.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Romelia War Chronicle was streamed 2 days in advance of the TV broadcast on AnimeTimes, U-NEXT, and Netflix beginning October 3, 2026. Regular broadcasting began on October 5, 2026.</i>",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "averageScore": 69,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "Atra"
+          },
+          {
+            "name": "Rakuten"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "Bit grooove promotion"
           }
         ]
       },
@@ -639,6 +639,50 @@
       }
     },
     {
+      "id": 205909,
+      "title": {
+        "romaji": "Hotaru no Yomeiri",
+        "english": "Firefly Wedding",
+        "native": "ホタルの嫁入り"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
+      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "averageScore": 75,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "david production"
+          },
+          {
+            "name": "Fuji TV"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 9
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 209872,
       "title": {
         "romaji": "Ranma 1/2 (2024) 3rd Season",
@@ -685,50 +729,6 @@
         "year": 2026,
         "month": 10,
         "day": 4
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 205909,
-      "title": {
-        "romaji": "Hotaru no Yomeiri",
-        "english": "Firefly Wedding",
-        "native": "ホタルの嫁入り"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
-      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "averageScore": 75,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "david production"
-          },
-          {
-            "name": "Fuji TV"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 9
       },
       "endDate": {
         "year": null,
@@ -837,70 +837,54 @@
       }
     },
     {
-      "id": 178083,
+      "id": 269,
       "title": {
-        "romaji": "Tokyo Revengers: Santen Sensou-hen",
-        "english": "Tokyo Revengers: War of the Three Titans Arc",
-        "native": "東京リベンジャーズ 三天戦争編"
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178083-bg7pg6TCHwtG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178083-bg7pg6TCHwtG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-bg7pg6TCHwtG.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
       },
-      "bannerImage": null,
-      "description": "Sequel to <i>Tokyo Revengers: Tenjiku-hen</i>.",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
       "genres": [
         "Action",
-        "Drama",
-        "Romance",
+        "Adventure",
         "Supernatural"
       ],
-      "averageScore": 76,
-      "episodes": 13,
-      "status": "RELEASING",
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
       "season": "FALL",
-      "seasonYear": 2026,
+      "seasonYear": 2004,
       "studios": {
         "nodes": [
           {
-            "name": "Pony Canyon"
+            "name": "Studio Pierrot"
           },
           {
-            "name": "LIDENFILMS"
+            "name": "TV Tokyo"
           },
           {
-            "name": "Kodansha"
+            "name": "Dentsu"
           },
           {
-            "name": "Sammy"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "Ultra Super Pictures"
-          },
-          {
-            "name": "Studio Mausu"
-          },
-          {
-            "name": "HI Production"
+            "name": "Viz Media"
           }
         ]
       },
       "startDate": {
-        "year": 2026,
+        "year": 2004,
         "month": 10,
-        "day": 3
+        "day": 5
       },
       "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 2012,
+        "month": 3,
+        "day": 27
       }
     }
   ]
