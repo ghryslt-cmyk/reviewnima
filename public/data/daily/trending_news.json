@@ -1,7 +1,18 @@
 {
-  "version": 1792246450770,
-  "fetchedAt": "2026-10-17T14:14:10.770Z",
+  "version": 1792257499166,
+  "fetchedAt": "2026-10-17T17:18:19.166Z",
   "news": [
+    {
+      "title": "Japan's Video Game Rankings, October 5-11",
+      "description": "Kingdom Hearts Collection Switch 2 version debuts at #1, Ace Combat 8 ranks at #3",
+      "fullDescription": "<cite>Kingdom Hearts Collection</cite> Switch 2 version debuts at #1, <cite>Ace Combat 8</cite> ranks at #3",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-17/japan-video-game-rankings-october-5-11/.242888",
+      "pubDate": "Sat, 17 Oct 2026 10:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242888"
+    },
     {
       "title": "We Are Aliens Film Wins Sitges Film Festival's Anima't Award",
       "description": "Kōhei Kadowaki is youngest Japanese director to win award in Spain's Catalonia",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.242894"
-    },
-    {
-      "title": "Golden Kamuy's Live-Action Adaptation Continues With 'Karafuto Pursuit Arc' Series in January",
-      "description": "New series features returning, new staff",
-      "fullDescription": "New series features returning, new staff",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-16/golden-kamuy-live-action-adaptation-continues-with-karafuto-pursuit-arc-series-in-january/.242891",
-      "pubDate": "Fri, 16 Oct 2026 05:17:47 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242891/golden-kamuy-karafuto.jfif.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242891"
     }
   ],
   "total": 15
