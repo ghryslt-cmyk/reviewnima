@@ -1,7 +1,29 @@
 {
-  "version": 1792235177222,
-  "fetchedAt": "2026-10-17T11:06:17.222Z",
+  "version": 1792246450770,
+  "fetchedAt": "2026-10-17T14:14:10.770Z",
   "news": [
+    {
+      "title": "We Are Aliens Film Wins Sitges Film Festival's Anima't Award",
+      "description": "Kōhei Kadowaki is youngest Japanese director to win award in Spain's Catalonia",
+      "fullDescription": "Kōhei Kadowaki is youngest Japanese director to win award in Spain's Catalonia",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-17/we-are-aliens-film-wins-sitges-film-festival-animat-award/.242938",
+      "pubDate": "Sat, 17 Oct 2026 08:16:17 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239997/wearealiens-kv2.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242938"
+    },
+    {
+      "title": "Japanese Animation TV Ranking, October 5-11",
+      "description": "The Vermilion Mask debuts with 3.1% rating, Dragon Ball Super: Beerus with 2.8% rating",
+      "fullDescription": "<cite>The Vermilion Mask</cite> debuts with 3.1% rating, <cite>Dragon Ball Super: Beerus</cite> with 2.8% rating",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-17/japanese-animation-tv-ranking-october-5-11/.242889",
+      "pubDate": "Sat, 17 Oct 2026 08:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242889"
+    },
     {
       "title": "Aikatsu Stars 10th Anniversary Film's Trailer Unveils Theme Song, January 22 Debut",
       "description": "Yume & company invited to \"Venus Jamboree\" with world's top idols",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242891/golden-kamuy-karafuto.jfif.jpeg",
       "guid": "https://www.animenewsnetwork.com/cms/.242891"
-    },
-    {
-      "title": "Wound & Bandage TV Anime Reveals Main Cast, January 9 Debut in Teaser Video",
-      "description": "Hisako Kanemoto, Chikahiro Kobayashi star in anime",
-      "fullDescription": "Hisako Kanemoto, Chikahiro Kobayashi star in anime",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-16/wound-and-bandage-tv-anime-reveals-main-cast-january-9-debut-in-teaser-video/.242890",
-      "pubDate": "Fri, 16 Oct 2026 04:34:54 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242890/visual-3.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.242890"
-    },
-    {
-      "title": "Magical Sisters Lulutto Lilly Anime Reveals 2 More Cast Members",
-      "description": "Hirofumi Nojima, Shōgo Yano join cast starting in 15th episode",
-      "fullDescription": "Hirofumi Nojima, Shōgo Yano join cast starting in 15th episode",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-16/magical-sisters-lulutto-lilly-anime-reveals-2-more-cast-members/.242886",
-      "pubDate": "Fri, 16 Oct 2026 04:04:15 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242886/umezou.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242886"
     }
   ],
   "total": 15
