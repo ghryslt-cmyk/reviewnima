@@ -1,7 +1,40 @@
 {
-  "version": 1792200961432,
-  "fetchedAt": "2026-10-17T01:36:01.432Z",
+  "version": 1792217753812,
+  "fetchedAt": "2026-10-17T06:15:53.812Z",
   "news": [
+    {
+      "title": "Comikey Adds Mato Kauta's The Wolf King's Bride Manga",
+      "description": "Hakusensha serialized shōjo manga from 2009 to 2018",
+      "fullDescription": "Hakusensha serialized shōjo manga from 2009 to 2018",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-17/comikey-adds-mato-kauta-the-wolf-king-bride-manga/.242933",
+      "pubDate": "Sat, 17 Oct 2026 01:31:42 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242933/wolf-king.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242933"
+    },
+    {
+      "title": "Peow2 Licenses Jyoshikohei, Alien 9, Phantom Core Manga",
+      "description": "Company to release all 3 manga next year",
+      "fullDescription": "Company to release all 3 manga next year",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-17/peow2-licenses-jyoshikohei-alien-9-phantom-core-manga/.242932",
+      "pubDate": "Sat, 17 Oct 2026 01:08:19 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242932"
+    },
+    {
+      "title": "Viz Media Licenses Jojolion, His Sweet Solace, Under Doctor, More Manga for Summer 2027",
+      "description": "Someone Hertz, Belladonna's Lover, Bus for Two manga; more works slated for next summer",
+      "fullDescription": "<cite>Someone Hertz, Belladonna's Lover, Bus for Two</cite> manga; more works slated for next summer",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-16/viz-media-licenses-jojolion-his-sweet-solace-under-doctor-more-manga-for-summer-2027/.242929",
+      "pubDate": "Fri, 16 Oct 2026 22:58:10 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242929"
+    },
     {
       "title": "Final Love Live! Nijigasaki High School Idol Club Anime Film's Teaser Unveils February 5 Opening",
       "description": "3rd film features theme song \"Dreaming Free\"",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240600/hpwnmzta4aajc53.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242868"
-    },
-    {
-      "title": "GKIDS Offers CITY the Animation on BD Collector's Edition on December 15",
-      "description": "Release available exclusively on online GKIDS store",
-      "fullDescription": "Release available exclusively on online GKIDS store",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-15/gkids-offers-city-the-animation-on-bd-collector-edition-on-december-15/.242867",
-      "pubDate": "Thu, 15 Oct 2026 22:03:46 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242867/city-productshots-explodedpackshot-01b-transparent-legal.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242867"
-    },
-    {
-      "title": "Kodansha USA Licenses Jackpot Girls, Powerless Without You, Occult Times, 7 Other Manga",
-      "description": "Also: 7 titles for Kodansha Print Club",
-      "fullDescription": "Also: 7 titles for Kodansha Print Club",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-15/kodansha-usa-licenses-jackpot-girls-powerless-without-you-occult-times-7-other-manga/.242866",
-      "pubDate": "Thu, 15 Oct 2026 21:14:32 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242866/burnthehousedown-en-notfinal.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242866"
-    },
-    {
-      "title": "Cregger's Resident Evil Opens at #2 in Japan, 5th Girls und Panzer das Finale Film Opens at #5",
-      "description": "Chiikawa movie back at #1, Madoka Magica Walpurgisnacht: Rising at #10",
-      "fullDescription": "<cite>Chiikawa</cite> movie back at #1, <cite>Madoka Magica Walpurgisnacht: Rising</cite> at #10",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-15/cregger-resident-evil-opens-at-no.2-in-japan-5th-girls-und-panzer-das-finale-film-opens-at-no.5/.242827",
-      "pubDate": "Thu, 15 Oct 2026 12:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/231350/chiikawa.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.242827"
     }
   ],
   "total": 15
