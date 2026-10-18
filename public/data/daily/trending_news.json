@@ -1,7 +1,18 @@
 {
-  "version": 1792296790109,
-  "fetchedAt": "2026-10-18T04:13:10.109Z",
+  "version": 1792313713375,
+  "fetchedAt": "2026-10-18T08:55:13.375Z",
   "news": [
+    {
+      "title": "Crunchyroll Reveals English Dub Cast, Staff for 2nd Seasons of Black Clover, Aoashi Anime",
+      "description": "Black Clover English dub starts streaming on Saturday, Aoashi on Sunday",
+      "fullDescription": "<cite>Black Clover</cite> English dub starts streaming on Saturday, <cite>Aoashi</cite> on Sunday",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-18/crunchyroll-reveals-english-dub-cast-staff-for-2nd-seasons-of-black-clover-aoashi-anime/.242948",
+      "pubDate": "Sun, 18 Oct 2026 03:08:56 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/232340/black-clover-s2.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242948"
+    },
     {
       "title": "Japan's Video Game Rankings, October 5-11",
       "description": "Kingdom Hearts Collection Switch 2 version debuts at #1, Ace Combat 8 ranks at #3",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242895/lodoss-war-covenant-novel-cover.jfif.jpeg",
       "guid": "https://www.animenewsnetwork.com/cms/.242895"
-    },
-    {
-      "title": "BanG Dream! Ave Mujica prima aurora Anime Film Reveals 2nd Promo Video",
-      "description": "Film opened in Japan on Friday",
-      "fullDescription": "Film opened in Japan on Friday",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-16/bang-dream-ave-mujica-prima-aurora-anime-film-reveals-2nd-promo-video/.242894",
-      "pubDate": "Fri, 16 Oct 2026 07:25:08 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.242894"
     }
   ],
   "total": 15
