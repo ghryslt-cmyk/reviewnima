@@ -1,7 +1,18 @@
 {
-  "version": 1792442229627,
-  "fetchedAt": "2026-10-19T20:37:09.627Z",
+  "version": 1792454260999,
+  "fetchedAt": "2026-10-19T23:57:40.999Z",
   "news": [
+    {
+      "title": "TMS Entertainment to Stream Lupin III vs. Detective Conan Film, 4th Collection of Detective Conan Anime",
+      "description": "Crossover film streams on YouTube on October 24; more Detective Conan episodes stream on November 1",
+      "fullDescription": "Crossover film streams on YouTube on October 24; more <cite>Detective Conan</cite> episodes stream on November 1",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-19/tms-entertainment-to-stream-lupin-iii-vs-detective-conan-film-4th-collection-of-detective-conan-/.242994",
+      "pubDate": "Mon, 19 Oct 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.8/226053/detective-conan.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242994"
+    },
     {
       "title": "Netflix Replaces Chief Content Officer, Lays Off About 1,000 Employees",
       "description": "Former Disney/Fox executive Peter Rice replaces Bela Bajaria as CCO",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.242961"
-    },
-    {
-      "title": "Star Detective Precure! Film Becomes Highest-Grossing Standalone Film in Precure Franchise",
-      "description": "Film has earned estimated 1.24 billion yen in 1st month of screening, surpassing 2024's Wonderful Precure! The Movie! Dokidoki♡Game no Sekai de Daibōken!",
-      "fullDescription": "Film has earned estimated 1.24 billion yen in 1st month of screening, surpassing 2024's <cite>Wonderful Precure! The Movie! Dokidoki♡Game no Sekai de Daibōken!</cite>",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-19/star-detective-precure-film-becomes-highest-grossing-standalone-film-in-precure-franchise/.242954",
-      "pubDate": "Mon, 19 Oct 2026 06:45:16 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239977/precure.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242954"
     }
   ],
   "total": 15
