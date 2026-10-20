@@ -1,7 +1,40 @@
 {
-  "version": 1792454260999,
-  "fetchedAt": "2026-10-19T23:57:40.999Z",
+  "version": 1792471087709,
+  "fetchedAt": "2026-10-20T04:38:07.709Z",
   "news": [
+    {
+      "title": "Pierrot Films Animates Yona of the Dawn Anime's Sequel",
+      "description": "Anime sequel announced when manga ended last December",
+      "fullDescription": "Anime sequel announced when manga ended last December",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-20/pierrot-films-animates-yona-of-the-dawn-anime-sequel/.243008",
+      "pubDate": "Tue, 20 Oct 2026 00:14:46 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243008/yona48.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243008"
+    },
+    {
+      "title": "&#039;Magi&#039; Creator Shinobu Ohtaka Begins New Manga &#039;Geek Crown&#039;",
+      "description": "The official X account of Magazine Pocket announced on Tuesday that Shinobu Ohtaka will begin serializing a new manga, titled Geek Crown (Geek and Crown), on the platform on October 27. Geek Crown is described as a military fantasy in which the protagonist must expose a traitorous officer lurking wi...",
+      "fullDescription": "The official X account of Magazine Pocket announced on Tuesday that Shinobu Ohtaka will begin serializing a new manga, titled Geek Crown (Geek and Crown), on the platform on October 27. Geek Crown is described as a military fantasy in which the protagonist must expose a traitorous officer lurking within a royal succession war. Ohtaka is best known for the fantasy adventure manga Magi (Magi: The Labyrinth of Magic), which ran in Shounen Sunday from June 2009 to October 2017. Shogakukan published...",
+      "link": "https://myanimelist.net/news/74839154?_location=rss",
+      "pubDate": "Mon, 19 Oct 2026 19:26:58 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792463149-e5a16d6549bf86e6f9a02209e55b42aa.jpeg",
+      "guid": "https://myanimelist.net/news/74839154?_location=rss"
+    },
+    {
+      "title": "Fukakōryoku no I Love You Manga Gets Live-Action Film Next March",
+      "description": "Kōta Nomura, Juri Kōsaka star in film",
+      "fullDescription": "Kōta Nomura, Juri Kōsaka star in film",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-19/fukakoryoku-no-i-love-you-manga-gets-live-action-film-next-march/.242999",
+      "pubDate": "Mon, 19 Oct 2026 21:10:57 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242999/fukakoryokunoiloveyou.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.242999"
+    },
     {
       "title": "TMS Entertainment to Stream Lupin III vs. Detective Conan Film, 4th Collection of Detective Conan Anime",
       "description": "Crossover film streams on YouTube on October 24; more Detective Conan episodes stream on November 1",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792413309-17a5c226c803ae6c151e6a70a8fdf8e6.jpeg",
       "guid": "https://myanimelist.net/news/74836586?_location=rss"
-    },
-    {
-      "title": "Hoshi in the Girls' Garden Tops Oricon's Comic Ranking for September",
-      "description": "Kagurabachi volume 12 ranks at #2, Dandadan volume 25 ranks at #3",
-      "fullDescription": "<cite>Kagurabachi</cite> volume 12 ranks at #2, <cite>Dandadan</cite> volume 25 ranks at #3",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-19/hoshi-in-the-girls-garden-tops-oricon-comic-ranking-for-september/.242956",
-      "pubDate": "Mon, 19 Oct 2026 08:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238242/oricon-tate-rgb-560x560.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242956"
-    },
-    {
-      "title": "Satomi, Nanamori Graduate From Strawberry Prince Group",
-      "description": "Nanamori to continue producer, manager role; Satomi to do solo activities",
-      "fullDescription": "Nanamori to continue producer, manager role; Satomi to do solo activities",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-19/satomi-nanamori-graduate-from-strawberry-prince-group/.242969",
-      "pubDate": "Mon, 19 Oct 2026 07:29:17 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242969/strawberryprince.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242969"
-    },
-    {
-      "title": "The Kingdoms of Ruin's yoruhashi Launches New Manga on Thursday",
-      "description": "Manga centers on boy Raran, out for revenge against curses",
-      "fullDescription": "Manga centers on boy Raran, out for revenge against curses",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-19/the-kingdoms-of-ruin-yoruhashi-launches-new-manga-on-thursday/.242961",
-      "pubDate": "Mon, 19 Oct 2026 07:13:25 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.242961"
     }
   ],
   "total": 15
