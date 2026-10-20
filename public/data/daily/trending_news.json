@@ -1,7 +1,51 @@
 {
-  "version": 1792471087709,
-  "fetchedAt": "2026-10-20T04:38:07.709Z",
+  "version": 1792489223920,
+  "fetchedAt": "2026-10-20T09:40:23.920Z",
   "news": [
+    {
+      "title": "Screen, Voice Actor Hiroshi Tsuchida Dies at 54",
+      "description": "Tsuchida died on October 11 due to heart failure",
+      "fullDescription": "Tsuchida died on October 11 due to heart failure",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-20/screen-voice-actor-hiroshi-tsuchida-dies-at-54/.243009",
+      "pubDate": "Tue, 20 Oct 2026 03:38:27 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243009/tsuchida-hiroshi.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243009"
+    },
+    {
+      "title": "Cygames Cancels Uma Musume: Pretty Derby Franchise's U.S. Concerts",
+      "description": "Staff could not obtain U.S. visas for L.A. concerts slated for October 22-23",
+      "fullDescription": "Staff could not obtain U.S. visas for L.A. concerts slated for October 22-23",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-20/cygames-cancels-uma-musume-pretty-derby-franchise-u.s-concerts/.243013",
+      "pubDate": "Tue, 20 Oct 2026 02:18:43 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243013"
+    },
+    {
+      "title": "Cygames Cancels Uma Musume: Pretty Derby Franchise's U.S. Concerts Due to Visa Issues",
+      "description": "Staff could not obtain U.S. visas for L.A. concerts slated for October 22-23",
+      "fullDescription": "Staff could not obtain U.S. visas for L.A. concerts slated for October 22-23",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-20/cygames-cancels-uma-musume-pretty-derby-franchise-u.s-concerts-due-to-visa-issues/.243012",
+      "pubDate": "Tue, 20 Oct 2026 01:05:14 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239701/uma-musume-world-tour.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243012"
+    },
+    {
+      "title": "Visual Novel Creator Jun Maeda Diagnosed with Pharyngeal Cancer",
+      "description": "Jun Maeda, the acclaimed writer and composer known for visual novels such as Kanon, Air, Clannad, and Little Busters!, has been diagnosed with pharyngeal cancer. Visual Arts/Key announced the news on Monday, revealing that Maeda has opted to forgo active treatment in favor of palliative care so he c...",
+      "fullDescription": "Jun Maeda, the acclaimed writer and composer known for visual novels such as Kanon, Air, Clannad, and Little Busters!, has been diagnosed with pharyngeal cancer. Visual Arts/Key announced the news on Monday, revealing that Maeda has opted to forgo active treatment in favor of palliative care so he can conserve his strength and continue his creative work. According to the company&#039;s announcement, Maeda began experiencing throat discomfort in early spring, with swelling and pain becoming more...",
+      "link": "https://myanimelist.net/news/74839395?_location=rss",
+      "pubDate": "Mon, 19 Oct 2026 21:36:16 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792470905-316e2dcfea3912a6032a3bd7d47ba6cc.jpeg",
+      "guid": "https://myanimelist.net/news/74839395?_location=rss"
+    },
     {
       "title": "Pierrot Films Animates Yona of the Dawn Anime's Sequel",
       "description": "Anime sequel announced when manga ended last December",
@@ -122,50 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242985/upsaint.png.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242985"
-    },
-    {
-      "title": "Comic CMOA Service Remains Suspended After Confirmed Unauthorized External Access",
-      "description": "Service suspended since Thursday",
-      "fullDescription": "Service suspended since Thursday",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-19/comic-cmoa-service-remains-suspended-after-confirmed-unauthorized-external-access/.242977",
-      "pubDate": "Mon, 19 Oct 2026 10:40:25 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242977/cmoa.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242977"
-    },
-    {
-      "title": "Rakuten Viki, Imaginus to Debut AI-Assisted Korean-Animated Series The Painted Soul on October 21",
-      "description": "Rakuten Viki plans to add more animated content in the future",
-      "fullDescription": "Rakuten Viki plans to add more animated content in the future",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-19/rakuten-viki-imaginus-to-debut-ai-assisted-korean-animated-series-the-painted-soul-on-october-21/.242971",
-      "pubDate": "Mon, 19 Oct 2026 10:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242971/tps-4.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242971"
-    },
-    {
-      "title": "The Irregular at Magic High School Magian Company Tops Oricon's Light Novel Ranking for September",
-      "description": "NISIOISIN's Torimonogatari, Saekisan's The Angel Next Door Spoils Me Rotten rank at #2, #3",
-      "fullDescription": "NISIOISIN's <cite>Torimonogatari</cite>, Saekisan's <cite>The Angel Next Door Spoils Me Rotten</cite> rank at #2, #3",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-19/the-irregular-at-magic-high-school-magian-company-tops-oricon-light-novel-ranking-for-september/.242950",
-      "pubDate": "Mon, 19 Oct 2026 09:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238242/oricon-tate-rgb-560x560.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.242950"
-    },
-    {
-      "title": "&#039;Hametsu no Oukoku&#039; Creator Launches New Manga",
-      "description": "The 46th issue of Weekly Shounen Champion magazine announced on October 15 that manga creator yoruhashi will launch a new manga, titled Tatarigatachi: Dochakushin Geigeki Gakuin (Curse Shape: Native God Interception Academy), in the magazine next issue, scheduled for an October 22 release. yoruhashi...",
-      "fullDescription": "The 46th issue of Weekly Shounen Champion magazine announced on October 15 that manga creator yoruhashi will launch a new manga, titled Tatarigatachi: Dochakushin Geigeki Gakuin (Curse Shape: Native God Interception Academy), in the magazine next issue, scheduled for an October 22 release. yoruhashi is best known for Hametsu no Oukoku (The Kingdoms of Ruin), which ran in monthly Comic Garden magazine from April 2019 to June 9. The 15th and final volume went on sale on July 9. Seven Seas Entertai...",
-      "link": "https://myanimelist.net/news/74836586?_location=rss",
-      "pubDate": "Mon, 19 Oct 2026 05:37:03 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792413309-17a5c226c803ae6c151e6a70a8fdf8e6.jpeg",
-      "guid": "https://myanimelist.net/news/74836586?_location=rss"
     }
   ],
   "total": 15
