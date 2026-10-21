@@ -1,7 +1,51 @@
 {
-  "version": 1792596894982,
-  "fetchedAt": "2026-10-21T15:34:54.982Z",
+  "version": 1792611655567,
+  "fetchedAt": "2026-10-21T19:40:55.567Z",
   "news": [
+    {
+      "title": "Rin Shimokawa's 'Godmother' Manga from Young Magazine US Starts Seralization on November 18",
+      "description": "Original 1-shot debuted in special Young Magazine US English issue",
+      "fullDescription": "Original 1-shot debuted in special Young Magazine US English issue",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-21/rin-shimokawa-godmother-manga-from-young-magazine-us-starts-seralization-on-november-18/.243046",
+      "pubDate": "Wed, 21 Oct 2026 15:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243046"
+    },
+    {
+      "title": "Magic Knight Rayearth, Sasaki and Peeps 2nd Season Anime Reveal English Dub Debuts, Casts",
+      "description": "Both dubs debut on Wednesday",
+      "fullDescription": "Both dubs debut on Wednesday",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-21/magic-knight-rayearth-sasaki-and-peeps-2nd-season-anime-reveal-english-dub-debuts-casts/.243074",
+      "pubDate": "Wed, 21 Oct 2026 12:31:44 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243074"
+    },
+    {
+      "title": "The Apothecary Diaries: The False Imperial Brother Mystery Game's Trailer Reveals March 18 Release",
+      "description": "Video previews mysteries, concoctions, investigations",
+      "fullDescription": "Video previews mysteries, concoctions, investigations",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-21/the-apothecary-diaries-the-false-imperial-brother-mystery-game-trailer-reveals-march-18-release/.243072",
+      "pubDate": "Wed, 21 Oct 2026 12:01:06 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243072"
+    },
+    {
+      "title": "Singer AKINO Graduates from bless4; Band Changes Name to 'bless∞(Forever)'",
+      "description": "AKINO to perform in final graduation performance with band on December 21",
+      "fullDescription": "AKINO to perform in final graduation performance with band on December 21",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-21/singer-akino-graduates-from-bless4-band-changes-name-to-bless/.243069",
+      "pubDate": "Wed, 21 Oct 2026 11:35:12 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243069"
+    },
     {
       "title": "A-DO Manga to End on November 18",
       "description": "Jaku Amano to publish final chapter in Monthly Young Magazine's December issue",
@@ -10,7 +54,7 @@
       "pubDate": "Wed, 21 Oct 2026 08:53:49 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.8/223743/a-do.jpg",
+      "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.243043"
     },
     {
@@ -21,7 +65,7 @@
       "pubDate": "Wed, 21 Oct 2026 08:47:52 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243042/fireflyweddingvol13.jpg",
+      "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.243042"
     },
     {
@@ -43,7 +87,7 @@
       "pubDate": "Wed, 21 Oct 2026 08:30:24 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max450x450/cms/news.6/192519/loser.jpeg",
+      "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.243058"
     },
     {
@@ -54,7 +98,7 @@
       "pubDate": "Wed, 21 Oct 2026 05:37:08 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238996/eleceed-kv.jpg",
+      "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.243063"
     },
     {
@@ -65,7 +109,7 @@
       "pubDate": "Wed, 21 Oct 2026 05:24:40 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239302/grotesqqque-kv.jfif.jpg",
+      "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.243061"
     },
     {
@@ -76,7 +120,7 @@
       "pubDate": "Wed, 21 Oct 2026 01:52:21 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243048/mona.jpg",
+      "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.243048"
     },
     {
@@ -87,8 +131,19 @@
       "pubDate": "Wed, 21 Oct 2026 00:54:32 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241794/harugen.jpg",
+      "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.243050"
+    },
+    {
+      "title": "&#039;Seibetsu \"Mona Lisa\" no Kimi e.&#039; Unveils Additional Cast, Staff, Ending Theme, First Promo, 2027 Debut",
+      "description": "The official website for the television anime adaptation of Tsumuji Yoshimura&#039;s Seibetsu &quot;Mona Lisa&quot; no Kimi e. (Just Like Mona Lisa) manga unveiled additional cast, staff, a key visual (pictured right), the ending theme, and first promotional video on Wednesday. The anime series will...",
+      "fullDescription": "The official website for the television anime adaptation of Tsumuji Yoshimura&#039;s Seibetsu &quot;Mona Lisa&quot; no Kimi e. (Just Like Mona Lisa) manga unveiled additional cast, staff, a key visual (pictured right), the ending theme, and first promotional video on Wednesday. The anime series will premiere in 2027. Cast Yoshino Aoyama (Bocchi the Rock!) Nobuhiko Okamoto (Sousou no Frieren) Daisuke Sakuma (Kill Ao) Chiharu (22/7) Kakeru Hatano (Tamon-kun Ima Docchi!?) Haruna Mikawa (Ore dake L...",
+      "link": "https://myanimelist.net/news/74843217?_location=rss",
+      "pubDate": "Tue, 20 Oct 2026 21:10:10 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792555769-087463e39aef266a6a8657e4e4da919a.jpeg",
+      "guid": "https://myanimelist.net/news/74843217?_location=rss"
     },
     {
       "title": "ghost – end of night Anime Film Unveils 3 Cast Members",
@@ -98,74 +153,19 @@
       "pubDate": "Tue, 20 Oct 2026 20:50:26 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243040/mobydick.jpg",
+      "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.243040"
     },
     {
-      "title": "Writer Skyfarm, Artist Tentashi's Wildcard Alchemist Manga Ends",
-      "description": "Manga launched in April 2025",
-      "fullDescription": "Manga launched in April 2025",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-20/writer-skyfarm-artist-tentashi-wildcard-alchemist-manga-ends/.243019",
-      "pubDate": "Tue, 20 Oct 2026 19:00:00 -0400",
-      "source": "Anime News Network",
+      "title": "&#039;Ghost: Yoru no Hate&#039; Announces Additional Cast",
+      "description": "The official website for the Ghost: Yoru no Hate original anime movie announced three additional cast members on Wednesday. The movie is scheduled to open in Japanese theaters on February 11, 2027. The movie was previewed at Sitges Film Festival on October 9 and at Animation Is Film Festival on Octo...",
+      "fullDescription": "The official website for the Ghost: Yoru no Hate original anime movie announced three additional cast members on Wednesday. The movie is scheduled to open in Japanese theaters on February 11, 2027. The movie was previewed at Sitges Film Festival on October 9 and at Animation Is Film Festival on October 17. Cast Moby Dick: Kenjirou Tsuda (Jujutsu Kaisen) Karate: Hiroki Yasumoto (Koukaku Kidoutai (TV)) Itou: Hiroshi Kamiya (Shingeki no Kyojin) Shingo Natsume (One Punch Man) directes and pens the...",
+      "link": "https://myanimelist.net/news/74842607?_location=rss",
+      "pubDate": "Tue, 20 Oct 2026 17:43:12 -0700",
+      "source": "MyAnimeList",
       "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241519/978.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243019"
-    },
-    {
-      "title": "Hikaru Nakamura's Black Night Parade Manga Ends, Teases Major Announcement on December 18",
-      "description": "Manga also gets side story in Ultra Jump magazine on December 18",
-      "fullDescription": "Manga also gets side story in <cite>Ultra Jump</cite> magazine on December 18",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-20/hikaru-nakamura-black-night-parade-manga-ends-teases-major-announcement-on-december-18/.243021",
-      "pubDate": "Tue, 20 Oct 2026 18:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max400x400/cms/news.6/196285/blacknight.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243021"
-    },
-    {
-      "title": "Shiten Akiyama's Horizon Manga Resumes",
-      "description": "Manga debuted in June 2025; Kodama Tales to release manga in English in January 2027",
-      "fullDescription": "Manga debuted in June 2025; Kodama Tales to release manga in English in January 2027",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-20/shiten-akiyama-horizon-manga-resumes/.243028",
-      "pubDate": "Tue, 20 Oct 2026 17:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243028/horizon-1.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243028"
-    },
-    {
-      "title": "Live-Action Twisted Sisters Series Reveals Cast",
-      "description": "Yumia Fujisaki, Hikari Ishida, Hisako Manda join cast",
-      "fullDescription": "Yumia Fujisaki, Hikari Ishida, Hisako Manda join cast",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-20/live-action-twisted-sisters-series-reveals-cast/.243006",
-      "pubDate": "Tue, 20 Oct 2026 16:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243006/twistedsisters-cast.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243006"
-    },
-    {
-      "title": "Live-Action Look Back Film Screens in N. American Theaters on December 30",
-      "description": "GKIDS screens film nationwide in theaters on January 15",
-      "fullDescription": "GKIDS screens film nationwide in theaters on January 15",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-20/live-action-look-back-film-screens-in-n-american-theaters-on-december-30/.243034",
-      "pubDate": "Tue, 20 Oct 2026 15:00:04 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238294/lb26-postera-web.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243034"
-    },
-    {
-      "title": "Murciélago TV Anime's Teaser Trailer Reveals Cast",
-      "description": "Hitomi Ueda, Minori Suzuki, Sumire Uesaka star in January 2027 anime",
-      "fullDescription": "Hitomi Ueda, Minori Suzuki, Sumire Uesaka star in January 2027 anime",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-20/murcielago-tv-anime-teaser-trailer-reveals-cast/.243033",
-      "pubDate": "Tue, 20 Oct 2026 14:23:37 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243033/murcielago.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243033"
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792543763-79d038765292c1d19df1076ff987abb7.jpeg",
+      "guid": "https://myanimelist.net/news/74842607?_location=rss"
     }
   ],
   "total": 15
