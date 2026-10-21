@@ -1,7 +1,18 @@
 {
-  "version": 1792534350133,
-  "fetchedAt": "2026-10-20T22:12:30.133Z",
+  "version": 1792543251582,
+  "fetchedAt": "2026-10-21T00:40:51.582Z",
   "news": [
+    {
+      "title": "Writer Skyfarm, Artist Tentashi's Wildcard Alchemist Manga Ends",
+      "description": "Manga launched in April 2025",
+      "fullDescription": "Manga launched in April 2025",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-20/writer-skyfarm-artist-tentashi-wildcard-alchemist-manga-ends/.243019",
+      "pubDate": "Tue, 20 Oct 2026 19:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241519/978.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243019"
+    },
     {
       "title": "Hikaru Nakamura's Black Night Parade Manga Ends, Teases Major Announcement on December 18",
       "description": "Manga also gets side story in Ultra Jump magazine on December 18",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/242976/image1.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.242976"
-    },
-    {
-      "title": "The Iceblade Sorcerer Shall Rule the World Light Novels' 10th Volume Teases Finale",
-      "description": "10th volume out on December 2",
-      "fullDescription": "10th volume out on December 2",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-20/the-iceblade-sorcerer-shall-rule-the-world-light-novels-10th-volume-teases-finale/.243002",
-      "pubDate": "Tue, 20 Oct 2026 09:00:03 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243002/iceblade-nov09.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243002"
     }
   ],
   "total": 15
