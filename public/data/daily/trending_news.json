@@ -1,7 +1,84 @@
 {
-  "version": 1792672243150,
-  "fetchedAt": "2026-10-22T12:30:43.150Z",
+  "version": 1792690798236,
+  "fetchedAt": "2026-10-22T17:39:58.236Z",
   "news": [
+    {
+      "title": "Yūichirō Momose, Hina Hinata's Bagudan Manga Ends on November 24",
+      "description": "Reverse harem comedy manga launched on March 24",
+      "fullDescription": "Reverse harem comedy manga launched on March 24",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-22/yuichiro-momose-hina-hinata-bagudan-manga-ends-on-november-24/.243066",
+      "pubDate": "Thu, 22 Oct 2026 12:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243066/bagudan.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243066"
+    },
+    {
+      "title": "Takopi's Original Sin Compilation Film's Trailer Reveals Theme Song",
+      "description": "Tele returns to perform theme song for November 27 film",
+      "fullDescription": "Tele returns to perform theme song for November 27 film",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-22/takopi-original-sin-compilation-film-trailer-reveals-theme-song/.243112",
+      "pubDate": "Thu, 22 Oct 2026 11:36:18 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243112/takopi-s-original-sin-film.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243112"
+    },
+    {
+      "title": "Exclusive: Nakama Press Licenses Uoto's 100 Meters, Goku Midnight Eye Manga for Release in 2027",
+      "description": "Nakama Press also revealed new release date for Samurai Pizza Cats comic",
+      "fullDescription": "Nakama Press also revealed new release date for <cite>Samurai Pizza Cats</cite> comic",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-22/exclusive-nakama-press-licenses-uoto-100-meters-goku-midnight-eye-manga-for-release-in-2027/.243056",
+      "pubDate": "Thu, 22 Oct 2026 11:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243056/100.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243056"
+    },
+    {
+      "title": "Capcom Confirms Data Breach of Over 11 Million User Accounts",
+      "description": "Third party had unauthorized access to Capcom ID service starting on October 19",
+      "fullDescription": "Third party had unauthorized access to Capcom ID service starting on October 19",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-22/capcom-confirms-data-breach-of-over-11-million-user-accounts/.243110",
+      "pubDate": "Thu, 22 Oct 2026 10:51:10 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/230666/capcom.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243110"
+    },
+    {
+      "title": "Manga &#039;Uruwashi no Yoi no Tsuki&#039; Ends in Next Chapter",
+      "description": "The official X (formerly Twitter) account of Desert magazine announced on Thursday that Mika Yamamori&#039;s Uruwashi no Yoi no Tsuki (In the Clear Moonlit Dusk) manga will end with its next chapter. The 45th and final chapter is scheduled to be released in the December 2026 issue of Desert magazine...",
+      "fullDescription": "The official X (formerly Twitter) account of Desert magazine announced on Thursday that Mika Yamamori&#039;s Uruwashi no Yoi no Tsuki (In the Clear Moonlit Dusk) manga will end with its next chapter. The 45th and final chapter is scheduled to be released in the December 2026 issue of Desert magazine on October 23. Yamamori launched the school romance manga in Desert magazine in July 2020. Kodansha released the 11th volume on September 11. The manga has a cumulative 8.2 million copies of its volu...",
+      "link": "https://myanimelist.net/news/74846841?_location=rss",
+      "pubDate": "Thu, 22 Oct 2026 05:51:17 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792673449-1373befb97d93af798e504f069088e65.jpeg",
+      "guid": "https://myanimelist.net/news/74846841?_location=rss"
+    },
+    {
+      "title": "The Apothecary Diaries Film's New Trailer Unveils Kenshi Yonezu's Theme Song",
+      "description": "New visual, character chart, details on creator Hyuganatsu's new stories also unveiled",
+      "fullDescription": "New visual, character chart, details on creator Hyuganatsu's new stories also unveiled",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-22/the-apothecary-diaries-film-new-trailer-unveils-kenshi-yonezu-theme-song/.243109",
+      "pubDate": "Thu, 22 Oct 2026 08:29:12 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243109/kv-2.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243109"
+    },
+    {
+      "title": "Muv-Luv Alternative's Schwarzesmarken Games Get Steam Release",
+      "description": "Schwarzesmarken Kōketsu no Monshō, Schwarzesmarken Junkyōsha-tachi to launch with planned Japanese, English, Chinese language support",
+      "fullDescription": "<cite>Schwarzesmarken Kōketsu no Monshō</cite>, <cite>Schwarzesmarken Junkyōsha-tachi</cite> to launch with planned Japanese, English, Chinese language support",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-22/muv-luv-alternative-schwarzesmarken-games-get-steam-release/.243107",
+      "pubDate": "Thu, 22 Oct 2026 08:27:56 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243107"
+    },
     {
       "title": "Gyakusatsu Kigen Manga Gets Animated Promotional Video",
       "description": "Sōma Saitō narrates video storyboarded by My Happy Marriage director Takehiro Kubota",
@@ -89,83 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243100/tennis.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243100"
-    },
-    {
-      "title": "Seven Seas Licenses Sagrada Reset Novel; Two Cats and a Dog, The Mercenary Bomber Explodes All Cheaters Manga",
-      "description": "Also licensed: Venus Mission: I Was an Assassin-for-Hire Who Died, Now I'm Hunting Heroes in Another World audiobook, Miotsukushi: Backdoor Channels manga",
-      "fullDescription": "Also licensed: <cite>Venus Mission: I Was an Assassin-for-Hire Who Died, Now I'm Hunting Heroes in Another World</cite> audiobook, <cite>Miotsukushi: Backdoor Channels</cite> manga",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-22/seven-seas-licenses-sagrada-reset-novel-two-cats-and-a-dog-the-mercenary-bomber-explodes-all-/.243080",
-      "pubDate": "Thu, 22 Oct 2026 03:53:39 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243080/venus-mission-ab-01-copy03-09-19-25.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243080"
-    },
-    {
-      "title": "The Seven Knights of the Marronnier Kingdom Anime Reveals 4 Cast Members",
-      "description": "Naomi Shindō, Atsushi Ono, Ai Kayano, Yurie Funato voice Country of Long Nights' royalty",
-      "fullDescription": "Naomi Shindō, Atsushi Ono, Ai Kayano, Yurie Funato voice Country of Long Nights' royalty",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-21/the-seven-knights-of-the-marronnier-kingdom-anime-reveals-4-cast-members/.243088",
-      "pubDate": "Wed, 21 Oct 2026 23:38:44 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243088/hyrokkin.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243088"
-    },
-    {
-      "title": "Live-Action My Sister's Boyfriend Film's Trailer Unveils Song by timelesz",
-      "description": "timelesz performs theme song \"Hontō no Koto o Iu to\" for December 4 film",
-      "fullDescription": "timelesz performs theme song \"Hontō no Koto o Iu to\" for December 4 film",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-21/live-action-my-sister-boyfriend-film-trailer-unveils-song-by-timelesz/.243083",
-      "pubDate": "Wed, 21 Oct 2026 22:21:11 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243083/characterposter01.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243083"
-    },
-    {
-      "title": "Cygames to Reimburse Travel, Lodging for Canceled Uma Musume Concerts",
-      "description": "Cygames to cover cancellation fees for those who planned to go, expenses who already left to LA",
-      "fullDescription": "Cygames to cover cancellation fees for those who planned to go, expenses who already left to LA",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-21/cygames-to-reimburse-travel-lodging-for-canceled-uma-musume-concerts/.243082",
-      "pubDate": "Wed, 21 Oct 2026 20:55:21 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239701/uma-musume-world-tour.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243082"
-    },
-    {
-      "title": "FuRyu Previews Crymelight Game's Battles in New Trailer",
-      "description": "Game launches for Switch 2, PS5, PC via Steam on November 5",
-      "fullDescription": "Game launches for Switch 2, PS5, PC via Steam on November 5",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-21/furyu-previews-crymelight-game-battles-in-new-trailer/.243079",
-      "pubDate": "Wed, 21 Oct 2026 17:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/236778/crymelight-key-art.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243079"
-    },
-    {
-      "title": "Nao Emoto Launches Manga of Mokuyōbi ni wa Cocoa o Novel",
-      "description": "Manga launched on Tuesday",
-      "fullDescription": "Manga launched on Tuesday",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-21/nao-emoto-launches-manga-of-mokuyobi-ni-wa-cocoa-o-novel/.243041",
-      "pubDate": "Wed, 21 Oct 2026 16:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243041/cocoa.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243041"
-    },
-    {
-      "title": "Rin Shimokawa's 'Godmother' Manga from Young Magazine US Starts Seralization on November 18",
-      "description": "Original 1-shot debuted in special Young Magazine US English issue",
-      "fullDescription": "Original 1-shot debuted in special Young Magazine US English issue",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-21/rin-shimokawa-godmother-manga-from-young-magazine-us-starts-seralization-on-november-18/.243046",
-      "pubDate": "Wed, 21 Oct 2026 15:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max550x550/cms/news.9/231244/godmother.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243046"
     }
   ],
   "total": 15
