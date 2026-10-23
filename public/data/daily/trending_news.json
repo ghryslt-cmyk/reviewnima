@@ -1,7 +1,29 @@
 {
-  "version": 1792780846363,
-  "fetchedAt": "2026-10-23T18:40:46.363Z",
+  "version": 1792791804132,
+  "fetchedAt": "2026-10-23T21:43:24.132Z",
   "news": [
+    {
+      "title": "North American Anime, Manga Releases, October 18-24",
+      "description": "Reincarnated As A Dragon Hatchling anime; The Apothecary Diaries: Maomao's Notes on the Inner Palace, The Mandalorian, My Dress-Up Darling XOXO! manga ship",
+      "fullDescription": "<cite>Reincarnated As A Dragon Hatchling</cite> anime; <cite>The Apothecary Diaries: Maomao's Notes on the Inner Palace, The Mandalorian, My Dress-Up Darling XOXO!</cite> manga ship",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-23/north-american-anime-manga-releases-october-18-24/.242997",
+      "pubDate": "Fri, 23 Oct 2026 17:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.242997"
+    },
+    {
+      "title": "Horror Collector Anime Reveals English Dub Cast, October 24 Debut",
+      "description": "1st episode stars Brandon Allan Majella, Larry Brantley, Rebecca Danae, more on Saturday",
+      "fullDescription": "1st episode stars Brandon Allan Majella, Larry Brantley, Rebecca Danae, more on Saturday",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-23/horror-collector-anime-reveals-english-dub-cast-october-24-debut/.243149",
+      "pubDate": "Fri, 23 Oct 2026 15:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241939/horrorcollector.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243149"
+    },
     {
       "title": "Scriptwriter Toyoto Kogisu Dies at 69",
       "description": "Kogisu wrote several episodes for Detective Conan anime",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792726916-92ff014e6dcc5bc0becab159b7b5aece.jpeg",
       "guid": "https://myanimelist.net/news/74849312?_location=rss"
-    },
-    {
-      "title": "Frequent Ghibli Collaborator Joe Hisaishi Named LA Philharmonic's Composer-in-Residence",
-      "description": "Orchestra's new post is part of 5-year artistic partnership, involves composing new works",
-      "fullDescription": "Orchestra's new post is part of 5-year artistic partnership, involves composing new works",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-22/frequent-ghibli-collaborator-joe-hisaishi-named-la-philharmonic-composer-in-residence/.243119",
-      "pubDate": "Thu, 22 Oct 2026 21:56:47 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.6/204122/joe-hisaishi.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243119"
-    },
-    {
-      "title": "Kumo Kagyu's Moscow 2160 Manga Listed to End With 5th Volume (Updated)",
-      "description": "Series debuted in December 2022",
-      "fullDescription": "Series debuted in December 2022",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-22/kumo-kagyu-moscow-2160-manga-listed-to-end-with-5th-volume/.243081",
-      "pubDate": "Thu, 22 Oct 2026 18:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/237407/moscow-2160-vol.1-manga.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243081"
     }
   ],
   "total": 15
