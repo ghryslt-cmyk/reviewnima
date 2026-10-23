@@ -1,7 +1,29 @@
 {
-  "version": 1792713412365,
-  "fetchedAt": "2026-10-22T23:56:52.365Z",
+  "version": 1792730001909,
+  "fetchedAt": "2026-10-23T04:33:21.909Z",
   "news": [
+    {
+      "title": "&#039;Made in Abyss: Mezameru Shinpi&#039; Movie Second Part Announced",
+      "description": "The official website of the Made in Abyss: Mezameru Shinpi (Made in Abyss: Awakening Mystery) movie announced the production of a second part on Friday, as well as five additional cast and a second key visual (pictured) for the first movie. The first part premiered in Japan on Friday. Cast Srajo: Na...",
+      "fullDescription": "The official website of the Made in Abyss: Mezameru Shinpi (Made in Abyss: Awakening Mystery) movie announced the production of a second part on Friday, as well as five additional cast and a second key visual (pictured) for the first movie. The first part premiered in Japan on Friday. Cast Srajo: Nana Mizuki (Boruto: Naruto Next Generations) Nishagora: Akino Watanabe (Free! Dive to the Future) Yataramar: Shunsuke Takeuchi (Ao Ashi) Sherumi: Nao Touyama (Kanojo, Okarishimasu) Menae: Yume Miyamoto...",
+      "link": "https://myanimelist.net/news/74849312?_location=rss",
+      "pubDate": "Thu, 22 Oct 2026 20:43:18 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792726916-92ff014e6dcc5bc0becab159b7b5aece.jpeg",
+      "guid": "https://myanimelist.net/news/74849312?_location=rss"
+    },
+    {
+      "title": "Frequent Ghibli Collaborator Joe Hisaishi Named LA Philharmonic's Composer-in-Residence",
+      "description": "Orchestra's new post is part of 5-year artistic partnership, involves composing new works",
+      "fullDescription": "Orchestra's new post is part of 5-year artistic partnership, involves composing new works",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-22/frequent-ghibli-collaborator-joe-hisaishi-named-la-philharmonic-composer-in-residence/.243119",
+      "pubDate": "Thu, 22 Oct 2026 21:56:47 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.6/204122/joe-hisaishi.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243119"
+    },
     {
       "title": "Kumo Kagyu's Moscow 2160 Manga Listed to End With 5th Volume",
       "description": "Series debuted in December 2022",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.243107"
-    },
-    {
-      "title": "Gyakusatsu Kigen Manga Gets Animated Promotional Video",
-      "description": "Sōma Saitō narrates video storyboarded by My Happy Marriage director Takehiro Kubota",
-      "fullDescription": "Sōma Saitō narrates video storyboarded by <cite>My Happy Marriage</cite> director Takehiro Kubota",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-22/gyakusatsu-kigen-manga-gets-animated-promotional-video/.243087",
-      "pubDate": "Thu, 22 Oct 2026 07:29:03 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243087/gyakusatsukigen.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243087"
-    },
-    {
-      "title": "Bless TV Anime Casts Tarusuke Shingaki; Crunchyroll to Stream Series",
-      "description": "Shingaki voices Hikaru Oya in series debuting in January",
-      "fullDescription": "Shingaki voices Hikaru Oya in series debuting in January",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-22/bless-tv-anime-casts-tarusuke-shingaki-crunchyroll-to-stream-series/.243105",
-      "pubDate": "Thu, 22 Oct 2026 07:17:25 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241697/bless-kv.jfif.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243105"
     }
   ],
   "total": 15
