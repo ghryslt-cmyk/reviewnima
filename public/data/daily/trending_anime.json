@@ -1,6 +1,6 @@
 {
-  "version": 1792869804256,
-  "fetchedAt": "2026-10-24T19:23:24.256Z",
+  "version": 1792878566046,
+  "fetchedAt": "2026-10-24T21:49:26.046Z",
   "anime": [
     {
       "id": 195604,
@@ -109,60 +109,6 @@
       }
     },
     {
-      "id": 191656,
-      "title": {
-        "romaji": "Seitokai ni mo Ana wa Aru!",
-        "english": "Even the Student Council Has Its Holes!",
-        "native": "生徒会にも穴はある！"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191656-xFHtxM8SUTdU.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg",
-      "description": "This is Fujinasu Academy, a private high school with top-achieving students located on the outskirts of town.\n<br><br>\nHigh School 1st-Year Ume Mizunoe has excellent grades in Japanese language class and has received multiple literary awards.\nHowever, his terrible grades in the sciences are affecting his ability to move up a grade. To avoid repeating a year, he becomes a member of the student council to improve his academic standing.\n<br><br>\nHowever, in the student council, he meets the charismatic yet sullen student council president Kotobuki Hisako, and the scary yet kind and refined treasurer, Arisu Terui. Other members include a cheeky and cute boy, Tan Otori, and Komaro Michinoku, the admin who's like a small abandoned cat. This is the start of a slapstick, heartful, rom-com about a busy student council full of cute, mismatched, and quirky students!\n<br><br>\n(Source: Even the Student Council Has Its Holes! Official Site)",
-      "genres": [
-        "Comedy",
-        "Ecchi",
-        "Slice of Life"
-      ],
-      "averageScore": 73,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Passione"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "Movic"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 4
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 202250,
       "title": {
         "romaji": "Kashita Maryoku wa [Revo Barai] de Kyousei Choushuu",
@@ -217,6 +163,60 @@
           },
           {
             "name": "Ray"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 4
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 191656,
+      "title": {
+        "romaji": "Seitokai ni mo Ana wa Aru!",
+        "english": "Even the Student Council Has Its Holes!",
+        "native": "生徒会にも穴はある！"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191656-xFHtxM8SUTdU.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg",
+      "description": "This is Fujinasu Academy, a private high school with top-achieving students located on the outskirts of town.\n<br><br>\nHigh School 1st-Year Ume Mizunoe has excellent grades in Japanese language class and has received multiple literary awards.\nHowever, his terrible grades in the sciences are affecting his ability to move up a grade. To avoid repeating a year, he becomes a member of the student council to improve his academic standing.\n<br><br>\nHowever, in the student council, he meets the charismatic yet sullen student council president Kotobuki Hisako, and the scary yet kind and refined treasurer, Arisu Terui. Other members include a cheeky and cute boy, Tan Otori, and Komaro Michinoku, the admin who's like a small abandoned cat. This is the start of a slapstick, heartful, rom-com about a busy student council full of cute, mismatched, and quirky students!\n<br><br>\n(Source: Even the Student Council Has Its Holes! Official Site)",
+      "genres": [
+        "Comedy",
+        "Ecchi",
+        "Slice of Life"
+      ],
+      "averageScore": 73,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Passione"
+          },
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Movic"
           }
         ]
       },
@@ -362,75 +362,6 @@
       }
     },
     {
-      "id": 204389,
-      "title": {
-        "romaji": "Yasei no Last Boss ga Arawareta! 2nd Season",
-        "english": "A Wild Last Boss Appeared! Season 2",
-        "native": "野生のラスボスが現れた！ 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204389-jCoFCeTthDMy.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204389-jCoFCeTthDMy.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204389-jCoFCeTthDMy.jpg"
-      },
-      "bannerImage": null,
-      "description": "The second season of <i>Yasei no Last Boss ga Arawareta!</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 73,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "NBCUniversal Entertainment Japan"
-          },
-          {
-            "name": "WAO World"
-          },
-          {
-            "name": "Sun Electronics"
-          },
-          {
-            "name": "Touhouku Shinsha"
-          },
-          {
-            "name": "Earth Star Entertainment"
-          },
-          {
-            "name": "Kansai TV"
-          },
-          {
-            "name": "BS Asahi"
-          },
-          {
-            "name": "Bushiroad Move"
-          },
-          {
-            "name": "KLOCKWORX"
-          },
-          {
-            "name": "Sorajima Studio"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 26
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 187402,
       "title": {
         "romaji": "Tensei shita Dai Seijo wa, Seijo de Aru Koto wo Hita Kakusu",
@@ -503,52 +434,61 @@
       }
     },
     {
-      "id": 209872,
+      "id": 180894,
       "title": {
-        "romaji": "Ranma 1/2 (2024) 3rd Season",
-        "english": "Ranma1/2 (2024) Season 3",
-        "native": "らんま1/2 (2024) 第3期"
+        "romaji": "Romelia Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
+        "english": "Romelia War Chronicle",
+        "native": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209872-RBeVPqwejHFp.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209872-RBeVPqwejHFp.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209872-RBeVPqwejHFp.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180894-o3pz4DWFm3je.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180894-o3pz4DWFm3je.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209872-Qczb4k9Mw0pq.jpg",
-      "description": "The third season of <i>Ranma 1/2 (2024)</i>.",
+      "bannerImage": null,
+      "description": "Romelia and her party succeed in defeating the Demon King Zelgis, though Prince Henri’s reckless charge forces them into a grueling battle. In the aftermath, Romelia is branded \"dead weight\" for not fighting directly, and the Prince unilaterally breaks off their engagement. Denied a place in the victory celebrations, Romelia returns home, only to be met with cold indifference from her family and society. Yet, she refuses to break. She has already set her sights on the path that lies ahead.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Romelia War Chronicle was streamed 2 days in advance of the TV broadcast on AnimeTimes, U-NEXT, and Netflix beginning October 3, 2026. Regular broadcasting began on October 5, 2026.</i>",
       "genres": [
-        "Action",
-        "Comedy",
-        "Romance"
+        "Adventure",
+        "Drama",
+        "Fantasy"
       ],
-      "averageScore": 78,
-      "episodes": null,
+      "averageScore": 70,
+      "episodes": 24,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "MAPPA"
+            "name": "Pony Canyon"
           },
           {
-            "name": "Shogakukan-Shueisha Productions"
+            "name": "Atra"
           },
           {
-            "name": "MAPPA"
+            "name": "Rakuten"
           },
           {
-            "name": "Shogakukan"
+            "name": "TOKYO MX"
           },
           {
-            "name": "Nippon Television Network"
+            "name": "BS11"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "Bit grooove promotion"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 4
+        "day": 3
       },
       "endDate": {
         "year": null,
@@ -631,61 +571,67 @@
       }
     },
     {
-      "id": 180894,
+      "id": 204389,
       "title": {
-        "romaji": "Romelia Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
-        "english": "Romelia War Chronicle",
-        "native": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜"
+        "romaji": "Yasei no Last Boss ga Arawareta! 2nd Season",
+        "english": "A Wild Last Boss Appeared! Season 2",
+        "native": "野生のラスボスが現れた！ 第2期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180894-o3pz4DWFm3je.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180894-o3pz4DWFm3je.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204389-jCoFCeTthDMy.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204389-jCoFCeTthDMy.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204389-jCoFCeTthDMy.jpg"
       },
       "bannerImage": null,
-      "description": "Romelia and her party succeed in defeating the Demon King Zelgis, though Prince Henri’s reckless charge forces them into a grueling battle. In the aftermath, Romelia is branded \"dead weight\" for not fighting directly, and the Prince unilaterally breaks off their engagement. Denied a place in the victory celebrations, Romelia returns home, only to be met with cold indifference from her family and society. Yet, she refuses to break. She has already set her sights on the path that lies ahead.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Romelia War Chronicle was streamed 2 days in advance of the TV broadcast on AnimeTimes, U-NEXT, and Netflix beginning October 3, 2026. Regular broadcasting began on October 5, 2026.</i>",
+      "description": "The second season of <i>Yasei no Last Boss ga Arawareta!</i>",
       "genres": [
+        "Action",
         "Adventure",
-        "Drama",
         "Fantasy"
       ],
-      "averageScore": 70,
-      "episodes": 24,
+      "averageScore": 73,
+      "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Pony Canyon"
+            "name": "NBCUniversal Entertainment Japan"
           },
           {
-            "name": "Atra"
+            "name": "WAO World"
           },
           {
-            "name": "Rakuten"
+            "name": "Sun Electronics"
           },
           {
-            "name": "TOKYO MX"
+            "name": "Touhouku Shinsha"
           },
           {
-            "name": "BS11"
+            "name": "Earth Star Entertainment"
           },
           {
-            "name": "Movic"
+            "name": "Kansai TV"
           },
           {
-            "name": "SANKYO"
+            "name": "BS Asahi"
           },
           {
-            "name": "Bit grooove promotion"
+            "name": "Bushiroad Move"
+          },
+          {
+            "name": "KLOCKWORX"
+          },
+          {
+            "name": "Sorajima Studio"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 10,
-        "day": 3
+        "month": 9,
+        "day": 26
       },
       "endDate": {
         "year": null,
@@ -733,6 +679,60 @@
         "year": 2026,
         "month": 9,
         "day": 25
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 209872,
+      "title": {
+        "romaji": "Ranma 1/2 (2024) 3rd Season",
+        "english": "Ranma1/2 (2024) Season 3",
+        "native": "らんま1/2 (2024) 第3期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209872-RBeVPqwejHFp.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209872-RBeVPqwejHFp.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209872-RBeVPqwejHFp.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209872-Qczb4k9Mw0pq.jpg",
+      "description": "The third season of <i>Ranma 1/2 (2024)</i>.",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Romance"
+      ],
+      "averageScore": 78,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "MAPPA"
+          },
+          {
+            "name": "Shogakukan-Shueisha Productions"
+          },
+          {
+            "name": "MAPPA"
+          },
+          {
+            "name": "Shogakukan"
+          },
+          {
+            "name": "Nippon Television Network"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 4
       },
       "endDate": {
         "year": null,
@@ -840,62 +840,70 @@
       }
     },
     {
-      "id": 180136,
+      "id": 178083,
       "title": {
-        "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
-        "english": "The Exiled Heavy Knight Knows How to Game the System",
-        "native": "追放された転生重騎士はゲーム知識で無双する"
+        "romaji": "Tokyo Revengers: Santen Sensou-hen",
+        "english": "Tokyo Revengers: War of the Three Titans Arc",
+        "native": "東京リベンジャーズ 三天戦争編"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178083-bg7pg6TCHwtG.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178083-bg7pg6TCHwtG.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-bg7pg6TCHwtG.jpg"
       },
       "bannerImage": null,
-      "description": "Born into a prestigious family of master swordsmen, Elymas Edvaughn’s future shatters when he awakens the so-called “defective” Heavy Knight class. Disowned and cast out, he regains memories of another life—and realizes this world mirrors a VR game he once mastered. Armed with knowledge no one else possesses, he sets out to rewrite his fate and prove the strength of the “weakest” class.<br>\n<br>\n(Source: Crunchyroll)",
+      "description": "Sequel to <i>Tokyo Revengers: Tenjiku-hen</i>.",
       "genres": [
         "Action",
-        "Fantasy"
+        "Drama",
+        "Romance",
+        "Supernatural"
       ],
-      "averageScore": 67,
-      "episodes": 26,
+      "averageScore": 76,
+      "episodes": 13,
       "status": "RELEASING",
-      "season": "SUMMER",
+      "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "GoHands"
+            "name": "Pony Canyon"
           },
           {
-            "name": "Shouchiku"
+            "name": "LIDENFILMS"
           },
           {
             "name": "Kodansha"
           },
           {
-            "name": "MUSE"
+            "name": "Sammy"
           },
           {
-            "name": "Crunchyroll"
+            "name": "AT-X"
           },
           {
             "name": "Mainichi Broadcasting System"
           },
           {
-            "name": "GoHands"
+            "name": "Ultra Super Pictures"
+          },
+          {
+            "name": "Studio Mausu"
+          },
+          {
+            "name": "HI Production"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 7,
+        "month": 10,
         "day": 3
       },
       "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 25
+        "year": null,
+        "month": null,
+        "day": null
       }
     }
   ]
