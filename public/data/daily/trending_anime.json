@@ -1,6 +1,6 @@
 {
-  "version": 1792860745754,
-  "fetchedAt": "2026-10-24T16:52:25.754Z",
+  "version": 1792869804256,
+  "fetchedAt": "2026-10-24T19:23:24.256Z",
   "anime": [
     {
       "id": 195604,
@@ -109,6 +109,129 @@
       }
     },
     {
+      "id": 191656,
+      "title": {
+        "romaji": "Seitokai ni mo Ana wa Aru!",
+        "english": "Even the Student Council Has Its Holes!",
+        "native": "生徒会にも穴はある！"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191656-xFHtxM8SUTdU.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg",
+      "description": "This is Fujinasu Academy, a private high school with top-achieving students located on the outskirts of town.\n<br><br>\nHigh School 1st-Year Ume Mizunoe has excellent grades in Japanese language class and has received multiple literary awards.\nHowever, his terrible grades in the sciences are affecting his ability to move up a grade. To avoid repeating a year, he becomes a member of the student council to improve his academic standing.\n<br><br>\nHowever, in the student council, he meets the charismatic yet sullen student council president Kotobuki Hisako, and the scary yet kind and refined treasurer, Arisu Terui. Other members include a cheeky and cute boy, Tan Otori, and Komaro Michinoku, the admin who's like a small abandoned cat. This is the start of a slapstick, heartful, rom-com about a busy student council full of cute, mismatched, and quirky students!\n<br><br>\n(Source: Even the Student Council Has Its Holes! Official Site)",
+      "genres": [
+        "Comedy",
+        "Ecchi",
+        "Slice of Life"
+      ],
+      "averageScore": 73,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Passione"
+          },
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Movic"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 4
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 202250,
+      "title": {
+        "romaji": "Kashita Maryoku wa [Revo Barai] de Kyousei Choushuu",
+        "english": "Magic Repo Man: Dumped by My Party, I’ll Cash In With a Cute Support Fairy to Become the Strongest!",
+        "native": "貸した魔力は【リボ払い】で強制徴収"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202250-mpm2cvr92Au2.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202250-mpm2cvr92Au2.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202250-mpm2cvr92Au2.jpg"
+      },
+      "bannerImage": null,
+      "description": "If there's one thing you can never have enough of in a world of RPG-style swords and sorcery, it's magic points! Whether you're fueling spells, techniques, or showing off an incredible ability, you've gotta spend those points to do real damage. But what if you run out?\n<br><br>\nLent is part of the up-and-coming party known as the “Skypiercers,” and thanks to his unique Gift, he can loan massive amounts of magic to others. No MP? No problem with Lent around! Except, now that his companions have become formidable heroes (thanks to his skill), his usefulness is questioned. Kicked out of the group, Lent is furious…until he discovers a hidden power to his Gift. Now, with his adorably devious fairy partner, he's going to claw back every last scrap of magic from his former party—with interest!<br><br>\n(Source: Seven Seas Entertainment)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 60,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "SynergySP"
+          },
+          {
+            "name": "TV Asahi"
+          },
+          {
+            "name": "TV Asahi Music"
+          },
+          {
+            "name": "Flex Comics"
+          },
+          {
+            "name": "SynergySP"
+          },
+          {
+            "name": "Kotobukiya"
+          },
+          {
+            "name": "BS Asahi"
+          },
+          {
+            "name": "Bushiroad Move"
+          },
+          {
+            "name": "AbemaTV"
+          },
+          {
+            "name": "Ray"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 4
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 195516,
       "title": {
         "romaji": "Kusuriya no Hitorigoto 3rd Season",
@@ -163,6 +286,74 @@
         "year": 2026,
         "month": 10,
         "day": 2
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 169581,
+      "title": {
+        "romaji": "Magical★Explorer: Eroge no Yuujin Chara ni Tensei Shitakedo, Game Chishiki Tsukatte Jiyuu ni Ikiru",
+        "english": "Magical Explorer",
+        "native": "マジカル★エクスプローラー　エロゲの友人キャラに転生したけど、ゲーム知識使って自由に生きる"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169581-UlAviVH36Hxi.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169581-UlAviVH36Hxi.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169581-UlAviVH36Hxi.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/169581-cdooqY7Jqy3x.jpg",
+      "description": "Few titles are more revered among horndogs-(ahem) connoisseurs of Japanese erotic video games-than Magical Explorer. One day, our smut-loving hero wakes up to find he has been reincarnated into the body of the game’s dreamboat protagonist! Or rather, his hapless comic-relief best friend, Kousuke Takioto. But with his unparalleled knowledge of Magical Explorer and Kousuke’s unorthodox abilities (a scarf that doubles as a fist?), our hero vows to turn the game’s unluckiest loser into its mightiest heartthrob. In this world, nothing is out of reach when you’ve got the know-how!\n<br><br>\n(Source: Yen Press)\n<br><br>\n<i>Note: Each episode streamed 1 week early on ABEMA and d anime store. The original TV broadcast started on October 4th, 2026.<i>",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Ecchi",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 68,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "WHITE FOX"
+          },
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Contents Seed"
+          },
+          {
+            "name": "SYSTEM SERVICE"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "Yomiuri TV"
+          },
+          {
+            "name": "SANKYO"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
       },
       "endDate": {
         "year": null,
@@ -312,61 +503,52 @@
       }
     },
     {
-      "id": 180894,
+      "id": 209872,
       "title": {
-        "romaji": "Romelia Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
-        "english": "Romelia War Chronicle",
-        "native": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜"
+        "romaji": "Ranma 1/2 (2024) 3rd Season",
+        "english": "Ranma1/2 (2024) Season 3",
+        "native": "らんま1/2 (2024) 第3期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180894-o3pz4DWFm3je.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180894-o3pz4DWFm3je.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209872-RBeVPqwejHFp.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209872-RBeVPqwejHFp.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209872-RBeVPqwejHFp.jpg"
       },
-      "bannerImage": null,
-      "description": "Romelia and her party succeed in defeating the Demon King Zelgis, though Prince Henri’s reckless charge forces them into a grueling battle. In the aftermath, Romelia is branded \"dead weight\" for not fighting directly, and the Prince unilaterally breaks off their engagement. Denied a place in the victory celebrations, Romelia returns home, only to be met with cold indifference from her family and society. Yet, she refuses to break. She has already set her sights on the path that lies ahead.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Romelia War Chronicle was streamed 2 days in advance of the TV broadcast on AnimeTimes, U-NEXT, and Netflix beginning October 3, 2026. Regular broadcasting began on October 5, 2026.</i>",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209872-Qczb4k9Mw0pq.jpg",
+      "description": "The third season of <i>Ranma 1/2 (2024)</i>.",
       "genres": [
-        "Adventure",
-        "Drama",
-        "Fantasy"
+        "Action",
+        "Comedy",
+        "Romance"
       ],
-      "averageScore": 70,
-      "episodes": 24,
+      "averageScore": 78,
+      "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Pony Canyon"
+            "name": "MAPPA"
           },
           {
-            "name": "Atra"
+            "name": "Shogakukan-Shueisha Productions"
           },
           {
-            "name": "Rakuten"
+            "name": "MAPPA"
           },
           {
-            "name": "TOKYO MX"
+            "name": "Shogakukan"
           },
           {
-            "name": "BS11"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "Bit grooove promotion"
+            "name": "Nippon Television Network"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 3
+        "day": 4
       },
       "endDate": {
         "year": null,
@@ -449,42 +631,61 @@
       }
     },
     {
-      "id": 205909,
+      "id": 180894,
       "title": {
-        "romaji": "Hotaru no Yomeiri",
-        "english": "Firefly Wedding",
-        "native": "ホタルの嫁入り"
+        "romaji": "Romelia Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
+        "english": "Romelia War Chronicle",
+        "native": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180894-o3pz4DWFm3je.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180894-o3pz4DWFm3je.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
-      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
+      "bannerImage": null,
+      "description": "Romelia and her party succeed in defeating the Demon King Zelgis, though Prince Henri’s reckless charge forces them into a grueling battle. In the aftermath, Romelia is branded \"dead weight\" for not fighting directly, and the Prince unilaterally breaks off their engagement. Denied a place in the victory celebrations, Romelia returns home, only to be met with cold indifference from her family and society. Yet, she refuses to break. She has already set her sights on the path that lies ahead.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Romelia War Chronicle was streamed 2 days in advance of the TV broadcast on AnimeTimes, U-NEXT, and Netflix beginning October 3, 2026. Regular broadcasting began on October 5, 2026.</i>",
       "genres": [
+        "Adventure",
         "Drama",
-        "Romance"
+        "Fantasy"
       ],
-      "averageScore": 75,
-      "episodes": 12,
+      "averageScore": 70,
+      "episodes": 24,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "david production"
+            "name": "Pony Canyon"
           },
           {
-            "name": "Fuji TV"
+            "name": "Atra"
+          },
+          {
+            "name": "Rakuten"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "Bit grooove promotion"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 9
+        "day": 3
       },
       "endDate": {
         "year": null,
@@ -532,6 +733,50 @@
         "year": 2026,
         "month": 9,
         "day": 25
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 205909,
+      "title": {
+        "romaji": "Hotaru no Yomeiri",
+        "english": "Firefly Wedding",
+        "native": "ホタルの嫁入り"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
+      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "averageScore": 75,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "david production"
+          },
+          {
+            "name": "Fuji TV"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 9
       },
       "endDate": {
         "year": null,
@@ -595,51 +840,6 @@
       }
     },
     {
-      "id": 195571,
-      "title": {
-        "romaji": "Shuiro no Kamen",
-        "english": "The Vermilion Mask",
-        "native": "朱色の仮面"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195571-fvj7u5GI7BRT.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195571-fvj7u5GI7BRT.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195571-fvj7u5GI7BRT.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195571-UkdB06UpyL8k.jpg",
-      "description": "\"The Mask” gives power to anyone who wears it.<br><br>\n\nAt times, that means endless possibility, or unimaginable tragedy…<br><br>\n\nPeru, pupil of the legendary mask maker Gaston Roux, becomes controlled by the “Mask of the Warrior God,” and unintentionally kills his friends, and even his own master.\n<br><br>\nIn order to prevent this type of tragedy from reoccurring, Peru swears to destroy all of Gaston’s masks that are spread around the world. Confronting the sins that he has committed, he embarks on his voyage. Meeting new friends, then confronting powerful foes. The boy continues on. Until the day he can atone for his sins against his master.\n<br><br>\n(Source: The Vermillion Mask English Site)",
-      "genres": [
-        "Action",
-        "Drama",
-        "Supernatural"
-      ],
-      "averageScore": 68,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Yomiuri TV"
-          },
-          {
-            "name": "100studio"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 10
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 180136,
       "title": {
         "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
@@ -696,179 +896,6 @@
         "year": 2026,
         "month": 12,
         "day": 25
-      }
-    },
-    {
-      "id": 178083,
-      "title": {
-        "romaji": "Tokyo Revengers: Santen Sensou-hen",
-        "english": "Tokyo Revengers: War of the Three Titans Arc",
-        "native": "東京リベンジャーズ 三天戦争編"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178083-bg7pg6TCHwtG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178083-bg7pg6TCHwtG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-bg7pg6TCHwtG.jpg"
-      },
-      "bannerImage": null,
-      "description": "Sequel to <i>Tokyo Revengers: Tenjiku-hen</i>.",
-      "genres": [
-        "Action",
-        "Drama",
-        "Romance",
-        "Supernatural"
-      ],
-      "averageScore": 76,
-      "episodes": 13,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "LIDENFILMS"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "Sammy"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "Ultra Super Pictures"
-          },
-          {
-            "name": "Studio Mausu"
-          },
-          {
-            "name": "HI Production"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 185874,
-      "title": {
-        "romaji": "BLEACH: Sennen Kessen-hen - Kashin-tan",
-        "english": "BLEACH: Thousand-Year Blood War - The Calamity",
-        "native": "BLEACH 千年血戦篇-禍進譚-"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185874-aU3e6tBT6wwA.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185874-aU3e6tBT6wwA.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185874-aU3e6tBT6wwA.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/185874-IdGyh1EBG91I.jpg",
-      "description": "Destruction looms at the end of the Thousand-Year Blood War between the Soul Reapers and Quincies… as the death of the Soul King mirrors the collapse of the Three Worlds, distortions and omens of destruction start to appear in all realms. \n<br><br>\nFierce battles erupt throughout the Wahr Welt between the Thirteen Court Guard Squads and the Royal Guard. Ichigo learns about Uryuu's true intentions and renews his determination to protect the world together, as friends who trust each other. Yhwach has surpassed even his own ability, The Almighty...\n<br><br>\nThe fierce battle for the survival of the Three Worlds approaches its end. Beyond the chaos of calamity, what lies in wait—despair or hope?\n<br><br>\n(Source: VIZ Media, edited)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 89,
-      "episodes": 10,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "PIERROT FILMS"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 25
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 27
-      }
-    },
-    {
-      "id": 213805,
-      "title": {
-        "romaji": "Koori no Jouheki 2nd Season",
-        "english": "The Ramparts of Ice Season 2",
-        "native": "氷の城壁 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213805-Nokui3uWlIlw.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx213805-Nokui3uWlIlw.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx213805-Nokui3uWlIlw.png"
-      },
-      "bannerImage": null,
-      "description": "Koyuki, the isolated girl; Miki, the former school idol; Minato, the guy with no concept of personal space; and Youta, the gentle basketball player. Clumsy, frustrating, yet deeply endearing — this coming-of-age ensemble drama of crisscrossing hearts marches on.\n<br><br>\nAs they grow closer, Koyuki and Minato begin to develop feelings for each other that go beyond mere friendship. Meanwhile, Youta finally confesses to Miki the feelings he's harbored for years. Some speak their hearts while others keep their emotions hidden, causing their paths — and their feelings for one another — to continuously cross and pass by… \n<br><br>\n(Source: Netflix)",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance",
-        "Slice of Life"
-      ],
-      "averageScore": 81,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio KAI"
-          },
-          {
-            "name": "TBS"
-          },
-          {
-            "name": "Universal Music"
-          },
-          {
-            "name": "ADK Emotions"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 1
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
       }
     }
   ]
