@@ -1,7 +1,18 @@
 {
-  "version": 1792816944802,
-  "fetchedAt": "2026-10-24T04:42:24.802Z",
+  "version": 1792833024975,
+  "fetchedAt": "2026-10-24T09:10:24.975Z",
   "news": [
+    {
+      "title": "Kaiju No. 8 Anime's 'Conclusion Arc' Revealed as Film Opening in 2027",
+      "description": "Shigeyuki Miya returns to direct the film at Production I.G",
+      "fullDescription": "Shigeyuki Miya returns to direct the film at Production I.G",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-24/kaiju-no-8-anime-conclusion-arc-revealed-as-film-opening-in-2027/.243156",
+      "pubDate": "Sat, 24 Oct 2026 03:01:29 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243156/kaiju-no-8-film.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243156"
+    },
     {
       "title": "LOVELYZ's Ye-in Jeong Joins The Trauma Code: Heroes on Call Seasons 2-3",
       "description": "Jeong replaces Ha-young, who left following controversy over allegations that her great-grandfather collaborated with Japanese colonial authorities",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243123/votomsvisual.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243123"
-    },
-    {
-      "title": "Made in Abyss: Mezameru Shinpi Anime Film Reveals 4 Cast Members",
-      "description": "Nana Mizuki, Akeno Watanabe, Shunsuke Takeuchi, Nao Tōyama, Yume Miyamoto star in film",
-      "fullDescription": "Nana Mizuki, Akeno Watanabe, Shunsuke Takeuchi, Nao Tōyama, Yume Miyamoto star in film",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-23/made-in-abyss-mezameru-shinpi-anime-film-reveals-4-cast-members/.243122",
-      "pubDate": "Fri, 23 Oct 2026 02:59:42 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243122/mia-mezamerushinpeikv.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243122"
     }
   ],
   "total": 15

@@ -1,6 +1,6 @@
 {
-  "version": 1792816945312,
-  "fetchedAt": "2026-10-24T04:42:25.312Z",
+  "version": 1792833025529,
+  "fetchedAt": "2026-10-24T09:10:25.529Z",
   "anime": [
     {
       "id": 195539,
@@ -204,65 +204,72 @@
       }
     },
     {
-      "id": 178083,
+      "id": 21,
       "title": {
-        "romaji": "Tokyo Revengers: Santen Sensou-hen",
-        "english": "Tokyo Revengers: War of the Three Titans Arc",
-        "native": "東京リベンジャーズ 三天戦争編"
+        "romaji": "ONE PIECE",
+        "english": "ONE PIECE",
+        "native": "ONE PIECE"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178083-bg7pg6TCHwtG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178083-bg7pg6TCHwtG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-bg7pg6TCHwtG.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21-ELSYx3yMPcKM.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg"
       },
-      "bannerImage": null,
-      "description": "Sequel to <i>Tokyo Revengers: Tenjiku-hen</i>.",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+      "description": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.<br><br>\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.<br><br>\n<b>*This includes the following special episodes:</b><br>\n- Chopperman to the Rescue! Protect the TV Station by the Shore! (Episode 336)<br>\n- The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (Episode 492)<br>\n- Team Formation! Save Chopper (Episode 542)<br>\n- History's Strongest Collaboration vs. Glutton of the Sea (Episode 590)<br>\n- 20th Anniversary! Special Romance Dawn (Episode 907)",
       "genres": [
         "Action",
+        "Adventure",
+        "Comedy",
         "Drama",
-        "Romance",
-        "Supernatural"
+        "Fantasy"
       ],
-      "averageScore": 76,
-      "episodes": 13,
+      "averageScore": 87,
+      "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
-      "seasonYear": 2026,
+      "seasonYear": 1999,
       "studios": {
         "nodes": [
           {
-            "name": "Pony Canyon"
+            "name": "Toei Animation"
           },
           {
-            "name": "LIDENFILMS"
+            "name": "Funimation"
           },
           {
-            "name": "Kodansha"
+            "name": "Fuji TV"
           },
           {
-            "name": "Sammy"
+            "name": "4Kids Entertainment"
           },
           {
-            "name": "AT-X"
+            "name": "TAP"
           },
           {
-            "name": "Mainichi Broadcasting System"
+            "name": "Asatsu DK"
           },
           {
-            "name": "Ultra Super Pictures"
+            "name": "Magic Bus"
           },
           {
-            "name": "Studio Mausu"
+            "name": "Mushi Production"
           },
           {
-            "name": "HI Production"
+            "name": "Studio Guts"
+          },
+          {
+            "name": "Asahi Production"
+          },
+          {
+            "name": "Avex Pictures"
           }
         ]
       },
       "startDate": {
-        "year": 2026,
+        "year": 1999,
         "month": 10,
-        "day": 3
+        "day": 20
       },
       "endDate": {
         "year": null,
@@ -330,72 +337,65 @@
       }
     },
     {
-      "id": 21,
+      "id": 178083,
       "title": {
-        "romaji": "ONE PIECE",
-        "english": "ONE PIECE",
-        "native": "ONE PIECE"
+        "romaji": "Tokyo Revengers: Santen Sensou-hen",
+        "english": "Tokyo Revengers: War of the Three Titans Arc",
+        "native": "東京リベンジャーズ 三天戦争編"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21-ELSYx3yMPcKM.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178083-bg7pg6TCHwtG.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178083-bg7pg6TCHwtG.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-bg7pg6TCHwtG.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
-      "description": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.<br><br>\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.<br><br>\n<b>*This includes the following special episodes:</b><br>\n- Chopperman to the Rescue! Protect the TV Station by the Shore! (Episode 336)<br>\n- The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (Episode 492)<br>\n- Team Formation! Save Chopper (Episode 542)<br>\n- History's Strongest Collaboration vs. Glutton of the Sea (Episode 590)<br>\n- 20th Anniversary! Special Romance Dawn (Episode 907)",
+      "bannerImage": null,
+      "description": "Sequel to <i>Tokyo Revengers: Tenjiku-hen</i>.",
       "genres": [
         "Action",
-        "Adventure",
-        "Comedy",
         "Drama",
-        "Fantasy"
+        "Romance",
+        "Supernatural"
       ],
-      "averageScore": 87,
-      "episodes": null,
+      "averageScore": 76,
+      "episodes": 13,
       "status": "RELEASING",
       "season": "FALL",
-      "seasonYear": 1999,
+      "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Toei Animation"
+            "name": "Pony Canyon"
           },
           {
-            "name": "Funimation"
+            "name": "LIDENFILMS"
           },
           {
-            "name": "Fuji TV"
+            "name": "Kodansha"
           },
           {
-            "name": "4Kids Entertainment"
+            "name": "Sammy"
           },
           {
-            "name": "TAP"
+            "name": "AT-X"
           },
           {
-            "name": "Asatsu DK"
+            "name": "Mainichi Broadcasting System"
           },
           {
-            "name": "Magic Bus"
+            "name": "Ultra Super Pictures"
           },
           {
-            "name": "Mushi Production"
+            "name": "Studio Mausu"
           },
           {
-            "name": "Studio Guts"
-          },
-          {
-            "name": "Asahi Production"
-          },
-          {
-            "name": "Avex Pictures"
+            "name": "HI Production"
           }
         ]
       },
       "startDate": {
-        "year": 1999,
+        "year": 2026,
         "month": 10,
-        "day": 20
+        "day": 3
       },
       "endDate": {
         "year": null,
@@ -568,6 +568,67 @@
       }
     },
     {
+      "id": 189046,
+      "title": {
+        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 4th Season",
+        "english": "Re:ZERO -Starting Life in Another World- Season 4",
+        "native": "Re:ゼロから始める異世界生活 4th season"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189046-yaHWtS5FII46.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189046-yaHWtS5FII46.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189046-yaHWtS5FII46.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189046-MDk2CaVuRWpb.jpg",
+      "description": "In the deadly battle at Priestella, Subaru and his allies emerged victorious, but at great cost. As Subaru searches for a way to save Rem, Crusch, and Julius, he learns of a \"wise woman,\" Shaula, an all-seeing being said to possess every form of knowledge, who resides at the Pleiades Watchtower. Subaru and his crew must brave the uncharted Auguria Dunes to reclaim what was lost.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Lucca Comics & Games pre-screened episode 1 early on November 1, 2025, prior to the Japanese television broadcast on July 8th, 2026.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
+      ],
+      "averageScore": 90,
+      "episodes": 19,
+      "status": "FINISHED",
+      "season": "SPRING",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "WHITE FOX"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "DAXEL"
+          },
+          {
+            "name": "Memory-Tech"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 4,
+        "day": 8
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 30
+      }
+    },
+    {
       "id": 269,
       "title": {
         "romaji": "BLEACH",
@@ -616,153 +677,6 @@
         "year": 2012,
         "month": 3,
         "day": 27
-      }
-    },
-    {
-      "id": 186742,
-      "title": {
-        "romaji": "Toaru Anbu no ITEM",
-        "english": "A Certain Dark Item",
-        "native": "とある暗部の少女共棲"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186742-v7yfbefc8fuO.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186742-v7yfbefc8fuO.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186742-v7yfbefc8fuO.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/186742-nZP1PcuUpcGg.jpg",
-      "description": "This is a story of four girls living in the \"Dark Side\" of Academy City.<br>\n<br>\nIn Academy City where \"ESP\" has been recognized as a general science. Behind the peace, there is a Dark Side organization that undertakes missions that cannot be made public.<br>\n<br>\n\"ITEM\" is an elite unit consisting of four girls. Takitsubo Rikou is able to read and track the AIM fields emitted by those with abilities. Frenda Seivelun, who excels in combat using explosives and traps.<br>\n<br>\nKinuhata Saiai, who can manipulate nitrogen at will and plays a defensive role. And one of the 7 Espers that Academy City is proud of: Mugino Shizuri. They live freely in the darkness of the Academy City, and quietly set their sights on their target...!<br>\n<br>\nThis is a story of encounter, friendship, and darkness that eventually leads to a terrible incident!<br>\n<br>\n(Source: Kadokawa, translated)",
-      "genres": [
-        "Action",
-        "Sci-Fi"
-      ],
-      "averageScore": 69,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "J.C.STAFF"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 9
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 207329,
-      "title": {
-        "romaji": "Tsuihou Sareta Cheat Fuyo Majutsushi wa Kimama na Second Life wo Ouka Suru.: Ore wa Buki dake ja Naku, Arayuru Mono ni \"Kyouka Point\" wo Fuyo Dekiru shi, Ore no Ishi de Itsudemo Kouka wo Kaijo Dekiru kedo, Nokotta Hitotachi Daijoubu?",
-        "english": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
-        "native": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b207329-6VPeZIDfF4Sr.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207329-9IqRSKIsM3TC.jpg",
-      "description": "Rein, an enchanter, is suddenly expelled from his guild one day. But instead of despairing, he declares, “Now I can do anything!” and begins reclaiming the massive number of enhancement points he once poured into his guildmates’ gear, setting off on a brand-new path as an adventurer.<br><br>\nGathering around him are people carrying wounds that don’t fade easily: a genius adventurer who shut her heart after her party was slaughtered, a warrior who lost her family, and an assassin raised from childhood to kill. Yet Rein never rejects their pasts or their scars—he accepts them all with bright, straightforward warmth.<br><br>\nThe stage is a unique fantasy world where Uzis, slingshots, and even yakuza exist side by side. But in this world, the more people rely on convenient technology, the more their magic weakens, and adventurers grow fragile.<br><br>\nIntelligent, vicious monsters roam freely, while in the underworld, outlaws bare their greed and ambition as schemes and betrayals intertwine. In a world where ideals and justice are easily crushed, adventurers fight on with nothing but their magic and their convictions.<br><br>\nThis is the story of those who have lost their place in the world finding a new way to live. Rein and his companions’ wild, free-spirited second life begins now!\n<br><br>(Source: The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life Site)",
-      "genres": [
-        "Adventure",
-        "Comedy",
-        "Fantasy",
-        "Slice of Life"
-      ],
-      "averageScore": 73,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "P.A.WORKS"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Good Smile Company"
-          },
-          {
-            "name": "JR Toukai Agency"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 7
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 159042,
-      "title": {
-        "romaji": "Tensei Shitara Ken Deshita 2nd Season",
-        "english": "Reincarnated as a Sword Season 2",
-        "native": "転生したら剣でした 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159042-GGFwlDskc5vR.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159042-GGFwlDskc5vR.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159042-GGFwlDskc5vR.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/159042-X0mqyaUFBkms.jpg",
-      "description": "The second season of <i>Tensei Shitara Ken Deshita</i>.<br><br>\n<i>Note: Each episode was streamed one week in advance of the TV broadcast starting on October 1, 2026 on Abema. Regular broadcasting began on October 8, 2026.</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 75,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "NBCUniversal Entertainment Japan"
-          },
-          {
-            "name": "C2C"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 1
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
       }
     },
     {
@@ -816,6 +730,119 @@
       "endDate": {
         "year": 2026,
         "month": 10,
+        "day": 27
+      }
+    },
+    {
+      "id": 120377,
+      "title": {
+        "romaji": "Cyberpunk: Edgerunners",
+        "english": "Cyberpunk: Edgerunners",
+        "native": "サイバーパンク エッジランナーズ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx120377-ayZPoxiWt4Li.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx120377-ayZPoxiWt4Li.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120377-ayZPoxiWt4Li.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/120377-c15oLS8CA31s.jpg",
+      "description": "<i>Cyberpunk: Edgerunners</i> tells a standalone, 10-episode story about a street kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an edgerunner—a mercenary outlaw also known as a cyberpunk.<br>\n<br>\n(Source: CD PROJEKT RED)<br>\n<br>\n<i>Note: The first episode received a pre-screening at Anime Expo on July 2, 2022. The first 3 dubbed episodes were streamed on Twitch as part of a co-stream promotion on September 12, a day before the show’s premiere.</i>",
+      "genres": [
+        "Action",
+        "Drama",
+        "Psychological",
+        "Sci-Fi"
+      ],
+      "averageScore": 85,
+      "episodes": 10,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2022,
+      "studios": {
+        "nodes": [
+          {
+            "name": "TRIGGER"
+          },
+          {
+            "name": "CD PROJEKT RED"
+          },
+          {
+            "name": "Netflix"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2022,
+        "month": 9,
+        "day": 13
+      },
+      "endDate": {
+        "year": 2022,
+        "month": 9,
+        "day": 13
+      }
+    },
+    {
+      "id": 178789,
+      "title": {
+        "romaji": "Mushoku Tensei III: Isekai Ittara Honki Dasu",
+        "english": "Mushoku Tensei: Jobless Reincarnation Season 3",
+        "native": "無職転生Ⅲ ～異世界行ったら本気だす～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178789-hNXjKFzUq7mk.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178789-hNXjKFzUq7mk.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178789-hNXjKFzUq7mk.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178789-9nHWmoRLlcLu.jpg",
+      "description": "The third season of <i>Mushoku Tensei: Isekai Ittara Honki Dasu</i>.",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Ecchi",
+        "Fantasy"
+      ],
+      "averageScore": 86,
+      "episodes": 14,
+      "status": "FINISHED",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Bind"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Frontier Works"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "GREE Entertainment"
+          },
+          {
+            "name": "EGG FIRM"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 4
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 9,
         "day": 27
       }
     }
