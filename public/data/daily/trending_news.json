@@ -1,7 +1,18 @@
 {
-  "version": 1792791804132,
-  "fetchedAt": "2026-10-23T21:43:24.132Z",
+  "version": 1792800309607,
+  "fetchedAt": "2026-10-24T00:05:09.607Z",
   "news": [
+    {
+      "title": "LOVELYZ's Ye-in Jeong Joins The Trauma Code: Heroes on Call Seasons 2-3",
+      "description": "Jeong replaces Ha-young, who left following controversy over allegations that her great-grandfather collaborated with Japanese colonial authorities",
+      "fullDescription": "Jeong replaces Ha-young, who left following controversy over allegations that her great-grandfather collaborated with Japanese colonial authorities",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-23/lovelyz-ye-in-jeong-joins-the-trauma-code-heroes-on-call-seasons-2-3/.243125",
+      "pubDate": "Fri, 23 Oct 2026 18:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243125/instagram-10-22-2026-10-15-pm.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243125"
+    },
     {
       "title": "North American Anime, Manga Releases, October 18-24",
       "description": "Reincarnated As A Dragon Hatchling anime; The Apothecary Diaries: Maomao's Notes on the Inner Palace, The Mandalorian, My Dress-Up Darling XOXO! manga ship",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243122/mia-mezamerushinpeikv.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243122"
-    },
-    {
-      "title": "&#039;Made in Abyss: Mezameru Shinpi&#039; Movie Second Part Announced",
-      "description": "The official website of the Made in Abyss: Mezameru Shinpi (Made in Abyss: Awakening Mystery) movie announced the production of a second part on Friday, as well as five additional cast and a second key visual (pictured) for the first movie. The first part premiered in Japan on Friday. Cast Srajo: Na...",
-      "fullDescription": "The official website of the Made in Abyss: Mezameru Shinpi (Made in Abyss: Awakening Mystery) movie announced the production of a second part on Friday, as well as five additional cast and a second key visual (pictured) for the first movie. The first part premiered in Japan on Friday. Cast Srajo: Nana Mizuki (Boruto: Naruto Next Generations) Nishagora: Akino Watanabe (Free! Dive to the Future) Yataramar: Shunsuke Takeuchi (Ao Ashi) Sherumi: Nao Touyama (Kanojo, Okarishimasu) Menae: Yume Miyamoto...",
-      "link": "https://myanimelist.net/news/74849312?_location=rss",
-      "pubDate": "Thu, 22 Oct 2026 20:43:18 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792726916-92ff014e6dcc5bc0becab159b7b5aece.jpeg",
-      "guid": "https://myanimelist.net/news/74849312?_location=rss"
     }
   ],
   "total": 15
