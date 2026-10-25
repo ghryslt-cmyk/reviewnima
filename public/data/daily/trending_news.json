@@ -1,7 +1,18 @@
 {
-  "version": 1792936665630,
-  "fetchedAt": "2026-10-25T13:57:45.630Z",
+  "version": 1792949755484,
+  "fetchedAt": "2026-10-25T17:35:55.484Z",
   "news": [
+    {
+      "title": "&#039;Houseki no Kuni&#039; Creator Launches New Manga",
+      "description": "The December 2026 issue of Monthly Afternoon magazine announced on Friday that manga creator Haruko Ichikawa will launch a new sci-fi manga, titled Cosmic Mimimi, in the magazine next issue, scheduled for a November 25 release. Haruko is best known for Houseki no Kuni (Land of the Lustrous), which r...",
+      "fullDescription": "The December 2026 issue of Monthly Afternoon magazine announced on Friday that manga creator Haruko Ichikawa will launch a new sci-fi manga, titled Cosmic Mimimi, in the magazine next issue, scheduled for a November 25 release. Haruko is best known for Houseki no Kuni (Land of the Lustrous), which ran in Monthly Afternoon magazine from October 2012 to April 2024. The 13th and final volume went on sale on November 2024. Kodansha USA licensed the manga in October 2016 and published the 13th volum...",
+      "link": "https://myanimelist.net/news/74862294?_location=rss",
+      "pubDate": "Sun, 25 Oct 2026 09:56:41 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1792947256-48652f5832829a27561fe34a191b3265.jpeg",
+      "guid": "https://myanimelist.net/news/74862294?_location=rss"
+    },
     {
       "title": "Yen Press Licenses Cross-Dressing Villainess Cecilia Sylvie: Extra Round!, 'And Thus, the Wizard Noi Garené Became a Bride 100 Years Later,' 8 More Titles",
       "description": "Also: Secret: Homicide Edition, About a Place in the Kinki Region, more",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241963/tougen-anki-kv-en-sm.png.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243166"
-    },
-    {
-      "title": "Kaiju No. 8 Anime's 'Conclusion Arc' Revealed as Film Opening in 2027",
-      "description": "Shigeyuki Miya returns to direct the film at Production I.G",
-      "fullDescription": "Shigeyuki Miya returns to direct the film at Production I.G",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-24/kaiju-no-8-anime-conclusion-arc-revealed-as-film-opening-in-2027/.243156",
-      "pubDate": "Sat, 24 Oct 2026 03:01:29 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243156/kaiju-no-8-film.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243156"
     }
   ],
   "total": 15
