@@ -1,6 +1,6 @@
 {
-  "version": 1792967408308,
-  "fetchedAt": "2026-10-25T22:30:08.308Z",
+  "version": 1792975287814,
+  "fetchedAt": "2026-10-26T00:41:27.814Z",
   "news": [
     {
       "title": "&#039;Houseki no Kuni&#039; Creator Launches New Manga",
@@ -54,7 +54,7 @@
       "pubDate": "Sun, 25 Oct 2026 07:45:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": null,
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243165/kings-proposal-teaservisual.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243165"
     },
     {
@@ -76,7 +76,7 @@
       "pubDate": "Sun, 25 Oct 2026 06:30:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": null,
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243175/kimisen.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243175"
     },
     {
@@ -87,7 +87,7 @@
       "pubDate": "Sun, 25 Oct 2026 06:00:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": null,
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243174/date.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243174"
     },
     {
@@ -109,7 +109,7 @@
       "pubDate": "Sun, 25 Oct 2026 05:10:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": null,
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243178/ab2-kv-english-r-sm.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243178"
     },
     {
@@ -120,7 +120,7 @@
       "pubDate": "Sun, 25 Oct 2026 03:15:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": null,
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243168/9781975325756.webp",
       "guid": "https://www.animenewsnetwork.com/cms/.243168"
     },
     {
@@ -131,7 +131,7 @@
       "pubDate": "Sun, 25 Oct 2026 02:15:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": null,
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.8/221417/1byou24koma.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243158"
     },
     {
@@ -142,7 +142,7 @@
       "pubDate": "Sun, 25 Oct 2026 01:15:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": null,
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/240582/prince-of-tennis-finals-members.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243169"
     },
     {
@@ -153,7 +153,7 @@
       "pubDate": "Sun, 25 Oct 2026 00:15:00 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": null,
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243167/cosmic-mimimi.png.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243167"
     },
     {
@@ -164,7 +164,7 @@
       "pubDate": "Sat, 24 Oct 2026 22:55:41 -0400",
       "source": "Anime News Network",
       "category": "Newspaper",
-      "thumbnail": null,
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241963/tougen-anki-kv-en-sm.png.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243166"
     }
   ],
