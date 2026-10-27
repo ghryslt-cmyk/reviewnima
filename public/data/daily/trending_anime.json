@@ -1,6 +1,6 @@
 {
-  "version": 1793064142900,
-  "fetchedAt": "2026-10-27T01:22:22.900Z",
+  "version": 1793083528484,
+  "fetchedAt": "2026-10-27T06:45:28.484Z",
   "anime": [
     {
       "id": 185874,
@@ -166,69 +166,6 @@
       }
     },
     {
-      "id": 209219,
-      "title": {
-        "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
-        "english": "So What's Wrong with Getting Reborn as a Goblin?",
-        "native": "転生ゴブリンだけど質問ある？"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg"
-      },
-      "bannerImage": null,
-      "description": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever!\n<br><br>\n(Source: Yen Press)<br><br>\n\n<i>Note: Tensei Goblin Dakedo Shitsumon Aru? is streaming 1 week in advance of the TV broadcast on ABEMA and Prime Video beginning with episode 2 on October 5th, 2026</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 66,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "BAKKKA"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "INCS toenter"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "Bushiroad Move"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 207191,
       "title": {
         "romaji": "Doumo, Suki na Hito ni Horegusuri wo Irai Sareta Majo desu.",
@@ -357,6 +294,69 @@
         "year": 1999,
         "month": 10,
         "day": 20
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 209219,
+      "title": {
+        "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
+        "english": "So What's Wrong with Getting Reborn as a Goblin?",
+        "native": "転生ゴブリンだけど質問ある？"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg"
+      },
+      "bannerImage": null,
+      "description": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever!\n<br><br>\n(Source: Yen Press)<br><br>\n\n<i>Note: Tensei Goblin Dakedo Shitsumon Aru? is streaming 1 week in advance of the TV broadcast on ABEMA and Prime Video beginning with episode 2 on October 5th, 2026</i>",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 66,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "BAKKKA"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "INCS toenter"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "AbemaTV"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "Bushiroad Move"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 5
       },
       "endDate": {
         "year": null,
@@ -538,54 +538,57 @@
       }
     },
     {
-      "id": 269,
+      "id": 191656,
       "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
+        "romaji": "Seitokai ni mo Ana wa Aru!",
+        "english": "Even the Student Council Has Its Holes!",
+        "native": "生徒会にも穴はある！"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191656-xFHtxM8SUTdU.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg",
+      "description": "This is Fujinasu Academy, a private high school with top-achieving students located on the outskirts of town.\n<br><br>\nHigh School 1st-Year Ume Mizunoe has excellent grades in Japanese language class and has received multiple literary awards.\nHowever, his terrible grades in the sciences are affecting his ability to move up a grade. To avoid repeating a year, he becomes a member of the student council to improve his academic standing.\n<br><br>\nHowever, in the student council, he meets the charismatic yet sullen student council president Kotobuki Hisako, and the scary yet kind and refined treasurer, Arisu Terui. Other members include a cheeky and cute boy, Tan Otori, and Komaro Michinoku, the admin who's like a small abandoned cat. This is the start of a slapstick, heartful, rom-com about a busy student council full of cute, mismatched, and quirky students!\n<br><br>\n(Source: Even the Student Council Has Its Holes! Official Site)",
       "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
+        "Comedy",
+        "Ecchi",
+        "Slice of Life"
       ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
+      "averageScore": 73,
+      "episodes": 12,
+      "status": "RELEASING",
       "season": "FALL",
-      "seasonYear": 2004,
+      "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Studio Pierrot"
+            "name": "Passione"
           },
           {
-            "name": "TV Tokyo"
+            "name": "Aniplex"
           },
           {
-            "name": "Dentsu"
+            "name": "Kodansha"
           },
           {
-            "name": "Viz Media"
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Movic"
           }
         ]
       },
       "startDate": {
-        "year": 2004,
+        "year": 2026,
         "month": 10,
-        "day": 5
+        "day": 4
       },
       "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
+        "year": null,
+        "month": null,
+        "day": null
       }
     },
     {
@@ -651,156 +654,54 @@
       }
     },
     {
-      "id": 206814,
+      "id": 269,
       "title": {
-        "romaji": "Dragon Ball Super: Beerus",
-        "english": "Dragon Ball Super: Beerus",
-        "native": "ドラゴンボール超 ビルス"
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206814-PVVzRbf1IQpe.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206814-PVVzRbf1IQpe.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206814-PVVzRbf1IQpe.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206814-ARuwrZJAGONN.jpg",
-      "description": "Several years have passed since the fierce battle against Majin Buu, and Earth has finally regained a brief moment of peace. At the same time, Beerus, the God of Destruction, awakens from his long, deep sleep.<br>\nEven Kai and Supreme Kai, aware of Beerus's overwhelming power to destroy entire planets, watch his awakening with great fear… Meanwhile, Beerus hears rumors of a Saiyan who defeated Frieza—and suddenly appears before Goku.<br>\nTargeted by Beerus, the strongest being in the universe, Earth is in grave danger. Thus begins an earth-shattering cosmic battle between the God of Destruction and Goku and his alliesa—a conflict that will shake the entire universe.\n<br><br>\n(Source: Official Site)\n<br><br>\n<i>Note: “Enhanced” edition of Dragon Ball Super, featuring a large volume of newly added and redrawn cuts, a reconstructed narrative, and updated visuals for a more immersive and faithful representation of Akira Toriyama’s original manga.</i>",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
       "genres": [
         "Action",
         "Adventure",
-        "Sci-Fi"
+        "Supernatural"
       ],
-      "averageScore": 81,
-      "episodes": null,
-      "status": "RELEASING",
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
       "season": "FALL",
-      "seasonYear": 2026,
+      "seasonYear": 2004,
       "studios": {
         "nodes": [
           {
-            "name": "Toei Animation"
+            "name": "Studio Pierrot"
           },
           {
-            "name": "Shueisha"
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Viz Media"
           }
         ]
       },
       "startDate": {
-        "year": 2026,
+        "year": 2004,
         "month": 10,
-        "day": 11
+        "day": 5
       },
       "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 189123,
-      "title": {
-        "romaji": "Ao no Hako Season 2",
-        "english": "Blue Box Season 2",
-        "native": "アオのハコ Season２"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189123-0secXELIhkIW.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189123-0secXELIhkIW.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189123-0secXELIhkIW.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189123-s2oirY2r1Svy.jpg",
-      "description": "The second season of <i>Ao no Hako</i>.\n",
-      "genres": [
-        "Romance",
-        "Slice of Life",
-        "Sports"
-      ],
-      "averageScore": 81,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Electric Circus"
-          },
-          {
-            "name": "TMS Entertainment"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "TBS"
-          },
-          {
-            "name": "Toho"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 4
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 191656,
-      "title": {
-        "romaji": "Seitokai ni mo Ana wa Aru!",
-        "english": "Even the Student Council Has Its Holes!",
-        "native": "生徒会にも穴はある！"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191656-xFHtxM8SUTdU.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg",
-      "description": "This is Fujinasu Academy, a private high school with top-achieving students located on the outskirts of town.\n<br><br>\nHigh School 1st-Year Ume Mizunoe has excellent grades in Japanese language class and has received multiple literary awards.\nHowever, his terrible grades in the sciences are affecting his ability to move up a grade. To avoid repeating a year, he becomes a member of the student council to improve his academic standing.\n<br><br>\nHowever, in the student council, he meets the charismatic yet sullen student council president Kotobuki Hisako, and the scary yet kind and refined treasurer, Arisu Terui. Other members include a cheeky and cute boy, Tan Otori, and Komaro Michinoku, the admin who's like a small abandoned cat. This is the start of a slapstick, heartful, rom-com about a busy student council full of cute, mismatched, and quirky students!\n<br><br>\n(Source: Even the Student Council Has Its Holes! Official Site)",
-      "genres": [
-        "Comedy",
-        "Ecchi",
-        "Slice of Life"
-      ],
-      "averageScore": 73,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Passione"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "Movic"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 4
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 2012,
+        "month": 3,
+        "day": 27
       }
     },
     {
@@ -864,6 +765,109 @@
           },
           {
             "name": "HAYATE"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 4
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 208025,
+      "title": {
+        "romaji": "Dark Summoner to Dekiteiru",
+        "english": "I'm Dating a Dark Summoner",
+        "native": "ダークサモナーとデキている"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx208025-JKvqWNr8rz8l.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx208025-JKvqWNr8rz8l.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208025-JKvqWNr8rz8l.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/208025-s7hcRQO7kwmH.jpg",
+      "description": "Amona’s a dark summoner with demonic powers. Roni’s a devout priest who’s way too uptight. By all rights, they should hate each other. Instead, they end up fast-tracking their enemies-to-lovers arc with a one-night stand that somehow insists on becoming a recurring event. Now they must hide their situationship from the rest of the party while denying their growing attraction to one another, all while dealing with an imp who’s far too invested in their love life.\n<br><br>\n(Source: HIDIVE)",
+      "genres": [
+        "Comedy",
+        "Ecchi",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 67,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "WWWave"
+          },
+          {
+            "name": "AtoriE"
+          },
+          {
+            "name": "Nyan Pollution-ω-"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 5
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 189123,
+      "title": {
+        "romaji": "Ao no Hako Season 2",
+        "english": "Blue Box Season 2",
+        "native": "アオのハコ Season２"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189123-0secXELIhkIW.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189123-0secXELIhkIW.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189123-0secXELIhkIW.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189123-s2oirY2r1Svy.jpg",
+      "description": "The second season of <i>Ao no Hako</i>.\n",
+      "genres": [
+        "Romance",
+        "Slice of Life",
+        "Sports"
+      ],
+      "averageScore": 81,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Electric Circus"
+          },
+          {
+            "name": "TMS Entertainment"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "TBS"
+          },
+          {
+            "name": "Toho"
           }
         ]
       },
