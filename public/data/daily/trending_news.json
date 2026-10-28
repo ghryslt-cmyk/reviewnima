@@ -1,7 +1,29 @@
 {
-  "version": 1793152077626,
-  "fetchedAt": "2026-10-28T01:47:57.626Z",
+  "version": 1793175273452,
+  "fetchedAt": "2026-10-28T08:14:33.452Z",
   "news": [
+    {
+      "title": "Masaki Andō's Mojiponika! Manga Ends on November 25",
+      "description": "Comedy manga launched in May 2025",
+      "fullDescription": "Comedy manga launched in May 2025",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-27/masaki-ando-mojiponika-manga-ends-on-november-25/.243238",
+      "pubDate": "Tue, 27 Oct 2026 23:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243238/moji.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243238"
+    },
+    {
+      "title": "Yome ga Kuru Artist saku Launches New Kimi to Sakura no Hanataba wo Manga",
+      "description": "Kimi to Sakura no Hanataba wo debuts on November 1",
+      "fullDescription": "<cite>Kimi to Sakura no Hanataba wo</cite> debuts on November 1",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-27/yome-ga-kuru-artist-saku-launches-new-kimi-to-sakura-no-hanataba-wo-manga/.243258",
+      "pubDate": "Tue, 27 Oct 2026 22:00:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243258/hvtvxueauaaz-uo.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243258"
+    },
     {
       "title": "Eito Chida Launches New Hoshibarai no Chidori Manga",
       "description": "Hoshibarai no Chidori debuts on November 20",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243245/if.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243245"
-    },
-    {
-      "title": "Shaman King's Hiroyuki Takei Designs Short Net Anime Mecha Samurai",
-      "description": "TV Tokyo,  Plott studio's anime to stream vertical shorts in November, main episodes next spring",
-      "fullDescription": "TV Tokyo,  Plott studio's anime to stream vertical shorts in November, main episodes next spring",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-27/shaman-king-hiroyuki-takei-designs-short-net-anime-mecha-samurai/.243242",
-      "pubDate": "Tue, 27 Oct 2026 07:11:22 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243242/mecha.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.243242"
-    },
-    {
-      "title": "&#039;Mairimashita! Iruma-kun: If Episode of Mafia&#039; Announces Production Staff",
-      "description": "The official website for the television anime adaptation of hiroja&#039;s Mairimashita! Iruma-kun: If Episode of Mafia (Welcome to Demon School! Iruma-kun: IruMafia Edition) manga revealed the production staff and a key visual (pictured) on Tuesday. The anime series will begin airing on NHK-G at 11:...",
-      "fullDescription": "The official website for the television anime adaptation of hiroja&#039;s Mairimashita! Iruma-kun: If Episode of Mafia (Welcome to Demon School! Iruma-kun: IruMafia Edition) manga revealed the production staff and a key visual (pictured) on Tuesday. The anime series will begin airing on NHK-G at 11:00 p.m. on January 4, 2027. Staff Director: Keiichirou Kawaguchi (Higurashi no Naku Koro ni Gou) Series Composition: Kazuyuki Fudeyasu (Yasei no Last Boss ga Arawareta!) Character Design: Kenji Fujisa...",
-      "link": "https://myanimelist.net/news/74870752?_location=rss",
-      "pubDate": "Tue, 27 Oct 2026 03:34:11 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1793096896-e8eedcabf42812812211ebf89a4989b5.jpeg",
-      "guid": "https://myanimelist.net/news/74870752?_location=rss"
     }
   ],
   "total": 15
