@@ -1,6 +1,6 @@
 {
-  "version": 1793140780662,
-  "fetchedAt": "2026-10-27T22:39:40.662Z",
+  "version": 1793152078094,
+  "fetchedAt": "2026-10-28T01:47:58.094Z",
   "anime": [
     {
       "id": 207329,
@@ -495,50 +495,6 @@
       }
     },
     {
-      "id": 198727,
-      "title": {
-        "romaji": "Chitose-kun wa Ramune Bin no Naka Part 2",
-        "english": "Chitose Is in the Ramune Bottle 2nd Cour",
-        "native": "千歳くんはラムネ瓶のなか 2クール"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198727-BL0JTpg0G8tq.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198727-BL0JTpg0G8tq.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198727-BL0JTpg0G8tq.jpg"
-      },
-      "bannerImage": null,
-      "description": "The second part of <i>Chitose-kun wa Ramune Bin no Naka</i>.",
-      "genres": [
-        "Comedy",
-        "Romance"
-      ],
-      "averageScore": 77,
-      "episodes": 11,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "feel."
-          },
-          {
-            "name": "KADOKAWA"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 13
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 22
-      }
-    },
-    {
       "id": 269,
       "title": {
         "romaji": "BLEACH",
@@ -710,66 +666,47 @@
       }
     },
     {
-      "id": 209219,
+      "id": 198727,
       "title": {
-        "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
-        "english": "So What's Wrong with Getting Reborn as a Goblin?",
-        "native": "転生ゴブリンだけど質問ある？"
+        "romaji": "Chitose-kun wa Ramune Bin no Naka Part 2",
+        "english": "Chitose Is in the Ramune Bottle 2nd Cour",
+        "native": "千歳くんはラムネ瓶のなか 2クール"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198727-BL0JTpg0G8tq.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198727-BL0JTpg0G8tq.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198727-BL0JTpg0G8tq.jpg"
       },
       "bannerImage": null,
-      "description": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever!\n<br><br>\n(Source: Yen Press)<br><br>\n\n<i>Note: Tensei Goblin Dakedo Shitsumon Aru? is streaming 1 week in advance of the TV broadcast on ABEMA and Prime Video beginning with episode 2 on October 5th, 2026</i>",
+      "description": "The second part of <i>Chitose-kun wa Ramune Bin no Naka</i>.",
       "genres": [
-        "Action",
-        "Adventure",
         "Comedy",
-        "Drama",
-        "Fantasy",
         "Romance"
       ],
-      "averageScore": 66,
-      "episodes": null,
+      "averageScore": 77,
+      "episodes": 11,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "BAKKKA"
+            "name": "feel."
           },
           {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "INCS toenter"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "Bushiroad Move"
+            "name": "KADOKAWA"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 5
+        "day": 13
       },
       "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 2026,
+        "month": 12,
+        "day": 22
       }
     },
     {
@@ -835,24 +772,25 @@
       }
     },
     {
-      "id": 205909,
+      "id": 191656,
       "title": {
-        "romaji": "Hotaru no Yomeiri",
-        "english": "Firefly Wedding",
-        "native": "ホタルの嫁入り"
+        "romaji": "Seitokai ni mo Ana wa Aru!",
+        "english": "Even the Student Council Has Its Holes!",
+        "native": "生徒会にも穴はある！"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191656-xFHtxM8SUTdU.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
-      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg",
+      "description": "This is Fujinasu Academy, a private high school with top-achieving students located on the outskirts of town.\n<br><br>\nHigh School 1st-Year Ume Mizunoe has excellent grades in Japanese language class and has received multiple literary awards.\nHowever, his terrible grades in the sciences are affecting his ability to move up a grade. To avoid repeating a year, he becomes a member of the student council to improve his academic standing.\n<br><br>\nHowever, in the student council, he meets the charismatic yet sullen student council president Kotobuki Hisako, and the scary yet kind and refined treasurer, Arisu Terui. Other members include a cheeky and cute boy, Tan Otori, and Komaro Michinoku, the admin who's like a small abandoned cat. This is the start of a slapstick, heartful, rom-com about a busy student council full of cute, mismatched, and quirky students!\n<br><br>\n(Source: Even the Student Council Has Its Holes! Official Site)",
       "genres": [
-        "Drama",
-        "Romance"
+        "Comedy",
+        "Ecchi",
+        "Slice of Life"
       ],
-      "averageScore": 75,
+      "averageScore": 73,
       "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
@@ -860,17 +798,89 @@
       "studios": {
         "nodes": [
           {
-            "name": "david production"
+            "name": "Passione"
           },
           {
-            "name": "Fuji TV"
+            "name": "Aniplex"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Movic"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 9
+        "day": 4
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 209219,
+      "title": {
+        "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
+        "english": "So What's Wrong with Getting Reborn as a Goblin?",
+        "native": "転生ゴブリンだけど質問ある？"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg"
+      },
+      "bannerImage": null,
+      "description": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever!\n<br><br>\n(Source: Yen Press)<br><br>\n\n<i>Note: Tensei Goblin Dakedo Shitsumon Aru? is streaming 1 week in advance of the TV broadcast on ABEMA and Prime Video beginning with episode 2 on October 5th, 2026</i>",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Romance"
+      ],
+      "averageScore": 66,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "BAKKKA"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "INCS toenter"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "AbemaTV"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "Bushiroad Move"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 5
       },
       "endDate": {
         "year": null,
