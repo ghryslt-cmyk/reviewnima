@@ -1,7 +1,40 @@
 {
-  "version": 1793175273452,
-  "fetchedAt": "2026-10-28T08:14:33.452Z",
+  "version": 1793200400327,
+  "fetchedAt": "2026-10-28T15:13:20.327Z",
   "news": [
+    {
+      "title": "Hatsune Miku Connecting Puzzle TAMAGOTORI Deluxe Game Launches on October 29",
+      "description": "New edition includes original game, two DLC packs",
+      "fullDescription": "New edition includes original game, two DLC packs",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-28/hatsune-miku-connecting-puzzle-tamagotori-deluxe-game-launches-on-october-29/.243224",
+      "pubDate": "Wed, 28 Oct 2026 08:44:31 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243224/hvnpjzoacae9bnd.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243224"
+    },
+    {
+      "title": "The Greatest Magicmaster's Retirement Plan TV Anime Casts Eri Yukimura",
+      "description": "Yukimura voices Tesfia Fable in 2027 anime",
+      "fullDescription": "Yukimura voices Tesfia Fable in 2027 anime",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-28/the-greatest-magicmaster-retirement-plan-tv-anime-casts-eri-yukimura/.243282",
+      "pubDate": "Wed, 28 Oct 2026 08:38:07 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243282/retire.webp",
+      "guid": "https://www.animenewsnetwork.com/cms/.243282"
+    },
+    {
+      "title": "Millennium Family TV Anime Casts Haruna Mikawa",
+      "description": "Mikawa voices 2nd daughter Raine",
+      "fullDescription": "Mikawa voices 2nd daughter Raine",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-28/millennium-family-tv-anime-casts-haruna-mikawa/.243277",
+      "pubDate": "Wed, 28 Oct 2026 08:37:42 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243277/millraine.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243277"
+    },
     {
       "title": "Masaki Andō's Mojiponika! Manga Ends on November 25",
       "description": "Comedy manga launched in May 2025",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243252/bleach-mirrors-high-critical-opening.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243252"
-    },
-    {
-      "title": "Witch on the Holy Night Film's Trailer Previews supercell's Theme Song",
-      "description": "Film screens in U.S., Canada on January 29, 2027",
-      "fullDescription": "Film screens in U.S., Canada on January 29, 2027",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-27/witch-on-the-holy-night-film-trailer-previews-supercell-theme-song/.243248",
-      "pubDate": "Tue, 27 Oct 2026 11:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235565/mahoyo-kv.jfif.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243248"
-    },
-    {
-      "title": "Phantom Busters TV Anime Reveals Main Cast, Staff",
-      "description": "Nobuhiko Okamoto, Natsuki Hanae, Kōki Uchiyama, Ryōta Suzuki star in TOHO animation STUDIO anime",
-      "fullDescription": "Nobuhiko Okamoto, Natsuki Hanae, Kōki Uchiyama, Ryōta Suzuki star in TOHO animation STUDIO anime",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-27/phantom-busters-tv-anime-reveals-main-cast-staff/.243246",
-      "pubDate": "Tue, 27 Oct 2026 10:32:22 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243246/busters.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243246"
-    },
-    {
-      "title": "Welcome to Demon School! Iruma-kun: IruMafia Edition TV Anime Reveals January 4 Debut, Returning Cast Members",
-      "description": "Ayumu Murase, Ryōhei Kimura, Ayaka Asai, more return for spinoff series",
-      "fullDescription": "Ayumu Murase, Ryōhei Kimura, Ayaka Asai, more return for spinoff series",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-27/welcome-to-demon-school-iruma-kun-irumafia-edition-tv-anime-reveals-january-4-debut-returning-cast-/.243245",
-      "pubDate": "Tue, 27 Oct 2026 10:09:29 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243245/if.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243245"
     }
   ],
   "total": 15
