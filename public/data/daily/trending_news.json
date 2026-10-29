@@ -1,7 +1,106 @@
 {
-  "version": 1793254812736,
-  "fetchedAt": "2026-10-29T06:20:12.736Z",
+  "version": 1793280957938,
+  "fetchedAt": "2026-10-29T13:35:57.938Z",
   "news": [
+    {
+      "title": "Japanese Animation TV Ranking, October 12-18",
+      "description": "The Apothecary Diaries season 3 earns 3.6% rating, Dragon Ball Super: Beerus earns 2.8% rating",
+      "fullDescription": "<cite>The Apothecary Diaries</cite> season 3 earns 3.6% rating, <cite>Dragon Ball Super: Beerus</cite> earns 2.8% rating",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-29/japanese-animation-tv-ranking-october-12-18/.243177",
+      "pubDate": "Thu, 29 Oct 2026 09:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243177"
+    },
+    {
+      "title": "Korea Holds 1st AI Creative Contest for Children to Make Webtoons",
+      "description": "Participants received instruction in AI ethics, how to use tools before creating their works",
+      "fullDescription": "Participants received instruction in AI ethics, how to use tools before creating their works",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-29/korea-holds-1st-ai-creative-contest-for-children-to-make-webtoons/.243304",
+      "pubDate": "Thu, 29 Oct 2026 08:15:00 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243304/images-8.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243304"
+    },
+    {
+      "title": "Expelled from Paradise -The Stellar Angel- Visual Novel's Video Previews Story, Systems, New Characters",
+      "description": "Game also gets English release on Switch, PC via Steam on November 26",
+      "fullDescription": "Game also gets English release on Switch, PC via Steam on November 26",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-29/expelled-from-paradise-the-stellar-angel-visual-novel-video-previews-story-systems-new-characters/.243324",
+      "pubDate": "Thu, 29 Oct 2026 08:11:01 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243324/kv-pc.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243324"
+    },
+    {
+      "title": "No-Clipping My Way to Supremacy! TV Anime Reveals 7 Cast, More Staff",
+      "description": "Nao Ojika, Kengo Tsujii, Tatsuhisa Suzuki, more join cast of 2027 anime",
+      "fullDescription": "Nao Ojika, Kengo Tsujii, Tatsuhisa Suzuki, more join cast of 2027 anime",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-29/no-clipping-my-way-to-supremacy-tv-anime-reveals-7-cast-more-staff/.243326",
+      "pubDate": "Thu, 29 Oct 2026 07:53:03 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243326/clipping1.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243326"
+    },
+    {
+      "title": "Shin Oishinbo TV Anime Reveals 6 New Cast Members, Theme Song Artists",
+      "description": "Tōru Furusawa, Kōsuke Echigoya, Kyō Yaoya, more join cast of 2027 anime",
+      "fullDescription": "Tōru Furusawa, Kōsuke Echigoya, Kyō Yaoya, more join cast of 2027 anime",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-29/shin-oishinbo-tv-anime-reveals-6-new-cast-members-theme-song-artists/.243325",
+      "pubDate": "Thu, 29 Oct 2026 06:54:32 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243325/oishinbo1.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243325"
+    },
+    {
+      "title": "The Remarried Empress Webtoon Launches Side Stories Ahead of Disney+ Live-Action Series",
+      "description": "New episodes will also include alternate-universe stories that imagine different scenarios",
+      "fullDescription": "New episodes will also include alternate-universe stories that imagine different scenarios",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-29/the-remarried-empress-webtoon-launches-side-stories-ahead-of-disney-live-action-series/.243306",
+      "pubDate": "Thu, 29 Oct 2026 06:23:25 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243306/remarried.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243306"
+    },
+    {
+      "title": "&#039;Shin Oishinbo&#039; Reveals Additional Cast, Theme Songs",
+      "description": "The official website for the television anime adaptation of Tetsu Kariya&#039;s Oishinbo manga, titled Shin Oishinbo, revealed additional cast and theme songs on Thursday. The anime is scheduled to premiere in 2027. Cast Hideo Tanimura: Tohru Furusawa (Toradora!) Tomio Tomii: Kousuke Echigoya (Akane...",
+      "fullDescription": "The official website for the television anime adaptation of Tetsu Kariya&#039;s Oishinbo manga, titled Shin Oishinbo, revealed additional cast and theme songs on Thursday. The anime is scheduled to premiere in 2027. Cast Hideo Tanimura: Tohru Furusawa (Toradora!) Tomio Tomii: Kousuke Echigoya (Akane-banashi) Taizou Oohara: Nobuo Tobita (World Is Dancing) Kyouichi Koizumi: Hiroshi Naka (Saigo ni Hitotsu dake Onegai shitemo Yoroshii deshou ka) Kinue Arakawa: Kyou Yaoya (Tefuda ga Oome no Victoria...",
+      "link": "https://myanimelist.net/news/74880493?_location=rss",
+      "pubDate": "Thu, 29 Oct 2026 02:52:07 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1793267402-c9544f16c600fbff663bdeb292eba36a.jpeg",
+      "guid": "https://myanimelist.net/news/74880493?_location=rss"
+    },
+    {
+      "title": "Good Smile Company: Full Credit Card Details for 2,800 Customers May Have Been Exposed in Data Breach",
+      "description": "Company's current update states customers' complete 16-digit card number may have been exposed due to breach",
+      "fullDescription": "Company's current update states customers' complete 16-digit card number may have been exposed due to breach",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-29/good-smile-company-full-credit-card-details-for-2800-customers-may-have-been-exposed-in-data-breach/.243323",
+      "pubDate": "Thu, 29 Oct 2026 05:10:54 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/232514/goodsmile.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243323"
+    },
+    {
+      "title": "&#039;Saijaku na Boku wa \"Kabenuke Bug\" de Nariagaru&#039; Announces Additional Cast, Staff",
+      "description": "The official website of the Saijaku na Boku wa &quot;Kabenuke Bug&quot; de Nariagaru (No-Clipping My Way to Supremacy!) television anime announced additional cast and staff on Thursday. The anime series adapting Nikita Kitagawa&#039;s adventure fantasy light novel will premiere in 2027. Cast Auroia ...",
+      "fullDescription": "The official website of the Saijaku na Boku wa &quot;Kabenuke Bug&quot; de Nariagaru (No-Clipping My Way to Supremacy!) television anime announced additional cast and staff on Thursday. The anime series adapting Nikita Kitagawa&#039;s adventure fantasy light novel will premiere in 2027. Cast Auroia Schmiket: Nao Ojika (Mahou no Shimai Lulutto Lilly) Don: Kengo Tsujii (Liar Game) Guillermo: Tatsuhisa Suzuki (Nanatsu no Taizai) Scarlet: Anna Yamaki (Rifle Is Beautiful) Latch: Shun Horie (Kanojo, O...",
+      "link": "https://myanimelist.net/news/74880301?_location=rss",
+      "pubDate": "Thu, 29 Oct 2026 02:00:03 -0700",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1793262421-2394a19e94efff0e1add8e8e38083e6c.jpeg",
+      "guid": "https://myanimelist.net/news/74880301?_location=rss"
+    },
     {
       "title": "Solo Leveling: Arise Overdrive Game Launches for PS5, Xbox Series X|S on November 3",
       "description": "Game launched for PC via Steam, Xbox PC in November 2025",
@@ -67,105 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243263/81qlv05kbtl.sl1500.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243263"
-    },
-    {
-      "title": "The Full-Time Wife Escapist's Tsunami Umino Launches New Manga in December",
-      "description": "Umino to launch series of previous 1-shot Omiai Tantei Katabiranotsuji Nagi",
-      "fullDescription": "Umino to launch series of previous 1-shot <cite>Omiai Tantei Katabiranotsuji Nagi</cite>",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-28/the-full-time-wife-escapist-tsunami-umino-launches-new-manga-in-december/.243280",
-      "pubDate": "Wed, 28 Oct 2026 18:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243280/nagi.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243280"
-    },
-    {
-      "title": "Yuki Amemiya, Yukino Ichihara's My Husband is a Doomsday Weapon Manga Ends",
-      "description": "Manga launched in November 2024; Kodansha USA to release 1st volume in English on December 22",
-      "fullDescription": "Manga launched in November 2024; Kodansha USA to release 1st volume in English on December 22",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-28/yuki-amemiya-yukino-ichihara-my-husband-is-a-doomsday-weapon-manga-ends/.243272",
-      "pubDate": "Wed, 28 Oct 2026 17:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243272/doomsdayweapon.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243272"
-    },
-    {
-      "title": "Digimon Alysion Smartphone Card Game Opens Pre-Registration with New Trailer",
-      "description": "Game slated for 2026 release",
-      "fullDescription": "Game slated for 2026 release",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-28/digimon-alysion-smartphone-card-game-opens-pre-registration-with-new-trailer/.243297",
-      "pubDate": "Wed, 28 Oct 2026 16:30:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243297"
-    },
-    {
-      "title": "Reiko Shimizu's Himitsu Season 0 Spinoff Manga Enters Final Arc",
-      "description": "Final arc starts on December 25",
-      "fullDescription": "Final arc starts on December 25",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-28/reiko-shimizu-himitsu-season-0-spinoff-manga-enters-final-arc/.243284",
-      "pubDate": "Wed, 28 Oct 2026 16:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243284/himitsu2.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243284"
-    },
-    {
-      "title": "TANUKI: Pon's Summer Game Launches on November 10",
-      "description": "Game launches for Switch, Switch 2, PS5, PS4, Xbox X|S, PC",
-      "fullDescription": "Game launches for Switch, Switch 2, PS5, PS4, Xbox X|S, PC",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-28/tanuki-pon-summer-game-launches-on-november-10/.243296",
-      "pubDate": "Wed, 28 Oct 2026 15:30:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243296"
-    },
-    {
-      "title": "Bana Yoshida Launches New Kui Otoko no Majо̄ to Kyūseishu Manga",
-      "description": "Kui Otoko no Majо̄ to Kyūseishu debuts on February 25",
-      "fullDescription": "<cite>Kui Otoko no Majо̄ to Kyūseishu</cite> debuts on February 25",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-28/bana-yoshida-launches-new-kui-otoko-no-maj-to-kyuseishu-manga/.243260",
-      "pubDate": "Wed, 28 Oct 2026 15:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243260/bana-yoshida.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243260"
-    },
-    {
-      "title": "Urban Myth Dissolution Center, Schrödinger's Call Games Get Switch 2 Releases",
-      "description": "Switch 2 editions launch on Thursday",
-      "fullDescription": "Switch 2 editions launch on Thursday",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-28/urban-myth-dissolution-center-schrodinger-call-games-get-switch-2-releases/.243295",
-      "pubDate": "Wed, 28 Oct 2026 14:35:35 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243295/unnamed.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243295"
-    },
-    {
-      "title": "Good Smile Company Announces Data Breach of Online Store",
-      "description": "User info, order info, basic (but incomplete) credit card info were accessed",
-      "fullDescription": "User info, order info, basic (but incomplete) credit card info were accessed",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-28/good-smile-company-announces-data-breach-of-online-store/.243267",
-      "pubDate": "Wed, 28 Oct 2026 14:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/232514/goodsmile.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243267"
-    },
-    {
-      "title": "Bakudo Action Game's Trailer Reveals Switch 2 Version, 2027 Release",
-      "description": "Shueisha Games to release sci-fi action battle game for Switch 2, PC",
-      "fullDescription": "Shueisha Games to release sci-fi action battle game for Switch 2, PC",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-28/bakudo-action-game-trailer-reveals-switch-2-version-2027-release/.243289",
-      "pubDate": "Wed, 28 Oct 2026 13:00:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243289"
     }
   ],
   "total": 15
