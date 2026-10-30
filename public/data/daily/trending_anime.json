@@ -1,7 +1,69 @@
 {
-  "version": 1793378346155,
-  "fetchedAt": "2026-10-30T16:39:06.155Z",
+  "version": 1793394400092,
+  "fetchedAt": "2026-10-30T21:06:40.092Z",
   "anime": [
+    {
+      "id": 195516,
+      "title": {
+        "romaji": "Kusuriya no Hitorigoto 3rd Season",
+        "english": "The Apothecary Diaries Season 3",
+        "native": "薬屋のひとりごと 第3期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg",
+      "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n<br><br>\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n<br><br>\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n<br><br>\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n<br><br>\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "averageScore": 85,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "OLM"
+          },
+          {
+            "name": "Nippon Television Network"
+          },
+          {
+            "name": "Imagica Infos"
+          },
+          {
+            "name": "OLM"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Shogakukan"
+          },
+          {
+            "name": "Square Enix"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 2
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
     {
       "id": 210482,
       "title": {
@@ -50,62 +112,129 @@
       }
     },
     {
-      "id": 180136,
+      "id": 205909,
       "title": {
-        "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
-        "english": "The Exiled Heavy Knight Knows How to Game the System",
-        "native": "追放された転生重騎士はゲーム知識で無双する"
+        "romaji": "Hotaru no Yomeiri",
+        "english": "Firefly Wedding",
+        "native": "ホタルの嫁入り"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
       },
-      "bannerImage": null,
-      "description": "Born into a prestigious family of master swordsmen, Elymas Edvaughn’s future shatters when he awakens the so-called “defective” Heavy Knight class. Disowned and cast out, he regains memories of another life—and realizes this world mirrors a VR game he once mastered. Armed with knowledge no one else possesses, he sets out to rewrite his fate and prove the strength of the “weakest” class.<br>\n<br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
+      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
       "genres": [
-        "Action",
-        "Fantasy"
+        "Drama",
+        "Romance"
       ],
-      "averageScore": 67,
-      "episodes": 26,
+      "averageScore": 75,
+      "episodes": 12,
       "status": "RELEASING",
-      "season": "SUMMER",
+      "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "GoHands"
+            "name": "david production"
           },
           {
-            "name": "Shouchiku"
+            "name": "Fuji TV"
           },
           {
-            "name": "Kodansha"
+            "name": "Dentsu"
           },
           {
-            "name": "MUSE"
+            "name": "Aniplex"
           },
           {
-            "name": "Crunchyroll"
+            "name": "Shogakukan"
           },
           {
-            "name": "Mainichi Broadcasting System"
+            "name": "Shogakukan-Shueisha Productions"
           },
           {
-            "name": "GoHands"
+            "name": "david production"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 7,
+        "month": 10,
+        "day": 9
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 178083,
+      "title": {
+        "romaji": "Tokyo Revengers: Santen Sensou-hen",
+        "english": "Tokyo Revengers: War of the Three Titans Arc",
+        "native": "東京リベンジャーズ 三天戦争編"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178083-bg7pg6TCHwtG.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178083-bg7pg6TCHwtG.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178083-bg7pg6TCHwtG.jpg"
+      },
+      "bannerImage": null,
+      "description": "Sequel to <i>Tokyo Revengers: Tenjiku-hen</i>.",
+      "genres": [
+        "Action",
+        "Drama",
+        "Romance",
+        "Supernatural"
+      ],
+      "averageScore": 76,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "LIDENFILMS"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "Sammy"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "Ultra Super Pictures"
+          },
+          {
+            "name": "Studio Mausu"
+          },
+          {
+            "name": "HI Production"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
         "day": 3
       },
       "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 25
+        "year": null,
+        "month": null,
+        "day": null
       }
     },
     {
@@ -231,24 +360,25 @@
       }
     },
     {
-      "id": 195516,
+      "id": 204650,
       "title": {
-        "romaji": "Kusuriya no Hitorigoto 3rd Season",
-        "english": "The Apothecary Diaries Season 3",
-        "native": "薬屋のひとりごと 第3期"
+        "romaji": "Tougen Anki: Nikko・Kegon no Taki-hen",
+        "english": "TOUGEN ANKI: Nikko Kegon Falls Arc",
+        "native": "桃源暗鬼 日光・華厳の滝編"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204650-cAQOzQ84Lwk8.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204650-cAQOzQ84Lwk8.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204650-cAQOzQ84Lwk8.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg",
-      "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n<br><br>\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n<br><br>\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n<br><br>\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n<br><br>\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/204650-MpownoVlYv69.jpg",
+      "description": "After battling in Kyoto and Nerima, the Rasetsu Academy students have grown stronger. But Yaoroshi leaves the academy to join the Oni Brigade for their \"the total eradication of the Momotaro.\"\n<br><br>\nWhen Shiki realizes that they also target noncombatants, he sets out after Yaoroshi to bring him back. Meanwhile in Nikko, there's a research facility for horrific experiments atop the old Kegon Falls…\n<br><br>\n(Source: REMOW)",
       "genres": [
-        "Drama",
-        "Mystery"
+        "Action",
+        "Mystery",
+        "Supernatural"
       ],
-      "averageScore": 85,
+      "averageScore": 72,
       "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
@@ -256,28 +386,22 @@
       "studios": {
         "nodes": [
           {
-            "name": "Toho"
+            "name": "Studio Hibari"
           },
           {
-            "name": "OLM"
-          },
-          {
-            "name": "Nippon Television Network"
-          },
-          {
-            "name": "Imagica Infos"
-          },
-          {
-            "name": "OLM"
+            "name": "Pony Canyon"
           },
           {
             "name": "Dentsu"
           },
           {
-            "name": "Shogakukan"
+            "name": "Nippon Television Network"
           },
           {
-            "name": "Square Enix"
+            "name": "Akita Shoten"
+          },
+          {
+            "name": "Studio Hibari"
           }
         ]
       },
@@ -290,6 +414,65 @@
         "year": null,
         "month": null,
         "day": null
+      }
+    },
+    {
+      "id": 180136,
+      "title": {
+        "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
+        "english": "The Exiled Heavy Knight Knows How to Game the System",
+        "native": "追放された転生重騎士はゲーム知識で無双する"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg"
+      },
+      "bannerImage": null,
+      "description": "Born into a prestigious family of master swordsmen, Elymas Edvaughn’s future shatters when he awakens the so-called “defective” Heavy Knight class. Disowned and cast out, he regains memories of another life—and realizes this world mirrors a VR game he once mastered. Armed with knowledge no one else possesses, he sets out to rewrite his fate and prove the strength of the “weakest” class.<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "averageScore": 67,
+      "episodes": 26,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "GoHands"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "MUSE"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "GoHands"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 12,
+        "day": 25
       }
     },
     {
@@ -337,116 +520,6 @@
         "year": 2026,
         "month": 10,
         "day": 1
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
-      "id": 205909,
-      "title": {
-        "romaji": "Hotaru no Yomeiri",
-        "english": "Firefly Wedding",
-        "native": "ホタルの嫁入り"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
-      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "averageScore": 75,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "david production"
-          },
-          {
-            "name": "Fuji TV"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Shogakukan"
-          },
-          {
-            "name": "Shogakukan-Shueisha Productions"
-          },
-          {
-            "name": "david production"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 9
       },
       "endDate": {
         "year": null,
@@ -507,6 +580,98 @@
         "year": 2021,
         "month": 3,
         "day": 30
+      }
+    },
+    {
+      "id": 186742,
+      "title": {
+        "romaji": "Toaru Anbu no ITEM",
+        "english": "A Certain Dark Item",
+        "native": "とある暗部の少女共棲"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186742-v7yfbefc8fuO.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186742-v7yfbefc8fuO.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186742-v7yfbefc8fuO.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/186742-nZP1PcuUpcGg.jpg",
+      "description": "This is a story of four girls living in the \"Dark Side\" of Academy City.<br>\n<br>\nIn Academy City where \"ESP\" has been recognized as a general science. Behind the peace, there is a Dark Side organization that undertakes missions that cannot be made public.<br>\n<br>\n\"ITEM\" is an elite unit consisting of four girls. Takitsubo Rikou is able to read and track the AIM fields emitted by those with abilities. Frenda Seivelun, who excels in combat using explosives and traps.<br>\n<br>\nKinuhata Saiai, who can manipulate nitrogen at will and plays a defensive role. And one of the 7 Espers that Academy City is proud of: Mugino Shizuri. They live freely in the darkness of the Academy City, and quietly set their sights on their target...!<br>\n<br>\nThis is a story of encounter, friendship, and darkness that eventually leads to a terrible incident!<br>\n<br>\n(Source: Kadokawa, translated)",
+      "genres": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "averageScore": 68,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "J.C.STAFF"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 9
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 269,
+      "title": {
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ],
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2004,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Viz Media"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2004,
+        "month": 10,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2012,
+        "month": 3,
+        "day": 27
       }
     },
     {
@@ -630,243 +795,59 @@
       }
     },
     {
-      "id": 212503,
+      "id": 212888,
       "title": {
-        "romaji": "Hyouken no Majutsushi ga Sekai wo Suberu II",
-        "english": "The Iceblade Sorcerer Shall Rule the World II",
-        "native": "冰剣の魔術師が世界を統べるⅡ"
+        "romaji": "Tempal: Item no Chikara",
+        "english": "Overgeared",
+        "native": "テムパル～アイテムの力～"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212503-sXBpRZr96c4e.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212503-sXBpRZr96c4e.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212503-sXBpRZr96c4e.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg"
       },
-      "bannerImage": null,
-      "description": "Once dismissed as the sole ordinary student at the elite Arnold Academy of Sorcery, Ray White—secretly, the Iceblade Sorcerer—has finally earned his place. With a new school year comes a new challenge: The Magicks War, a grand competition pitting teams from rival schools against each other. But an ominous shadow looms over Ray and his friends as the other grand sorcerers plot their next moves.\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
+      "description": "Sin Yeong-U (a.k.a. Grid), an unlucky man in life and a low-level player in the popular VR game “Satisfy,” finds a powerful item that earns him a rare legendary class title: “Pagma’s Successor.” He’s now a skilled blacksmith who can forge unique weapons and equip the game’s most powerful gear. Grid resolves to use his new abilities to achieve fame and fortune, but as his very existence begins to stir up trouble in Satisfy, he realizes that life as a legend may be more than he bargained for….<br><br>\n\n(Source: Tapas, edited)<br><br>\n\n<i>Note: Tempal: Item no Chikara is streaming a week in advance of the TV broadcast on Prime Video and Crunchyroll beginning September 27th, 2026. Regular broadcasting began on October 2nd, 2026.</i>",
       "genres": [
         "Action",
         "Adventure",
+        "Comedy",
         "Fantasy"
       ],
-      "averageScore": 66,
-      "episodes": null,
+      "averageScore": 76,
+      "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Zero-G"
-          },
-          {
-            "name": "TBS"
-          },
-          {
-            "name": "SAND B"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "DMM.com"
-          },
-          {
-            "name": "BS11"
+            "name": "J.C.STAFF"
           },
           {
             "name": "Pony Canyon"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 9
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 1735,
-      "title": {
-        "romaji": "NARUTO: Shippuuden",
-        "english": "Naruto: Shippuden",
-        "native": "NARUTO -ナルト- 疾風伝"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1735-kGfVm0YqCPcu.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1735-kGfVm0YqCPcu.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1735.jpg",
-      "description": "Naruto: Shippuuden is the continuation of the original animated TV series Naruto. The story revolves around an older and slightly more matured Uzumaki Naruto and his quest to save his friend Uchiha Sasuke from the grips of the snake-like Shinobi, Orochimaru. After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work, though it will not be easy, as he has amassed a few (more dangerous) enemies, in the likes of the shinobi organization; Akatsuki. <br><br>\n(Source: Anime News Network)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Supernatural"
-      ],
-      "averageScore": 82,
-      "episodes": 500,
-      "status": "FINISHED",
-      "season": "WINTER",
-      "seasonYear": 2007,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "KSS"
-          },
-          {
-            "name": "Viz Media"
-          },
-          {
-            "name": "Rakuonsha"
-          },
-          {
-            "name": "TV Tokyo Music"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2007,
-        "month": 2,
-        "day": 15
-      },
-      "endDate": {
-        "year": 2017,
-        "month": 3,
-        "day": 23
-      }
-    },
-    {
-      "id": 195604,
-      "title": {
-        "romaji": "Black Clover 2nd Season",
-        "english": "Black Clover Season 2",
-        "native": "ブラッククローバー 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg",
-      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 87,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Avex Pictures"
-          },
-          {
-            "name": "Bandai Namco Entertainment"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 207329,
-      "title": {
-        "romaji": "Tsuihou Sareta Cheat Fuyo Majutsushi wa Kimama na Second Life wo Ouka Suru.: Ore wa Buki dake ja Naku, Arayuru Mono ni \"Kyouka Point\" wo Fuyo Dekiru shi, Ore no Ishi de Itsudemo Kouka wo Kaijo Dekiru kedo, Nokotta Hitotachi Daijoubu?",
-        "english": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
-        "native": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b207329-6VPeZIDfF4Sr.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207329-9IqRSKIsM3TC.jpg",
-      "description": "Rein, an enchanter, is suddenly expelled from his guild one day. But instead of despairing, he declares, “Now I can do anything!” and begins reclaiming the massive number of enhancement points he once poured into his guildmates’ gear, setting off on a brand-new path as an adventurer.<br><br>\nGathering around him are people carrying wounds that don’t fade easily: a genius adventurer who shut her heart after her party was slaughtered, a warrior who lost her family, and an assassin raised from childhood to kill. Yet Rein never rejects their pasts or their scars—he accepts them all with bright, straightforward warmth.<br><br>\nThe stage is a unique fantasy world where Uzis, slingshots, and even yakuza exist side by side. But in this world, the more people rely on convenient technology, the more their magic weakens, and adventurers grow fragile.<br><br>\nIntelligent, vicious monsters roam freely, while in the underworld, outlaws bare their greed and ambition as schemes and betrayals intertwine. In a world where ideals and justice are easily crushed, adventurers fight on with nothing but their magic and their convictions.<br><br>\nThis is the story of those who have lost their place in the world finding a new way to live. Rein and his companions’ wild, free-spirited second life begins now!\n<br><br>(Source: The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life Site)",
-      "genres": [
-        "Adventure",
-        "Comedy",
-        "Fantasy",
-        "Slice of Life"
-      ],
-      "averageScore": 73,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "P.A.WORKS"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "TV Tokyo"
           },
           {
             "name": "Crunchyroll"
           },
           {
-            "name": "Good Smile Company"
+            "name": "REDICE STUDIO"
           },
           {
-            "name": "JR Toukai Agency"
+            "name": "Kakao piccoma"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "EGG FIRM"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 10,
-        "day": 7
+        "month": 9,
+        "day": 27
       },
       "endDate": {
         "year": null,

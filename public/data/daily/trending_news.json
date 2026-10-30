@@ -1,7 +1,29 @@
 {
-  "version": 1793378345680,
-  "fetchedAt": "2026-10-30T16:39:05.680Z",
+  "version": 1793394399677,
+  "fetchedAt": "2026-10-30T21:06:39.677Z",
   "news": [
+    {
+      "title": "Brazil's CCXP Screens World Premiere of Garena Free Fire Game's Free Fire Daybreak Anime",
+      "description": "Screening takes place at São Paulo Expo on December 5",
+      "fullDescription": "Screening takes place at São Paulo Expo on December 5",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-30/brazil-ccxp-screens-world-premiere-of-garena-free-fire-game-free-fire-daybreak-anime/.243371",
+      "pubDate": "Fri, 30 Oct 2026 14:34:33 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243371/free-fire-daybreak-world-premiere.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243371"
+    },
+    {
+      "title": "Hiragi-san's House of Vampires Manga Gets TV Anime",
+      "description": "Visual unveiled for UNLIMITED PRODUCE by TMS' anime of Miki Yoshikawa's manga",
+      "fullDescription": "Visual unveiled for UNLIMITED PRODUCE by TMS' anime of Miki Yoshikawa's manga",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-30/hiragi-san-house-of-vampires-manga-gets-tv-anime/.243370",
+      "pubDate": "Fri, 30 Oct 2026 12:19:14 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243370/hiragi-san-s-house-of-vampires.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243370"
+    },
     {
       "title": "King Gnu Band Hold 1st U.S. Headline Shows in Los Angeles on March 26, New York on April 2",
       "description": "Band perform songs for Jujutsu Kaisen, Banana Fish, Ranking of Kings, The Ghost in the Shell, Detective Conan",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1793338936-02884c8a799b2322fa6cbff70b7957cf.jpeg",
       "guid": "https://myanimelist.net/news/74884436?_location=rss"
-    },
-    {
-      "title": "Yōko Hikasa, Yuka Iguchi Join Cast of Wound & Bandage Anime",
-      "description": "Series debuts on January 9",
-      "fullDescription": "Series debuts on January 9",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-30/yoko-hikasa-yuka-iguchi-join-cast-of-wound-and-bandage-anime/.243359",
-      "pubDate": "Fri, 30 Oct 2026 03:44:53 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243359/wound-vis-5.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.243359"
-    },
-    {
-      "title": "&#039;Kizuguchi to Houtai&#039; Unveils Additional Cast, Third Teaser Promo",
-      "description": "The official website of the Kizuguchi to Houtai (Wound and Bandage) television anime unveiled additional cast, third teaser visual (pictured), and third promotional video on Friday. The anime series adapting Nanai Umihoshi&#039;s romantic comedy manga will premiere on January 9, 2027 at 11:00 p.m. o...",
-      "fullDescription": "The official website of the Kizuguchi to Houtai (Wound and Bandage) television anime unveiled additional cast, third teaser visual (pictured), and third promotional video on Friday. The anime series adapting Nanai Umihoshi&#039;s romantic comedy manga will premiere on January 9, 2027 at 11:00 p.m. on AT-X, followed by ABC TV and TV Asahi on the ANiMAZiNG programming block. Cast Ginsuke Hatobane: Shouya Ishige (Sono Bisque Doll wa Koi wo Suru) Magical Penpengusa: Yuka Iguchi (Honzuki no Gekokujou...",
-      "link": "https://myanimelist.net/news/74884610?_location=rss",
-      "pubDate": "Fri, 30 Oct 2026 00:21:46 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1793344878-185b496bb20c0f391f599cc37709a808.png",
-      "guid": "https://myanimelist.net/news/74884610?_location=rss"
     }
   ],
   "total": 15
