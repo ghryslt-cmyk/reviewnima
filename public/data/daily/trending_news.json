@@ -1,7 +1,18 @@
 {
-  "version": 1793394399677,
-  "fetchedAt": "2026-10-30T21:06:39.677Z",
+  "version": 1793407821246,
+  "fetchedAt": "2026-10-31T00:50:21.246Z",
   "news": [
+    {
+      "title": "North American Anime, Manga Releases, October 25-31",
+      "description": "Yaiba: Samurai Legend, Sword of the Demon Hunter anime; Naruto x Teenage Mutant Ninja Turtles—Manga Style Edition, Tojima Wants to be a Kamen Rider manga ship",
+      "fullDescription": "<cite>Yaiba: Samurai Legend, Sword of the Demon Hunter</cite> anime; <cite>Naruto x Teenage Mutant Ninja Turtles—Manga Style Edition, Tojima Wants to be a Kamen Rider</cite> manga ship",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-30/north-american-anime-manga-releases-october-25-31/.243223",
+      "pubDate": "Fri, 30 Oct 2026 17:10:32 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243223"
+    },
     {
       "title": "Brazil's CCXP Screens World Premiere of Garena Free Fire Game's Free Fire Daybreak Anime",
       "description": "Screening takes place at São Paulo Expo on December 5",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243358/benkei.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243358"
-    },
-    {
-      "title": "&#039;Destiny Unchain Online&#039; Reveals Main Cast, Staff, Teaser Promo, 2027 Debut",
-      "description": "An official website opened for the Destiny Unchain Online television anime on Friday, revealing the main cast, staff, a teaser visual (pictured), and teaser promotional video. The anime series adapting resn&#039;s adventure fantasy light novel will premiere in 2027. Voice actress Ikumi Hasegawa (86,...",
-      "fullDescription": "An official website opened for the Destiny Unchain Online television anime on Friday, revealing the main cast, staff, a teaser visual (pictured), and teaser promotional video. The anime series adapting resn&#039;s adventure fantasy light novel will premiere in 2027. Voice actress Ikumi Hasegawa (86, Bocchi the Rock!) is starring as the main character Crim. Staff Director: Kouichi Hatsumi (Tokyo Revengers) Series Composition: Seiko Takagi (Yakusoku no Neverland script) Character Design: Masashi K...",
-      "link": "https://myanimelist.net/news/74884436?_location=rss",
-      "pubDate": "Fri, 30 Oct 2026 01:00:02 -0700",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1793338936-02884c8a799b2322fa6cbff70b7957cf.jpeg",
-      "guid": "https://myanimelist.net/news/74884436?_location=rss"
     }
   ],
   "total": 15
