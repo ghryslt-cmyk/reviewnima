@@ -1,7 +1,18 @@
 {
-  "version": 1793453511068,
-  "fetchedAt": "2026-10-31T13:31:51.068Z",
+  "version": 1793469436483,
+  "fetchedAt": "2026-10-31T17:57:16.483Z",
   "news": [
+    {
+      "title": "Romelia War Chronicle Anime's 2nd Part Unveils April 2027 Debut, Ending Song's Artist",
+      "description": "Hiro Shimono to perform ending theme",
+      "fullDescription": "Hiro Shimono to perform ending theme",
+      "link": "https://www.animenewsnetwork.com/news/2026-10-31/romelia-war-chronicle-anime-2nd-part-unveils-april-2027-debut-ending-song-artist/.243390",
+      "pubDate": "Sat, 31 Oct 2026 11:13:57 -0400",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241689/romelia-kv.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243390"
+    },
     {
       "title": "Comisma, Sumitomo Mitsui Trust Bank Establish Anime Production Fund",
       "description": "Fund to offer investment opportunities to companies that have previously found it difficult to enter anime business",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/230464/animejapan-2025-.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243366"
-    },
-    {
-      "title": "tri-Ace's Resonance of Fate / End of Eternity Game Gets Enhanced Remaster for PS5, Steam Available Now",
-      "description": "Those who own 4K/HD Edition already on Steam can purchase DLC to upgrade to new version",
-      "fullDescription": "Those who own 4K/HD Edition already on Steam can purchase DLC to upgrade to new version",
-      "link": "https://www.animenewsnetwork.com/news/2026-10-30/tri-ace-resonance-of-fate-end-of-eternity-game-gets-enhanced-remaster-for-ps5-steam-available-now/.243367",
-      "pubDate": "Fri, 30 Oct 2026 10:15:00 -0400",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243367/unnamed.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243367"
     }
   ],
   "total": 15

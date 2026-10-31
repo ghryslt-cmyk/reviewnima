@@ -1,7 +1,65 @@
 {
-  "version": 1793453511591,
-  "fetchedAt": "2026-10-31T13:31:51.591Z",
+  "version": 1793469436994,
+  "fetchedAt": "2026-10-31T17:57:16.994Z",
   "anime": [
+    {
+      "id": 195604,
+      "title": {
+        "romaji": "Black Clover 2nd Season",
+        "english": "Black Clover Season 2",
+        "native": "ブラッククローバー 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg",
+      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 87,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Avex Pictures"
+          },
+          {
+            "name": "Bandai Namco Entertainment"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 3
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
     {
       "id": 195516,
       "title": {
@@ -65,45 +123,70 @@
       }
     },
     {
-      "id": 210482,
+      "id": 187402,
       "title": {
-        "romaji": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE",
-        "english": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
-        "native": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE"
+        "romaji": "Tensei shita Dai Seijo wa, Seijo de Aru Koto wo Hita Kakusu",
+        "english": "A Tale of the Secret Saint",
+        "native": "転生した大聖女は、聖女であることをひた隠す"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210482-P1VNKbqdJ6Zj.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx187402-ReKkLwFmMV3q.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx187402-ReKkLwFmMV3q.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187402-ReKkLwFmMV3q.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
-      "description": "In the 2nd STAGE, a desert crossing spanning roughly 750 miles- the land that Johnny Joestar and Gyro Zeppeli must challenge, is home to the area that is feared as the \"Devil's Palm.\" In 1875, a threat lurking in said desert wiped out a cavalry of 26 people, eliciting fear from the local native people. As ominous incidents begin to unfold, they are forced to realize that this race is far more than a mere competition. The two press forward, where countless hidden motives collide..<br><br>\n\n(Source: Warner Bros. Japan Anime, Netflix Anime, edited)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/187402-bRt4OO90jcmt.jpg",
+      "description": "Fia always dreamed of becoming a knight. Born into a family of knights, she’s the least talented among them, but she still clutches to her hope and trains with everything she has. When the day comes for her to slay a small demon and prove her worth, she ends up face to face with a dragon instead! A deadly injury makes her life flash before her eyes…and she suddenly remembers her former life, when she was a powerful Saint in a bygone era who defeated the Demon King. That life ended in pain because of who she was, making her fear ever becoming a Saint again. Now that the magic from her previous life has been rekindled, she may become a more powerful knight than she ever dreamed–if only she can survive long enough!\n<br><br>\n(Source: Seven Seas Entertainment)\n<br><br>\n<i>Note: The series streamed a week in advance on ABEMA, Prime Video, and Crunchyroll starting with episode 2 released alongside episode 1.</i>",
       "genres": [
         "Action",
         "Adventure",
-        "Drama",
-        "Mystery",
-        "Supernatural"
+        "Fantasy"
       ],
-      "averageScore": 86,
-      "episodes": 11,
+      "averageScore": 70,
+      "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "david production"
+            "name": "Felix Film"
           },
           {
-            "name": "Warner Bros. Japan"
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "Earth Star Entertainment"
+          },
+          {
+            "name": "BBB"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "Bushiroad Move"
+          },
+          {
+            "name": "Sanyo Bussan"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "Studio Mausu"
+          },
+          {
+            "name": "JIN"
+          },
+          {
+            "name": "KLOCKWORX"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 9,
-        "day": 25
+        "month": 10,
+        "day": 3
       },
       "endDate": {
         "year": null,
@@ -112,24 +195,94 @@
       }
     },
     {
-      "id": 205909,
+      "id": 204389,
       "title": {
-        "romaji": "Hotaru no Yomeiri",
-        "english": "Firefly Wedding",
-        "native": "ホタルの嫁入り"
+        "romaji": "Yasei no Last Boss ga Arawareta! 2nd Season",
+        "english": "A Wild Last Boss Appeared! Season 2",
+        "native": "野生のラスボスが現れた！ 第2期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204389-jCoFCeTthDMy.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204389-jCoFCeTthDMy.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204389-jCoFCeTthDMy.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
-      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
+      "bannerImage": null,
+      "description": "The second season of <i>Yasei no Last Boss ga Arawareta!</i>",
       "genres": [
-        "Drama",
-        "Romance"
+        "Action",
+        "Adventure",
+        "Fantasy"
       ],
-      "averageScore": 75,
+      "averageScore": 73,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "WAO World"
+          },
+          {
+            "name": "Sun Electronics"
+          },
+          {
+            "name": "Touhouku Shinsha"
+          },
+          {
+            "name": "Earth Star Entertainment"
+          },
+          {
+            "name": "Kansai TV"
+          },
+          {
+            "name": "BS Asahi"
+          },
+          {
+            "name": "Bushiroad Move"
+          },
+          {
+            "name": "KLOCKWORX"
+          },
+          {
+            "name": "Sorajima Studio"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 26
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 180894,
+      "title": {
+        "romaji": "Romelia Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
+        "english": "Romelia War Chronicle",
+        "native": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180894-o3pz4DWFm3je.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180894-o3pz4DWFm3je.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/180894-msSUHJ5Qejvf.jpg",
+      "description": "Romelia and her party succeed in defeating the Demon King Zelgis, though Prince Henri’s reckless charge forces them into a grueling battle. In the aftermath, Romelia is branded \"dead weight\" for not fighting directly, and the Prince unilaterally breaks off their engagement. Denied a place in the victory celebrations, Romelia returns home, only to be met with cold indifference from her family and society. Yet, she refuses to break. She has already set her sights on the path that lies ahead.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Romelia War Chronicle streamed 2 days in advance of the TV broadcast on AnimeTimes, U-NEXT, and Netflix beginning October 3, 2026. Regular broadcasting began on October 5, 2026.</i>",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Fantasy"
+      ],
+      "averageScore": 71,
       "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
@@ -137,32 +290,35 @@
       "studios": {
         "nodes": [
           {
-            "name": "david production"
+            "name": "Pony Canyon"
           },
           {
-            "name": "Fuji TV"
+            "name": "Atra"
           },
           {
-            "name": "Dentsu"
+            "name": "Rakuten"
           },
           {
-            "name": "Aniplex"
+            "name": "TOKYO MX"
           },
           {
-            "name": "Shogakukan"
+            "name": "BS11"
           },
           {
-            "name": "Shogakukan-Shueisha Productions"
+            "name": "Movic"
           },
           {
-            "name": "david production"
+            "name": "SANKYO"
+          },
+          {
+            "name": "Bit grooove promotion"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 9
+        "day": 3
       },
       "endDate": {
         "year": null,
@@ -293,6 +449,277 @@
       }
     },
     {
+      "id": 205909,
+      "title": {
+        "romaji": "Hotaru no Yomeiri",
+        "english": "Firefly Wedding",
+        "native": "ホタルの嫁入り"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
+      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "averageScore": 75,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "david production"
+          },
+          {
+            "name": "Fuji TV"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "Shogakukan"
+          },
+          {
+            "name": "Shogakukan-Shueisha Productions"
+          },
+          {
+            "name": "david production"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 9
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 210482,
+      "title": {
+        "romaji": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE",
+        "english": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+        "native": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210482-P1VNKbqdJ6Zj.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+      "description": "In the 2nd STAGE, a desert crossing spanning roughly 750 miles- the land that Johnny Joestar and Gyro Zeppeli must challenge, is home to the area that is feared as the \"Devil's Palm.\" In 1875, a threat lurking in said desert wiped out a cavalry of 26 people, eliciting fear from the local native people. As ominous incidents begin to unfold, they are forced to realize that this race is far more than a mere competition. The two press forward, where countless hidden motives collide..<br><br>\n\n(Source: Warner Bros. Japan Anime, Netflix Anime, edited)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Mystery",
+        "Supernatural"
+      ],
+      "averageScore": 86,
+      "episodes": 11,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "david production"
+          },
+          {
+            "name": "Warner Bros. Japan"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 25
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 97940,
+      "title": {
+        "romaji": "Black Clover",
+        "english": "Black Clover",
+        "native": "ブラッククローバー"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
+      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 79,
+      "episodes": 170,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2017,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Funimation"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Shueisha"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2017,
+        "month": 10,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2021,
+        "month": 3,
+        "day": 30
+      }
+    },
+    {
+      "id": 180136,
+      "title": {
+        "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
+        "english": "The Exiled Heavy Knight Knows How to Game the System",
+        "native": "追放された転生重騎士はゲーム知識で無双する"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg"
+      },
+      "bannerImage": null,
+      "description": "Born into a prestigious family of master swordsmen, Elymas Edvaughn’s future shatters when he awakens the so-called “defective” Heavy Knight class. Disowned and cast out, he regains memories of another life—and realizes this world mirrors a VR game he once mastered. Armed with knowledge no one else possesses, he sets out to rewrite his fate and prove the strength of the “weakest” class.<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "averageScore": 67,
+      "episodes": 26,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "GoHands"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "MUSE"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "GoHands"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 12,
+        "day": 25
+      }
+    },
+    {
+      "id": 195571,
+      "title": {
+        "romaji": "Shuiro no Kamen",
+        "english": "The Vermilion Mask",
+        "native": "朱色の仮面"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195571-fvj7u5GI7BRT.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195571-fvj7u5GI7BRT.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195571-fvj7u5GI7BRT.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195571-UkdB06UpyL8k.jpg",
+      "description": "\"The Mask” gives power to anyone who wears it.<br><br>\n\nAt times, that means endless possibility, or unimaginable tragedy…<br><br>\n\nPeru, pupil of the legendary mask maker Gaston Roux, becomes controlled by the “Mask of the Warrior God,” and unintentionally kills his friends, and even his own master.\n<br><br>\nIn order to prevent this type of tragedy from reoccurring, Peru swears to destroy all of Gaston’s masks that are spread around the world. Confronting the sins that he has committed, he embarks on his voyage. Meeting new friends, then confronting powerful foes. The boy continues on. Until the day he can atone for his sins against his master.\n<br><br>\n(Source: The Vermillion Mask English Site)",
+      "genres": [
+        "Action",
+        "Drama",
+        "Supernatural"
+      ],
+      "averageScore": 68,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Yomiuri TV"
+          },
+          {
+            "name": "100studio"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "HIKE"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 10
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 178083,
       "title": {
         "romaji": "Tokyo Revengers: Santen Sensou-hen",
@@ -360,65 +787,6 @@
       }
     },
     {
-      "id": 180136,
-      "title": {
-        "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
-        "english": "The Exiled Heavy Knight Knows How to Game the System",
-        "native": "追放された転生重騎士はゲーム知識で無双する"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg"
-      },
-      "bannerImage": null,
-      "description": "Born into a prestigious family of master swordsmen, Elymas Edvaughn’s future shatters when he awakens the so-called “defective” Heavy Knight class. Disowned and cast out, he regains memories of another life—and realizes this world mirrors a VR game he once mastered. Armed with knowledge no one else possesses, he sets out to rewrite his fate and prove the strength of the “weakest” class.<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Fantasy"
-      ],
-      "averageScore": 67,
-      "episodes": 26,
-      "status": "RELEASING",
-      "season": "SUMMER",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "GoHands"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "MUSE"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "GoHands"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 7,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 25
-      }
-    },
-    {
       "id": 269,
       "title": {
         "romaji": "BLEACH",
@@ -467,164 +835,6 @@
         "year": 2012,
         "month": 3,
         "day": 27
-      }
-    },
-    {
-      "id": 195571,
-      "title": {
-        "romaji": "Shuiro no Kamen",
-        "english": "The Vermilion Mask",
-        "native": "朱色の仮面"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195571-fvj7u5GI7BRT.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195571-fvj7u5GI7BRT.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195571-fvj7u5GI7BRT.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195571-UkdB06UpyL8k.jpg",
-      "description": "\"The Mask” gives power to anyone who wears it.<br><br>\n\nAt times, that means endless possibility, or unimaginable tragedy…<br><br>\n\nPeru, pupil of the legendary mask maker Gaston Roux, becomes controlled by the “Mask of the Warrior God,” and unintentionally kills his friends, and even his own master.\n<br><br>\nIn order to prevent this type of tragedy from reoccurring, Peru swears to destroy all of Gaston’s masks that are spread around the world. Confronting the sins that he has committed, he embarks on his voyage. Meeting new friends, then confronting powerful foes. The boy continues on. Until the day he can atone for his sins against his master.\n<br><br>\n(Source: The Vermillion Mask English Site)",
-      "genres": [
-        "Action",
-        "Drama",
-        "Supernatural"
-      ],
-      "averageScore": 68,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Yomiuri TV"
-          },
-          {
-            "name": "100studio"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "HIKE"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 10
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 97940,
-      "title": {
-        "romaji": "Black Clover",
-        "english": "Black Clover",
-        "native": "ブラッククローバー"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
-      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 79,
-      "episodes": 170,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2017,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Funimation"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Shueisha"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2017,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2021,
-        "month": 3,
-        "day": 30
-      }
-    },
-    {
-      "id": 213805,
-      "title": {
-        "romaji": "Koori no Jouheki 2nd Season",
-        "english": "The Ramparts of Ice Season 2",
-        "native": "氷の城壁 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213805-Nokui3uWlIlw.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx213805-Nokui3uWlIlw.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx213805-Nokui3uWlIlw.png"
-      },
-      "bannerImage": null,
-      "description": "Koyuki, the isolated girl; Miki, the former school idol; Minato, the guy with no concept of personal space; and Youta, the gentle basketball player. Clumsy, frustrating, yet deeply endearing — this coming-of-age ensemble drama of crisscrossing hearts marches on.\n<br><br>\nAs they grow closer, Koyuki and Minato begin to develop feelings for each other that go beyond mere friendship. Meanwhile, Youta finally confesses to Miki the feelings he's harbored for years. Some speak their hearts while others keep their emotions hidden, causing their paths — and their feelings for one another — to continuously cross and pass by… \n<br><br>\n(Source: Netflix)",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance",
-        "Slice of Life"
-      ],
-      "averageScore": 81,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio KAI"
-          },
-          {
-            "name": "TBS"
-          },
-          {
-            "name": "Universal Music"
-          },
-          {
-            "name": "ADK Emotions"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 1
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
       }
     },
     {
@@ -679,182 +889,6 @@
         "year": 2026,
         "month": 10,
         "day": 27
-      }
-    },
-    {
-      "id": 204650,
-      "title": {
-        "romaji": "Tougen Anki: Nikko・Kegon no Taki-hen",
-        "english": "TOUGEN ANKI: Nikko Kegon Falls Arc",
-        "native": "桃源暗鬼 日光・華厳の滝編"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204650-cAQOzQ84Lwk8.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204650-cAQOzQ84Lwk8.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204650-cAQOzQ84Lwk8.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/204650-MpownoVlYv69.jpg",
-      "description": "After battling in Kyoto and Nerima, the Rasetsu Academy students have grown stronger. But Yaoroshi leaves the academy to join the Oni Brigade for their \"the total eradication of the Momotaro.\"\n<br><br>\nWhen Shiki realizes that they also target noncombatants, he sets out after Yaoroshi to bring him back. Meanwhile in Nikko, there's a research facility for horrific experiments atop the old Kegon Falls…\n<br><br>\n(Source: REMOW)",
-      "genres": [
-        "Action",
-        "Mystery",
-        "Supernatural"
-      ],
-      "averageScore": 72,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Hibari"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Nippon Television Network"
-          },
-          {
-            "name": "Akita Shoten"
-          },
-          {
-            "name": "Studio Hibari"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 2
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 212888,
-      "title": {
-        "romaji": "Tempal: Item no Chikara",
-        "english": "Overgeared",
-        "native": "テムパル～アイテムの力～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
-      "description": "Sin Yeong-U (a.k.a. Grid), an unlucky man in life and a low-level player in the popular VR game “Satisfy,” finds a powerful item that earns him a rare legendary class title: “Pagma’s Successor.” He’s now a skilled blacksmith who can forge unique weapons and equip the game’s most powerful gear. Grid resolves to use his new abilities to achieve fame and fortune, but as his very existence begins to stir up trouble in Satisfy, he realizes that life as a legend may be more than he bargained for….<br><br>\n\n(Source: Tapas, edited)<br><br>\n\n<i>Note: Tempal: Item no Chikara is streaming a week in advance of the TV broadcast on Prime Video and Crunchyroll beginning September 27th, 2026. Regular broadcasting began on October 2nd, 2026.</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 76,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "J.C.STAFF"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "REDICE STUDIO"
-          },
-          {
-            "name": "Kakao piccoma"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 195604,
-      "title": {
-        "romaji": "Black Clover 2nd Season",
-        "english": "Black Clover Season 2",
-        "native": "ブラッククローバー 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg",
-      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 87,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Avex Pictures"
-          },
-          {
-            "name": "Bandai Namco Entertainment"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
       }
     }
   ]
