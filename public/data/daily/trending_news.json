@@ -1,7 +1,18 @@
 {
-  "version": 1793670675705,
-  "fetchedAt": "2026-11-03T01:51:15.705Z",
+  "version": 1793697703740,
+  "fetchedAt": "2026-11-03T09:21:43.740Z",
   "news": [
+    {
+      "title": "Live-Action Quiztopia Series Unveils Trailer, Key Art",
+      "description": "Series debuting on Netflix on December 17 with scenes with 8,000 extras",
+      "fullDescription": "Series debuting on Netflix on December 17 with scenes with 8,000 extras",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-02/live-action-quiztopia-series-unveils-trailer-key-art/.243460",
+      "pubDate": "Mon, 02 Nov 2026 22:45:56 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243460/hwipxjnxsaaflpk.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243460"
+    },
     {
       "title": "Urban Myth Dissolution Center Manga Ends",
       "description": "Manga adaptation launched on April 2025",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243444/hwfvzc6a8aadkpv.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243444"
-    },
-    {
-      "title": "My Lovesick Life as a '90s Otaku's Nico Nicholson Launches New Manga",
-      "description": "Yosojito Konkatsu debuts December 1",
-      "fullDescription": "<cite>Yosojito Konkatsu</cite> debuts December 1",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-02/my-lovesick-life-as-a-90s-otaku-nico-nicholson-launches-new-manga/.243426",
-      "pubDate": "Mon, 02 Nov 2026 07:15:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243426/konkatsu.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243426"
     }
   ],
   "total": 15
