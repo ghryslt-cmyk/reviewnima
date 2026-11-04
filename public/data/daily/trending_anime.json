@@ -1,7 +1,136 @@
 {
-  "version": 1793759998656,
-  "fetchedAt": "2026-11-04T02:39:58.656Z",
+  "version": 1793814924270,
+  "fetchedAt": "2026-11-04T17:55:24.270Z",
   "anime": [
+    {
+      "id": 211778,
+      "title": {
+        "romaji": "Sekai Saikyou no Majo, Hajimemashita",
+        "english": "The World's Strongest Witch",
+        "native": "世界最強の魔女、始めました"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211778-0MXK5HqVFBYH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-0MXK5HqVFBYH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/211778-ZbXEhqfFkj62.jpg",
+      "description": "After using her SSS-Rank skill, Internet, to crush her former family’s ambitions, Lorna is free to travel the world. Her next stop is the port town of Aquas, where she hopes to see the sights and chow down on some fresh seafood. But when she arrives, the place is on the brink of destruction thanks to a certain Weekly Quest… Good thing Lorna has the gods on her side!\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 70,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Bridge"
+          },
+          {
+            "name": "Aisle"
+          },
+          {
+            "name": "Yomiuri TV Enterprise"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "Bridge"
+          },
+          {
+            "name": "Bit grooove promotion"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 159042,
+      "title": {
+        "romaji": "Tensei Shitara Ken Deshita 2nd Season",
+        "english": "Reincarnated as a Sword Season 2",
+        "native": "転生したら剣でした 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx159042-GGFwlDskc5vR.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx159042-GGFwlDskc5vR.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159042-GGFwlDskc5vR.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/159042-X0mqyaUFBkms.jpg",
+      "description": "The second season of <i>Tensei Shitara Ken Deshita</i>.<br><br>\n<i>Note: Each episode was streamed one week in advance of the TV broadcast starting on October 1, 2026 on Abema. Regular broadcasting began on October 8, 2026.</i>",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 75,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "C2C"
+          },
+          {
+            "name": "GREE Entertainment"
+          },
+          {
+            "name": "Micro Magazine Sha"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "BS Asahi"
+          },
+          {
+            "name": "NK Animation"
+          },
+          {
+            "name": "Gentosha Comics"
+          },
+          {
+            "name": "Micro House"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 1
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
     {
       "id": 207329,
       "title": {
@@ -56,77 +185,6 @@
         "year": 2026,
         "month": 10,
         "day": 7
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 206949,
-      "title": {
-        "romaji": "Kyouran Reijou Nia Liston",
-        "english": "Nia Liston: The Merciless Maiden",
-        "native": "凶乱令嬢ニア・リストン"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
-      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
-      "genres": [
-        "Action",
-        "Fantasy"
-      ],
-      "averageScore": 75,
-      "episodes": 25,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KONAMI animation"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "Konami Digital Entertainment"
-          },
-          {
-            "name": "VAP"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "Hobby Japan"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "TO Books"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 6
       },
       "endDate": {
         "year": null,
@@ -209,51 +267,172 @@
       }
     },
     {
-      "id": 195539,
+      "id": 176314,
       "title": {
-        "romaji": "Cyberpunk: Edgerunners 2",
-        "english": "Cyberpunk: Edgerunners 2",
-        "native": "サイバーパンク: エッジランナーズ2"
+        "romaji": "Sasaki to Pii-chan Season 2",
+        "english": "Sasaki and Peeps Season 2",
+        "native": "佐々木とピーちゃん シーズン２"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195539-4LdfmKIHzuxr.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195539-4LdfmKIHzuxr.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176314-lpvca6vjmkeO.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176314-lpvca6vjmkeO.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
-      "description": "<i>Cyberpunk: Edgerunners 2</i> pulls you back into Night City, where lives become entangled to the extreme. Weak, a washed-up cyberpunk legend, is now forced to live without chrome as he searches for a sense of purpose in a world that’s passed him by. Meanwhile, the deadly nomad D sets out on a path to revenge that brings him close to corpo secrets never meant to be found. Across this ten-episode standalone series, uncover a story of family, obsession, legacy — and how your lens reflects the stories of the people around you..<br><br>\n\nWhen the world is blinded by spectacle, what extremes do you have to go to make your story matter?<br><br>\n(Source: Cyberpunk: Edgerunners 2 Official Site, Official Twitter)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176314-nj2hmqbGQ9HJ.jpg",
+      "description": "The second season of <i>Sasaki to Pii-chan</i>.",
       "genres": [
-        "Action",
-        "Drama",
-        "Sci-Fi"
+        "Comedy",
+        "Fantasy",
+        "Mahou Shoujo"
       ],
-      "averageScore": 83,
-      "episodes": 10,
-      "status": "FINISHED",
+      "averageScore": 70,
+      "episodes": 12,
+      "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "TRIGGER"
+            "name": "KADOKAWA"
           },
           {
-            "name": "CD PROJEKT RED"
+            "name": "SILVER LINK."
           },
           {
-            "name": "Netflix"
+            "name": "GREE Entertainment"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Sammy"
+          },
+          {
+            "name": "SILVER LINK."
+          },
+          {
+            "name": "Nippon Columbia"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 20
+        "day": 7
       },
       "endDate": {
-        "year": 2026,
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 97940,
+      "title": {
+        "romaji": "Black Clover",
+        "english": "Black Clover",
+        "native": "ブラッククローバー"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
+      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 79,
+      "episodes": 170,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2017,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Funimation"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Shueisha"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2017,
         "month": 10,
-        "day": 20
+        "day": 3
+      },
+      "endDate": {
+        "year": 2021,
+        "month": 3,
+        "day": 30
+      }
+    },
+    {
+      "id": 269,
+      "title": {
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ],
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2004,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Viz Media"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2004,
+        "month": 10,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2012,
+        "month": 3,
+        "day": 27
       }
     },
     {
@@ -318,114 +497,110 @@
       }
     },
     {
-      "id": 97940,
+      "id": 195539,
       "title": {
-        "romaji": "Black Clover",
-        "english": "Black Clover",
-        "native": "ブラッククローバー"
+        "romaji": "Cyberpunk: Edgerunners 2",
+        "english": "Cyberpunk: Edgerunners 2",
+        "native": "サイバーパンク: エッジランナーズ2"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195539-4LdfmKIHzuxr.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195539-4LdfmKIHzuxr.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
-      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+      "description": "<i>Cyberpunk: Edgerunners 2</i> pulls you back into Night City, where lives become entangled to the extreme. Weak, a washed-up cyberpunk legend, is now forced to live without chrome as he searches for a sense of purpose in a world that’s passed him by. Meanwhile, the deadly nomad D sets out on a path to revenge that brings him close to corpo secrets never meant to be found. Across this ten-episode standalone series, uncover a story of family, obsession, legacy — and how your lens reflects the stories of the people around you..<br><br>\n\nWhen the world is blinded by spectacle, what extremes do you have to go to make your story matter?<br><br>\n(Source: Cyberpunk: Edgerunners 2 Official Site, Official Twitter)",
       "genres": [
         "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
+        "Drama",
+        "Sci-Fi"
       ],
-      "averageScore": 79,
-      "episodes": 170,
+      "averageScore": 83,
+      "episodes": 10,
       "status": "FINISHED",
       "season": "FALL",
-      "seasonYear": 2017,
+      "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Studio Pierrot"
+            "name": "TRIGGER"
           },
           {
-            "name": "Funimation"
+            "name": "CD PROJEKT RED"
           },
           {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Shueisha"
+            "name": "Netflix"
           }
         ]
       },
       "startDate": {
-        "year": 2017,
+        "year": 2026,
         "month": 10,
-        "day": 3
+        "day": 20
       },
       "endDate": {
-        "year": 2021,
-        "month": 3,
-        "day": 30
+        "year": 2026,
+        "month": 10,
+        "day": 20
       }
     },
     {
-      "id": 209502,
+      "id": 206949,
       "title": {
-        "romaji": "Shiotaiou no Satou-san ga Ore ni dake Amai",
-        "english": "The Cold Sato-san is Only Sweet to Me",
-        "native": "塩対応の佐藤さんが俺にだけ甘い"
+        "romaji": "Kyouran Reijou Nia Liston",
+        "english": "Nia Liston: The Merciless Maiden",
+        "native": "凶乱令嬢ニア・リストン"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209502-C81oN8M4Smlo.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209502-C81oN8M4Smlo.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209502-C81oN8M4Smlo.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209502-TATgyznMxQOe.jpg",
-      "description": "Sato-san is the unattainable flower of the class. She is always cold and curt with classmates, but only I know she's actually very cute when she smiles, even if she's not much of a photographer.\n<br><br>\nOshio-kun is friendly and lively, but only I know he works at his family's cafe after school. He does a great job with the cafe's SNS account, and his mischievous smile makes my heart skip a beat!\n<br><br>\nInnocent and sweet, but sometimes frustrating, this is a 120%-pure fluffy story about two people falling in love for the first time.",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
+      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
       "genres": [
-        "Comedy",
-        "Romance"
+        "Action",
+        "Fantasy"
       ],
-      "averageScore": 69,
-      "episodes": 12,
+      "averageScore": 75,
+      "episodes": 25,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Tezuka Productions"
+            "name": "KONAMI animation"
           },
           {
-            "name": "Shouchiku"
+            "name": "Mainichi Broadcasting System"
           },
           {
-            "name": "Good Smile Company"
+            "name": "SANKYO"
           },
           {
-            "name": "Pony Canyon"
+            "name": "JR Higashi Nihon Kikaku"
           },
           {
-            "name": "arma bianca"
+            "name": "Konami Digital Entertainment"
           },
           {
-            "name": "AT-X"
+            "name": "VAP"
           },
           {
-            "name": "TOKYO MX"
+            "name": "BS Nittele"
           },
           {
-            "name": "81 Produce"
+            "name": "Pia"
           },
           {
-            "name": "WOWOW"
+            "name": "Hobby Japan"
           },
           {
-            "name": "BS-TBS"
+            "name": "Movic"
+          },
+          {
+            "name": "TO Books"
           }
         ]
       },
@@ -499,6 +674,185 @@
       }
     },
     {
+      "id": 152677,
+      "title": {
+        "romaji": "Tantei wa mou, Shindeiru. Season 2",
+        "english": "The Detective Is Already Dead Season 2",
+        "native": "探偵はもう、死んでいる。Season2"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx152677-gtJbgjE94lCN.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152677-gtJbgjE94lCN.png"
+      },
+      "bannerImage": null,
+      "description": "After thwarting a hijacking with beautiful, silver-haired detective Siesta, Kimihiko leads a life of globe-trotting and crime-solving—until Siesta dies. A year later, a new case will open old wounds as it threads murder, conspiracy, and his dead partner!\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Mystery",
+        "Romance",
+        "Supernatural"
+      ],
+      "averageScore": 71,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "ENGI"
+          },
+          {
+            "name": "Sammy"
+          },
+          {
+            "name": "INCS toenter"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "AT-X"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 178868,
+      "title": {
+        "romaji": "Magic Knight Rayearth (2026)",
+        "english": "Magic Knight Rayearth (2026)",
+        "native": "魔法騎士レイアース (2026)"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178868-mfp0HIHNJNAm.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178868-mfp0HIHNJNAm.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178868-mfp0HIHNJNAm.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/178868-l7VyM7j7LRtH.jpg",
+      "description": "Hikaru Shidou, Umi Ryuuzaki, and Fuu Hououji aren't from Cephiro. While on a school field trip to the Tokyo Tower, the three girls' minds are on anything but different worlds filled with magic and wonder. That is, until Princess Emeraude, the Pillar of Cephiro, cries out for the Magic Knights to save her world--and that just happens to be those three!\n<br><br>\n\n(Source: Crunchyroll)",
+      "genres": [
+        "Adventure",
+        "Fantasy",
+        "Mahou Shoujo",
+        "Mecha"
+      ],
+      "averageScore": 69,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "E&H Production"
+          },
+          {
+            "name": "TMS Entertainment"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "TV Asahi"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 209502,
+      "title": {
+        "romaji": "Shiotaiou no Satou-san ga Ore ni dake Amai",
+        "english": "The Cold Sato-san is Only Sweet to Me",
+        "native": "塩対応の佐藤さんが俺にだけ甘い"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209502-C81oN8M4Smlo.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209502-C81oN8M4Smlo.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209502-C81oN8M4Smlo.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209502-TATgyznMxQOe.jpg",
+      "description": "Sato-san is the unattainable flower of the class. She is always cold and curt with classmates, but only I know she's actually very cute when she smiles, even if she's not much of a photographer.\n<br><br>\nOshio-kun is friendly and lively, but only I know he works at his family's cafe after school. He does a great job with the cafe's SNS account, and his mischievous smile makes my heart skip a beat!\n<br><br>\nInnocent and sweet, but sometimes frustrating, this is a 120%-pure fluffy story about two people falling in love for the first time.",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "averageScore": 69,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Tezuka Productions"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Good Smile Company"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "arma bianca"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "81 Produce"
+          },
+          {
+            "name": "WOWOW"
+          },
+          {
+            "name": "BS-TBS"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 6
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 195516,
       "title": {
         "romaji": "Kusuriya no Hitorigoto 3rd Season",
@@ -553,366 +907,6 @@
         "year": 2026,
         "month": 10,
         "day": 2
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
-      "id": 207191,
-      "title": {
-        "romaji": "Doumo, Suki na Hito ni Horegusuri wo Irai Sareta Majo desu.",
-        "english": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
-        "native": "どうも、好きな人に惚れ薬を依頼された魔女です。"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207191-VgkIzfH92WoZ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207191-VgkIzfH92WoZ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-VgkIzfH92WoZ.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207191-xYgpkCDnXc5m.jpg",
-      "description": "<b>“Make me a love potion.”</b>\n<br><br>\nAnd with that single sentence, the Good Witch of the Lake’s secret crush on the dashing Sir Harij ends in heartbreak. Still, when he promises to help her gather the ingredients, Rose is thrilled at the chance to gaze upon a man she’d normally never get to interact with. She learns to brace her pounding heart for their usual stilted conversations…but what is she to do when he inexplicably shows up at her doorstep with bread and a jar of apple butter?\n<br><br>\n(Source: Yen Press)",
-      "genres": [
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 72,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "diomedéa"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Futabasha"
-          },
-          {
-            "name": "diomedéa"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "SAND B"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 219477,
-      "title": {
-        "romaji": "Oshi ni Amagami",
-        "english": "Otaku Vampire’s Love Bite",
-        "native": "推しに甘噛み"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx219477-hQWk62tfViUG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx219477-hQWk62tfViUG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx219477-hQWk62tfViUG.jpg"
-      },
-      "bannerImage": null,
-      "description": "Hina Alucard is a modern vampire who drinks blood from bags instead of from humans. But she’s also a complete shut-in who hasn’t left the house in 30 years. In an effort to reach her, Hina’s dad does something that changes her life—he gives her a DVD of the Vampire Cross anime! Hina is instantly obsessed, especially with the character Mao. But it’s difficult to fangirl as hard as she wants from her bedroom in Romania, so now Hina is out of the house and off to Japan to live her otaku dream!<br><br>\n\n(Source: VIZ Media)",
-      "genres": [
-        "Comedy",
-        "Romance",
-        "Supernatural"
-      ],
-      "averageScore": null,
-      "episodes": null,
-      "status": "NOT_YET_RELEASED",
-      "season": null,
-      "seasonYear": null,
-      "studios": {
-        "nodes": []
-      },
-      "startDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 198727,
-      "title": {
-        "romaji": "Chitose-kun wa Ramune Bin no Naka Part 2",
-        "english": "Chitose Is in the Ramune Bottle 2nd Cour",
-        "native": "千歳くんはラムネ瓶のなか 2クール"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx198727-BL0JTpg0G8tq.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx198727-BL0JTpg0G8tq.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198727-BL0JTpg0G8tq.jpg"
-      },
-      "bannerImage": null,
-      "description": "The second part of <i>Chitose-kun wa Ramune Bin no Naka</i>.",
-      "genres": [
-        "Comedy",
-        "Romance"
-      ],
-      "averageScore": 78,
-      "episodes": 11,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "feel."
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Good Smile Company"
-          },
-          {
-            "name": "Good Smile Film"
-          },
-          {
-            "name": "REMOW"
-          },
-          {
-            "name": "Shogakukan"
-          },
-          {
-            "name": "newgin"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "Kadokawa Media House"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 13
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 22
-      }
-    },
-    {
-      "id": 209219,
-      "title": {
-        "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
-        "english": "So What's Wrong with Getting Reborn as a Goblin?",
-        "native": "転生ゴブリンだけど質問ある？"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg"
-      },
-      "bannerImage": null,
-      "description": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever!\n<br><br>\n(Source: Yen Press)<br><br>\n\n<i>Note: Tensei Goblin Dakedo Shitsumon Aru? is streaming 1 week in advance of the TV broadcast on ABEMA and Prime Video beginning with episode 2 on October 5th, 2026</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 65,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "BAKKKA"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "INCS toenter"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "Bushiroad Move"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 186541,
-      "title": {
-        "romaji": "Mezametara Saikyou Soubi to Uchuusen-mochi datta node, Ikkodate Mezashite Youhei to shite Jiyuu ni Ikitai",
-        "english": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
-        "native": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として自由に生きたい"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186541-caYpLsLmbCh7.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186541-caYpLsLmbCh7.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186541-caYpLsLmbCh7.jpg"
-      },
-      "bannerImage": null,
-      "description": "Sato Takahiro was an ordinary office worker and hobbyist gamer until the day he woke up on a spaceship–one that strangely resembled a craft from a favorite space-shooter game. With a decked-out ship, a crew full of babes, and a fantastic universe to explore, he's going to make the most of his good luck and create the life he's always dreamed of!<br><br>\n\n(Source: Seven Seas Entertainment)",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Drama",
-        "Mecha",
-        "Romance",
-        "Sci-Fi"
-      ],
-      "averageScore": 69,
-      "episodes": 13,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "studio A-CAT"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "Good Smile Company"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "Yomiuri TV"
-          },
-          {
-            "name": "Sansei R&D"
-          },
-          {
-            "name": "Docomo Anime Store"
-          },
-          {
-            "name": "WOWOW"
-          },
-          {
-            "name": "HAYATE"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 4
       },
       "endDate": {
         "year": null,
