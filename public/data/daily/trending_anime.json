@@ -1,6 +1,6 @@
 {
-  "version": 1793835056409,
-  "fetchedAt": "2026-11-04T23:30:56.409Z",
+  "version": 1793850345069,
+  "fetchedAt": "2026-11-05T03:45:45.069Z",
   "anime": [
     {
       "id": 159042,
@@ -132,6 +132,124 @@
       }
     },
     {
+      "id": 207329,
+      "title": {
+        "romaji": "Tsuihou Sareta Cheat Fuyo Majutsushi wa Kimama na Second Life wo Ouka Suru.: Ore wa Buki dake ja Naku, Arayuru Mono ni \"Kyouka Point\" wo Fuyo Dekiru shi, Ore no Ishi de Itsudemo Kouka wo Kaijo Dekiru kedo, Nokotta Hitotachi Daijoubu?",
+        "english": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+        "native": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b207329-6VPeZIDfF4Sr.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207329-9IqRSKIsM3TC.jpg",
+      "description": "Rein, an enchanter, is suddenly expelled from his guild one day. But instead of despairing, he declares, “Now I can do anything!” and begins reclaiming the massive number of enhancement points he once poured into his guildmates’ gear, setting off on a brand-new path as an adventurer.<br><br>\nGathering around him are people carrying wounds that don’t fade easily: a genius adventurer who shut her heart after her party was slaughtered, a warrior who lost her family, and an assassin raised from childhood to kill. Yet Rein never rejects their pasts or their scars—he accepts them all with bright, straightforward warmth.<br><br>\nThe stage is a unique fantasy world where Uzis, slingshots, and even yakuza exist side by side. But in this world, the more people rely on convenient technology, the more their magic weakens, and adventurers grow fragile.<br><br>\nIntelligent, vicious monsters roam freely, while in the underworld, outlaws bare their greed and ambition as schemes and betrayals intertwine. In a world where ideals and justice are easily crushed, adventurers fight on with nothing but their magic and their convictions.<br><br>\nThis is the story of those who have lost their place in the world finding a new way to live. Rein and his companions’ wild, free-spirited second life begins now!\n<br><br>(Source: The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life Site)",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Fantasy",
+        "Slice of Life"
+      ],
+      "averageScore": 73,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "P.A.WORKS"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Good Smile Company"
+          },
+          {
+            "name": "JR Toukai Agency"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 172192,
+      "title": {
+        "romaji": "Kikansha no Mahou wa Tokubetsu desu 2nd Season",
+        "english": "A Returner's Magic Should be Special Season 2",
+        "native": "帰還者の魔法は特別です 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx172192-W7P5xEUaxF3y.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx172192-W7P5xEUaxF3y.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172192-W7P5xEUaxF3y.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/172192-jibcmb7wdbzk.jpg",
+      "description": "In a land dominated by the formidable Shadow Worlds, most of humanity has been destroyed. To rescue their planet from impending doom, six brave heroes fight a perilous battle…and fail. But there’s a glimpse of hope when Desir, one of the last mages, is suddenly sent back in time 13 years! Now armed with knowledge of the grim future, can he alter the course of history and save the world?\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 69,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "Arvo Animation"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "D&C MEDIA"
+          },
+          {
+            "name": "Kakao piccoma"
+          },
+          {
+            "name": "HAYATE"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 8
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 21,
       "title": {
         "romaji": "ONE PIECE",
@@ -206,172 +324,6 @@
       }
     },
     {
-      "id": 172192,
-      "title": {
-        "romaji": "Kikansha no Mahou wa Tokubetsu desu 2nd Season",
-        "english": "A Returner's Magic Should be Special Season 2",
-        "native": "帰還者の魔法は特別です 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx172192-W7P5xEUaxF3y.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx172192-W7P5xEUaxF3y.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172192-W7P5xEUaxF3y.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/172192-jibcmb7wdbzk.jpg",
-      "description": "In a land dominated by the formidable Shadow Worlds, most of humanity has been destroyed. To rescue their planet from impending doom, six brave heroes fight a perilous battle…and fail. But there’s a glimpse of hope when Desir, one of the last mages, is suddenly sent back in time 13 years! Now armed with knowledge of the grim future, can he alter the course of history and save the world?\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 69,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Arvo Animation"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "D&C MEDIA"
-          },
-          {
-            "name": "Kakao piccoma"
-          },
-          {
-            "name": "HAYATE"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 8
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 207329,
-      "title": {
-        "romaji": "Tsuihou Sareta Cheat Fuyo Majutsushi wa Kimama na Second Life wo Ouka Suru.: Ore wa Buki dake ja Naku, Arayuru Mono ni \"Kyouka Point\" wo Fuyo Dekiru shi, Ore no Ishi de Itsudemo Kouka wo Kaijo Dekiru kedo, Nokotta Hitotachi Daijoubu?",
-        "english": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
-        "native": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b207329-6VPeZIDfF4Sr.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207329-9IqRSKIsM3TC.jpg",
-      "description": "Rein, an enchanter, is suddenly expelled from his guild one day. But instead of despairing, he declares, “Now I can do anything!” and begins reclaiming the massive number of enhancement points he once poured into his guildmates’ gear, setting off on a brand-new path as an adventurer.<br><br>\nGathering around him are people carrying wounds that don’t fade easily: a genius adventurer who shut her heart after her party was slaughtered, a warrior who lost her family, and an assassin raised from childhood to kill. Yet Rein never rejects their pasts or their scars—he accepts them all with bright, straightforward warmth.<br><br>\nThe stage is a unique fantasy world where Uzis, slingshots, and even yakuza exist side by side. But in this world, the more people rely on convenient technology, the more their magic weakens, and adventurers grow fragile.<br><br>\nIntelligent, vicious monsters roam freely, while in the underworld, outlaws bare their greed and ambition as schemes and betrayals intertwine. In a world where ideals and justice are easily crushed, adventurers fight on with nothing but their magic and their convictions.<br><br>\nThis is the story of those who have lost their place in the world finding a new way to live. Rein and his companions’ wild, free-spirited second life begins now!\n<br><br>(Source: The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life Site)",
-      "genres": [
-        "Adventure",
-        "Comedy",
-        "Fantasy",
-        "Slice of Life"
-      ],
-      "averageScore": 73,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "P.A.WORKS"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Kodansha"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Good Smile Company"
-          },
-          {
-            "name": "JR Toukai Agency"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 7
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 195539,
-      "title": {
-        "romaji": "Cyberpunk: Edgerunners 2",
-        "english": "Cyberpunk: Edgerunners 2",
-        "native": "サイバーパンク: エッジランナーズ2"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195539-4LdfmKIHzuxr.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195539-4LdfmKIHzuxr.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
-      "description": "<i>Cyberpunk: Edgerunners 2</i> pulls you back into Night City, where lives become entangled to the extreme. Weak, a washed-up cyberpunk legend, is now forced to live without chrome as he searches for a sense of purpose in a world that’s passed him by. Meanwhile, the deadly nomad D sets out on a path to revenge that brings him close to corpo secrets never meant to be found. Across this ten-episode standalone series, uncover a story of family, obsession, legacy — and how your lens reflects the stories of the people around you..<br><br>\n\nWhen the world is blinded by spectacle, what extremes do you have to go to make your story matter?<br><br>\n(Source: Cyberpunk: Edgerunners 2 Official Site, Official Twitter)",
-      "genres": [
-        "Action",
-        "Drama",
-        "Sci-Fi"
-      ],
-      "averageScore": 83,
-      "episodes": 10,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "TRIGGER"
-          },
-          {
-            "name": "CD PROJEKT RED"
-          },
-          {
-            "name": "Netflix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 20
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 20
-      }
-    },
-    {
       "id": 97940,
       "title": {
         "romaji": "Black Clover",
@@ -427,183 +379,51 @@
       }
     },
     {
-      "id": 269,
+      "id": 195539,
       "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
+        "romaji": "Cyberpunk: Edgerunners 2",
+        "english": "Cyberpunk: Edgerunners 2",
+        "native": "サイバーパンク: エッジランナーズ2"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195539-4LdfmKIHzuxr.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195539-4LdfmKIHzuxr.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+      "description": "<i>Cyberpunk: Edgerunners 2</i> pulls you back into Night City, where lives become entangled to the extreme. Weak, a washed-up cyberpunk legend, is now forced to live without chrome as he searches for a sense of purpose in a world that’s passed him by. Meanwhile, the deadly nomad D sets out on a path to revenge that brings him close to corpo secrets never meant to be found. Across this ten-episode standalone series, uncover a story of family, obsession, legacy — and how your lens reflects the stories of the people around you..<br><br>\n\nWhen the world is blinded by spectacle, what extremes do you have to go to make your story matter?<br><br>\n(Source: Cyberpunk: Edgerunners 2 Official Site, Official Twitter)",
       "genres": [
         "Action",
-        "Adventure",
-        "Supernatural"
+        "Drama",
+        "Sci-Fi"
       ],
-      "averageScore": 79,
-      "episodes": 366,
+      "averageScore": 83,
+      "episodes": 10,
       "status": "FINISHED",
       "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
-      "id": 195604,
-      "title": {
-        "romaji": "Black Clover 2nd Season",
-        "english": "Black Clover Season 2",
-        "native": "ブラッククローバー 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg",
-      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 87,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Studio Pierrot"
+            "name": "TRIGGER"
           },
           {
-            "name": "TV Tokyo"
+            "name": "CD PROJEKT RED"
           },
           {
-            "name": "Shueisha"
-          },
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Avex Pictures"
-          },
-          {
-            "name": "Bandai Namco Entertainment"
+            "name": "Netflix"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 3
+        "day": 20
       },
       "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 206949,
-      "title": {
-        "romaji": "Kyouran Reijou Nia Liston",
-        "english": "Nia Liston: The Merciless Maiden",
-        "native": "凶乱令嬢ニア・リストン"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
-      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
-      "genres": [
-        "Action",
-        "Fantasy"
-      ],
-      "averageScore": 75,
-      "episodes": 25,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KONAMI animation"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "Konami Digital Entertainment"
-          },
-          {
-            "name": "VAP"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "Hobby Japan"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "TO Books"
-          }
-        ]
-      },
-      "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 6
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "day": 20
       }
     },
     {
@@ -723,6 +543,186 @@
         "year": 2026,
         "month": 9,
         "day": 27
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 195604,
+      "title": {
+        "romaji": "Black Clover 2nd Season",
+        "english": "Black Clover Season 2",
+        "native": "ブラッククローバー 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg",
+      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 87,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Shueisha"
+          },
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Avex Pictures"
+          },
+          {
+            "name": "Bandai Namco Entertainment"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 3
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 269,
+      "title": {
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ],
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2004,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Viz Media"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2004,
+        "month": 10,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2012,
+        "month": 3,
+        "day": 27
+      }
+    },
+    {
+      "id": 206949,
+      "title": {
+        "romaji": "Kyouran Reijou Nia Liston",
+        "english": "Nia Liston: The Merciless Maiden",
+        "native": "凶乱令嬢ニア・リストン"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
+      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "averageScore": 75,
+      "episodes": 25,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KONAMI animation"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Konami Digital Entertainment"
+          },
+          {
+            "name": "VAP"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "Pia"
+          },
+          {
+            "name": "Hobby Japan"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "TO Books"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 6
       },
       "endDate": {
         "year": null,
