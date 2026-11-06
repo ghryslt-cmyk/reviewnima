@@ -1,7 +1,128 @@
 {
-  "version": 1793951518401,
-  "fetchedAt": "2026-11-06T07:51:58.401Z",
+  "version": 1793980282805,
+  "fetchedAt": "2026-11-06T15:51:22.805Z",
   "anime": [
+    {
+      "id": 210482,
+      "title": {
+        "romaji": "JoJo no Kimyou na Bouken: Steel Ball Run - 2nd & 3rd STAGE",
+        "english": "STEEL BALL RUN JoJo's Bizarre Adventure 2nd - 3rd STAGE",
+        "native": "ジョジョの奇妙な冒険 スティール・ボール・ラン 2nd＆3rd STAGE"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx210482-P1VNKbqdJ6Zj.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx210482-P1VNKbqdJ6Zj.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx210482-P1VNKbqdJ6Zj.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/210482-pYAD0IbzNbgS.jpg",
+      "description": "In the 2nd STAGE, a desert crossing spanning roughly 750 miles- the land that Johnny Joestar and Gyro Zeppeli must challenge, is home to the area that is feared as the \"Devil's Palm.\" In 1875, a threat lurking in said desert wiped out a cavalry of 26 people, eliciting fear from the local native people. As ominous incidents begin to unfold, they are forced to realize that this race is far more than a mere competition. The two press forward, where countless hidden motives collide..<br><br>\n\n(Source: Warner Bros. Japan Anime, Netflix Anime, edited)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Mystery",
+        "Supernatural"
+      ],
+      "averageScore": 86,
+      "episodes": 11,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "david production"
+          },
+          {
+            "name": "Warner Bros. Japan"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 25
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 21,
+      "title": {
+        "romaji": "ONE PIECE",
+        "english": "ONE PIECE",
+        "native": "ONE PIECE"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21-ELSYx3yMPcKM.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
+      "description": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.<br><br>\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.<br><br>\n<b>*This includes the following special episodes:</b><br>\n- Chopperman to the Rescue! Protect the TV Station by the Shore! (Episode 336)<br>\n- The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (Episode 492)<br>\n- Team Formation! Save Chopper (Episode 542)<br>\n- History's Strongest Collaboration vs. Glutton of the Sea (Episode 590)<br>\n- 20th Anniversary! Special Romance Dawn (Episode 907)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy"
+      ],
+      "averageScore": 87,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 1999,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Toei Animation"
+          },
+          {
+            "name": "Funimation"
+          },
+          {
+            "name": "Fuji TV"
+          },
+          {
+            "name": "4Kids Entertainment"
+          },
+          {
+            "name": "TAP"
+          },
+          {
+            "name": "Asatsu DK"
+          },
+          {
+            "name": "Magic Bus"
+          },
+          {
+            "name": "Mushi Production"
+          },
+          {
+            "name": "Studio Guts"
+          },
+          {
+            "name": "Asahi Production"
+          },
+          {
+            "name": "Avex Pictures"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 1999,
+        "month": 10,
+        "day": 20
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
     {
       "id": 180136,
       "title": {
@@ -114,72 +235,43 @@
       }
     },
     {
-      "id": 21,
+      "id": 203275,
       "title": {
-        "romaji": "ONE PIECE",
-        "english": "ONE PIECE",
-        "native": "ONE PIECE"
+        "romaji": "Demons' Crest",
+        "english": "Devils' Crest",
+        "native": "デモンズ・クレスト"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx21-ELSYx3yMPcKM.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21-ELSYx3yMPcKM.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21-ELSYx3yMPcKM.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b203275-YyNHygkzIjMC.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b203275-YyNHygkzIjMC.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b203275-YyNHygkzIjMC.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/21-wf37VakJmZqs.jpg",
-      "description": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and death of Roger by the World Government brought a change throughout the world. His last words before his death revealed the location of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates, men who dreamed of finding One Piece (which promises an unlimited amount of riches and fame), and quite possibly the most coveted of titles for the person who found it, the title of the Pirate King.<br><br>\nEnter Monkey D. Luffy, a 17-year-old boy that defies your standard definition of a pirate. Rather than the popular persona of a wicked, hardened, toothless pirate who ransacks villages for fun, Luffy’s reason for being a pirate is one of pure wonder; the thought of an exciting adventure and meeting new and intriguing people, along with finding One Piece, are his reasons of becoming a pirate. Following in the footsteps of his childhood hero, Luffy and his crew travel across the Grand Line, experiencing crazy adventures, unveiling dark mysteries and battling strong enemies, all in order to reach One Piece.<br><br>\n<b>*This includes the following special episodes:</b><br>\n- Chopperman to the Rescue! Protect the TV Station by the Shore! (Episode 336)<br>\n- The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (Episode 492)<br>\n- Team Formation! Save Chopper (Episode 542)<br>\n- History's Strongest Collaboration vs. Glutton of the Sea (Episode 590)<br>\n- 20th Anniversary! Special Romance Dawn (Episode 907)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/203275-g8zkD7HCkJCn.jpg",
+      "description": "Sixth-grader Yuuma Ashihara and his twin sister, Sawa, are playing Actual Magic, a brand-new virtual reality MMORPG, when it suddenly begins fusing with the real world. Amid all the chaos and confusion, it becomes clear that death is lurking around every corner, including when Yuuma runs into his classmate Sumika. Before, she was one of the cutest girls in his class, but she’s since undergone a terrible metamorphosis—into one of the game’s horrifying monsters! From the author of Sword Art Online and Accel World comes a story beyond VR and AR, where gaming and reality are one and the same…and staying alive is just the beginning!\n<br><br>\n(Source: Yen Press)",
       "genres": [
         "Action",
         "Adventure",
-        "Comedy",
-        "Drama",
         "Fantasy"
       ],
-      "averageScore": 87,
+      "averageScore": 34,
       "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
-      "seasonYear": 1999,
+      "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Toei Animation"
+            "name": "Warner Bros. Japan"
           },
           {
-            "name": "Funimation"
-          },
-          {
-            "name": "Fuji TV"
-          },
-          {
-            "name": "4Kids Entertainment"
-          },
-          {
-            "name": "TAP"
-          },
-          {
-            "name": "Asatsu DK"
-          },
-          {
-            "name": "Magic Bus"
-          },
-          {
-            "name": "Mushi Production"
-          },
-          {
-            "name": "Studio Guts"
-          },
-          {
-            "name": "Asahi Production"
-          },
-          {
-            "name": "Avex Pictures"
+            "name": "Production I.G"
           }
         ]
       },
       "startDate": {
-        "year": 1999,
-        "month": 10,
-        "day": 20
+        "year": 2026,
+        "month": 11,
+        "day": 6
       },
       "endDate": {
         "year": null,
@@ -243,54 +335,6 @@
       }
     },
     {
-      "id": 195539,
-      "title": {
-        "romaji": "Cyberpunk: Edgerunners 2",
-        "english": "Cyberpunk: Edgerunners 2",
-        "native": "サイバーパンク: エッジランナーズ2"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195539-4LdfmKIHzuxr.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195539-4LdfmKIHzuxr.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
-      "description": "<i>Cyberpunk: Edgerunners 2</i> pulls you back into Night City, where lives become entangled to the extreme. Weak, a washed-up cyberpunk legend, is now forced to live without chrome as he searches for a sense of purpose in a world that’s passed him by. Meanwhile, the deadly nomad D sets out on a path to revenge that brings him close to corpo secrets never meant to be found. Across this ten-episode standalone series, uncover a story of family, obsession, legacy — and how your lens reflects the stories of the people around you..<br><br>\n\nWhen the world is blinded by spectacle, what extremes do you have to go to make your story matter?<br><br>\n(Source: Cyberpunk: Edgerunners 2 Official Site, Official Twitter)",
-      "genres": [
-        "Action",
-        "Drama",
-        "Sci-Fi"
-      ],
-      "averageScore": 83,
-      "episodes": 10,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "TRIGGER"
-          },
-          {
-            "name": "CD PROJEKT RED"
-          },
-          {
-            "name": "Netflix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 20
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 20
-      }
-    },
-    {
       "id": 269,
       "title": {
         "romaji": "BLEACH",
@@ -342,59 +386,108 @@
       }
     },
     {
-      "id": 207329,
+      "id": 195539,
       "title": {
-        "romaji": "Tsuihou Sareta Cheat Fuyo Majutsushi wa Kimama na Second Life wo Ouka Suru.: Ore wa Buki dake ja Naku, Arayuru Mono ni \"Kyouka Point\" wo Fuyo Dekiru shi, Ore no Ishi de Itsudemo Kouka wo Kaijo Dekiru kedo, Nokotta Hitotachi Daijoubu?",
-        "english": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
-        "native": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～"
+        "romaji": "Cyberpunk: Edgerunners 2",
+        "english": "Cyberpunk: Edgerunners 2",
+        "native": "サイバーパンク: エッジランナーズ2"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b207329-6VPeZIDfF4Sr.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195539-4LdfmKIHzuxr.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195539-4LdfmKIHzuxr.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207329-9IqRSKIsM3TC.jpg",
-      "description": "Rein, an enchanter, is suddenly expelled from his guild one day. But instead of despairing, he declares, “Now I can do anything!” and begins reclaiming the massive number of enhancement points he once poured into his guildmates’ gear, setting off on a brand-new path as an adventurer.<br><br>\nGathering around him are people carrying wounds that don’t fade easily: a genius adventurer who shut her heart after her party was slaughtered, a warrior who lost her family, and an assassin raised from childhood to kill. Yet Rein never rejects their pasts or their scars—he accepts them all with bright, straightforward warmth.<br><br>\nThe stage is a unique fantasy world where Uzis, slingshots, and even yakuza exist side by side. But in this world, the more people rely on convenient technology, the more their magic weakens, and adventurers grow fragile.<br><br>\nIntelligent, vicious monsters roam freely, while in the underworld, outlaws bare their greed and ambition as schemes and betrayals intertwine. In a world where ideals and justice are easily crushed, adventurers fight on with nothing but their magic and their convictions.<br><br>\nThis is the story of those who have lost their place in the world finding a new way to live. Rein and his companions’ wild, free-spirited second life begins now!\n<br><br>(Source: The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life Site)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
+      "description": "<i>Cyberpunk: Edgerunners 2</i> pulls you back into Night City, where lives become entangled to the extreme. Weak, a washed-up cyberpunk legend, is now forced to live without chrome as he searches for a sense of purpose in a world that’s passed him by. Meanwhile, the deadly nomad D sets out on a path to revenge that brings him close to corpo secrets never meant to be found. Across this ten-episode standalone series, uncover a story of family, obsession, legacy — and how your lens reflects the stories of the people around you..<br><br>\n\nWhen the world is blinded by spectacle, what extremes do you have to go to make your story matter?<br><br>\n(Source: Cyberpunk: Edgerunners 2 Official Site, Official Twitter)",
       "genres": [
-        "Adventure",
-        "Comedy",
-        "Fantasy",
-        "Slice of Life"
+        "Action",
+        "Drama",
+        "Sci-Fi"
       ],
-      "averageScore": 73,
-      "episodes": null,
-      "status": "RELEASING",
+      "averageScore": 83,
+      "episodes": 10,
+      "status": "FINISHED",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "P.A.WORKS"
+            "name": "TRIGGER"
           },
           {
-            "name": "Shouchiku"
+            "name": "CD PROJEKT RED"
           },
           {
-            "name": "Kodansha"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Good Smile Company"
-          },
-          {
-            "name": "JR Toukai Agency"
+            "name": "Netflix"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 7
+        "day": 20
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 20
+      }
+    },
+    {
+      "id": 195516,
+      "title": {
+        "romaji": "Kusuriya no Hitorigoto 3rd Season",
+        "english": "The Apothecary Diaries Season 3",
+        "native": "薬屋のひとりごと 第3期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg",
+      "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n<br><br>\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n<br><br>\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n<br><br>\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n<br><br>\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "averageScore": 85,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "OLM"
+          },
+          {
+            "name": "Nippon Television Network"
+          },
+          {
+            "name": "Imagica Infos"
+          },
+          {
+            "name": "OLM"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Shogakukan"
+          },
+          {
+            "name": "Square Enix"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 2
       },
       "endDate": {
         "year": null,
@@ -458,67 +551,6 @@
         "year": 2026,
         "month": 10,
         "day": 9
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 212888,
-      "title": {
-        "romaji": "Tempal: Item no Chikara",
-        "english": "Overgeared",
-        "native": "テムパル～アイテムの力～"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
-      "description": "Sin Yeong-U (a.k.a. Grid), an unlucky man in life and a low-level player in the popular VR game “Satisfy,” finds a powerful item that earns him a rare legendary class title: “Pagma’s Successor.” He’s now a skilled blacksmith who can forge unique weapons and equip the game’s most powerful gear. Grid resolves to use his new abilities to achieve fame and fortune, but as his very existence begins to stir up trouble in Satisfy, he realizes that life as a legend may be more than he bargained for….<br><br>\n\n(Source: Tapas, edited)<br><br>\n\n<i>Note: Tempal: Item no Chikara is streaming a week in advance of the TV broadcast on Prime Video and Crunchyroll beginning September 27th, 2026. Regular broadcasting began on October 2nd, 2026.</i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 76,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "J.C.STAFF"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "REDICE STUDIO"
-          },
-          {
-            "name": "Kakao piccoma"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "EGG FIRM"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 27
       },
       "endDate": {
         "year": null,
@@ -593,91 +625,26 @@
       }
     },
     {
-      "id": 206401,
+      "id": 207329,
       "title": {
-        "romaji": "FX Senshi Kurumi-chan",
-        "english": "FX Fighter Kurumi-chan",
-        "native": "FX戦士くるみちゃん"
+        "romaji": "Tsuihou Sareta Cheat Fuyo Majutsushi wa Kimama na Second Life wo Ouka Suru.: Ore wa Buki dake ja Naku, Arayuru Mono ni \"Kyouka Point\" wo Fuyo Dekiru shi, Ore no Ishi de Itsudemo Kouka wo Kaijo Dekiru kedo, Nokotta Hitotachi Daijoubu?",
+        "english": "The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life",
+        "native": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。　～俺は武器だけじゃなく、あらゆるものに『強化ポイント』を付与できるし、俺の意思でいつでも効果を解除できるけど、残った人たち大丈夫？～"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206401-8cAebkI0i8BA.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206401-8cAebkI0i8BA.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206401-8cAebkI0i8BA.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b207329-6VPeZIDfF4Sr.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b207329-6VPeZIDfF4Sr.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206401-sKPZQks8FxNL.jpg",
-      "description": "University student Kurumi Fukuga has finally fulfilled her long-held desire of starting foreign exchange (FX) trading, motivated by recouping the 20 million yen her late mother lost in trading. \"I'll easily make it back,\" she thought, but the world she enters can become heaven or hell in an instant. Unrealized losses, loss-cutting, unstoppable fluctuations… but she still wants to buy, sell and make money! With fellow FX addicts Mochiko, Mebuki and Yasuko along for the ride, the market heats up! Joy, despair, joy, despair — this is an endearing, yet slightly risky money game. Can Kurumi and her friends survive this turbulent world?<br>\n<br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207329-9IqRSKIsM3TC.jpg",
+      "description": "Rein, an enchanter, is suddenly expelled from his guild one day. But instead of despairing, he declares, “Now I can do anything!” and begins reclaiming the massive number of enhancement points he once poured into his guildmates’ gear, setting off on a brand-new path as an adventurer.<br><br>\nGathering around him are people carrying wounds that don’t fade easily: a genius adventurer who shut her heart after her party was slaughtered, a warrior who lost her family, and an assassin raised from childhood to kill. Yet Rein never rejects their pasts or their scars—he accepts them all with bright, straightforward warmth.<br><br>\nThe stage is a unique fantasy world where Uzis, slingshots, and even yakuza exist side by side. But in this world, the more people rely on convenient technology, the more their magic weakens, and adventurers grow fragile.<br><br>\nIntelligent, vicious monsters roam freely, while in the underworld, outlaws bare their greed and ambition as schemes and betrayals intertwine. In a world where ideals and justice are easily crushed, adventurers fight on with nothing but their magic and their convictions.<br><br>\nThis is the story of those who have lost their place in the world finding a new way to live. Rein and his companions’ wild, free-spirited second life begins now!\n<br><br>(Source: The Laid-Off Cheat-Granting Mage Enjoys a Second Lease on Life Site)",
       "genres": [
-        "Drama",
-        "Slice of Life"
-      ],
-      "averageScore": 67,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Passione"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Docomo Anime Store"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "D-techno"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "arma bianca"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "Kansai TV"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 1
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 195604,
-      "title": {
-        "romaji": "Black Clover 2nd Season",
-        "english": "Black Clover Season 2",
-        "native": "ブラッククローバー 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg",
-      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
         "Adventure",
         "Comedy",
-        "Fantasy"
+        "Fantasy",
+        "Slice of Life"
       ],
-      "averageScore": 87,
+      "averageScore": 73,
       "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
@@ -685,85 +652,25 @@
       "studios": {
         "nodes": [
           {
-            "name": "Studio Pierrot"
+            "name": "P.A.WORKS"
           },
           {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Avex Pictures"
-          },
-          {
-            "name": "Bandai Namco Entertainment"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 211778,
-      "title": {
-        "romaji": "Sekai Saikyou no Majo, Hajimemashita",
-        "english": "The World's Strongest Witch",
-        "native": "世界最強の魔女、始めました"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211778-0MXK5HqVFBYH.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-0MXK5HqVFBYH.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/211778-ZbXEhqfFkj62.jpg",
-      "description": "After using her SSS-Rank skill, Internet, to crush her former family’s ambitions, Lorna is free to travel the world. Her next stop is the port town of Aquas, where she hopes to see the sights and chow down on some fresh seafood. But when she arrives, the place is on the brink of destruction thanks to a certain Weekly Quest… Good thing Lorna has the gods on her side!\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 70,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Bridge"
-          },
-          {
-            "name": "Aisle"
-          },
-          {
-            "name": "Yomiuri TV Enterprise"
+            "name": "Shouchiku"
           },
           {
             "name": "Kodansha"
           },
           {
-            "name": "Pony Canyon"
+            "name": "TV Tokyo"
           },
           {
-            "name": "BS11"
+            "name": "Crunchyroll"
           },
           {
-            "name": "Bridge"
+            "name": "Good Smile Company"
           },
           {
-            "name": "Bit grooove promotion"
+            "name": "JR Toukai Agency"
           }
         ]
       },
@@ -779,55 +686,59 @@
       }
     },
     {
-      "id": 172192,
+      "id": 212888,
       "title": {
-        "romaji": "Kikansha no Mahou wa Tokubetsu desu 2nd Season",
-        "english": "A Returner's Magic Should be Special Season 2",
-        "native": "帰還者の魔法は特別です 第2期"
+        "romaji": "Tempal: Item no Chikara",
+        "english": "Overgeared",
+        "native": "テムパル～アイテムの力～"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx172192-W7P5xEUaxF3y.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx172192-W7P5xEUaxF3y.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172192-W7P5xEUaxF3y.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/172192-jibcmb7wdbzk.jpg",
-      "description": "In a land dominated by the formidable Shadow Worlds, most of humanity has been destroyed. To rescue their planet from impending doom, six brave heroes fight a perilous battle…and fail. But there’s a glimpse of hope when Desir, one of the last mages, is suddenly sent back in time 13 years! Now armed with knowledge of the grim future, can he alter the course of history and save the world?\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
+      "description": "Sin Yeong-U (a.k.a. Grid), an unlucky man in life and a low-level player in the popular VR game “Satisfy,” finds a powerful item that earns him a rare legendary class title: “Pagma’s Successor.” He’s now a skilled blacksmith who can forge unique weapons and equip the game’s most powerful gear. Grid resolves to use his new abilities to achieve fame and fortune, but as his very existence begins to stir up trouble in Satisfy, he realizes that life as a legend may be more than he bargained for….<br><br>\n\n(Source: Tapas, edited)<br><br>\n\n<i>Note: Tempal: Item no Chikara is streaming a week in advance of the TV broadcast on Prime Video and Crunchyroll beginning September 27th, 2026. Regular broadcasting began on October 2nd, 2026.</i>",
       "genres": [
         "Action",
         "Adventure",
+        "Comedy",
         "Fantasy"
       ],
-      "averageScore": 69,
-      "episodes": null,
+      "averageScore": 76,
+      "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "Aniplex"
+            "name": "J.C.STAFF"
           },
           {
-            "name": "Arvo Animation"
+            "name": "Pony Canyon"
           },
           {
             "name": "Crunchyroll"
           },
           {
-            "name": "D&C MEDIA"
+            "name": "REDICE STUDIO"
           },
           {
             "name": "Kakao piccoma"
           },
           {
-            "name": "HAYATE"
+            "name": "Movic"
+          },
+          {
+            "name": "EGG FIRM"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 10,
-        "day": 8
+        "month": 9,
+        "day": 27
       },
       "endDate": {
         "year": null,
@@ -896,6 +807,63 @@
         "year": 2017,
         "month": 3,
         "day": 23
+      }
+    },
+    {
+      "id": 172192,
+      "title": {
+        "romaji": "Kikansha no Mahou wa Tokubetsu desu 2nd Season",
+        "english": "A Returner's Magic Should be Special Season 2",
+        "native": "帰還者の魔法は特別です 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx172192-W7P5xEUaxF3y.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx172192-W7P5xEUaxF3y.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172192-W7P5xEUaxF3y.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/172192-jibcmb7wdbzk.jpg",
+      "description": "In a land dominated by the formidable Shadow Worlds, most of humanity has been destroyed. To rescue their planet from impending doom, six brave heroes fight a perilous battle…and fail. But there’s a glimpse of hope when Desir, one of the last mages, is suddenly sent back in time 13 years! Now armed with knowledge of the grim future, can he alter the course of history and save the world?\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 69,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "Arvo Animation"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "D&C MEDIA"
+          },
+          {
+            "name": "Kakao piccoma"
+          },
+          {
+            "name": "HAYATE"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 8
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
       }
     }
   ]
