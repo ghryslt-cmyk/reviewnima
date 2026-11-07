@@ -1,7 +1,18 @@
 {
-  "version": 1794013577445,
-  "fetchedAt": "2026-11-07T01:06:17.445Z",
+  "version": 1794035721244,
+  "fetchedAt": "2026-11-07T07:15:21.244Z",
   "news": [
+    {
+      "title": "Mixed Media Project &#039;Harajuku Himegoto House&#039; Announces TV Anime Adaptation",
+      "description": "Entertainment company Plott announced a television anime adaptation of its Harajuku Himegoto House mixed-media project on Saturday, revealing the main cast, staff, a key visual (pictured), and a teaser promotional video. Cast Mizuki Otokozawa: Yuuya Hirose (Mato Seihei no Slave) Mero Togariishi: Tet...",
+      "fullDescription": "Entertainment company Plott announced a television anime adaptation of its Harajuku Himegoto House mixed-media project on Saturday, revealing the main cast, staff, a key visual (pictured), and a teaser promotional video. Cast Mizuki Otokozawa: Yuuya Hirose (Mato Seihei no Slave) Mero Togariishi: Tetsuei Sumiya (Fairy Ranmaru) Takara Rokurokusou: Souhei Horikane (Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku) Kentarou Jinbayama: Masaru Yoshimura Yuki Inubou: Takuma Nagatsuka (SK&infin;)...",
+      "link": "https://myanimelist.net/news/74912747?_location=rss",
+      "pubDate": "Fri, 06 Nov 2026 21:07:54 -0800",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1794027991-1281ac9c9b704723dd7e5a94214eb5dd.jpeg",
+      "guid": "https://myanimelist.net/news/74912747?_location=rss"
+    },
     {
       "title": "Hana-Kimi Manga Gets New Live-Action Series, 1st Stage Play",
       "description": "Hana Kawamura, The Rampage's Makoto Hasegawa & Itsuki Fujiwara star in both",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1793941725-b3cef95c88ebff30170bbe5e61015b08.jpeg",
       "guid": "https://myanimelist.net/news/74909290?_location=rss"
-    },
-    {
-      "title": "Amahara's 33 Years Old Single Girl Knight Captain Manga Gets Anime",
-      "description": "Digital Shokunin produces anime about overworked, sex-starved knight captain",
-      "fullDescription": "Digital Shokunin produces anime about overworked, sex-starved knight captain",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-05/amahara-33-years-old-single-girl-knight-captain-manga-gets-anime/.243579",
-      "pubDate": "Thu, 05 Nov 2026 22:47:35 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243579/33saifdokushinonnakishi-02.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243579"
     }
   ],
   "total": 15
