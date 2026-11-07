@@ -1,7 +1,40 @@
 {
-  "version": 1794000354789,
-  "fetchedAt": "2026-11-06T21:25:54.789Z",
+  "version": 1794013577445,
+  "fetchedAt": "2026-11-07T01:06:17.445Z",
   "news": [
+    {
+      "title": "Hana-Kimi Manga Gets New Live-Action Series, 1st Stage Play",
+      "description": "Hana Kawamura, The Rampage's Makoto Hasegawa & Itsuki Fujiwara star in both",
+      "fullDescription": "Hana Kawamura, The Rampage's Makoto Hasegawa & Itsuki Fujiwara star in both",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-06/hana-kimi-manga-gets-new-live-action-series-1st-stage-play/.243601",
+      "pubDate": "Fri, 06 Nov 2026 18:51:13 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243601/q6hc4p1dk2wjelzne2nuzvkmuo2jp5.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243601"
+    },
+    {
+      "title": "North American Anime, Manga Releases, November 1-7",
+      "description": "KPop Demon Hunters animated film; Black Jack, Full Metal Panic! Family manga ship",
+      "fullDescription": "<cite>KPop Demon Hunters</cite> animated film; <cite>Black Jack, Full Metal Panic! Family</cite> manga ship",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-06/north-american-anime-manga-releases-november-1-7/.243459",
+      "pubDate": "Fri, 06 Nov 2026 17:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243459"
+    },
+    {
+      "title": "Odd Taxi Manga Author Launches New Rematch With You Manga in Late November",
+      "description": "Abaraya previously published dōjin version of manga at Comitia in November 2025",
+      "fullDescription": "Abaraya previously published <i>dōjin</i> version of manga at Comitia in November 2025",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-06/odd-taxi-manga-author-launches-new-rematch-with-you-manga-in-late-november/.243576",
+      "pubDate": "Fri, 06 Nov 2026 16:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243576"
+    },
     {
       "title": "Paradox Live The Animation's Film Announces Title, 2027 Opening",
       "description": "The official website for the hip-hop-themed multimedia franchise presented the early teaser visual for its upcoming film project on Friday. The visual...",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243579/33saifdokushinonnakishi-02.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243579"
-    },
-    {
-      "title": "Manga &#039;33-sai Dokushin Onna Kishi Taichou.&#039; Gets Anime Adaptation in 2027",
-      "description": "Content platform Digital Shokunin announced an anime adaptation of Amahara&#039;s 33-sai Dokushin Onna Kishi Taichou. (33 Years Old Single Female Knight Captain.) manga on Friday, revealing the main character designs (pictured above) and a commemorative music video. The anime project celebrates the ...",
-      "fullDescription": "Content platform Digital Shokunin announced an anime adaptation of Amahara&#039;s 33-sai Dokushin Onna Kishi Taichou. (33 Years Old Single Female Knight Captain.) manga on Friday, revealing the main character designs (pictured above) and a commemorative music video. The anime project celebrates the series&#039; 10th anniversary and is scheduled to premiere in 2027. Amahara began serializing comedy fantasy manga on the Ananga Ranga adult digital magazine in October 2015. Flex Comics published th...",
-      "link": "https://myanimelist.net/news/74909101?_location=rss",
-      "pubDate": "Thu, 05 Nov 2026 19:30:22 -0800",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1793935725-e854eac83cd26617df2d5567082af53d.jpeg",
-      "guid": "https://myanimelist.net/news/74909101?_location=rss"
-    },
-    {
-      "title": "Ninja Skooler Anime Unveils Pilot Film, Images, Song",
-      "description": "Shunsuke Takarai to direct light-hearted ninja anime based on concept by Kinema Citrus",
-      "fullDescription": "Shunsuke Takarai to direct light-hearted ninja anime based on concept by Kinema Citrus",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-05/ninja-skooler-anime-unveils-pilot-film-images-song/.243571",
-      "pubDate": "Thu, 05 Nov 2026 20:00:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243571"
-    },
-    {
-      "title": "PlayStation 5 Reaches Over 97 Million Shipments",
-      "description": "Sony shipped 4.2 million PS5 units for current fiscal year so far",
-      "fullDescription": "Sony shipped 4.2 million PS5 units for current fiscal year so far",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-05/playstation-5-reaches-over-97-million-shipments/.243569",
-      "pubDate": "Thu, 05 Nov 2026 17:00:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max400x400/cms/news.6/205804/playstation5.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243569"
     }
   ],
   "total": 15
