@@ -1,7 +1,18 @@
 {
-  "version": 1794153241009,
-  "fetchedAt": "2026-11-08T15:54:01.009Z",
+  "version": 1794169268352,
+  "fetchedAt": "2026-11-08T20:21:08.352Z",
   "news": [
+    {
+      "title": "My Crush's Crush Anime's Teaser Unveils Cast, Staff, April Debut",
+      "description": "Gakuto Kajiwara, Haruna Mikawa, Nene Hieda star in 2027 anime",
+      "fullDescription": "Gakuto Kajiwara, Haruna Mikawa, Nene Hieda star in 2027 anime",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-08/my-crush-crush-anime-teaser-unveils-cast-staff-april-debut/.243627",
+      "pubDate": "Sun, 08 Nov 2026 11:18:47 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243627/0da922f85119fa17de99a14c597e277f57169b42-6aefe4b422eea.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243627"
+    },
     {
       "title": "&#039;Boku no Suki na Hito ga Suki na Hito&#039; Reveals Main Cast, Staff, Teaser Promo, Spring 2027 Premiere",
       "description": "Production company Avex Pictures opened an official website for a television anime adaptation of Sekina Aoi and Ryou Tsuzura&#039;s Boku no Suki na Hito ga Suki na Hito (My Crush&#039;s Crush) manga on Friday, revealing the main cast, staff, teaser visual (pictured), and teaser promotional video. Th...",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1794040656-a437a59ea8b1fb486702298ff800ce8a.jpeg",
       "guid": "https://myanimelist.net/news/74913297?_location=rss"
-    },
-    {
-      "title": "Everyone's Darling Has a Secret Anime's New Teaser Unveils More Cast, Ending Song",
-      "description": "≒JOY idols Aimi Ozawa, Renon Esumi, Aoi Ōnishi join cast",
-      "fullDescription": "≒JOY idols Aimi Ozawa, Renon Esumi, Aoi Ōnishi join cast",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-07/everyone-darling-has-a-secret-anime-new-teaser-unveils-more-cast-ending-song/.243603",
-      "pubDate": "Sat, 07 Nov 2026 03:38:46 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243603/chara-houhu-re-1.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243603"
     }
   ],
   "total": 15
