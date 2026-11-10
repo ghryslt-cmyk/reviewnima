@@ -1,7 +1,106 @@
 {
-  "version": 1794296422066,
-  "fetchedAt": "2026-11-10T07:40:22.066Z",
+  "version": 1794325770400,
+  "fetchedAt": "2026-11-10T15:49:30.400Z",
   "news": [
+    {
+      "title": "Kodansha's Comic Tint Digital Magazine to End After 9 Years",
+      "description": "Last issue comes out on January 1, manga to move to Ane Friend, Palcy services",
+      "fullDescription": "Last issue comes out on January 1, manga to move to Ane Friend, Palcy services",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/kodansha-comic-tint-digital-magazine-to-end-after-9-years/.243665",
+      "pubDate": "Tue, 10 Nov 2026 08:07:45 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243665/comictint.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243665"
+    },
+    {
+      "title": "DMM Establishes New Animation Studio Gleestone",
+      "description": "Naokazu Tsuruta heads company handling works from planning stages to actual animation production",
+      "fullDescription": "Naokazu Tsuruta heads company handling works from planning stages to actual animation production",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/dmm-establishes-new-animation-studio-gleestone/.243682",
+      "pubDate": "Tue, 10 Nov 2026 07:52:45 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243682/glee.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243682"
+    },
+    {
+      "title": "Light Novel &#039;Hyouken no Majutsushi ga Sekai wo Suberu&#039; Concludes with 10th Volume",
+      "description": "The official X account for author Nana Mikoshiba announced on Tuesday that the Hyouken no Majutsushi ga Sekai wo Suberu: Sekai Saikyou no Majutsushi de Aru Shounen wa, Majutsu Gakuin ni Nyuugaku suru (The Iceblade Sorcerer Shall Rule the World) light novel series will end with its tenth volume, sche...",
+      "fullDescription": "The official X account for author Nana Mikoshiba announced on Tuesday that the Hyouken no Majutsushi ga Sekai wo Suberu: Sekai Saikyou no Majutsushi de Aru Shounen wa, Majutsu Gakuin ni Nyuugaku suru (The Iceblade Sorcerer Shall Rule the World) light novel series will end with its tenth volume, scheduled to be released on December 2. The main story has already concluded, with the final volume featuring revised and expanded side stories from the web novel, as well as an original story covering Ra...",
+      "link": "https://myanimelist.net/news/74924616?_location=rss",
+      "pubDate": "Tue, 10 Nov 2026 04:45:55 -0800",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1794314659-da45de06b7c66e0ecac68b2612a00a61.jpeg",
+      "guid": "https://myanimelist.net/news/74924616?_location=rss"
+    },
+    {
+      "title": "Hollywood Reporter, Variety: Apple TV in Talks for Monarch: Legacy of Monsters Season 3",
+      "description": "Magazines: New season would have new showrunner, writers, Titan monsters",
+      "fullDescription": "Magazines: New season would have new showrunner, writers, Titan monsters",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/hollywood-reporter-variety-apple-tv-in-talks-for-monarch-legacy-of-monsters-season-3/.243668",
+      "pubDate": "Tue, 10 Nov 2026 06:55:42 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max450x450/cms/news.6/203372/monarch.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243668"
+    },
+    {
+      "title": "Shueisha Games to Publish Nightmare Operator Action Horror Game",
+      "description": "Miyuki Sawashiro to voice lead in DDDistortion's game on Steam",
+      "fullDescription": "Miyuki Sawashiro to voice lead in DDDistortion's game on Steam",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/shueisha-games-to-publish-nightmare-operator-action-horror-game/.243679",
+      "pubDate": "Tue, 10 Nov 2026 06:43:13 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243679/nightmare.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243679"
+    },
+    {
+      "title": "Devils' Crest Anime Confirms Half-Year Run",
+      "description": "Anime debuted worldwide on Prime Video on November 6",
+      "fullDescription": "Anime debuted worldwide on Prime Video on November 6",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/devils-crest-anime-confirms-half-year-run/.243678",
+      "pubDate": "Tue, 10 Nov 2026 04:44:49 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242411/1003-reveal-devils-crest-battle-key-art.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243678"
+    },
+    {
+      "title": "Millennium Family TV Anime Casts Mutsumi Tamura",
+      "description": "Tamura voices Benfield family's youngest child Arthur",
+      "fullDescription": "Tamura voices Benfield family's youngest child Arthur",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/millennium-family-tv-anime-casts-mutsumi-tamura/.243639",
+      "pubDate": "Tue, 10 Nov 2026 04:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243639/millennium.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243639"
+    },
+    {
+      "title": "Japan's Video Game Rankings, October 26-November 1",
+      "description": "Minecraft for Switch 2 debuts at #3; Hello Kitty Party Land debuts at #7, #8",
+      "fullDescription": "Minecraft for Switch 2 debuts at #3; Hello Kitty Party Land debuts at #7, #8",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/japan-video-game-rankings-october-26-november-1/.243620",
+      "pubDate": "Tue, 10 Nov 2026 02:53:54 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243620"
+    },
+    {
+      "title": "Japanese Animation TV Ranking, October 26-November 1",
+      "description": "The Apothecary Diaries up to 4.1% rating from 3.5% last week",
+      "fullDescription": "<cite>The Apothecary Diaries</cite> up to 4.1% rating from 3.5% last week",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/japanese-animation-tv-ranking-october-26-november-1/.243621",
+      "pubDate": "Tue, 10 Nov 2026 02:52:54 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243621"
+    },
     {
       "title": "Kyūgō's Monster in Sheep's Clothing BL Manga Gets Live-Action Film",
       "description": "Nobuyuki Suzuki, Bullet Train boy group's Haru Kashiwagi star in film opening on December 11",
@@ -67,105 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243660/hwtpsuawsaac9ci.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243660"
-    },
-    {
-      "title": "ghost – end of night Anime Film's Trailer Confirms More Cast & Staff, Theme Song",
-      "description": "Hitsujibungaku performs \"life\" for February 11 film",
-      "fullDescription": "Hitsujibungaku performs \"life\" for February 11 film",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-09/ghost-end-of-night-anime-film-trailer-confirms-more-cast-and-staff-theme-song/.243662",
-      "pubDate": "Mon, 09 Nov 2026 19:49:27 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243662/hwspacia8aab56s.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243662"
-    },
-    {
-      "title": "&#039;Ghost: Yoru no Hate&#039; Unveils Additional Cast, Staff, Theme Song, Main Trailer",
-      "description": "The official website for the Ghost: Yoru no Hate original anime movie unveiled additional cast, staff, a second key visual (pictured right), the theme song, and main trailer on Tuesday. The movie is scheduled to open in Japanese theaters on February 11, 2027. The movie was previewed at Sitges Film F...",
-      "fullDescription": "The official website for the Ghost: Yoru no Hate original anime movie unveiled additional cast, staff, a second key visual (pictured right), the theme song, and main trailer on Tuesday. The movie is scheduled to open in Japanese theaters on February 11, 2027. The movie was previewed at Sitges Film Festival on October 9 and at Animation Is Film Festival on October 17. Cast Bora: Takeo Ootsuka ([Oshi no Ko]) Ahab: Kazuhiro Yamaji (Shuumatsu no Walk&uuml;re) Structure: Yuuki Shin (Tokyo Revengers)...",
-      "link": "https://myanimelist.net/news/74922872?_location=rss",
-      "pubDate": "Mon, 09 Nov 2026 16:05:31 -0800",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1794269033-d1c2fc2ee358184f36bf3aab1759f160.jpeg",
-      "guid": "https://myanimelist.net/news/74922872?_location=rss"
-    },
-    {
-      "title": "Atelier Karia Game's Video Previews Story",
-      "description": "Game launches on February 25 for Switch 2, PS5, Xbox X|S, PC via Steam",
-      "fullDescription": "Game launches on February 25 for Switch 2, PS5, Xbox X|S, PC via Steam",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-09/atelier-karia-game-video-previews-story/.243659",
-      "pubDate": "Mon, 09 Nov 2026 17:30:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243659"
-    },
-    {
-      "title": "Kodansha Announces Winners of Mangaka Discovery Global Manga Award",
-      "description": "K Manga, Comic Days to publish grand prize-winners' entries in December",
-      "fullDescription": "<cite>K Manga</cite>, <cite>Comic Days</cite> to publish grand prize-winners' entries in December",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-09/kodansha-announces-winners-of-mangaka-discovery-global-manga-award/.243616",
-      "pubDate": "Mon, 09 Nov 2026 16:30:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243616/unnamed.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243616"
-    },
-    {
-      "title": "Assassin's Creed Shadows: Tales of Iga Manga Ends",
-      "description": "Final volume ships on November 19",
-      "fullDescription": "Final volume ships on November 19",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-09/assassin-creed-shadows-tales-of-iga-manga-ends/.243657",
-      "pubDate": "Mon, 09 Nov 2026 15:30:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243657/81p0wnmnbol.sl1500.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243657"
-    },
-    {
-      "title": "SaGa Game Series' Localization Director Neil Broadley Dies",
-      "description": "Broadley worked on SaGa, Final Fantasy games",
-      "fullDescription": "Broadley worked on <cite>SaGa</cite>, <cite>Final Fantasy</cite> games",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-09/saga-game-series-localization-director-neil-broadley-dies/.243656",
-      "pubDate": "Mon, 09 Nov 2026 14:30:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243656/neil-broadley.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243656"
-    },
-    {
-      "title": "K Manga Adds nyalra's Strayboy Overkill Manga",
-      "description": "Needy Girl Overdose writer nyalra debuted Strayboy Overkill on April 7",
-      "fullDescription": "<cite>Needy Girl Overdose</cite> writer nyalra debuted <cite>Strayboy Overkill</cite> on April 7",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-09/k-manga-adds-nyalra-strayboy-overkill-manga/.243653",
-      "pubDate": "Mon, 09 Nov 2026 13:30:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243653/stray-boy-overkill.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243653"
-    },
-    {
-      "title": "Deadline: Noah Of The Blood Sea Manga Gets Hollywood Live-Action Film Adaptation",
-      "description": "Los Angeles-based Tyrus Pictures plans to start production in 2027",
-      "fullDescription": "Los Angeles-based Tyrus Pictures plans to start production in 2027",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-09/deadline-noah-of-the-blood-sea-manga-gets-hollywood-live-action-film-adaptation/.243654",
-      "pubDate": "Mon, 09 Nov 2026 12:30:52 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243654/noah-of-the-blood-sea.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243654"
-    },
-    {
-      "title": "Manga Up! Global Adds Love Unseen Beneath the Clear Night Sky, Underdog Idol, 3 More Manga",
-      "description": "Also: Noble Reincarnation: Side Story ~14-year-old Noa's Unparalleled Journey~ , A Mysterious Job Called Oda Nobunaga",
-      "fullDescription": "Also: <cite>Noble Reincarnation: Side Story ~14-year-old Noa's Unparalleled Journey~ </cite>, <cite>A Mysterious Job Called Oda Nobunaga</cite>",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-09/manga-up-global-adds-love-unseen-beneath-the-clear-night-sky-underdog-idol-3-more-manga/.243529",
-      "pubDate": "Mon, 09 Nov 2026 11:00:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243529/noble.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243529"
     }
   ],
   "total": 15
