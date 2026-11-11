@@ -1,7 +1,40 @@
 {
-  "version": 1794360610161,
-  "fetchedAt": "2026-11-11T01:30:10.161Z",
+  "version": 1794385214019,
+  "fetchedAt": "2026-11-11T08:20:14.019Z",
   "news": [
+    {
+      "title": "Aoharu Once More Light Anime's Teaser Reveals Cast, More Staff, January 2027 Debut",
+      "description": "Tasuku Kaito, Kazuki Ura star in BL story",
+      "fullDescription": "Tasuku Kaito, Kazuki Ura star in BL story",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/aoharu-once-more-light-anime-teaser-reveals-cast-more-staff-january-2027-debut/.243708",
+      "pubDate": "Tue, 10 Nov 2026 23:06:22 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243708/hayato.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243708"
+    },
+    {
+      "title": "Kodansha Launches 1999Tokoyo Building Horror Game on Steam",
+      "description": "Visual novel/adventure game launched on Monday for PC",
+      "fullDescription": "Visual novel/adventure game launched on Monday for PC",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/kodansha-launches-1999tokoyo-building-horror-game-on-steam/.243702",
+      "pubDate": "Tue, 10 Nov 2026 22:00:42 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243702"
+    },
+    {
+      "title": "Mameshiba Characters Get Oyatsushiba Spinoff Short Net Anime",
+      "description": "Anime about characters inspired by sweet rice cakes debuts on Friday",
+      "fullDescription": "Anime about characters inspired by sweet rice cakes debuts on Friday",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/mameshiba-characters-get-oyatsushiba-spinoff-short-net-anime/.243704",
+      "pubDate": "Tue, 10 Nov 2026 21:43:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243704/oyatsushiba2.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243704"
+    },
     {
       "title": "Tekken 8 Game Streams Roger Jr. Starter Guide",
       "description": "Season 3 character launches in early access on November 11",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max450x450/cms/news.6/203372/monarch.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243668"
-    },
-    {
-      "title": "Shueisha Games to Publish Nightmare Operator Action Horror Game",
-      "description": "Miyuki Sawashiro to voice lead in DDDistortion's game on Steam",
-      "fullDescription": "Miyuki Sawashiro to voice lead in DDDistortion's game on Steam",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/shueisha-games-to-publish-nightmare-operator-action-horror-game/.243679",
-      "pubDate": "Tue, 10 Nov 2026 06:43:13 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243679/nightmare.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243679"
-    },
-    {
-      "title": "Devils' Crest Anime Confirms Half-Year Run",
-      "description": "Anime debuted worldwide on Prime Video on November 6",
-      "fullDescription": "Anime debuted worldwide on Prime Video on November 6",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/devils-crest-anime-confirms-half-year-run/.243678",
-      "pubDate": "Tue, 10 Nov 2026 04:44:49 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/242411/1003-reveal-devils-crest-battle-key-art.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243678"
-    },
-    {
-      "title": "Millennium Family TV Anime Casts Mutsumi Tamura",
-      "description": "Tamura voices Benfield family's youngest child Arthur",
-      "fullDescription": "Tamura voices Benfield family's youngest child Arthur",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/millennium-family-tv-anime-casts-mutsumi-tamura/.243639",
-      "pubDate": "Tue, 10 Nov 2026 04:00:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243639/millennium.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243639"
     }
   ],
   "total": 15
