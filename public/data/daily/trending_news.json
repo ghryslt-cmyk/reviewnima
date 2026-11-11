@@ -1,7 +1,40 @@
 {
-  "version": 1794347105661,
-  "fetchedAt": "2026-11-10T21:45:05.661Z",
+  "version": 1794360610161,
+  "fetchedAt": "2026-11-11T01:30:10.161Z",
   "news": [
+    {
+      "title": "Tekken 8 Game Streams Roger Jr. Starter Guide",
+      "description": "Season 3 character launches in early access on November 11",
+      "fullDescription": "Season 3 character launches in early access on November 11",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/tekken-8-game-streams-roger-jr-starter-guide/.243701",
+      "pubDate": "Tue, 10 Nov 2026 19:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243701"
+    },
+    {
+      "title": "The Iceblade Sorcerer Shall Rule the World Author Nana Mikoshiba's Original Novel Gets Manga Adaptation on November 17",
+      "description": "Artist Meguru Kanadome draws manga of Mikoshiba's novel",
+      "fullDescription": "Artist Meguru Kanadome draws manga of Mikoshiba's novel",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/the-iceblade-sorcerer-shall-rule-the-world-author-nana-mikoshiba-original-novel-gets-manga-/.243677",
+      "pubDate": "Tue, 10 Nov 2026 18:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243677/nana.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243677"
+    },
+    {
+      "title": "Yu-Gi-Oh! Tag Force GX Game Previews Duels, Partners, Multiplayer, Exploration in New Trailer",
+      "description": "Updated version of Yu-Gi-Oh! GX Tag Force 3, previously unreleased in N. America, launches on February 16",
+      "fullDescription": "Updated version of <cite>Yu-Gi-Oh! GX Tag Force 3</cite>, previously unreleased in N. America, launches on February 16",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-10/yu-gi-oh-tag-force-gx-game-previews-duels-partners-multiplayer-exploration-in-new-trailer/.243697",
+      "pubDate": "Tue, 10 Nov 2026 17:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243697"
+    },
     {
       "title": "WEBTOON Reports US$9.23 Million in 3rd Quarter of 2026",
       "description": "Japan, WEBTOON's largest market by revenue, struggled",
@@ -133,39 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243639/millennium.jpeg",
       "guid": "https://www.animenewsnetwork.com/cms/.243639"
-    },
-    {
-      "title": "Japan's Video Game Rankings, October 26-November 1",
-      "description": "Minecraft for Switch 2 debuts at #3; Hello Kitty Party Land debuts at #7, #8",
-      "fullDescription": "Minecraft for Switch 2 debuts at #3; Hello Kitty Party Land debuts at #7, #8",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/japan-video-game-rankings-october-26-november-1/.243620",
-      "pubDate": "Tue, 10 Nov 2026 02:53:54 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243620"
-    },
-    {
-      "title": "Japanese Animation TV Ranking, October 26-November 1",
-      "description": "The Apothecary Diaries up to 4.1% rating from 3.5% last week",
-      "fullDescription": "<cite>The Apothecary Diaries</cite> up to 4.1% rating from 3.5% last week",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/japanese-animation-tv-ranking-october-26-november-1/.243621",
-      "pubDate": "Tue, 10 Nov 2026 02:52:54 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243621"
-    },
-    {
-      "title": "Kyūgō's Monster in Sheep's Clothing BL Manga Gets Live-Action Film",
-      "description": "Nobuyuki Suzuki, Bullet Train boy group's Haru Kashiwagi star in film opening on December 11",
-      "fullDescription": "Nobuyuki Suzuki, Bullet Train boy group's Haru Kashiwagi star in film opening on December 11",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/kyugo-monster-in-sheep-clothing-bl-manga-gets-live-action-film/.243671",
-      "pubDate": "Tue, 10 Nov 2026 01:48:44 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243671/sheep.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243671"
     }
   ],
   "total": 15
