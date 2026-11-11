@@ -1,7 +1,150 @@
 {
-  "version": 1794385214019,
-  "fetchedAt": "2026-11-11T08:20:14.019Z",
+  "version": 1794414628831,
+  "fetchedAt": "2026-11-11T16:30:28.831Z",
   "news": [
+    {
+      "title": "PlayStation 5 Reaches Over 100 Million Shipments",
+      "description": "PS5 had shipped over 97.9 million units as of September 30",
+      "fullDescription": "PS5 had shipped over 97.9 million units as of September 30",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/playstation-5-reaches-over-100-million-shipments/.243724",
+      "pubDate": "Wed, 11 Nov 2026 11:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max400x400/cms/news.6/205804/playstation5.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243724"
+    },
+    {
+      "title": "The Legend of Zelda: Ocarina of Time Remake Sells Over 5.2 Million Units to Become Nintendo's Fastest-Selling Switch 2 Game",
+      "description": "Remake surpasses previously reported lifetime sales of 2nd bestselling Switch 2 title Donkey Kong Bananza",
+      "fullDescription": "Remake surpasses previously reported lifetime sales of 2nd bestselling Switch 2 title <cite>Donkey Kong Bananza</cite>",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/the-legend-of-zelda-ocarina-of-time-remake-sells-over-5.2-million-units-to-become-nintendo-fastest-/.243722",
+      "pubDate": "Wed, 11 Nov 2026 10:33:40 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243722/zelda-oot.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243722"
+    },
+    {
+      "title": "CyberAgent Announces Business Alliance With Animation Studio MAPPA",
+      "description": "CyberAgent has acquired stake in MAPPA's parent company MHD Co.",
+      "fullDescription": "CyberAgent has acquired stake in MAPPA's parent company MHD Co.",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/cyberagent-announces-business-alliance-with-animation-studio-mappa/.243717",
+      "pubDate": "Wed, 11 Nov 2026 10:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243717"
+    },
+    {
+      "title": "&#039;Mashle: Sanma Taisou Shinkakusha Saishuu Shiken-hen&#039; Reveals Additional Cast, Promo",
+      "description": "The official website of the Mashle (Mashle: Magic and Muscles) television anime revealed additional cast pair, a key visual and a promotional video for its third season on Wednesday. The new season is scheduled to premiere on January 10 at 12.00 a.m. on Tokyo MX, BS11, Gunma TV and Tochigi TV, follo...",
+      "fullDescription": "The official website of the Mashle (Mashle: Magic and Muscles) television anime revealed additional cast pair, a key visual and a promotional video for its third season on Wednesday. The new season is scheduled to premiere on January 10 at 12.00 a.m. on Tokyo MX, BS11, Gunma TV and Tochigi TV, followed by Mainichi Broadcasting, Shizuoka Broadcasting, FBS Fukoka, Chukyo TV, Nagano Asahi, Okayama, Miyagi TV, Sapporo TV, Television Niigata and Chugoku. Voice actors Souma Saitou (Youkoso Jitsuryoku...",
+      "link": "https://myanimelist.net/news/74928431?_location=rss",
+      "pubDate": "Wed, 11 Nov 2026 06:46:50 -0800",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1794408175-e0476084784c967fc79c4578a3bc0dcb.jpeg",
+      "guid": "https://myanimelist.net/news/74928431?_location=rss"
+    },
+    {
+      "title": "Elden Ring: Distant Tales Between Manga Ends in Next Chapter",
+      "description": "Final chapter's date to be determined for manga which launched in July 2024",
+      "fullDescription": "Final chapter's date to be determined for manga which launched in July 2024",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/elden-ring-distant-tales-between-manga-ends-in-next-chapter/.243710",
+      "pubDate": "Wed, 11 Nov 2026 08:59:04 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/234154/elden-ring-distant-tales-between-vol.1.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243710"
+    },
+    {
+      "title": "Sayaka Mogi's Happy Hypoxia Manga Ends",
+      "description": "Manga launched in June 2025",
+      "fullDescription": "Manga launched in June 2025",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/sayaka-mogi-happy-hypoxia-manga-ends/.243705",
+      "pubDate": "Wed, 11 Nov 2026 08:53:15 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243705/happyhypoxia.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243705"
+    },
+    {
+      "title": "Unbreakable ~Yaburezaru Monotachi~ Manga Resumes With Final Arc Next Spring",
+      "description": "Adaptation moves from Young Champion magazine to Yanchan Web",
+      "fullDescription": "Adaptation moves from <i>Young Champion</i> magazine to Yanchan Web",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/unbreakable-~yaburezaru-monotachi~-manga-resumes-with-final-arc-next-spring/.243703",
+      "pubDate": "Wed, 11 Nov 2026 08:50:09 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243703"
+    },
+    {
+      "title": "Mashle: Magic and Muscles Season 3's New Video Unveils More Cast & Staff, January 9 Debut",
+      "description": "Sōma Saitō, Ryōta Suzuki join cast",
+      "fullDescription": "Sōma Saitō, Ryōta Suzuki join cast",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/mashle-magic-and-muscles-season-3-new-video-unveils-more-cast-and-staff-january-9-debut/.243719",
+      "pubDate": "Wed, 11 Nov 2026 08:35:28 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243719"
+    },
+    {
+      "title": "SSS-Class Revival Hunter Anime's New Video Reveals Ending Song",
+      "description": "THE SPELLBOUND × BOOM BOOM SATELLITES perform \"Fading\" ending theme",
+      "fullDescription": "THE SPELLBOUND × BOOM BOOM SATELLITES perform \"Fading\" ending theme",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/sss-class-revival-hunter-anime-new-video-reveals-ending-song/.243716",
+      "pubDate": "Wed, 11 Nov 2026 06:14:17 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241578/sss-class-revival-hunter.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243716"
+    },
+    {
+      "title": "Tomoko Ninomiya's Nanatsu-ya: Shinobu and Her Jewelry Box Manga Gets TV Anime in 2027",
+      "description": "Nodame Cantabile: Finale director Chiaki Kon helms anime at J.C.STAFF",
+      "fullDescription": "<cite>Nodame Cantabile: Finale</cite> director Chiaki Kon helms anime at J.C.STAFF",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/tomoko-ninomiya-nanatsu-ya-shinobu-and-her-jewelry-box-manga-gets-tv-anime-in-2027/.243715",
+      "pubDate": "Wed, 11 Nov 2026 04:48:56 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243715/shinobuteaser2.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243715"
+    },
+    {
+      "title": "Manga &#039;Nanatsuya: Shinobu no Housekibako&#039; Gets TV Anime in 2027",
+      "description": "Production company Pony Canyon opened an official website for a television anime adaptation of Tomoko Ninomiya&#039;s Nanatsuya: Shinobu no Housekibako (Nanatsu-ya: Shinobou and Her Jewelry Box) on Wednesday, revealing the main staff, teaser visual (pictured), and teaser promotional video. The anime...",
+      "fullDescription": "Production company Pony Canyon opened an official website for a television anime adaptation of Tomoko Ninomiya&#039;s Nanatsuya: Shinobu no Housekibako (Nanatsu-ya: Shinobou and Her Jewelry Box) on Wednesday, revealing the main staff, teaser visual (pictured), and teaser promotional video. The anime will premiere in 2027. Staff Director: Chiaki Kon (Golden Time, Niehime to Kemono no Ou) Series Composition: Seishi Minakami (Sugar Apple Fairy Tale) Character Design: Mai Furuki (Mewkledreamy) Studi...",
+      "link": "https://myanimelist.net/news/74927894?_location=rss",
+      "pubDate": "Wed, 11 Nov 2026 01:24:46 -0800",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1794388977-779f6573cde1d8290f2e36b9038d83b4.jpeg",
+      "guid": "https://myanimelist.net/news/74927894?_location=rss"
+    },
+    {
+      "title": "Berserk of Gluttony Season 2 Premieres Next April",
+      "description": "New teaser visual also revealed",
+      "fullDescription": "New teaser visual also revealed",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/berserk-of-gluttony-season-2-premieres-next-april/.243681",
+      "pubDate": "Wed, 11 Nov 2026 04:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243681"
+    },
+    {
+      "title": "≠ME Idol Momo Sakurai Voice-Acts, Sings in Gacha Girls Corps Anime",
+      "description": "Sakurai voices rabbit Mofutto, sings Mofutto's version of ending song \"Mofu-kyun Heart♡\"",
+      "fullDescription": "Sakurai voices rabbit Mofutto, sings Mofutto's version of ending song \"Mofu-kyun Heart♡\"",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-11/me-idol-momo-sakurai-voice-acts-sings-in-gacha-girls-corps-anime/.243711",
+      "pubDate": "Wed, 11 Nov 2026 03:07:20 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243711/gacha.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243711"
+    },
     {
       "title": "Aoharu Once More Light Anime's Teaser Reveals Cast, More Staff, January 2027 Debut",
       "description": "Tasuku Kaito, Kazuki Ura star in BL story",
@@ -23,149 +166,6 @@
       "category": "Newspaper",
       "thumbnail": null,
       "guid": "https://www.animenewsnetwork.com/cms/.243702"
-    },
-    {
-      "title": "Mameshiba Characters Get Oyatsushiba Spinoff Short Net Anime",
-      "description": "Anime about characters inspired by sweet rice cakes debuts on Friday",
-      "fullDescription": "Anime about characters inspired by sweet rice cakes debuts on Friday",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/mameshiba-characters-get-oyatsushiba-spinoff-short-net-anime/.243704",
-      "pubDate": "Tue, 10 Nov 2026 21:43:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243704/oyatsushiba2.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243704"
-    },
-    {
-      "title": "Tekken 8 Game Streams Roger Jr. Starter Guide",
-      "description": "Season 3 character launches in early access on November 11",
-      "fullDescription": "Season 3 character launches in early access on November 11",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/tekken-8-game-streams-roger-jr-starter-guide/.243701",
-      "pubDate": "Tue, 10 Nov 2026 19:00:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243701"
-    },
-    {
-      "title": "The Iceblade Sorcerer Shall Rule the World Author Nana Mikoshiba's Original Novel Gets Manga Adaptation on November 17",
-      "description": "Artist Meguru Kanadome draws manga of Mikoshiba's novel",
-      "fullDescription": "Artist Meguru Kanadome draws manga of Mikoshiba's novel",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/the-iceblade-sorcerer-shall-rule-the-world-author-nana-mikoshiba-original-novel-gets-manga-/.243677",
-      "pubDate": "Tue, 10 Nov 2026 18:00:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243677/nana.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243677"
-    },
-    {
-      "title": "Yu-Gi-Oh! Tag Force GX Game Previews Duels, Partners, Multiplayer, Exploration in New Trailer",
-      "description": "Updated version of Yu-Gi-Oh! GX Tag Force 3, previously unreleased in N. America, launches on February 16",
-      "fullDescription": "Updated version of <cite>Yu-Gi-Oh! GX Tag Force 3</cite>, previously unreleased in N. America, launches on February 16",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/yu-gi-oh-tag-force-gx-game-previews-duels-partners-multiplayer-exploration-in-new-trailer/.243697",
-      "pubDate": "Tue, 10 Nov 2026 17:00:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243697"
-    },
-    {
-      "title": "WEBTOON Reports US$9.23 Million in 3rd Quarter of 2026",
-      "description": "Japan, WEBTOON's largest market by revenue, struggled",
-      "fullDescription": "Japan, WEBTOON's largest market by revenue, struggled",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/webtoon-reports-usd9.23-million-in-3rd-quarter-of-2026/.243674",
-      "pubDate": "Tue, 10 Nov 2026 16:00:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.8/224522/thumb_basic.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243674"
-    },
-    {
-      "title": "HIDIVE to Release Made in Abyss: Awakening Mystery Film in 2027 With N. American Premiere Screening at Anime Frontier on December 5",
-      "description": "English-subbed trailer streamed for 1st film in new Made in Abyss anime film series",
-      "fullDescription": "English-subbed trailer streamed for 1st film in new <cite>Made in Abyss</cite> anime film series",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/hidive-to-release-made-in-abyss-awakening-mystery-film-in-2027-with-n-american-premiere-screening-/.243696",
-      "pubDate": "Tue, 10 Nov 2026 15:00:35 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243122/mia-mezamerushinpeikv.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243696"
-    },
-    {
-      "title": "Rock Band FLOW Announce U.S. Dates for New 2027 World Tour",
-      "description": "Band perform in U.S. in February 2027 starting in Boston",
-      "fullDescription": "Band perform in U.S. in February 2027 starting in Boston",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/rock-band-flow-announce-u.s-dates-for-new-2027-world-tour/.243689",
-      "pubDate": "Tue, 10 Nov 2026 14:00:22 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243689/flow-world-tour-2027.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243689"
-    },
-    {
-      "title": "Dragon Quest RPG Mobile Game's Trailer Reveals 2027 Launch, Closed Beta Test in December",
-      "description": "Dragon Quest RPG: The Cursed Tree and the Chosen Isle game features turn-based battles, dungeons",
-      "fullDescription": "<cite>Dragon Quest RPG: The Cursed Tree and the Chosen Isle</cite> game features turn-based battles, dungeons",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/dragon-quest-rpg-mobile-game-trailer-reveals-2027-launch-closed-beta-test-in-december/.243690",
-      "pubDate": "Tue, 10 Nov 2026 12:00:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243690"
-    },
-    {
-      "title": "Crunchyroll Streams Suikoden Anime",
-      "description": "1st 6 episodes are now streaming with new episodes premiering on Tuesdays",
-      "fullDescription": "1st 6 episodes are now streaming with new episodes premiering on Tuesdays",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/crunchyroll-streams-suikoden-anime/.243688",
-      "pubDate": "Tue, 10 Nov 2026 11:00:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/235911/hejminuaiaas0pb.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243688"
-    },
-    {
-      "title": "Kodansha's Comic Tint Digital Magazine to End After 9 Years",
-      "description": "Last issue comes out on January 1, manga to move to Ane Friend, Palcy services",
-      "fullDescription": "Last issue comes out on January 1, manga to move to Ane Friend, Palcy services",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/kodansha-comic-tint-digital-magazine-to-end-after-9-years/.243665",
-      "pubDate": "Tue, 10 Nov 2026 08:07:45 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243665/comictint.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243665"
-    },
-    {
-      "title": "DMM Establishes New Animation Studio Gleestone",
-      "description": "Naokazu Tsuruta heads company handling works from planning stages to actual animation production",
-      "fullDescription": "Naokazu Tsuruta heads company handling works from planning stages to actual animation production",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/dmm-establishes-new-animation-studio-gleestone/.243682",
-      "pubDate": "Tue, 10 Nov 2026 07:52:45 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243682/glee.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243682"
-    },
-    {
-      "title": "Light Novel &#039;Hyouken no Majutsushi ga Sekai wo Suberu&#039; Concludes with 10th Volume",
-      "description": "The official X account for author Nana Mikoshiba announced on Tuesday that the Hyouken no Majutsushi ga Sekai wo Suberu: Sekai Saikyou no Majutsushi de Aru Shounen wa, Majutsu Gakuin ni Nyuugaku suru (The Iceblade Sorcerer Shall Rule the World) light novel series will end with its tenth volume, sche...",
-      "fullDescription": "The official X account for author Nana Mikoshiba announced on Tuesday that the Hyouken no Majutsushi ga Sekai wo Suberu: Sekai Saikyou no Majutsushi de Aru Shounen wa, Majutsu Gakuin ni Nyuugaku suru (The Iceblade Sorcerer Shall Rule the World) light novel series will end with its tenth volume, scheduled to be released on December 2. The main story has already concluded, with the final volume featuring revised and expanded side stories from the web novel, as well as an original story covering Ra...",
-      "link": "https://myanimelist.net/news/74924616?_location=rss",
-      "pubDate": "Tue, 10 Nov 2026 04:45:55 -0800",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1794314659-da45de06b7c66e0ecac68b2612a00a61.jpeg",
-      "guid": "https://myanimelist.net/news/74924616?_location=rss"
-    },
-    {
-      "title": "Hollywood Reporter, Variety: Apple TV in Talks for Monarch: Legacy of Monsters Season 3",
-      "description": "Magazines: New season would have new showrunner, writers, Titan monsters",
-      "fullDescription": "Magazines: New season would have new showrunner, writers, Titan monsters",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-10/hollywood-reporter-variety-apple-tv-in-talks-for-monarch-legacy-of-monsters-season-3/.243668",
-      "pubDate": "Tue, 10 Nov 2026 06:55:42 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max450x450/cms/news.6/203372/monarch.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243668"
     }
   ],
   "total": 15
