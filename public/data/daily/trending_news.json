@@ -1,7 +1,18 @@
 {
-  "version": 1794514983817,
-  "fetchedAt": "2026-11-12T20:23:03.817Z",
+  "version": 1794533086514,
+  "fetchedAt": "2026-11-13T01:24:46.514Z",
   "news": [
+    {
+      "title": "Blue Rights Company Unveils Pilot Film for Orochi -Seventh Echoes- Original Animated Feature",
+      "description": "Akira film animation director Takashi Nakamura helms film, credited for original concept",
+      "fullDescription": "<cite>Akira</cite> film animation director Takashi Nakamura helms film, credited for original concept",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-12/blue-rights-company-unveils-pilot-film-for-orochi-seventh-echoes-original-animated-feature/.243748",
+      "pubDate": "Thu, 12 Nov 2026 20:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243748/orochi.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243748"
+    },
     {
       "title": "Sega Streams Sonic the Hedgehog: Memories and Beyond Short Animated Film on YouTube",
       "description": "Short commemorating franchise's 35th anniversary features Sonic & friends vs. Metal Sonic",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243741/yaoyorozu.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243741"
-    },
-    {
-      "title": "Rei Mikamoto Ends Blood Friend Manga in December",
-      "description": "Series debuted in December 2025",
-      "fullDescription": "Series debuted in December 2025",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-11/rei-mikamoto-ends-blood-friend-manga-in-december/.243738",
-      "pubDate": "Wed, 11 Nov 2026 22:52:30 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243738/91qy4sapjtl.sl1500.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243738"
     }
   ],
   "total": 15
