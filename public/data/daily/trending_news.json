@@ -1,7 +1,29 @@
 {
-  "version": 1794672214406,
-  "fetchedAt": "2026-11-14T16:03:34.406Z",
+  "version": 1794689119472,
+  "fetchedAt": "2026-11-14T20:45:19.472Z",
   "news": [
+    {
+      "title": "Kakao, OpenAI Collaborate on AI-Generated Short Animation Based on Ryan Begins Webtoon",
+      "description": "Production team stated they used approximately 1,500 prompts for single scene to achieve desired direction, emotional tone",
+      "fullDescription": "Production team stated they used approximately 1,500 prompts for single scene to achieve desired direction, emotional tone",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-14/kakao-openai-collaborate-on-ai-generated-short-animation-based-on-ryan-begins-webtoon/.243712",
+      "pubDate": "Sat, 14 Nov 2026 13:15:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.8/222549/3246655_3305364_2723.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243712"
+    },
+    {
+      "title": "Classroom of the Elite: Year 3 Tops Oricon's Light Novel Ranking for October",
+      "description": "Witch on the Holy Night, Alya Sometimes Hides Her Feelings in Russian rank at #2, #3",
+      "fullDescription": "<cite>Witch on the Holy Night</cite>, <cite>Alya Sometimes Hides Her Feelings in Russian</cite> rank at #2, #3",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-14/classroom-of-the-elite-year-3-tops-oricon-light-novel-ranking-for-october/.243810",
+      "pubDate": "Sat, 14 Nov 2026 11:15:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238242/oricon-tate-rgb-560x560.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243810"
+    },
     {
       "title": "Love Live! Hasu no Sora Jogakuin School Idol Club Anime's Special Video Previews TV Footage",
       "description": "Video also previews \"Dream Believers (106th Class Start Ver.)\" song",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243798/living-it-up.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243798"
-    },
-    {
-      "title": "Gifted Baseball Webtoon Gets Live-Action TV Series Adaptation Premiering on December 5",
-      "description": "Series centers on coach who gains ability to see players' natural talents, limits to their potential",
-      "fullDescription": "Series centers on coach who gains ability to see players' natural talents, limits to their potential",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-13/gifted-baseball-webtoon-gets-live-action-tv-series-adaptation-premiering-on-december-5/.243783",
-      "pubDate": "Fri, 13 Nov 2026 11:15:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243783/images-9.jfif.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243783"
-    },
-    {
-      "title": "Aquaman Romance Webtoon Gets Japanese Live-Action Series Premiering on December 25",
-      "description": "Story explores main characters' changing feelings as they confront emotions they had not previously recognized",
-      "fullDescription": "Story explores main characters' changing feelings as they confront emotions they had not previously recognized",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-13/aquaman-romance-webtoon-gets-japanese-live-action-series-premiering-on-december-25/.243785",
-      "pubDate": "Fri, 13 Nov 2026 10:15:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243785/akr20261112040700005-02-i-p4.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243785"
     }
   ],
   "total": 15
