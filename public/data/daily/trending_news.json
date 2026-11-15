@@ -1,7 +1,18 @@
 {
-  "version": 1794689119472,
-  "fetchedAt": "2026-11-14T20:45:19.472Z",
+  "version": 1794702347975,
+  "fetchedAt": "2026-11-15T00:25:47.975Z",
   "news": [
+    {
+      "title": "Even the Student Council Has It's Holes! Anime Casts Yōko Hikasa",
+      "description": "Hikasa plays council president Hisako's mother in episode 7 this weekend",
+      "fullDescription": "Hikasa plays council president Hisako's mother in episode 7 this weekend",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-14/even-the-student-council-has-its-holes-anime-casts-yoko-hikasa/.243815",
+      "pubDate": "Sat, 14 Nov 2026 18:44:31 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243815/hxbgctybqaaqm8k.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243815"
+    },
     {
       "title": "Kakao, OpenAI Collaborate on AI-Generated Short Animation Based on Ryan Begins Webtoon",
       "description": "Production team stated they used approximately 1,500 prompts for single scene to achieve desired direction, emotional tone",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/237605/5ss-vol1-front-cvr.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243800"
-    },
-    {
-      "title": "Living It Up in Another World Until I Get Bored Novels Get TV Anime",
-      "description": "Anime based on Fudaya Sanmongarasu, Tomozo's novels debuts in January 2027",
-      "fullDescription": "Anime based on Fudaya Sanmongarasu, Tomozo's novels debuts in January 2027",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-13/living-it-up-in-another-world-until-i-get-bored-novels-get-tv-anime/.243798",
-      "pubDate": "Fri, 13 Nov 2026 11:37:14 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243798/living-it-up.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243798"
     }
   ],
   "total": 15
