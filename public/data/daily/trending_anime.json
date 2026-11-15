@@ -1,7 +1,113 @@
 {
-  "version": 1794754102174,
-  "fetchedAt": "2026-11-15T14:48:22.174Z",
+  "version": 1794773804573,
+  "fetchedAt": "2026-11-15T20:16:44.573Z",
   "anime": [
+    {
+      "id": 212888,
+      "title": {
+        "romaji": "Tempal: Item no Chikara",
+        "english": "Overgeared",
+        "native": "テムパル～アイテムの力～"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212888-NhyvqPt5aIuJ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212888-NhyvqPt5aIuJ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212888-NhyvqPt5aIuJ.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/212888-ZsnNegBCKXQq.jpg",
+      "description": "Sin Yeong-U (a.k.a. Grid), an unlucky man in life and a low-level player in the popular VR game “Satisfy,” finds a powerful item that earns him a rare legendary class title: “Pagma’s Successor.” He’s now a skilled blacksmith who can forge unique weapons and equip the game’s most powerful gear. Grid resolves to use his new abilities to achieve fame and fortune, but as his very existence begins to stir up trouble in Satisfy, he realizes that life as a legend may be more than he bargained for….<br><br>\n\n(Source: Tapas, edited)<br><br>\n\n<i>Note: Tempal: Item no Chikara is streaming a week in advance of the TV broadcast on Prime Video and Crunchyroll beginning September 27th, 2026. Regular broadcasting began on October 2nd, 2026.</i>",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 76,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "J.C.STAFF"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "REDICE STUDIO"
+          },
+          {
+            "name": "Kakao piccoma"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "EGG FIRM"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 206814,
+      "title": {
+        "romaji": "Dragon Ball Super: Beerus",
+        "english": "Dragon Ball Super: Beerus",
+        "native": "ドラゴンボール超 ビルス"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206814-PVVzRbf1IQpe.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206814-PVVzRbf1IQpe.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206814-PVVzRbf1IQpe.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206814-ARuwrZJAGONN.jpg",
+      "description": "Several years have passed since the fierce battle against Majin Buu, and Earth has finally regained a brief moment of peace. At the same time, Beerus, the God of Destruction, awakens from his long, deep sleep.<br>\nEven Kai and Supreme Kai, aware of Beerus's overwhelming power to destroy entire planets, watch his awakening with great fear… Meanwhile, Beerus hears rumors of a Saiyan who defeated Frieza—and suddenly appears before Goku.<br>\nTargeted by Beerus, the strongest being in the universe, Earth is in grave danger. Thus begins an earth-shattering cosmic battle between the God of Destruction and Goku and his alliesa—a conflict that will shake the entire universe.\n<br><br>\n(Source: Official Site)\n<br><br>\n<i>Note: “Enhanced” edition of Dragon Ball Super, featuring a large volume of newly added and redrawn cuts, a reconstructed narrative, and updated visuals for a more immersive and faithful representation of Akira Toriyama’s original manga.</i>",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "averageScore": 80,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Toei Animation"
+          },
+          {
+            "name": "Shueisha"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 11
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
     {
       "id": 195604,
       "title": {
@@ -61,6 +167,146 @@
       }
     },
     {
+      "id": 205896,
+      "title": {
+        "romaji": "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku",
+        "english": "Full Clearing Another World under a Goddess with Zero Believers",
+        "native": "信者ゼロの女神サマと始める異世界攻略"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205896-ElrV8oVAsuax.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205896-ElrV8oVAsuax.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205896-ElrV8oVAsuax.jpg"
+      },
+      "bannerImage": null,
+      "description": "RPG player Makoto Takatsuki is hurled into another world with awful skills and stats. But he soon meets a goddess named Noah, who asks him to become her 1st believer in return for blessings.<br>\n<br>\n(Source: J-Novel Club)",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 65,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "HORNETS"
+          },
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "BS Asahi"
+          },
+          {
+            "name": "ADK Marketing Solutions"
+          },
+          {
+            "name": "OVERLAP"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "DAX Production"
+          },
+          {
+            "name": "KLOCKWORX"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 11
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 186541,
+      "title": {
+        "romaji": "Mezametara Saikyou Soubi to Uchuusen-mochi datta node, Ikkodate Mezashite Youhei to shite Jiyuu ni Ikitai",
+        "english": "Reborn as a Space Mercenary: I Woke Up Piloting the Strongest Starship!",
+        "native": "目覚めたら最強装備と宇宙船持ちだったので、一戸建て目指して傭兵として自由に生きたい"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx186541-caYpLsLmbCh7.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx186541-caYpLsLmbCh7.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186541-caYpLsLmbCh7.jpg"
+      },
+      "bannerImage": null,
+      "description": "Sato Takahiro was an ordinary office worker and hobbyist gamer until the day he woke up on a spaceship–one that strangely resembled a craft from a favorite space-shooter game. With a decked-out ship, a crew full of babes, and a fantastic universe to explore, he's going to make the most of his good luck and create the life he's always dreamed of!<br><br>\n\n(Source: Seven Seas Entertainment)",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Drama",
+        "Mecha",
+        "Romance",
+        "Sci-Fi"
+      ],
+      "averageScore": 69,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "studio A-CAT"
+          },
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "Good Smile Company"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "Yomiuri TV"
+          },
+          {
+            "name": "Sansei R&D"
+          },
+          {
+            "name": "Docomo Anime Store"
+          },
+          {
+            "name": "WOWOW"
+          },
+          {
+            "name": "HAYATE"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 4
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 189123,
       "title": {
         "romaji": "Ao no Hako Season 2",
@@ -100,55 +346,6 @@
           },
           {
             "name": "Toho"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 4
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 191788,
-      "title": {
-        "romaji": "Aoashi 2nd Season",
-        "english": "Aoashi Season 2",
-        "native": "アオアシ 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191788-XC6F24LdX6a4.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191788-XC6F24LdX6a4.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191788-tyhsHpXeF26X.jpg",
-      "description": "Aoi Ashito’s game has now earned him a spot on the A team, but he is quickly overwhelmed by his harsh new reality. Surrounded by elite players like Kuribayashi and Akutsu, practices are just as merciless as the matches. In this U-18 Premier League of powerhouse talent, Ashito must evolve or be crushed, if he’s ever to be acknowledged.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Sports"
-      ],
-      "averageScore": 81,
-      "episodes": 24,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "TMS Entertainment"
-          },
-          {
-            "name": "Shogakukan-Shueisha Productions"
-          },
-          {
-            "name": "Shogakukan"
-          },
-          {
-            "name": "NHK Enterprises"
           }
         ]
       },
@@ -230,6 +427,120 @@
         "year": 1999,
         "month": 10,
         "day": 20
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 185756,
+      "title": {
+        "romaji": "Tensei Kizoku, Kantei Skill de Nariagaru 3rd Season",
+        "english": "As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World Season 3",
+        "native": "転生貴族、鑑定スキルで成り上がる 第3期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185756-xPCl0RyQ7fXD.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185756-xPCl0RyQ7fXD.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185756-xPCl0RyQ7fXD.jpg"
+      },
+      "bannerImage": null,
+      "description": "The third season of <i>Tensei Kizoku, Kantei Skill de Nariagaru</i>.\n<br><br>\n<i>Note: On September 4, 2026, it was announced that GeyeG Pictures would take over the production from studio MOTHER while keeping the same staff.</i>",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 68,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "GeyeG Pictures"
+          },
+          {
+            "name": "Bandai Namco Filmworks"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Bandai Namco Music Live"
+          },
+          {
+            "name": "Bushiroad Move"
+          },
+          {
+            "name": "U-NEXT"
+          },
+          {
+            "name": "CBC TV"
+          },
+          {
+            "name": "Dentsu"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 9,
+        "day": 27
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 191788,
+      "title": {
+        "romaji": "Aoashi 2nd Season",
+        "english": "Aoashi Season 2",
+        "native": "アオアシ 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191788-XC6F24LdX6a4.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191788-XC6F24LdX6a4.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191788-XC6F24LdX6a4.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191788-tyhsHpXeF26X.jpg",
+      "description": "Aoi Ashito’s game has now earned him a spot on the A team, but he is quickly overwhelmed by his harsh new reality. Surrounded by elite players like Kuribayashi and Akutsu, practices are just as merciless as the matches. In this U-18 Premier League of powerhouse talent, Ashito must evolve or be crushed, if he’s ever to be acknowledged.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Sports"
+      ],
+      "averageScore": 81,
+      "episodes": 24,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "TMS Entertainment"
+          },
+          {
+            "name": "Shogakukan-Shueisha Productions"
+          },
+          {
+            "name": "Shogakukan"
+          },
+          {
+            "name": "NHK Enterprises"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 4
       },
       "endDate": {
         "year": null,
@@ -354,113 +665,47 @@
       }
     },
     {
-      "id": 202250,
+      "id": 208025,
       "title": {
-        "romaji": "Kashita Maryoku wa [Revo Barai] de Kyousei Choushuu",
-        "english": "Magic Repo Man: Dumped by My Party, I’ll Cash In With a Cute Support Fairy to Become the Strongest!",
-        "native": "貸した魔力は【リボ払い】で強制徴収"
+        "romaji": "Dark Summoner to Dekiteiru",
+        "english": "I'm Dating a Dark Summoner",
+        "native": "ダークサモナーとデキている"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx202250-mpm2cvr92Au2.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx202250-mpm2cvr92Au2.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202250-mpm2cvr92Au2.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx208025-JKvqWNr8rz8l.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx208025-JKvqWNr8rz8l.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208025-JKvqWNr8rz8l.jpg"
       },
-      "bannerImage": null,
-      "description": "If there's one thing you can never have enough of in a world of RPG-style swords and sorcery, it's magic points! Whether you're fueling spells, techniques, or showing off an incredible ability, you've gotta spend those points to do real damage. But what if you run out?\n<br><br>\nLent is part of the up-and-coming party known as the “Skypiercers,” and thanks to his unique Gift, he can loan massive amounts of magic to others. No MP? No problem with Lent around! Except, now that his companions have become formidable heroes (thanks to his skill), his usefulness is questioned. Kicked out of the group, Lent is furious…until he discovers a hidden power to his Gift. Now, with his adorably devious fairy partner, he's going to claw back every last scrap of magic from his former party—with interest!<br><br>\n(Source: Seven Seas Entertainment)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/208025-s7hcRQO7kwmH.jpg",
+      "description": "Amona’s a dark summoner with demonic powers. Roni’s a devout priest who’s way too uptight. By all rights, they should hate each other. Instead, they end up fast-tracking their enemies-to-lovers arc with a one-night stand that somehow insists on becoming a recurring event. Now they must hide their situationship from the rest of the party while denying their growing attraction to one another, all while dealing with an imp who’s far too invested in their love life.\n<br><br>\n(Source: HIDIVE)",
       "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
+        "Comedy",
+        "Ecchi",
+        "Fantasy",
+        "Romance"
       ],
-      "averageScore": 62,
-      "episodes": null,
+      "averageScore": 67,
+      "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "SynergySP"
+            "name": "WWWave"
           },
           {
-            "name": "TV Asahi"
+            "name": "AtoriE"
           },
           {
-            "name": "TV Asahi Music"
-          },
-          {
-            "name": "Flex Comics"
-          },
-          {
-            "name": "SynergySP"
-          },
-          {
-            "name": "Kotobukiya"
-          },
-          {
-            "name": "BS Asahi"
-          },
-          {
-            "name": "Bushiroad Move"
-          },
-          {
-            "name": "AbemaTV"
-          },
-          {
-            "name": "Ray"
+            "name": "Nyan Pollution-ω-"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 4
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 219904,
-      "title": {
-        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 5th Season",
-        "english": null,
-        "native": "Re:ゼロから始める異世界生活 5th season"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx219904-DQOTtKhwpB8S.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx219904-DQOTtKhwpB8S.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx219904-DQOTtKhwpB8S.jpg"
-      },
-      "bannerImage": null,
-      "description": "The fifth season of <i>Re:Zero kara Hajimeru Isekai Seikatsu</i>.",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Drama",
-        "Fantasy",
-        "Psychological",
-        "Romance",
-        "Thriller"
-      ],
-      "averageScore": null,
-      "episodes": null,
-      "status": "NOT_YET_RELEASED",
-      "season": null,
-      "seasonYear": null,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KADOKAWA"
-          }
-        ]
-      },
-      "startDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "day": 5
       },
       "endDate": {
         "year": null,
@@ -524,135 +769,70 @@
       }
     },
     {
-      "id": 204389,
+      "id": 200455,
       "title": {
-        "romaji": "Yasei no Last Boss ga Arawareta! 2nd Season",
-        "english": "A Wild Last Boss Appeared! Season 2",
-        "native": "野生のラスボスが現れた！ 第2期"
+        "romaji": "Yowaki MAX Reijou Nano ni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta",
+        "english": "Even Though I'm a Super Timid Noble Girl, I Accepted the Bet From My Cunning Fiancé",
+        "native": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx204389-jCoFCeTthDMy.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx204389-jCoFCeTthDMy.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx204389-jCoFCeTthDMy.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx200455-P3XStRQMJ7Di.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx200455-P3XStRQMJ7Di.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200455-P3XStRQMJ7Di.png"
       },
-      "bannerImage": null,
-      "description": "The second season of <i>Yasei no Last Boss ga Arawareta!</i>",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/200455-rlIXyuk0jHE3.jpg",
+      "description": "I was reborn as a villainous daughter in a reverse harem otome game. \n<br><br>\nAfter being sick with a high fever at the age of 10, Pia Rockwell suddenly remembered her past life as a university student in Japan. But far from going down the villainess route, all this super timid girl wants is to finally use her knowledge from when she was a grad student studying to get her doctorate in paleontology. Her ultimate goal is to become a commoner, excavate fossils, build a museum and then become a curator.\n<br><br>\nSo in order to escape the villainess route and avoid being deported by her fiancé during the graduation ball, Pia decides to avoid the upcoming hurt and heartache and asks to break off her engagement to Rufus, the Prime Minister's son.\n<br><br>\nBut will her cunning fiancé let her go that easily?",
       "genres": [
-        "Action",
-        "Adventure",
-        "Fantasy"
+        "Comedy",
+        "Fantasy",
+        "Romance"
       ],
-      "averageScore": 74,
-      "episodes": null,
+      "averageScore": 67,
+      "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
       "seasonYear": 2026,
       "studios": {
         "nodes": [
           {
-            "name": "NBCUniversal Entertainment Japan"
+            "name": "Jumondou"
           },
           {
-            "name": "WAO World"
+            "name": "KADOKAWA"
           },
           {
-            "name": "Sun Electronics"
+            "name": "Docomo Anime Store"
           },
           {
-            "name": "Touhouku Shinsha"
-          },
-          {
-            "name": "Earth Star Entertainment"
-          },
-          {
-            "name": "Kansai TV"
+            "name": "Studio Flag"
           },
           {
             "name": "BS Asahi"
           },
           {
-            "name": "Bushiroad Move"
-          },
-          {
-            "name": "KLOCKWORX"
-          },
-          {
-            "name": "Sorajima Studio"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 9,
-        "day": 26
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 169581,
-      "title": {
-        "romaji": "Magical★Explorer: Eroge no Yuujin Chara ni Tensei Shitakedo, Game Chishiki Tsukatte Jiyuu ni Ikiru",
-        "english": "Magical Explorer",
-        "native": "マジカル★エクスプローラー　エロゲの友人キャラに転生したけど、ゲーム知識使って自由に生きる"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169581-UlAviVH36Hxi.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169581-UlAviVH36Hxi.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169581-UlAviVH36Hxi.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/169581-cdooqY7Jqy3x.jpg",
-      "description": "Few titles are more revered among horndogs-(ahem) connoisseurs of Japanese erotic video games-than Magical Explorer. One day, our smut-loving hero wakes up to find he has been reincarnated into the body of the game’s dreamboat protagonist! Or rather, his hapless comic-relief best friend, Kousuke Takioto. But with his unparalleled knowledge of Magical Explorer and Kousuke’s unorthodox abilities (a scarf that doubles as a fist?), our hero vows to turn the game’s unluckiest loser into its mightiest heartthrob. In this world, nothing is out of reach when you’ve got the know-how!\n<br><br>\n(Source: Yen Press)\n<br><br>\n<i>Note: Each episode streamed 1 week early on ABEMA and d anime store. The original TV broadcast started on October 4th, 2026.<i>",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Ecchi",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 69,
-      "episodes": 13,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "WHITE FOX"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "Contents Seed"
-          },
-          {
-            "name": "SYSTEM SERVICE"
+            "name": "AT-X"
           },
           {
             "name": "TOKYO MX"
           },
           {
-            "name": "Yomiuri TV"
+            "name": "Sumiseki"
           },
           {
-            "name": "SANKYO"
+            "name": "Nippon Columbia"
+          },
+          {
+            "name": "Sun Television"
+          },
+          {
+            "name": "Jumondou"
           }
         ]
       },
       "startDate": {
         "year": 2026,
-        "month": 9,
-        "day": 27
+        "month": 10,
+        "day": 4
       },
       "endDate": {
         "year": null,
@@ -700,179 +880,6 @@
         "year": 2026,
         "month": 9,
         "day": 25
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 205909,
-      "title": {
-        "romaji": "Hotaru no Yomeiri",
-        "english": "Firefly Wedding",
-        "native": "ホタルの嫁入り"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205909-DM0fAzNQulod.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205909-DM0fAzNQulod.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205909-DM0fAzNQulod.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/205909-hGeuFYrdhf9S.jpg",
-      "description": "On the surface, Satoko has it all—she’s beautiful, the daughter of a nobleman, and at a prime age for marriage. Unfortunately, she is also quite ill and only has a short time left to live. Before she can secure a marriage that will redeem her worth in her family’s eyes, she finds herself the target of the mysterious assassin Shinpei, and her plans are put in jeopardy. In order to save herself, she makes a desperate proposal—of marriage! When it comes to love, however, Shinpei takes “until death do we part” seriously.<br>\n<br>\n(Source: VIZ Media)",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "averageScore": 75,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "david production"
-          },
-          {
-            "name": "Fuji TV"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "Shogakukan"
-          },
-          {
-            "name": "Shogakukan-Shueisha Productions"
-          },
-          {
-            "name": "david production"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 9
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
-      "id": 180894,
-      "title": {
-        "romaji": "Romelia Senki: Maou wo Taoshita nochi mo Jinrui Yabasou dakara Guntai Soshiki Shita",
-        "english": "Romelia War Chronicle",
-        "native": "ロメリア戦記 〜魔王を倒した後も人類やばそうだから軍隊組織した〜"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180894-o3pz4DWFm3je.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180894-o3pz4DWFm3je.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180894-o3pz4DWFm3je.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/180894-msSUHJ5Qejvf.jpg",
-      "description": "Romelia and her party succeed in defeating the Demon King Zelgis, though Prince Henri’s reckless charge forces them into a grueling battle. In the aftermath, Romelia is branded \"dead weight\" for not fighting directly, and the Prince unilaterally breaks off their engagement. Denied a place in the victory celebrations, Romelia returns home, only to be met with cold indifference from her family and society. Yet, she refuses to break. She has already set her sights on the path that lies ahead.\n<br><br>\n(Source: Crunchyroll)\n<br><br>\n<i>Note: Romelia War Chronicle streamed 2 days in advance of the TV broadcast on AnimeTimes, U-NEXT, and Netflix beginning October 3, 2026. Regular broadcasting began on October 5, 2026.</i>",
-      "genres": [
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "averageScore": 73,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "Atra"
-          },
-          {
-            "name": "Rakuten"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "BS11"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "Bit grooove promotion"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 3
       },
       "endDate": {
         "year": null,
