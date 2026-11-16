@@ -1,7 +1,117 @@
 {
-  "version": 1794811752690,
-  "fetchedAt": "2026-11-16T06:49:12.690Z",
+  "version": 1794848110293,
+  "fetchedAt": "2026-11-16T16:55:10.293Z",
   "news": [
+    {
+      "title": "French Manga, Comic Creator Frédéric Boilet Dies at 66",
+      "description": "Boilet drew Yukiko's Spinach, Mariko Parade manga",
+      "fullDescription": "Boilet drew <cite>Yukiko's Spinach</cite>, <cite>Mariko Parade</cite> manga",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-16/french-manga-comic-creator-frederic-boilet-dies-at-66/.243766",
+      "pubDate": "Mon, 16 Nov 2026 11:30:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243766/frederic-boilet.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243766"
+    },
+    {
+      "title": "The Days of Diamond Manga Gets TV Anime",
+      "description": "Takakazu Nagatomo to direct anime of Ōhashi Hirai's manga at Lapin Track",
+      "fullDescription": "Takakazu Nagatomo to direct anime of Ōhashi Hirai's manga at Lapin Track",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-16/the-days-of-diamond-manga-gets-tv-anime/.243858",
+      "pubDate": "Mon, 16 Nov 2026 10:41:18 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243858/the-days-of-diamond-anime.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243858"
+    },
+    {
+      "title": "Manga &#039;Diamond no Kouzai&#039; Gets TV Anime",
+      "description": "Production company TOHO animation opened an official website for a television anime adaptation of Oohashi Hirai&#039;s Diamond no Kouzai (The Days of Diamond) manga on Tuesday, revealing the main staff and an announcement visual (pictured). Staff Director: Takakazu Nagatomo (Seihantai na Kimi to Bok...",
+      "fullDescription": "Production company TOHO animation opened an official website for a television anime adaptation of Oohashi Hirai&#039;s Diamond no Kouzai (The Days of Diamond) manga on Tuesday, revealing the main staff and an announcement visual (pictured). Staff Director: Takakazu Nagatomo (Seihantai na Kimi to Boku) Assistant Director: Chigusa Kiyota (Dungeon Meshi episode director) Series Composition, Script: Teruko Utsumi (Nippon Sangoku) Character Design: Atsushi Saitou (Shoushimin Series) Color Design: Kum...",
+      "link": "https://myanimelist.net/news/74946798?_location=rss",
+      "pubDate": "Mon, 16 Nov 2026 07:18:10 -0800",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1794842201-74774b0193b01869b651b291499e6c9e.jpeg",
+      "guid": "https://myanimelist.net/news/74946798?_location=rss"
+    },
+    {
+      "title": "OceanVeil Streams English Dub for Hands Off: Sawaranaide Koteashi-kun Anime",
+      "description": "Brittany Lauda, Sean Flaherty star in dub available on November 27",
+      "fullDescription": "Brittany Lauda, Sean Flaherty star in dub available on November 27",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-16/oceanveil-streams-english-dub-for-hands-off-sawaranaide-koteashi-kun-anime/.243855",
+      "pubDate": "Mon, 16 Nov 2026 10:15:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243855/image5.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243855"
+    },
+    {
+      "title": "34% of Developers in 2026 GDC Survey Were Laid Off in Last 2 Years",
+      "description": "40% of game developers use generative AI, though 55% comment it has negative impact",
+      "fullDescription": "40% of game developers use generative AI, though 55% comment it has negative impact",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-16/34-percent-of-developers-in-2026-gdc-survey-were-laid-off-in-last-2-years/.243840",
+      "pubDate": "Mon, 16 Nov 2026 09:15:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.8/220222/_as_fyo_400x400.png.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243840"
+    },
+    {
+      "title": "The Summer Hikaru Died Novels End With 3rd Volume",
+      "description": "3rd volume ships on January 25",
+      "fullDescription": "3rd volume ships on January 25",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-16/the-summer-hikaru-died-novels-end-with-3rd-volume/.243843",
+      "pubDate": "Mon, 16 Nov 2026 08:15:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/feature/223588/summer-hikaru-died-cover.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243843"
+    },
+    {
+      "title": "Märchen Crown Manga Ends in Next Chapter",
+      "description": "Series from Aka Akasaka, Aoi Kujira, Ajichika debuted in March 2025",
+      "fullDescription": "Series from Aka Akasaka, Aoi Kujira, Ajichika debuted in March 2025",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-16/marchen-crown-manga-ends-in-next-chapter/.243838",
+      "pubDate": "Mon, 16 Nov 2026 07:15:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243838/71jxm8yg8nl.sl1200.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243838"
+    },
+    {
+      "title": "&#039;Skip to Loafer 2nd Season&#039; Reveals Additional Cast Pair, First Promo",
+      "description": "The official website for the Skip to Loafer (Skip and Loafer) television anime revealed an additional pair of cast, new key visual, and the first promotional video for the Season 2 on Monday. The second season adapting Misaki Takamatsu&#039;s coming-of-age manga will premiere in April 2027. Voice ac...",
+      "fullDescription": "The official website for the Skip to Loafer (Skip and Loafer) television anime revealed an additional pair of cast, new key visual, and the first promotional video for the Season 2 on Monday. The second season adapting Misaki Takamatsu&#039;s coming-of-age manga will premiere in April 2027. Voice actresses Reina Ueda (Mao) and Yuuto Takenaka (Saijo no Osewa) are joining in the anime as Chieri Yasaka and Kiyohiko Ujiie, respectively. Kotomi Deai (Natsume Yuujinchou Go) is directing the anime at P...",
+      "link": "https://myanimelist.net/news/74945973?_location=rss",
+      "pubDate": "Mon, 16 Nov 2026 01:46:46 -0800",
+      "source": "MyAnimeList",
+      "category": "Newspaper",
+      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1794822374-1b94caf26ae2863aca7cf65712fa6cba.jpeg",
+      "guid": "https://myanimelist.net/news/74945973?_location=rss"
+    },
+    {
+      "title": "Skip & Loafer Anime's 2nd Season Reveals More Cast in 1st Promo Video",
+      "description": "Reina Ueda, Yuto Takenaka join cast for new season debuting in April 2027",
+      "fullDescription": "Reina Ueda, Yuto Takenaka join cast for new season debuting in April 2027",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-16/skip-and-loafer-anime-2nd-season-reveals-more-cast-in-1st-promo-video/.243852",
+      "pubDate": "Mon, 16 Nov 2026 04:39:47 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max550x550/cms/news.10/243852/chieri.jfif.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243852"
+    },
+    {
+      "title": "Wanpaku! Touken Ranbu TV Anime Debuts on January 6",
+      "description": "Main staff also revealed",
+      "fullDescription": "Main staff also revealed",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-16/wanpaku-touken-ranbu-tv-anime-debuts-on-january-6/.243850",
+      "pubDate": "Mon, 16 Nov 2026 02:23:41 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243850/wanpaku.jfif.jpeg",
+      "guid": "https://www.animenewsnetwork.com/cms/.243850"
+    },
     {
       "title": "&#039;Wanpaku! Touken Ranbu&#039; Reveals Main Staff, Winter 2027 Premiere",
       "description": "The official website of the Wanpaku! Touken Ranbu television anime revealed the main staff and a teaser visual (pictured). The anime series, based on the character project designed and produced by Sanrio for the Touken Ranbu Online game, will premiere on January 6 at 9:54 p.m. on Tokyo MX. Staff Dir...",
@@ -56,116 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243834/2-v003c-857x1200.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.243834"
-    },
-    {
-      "title": "Uzono Shiniko Hōkoku Manga Ends in 4th Volume",
-      "description": "Manga adaptation of Bunkichi Majima's novel debuted in December 2024",
-      "fullDescription": "Manga adaptation of Bunkichi Majima's novel debuted in December 2024",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-15/uzono-shiniko-hokoku-manga-ends-in-4th-volume/.243817",
-      "pubDate": "Sun, 15 Nov 2026 09:15:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243817/710qecfuqcl.sl1500.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243817"
-    },
-    {
-      "title": "Odekake Kozame Anime Gets 2nd Film",
-      "description": "3 main cast members celebrate news with staff returning from 1st film, 2nd season",
-      "fullDescription": "3 main cast members celebrate news with staff returning from 1st film, 2nd season",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-15/odekake-kozame-anime-gets-2nd-film/.243832",
-      "pubDate": "Sun, 15 Nov 2026 08:24:54 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243832/teaser2dcs.jpeg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243832"
-    },
-    {
-      "title": "WEBTOON CEO Junkoo Kim Receives Outstanding Contribution Award at Korea's 26th Cartoon Day Ceremony",
-      "description": "Kim shares award with attorney Sung-joo Kim of law firm Deoksu, who was recognized for his work protecting cartoonists' rights, providing legal support",
-      "fullDescription": "Kim shares award with attorney Sung-joo Kim of law firm Deoksu, who was recognized for his work protecting cartoonists' rights, providing legal support",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-15/webtoon-ceo-junkoo-kim-receives-outstanding-contribution-award-at-korea-26th-cartoon-day-ceremony/.243642",
-      "pubDate": "Sun, 15 Nov 2026 08:15:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243642/akr20261105038200005-01-i-p4.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243642"
-    },
-    {
-      "title": "Stranger Than Heaven Game Streams Story Trailer for 2nd Act 'Kure'",
-      "description": "Game launches on January 15 for Xbox Series X|S, PlayStation 5, PC via Steam",
-      "fullDescription": "Game launches on January 15 for Xbox Series X|S, PlayStation 5, PC via Steam",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-15/stranger-than-heaven-game-streams-story-trailer-for-2nd-act-kure/.243829",
-      "pubDate": "Sun, 15 Nov 2026 07:15:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/237134/strangerthanheaven.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243829"
-    },
-    {
-      "title": "RetroCrush Streams Sugar Sugar Rune, Genocyber Anime",
-      "description": "Service also adds 1983 live-action film The Girl Who Leapt Through Time",
-      "fullDescription": "Service also adds 1983 live-action film <cite>The Girl Who Leapt Through Time</cite>",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-15/retrocrush-streams-sugar-sugar-rune-genocyber-anime/.243828",
-      "pubDate": "Sun, 15 Nov 2026 05:15:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/232714/sugar-sugar-rune.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.243828"
-    },
-    {
-      "title": "Bride of the Barrier Master Anime Streams Video for Hana's Twin Hazuki Ichise",
-      "description": "Kanon Takao voices Hana's twin sister in anime premiering in January",
-      "fullDescription": "Kanon Takao voices Hana's twin sister in anime premiering in January",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-15/bride-of-the-barrier-master-anime-streams-video-for-hana-twin-hazuki-ichise/.243831",
-      "pubDate": "Sun, 15 Nov 2026 04:26:33 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238448/teaser-visual-2.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243831"
-    },
-    {
-      "title": "MAGES Develops Girls und Panzer Mahjong Game For PS5, Switch 2",
-      "description": "Game slated for 2027 release",
-      "fullDescription": "Game slated for 2027 release",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-15/mages-develops-girls-und-panzer-mahjong-game-for-ps5-switch-2/.243827",
-      "pubDate": "Sun, 15 Nov 2026 02:06:19 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": null,
-      "guid": "https://www.animenewsnetwork.com/cms/.243827"
-    },
-    {
-      "title": "Even the Student Council Has It's Holes! Anime Casts Yōko Hikasa",
-      "description": "Hikasa plays council president Hisako's mother in episode 7 this weekend",
-      "fullDescription": "Hikasa plays council president Hisako's mother in episode 7 this weekend",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-14/even-the-student-council-has-its-holes-anime-casts-yoko-hikasa/.243815",
-      "pubDate": "Sat, 14 Nov 2026 18:44:31 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/243815/hxbgctybqaaqm8k.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243815"
-    },
-    {
-      "title": "Kakao, OpenAI Collaborate on AI-Generated Short Animation Based on Ryan Begins Webtoon",
-      "description": "Production team stated they used approximately 1,500 prompts for single scene to achieve desired direction, emotional tone",
-      "fullDescription": "Production team stated they used approximately 1,500 prompts for single scene to achieve desired direction, emotional tone",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-14/kakao-openai-collaborate-on-ai-generated-short-animation-based-on-ryan-begins-webtoon/.243712",
-      "pubDate": "Sat, 14 Nov 2026 13:15:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.8/222549/3246655_3305364_2723.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243712"
-    },
-    {
-      "title": "Classroom of the Elite: Year 3 Tops Oricon's Light Novel Ranking for October",
-      "description": "Witch on the Holy Night, Alya Sometimes Hides Her Feelings in Russian rank at #2, #3",
-      "fullDescription": "<cite>Witch on the Holy Night</cite>, <cite>Alya Sometimes Hides Her Feelings in Russian</cite> rank at #2, #3",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-14/classroom-of-the-elite-year-3-tops-oricon-light-novel-ranking-for-october/.243810",
-      "pubDate": "Sat, 14 Nov 2026 11:15:00 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/238242/oricon-tate-rgb-560x560.png.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.243810"
     }
   ],
   "total": 15
