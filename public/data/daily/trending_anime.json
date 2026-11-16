@@ -1,6 +1,6 @@
 {
-  "version": 1794773804573,
-  "fetchedAt": "2026-11-15T20:16:44.573Z",
+  "version": 1794788119942,
+  "fetchedAt": "2026-11-16T00:15:19.942Z",
   "anime": [
     {
       "id": 212888,
@@ -167,71 +167,6 @@
       }
     },
     {
-      "id": 205896,
-      "title": {
-        "romaji": "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku",
-        "english": "Full Clearing Another World under a Goddess with Zero Believers",
-        "native": "信者ゼロの女神サマと始める異世界攻略"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205896-ElrV8oVAsuax.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205896-ElrV8oVAsuax.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205896-ElrV8oVAsuax.jpg"
-      },
-      "bannerImage": null,
-      "description": "RPG player Makoto Takatsuki is hurled into another world with awful skills and stats. But he soon meets a goddess named Noah, who asks him to become her 1st believer in return for blessings.<br>\n<br>\n(Source: J-Novel Club)",
-      "genres": [
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 65,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "HORNETS"
-          },
-          {
-            "name": "NBCUniversal Entertainment Japan"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "BS Asahi"
-          },
-          {
-            "name": "ADK Marketing Solutions"
-          },
-          {
-            "name": "OVERLAP"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "DAX Production"
-          },
-          {
-            "name": "KLOCKWORX"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 11
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 186541,
       "title": {
         "romaji": "Mezametara Saikyou Soubi to Uchuusen-mochi datta node, Ikkodate Mezashite Youhei to shite Jiyuu ni Ikitai",
@@ -353,6 +288,133 @@
         "year": 2026,
         "month": 10,
         "day": 4
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 205896,
+      "title": {
+        "romaji": "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku",
+        "english": "Full Clearing Another World under a Goddess with Zero Believers",
+        "native": "信者ゼロの女神サマと始める異世界攻略"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205896-ElrV8oVAsuax.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205896-ElrV8oVAsuax.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205896-ElrV8oVAsuax.jpg"
+      },
+      "bannerImage": null,
+      "description": "RPG player Makoto Takatsuki is hurled into another world with awful skills and stats. But he soon meets a goddess named Noah, who asks him to become her 1st believer in return for blessings.<br>\n<br>\n(Source: J-Novel Club)",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 65,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "HORNETS"
+          },
+          {
+            "name": "NBCUniversal Entertainment Japan"
+          },
+          {
+            "name": "Hakuhodo DY Music & Pictures"
+          },
+          {
+            "name": "BS Asahi"
+          },
+          {
+            "name": "ADK Marketing Solutions"
+          },
+          {
+            "name": "OVERLAP"
+          },
+          {
+            "name": "TOKYO MX"
+          },
+          {
+            "name": "DAX Production"
+          },
+          {
+            "name": "KLOCKWORX"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 11
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 195516,
+      "title": {
+        "romaji": "Kusuriya no Hitorigoto 3rd Season",
+        "english": "The Apothecary Diaries Season 3",
+        "native": "薬屋のひとりごと 第3期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg",
+      "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n<br><br>\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n<br><br>\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n<br><br>\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n<br><br>\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Drama",
+        "Mystery"
+      ],
+      "averageScore": 85,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Toho"
+          },
+          {
+            "name": "OLM"
+          },
+          {
+            "name": "Nippon Television Network"
+          },
+          {
+            "name": "Imagica Infos"
+          },
+          {
+            "name": "OLM"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Shogakukan"
+          },
+          {
+            "name": "Square Enix"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 2
       },
       "endDate": {
         "year": null,
@@ -603,117 +665,6 @@
       }
     },
     {
-      "id": 195516,
-      "title": {
-        "romaji": "Kusuriya no Hitorigoto 3rd Season",
-        "english": "The Apothecary Diaries Season 3",
-        "native": "薬屋のひとりごと 第3期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg",
-      "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n<br><br>\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n<br><br>\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n<br><br>\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n<br><br>\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
-      "averageScore": 85,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "OLM"
-          },
-          {
-            "name": "Nippon Television Network"
-          },
-          {
-            "name": "Imagica Infos"
-          },
-          {
-            "name": "OLM"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Shogakukan"
-          },
-          {
-            "name": "Square Enix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 2
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 208025,
-      "title": {
-        "romaji": "Dark Summoner to Dekiteiru",
-        "english": "I'm Dating a Dark Summoner",
-        "native": "ダークサモナーとデキている"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx208025-JKvqWNr8rz8l.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx208025-JKvqWNr8rz8l.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208025-JKvqWNr8rz8l.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/208025-s7hcRQO7kwmH.jpg",
-      "description": "Amona’s a dark summoner with demonic powers. Roni’s a devout priest who’s way too uptight. By all rights, they should hate each other. Instead, they end up fast-tracking their enemies-to-lovers arc with a one-night stand that somehow insists on becoming a recurring event. Now they must hide their situationship from the rest of the party while denying their growing attraction to one another, all while dealing with an imp who’s far too invested in their love life.\n<br><br>\n(Source: HIDIVE)",
-      "genres": [
-        "Comedy",
-        "Ecchi",
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 67,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "WWWave"
-          },
-          {
-            "name": "AtoriE"
-          },
-          {
-            "name": "Nyan Pollution-ω-"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 97940,
       "title": {
         "romaji": "Black Clover",
@@ -769,21 +720,22 @@
       }
     },
     {
-      "id": 200455,
+      "id": 208025,
       "title": {
-        "romaji": "Yowaki MAX Reijou Nano ni, Ratsuwan Konyakusha-sama no Kake ni Notte Shimatta",
-        "english": "Even Though I'm a Super Timid Noble Girl, I Accepted the Bet From My Cunning Fiancé",
-        "native": "弱気MAX令嬢なのに、辣腕婚約者様の賭けに乗ってしまった"
+        "romaji": "Dark Summoner to Dekiteiru",
+        "english": "I'm Dating a Dark Summoner",
+        "native": "ダークサモナーとデキている"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx200455-P3XStRQMJ7Di.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx200455-P3XStRQMJ7Di.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx200455-P3XStRQMJ7Di.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx208025-JKvqWNr8rz8l.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx208025-JKvqWNr8rz8l.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx208025-JKvqWNr8rz8l.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/200455-rlIXyuk0jHE3.jpg",
-      "description": "I was reborn as a villainous daughter in a reverse harem otome game. \n<br><br>\nAfter being sick with a high fever at the age of 10, Pia Rockwell suddenly remembered her past life as a university student in Japan. But far from going down the villainess route, all this super timid girl wants is to finally use her knowledge from when she was a grad student studying to get her doctorate in paleontology. Her ultimate goal is to become a commoner, excavate fossils, build a museum and then become a curator.\n<br><br>\nSo in order to escape the villainess route and avoid being deported by her fiancé during the graduation ball, Pia decides to avoid the upcoming hurt and heartache and asks to break off her engagement to Rufus, the Prime Minister's son.\n<br><br>\nBut will her cunning fiancé let her go that easily?",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/208025-s7hcRQO7kwmH.jpg",
+      "description": "Amona’s a dark summoner with demonic powers. Roni’s a devout priest who’s way too uptight. By all rights, they should hate each other. Instead, they end up fast-tracking their enemies-to-lovers arc with a one-night stand that somehow insists on becoming a recurring event. Now they must hide their situationship from the rest of the party while denying their growing attraction to one another, all while dealing with an imp who’s far too invested in their love life.\n<br><br>\n(Source: HIDIVE)",
       "genres": [
         "Comedy",
+        "Ecchi",
         "Fantasy",
         "Romance"
       ],
@@ -795,44 +747,66 @@
       "studios": {
         "nodes": [
           {
-            "name": "Jumondou"
+            "name": "WWWave"
           },
           {
-            "name": "KADOKAWA"
+            "name": "AtoriE"
           },
           {
-            "name": "Docomo Anime Store"
-          },
-          {
-            "name": "Studio Flag"
-          },
-          {
-            "name": "BS Asahi"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "Sumiseki"
-          },
-          {
-            "name": "Nippon Columbia"
-          },
-          {
-            "name": "Sun Television"
-          },
-          {
-            "name": "Jumondou"
+            "name": "Nyan Pollution-ω-"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 4
+        "day": 5
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 219904,
+      "title": {
+        "romaji": "Re:Zero kara Hajimeru Isekai Seikatsu 5th Season",
+        "english": null,
+        "native": "Re:ゼロから始める異世界生活 5th season"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx219904-DQOTtKhwpB8S.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx219904-DQOTtKhwpB8S.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx219904-DQOTtKhwpB8S.jpg"
+      },
+      "bannerImage": null,
+      "description": "The fifth season of <i>Re:Zero kara Hajimeru Isekai Seikatsu</i>.",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "Fantasy",
+        "Psychological",
+        "Romance",
+        "Thriller"
+      ],
+      "averageScore": null,
+      "episodes": null,
+      "status": "NOT_YET_RELEASED",
+      "season": null,
+      "seasonYear": null,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          }
+        ]
+      },
+      "startDate": {
+        "year": null,
+        "month": null,
+        "day": null
       },
       "endDate": {
         "year": null,
