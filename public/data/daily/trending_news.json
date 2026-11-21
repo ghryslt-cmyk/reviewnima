@@ -1,7 +1,29 @@
 {
-  "version": 1795206411116,
-  "fetchedAt": "2026-11-20T20:26:51.116Z",
+  "version": 1795225317309,
+  "fetchedAt": "2026-11-21T01:41:57.309Z",
   "news": [
+    {
+      "title": "North American Anime, Manga Releases, November 15-21",
+      "description": "Jujutsu Kaisen: Hidden Inventory / Premature Death – The Movie anime; BECK, Heroes, Love is Money manga ship",
+      "fullDescription": "<cite>Jujutsu Kaisen: Hidden Inventory / Premature Death – The Movie</cite> anime; <cite>BECK, Heroes, Love is Money</cite> manga ship",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-20/north-american-anime-manga-releases-november-15-21/.243879",
+      "pubDate": "Fri, 20 Nov 2026 17:00:00 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": null,
+      "guid": "https://www.animenewsnetwork.com/cms/.243879"
+    },
+    {
+      "title": "Yen Press Licenses [Oshi No Ko] Étude for Two, Bungo Stray Dogs: The Untold Origins of the Detective Agency, More Manga/Novels",
+      "description": "Also: Mercenary Sisters, Caring for a Corpse, Megarosalia, more",
+      "fullDescription": "Also: <cite>Mercenary Sisters</cite>, <cite>Caring for a Corpse</cite>, <cite>Megarosalia</cite>, more",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-20/yen-press-licenses-oshi-no-ko-etude-for-two-bungo-stray-dogs-the-untold-origins-of-the-detective-/.244035",
+      "pubDate": "Fri, 20 Nov 2026 14:57:31 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/244035/oshi-no-ko-etude-for-two-cnf.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.244035"
+    },
     {
       "title": "Chiruran Manga Gets New Stage Play by All-Female Troupe O'Clock Kumamoto Revue",
       "description": "Series' original author Umemura writes script for play opening in early summer 2027",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/244020/ijihaji-tv.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.244020"
-    },
-    {
-      "title": "Manga &#039;Jimoto no Ijimekko-tachi ni Shikaeshi Shiyou to Shitara, Betsu no Tatakai ga Hajimatta.&#039; Gets TV Anime in 2027",
-      "description": "An official website opened for a television anime adaptation of Kengo Matsumoto&#039;s Jimoto no Ijimekko-tachi ni Shikaeshi Shiyou to Shitara, Betsu no Tatakai ga Hajimatta. (When Trying to Get Back at the Hometown Bullies, Another Battle Began) manga on Friday, revealing the main staff and a tease...",
-      "fullDescription": "An official website opened for a television anime adaptation of Kengo Matsumoto&#039;s Jimoto no Ijimekko-tachi ni Shikaeshi Shiyou to Shitara, Betsu no Tatakai ga Hajimatta. (When Trying to Get Back at the Hometown Bullies, Another Battle Began) manga on Friday, revealing the main staff and a teaser visual (pictured). The anime will premiere in 2027. Staff Director: Chihiro Kumano (Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken 2) Series Composition: Kazuho Hyoudou (Kekkon...",
-      "link": "https://myanimelist.net/news/74960793?_location=rss",
-      "pubDate": "Fri, 20 Nov 2026 01:42:04 -0800",
-      "source": "MyAnimeList",
-      "category": "Newspaper",
-      "thumbnail": "https://cdn.myanimelist.net/s/common/uploaded_files/1795167693-a929e17044cfbd63618b5456df925cf3.jpeg",
-      "guid": "https://myanimelist.net/news/74960793?_location=rss"
-    },
-    {
-      "title": "Rock Paper Landmine Novel Gets Stage Play in January",
-      "description": "Yugo Aosaki's novel has live-action series adaptation that debuted on Prime Video worldwide on November 13",
-      "fullDescription": "Yugo Aosaki's novel has live-action series adaptation that debuted on Prime Video worldwide on November 13",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-20/rock-paper-landmine-novel-gets-stage-play-in-january/.244017",
-      "pubDate": "Fri, 20 Nov 2026 04:16:57 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/244017/landmine-stage-kv.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.244017"
     }
   ],
   "total": 15
