@@ -1,7 +1,29 @@
 {
-  "version": 1795519952909,
-  "fetchedAt": "2026-11-24T11:32:32.909Z",
+  "version": 1795555999962,
+  "fetchedAt": "2026-11-24T21:33:19.962Z",
   "news": [
+    {
+      "title": "HIDIVE to Premiere Murciélago Anime at Anime Frontier Event in Texas",
+      "description": "Fort Worth convention to host world premiere on December 5 before January 2027 TV debut",
+      "fullDescription": "Fort Worth convention to host world premiere on December 5 before January 2027 TV debut",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-24/hidive-to-premiere-murcielago-anime-at-anime-frontier-event-in-texas/.244121",
+      "pubDate": "Tue, 24 Nov 2026 11:24:04 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.10/243033/murcielago.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.244121"
+    },
+    {
+      "title": "Duel Masters Pure PLAY'S Manga Ends on November 30",
+      "description": "Series debuted on September September 18",
+      "fullDescription": "Series debuted on September September 18",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-24/duel-masters-pure-play-manga-ends-on-november-30/.244139",
+      "pubDate": "Tue, 24 Nov 2026 11:05:03 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/241787/duelmasterspureplays.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.244139"
+    },
     {
       "title": "Twisted-Wonderland: Episode of Savanaclaw Anime's New Video Unveils Ending Song",
       "description": "Savanaclaw dorm members perform \"DIADEM\" ending song",
@@ -144,28 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/244111/buff1.png.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.244111"
-    },
-    {
-      "title": "Live-Action Wakako-zake Season 10 Unveils January 6 Debut, Year-End Special, Opening Song Artists",
-      "description": "\"Chichibu no Sake Meguri\" special runs on December 30; idol group Title Mitei performs \"Kyūfu\" opening song",
-      "fullDescription": "\"Chichibu no Sake Meguri\" special runs on December 30; idol group Title Mitei performs \"Kyūfu\" opening song",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-22/live-action-wakako-zake-season-10-unveils-january-6-debut-year-end-special-opening-song-artists/.244087",
-      "pubDate": "Sun, 22 Nov 2026 21:08:48 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/244087/sake.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.244087"
-    },
-    {
-      "title": "Champignon Witch Manga to Resume After 10 Months",
-      "description": "Series debuted in October 2019",
-      "fullDescription": "Series debuted in October 2019",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-22/champignon-witch-manga-to-resume-after-10-months/.244096",
-      "pubDate": "Sun, 22 Nov 2026 20:56:05 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.9/239921/champignon-witch-v1-cnf.jpg",
-      "guid": "https://www.animenewsnetwork.com/cms/.244096"
     }
   ],
   "total": 15
