@@ -1,7 +1,70 @@
 {
-  "version": 1795581448294,
-  "fetchedAt": "2026-11-25T04:37:28.294Z",
+  "version": 1795618854090,
+  "fetchedAt": "2026-11-25T15:00:54.090Z",
   "anime": [
+    {
+      "id": 211778,
+      "title": {
+        "romaji": "Sekai Saikyou no Majo, Hajimemashita",
+        "english": "The World's Strongest Witch",
+        "native": "世界最強の魔女、始めました"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx211778-0MXK5HqVFBYH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx211778-0MXK5HqVFBYH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx211778-0MXK5HqVFBYH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/211778-ZbXEhqfFkj62.jpg",
+      "description": "After using her SSS-Rank skill, Internet, to crush her former family’s ambitions, Lorna is free to travel the world. Her next stop is the port town of Aquas, where she hopes to see the sights and chow down on some fresh seafood. But when she arrives, the place is on the brink of destruction thanks to a certain Weekly Quest… Good thing Lorna has the gods on her side!\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 70,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Bridge"
+          },
+          {
+            "name": "Aisle"
+          },
+          {
+            "name": "Yomiuri TV Enterprise"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "Pony Canyon"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "Bridge"
+          },
+          {
+            "name": "Bit grooove promotion"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
     {
       "id": 207329,
       "title": {
@@ -138,77 +201,6 @@
       }
     },
     {
-      "id": 206949,
-      "title": {
-        "romaji": "Kyouran Reijou Nia Liston",
-        "english": "Nia Liston: The Merciless Maiden",
-        "native": "凶乱令嬢ニア・リストン"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
-      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
-      "genres": [
-        "Action",
-        "Fantasy"
-      ],
-      "averageScore": 74,
-      "episodes": 25,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KONAMI animation"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "Konami Digital Entertainment"
-          },
-          {
-            "name": "VAP"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "Hobby Japan"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "TO Books"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 6
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
       "id": 212888,
       "title": {
         "romaji": "Tempal: Item no Chikara",
@@ -328,6 +320,140 @@
       }
     },
     {
+      "id": 176314,
+      "title": {
+        "romaji": "Sasaki to Pii-chan Season 2",
+        "english": "Sasaki and Peeps Season 2",
+        "native": "佐々木とピーちゃん シーズン２"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx176314-lpvca6vjmkeO.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx176314-lpvca6vjmkeO.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176314-lpvca6vjmkeO.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/176314-nj2hmqbGQ9HJ.jpg",
+      "description": "The second season of <i>Sasaki to Pii-chan</i>.",
+      "genres": [
+        "Comedy",
+        "Fantasy",
+        "Mahou Shoujo"
+      ],
+      "averageScore": 70,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "SILVER LINK."
+          },
+          {
+            "name": "GREE Entertainment"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Sammy"
+          },
+          {
+            "name": "SILVER LINK."
+          },
+          {
+            "name": "Nippon Columbia"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 12,
+        "day": 23
+      }
+    },
+    {
+      "id": 206949,
+      "title": {
+        "romaji": "Kyouran Reijou Nia Liston",
+        "english": "Nia Liston: The Merciless Maiden",
+        "native": "凶乱令嬢ニア・リストン"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
+      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "averageScore": 74,
+      "episodes": 25,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KONAMI animation"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "SANKYO"
+          },
+          {
+            "name": "JR Higashi Nihon Kikaku"
+          },
+          {
+            "name": "Konami Digital Entertainment"
+          },
+          {
+            "name": "VAP"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "Pia"
+          },
+          {
+            "name": "Hobby Japan"
+          },
+          {
+            "name": "Movic"
+          },
+          {
+            "name": "TO Books"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 6
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
       "id": 97940,
       "title": {
         "romaji": "Black Clover",
@@ -380,136 +506,6 @@
         "year": 2021,
         "month": 3,
         "day": 30
-      }
-    },
-    {
-      "id": 209502,
-      "title": {
-        "romaji": "Shiotaiou no Satou-san ga Ore ni dake Amai",
-        "english": "The Cold Sato-san is Only Sweet to Me",
-        "native": "塩対応の佐藤さんが俺にだけ甘い"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209502-C81oN8M4Smlo.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209502-C81oN8M4Smlo.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209502-C81oN8M4Smlo.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209502-TATgyznMxQOe.jpg",
-      "description": "Sato-san is the unattainable flower of the class. She is always cold and curt with classmates, but only I know she's actually very cute when she smiles, even if she's not much of a photographer.\n<br><br>\nOshio-kun is friendly and lively, but only I know he works at his family's cafe after school. He does a great job with the cafe's SNS account, and his mischievous smile makes my heart skip a beat!\n<br><br>\nInnocent and sweet, but sometimes frustrating, this is a 120%-pure fluffy story about two people falling in love for the first time.",
-      "genres": [
-        "Comedy",
-        "Romance"
-      ],
-      "averageScore": 67,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Tezuka Productions"
-          },
-          {
-            "name": "Shouchiku"
-          },
-          {
-            "name": "Good Smile Company"
-          },
-          {
-            "name": "Pony Canyon"
-          },
-          {
-            "name": "arma bianca"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "TOKYO MX"
-          },
-          {
-            "name": "81 Produce"
-          },
-          {
-            "name": "WOWOW"
-          },
-          {
-            "name": "BS-TBS"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 6
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 22
-      }
-    },
-    {
-      "id": 207191,
-      "title": {
-        "romaji": "Doumo, Suki na Hito ni Horegusuri wo Irai Sareta Majo desu.",
-        "english": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
-        "native": "どうも、好きな人に惚れ薬を依頼された魔女です。"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207191-VgkIzfH92WoZ.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207191-VgkIzfH92WoZ.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-VgkIzfH92WoZ.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207191-xYgpkCDnXc5m.jpg",
-      "description": "<b>“Make me a love potion.”</b>\n<br><br>\nAnd with that single sentence, the Good Witch of the Lake’s secret crush on the dashing Sir Harij ends in heartbreak. Still, when he promises to help her gather the ingredients, Rose is thrilled at the chance to gaze upon a man she’d normally never get to interact with. She learns to brace her pounding heart for their usual stilted conversations…but what is she to do when he inexplicably shows up at her doorstep with bread and a jar of apple butter?\n<br><br>\n(Source: Yen Press)",
-      "genres": [
-        "Fantasy",
-        "Romance"
-      ],
-      "averageScore": 75,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "diomedéa"
-          },
-          {
-            "name": "KADOKAWA"
-          },
-          {
-            "name": "Futabasha"
-          },
-          {
-            "name": "diomedéa"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "AT-X"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "SAND B"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
       }
     },
     {
@@ -626,28 +622,83 @@
       }
     },
     {
-      "id": 209219,
+      "id": 152677,
       "title": {
-        "romaji": "Tensei Goblin Dakedo Shitsumon Aru?",
-        "english": "So What's Wrong with Getting Reborn as a Goblin?",
-        "native": "転生ゴブリンだけど質問ある？"
+        "romaji": "Tantei wa Mou, Shindeiru. Season 2",
+        "english": "The Detective Is Already Dead Season 2",
+        "native": "探偵はもう、死んでいる。Season2"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209219-3yhKlRx0LX3p.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209219-3yhKlRx0LX3p.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209219-3yhKlRx0LX3p.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx152677-gtJbgjE94lCN.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx152677-gtJbgjE94lCN.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx152677-gtJbgjE94lCN.png"
       },
       "bannerImage": null,
-      "description": "Office worker Akira Yagami’s altruistic nature usually gets him the short end of the stick. When he dies after saving a kid from oncoming traffic...he reincarnates in another world as a goblin?! Normally, goblins only live for seven days, but Akira’s newfound powers let him defy the species’ normal life span...and are the key to his path to becoming the strongest goblin ever!\n<br><br>\n(Source: Yen Press)<br><br>\n\n<i>Note: Tensei Goblin Dakedo Shitsumon Aru? is streaming 1 week in advance of the TV broadcast on ABEMA and Prime Video beginning with episode 2 on October 5th, 2026</i>",
+      "description": "After thwarting a hijacking with beautiful, silver-haired detective Siesta, Kimihiko leads a life of globe-trotting and crime-solving—until Siesta dies. A year later, a new case will open old wounds as it threads murder, conspiracy, and his dead partner!\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
-        "Action",
-        "Adventure",
         "Comedy",
         "Drama",
+        "Mystery",
+        "Romance",
+        "Supernatural"
+      ],
+      "averageScore": 70,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "ENGI"
+          },
+          {
+            "name": "Sammy"
+          },
+          {
+            "name": "INCS toenter"
+          },
+          {
+            "name": "BS Nittele"
+          },
+          {
+            "name": "AT-X"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 7
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 12,
+        "day": 30
+      }
+    },
+    {
+      "id": 207191,
+      "title": {
+        "romaji": "Doumo, Suki na Hito ni Horegusuri wo Irai Sareta Majo desu.",
+        "english": "Hello, I am a Witch and my Crush Wants me to Make a Love Potion!",
+        "native": "どうも、好きな人に惚れ薬を依頼された魔女です。"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx207191-VgkIzfH92WoZ.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx207191-VgkIzfH92WoZ.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207191-VgkIzfH92WoZ.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/207191-xYgpkCDnXc5m.jpg",
+      "description": "<b>“Make me a love potion.”</b>\n<br><br>\nAnd with that single sentence, the Good Witch of the Lake’s secret crush on the dashing Sir Harij ends in heartbreak. Still, when he promises to help her gather the ingredients, Rose is thrilled at the chance to gaze upon a man she’d normally never get to interact with. She learns to brace her pounding heart for their usual stilted conversations…but what is she to do when he inexplicably shows up at her doorstep with bread and a jar of apple butter?\n<br><br>\n(Source: Yen Press)",
+      "genres": [
         "Fantasy",
         "Romance"
       ],
-      "averageScore": 64,
+      "averageScore": 75,
       "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
@@ -655,25 +706,28 @@
       "studios": {
         "nodes": [
           {
-            "name": "BAKKKA"
+            "name": "diomedéa"
           },
           {
-            "name": "Hakuhodo DY Music & Pictures"
+            "name": "KADOKAWA"
           },
           {
-            "name": "INCS toenter"
+            "name": "Futabasha"
           },
           {
-            "name": "BS11"
+            "name": "diomedéa"
           },
           {
-            "name": "AbemaTV"
+            "name": "Mainichi Broadcasting System"
           },
           {
-            "name": "SANKYO"
+            "name": "AT-X"
           },
           {
-            "name": "Bushiroad Move"
+            "name": "BS Nittele"
+          },
+          {
+            "name": "SAND B"
           }
         ]
       },
@@ -683,31 +737,93 @@
         "day": 5
       },
       "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 21
+        "year": null,
+        "month": null,
+        "day": null
       }
     },
     {
-      "id": 191656,
+      "id": 1735,
       "title": {
-        "romaji": "Seitokai ni mo Ana wa Aru!",
-        "english": "Even the Student Council Has Its Holes!",
-        "native": "生徒会にも穴はある！"
+        "romaji": "NARUTO: Shippuuden",
+        "english": "Naruto: Shippuden",
+        "native": "NARUTO -ナルト- 疾風伝"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx191656-xFHtxM8SUTdU.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx191656-xFHtxM8SUTdU.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx191656-xFHtxM8SUTdU.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1735-kGfVm0YqCPcu.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1735-kGfVm0YqCPcu.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/191656-JQILdzh3FQxN.jpg",
-      "description": "This is Fujinasu Academy, a private high school with top-achieving students located on the outskirts of town.\n<br><br>\nHigh School 1st-Year Ume Mizunoe has excellent grades in Japanese language class and has received multiple literary awards.\nHowever, his terrible grades in the sciences are affecting his ability to move up a grade. To avoid repeating a year, he becomes a member of the student council to improve his academic standing.\n<br><br>\nHowever, in the student council, he meets the charismatic yet sullen student council president Kotobuki Hisako, and the scary yet kind and refined treasurer, Arisu Terui. Other members include a cheeky and cute boy, Tan Otori, and Komaro Michinoku, the admin who's like a small abandoned cat. This is the start of a slapstick, heartful, rom-com about a busy student council full of cute, mismatched, and quirky students!\n<br><br>\n(Source: Even the Student Council Has Its Holes! Official Site)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1735.jpg",
+      "description": "Naruto: Shippuuden is the continuation of the original animated TV series Naruto. The story revolves around an older and slightly more matured Uzumaki Naruto and his quest to save his friend Uchiha Sasuke from the grips of the snake-like Shinobi, Orochimaru. After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work, though it will not be easy, as he has amassed a few (more dangerous) enemies, in the likes of the shinobi organization; Akatsuki. <br><br>\n(Source: Anime News Network)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Drama",
+        "Fantasy",
+        "Supernatural"
+      ],
+      "averageScore": 82,
+      "episodes": 500,
+      "status": "FINISHED",
+      "season": "WINTER",
+      "seasonYear": 2007,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Aniplex"
+          },
+          {
+            "name": "KSS"
+          },
+          {
+            "name": "Viz Media"
+          },
+          {
+            "name": "Rakuonsha"
+          },
+          {
+            "name": "TV Tokyo Music"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2007,
+        "month": 2,
+        "day": 15
+      },
+      "endDate": {
+        "year": 2017,
+        "month": 3,
+        "day": 23
+      }
+    },
+    {
+      "id": 209502,
+      "title": {
+        "romaji": "Shiotaiou no Satou-san ga Ore ni dake Amai",
+        "english": "The Cold Sato-san is Only Sweet to Me",
+        "native": "塩対応の佐藤さんが俺にだけ甘い"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx209502-C81oN8M4Smlo.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx209502-C81oN8M4Smlo.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx209502-C81oN8M4Smlo.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/209502-TATgyznMxQOe.jpg",
+      "description": "Sato-san is the unattainable flower of the class. She is always cold and curt with classmates, but only I know she's actually very cute when she smiles, even if she's not much of a photographer.\n<br><br>\nOshio-kun is friendly and lively, but only I know he works at his family's cafe after school. He does a great job with the cafe's SNS account, and his mischievous smile makes my heart skip a beat!\n<br><br>\nInnocent and sweet, but sometimes frustrating, this is a 120%-pure fluffy story about two people falling in love for the first time.",
       "genres": [
         "Comedy",
-        "Ecchi",
-        "Slice of Life"
+        "Romance"
       ],
-      "averageScore": 74,
+      "averageScore": 67,
       "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
@@ -715,96 +831,46 @@
       "studios": {
         "nodes": [
           {
-            "name": "Passione"
+            "name": "Tezuka Productions"
           },
           {
-            "name": "Aniplex"
+            "name": "Shouchiku"
           },
           {
-            "name": "Kodansha"
+            "name": "Good Smile Company"
           },
           {
-            "name": "JR Higashi Nihon Kikaku"
+            "name": "Pony Canyon"
           },
           {
-            "name": "Movic"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 20
-      }
-    },
-    {
-      "id": 205896,
-      "title": {
-        "romaji": "Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku",
-        "english": "Full Clearing Another World under a Goddess with Zero Believers",
-        "native": "信者ゼロの女神サマと始める異世界攻略"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx205896-ElrV8oVAsuax.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx205896-ElrV8oVAsuax.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205896-ElrV8oVAsuax.jpg"
-      },
-      "bannerImage": null,
-      "description": "RPG player Makoto Takatsuki is hurled into another world with awful skills and stats. But he soon meets a goddess named Noah, who asks him to become her 1st believer in return for blessings.<br>\n<br>\n(Source: J-Novel Club)",
-      "genres": [
-        "Adventure",
-        "Fantasy"
-      ],
-      "averageScore": 65,
-      "episodes": null,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "HORNETS"
+            "name": "arma bianca"
           },
           {
-            "name": "NBCUniversal Entertainment Japan"
-          },
-          {
-            "name": "Hakuhodo DY Music & Pictures"
-          },
-          {
-            "name": "BS Asahi"
-          },
-          {
-            "name": "ADK Marketing Solutions"
-          },
-          {
-            "name": "OVERLAP"
+            "name": "AT-X"
           },
           {
             "name": "TOKYO MX"
           },
           {
-            "name": "DAX Production"
+            "name": "81 Produce"
           },
           {
-            "name": "KLOCKWORX"
+            "name": "WOWOW"
+          },
+          {
+            "name": "BS-TBS"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 11
+        "day": 6
       },
       "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
+        "year": 2026,
+        "month": 12,
+        "day": 22
       }
     },
     {
@@ -876,69 +942,6 @@
         "year": 2026,
         "month": 12,
         "day": 22
-      }
-    },
-    {
-      "id": 1735,
-      "title": {
-        "romaji": "NARUTO: Shippuuden",
-        "english": "Naruto: Shippuden",
-        "native": "NARUTO -ナルト- 疾風伝"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1735-kGfVm0YqCPcu.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx1735-kGfVm0YqCPcu.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1735-kGfVm0YqCPcu.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/1735.jpg",
-      "description": "Naruto: Shippuuden is the continuation of the original animated TV series Naruto. The story revolves around an older and slightly more matured Uzumaki Naruto and his quest to save his friend Uchiha Sasuke from the grips of the snake-like Shinobi, Orochimaru. After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work, though it will not be easy, as he has amassed a few (more dangerous) enemies, in the likes of the shinobi organization; Akatsuki. <br><br>\n(Source: Anime News Network)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Drama",
-        "Fantasy",
-        "Supernatural"
-      ],
-      "averageScore": 82,
-      "episodes": 500,
-      "status": "FINISHED",
-      "season": "WINTER",
-      "seasonYear": 2007,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Aniplex"
-          },
-          {
-            "name": "KSS"
-          },
-          {
-            "name": "Viz Media"
-          },
-          {
-            "name": "Rakuonsha"
-          },
-          {
-            "name": "TV Tokyo Music"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2007,
-        "month": 2,
-        "day": 15
-      },
-      "endDate": {
-        "year": 2017,
-        "month": 3,
-        "day": 23
       }
     }
   ]
