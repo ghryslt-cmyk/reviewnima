@@ -1,7 +1,118 @@
 {
-  "version": 1795707747829,
-  "fetchedAt": "2026-11-26T15:42:27.829Z",
+  "version": 1795737861097,
+  "fetchedAt": "2026-11-27T00:04:21.097Z",
   "anime": [
+    {
+      "id": 180136,
+      "title": {
+        "romaji": "Tsuihou Sareta Tensei Juukishi wa Game Chishiki de Musou Suru",
+        "english": "The Exiled Heavy Knight Knows How to Game the System",
+        "native": "追放された転生重騎士はゲーム知識で無双する"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180136-gtMTCRlOD4OE.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180136-gtMTCRlOD4OE.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx180136-gtMTCRlOD4OE.jpg"
+      },
+      "bannerImage": null,
+      "description": "Born into a prestigious family of master swordsmen, Elymas Edvaughn’s future shatters when he awakens the so-called “defective” Heavy Knight class. Disowned and cast out, he regains memories of another life—and realizes this world mirrors a VR game he once mastered. Armed with knowledge no one else possesses, he sets out to rewrite his fate and prove the strength of the “weakest” class.<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "averageScore": 67,
+      "episodes": 26,
+      "status": "RELEASING",
+      "season": "SUMMER",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "GoHands"
+          },
+          {
+            "name": "Shouchiku"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "MUSE"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Mainichi Broadcasting System"
+          },
+          {
+            "name": "GoHands"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 7,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 12,
+        "day": 25
+      }
+    },
+    {
+      "id": 213805,
+      "title": {
+        "romaji": "Koori no Jouheki 2nd Season",
+        "english": "The Ramparts of Ice Season 2",
+        "native": "氷の城壁 第2期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx213805-Nokui3uWlIlw.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx213805-Nokui3uWlIlw.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx213805-Nokui3uWlIlw.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/213805-DKKoBepaY2bj.jpg",
+      "description": "Koyuki, the isolated girl; Miki, the former school idol; Minato, the guy with no concept of personal space; and Youta, the gentle basketball player. Clumsy, frustrating, yet deeply endearing — this coming-of-age ensemble drama of crisscrossing hearts marches on.\n<br><br>\nAs they grow closer, Koyuki and Minato begin to develop feelings for each other that go beyond mere friendship. Meanwhile, Youta finally confesses to Miki the feelings he's harbored for years. Some speak their hearts while others keep their emotions hidden, causing their paths — and their feelings for one another — to continuously cross and pass by… \n<br><br>\n(Source: Netflix)",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance",
+        "Slice of Life"
+      ],
+      "averageScore": 82,
+      "episodes": 13,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio KAI"
+          },
+          {
+            "name": "TBS"
+          },
+          {
+            "name": "Universal Music"
+          },
+          {
+            "name": "ADK Emotions"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 2
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 12,
+        "day": 24
+      }
+    },
     {
       "id": 213457,
       "title": {
@@ -193,6 +304,134 @@
       }
     },
     {
+      "id": 212503,
+      "title": {
+        "romaji": "Hyouken no Majutsushi ga Sekai wo Suberu II",
+        "english": "The Iceblade Sorcerer Shall Rule the World II",
+        "native": "冰剣の魔術師が世界を統べるⅡ"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx212503-sXBpRZr96c4e.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx212503-sXBpRZr96c4e.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx212503-sXBpRZr96c4e.jpg"
+      },
+      "bannerImage": null,
+      "description": "Once dismissed as the sole ordinary student at the elite Arnold Academy of Sorcery, Ray White—secretly, the Iceblade Sorcerer—has finally earned his place. With a new school year comes a new challenge: The Magicks War, a grand competition pitting teams from rival schools against each other. But an ominous shadow looms over Ray and his friends as the other grand sorcerers plot their next moves.\n<br><br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "averageScore": 65,
+      "episodes": null,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Zero-G"
+          },
+          {
+            "name": "TBS"
+          },
+          {
+            "name": "SAND B"
+          },
+          {
+            "name": "Kodansha"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "DMM.com"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "Pony Canyon"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 9
+      },
+      "endDate": {
+        "year": null,
+        "month": null,
+        "day": null
+      }
+    },
+    {
+      "id": 206401,
+      "title": {
+        "romaji": "FX Senshi Kurumi-chan",
+        "english": "FX Fighter Kurumi-chan",
+        "native": "FX戦士くるみちゃん"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206401-8cAebkI0i8BA.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206401-8cAebkI0i8BA.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206401-8cAebkI0i8BA.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206401-sKPZQks8FxNL.jpg",
+      "description": "University student Kurumi Fukuga has finally fulfilled her long-held desire of starting foreign exchange (FX) trading, motivated by recouping the 20 million yen her late mother lost in trading. \"I'll easily make it back,\" she thought, but the world she enters can become heaven or hell in an instant. Unrealized losses, loss-cutting, unstoppable fluctuations… but she still wants to buy, sell and make money! With fellow FX addicts Mochiko, Mebuki and Yasuko along for the ride, the market heats up! Joy, despair, joy, despair — this is an endearing, yet slightly risky money game. Can Kurumi and her friends survive this turbulent world?<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Drama",
+        "Slice of Life"
+      ],
+      "averageScore": 67,
+      "episodes": 12,
+      "status": "RELEASING",
+      "season": "FALL",
+      "seasonYear": 2026,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Passione"
+          },
+          {
+            "name": "KADOKAWA"
+          },
+          {
+            "name": "Docomo Anime Store"
+          },
+          {
+            "name": "AT-X"
+          },
+          {
+            "name": "D-techno"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "arma bianca"
+          },
+          {
+            "name": "BS11"
+          },
+          {
+            "name": "Kansai TV"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2026,
+        "month": 10,
+        "day": 1
+      },
+      "endDate": {
+        "year": 2026,
+        "month": 12,
+        "day": 17
+      }
+    },
+    {
       "id": 159042,
       "title": {
         "romaji": "Tensei Shitara Ken Deshita 2nd Season",
@@ -320,24 +559,79 @@
       }
     },
     {
-      "id": 206401,
+      "id": 97940,
       "title": {
-        "romaji": "FX Senshi Kurumi-chan",
-        "english": "FX Fighter Kurumi-chan",
-        "native": "FX戦士くるみちゃん"
+        "romaji": "Black Clover",
+        "english": "Black Clover",
+        "native": "ブラッククローバー"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206401-8cAebkI0i8BA.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206401-8cAebkI0i8BA.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206401-8cAebkI0i8BA.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206401-sKPZQks8FxNL.jpg",
-      "description": "University student Kurumi Fukuga has finally fulfilled her long-held desire of starting foreign exchange (FX) trading, motivated by recouping the 20 million yen her late mother lost in trading. \"I'll easily make it back,\" she thought, but the world she enters can become heaven or hell in an instant. Unrealized losses, loss-cutting, unstoppable fluctuations… but she still wants to buy, sell and make money! With fellow FX addicts Mochiko, Mebuki and Yasuko along for the ride, the market heats up! Joy, despair, joy, despair — this is an endearing, yet slightly risky money game. Can Kurumi and her friends survive this turbulent world?<br>\n<br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
+      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy"
+      ],
+      "averageScore": 79,
+      "episodes": 170,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2017,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "Funimation"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Crunchyroll"
+          },
+          {
+            "name": "Shueisha"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2017,
+        "month": 10,
+        "day": 3
+      },
+      "endDate": {
+        "year": 2021,
+        "month": 3,
+        "day": 30
+      }
+    },
+    {
+      "id": 195516,
+      "title": {
+        "romaji": "Kusuriya no Hitorigoto 3rd Season",
+        "english": "The Apothecary Diaries Season 3",
+        "native": "薬屋のひとりごと 第3期"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg",
+      "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n<br><br>\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n<br><br>\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n<br><br>\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n<br><br>\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
         "Drama",
-        "Slice of Life"
+        "Mystery"
       ],
-      "averageScore": 67,
+      "averageScore": 85,
       "episodes": 12,
       "status": "RELEASING",
       "season": "FALL",
@@ -345,65 +639,63 @@
       "studios": {
         "nodes": [
           {
-            "name": "Passione"
+            "name": "Toho"
           },
           {
-            "name": "KADOKAWA"
+            "name": "OLM"
           },
           {
-            "name": "Docomo Anime Store"
+            "name": "Nippon Television Network"
           },
           {
-            "name": "AT-X"
+            "name": "Imagica Infos"
           },
           {
-            "name": "D-techno"
+            "name": "OLM"
           },
           {
-            "name": "Crunchyroll"
+            "name": "Dentsu"
           },
           {
-            "name": "arma bianca"
+            "name": "Shogakukan"
           },
           {
-            "name": "BS11"
-          },
-          {
-            "name": "Kansai TV"
+            "name": "Square Enix"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 1
+        "day": 2
       },
       "endDate": {
         "year": 2026,
         "month": 12,
-        "day": 17
+        "day": 18
       }
     },
     {
-      "id": 172192,
+      "id": 195604,
       "title": {
-        "romaji": "Kikansha no Mahou wa Tokubetsu desu 2nd Season",
-        "english": "A Returner's Magic Should be Special Season 2",
-        "native": "帰還者の魔法は特別です 第2期"
+        "romaji": "Black Clover 2nd Season",
+        "english": "Black Clover Season 2",
+        "native": "ブラッククローバー 第2期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx172192-W7P5xEUaxF3y.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx172192-W7P5xEUaxF3y.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172192-W7P5xEUaxF3y.jpg"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/172192-jibcmb7wdbzk.jpg",
-      "description": "In a land dominated by the formidable Shadow Worlds, most of humanity has been destroyed. To rescue their planet from impending doom, six brave heroes fight a perilous battle…and fail. But there’s a glimpse of hope when Desir, one of the last mages, is suddenly sent back in time 13 years! Now armed with knowledge of the grim future, can he alter the course of history and save the world?\n<br><br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg",
+      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
         "Action",
         "Adventure",
+        "Comedy",
         "Fantasy"
       ],
-      "averageScore": 69,
+      "averageScore": 88,
       "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
@@ -411,34 +703,85 @@
       "studios": {
         "nodes": [
           {
-            "name": "Aniplex"
+            "name": "Studio Pierrot"
           },
           {
-            "name": "Arvo Animation"
+            "name": "TV Tokyo"
           },
           {
-            "name": "Crunchyroll"
+            "name": "Shueisha"
           },
           {
-            "name": "D&C MEDIA"
+            "name": "Studio Pierrot"
           },
           {
-            "name": "Kakao piccoma"
+            "name": "Avex Pictures"
           },
           {
-            "name": "HAYATE"
+            "name": "Bandai Namco Entertainment"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 8
+        "day": 3
       },
       "endDate": {
         "year": null,
         "month": null,
         "day": null
+      }
+    },
+    {
+      "id": 269,
+      "title": {
+        "romaji": "BLEACH",
+        "english": "Bleach",
+        "native": "BLEACH"
+      },
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
+      },
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
+      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Supernatural"
+      ],
+      "averageScore": 79,
+      "episodes": 366,
+      "status": "FINISHED",
+      "season": "FALL",
+      "seasonYear": 2004,
+      "studios": {
+        "nodes": [
+          {
+            "name": "Studio Pierrot"
+          },
+          {
+            "name": "TV Tokyo"
+          },
+          {
+            "name": "Dentsu"
+          },
+          {
+            "name": "Viz Media"
+          }
+        ]
+      },
+      "startDate": {
+        "year": 2004,
+        "month": 10,
+        "day": 5
+      },
+      "endDate": {
+        "year": 2012,
+        "month": 3,
+        "day": 27
       }
     },
     {
@@ -505,132 +848,25 @@
       }
     },
     {
-      "id": 97940,
+      "id": 172192,
       "title": {
-        "romaji": "Black Clover",
-        "english": "Black Clover",
-        "native": "ブラッククローバー"
+        "romaji": "Kikansha no Mahou wa Tokubetsu desu 2nd Season",
+        "english": "A Returner's Magic Should be Special Season 2",
+        "native": "帰還者の魔法は特別です 第2期"
       },
       "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx97940-fyh8o7gNbha0.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx97940-fyh8o7gNbha0.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97940-fyh8o7gNbha0.png"
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx172192-W7P5xEUaxF3y.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx172192-W7P5xEUaxF3y.jpg",
+        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172192-W7P5xEUaxF3y.jpg"
       },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/97940-1URQdQ4U1a0b.jpg",
-      "description": "In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. While Yuno is gifted with exceptional magical powers, Asta is the only one in this world without any. At the age of fifteen, both receive grimoires, magic books that amplify their holder’s magic. Asta’s is a rare Grimoire of Anti-Magic that negates and repels his opponent’s spells. Being opposite but good rivals, Yuno and Asta are ready for the hardest of challenges to achieve their common dream: to be the Wizard King. Giving up is never an option!<br>\n<br>\n(Source: Crunchyroll)",
+      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/172192-jibcmb7wdbzk.jpg",
+      "description": "In a land dominated by the formidable Shadow Worlds, most of humanity has been destroyed. To rescue their planet from impending doom, six brave heroes fight a perilous battle…and fail. But there’s a glimpse of hope when Desir, one of the last mages, is suddenly sent back in time 13 years! Now armed with knowledge of the grim future, can he alter the course of history and save the world?\n<br><br>\n(Source: Crunchyroll)",
       "genres": [
         "Action",
         "Adventure",
-        "Comedy",
         "Fantasy"
       ],
-      "averageScore": 79,
-      "episodes": 170,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2017,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "Funimation"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Crunchyroll"
-          },
-          {
-            "name": "Shueisha"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2017,
-        "month": 10,
-        "day": 3
-      },
-      "endDate": {
-        "year": 2021,
-        "month": 3,
-        "day": 30
-      }
-    },
-    {
-      "id": 269,
-      "title": {
-        "romaji": "BLEACH",
-        "english": "Bleach",
-        "native": "BLEACH"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx269-d2GmRkJbMopq.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx269-d2GmRkJbMopq.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx269-d2GmRkJbMopq.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/269-08ar2HJOUAuL.jpg",
-      "description": "Ichigo Kurosaki is a rather normal high school student apart from the fact he has the ability to see ghosts. This ability never impacted his life in a major way until the day he encounters the Shinigami Kuchiki Rukia, who saves him and his family's lives from a Hollow, a corrupt spirit that devours human souls. \n<br><br>\nWounded during the fight against the Hollow, Rukia chooses the only option available to defeat the monster and passes her Shinigami powers to Ichigo. Now forced to act as a substitute until Rukia recovers, Ichigo hunts down the Hollows that plague his town. \n\n\n",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Supernatural"
-      ],
-      "averageScore": 79,
-      "episodes": 366,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2004,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Studio Pierrot"
-          },
-          {
-            "name": "TV Tokyo"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Viz Media"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2004,
-        "month": 10,
-        "day": 5
-      },
-      "endDate": {
-        "year": 2012,
-        "month": 3,
-        "day": 27
-      }
-    },
-    {
-      "id": 195604,
-      "title": {
-        "romaji": "Black Clover 2nd Season",
-        "english": "Black Clover Season 2",
-        "native": "ブラッククローバー 第2期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195604-tSZcfKbVqSEG.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195604-tSZcfKbVqSEG.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195604-tSZcfKbVqSEG.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195604-lQpCzTziSA17.jpg",
-      "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Action",
-        "Adventure",
-        "Comedy",
-        "Fantasy"
-      ],
-      "averageScore": 88,
+      "averageScore": 69,
       "episodes": null,
       "status": "RELEASING",
       "season": "FALL",
@@ -638,269 +874,34 @@
       "studios": {
         "nodes": [
           {
-            "name": "Studio Pierrot"
+            "name": "Aniplex"
           },
           {
-            "name": "TV Tokyo"
+            "name": "Arvo Animation"
           },
           {
-            "name": "Shueisha"
+            "name": "Crunchyroll"
           },
           {
-            "name": "Studio Pierrot"
+            "name": "D&C MEDIA"
           },
           {
-            "name": "Avex Pictures"
+            "name": "Kakao piccoma"
           },
           {
-            "name": "Bandai Namco Entertainment"
+            "name": "HAYATE"
           }
         ]
       },
       "startDate": {
         "year": 2026,
         "month": 10,
-        "day": 3
+        "day": 8
       },
       "endDate": {
         "year": null,
         "month": null,
         "day": null
-      }
-    },
-    {
-      "id": 195516,
-      "title": {
-        "romaji": "Kusuriya no Hitorigoto 3rd Season",
-        "english": "The Apothecary Diaries Season 3",
-        "native": "薬屋のひとりごと 第3期"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195516-MJpUZlOberqH.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195516-MJpUZlOberqH.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195516-MJpUZlOberqH.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195516-B5M0cPaQbQXI.jpg",
-      "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n<br><br>\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n<br><br>\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n<br><br>\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n<br><br>\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n<br><br>\n(Source: Crunchyroll)",
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
-      "averageScore": 85,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Toho"
-          },
-          {
-            "name": "OLM"
-          },
-          {
-            "name": "Nippon Television Network"
-          },
-          {
-            "name": "Imagica Infos"
-          },
-          {
-            "name": "OLM"
-          },
-          {
-            "name": "Dentsu"
-          },
-          {
-            "name": "Shogakukan"
-          },
-          {
-            "name": "Square Enix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 2
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 18
-      }
-    },
-    {
-      "id": 206949,
-      "title": {
-        "romaji": "Kyouran Reijou Nia Liston",
-        "english": "Nia Liston: The Merciless Maiden",
-        "native": "凶乱令嬢ニア・リストン"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx206949-4HYI3YuP0eLI.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx206949-4HYI3YuP0eLI.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206949-4HYI3YuP0eLI.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/206949-c5hfhixdgvy5.jpg",
-      "description": "A great hero lies undefeated on her deathbed, regretting that she never found a foe who could take her down. She never intended to meet her fate anywhere other than on the battlefield, and her peaceful demise has her wishing desperately that things could have been different... But when she suddenly comes to in the body of the young, frail Nia Liston, she’s got an all-new fight ahead of her. Nia is a sickly child, meaning she has a long way to go before she’s in fighting form. Now that she’s been given a second shot at life, however, she’s determined to get what she wants. She’s going to live—and die—for battle this time! Make way for the Merciless Maiden!<br>\n<br>\n(Source: J-Novel Club)",
-      "genres": [
-        "Action",
-        "Fantasy"
-      ],
-      "averageScore": 74,
-      "episodes": 25,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "KONAMI animation"
-          },
-          {
-            "name": "Mainichi Broadcasting System"
-          },
-          {
-            "name": "SANKYO"
-          },
-          {
-            "name": "JR Higashi Nihon Kikaku"
-          },
-          {
-            "name": "Konami Digital Entertainment"
-          },
-          {
-            "name": "VAP"
-          },
-          {
-            "name": "BS Nittele"
-          },
-          {
-            "name": "Pia"
-          },
-          {
-            "name": "Hobby Japan"
-          },
-          {
-            "name": "Movic"
-          },
-          {
-            "name": "TO Books"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 6
-      },
-      "endDate": {
-        "year": null,
-        "month": null,
-        "day": null
-      }
-    },
-    {
-      "id": 189123,
-      "title": {
-        "romaji": "Ao no Hako Season 2",
-        "english": "Blue Box Season 2",
-        "native": "アオのハコ Season２"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx189123-0secXELIhkIW.jpg",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx189123-0secXELIhkIW.jpg",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx189123-0secXELIhkIW.jpg"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/189123-aGJ7pIDUo2Xs.jpg",
-      "description": "The second season of <i>Ao no Hako</i>.<br><br>\n\nAs Taiki and Chinatsu navigate their evolving feelings, a fractured friendship from the past and fierce competition cloud the road to nationals.<br><br>\n\n(Source: Netflix, edited)",
-      "genres": [
-        "Romance",
-        "Slice of Life",
-        "Sports"
-      ],
-      "averageScore": 81,
-      "episodes": 12,
-      "status": "RELEASING",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "Electric Circus"
-          },
-          {
-            "name": "TMS Entertainment"
-          },
-          {
-            "name": "Shueisha"
-          },
-          {
-            "name": "TBS"
-          },
-          {
-            "name": "Toho"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 4
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 12,
-        "day": 27
-      }
-    },
-    {
-      "id": 195539,
-      "title": {
-        "romaji": "Cyberpunk: Edgerunners 2",
-        "english": "Cyberpunk: Edgerunners 2",
-        "native": "サイバーパンク: エッジランナーズ2"
-      },
-      "coverImage": {
-        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx195539-4LdfmKIHzuxr.png",
-        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx195539-4LdfmKIHzuxr.png",
-        "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx195539-4LdfmKIHzuxr.png"
-      },
-      "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/195539-lO5SUdp4SOrq.jpg",
-      "description": "<i>Cyberpunk: Edgerunners 2</i> pulls you back into Night City, where lives become entangled to the extreme. Weak, a washed-up cyberpunk legend, is now forced to live without chrome as he searches for a sense of purpose in a world that’s passed him by. Meanwhile, the deadly nomad D sets out on a path to revenge that brings him close to corpo secrets never meant to be found. Across this ten-episode standalone series, uncover a story of family, obsession, legacy — and how your lens reflects the stories of the people around you..<br><br>\n\nWhen the world is blinded by spectacle, what extremes do you have to go to make your story matter?<br><br>\n(Source: Cyberpunk: Edgerunners 2 Official Site, Official Twitter)",
-      "genres": [
-        "Action",
-        "Drama",
-        "Sci-Fi"
-      ],
-      "averageScore": 83,
-      "episodes": 10,
-      "status": "FINISHED",
-      "season": "FALL",
-      "seasonYear": 2026,
-      "studios": {
-        "nodes": [
-          {
-            "name": "TRIGGER"
-          },
-          {
-            "name": "CD PROJEKT RED"
-          },
-          {
-            "name": "Netflix"
-          }
-        ]
-      },
-      "startDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 20
-      },
-      "endDate": {
-        "year": 2026,
-        "month": 10,
-        "day": 20
       }
     }
   ]
