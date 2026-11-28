@@ -1,7 +1,18 @@
 {
-  "version": 1795804183577,
-  "fetchedAt": "2026-11-27T18:29:43.577Z",
+  "version": 1795829907589,
+  "fetchedAt": "2026-11-28T01:38:27.589Z",
   "news": [
+    {
+      "title": "New Live-Action Hana-Kimi Series Unveils More Cast, New Trailer",
+      "description": "Kei Hosogai, Miu Arai, Ryōko Yūi, Yūto Adachi joi series debuting next Saturday",
+      "fullDescription": "Kei Hosogai, Miu Arai, Ryōko Yūi, Yūto Adachi joi series debuting next Saturday",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-27/new-live-action-hana-kimi-series-unveils-more-cast-new-trailer/.244263",
+      "pubDate": "Fri, 27 Nov 2026 19:18:43 -0500",
+      "source": "Anime News Network",
+      "category": "Newspaper",
+      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/244263/ytv6gmek52ysatg9hyrpv1tj2tk95a.jpg",
+      "guid": "https://www.animenewsnetwork.com/cms/.244263"
+    },
     {
       "title": "Pokémon Anime Gets New Season Featuring Liko, Roy in October 2027",
       "description": "Separate new Pokémon program to air starting on January 8",
@@ -155,17 +166,6 @@
       "category": "Newspaper",
       "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/244236/ikoi-hayase.jpg",
       "guid": "https://www.animenewsnetwork.com/cms/.244236"
-    },
-    {
-      "title": "No Longer Heroine's Momoko Kōda Launches New Manga on December 21",
-      "description": "Kono Oto, Myaku Ari desu ka? romantic comedy follows novel-writing girl, playboy doctor",
-      "fullDescription": "<cite>Kono Oto, Myaku Ari desu ka?</cite> romantic comedy follows novel-writing girl, playboy doctor",
-      "link": "https://www.animenewsnetwork.com/news/2026-11-26/no-longer-heroine-momoko-koda-launches-new-manga-on-december-21/.244110",
-      "pubDate": "Thu, 26 Nov 2026 21:01:11 -0500",
-      "source": "Anime News Network",
-      "category": "Newspaper",
-      "thumbnail": "https://www.animenewsnetwork.com//cdn.animenewsnetwork.com/thumbnails/max600x600/cms/news.10/244110/myaku.webp",
-      "guid": "https://www.animenewsnetwork.com/cms/.244110"
     }
   ],
   "total": 15
